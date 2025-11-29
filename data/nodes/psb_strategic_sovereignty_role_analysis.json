@@ -1,0 +1,1180 @@
+{
+  "meta": {
+    "document_title": "Роль ПСБ в технологическом суверенитете через национальные стратегические документы",
+    "source_documents": [
+      "Док 4 Приложение 1 — Схема нац.документов для перехода на новую тех.основу",
+      "Док 4 Приложение 2 — Видение роли ПСБ в тех.суверенитете через нац.стратегические документы",
+      "Док 4 — Общий контекст"
+    ],
+    "analysis_date": "2025-11-28",
+    "version": "1.0",
+    "analyst": "AI-эксперт по цифровым двойникам",
+    "document_type": "Стратегический анализ позиционирования",
+    "semantic_network": {
+      "position_in_graph": "NODE-SOVEREIGNTY",
+      "layer": "strategic_positioning",
+      "primary_question": "КАКОВА роль ПСБ в системе технологического суверенитета России?",
+      "primary_dependencies": [
+        {
+          "file": "psb_regulatory_framework_analysis.json",
+          "node_id": "NODE-REGULATORY",
+          "relationship": "derives_from",
+          "description": "Роль ПСБ производна от нормативного контекста"
+        },
+        {
+          "file": "psb_shareholder_logic_analysis.json",
+          "node_id": "NODE-SHAREHOLDER",
+          "relationship": "implements_mission",
+          "description": "Стратегическое позиционирование реализует миссию акционера"
+        },
+        {
+          "file": "psb_ecosystem_infrastructure_analysis.json",
+          "node_id": "NODE-ECOSYSTEM",
+          "relationship": "leverages_infrastructure",
+          "description": "Позиционирование опирается на экосистемную инфраструктуру"
+        },
+        {
+          "file": "psb_technological_foundation_6tu_analysis.json",
+          "node_id": "NODE-TECHBASE",
+          "relationship": "operationalizes_through",
+          "description": "Роль операционализируется через архитектуру 6ТУ"
+        },
+        {
+          "file": "psb_spbpu_context_analysis.json",
+          "node_id": "NODE-CONTEXT",
+          "relationship": "enables_partnership",
+          "description": "Позиционирование создаёт основу для партнёрства с СПбПУ"
+        },
+        {
+          "file": "psb_global_trend_platform_analysis.json",
+          "node_id": "NODE-PLATFORM",
+          "relationship": "justifies_platform_model",
+          "description": "Роль в суверенитете обосновывает платформенную модель"
+        },
+        {
+          "file": "psb_financial_architecture_analysis.json",
+          "node_id": "NODE-FINANCE",
+          "relationship": "resources_role",
+          "description": "Финансовая архитектура обеспечивает ресурсы для роли"
+        }
+      ],
+      "graph_topology": {
+        "full_cycle": "SOVEREIGNTY → REGULATORY → SHAREHOLDER → FINANCE → ECOSYSTEM → CONTEXT → TECHBASE → PLATFORM → SOVEREIGNTY",
+        "sovereignty_role": "Интегрирующий узел, связывающий государственные цели с операционной моделью ПСБ"
+      },
+      "referenced_by": [
+        {
+          "from_file": "psb_sci_architecture_analysis.json",
+          "from_node": "NODE-SCI",
+          "from_path": "six_layer_model.layers[0]",
+          "full_ref": "psb_strategic_sovereignty_role_analysis.json#strategic_positioning"
+        },
+        {
+          "from_file": "psb_sci_architecture_analysis.json",
+          "from_node": "NODE-SCI",
+          "from_path": "psb_integration_points",
+          "full_ref": "psb_strategic_sovereignty_role_analysis.json#entry_points_matrix"
+        },
+        {
+          "from_file": "psb_dt_platforms_market_analysis.json",
+          "from_node": "NODE-MARKET",
+          "relationship": "validates_sovereignty_path",
+          "description": "Подтверждение стратегии технологического суверенитета"
+        },
+        {
+          "from_file": "psb_dt_platforms_market_analysis.json",
+          "from_node": "NODE-MARKET",
+          "from_path": "executive_summary",
+          "full_ref": "psb_strategic_sovereignty_role_analysis.json#seven_entry_points"
+        },
+        {
+          "from_file": "psb_dt_platforms_market_analysis.json",
+          "from_node": "NODE-MARKET",
+          "from_path": "market_structure.geographic_distribution",
+          "full_ref": "psb_strategic_sovereignty_role_analysis.json#technology_sovereignty.import_substitution"
+        },
+        {
+          "from_file": "psb_dt_platforms_market_analysis.json",
+          "from_node": "NODE-MARKET",
+          "from_path": "russian_platforms_deep_dive.strategic_context",
+          "full_ref": "psb_strategic_sovereignty_role_analysis.json#strategic_positioning"
+        },
+        {
+          "from_file": "psb_dt_platforms_market_analysis.json",
+          "from_node": "NODE-MARKET",
+          "from_path": "russian_platforms_deep_dive.national_ecosystem_vision",
+          "full_ref": "psb_strategic_sovereignty_role_analysis.json#seven_entry_points"
+        },
+        {
+          "from_file": "psb_dt_platforms_market_analysis.json",
+          "from_node": "NODE-MARKET",
+          "from_path": "strategic_implications",
+          "full_ref": "psb_strategic_sovereignty_role_analysis.json#seven_entry_points"
+        },
+        {
+          "from_file": "psb_cmlbench_technology_context_analysis.json",
+          "from_node": "NODE-CMLBENCH",
+          "relationship": "validates_sovereignty_role",
+          "description": "Суверенитет определяет стратегическую роль платформы"
+        },
+        {
+          "from_file": "psb_cmlbench_technology_context_analysis.json",
+          "from_node": "NODE-CMLBENCH",
+          "from_path": "gap_closure_roadmap",
+          "full_ref": "psb_strategic_sovereignty_role_analysis.json#partnership_actions"
+        },
+        {
+          "from_file": "psb_cmlbench_technology_context_analysis.json",
+          "from_node": "NODE-CMLBENCH",
+          "from_path": "strategic_conclusions",
+          "full_ref": "psb_strategic_sovereignty_role_analysis.json#seven_entry_points"
+        },
+        {
+          "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+          "from_node": "NODE-AGENDA",
+          "from_path": "timeline_analysis.events[3]",
+          "full_ref": "psb_strategic_sovereignty_role_analysis.json#seven_entry_points"
+        },
+        {
+          "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+          "from_node": "NODE-AGENDA",
+          "from_path": "strategic_positioning.strategic_entry_points",
+          "full_ref": "psb_strategic_sovereignty_role_analysis.json#seven_entry_points"
+        },
+        {
+          "from_file": "psb_mkcp_program_analysis.json",
+          "from_node": "NODE-MKCP",
+          "from_path": "participants_analysis",
+          "full_ref": "psb_strategic_sovereignty_role_analysis.json#seven_entry_points"
+        },
+        {
+          "from_file": "psb_mkcp_program_analysis.json",
+          "from_node": "NODE-MKCP",
+          "from_path": "strategic_positioning",
+          "full_ref": "psb_strategic_sovereignty_role_analysis.json#seven_entry_points"
+        }
+      ]
+    },
+    "node_id": "NODE-SOVEREIGNTY",
+    "layer": "strategic_positioning"
+  },
+  "executive_summary": {
+    "id": "EXEC-SOV-001",
+    "core_thesis": "ПСБ позиционируется как финансово-технологический агент государства в национальной системе становления, развития и ускоренного распространения (диффузии) суверенных технологий, занимая уникальную позицию на пересечении государственного, нормативно-правового и финансово-технологического контуров",
+    "key_findings": [
+      {
+        "id": "KF-SOV-001",
+        "finding": "Трёхконтурная архитектура позиционирования",
+        "contours": [
+          "Государственный контур",
+          "Нормативно-правовой контур",
+          "Финансово-технологическая рамка"
+        ],
+        "implication": "ПСБ — единственный игрок, интегрированный во все три контура одновременно"
+      },
+      {
+        "id": "KF-SOV-002",
+        "finding": "Семь точек входа в государственный контур",
+        "entry_points": 7,
+        "implication": "Множественность точек входа обеспечивает системное влияние"
+      },
+      {
+        "id": "KF-SOV-003",
+        "finding": "Целевой объём участия — 2 трлн ₽ (5% от общего объёма 41 трлн ₽)",
+        "financial_scale": "2_000_000_000_000",
+        "implication": "Масштаб требует трансформации из банка в платформу"
+      },
+      {
+        "id": "KF-SOV-004",
+        "finding": "Трансформация роли: от исполнителя к держателю поля",
+        "transformation": {
+          "from": "Исполнитель финансовых поручений государства",
+          "to": "Центр притяжения высокотехнологичных проектов и держатель поля синхронизации"
+        },
+        "implication": "Требуется новая операционная модель"
+      }
+    ],
+    "semantic_refs": {
+      "links_to": [
+        "psb_shareholder_logic_analysis.json#shareholder_motivation.MOT-001",
+        "psb_regulatory_framework_analysis.json#regulatory_architecture.LAYER-ZAMYSEL",
+        "psb_ecosystem_infrastructure_analysis.json#cluster_model",
+        "psb_global_trend_platform_analysis.json#platform_transition_rationale"
+      ]
+    }
+  },
+  "state_contour": {
+    "id": "STATE-CONTOUR-001",
+    "title": "Государственный контур",
+    "description": "Вертикаль власти и принятия решений в сфере технологического развития",
+    "structure": {
+      "apex": {
+        "id": "APEX-001",
+        "entity": "Президент РФ",
+        "roles": [
+          "Верховный главнокомандующий",
+          "Глава государства"
+        ],
+        "relevance_to_psb": "Определяет стратегические национальные интересы и приоритеты"
+      },
+      "executive_branches": [
+        {
+          "id": "BRANCH-VPK",
+          "entity": "Военно-промышленная комиссия",
+          "subordinate_to": "Президент РФ",
+          "components": [
+            {
+              "id": "VPK-KOLLEGIA",
+              "name": "Коллегия ВПК",
+              "function": "Площадка для сведения позиций министерств и ОПК",
+              "psb_entry_point": true,
+              "entry_type": "Экспертные советы"
+            },
+            {
+              "id": "VPK-NTS",
+              "name": "Научно-технический совет ВПК",
+              "function": "Определение приоритетных направлений разработки ВВСТ",
+              "psb_entry_point": true,
+              "entry_type": "Экспертное участие"
+            }
+          ],
+          "semantic_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model.CLUSTER-INSTITUTIONAL"
+        },
+        {
+          "id": "BRANCH-GOV",
+          "entity": "Правительство РФ",
+          "subordinate_to": "Президент РФ",
+          "ministries": [
+            {
+              "id": "MIN-DEFENSE",
+              "name": "Минобороны",
+              "function": "Формирует потребности армии, определяет потребности войск в вооружении",
+              "subordinates": [],
+              "psb_entry_point": false,
+              "relation_to_psb": "Косвенная через ГОЗ"
+            },
+            {
+              "id": "MIN-PROMTORG",
+              "name": "Минпромторг",
+              "function": "Формирование и реализация государственной промышленной, торговой и технической политики",
+              "subordinates": [
+                {
+                  "id": "PROMTORG-OPK",
+                  "name": "Предприятия ОПК",
+                  "psb_entry_point": true,
+                  "entry_type": "Опорный банк ОПК (65% рынка ГОЗ)"
+                },
+                {
+                  "id": "PROMTORG-ROSSTANDART",
+                  "name": "Росстандарт",
+                  "psb_entry_point": false,
+                  "relation_to_psb": "Стандарты ЦД (ГОСТ Р 57700.37-2021)"
+                },
+                {
+                  "id": "PROMTORG-VNII-CENTER",
+                  "name": "ВНИИ «Центр»",
+                  "function": "Разработка МКЦП ЦД, аналитика для Минпромторга",
+                  "psb_entry_point": true,
+                  "entry_type": "Партнёрство через МКЦП ЦД",
+                  "key_stakeholder": {
+                    "name": "А.Б. Агеев",
+                    "role": "Разработчик МКЦП ЦД, претендент на руководителя ПТН",
+                    "semantic_ref": "PARTNER-STAKE в Memory"
+                  }
+                },
+                {
+                  "id": "PROMTORG-CDC-OPK",
+                  "name": "Центр цифровизации предприятий ОПК",
+                  "function": "Координация цифровой трансформации ОПК",
+                  "psb_entry_point": true,
+                  "entry_type": "Интеграция платформенных решений"
+                }
+              ],
+              "semantic_ref": "psb_regulatory_framework_analysis.json#state_actors.AC-MINPROMTORG"
+            },
+            {
+              "id": "MIN-DIGITAL",
+              "name": "Минцифры",
+              "function": "Цифровая трансформация государства и экономики",
+              "psb_entry_point": false,
+              "relation_to_psb": "Косвенная через цифровые платформы"
+            },
+            {
+              "id": "MIN-FIN",
+              "name": "Минфин",
+              "function": "Бюджетная политика, управление госдолгом",
+              "subordinates": [
+                {
+                  "id": "MINFIN-TREASURY",
+                  "name": "Федеральное казначейство",
+                  "psb_entry_point": false
+                }
+              ],
+              "psb_entry_point": false,
+              "relation_to_psb": "Косвенная через бюджетное финансирование"
+            },
+            {
+              "id": "ROSIMUSHCHESTVO",
+              "name": "Росимущество",
+              "function": "Управление федеральными активами",
+              "psb_entry_point": false,
+              "relation_to_psb": "Акционерная связь (государственный банк)"
+            }
+          ]
+        }
+      ],
+      "bank_russia": {
+        "id": "CBR-001",
+        "entity": "Банк России",
+        "function": "Регулятор банковской системы",
+        "psb_entry_point": true,
+        "entry_type": "Регуляторное взаимодействие, ЦФА (Токеон в топ-5)",
+        "semantic_ref": "psb_financial_architecture_analysis.json#regulatory_capital"
+      }
+    },
+    "psb_position_in_state_contour": {
+      "id": "PSB-STATE-POS-001",
+      "formal_status": "Опорный банк ОПК, системно значимый государственный банк",
+      "unique_characteristics": [
+        "Лидер по отработке моделей импортонезависимого банковского ПО",
+        "Платформа трансграничных расчётов «А7»",
+        "Цифровой рубль «А7А5» — первый рублёвый стейблкоин на иностранной юрисдикции",
+        "Блокчейн-платформа «Токеон» для ЦФА (топ-5 по объёму эмиссий)",
+        "Нормативная «мастерская» — трансляция рыночного опыта в законодательство"
+      ],
+      "semantic_ref": "psb_ecosystem_infrastructure_analysis.json#deep_tech_cluster"
+    }
+  },
+  "entry_points_matrix": {
+    "id": "ENTRY-MATRIX-001",
+    "title": "Матрица точек входа ПСБ в государственный контур",
+    "total_entry_points": 7,
+    "entry_points": [
+      {
+        "id": "EP-001",
+        "name": "Опорный банк ОПК",
+        "target": "Предприятия ОПК (через Минпромторг)",
+        "mechanism": "Прямое банковское обслуживание",
+        "metrics": {
+          "market_share": "65% рынка ГОЗ",
+          "factoring_volume": "2.9 трлн ₽"
+        },
+        "strength": "critical",
+        "semantic_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model.CLUSTER-FINANCE"
+      },
+      {
+        "id": "EP-002",
+        "name": "Партнёрство ВНИИ «Центр»",
+        "target": "ВНИИ «Центр» (Минпромторг)",
+        "mechanism": "Совместная разработка МКЦП ЦД",
+        "key_person": "А.Б. Агеев",
+        "strength": "strategic",
+        "semantic_ref": "PARTNER-STAKE в Memory"
+      },
+      {
+        "id": "EP-003",
+        "name": "Центр цифровизации ОПК",
+        "target": "Центр цифровизации предприятий ОПК (Минпромторг)",
+        "mechanism": "Интеграция платформенных решений ПСБ",
+        "strength": "emerging",
+        "semantic_ref": "psb_technological_foundation_6tu_analysis.json#psb_actions"
+      },
+      {
+        "id": "EP-004",
+        "name": "Экспертные советы ВПК",
+        "target": "Коллегия ВПК, НТС ВПК",
+        "mechanism": "Экспертное участие, нормативная «мастерская»",
+        "strength": "influential",
+        "semantic_ref": "psb_regulatory_framework_analysis.json#psb_regulatory_role"
+      },
+      {
+        "id": "EP-005",
+        "name": "Правительственная комиссия",
+        "target": "Правительственная комиссия по развитию финансовых инструментов ОПК",
+        "mechanism": "Разработка финансовых инструментов и мер поддержки",
+        "strength": "normative",
+        "semantic_ref": "psb_financial_architecture_analysis.json#business_model"
+      },
+      {
+        "id": "EP-006",
+        "name": "Регуляторное взаимодействие с ЦБ",
+        "target": "Банк России",
+        "mechanism": "ЦФА, цифровой рубль, регуляторные песочницы",
+        "platforms": [
+          "Токеон",
+          "А7",
+          "А7А5"
+        ],
+        "strength": "regulatory",
+        "semantic_ref": "psb_ecosystem_infrastructure_analysis.json#deep_tech_cluster.fintech"
+      },
+      {
+        "id": "EP-007",
+        "name": "Партнёрство СПбПУ",
+        "target": "СПбПУ (Центр НТИ, CML-Bench)",
+        "mechanism": "Методологическое и научно-образовательное партнёрство",
+        "key_person": "А.И. Боровков",
+        "strength": "methodological",
+        "semantic_ref": "psb_spbpu_context_analysis.json#partnership_value"
+      }
+    ],
+    "entry_points_by_strength": {
+      "critical": [
+        "EP-001"
+      ],
+      "strategic": [
+        "EP-002",
+        "EP-007"
+      ],
+      "influential": [
+        "EP-004"
+      ],
+      "normative": [
+        "EP-005"
+      ],
+      "regulatory": [
+        "EP-006"
+      ],
+      "emerging": [
+        "EP-003"
+      ]
+    }
+  },
+  "regulatory_contour": {
+    "id": "REG-CONTOUR-001",
+    "title": "Нормативно-правовой контур (логика акционера)",
+    "description": "Каскадная структура стратегических документов, определяющих рамку технологического суверенитета",
+    "document_hierarchy": [
+      {
+        "level": 1,
+        "id": "DOC-HIER-001",
+        "document": "Указ №400 от 02.07.2021 — Стратегия национальной безопасности",
+        "key_provision": "Устойчивое развитие экономики на новой технологической основе",
+        "psb_relevance": "Стратегический национальный интерес как основа миссии",
+        "semantic_ref": "psb_regulatory_framework_analysis.json#regulatory_architecture.layers[0]"
+      },
+      {
+        "level": 2,
+        "id": "DOC-HIER-002",
+        "document": "Указ №309 от 07.05.2024 — Национальные цели развития РФ до 2036",
+        "key_provision": "Технологическое лидерство как национальная цель №6",
+        "target_metrics": [
+          {
+            "id": "TM-001",
+            "metric": "Вхождение России в топ-10 стран по объёму НИОКР",
+            "deadline": "2030"
+          },
+          {
+            "id": "TM-002",
+            "metric": "Внутренние затраты на НИОКР ≥ 2% ВВП",
+            "deadline": "2030"
+          },
+          {
+            "id": "TM-003",
+            "metric": "Инвестиции бизнеса в НИОКР ×2",
+            "deadline": "2030"
+          }
+        ],
+        "psb_relevance": "Количественные KPI для ЗАМЫСЛА",
+        "semantic_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_1_national_goal"
+      },
+      {
+        "level": 3,
+        "id": "DOC-HIER-003",
+        "document": "Указ №145 от 28.02.2024 — Стратегия научно-технологического развития РФ",
+        "key_provision": "Переход к передовым технологиям проектирования и создания высокотехнологичной продукции (п.21)",
+        "priority_technologies": [
+          "Интеллектуальные производственные решения",
+          "Высокопроизводительные вычислительные системы",
+          "Обработка больших объёмов данных",
+          "Технологии машинного обучения и ИИ"
+        ],
+        "psb_relevance": "Опорный приоритет для осмысления роли Банка — ЦД как ключевая технология",
+        "semantic_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_2_priority_area"
+      },
+      {
+        "level": 4,
+        "id": "DOC-HIER-004",
+        "document": "РП №1315-р от 20.05.2023 — Концепция технологического развития",
+        "key_provision": "Технологический суверенитет как цель",
+        "operating_principles": [
+          {
+            "id": "PRINC-001",
+            "name": "Целостность инновационного цикла",
+            "description": "Бесшовная поддержка от фундаментальных исследований до внедрения в реальный сектор"
+          },
+          {
+            "id": "PRINC-002",
+            "name": "Признание права на риск",
+            "description": "Допустимость недостижения цели без злого умысла"
+          }
+        ],
+        "psb_relevance": "Принципы организации деятельности ПСБ как агента развития",
+        "semantic_ref": "psb_regulatory_framework_analysis.json#operating_principles"
+      },
+      {
+        "level": 5,
+        "id": "DOC-HIER-005",
+        "document": "ФЗ №523 от 28.12.2024 — О технологической политике в РФ",
+        "key_provisions": [
+          "Внедрение критических и сквозных технологий на основе собственных линий разработки",
+          "Создание высокотехнологичной продукции и выведение её на рынок",
+          "Создание инфраструктуры развития технологий",
+          "Обеспечение передачи знаний между ОПК и гражданским секторами"
+        ],
+        "psb_relevance": "Кредитные организации официально признаны агентами технологического развития",
+        "semantic_ref": "psb_regulatory_framework_analysis.json#regulatory_architecture.layers[4]"
+      },
+      {
+        "level": 6,
+        "id": "DOC-HIER-006",
+        "document": "ПП №603 от 15.04.2023 — О приоритетных отраслях и направлениях тех.суверенитета",
+        "key_provision": "Перечень критических и сквозных технологий",
+        "technology_categories": {
+          "critical": "Системное значение для экономики и безопасности",
+          "cross_cutting": "Межотраслевые, меняющие рынки"
+        },
+        "psb_relevance": "Определяет технологический фокус ЗАМЫСЛА",
+        "semantic_ref": "psb_regulatory_framework_analysis.json#technology_classification"
+      }
+    ],
+    "working_contour": {
+      "id": "WORK-CONTOUR-001",
+      "name": "Наука → Технологии → Производство",
+      "components": [
+        {
+          "id": "WC-001",
+          "component": "Формирование общественного запроса на результаты НИОКР"
+        },
+        {
+          "id": "WC-002",
+          "component": "Полноценный трансфер технологий и управление интеллектуальной собственностью"
+        },
+        {
+          "id": "WC-003",
+          "component": "Передача знаний и технологий между ОПК и гражданским секторами"
+        }
+      ],
+      "psb_role": "Финансово-технологическое посредничество на всех этапах",
+      "semantic_ref": "psb_spbpu_context_analysis.json#operating_principles.OP-001"
+    }
+  },
+  "financial_technology_framework": {
+    "id": "FINTECH-FRAMEWORK-001",
+    "title": "Финансово-технологическая рамка (позиция ПСБ)",
+    "psb_identity": {
+      "id": "PSB-IDENTITY-001",
+      "statement": "ПСБ — это экосистема доверия и роста для сильных людей, взявших ответственность за технологическое лидерство страны",
+      "goal": "Технологический суверенитет как источник устойчивого экономического развития",
+      "semantic_ref": "psb_shareholder_logic_analysis.json#identity_statement"
+    },
+    "agent_role": {
+      "id": "AGENT-ROLE-001",
+      "title": "Финансово-технологический агент",
+      "definition": "Проводник государственной политики в области трансформации промышленности и передовых производственных технологий",
+      "functions": [
+        {
+          "id": "FUNC-001",
+          "function": "Формирование инновационных экосистем",
+          "description": "Ускорение трансфера технологий от разработчиков к конечным потребителям"
+        },
+        {
+          "id": "FUNC-002",
+          "function": "Финансово-технологическое посредничество",
+          "description": "Гибкие финансовые инструменты на всех этапах жизненного цикла инноваций"
+        },
+        {
+          "id": "FUNC-003",
+          "function": "Консолидация данных",
+          "description": "Объединение инженерных и финансово-экономических данных в едином контуре"
+        },
+        {
+          "id": "FUNC-004",
+          "function": "Кросс-отраслевая интеграция",
+          "description": "Создание виртуальных испытательных полигонов и междисциплинарных лабораторий"
+        }
+      ],
+      "semantic_ref": "psb_ecosystem_infrastructure_analysis.json#quasi_ministerial_functions"
+    },
+    "platform_ecosystem": {
+      "id": "PLATFORM-ECO-001",
+      "title": "Платформа-экосистема технологического развития",
+      "foundation_technologies": [
+        {
+          "id": "TECH-001",
+          "name": "Искусственный интеллект",
+          "characteristic": "Высоковалентная сквозная технология"
+        },
+        {
+          "id": "TECH-002",
+          "name": "Цифровые двойники",
+          "characteristic": "Базовая единица управления в 6ТУ",
+          "semantic_ref": "psb_technological_foundation_6tu_analysis.json#architectural_vision.digital_twin_as_unit"
+        },
+        {
+          "id": "TECH-003",
+          "name": "Кибербезопасность",
+          "characteristic": "Инфраструктурный enabler"
+        }
+      ],
+      "value_proposition": {
+        "for_opk": "Снижение себестоимости жизненного цикла продукции",
+        "for_civil_hightech": "Доступ к передовым технологиям через ПСБ как посредника",
+        "for_state": "Ускорение технологического суверенитета"
+      },
+      "semantic_ref": "psb_global_trend_platform_analysis.json#platform_value_proposition"
+    }
+  },
+  "strategic_positioning": {
+    "id": "STRAT-POS-001",
+    "title": "Стратегическое позиционирование ПСБ",
+    "transformation_trajectory": {
+      "id": "TRANSFORM-001",
+      "from": {
+        "role": "Исполнитель финансовых поручений государства",
+        "model": "Транзакционный банк для ОПК"
+      },
+      "to": {
+        "role": "Центр притяжения высокотехнологичных проектов",
+        "model": "Держатель поля синхронизации госзадач и бизнеса"
+      },
+      "semantic_ref": "psb_shareholder_logic_analysis.json#transformation_trajectory"
+    },
+    "lion_share_strategy": {
+      "id": "LION-001",
+      "statement": "Через ПСБ проходит основной финансовый поток инноваций страны",
+      "pillars": [
+        {
+          "id": "PIL-001",
+          "pillar": "Основной финансовый оператор всех ключевых МКЦП",
+          "scope": "Развитие технологий и систем ВВСТ"
+        },
+        {
+          "id": "PIL-002",
+          "pillar": "Банк №1 по сопровождению трансфера технологий",
+          "scope": "Между ОПК и гражданским высокотехнологичным сектором"
+        },
+        {
+          "id": "PIL-003",
+          "pillar": "Ниша «ПСБ для высокотехнологичных компаний двойного назначения»",
+          "scope": "Специализированный сегмент"
+        }
+      ]
+    },
+    "alliance_strategy": {
+      "id": "ALLIANCE-001",
+      "principle": "Капитал — это не только деньги, но и союзы",
+      "alliances": [
+        {
+          "id": "ALL-001",
+          "type": "Корпорации-лидеры",
+          "partners": [
+            "Ростех",
+            "Росатом",
+            "Роскосмос"
+          ],
+          "psb_role": "Финансово-технологический интегратор"
+        },
+        {
+          "id": "ALL-002",
+          "type": "ВУЗы и НИИ",
+          "partners": [
+            "СПбПУ",
+            "другие"
+          ],
+          "psb_role": "Системный оператор (не просто инвестор)",
+          "semantic_ref": "psb_spbpu_context_analysis.json#partnership_structure"
+        },
+        {
+          "id": "ALL-003",
+          "type": "Экспертные площадки",
+          "platforms": [
+            "Экспертные советы при Госдуме",
+            "Правительственная комиссия",
+            "ВПК"
+          ],
+          "psb_role": "Задаёт рамку «какие технологии финансируются и как масштабируются»"
+        },
+        {
+          "id": "ALL-004",
+          "type": "Инновационные центры",
+          "partners": [
+            "Сколково",
+            "Иннополис",
+            "Сириус"
+          ],
+          "psb_role": "Формирование сообществ"
+        }
+      ]
+    },
+    "focus_axes": {
+      "id": "FOCUS-001",
+      "primary_axes": [
+        {
+          "id": "AXIS-001",
+          "axis": "Цифровые двойники",
+          "rationale": "Методология СПбПУ + ГОСТ + CML-Bench",
+          "semantic_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+        },
+        {
+          "id": "AXIS-002",
+          "axis": "Финтех-платформы для инноваций",
+          "rationale": "Токеон, А7, ЦФА",
+          "semantic_ref": "psb_ecosystem_infrastructure_analysis.json#deep_tech_cluster.fintech"
+        },
+        {
+          "id": "AXIS-003",
+          "axis": "Кибербезопасность",
+          "rationale": "85% отечественного ПО, импортонезависимость",
+          "semantic_ref": "psb_ecosystem_infrastructure_analysis.json#it_cluster"
+        }
+      ],
+      "secondary_axes": "Подтягиваются по мере развития"
+    },
+    "long_game": {
+      "id": "LONG-GAME-001",
+      "kpi_1": "Количество лет «в технологической игре»",
+      "horizon": "20+ лет (не 2-3 года)",
+      "approach": "Краткосрочная прибыль (коммуникация) + долгосрочная стратегия (встраивание в экосистему)",
+      "semantic_ref": "psb_shareholder_logic_analysis.json#shareholder_behavior.infinite_horizon"
+    }
+  },
+  "financial_contour": {
+    "id": "FIN-CONTOUR-001",
+    "title": "Финансовый контур ЗАМЫСЛА",
+    "state_funding": {
+      "national_projects_tech_leadership": {
+        "budget": "4_392_000_000_000",
+        "currency": "RUB",
+        "description": "Национальные проекты по обеспечению технологического лидерства"
+      },
+      "national_projects_other": {
+        "budget": "3_591_000_000_000",
+        "currency": "RUB",
+        "description": "Прочие национальные проекты технологической направленности"
+      },
+      "rd_budget": {
+        "budget": "13_000_000_000_000",
+        "currency": "RUB",
+        "description": "Бюджет на НИОКР"
+      },
+      "total_state": {
+        "budget": "21_000_000_000_000",
+        "currency": "RUB"
+      }
+    },
+    "private_funding": {
+      "minimum": "20_000_000_000_000",
+      "currency": "RUB",
+      "description": "Частный капитал (минимальная оценка)"
+    },
+    "total_pool": {
+      "budget": "41_000_000_000_000",
+      "currency": "RUB"
+    },
+    "psb_target": {
+      "id": "PSB-TARGET-FIN-001",
+      "share": "5%",
+      "absolute": "2_000_000_000_000",
+      "currency": "RUB",
+      "description": "Целевой объём участия ПСБ в ЗАМЫСЛЕ",
+      "semantic_ref": "psb_financial_architecture_analysis.json#zamysel_target"
+    },
+    "funding_structure_mkcp": {
+      "id": "MKCP-FUND-001",
+      "description": "Структура финансирования МКЦП ЦД",
+      "sources": [
+        {
+          "source": "Бюджет",
+          "share_min": "60%",
+          "share_max": "70%"
+        },
+        {
+          "source": "Внебюджет (ПСБ)",
+          "share_min": "25%",
+          "share_max": "35%"
+        },
+        {
+          "source": "Регионы",
+          "share_min": "5%",
+          "share_max": "10%"
+        }
+      ],
+      "psb_role": "Вхождение в дирекцию МКЦП",
+      "semantic_ref": "PARTNER-PROGRAM в Memory"
+    }
+  },
+  "central_axis_priorities": {
+    "id": "CENTRAL-AXIS-001",
+    "title": "Центральная ось национальных приоритетов",
+    "technology_categories": {
+      "dual_use": {
+        "id": "CAT-DUAL",
+        "name": "Двойного назначения",
+        "description": "Нет чёткого разделения гражданского/военного",
+        "psb_focus": "primary",
+        "rationale": "Основной фокус ПСБ — трансфер между ОПК и гражданским сектором"
+      },
+      "opk": {
+        "id": "CAT-OPK",
+        "name": "ОПК",
+        "description": "ВВСТ, спец.материалы",
+        "psb_focus": "traditional",
+        "rationale": "Традиционный клиентский сегмент"
+      },
+      "critical": {
+        "id": "CAT-CRITICAL",
+        "name": "Критические",
+        "description": "Системное значение для экономики и безопасности",
+        "psb_focus": "selective",
+        "rationale": "По перечню ПП №603"
+      },
+      "cross_cutting": {
+        "id": "CAT-CROSSCUT",
+        "name": "Сквозные",
+        "description": "Межотраслевые, меняющие рынки",
+        "psb_focus": "platform",
+        "examples": [
+          "ИИ",
+          "Цифровые двойники",
+          "Кибербезопасность"
+        ],
+        "rationale": "Основа платформенной модели"
+      }
+    },
+    "technology_blocks": [
+      {
+        "id": "BLOCK-ENERGY",
+        "name": "Энергетический блок",
+        "technologies": [
+          "Технологии создания высокоэффективных систем генерации, распределения и хранения энергии",
+          "Технологии создания энергетических систем с замкнутым топливным циклом"
+        ],
+        "nbics_code": "N-B-I"
+      },
+      {
+        "id": "BLOCK-BIOMED",
+        "name": "Биомедицинский блок",
+        "technologies": [
+          "Биомедицинские и когнитивные технологии здорового и активного долголетия",
+          "Технологии разработки медицинских изделий нового поколения"
+        ],
+        "nbics_code": "B-C-N"
+      },
+      {
+        "id": "BLOCK-DIGITAL",
+        "name": "Цифровой блок",
+        "technologies": [
+          "Технологии микроэлектроники и фотоники",
+          "Технологии ИИ в отраслях экономики"
+        ],
+        "nbics_code": "I-C"
+      },
+      {
+        "id": "BLOCK-MATERIALS",
+        "name": "Материаловедческий блок",
+        "technologies": [
+          "Технологии создания новых материалов с заданными свойствами",
+          "Технологии производства малотоннажной химической продукции"
+        ],
+        "nbics_code": "N"
+      },
+      {
+        "id": "BLOCK-MANUFACTURING",
+        "name": "Производственный блок",
+        "technologies": [
+          "Технологии создания отечественных средств производства",
+          "Научное приборостроение"
+        ],
+        "nbics_code": "I"
+      },
+      {
+        "id": "BLOCK-NATURE",
+        "name": "Природоподобные технологии",
+        "technologies": [
+          "Биотехнологии в отраслях экономики",
+          "Природоподобные технологии"
+        ],
+        "nbics_code": "B-N"
+      }
+    ],
+    "semantic_ref": "psb_regulatory_framework_analysis.json#technology_classification"
+  },
+  "unique_position_analysis": {
+    "id": "UNIQUE-POS-001",
+    "title": "Анализ уникальности позиции ПСБ",
+    "thesis": "ПСБ — единственный игрок, одновременно интегрированный во все ключевые контуры технологического суверенитета",
+    "uniqueness_factors": [
+      {
+        "id": "UF-001",
+        "factor": "Прямой доступ к ОПК",
+        "evidence": "Опорный банк, 65% рынка ГОЗ",
+        "competitors_gap": "Другие банки не имеют такого доступа"
+      },
+      {
+        "id": "UF-002",
+        "factor": "Встроенность в нормативную вертикаль",
+        "evidence": "Экспертные советы, Правительственная комиссия, нормативная «мастерская»",
+        "competitors_gap": "Коммерческие банки не участвуют в формировании политики"
+      },
+      {
+        "id": "UF-003",
+        "factor": "Связка финансового и технологического контуров",
+        "evidence": "Токеон, А7, CML-Bench (через СПбПУ)",
+        "competitors_gap": "Нет игрока с такой интеграцией"
+      },
+      {
+        "id": "UF-004",
+        "factor": "Инфраструктура доверия",
+        "evidence": "500+ офисов, социальная миссия, работа с военнослужащими",
+        "competitors_gap": "Социальный капитал не воспроизводим",
+        "semantic_ref": "psb_ecosystem_infrastructure_analysis.json#social_cluster"
+      },
+      {
+        "id": "UF-005",
+        "factor": "Технологическая автаркия",
+        "evidence": "85% отечественного ПО, собственные платформы",
+        "competitors_gap": "Зависимость от западного ПО у конкурентов",
+        "semantic_ref": "psb_ecosystem_infrastructure_analysis.json#it_cluster.domestic_share"
+      }
+    ],
+    "assembly_point": {
+      "id": "ASSEMBLY-001",
+      "statement": "ПСБ = проводник госполитики в трансформации промышленности через инновационные экосистемы и финансово-технологическое посредничество",
+      "semantic_ref": "psb_shareholder_logic_analysis.json#core_identity"
+    }
+  },
+  "challenges_and_constraints": {
+    "id": "CHALLENGES-001",
+    "title": "Вызовы и ограничения",
+    "external_challenges": [
+      {
+        "id": "CHAL-EXT-001",
+        "challenge": "Низкая адаптивность экономики к глобальным системным трендам",
+        "implication_for_psb": "Необходимость «тянуть» клиентов к новым технологиям"
+      },
+      {
+        "id": "CHAL-EXT-002",
+        "challenge": "Отставание от лидеров по темпам инновационно-ориентированного роста",
+        "implication_for_psb": "Высокие риски инновационных проектов"
+      },
+      {
+        "id": "CHAL-EXT-003",
+        "challenge": "Разрыв производственных цепочек и санкционное давление",
+        "implication_for_psb": "Необходимость создания альтернативных цепочек через ЦД"
+      }
+    ],
+    "internal_constraints": [
+      {
+        "id": "CONST-INT-001",
+        "constraint": "Регуляторные требования ЦБ (Н1.0)",
+        "management": "Докапитализация, управление резервами",
+        "semantic_ref": "psb_financial_architecture_analysis.json#regulatory_capital"
+      },
+      {
+        "id": "CONST-INT-002",
+        "constraint": "NDA партнёрства ПСБ×СПбПУ",
+        "management": "Согласование публикаций результатов",
+        "semantic_ref": "PARTNER-CONSTRAINT в Memory"
+      },
+      {
+        "id": "CONST-INT-003",
+        "constraint": "152-ФЗ — данные клиентов только on-premise",
+        "management": "Гибридная архитектура данных",
+        "semantic_ref": "PSB-CONSTRAINT в Memory"
+      }
+    ],
+    "operating_principles": [
+      {
+        "id": "OP-001",
+        "principle": "Целостность инновационного цикла",
+        "description": "Бесшовная поддержка от исследований до внедрения"
+      },
+      {
+        "id": "OP-002",
+        "principle": "Признание права на риск",
+        "description": "Допустимость недостижения цели без злого умысла"
+      }
+    ],
+    "semantic_ref": "psb_regulatory_framework_analysis.json#challenges"
+  },
+  "integration_with_6tu": {
+    "id": "6TU-INTEGRATION-001",
+    "title": "Интеграция с архитектурой 6ТУ",
+    "connection_points": [
+      {
+        "id": "6TU-CONN-001",
+        "element": "Паспорт 6ТУ-проекта",
+        "psb_role": "Включение в кредитный цикл: принадлежность к приоритетам, паспорт данных, VnV-контур",
+        "semantic_ref": "psb_technological_foundation_6tu_analysis.json#psb_actions.PA-001"
+      },
+      {
+        "id": "6TU-CONN-002",
+        "element": "Портфельные ворота",
+        "psb_role": "Траншевое финансирование по достижению зрелости и сценариям",
+        "semantic_ref": "psb_technological_foundation_6tu_analysis.json#psb_actions.PA-002"
+      },
+      {
+        "id": "6TU-CONN-003",
+        "element": "Policy-as-code",
+        "psb_role": "Реестр стандартов и тест-наборов, требование соответствия",
+        "semantic_ref": "psb_technological_foundation_6tu_analysis.json#psb_actions.PA-003"
+      },
+      {
+        "id": "6TU-CONN-004",
+        "element": "Полигонные пакеты",
+        "psb_role": "Оплата по факту прохождения сценариев SIL/MIL/VnV",
+        "semantic_ref": "psb_technological_foundation_6tu_analysis.json#psb_actions.PA-004"
+      },
+      {
+        "id": "6TU-CONN-005",
+        "element": "Мониторинг диффузии",
+        "psb_role": "Метрики от проекта до влияния на индикаторы: эффект, сценарность, устойчивость",
+        "semantic_ref": "psb_technological_foundation_6tu_analysis.json#psb_actions.PA-005"
+      },
+      {
+        "id": "6TU-CONN-006",
+        "element": "Финансовые инструменты диффузии",
+        "psb_role": "Тех-облигации, проектное финансирование под MRL, лизинг оборудования",
+        "semantic_ref": "psb_technological_foundation_6tu_analysis.json#psb_actions.PA-006"
+      },
+      {
+        "id": "6TU-CONN-007",
+        "element": "Консорциумы ключевых стеков",
+        "psb_role": "ИИ-медицина, силовая электроника, роботехника — роль финансового интегратора",
+        "semantic_ref": "psb_technological_foundation_6tu_analysis.json#psb_actions.PA-007"
+      }
+    ]
+  },
+  "spbpu_partnership_synergy": {
+    "id": "SPBPU-SYNERGY-001",
+    "title": "Синергия с партнёрством СПбПУ",
+    "value_exchange": {
+      "psb_brings": [
+        "Доступ к предприятиям ОПК",
+        "Финансовые инструменты",
+        "Регуляторный опыт",
+        "Инфраструктура доверия"
+      ],
+      "spbpu_brings": [
+        "Методология СЦИ (А.И. Боровков)",
+        "CML-Bench как платформа",
+        "ГОСТ Р 57700.37-2021",
+        "Кадры и образовательные программы"
+      ]
+    },
+    "joint_capabilities": [
+      "Создание production-ready цифровых двойников для ОПК",
+      "Верификация и валидация (VnV) с траншевым финансированием",
+      "Снижение себестоимости жизненного цикла продукции",
+      "Трансфер технологий ОПК → гражданский сектор"
+    ],
+    "semantic_ref": "psb_spbpu_context_analysis.json#partnership_value"
+  },
+  "semantic_integration": {
+    "id": "SEM-INT-001",
+    "title": "Семантическая интеграция с другими JSON-файлами",
+    "cross_references": [
+      {
+        "this_element": "state_contour.psb_position_in_state_contour",
+        "target_file": "psb_ecosystem_infrastructure_analysis.json",
+        "target_element": "cluster_model",
+        "relationship": "is_foundation_for"
+      },
+      {
+        "this_element": "regulatory_contour.document_hierarchy",
+        "target_file": "psb_regulatory_framework_analysis.json",
+        "target_element": "regulatory_architecture.layers",
+        "relationship": "mirrors"
+      },
+      {
+        "this_element": "strategic_positioning.transformation_trajectory",
+        "target_file": "psb_shareholder_logic_analysis.json",
+        "target_element": "transformation_trajectory",
+        "relationship": "aligns_with"
+      },
+      {
+        "this_element": "financial_contour.psb_target",
+        "target_file": "psb_financial_architecture_analysis.json",
+        "target_element": "zamysel_financial_model",
+        "relationship": "quantifies"
+      },
+      {
+        "this_element": "integration_with_6tu",
+        "target_file": "psb_technological_foundation_6tu_analysis.json",
+        "target_element": "psb_actions",
+        "relationship": "operationalizes"
+      },
+      {
+        "this_element": "spbpu_partnership_synergy",
+        "target_file": "psb_spbpu_context_analysis.json",
+        "target_element": "partnership_value",
+        "relationship": "extends"
+      },
+      {
+        "this_element": "financial_technology_framework.platform_ecosystem",
+        "target_file": "psb_global_trend_platform_analysis.json",
+        "target_element": "platform_value_proposition",
+        "relationship": "concretizes"
+      }
+    ]
+  },
+  "conclusions_and_recommendations": {
+    "id": "CONCL-001",
+    "strategic_conclusions": [
+      {
+        "id": "SC-001",
+        "conclusion": "ПСБ занимает уникальную позицию как единственный игрок на пересечении всех трёх контуров технологического суверенитета",
+        "implication": "Эта позиция создаёт конкурентное преимущество, не воспроизводимое другими игроками"
+      },
+      {
+        "id": "SC-002",
+        "conclusion": "Нормативная база полностью легитимизирует роль ПСБ как субъекта технологической политики",
+        "implication": "523-ФЗ официально признаёт кредитные организации агентами технологического развития"
+      },
+      {
+        "id": "SC-003",
+        "conclusion": "Партнёрство с СПбПУ создаёт методологическую основу для реализации роли",
+        "implication": "СЦИ + CML-Bench = операционализация позиции финансово-технологического агента"
+      },
+      {
+        "id": "SC-004",
+        "conclusion": "Целевой объём 2 трлн ₽ требует трансформации из банка в платформу",
+        "implication": "Линейная модель не обеспечит масштабирование — нужны сетевые эффекты"
+      }
+    ],
+    "key_actions": [
+      {
+        "id": "KA-001",
+        "action": "Войти в дирекцию МКЦП ЦД через партнёрство с ВНИИ «Центр»",
+        "priority": "critical",
+        "timeline": "2025"
+      },
+      {
+        "id": "KA-002",
+        "action": "Внедрить паспорт 6ТУ-проекта в кредитный конвейер",
+        "priority": "high",
+        "timeline": "2025-2026"
+      },
+      {
+        "id": "KA-003",
+        "action": "Запустить финансовые инструменты диффузии (тех-облигации, проектное финансирование под MRL)",
+        "priority": "high",
+        "timeline": "2025-2026"
+      },
+      {
+        "id": "KA-004",
+        "action": "Создать консорциумы по ключевым стекам с ролью финансового интегратора",
+        "priority": "medium",
+        "timeline": "2026-2027"
+      }
+    ]
+  },
+  "narrative_summary": {
+    "version": "1.0",
+    "format": "markdown",
+    "target": "portal_v2",
+    "word_count": 126,
+    "content": "## Технологический суверенитет: стратегическая роль ПСБ\n\nВ контексте санкционного давления ПСБ трансформируется из банка-исполнителя в держателя поля технологического суверенитета России.\n\n### Траектория трансформации\n\nОт обслуживания ГОЗ к формированию среды для развития суверенных технологий. ПСБ становится архитектором экосистемы, где цифровые двойники играют роль интегрирующего элемента.\n\n### Семь точек входа\n\nМатрица точек входа в технологический суверенитет: финансирование НИОКР, инвестиции в deep-tech, партнёрство с университетами (СПбПУ), создание технологических платформ, развитие кадров, институциональное строительство, международное сотрудничество.\n\n### Синергия с СПбПУ\n\nСПбПУ обеспечивает шестую точку входа — партнёрство с ведущим университетом в области Системного Цифрового Инжиниринга. Университет привносит методологию СЦИ, платформу CML-Bench и соавторство ГОСТ.\n\n### Долгосрочный горизонт\n\nСтратегия рассчитана на 20+ лет. Целевой объём операций в сегменте технологического суверенитета — 2 трлн рублей, что требует платформенной модели и сетевых эффектов."
+  }
+}

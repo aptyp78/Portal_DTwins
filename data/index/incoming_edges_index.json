@@ -1,0 +1,1912 @@
+{
+  "meta": {
+    "title": "Индекс входящих связей для Knowledge Graph",
+    "generated": "2025-11-29",
+    "description": "Автогенерированный индекс backlinks для NORM-03"
+  },
+  "incoming_by_node": {
+    "NODE-CONTEXT": [
+      {
+        "from_file": "psb_shareholder_logic_analysis.json",
+        "from_node": "NODE-SHAREHOLDER",
+        "from_path": "ownership_structure",
+        "full_ref": "psb_spbpu_context_analysis.json#key_actors.psb"
+      },
+      {
+        "from_file": "psb_shareholder_logic_analysis.json",
+        "from_node": "NODE-SHAREHOLDER",
+        "from_path": "shareholder_motivation.levels[0]",
+        "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_0_national_interest"
+      },
+      {
+        "from_file": "psb_shareholder_logic_analysis.json",
+        "from_node": "NODE-SHAREHOLDER",
+        "from_path": "shareholder_motivation.levels[2]",
+        "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_2_instrumental_goal"
+      },
+      {
+        "from_file": "psb_shareholder_logic_analysis.json",
+        "from_node": "NODE-SHAREHOLDER",
+        "from_path": "shareholder_motivation.levels[3]",
+        "full_ref": "psb_spbpu_context_analysis.json#key_definitions.technology_development_ecosystem"
+      },
+      {
+        "from_file": "psb_shareholder_logic_analysis.json",
+        "from_node": "NODE-SHAREHOLDER",
+        "from_path": "shareholder_motivation.levels[4]",
+        "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_1_national_goal"
+      },
+      {
+        "from_file": "psb_shareholder_logic_analysis.json",
+        "from_node": "NODE-SHAREHOLDER",
+        "from_path": "shareholder_expectations.strategic_national[0]",
+        "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.national_priorities"
+      },
+      {
+        "from_file": "psb_shareholder_logic_analysis.json",
+        "from_node": "NODE-SHAREHOLDER",
+        "from_path": "shareholder_expectations.operational_psb[0]",
+        "full_ref": "psb_spbpu_context_analysis.json#key_actors.psb.strategic_positioning"
+      },
+      {
+        "from_file": "psb_shareholder_logic_analysis.json",
+        "from_node": "NODE-SHAREHOLDER",
+        "from_path": "shareholder_expectations.operational_psb[3]",
+        "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_4_psb_role.functions"
+      },
+      {
+        "from_file": "psb_shareholder_logic_analysis.json",
+        "from_node": "NODE-SHAREHOLDER",
+        "from_path": "shareholder_influence.influence_channels[0]",
+        "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy"
+      },
+      {
+        "from_file": "psb_shareholder_logic_analysis.json",
+        "from_node": "NODE-SHAREHOLDER",
+        "from_path": "shareholder_influence.influence_channels[2]",
+        "full_ref": "psb_spbpu_context_analysis.json#institutional_framework.mkcp_dt"
+      },
+      {
+        "from_file": "psb_shareholder_logic_analysis.json",
+        "from_node": "NODE-SHAREHOLDER",
+        "from_path": "ownership_principles.principles[0]",
+        "full_ref": "psb_spbpu_context_analysis.json#problem_space.challenges"
+      },
+      {
+        "from_file": "psb_shareholder_logic_analysis.json",
+        "from_node": "NODE-SHAREHOLDER",
+        "from_path": "ownership_principles.principles[3]",
+        "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_4_psb_role.functions"
+      },
+      {
+        "from_file": "psb_shareholder_logic_analysis.json",
+        "from_node": "NODE-SHAREHOLDER",
+        "from_path": "ownership_horizons.horizons[1]",
+        "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_3_measurable_kpi"
+      },
+      {
+        "from_file": "psb_shareholder_logic_analysis.json",
+        "from_node": "NODE-SHAREHOLDER",
+        "from_path": "target_states.states[0]",
+        "full_ref": "psb_spbpu_context_analysis.json#key_actors.psb.role_in_project"
+      },
+      {
+        "from_file": "psb_shareholder_logic_analysis.json",
+        "from_node": "NODE-SHAREHOLDER",
+        "from_path": "target_states.states[1]",
+        "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+      },
+      {
+        "from_file": "psb_shareholder_logic_analysis.json",
+        "from_node": "NODE-SHAREHOLDER",
+        "from_path": "target_states.states[4]",
+        "full_ref": "psb_spbpu_context_analysis.json#problem_space.operating_principles"
+      },
+      {
+        "from_file": "psb_shareholder_logic_analysis.json",
+        "from_node": "NODE-SHAREHOLDER",
+        "from_path": "constraints_and_assumptions.constraints[2]",
+        "full_ref": "psb_spbpu_context_analysis.json#problem_space.challenges.CH-003"
+      },
+      {
+        "from_file": "psb_shareholder_logic_analysis.json",
+        "from_node": "NODE-SHAREHOLDER",
+        "from_path": "constraints_and_assumptions.assumptions[2]",
+        "full_ref": "psb_spbpu_context_analysis.json#institutional_framework.mkcp_dt.key_insight_for_psb"
+      },
+      {
+        "from_file": "psb_shareholder_logic_analysis.json",
+        "from_node": "NODE-SHAREHOLDER",
+        "from_path": "success_indicators.indicator_levels[4]",
+        "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_3_measurable_kpi"
+      },
+      {
+        "from_file": "psb_shareholder_logic_analysis.json",
+        "from_node": "NODE-SHAREHOLDER",
+        "from_path": "current_functions.function_blocks[0]",
+        "full_ref": "psb_spbpu_context_analysis.json#application_domain.primary_focus"
+      },
+      {
+        "from_file": "psb_shareholder_logic_analysis.json",
+        "from_node": "NODE-SHAREHOLDER",
+        "from_path": "current_functions.function_blocks[3]",
+        "full_ref": "psb_spbpu_context_analysis.json#institutional_framework.mkcp_dt.financial_structure.by_source"
+      },
+      {
+        "from_file": "psb_financial_architecture_analysis.json",
+        "from_node": "NODE-FINANCE",
+        "relationship": "operationalizes_strategy",
+        "description": "Финансовые механизмы обеспечивают ресурсную базу для стратегических целей партнёрства"
+      },
+      {
+        "from_file": "psb_financial_architecture_analysis.json",
+        "from_node": "NODE-FINANCE",
+        "from_path": "executive_summary",
+        "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_4_psb_role"
+      },
+      {
+        "from_file": "psb_financial_architecture_analysis.json",
+        "from_node": "NODE-FINANCE",
+        "from_path": "business_model.profit_streams[0]",
+        "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.national_priorities.defense"
+      },
+      {
+        "from_file": "psb_financial_architecture_analysis.json",
+        "from_node": "NODE-FINANCE",
+        "from_path": "business_model.profit_streams[2]",
+        "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.priority_focus"
+      },
+      {
+        "from_file": "psb_financial_architecture_analysis.json",
+        "from_node": "NODE-FINANCE",
+        "from_path": "implications_for_partnership.opportunities[0]",
+        "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+      },
+      {
+        "from_file": "psb_financial_architecture_analysis.json",
+        "from_node": "NODE-FINANCE",
+        "from_path": "implications_for_partnership.opportunities[1]",
+        "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model.methodological_layer"
+      },
+      {
+        "from_file": "psb_financial_architecture_analysis.json",
+        "from_node": "NODE-FINANCE",
+        "from_path": "implications_for_partnership.opportunities[2]",
+        "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model.platform_layer"
+      },
+      {
+        "from_file": "psb_financial_architecture_analysis.json",
+        "from_node": "NODE-FINANCE",
+        "from_path": "implications_for_partnership.opportunities[3]",
+        "full_ref": "psb_spbpu_context_analysis.json#problem_space.operating_principles[1]"
+      },
+      {
+        "from_file": "psb_financial_architecture_analysis.json",
+        "from_node": "NODE-FINANCE",
+        "from_path": "implications_for_partnership.opportunities[3]",
+        "full_ref": "psb_spbpu_context_analysis.json#summary.psb_value_proposition"
+      },
+      {
+        "from_file": "psb_financial_architecture_analysis.json",
+        "from_node": "NODE-FINANCE",
+        "from_path": "implications_for_partnership.strategic_alignment",
+        "full_ref": "psb_spbpu_context_analysis.json#summary.psb_value_proposition"
+      },
+      {
+        "from_file": "psb_ecosystem_infrastructure_analysis.json",
+        "from_node": "NODE-ECOSYSTEM",
+        "relationship": "implements",
+        "description": "Ð­ÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ð° Ñ€ÐµÐ°Ð»Ð¸Ð·ÑƒÐµÑ‚ ÑÑ‚Ñ€Ð°Ñ‚ÐµÐ³Ð¸Ñ‡ÐµÑÐºÐ¸Ð¹ ÐºÐ¾Ð½Ñ‚ÐµÐºÑÑ‚ Ð¿Ð°Ñ€Ñ‚Ð½Ñ‘Ñ€ÑÑ‚Ð²Ð° ÐŸÐ¡Ð‘Ã—Ð¡ÐŸÐ±ÐŸÐ£"
+      },
+      {
+        "from_file": "psb_ecosystem_infrastructure_analysis.json",
+        "from_node": "NODE-ECOSYSTEM",
+        "from_path": "executive_summary",
+        "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_4_psb_role"
+      },
+      {
+        "from_file": "psb_ecosystem_infrastructure_analysis.json",
+        "from_node": "NODE-ECOSYSTEM",
+        "from_path": "ecosystem_architecture.clusters[1]",
+        "full_ref": "psb_spbpu_context_analysis.json#institutional_framework.mkcp_dt"
+      },
+      {
+        "from_file": "psb_ecosystem_infrastructure_analysis.json",
+        "from_node": "NODE-ECOSYSTEM",
+        "from_path": "ecosystem_architecture.clusters[3]",
+        "full_ref": "psb_spbpu_context_analysis.json#problem_space.challenges[2]"
+      },
+      {
+        "from_file": "psb_ecosystem_infrastructure_analysis.json",
+        "from_node": "NODE-ECOSYSTEM",
+        "from_path": "ecosystem_architecture.clusters[4]",
+        "full_ref": "psb_spbpu_context_analysis.json#solution_architecture"
+      },
+      {
+        "from_file": "psb_ecosystem_infrastructure_analysis.json",
+        "from_node": "NODE-ECOSYSTEM",
+        "from_path": "ecosystem_architecture.clusters[4]",
+        "full_ref": "psb_spbpu_context_analysis.json#application_domain.digital_twin_effects"
+      },
+      {
+        "from_file": "psb_ecosystem_infrastructure_analysis.json",
+        "from_node": "NODE-ECOSYSTEM",
+        "from_path": "ecosystem_architecture.clusters[4].components[0].partnerships[0]",
+        "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+      },
+      {
+        "from_file": "psb_ecosystem_infrastructure_analysis.json",
+        "from_node": "NODE-ECOSYSTEM",
+        "from_path": "ecosystem_architecture.clusters[4].components[0].partnerships[0]",
+        "full_ref": "psb_spbpu_context_analysis.json#institutional_framework.mkcp_dt"
+      },
+      {
+        "from_file": "psb_regulatory_framework_analysis.json",
+        "from_node": "NODE-REGULATORY",
+        "relationship": "frames_partnership",
+        "description": "Ð—Ð°Ð´Ð°Ñ‘Ñ‚ Ñ€Ð°Ð¼ÐºÑƒ Ð´Ð»Ñ Ð¿Ð°Ñ€Ñ‚Ð½Ñ‘Ñ€ÑÑ‚Ð²Ð° Ð² ÐºÐ¾Ð½Ñ‚ÑƒÑ€Ðµ Ð½Ð°ÑƒÐºÐ°-Ñ‚ÐµÑ…Ð½Ð¾Ð»Ð¾Ð³Ð¸Ð¸-Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´ÑÑ‚Ð²Ð¾"
+      },
+      {
+        "from_file": "psb_regulatory_framework_analysis.json",
+        "from_node": "NODE-REGULATORY",
+        "from_path": "executive_summary",
+        "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_0_national_interest"
+      },
+      {
+        "from_file": "psb_regulatory_framework_analysis.json",
+        "from_node": "NODE-REGULATORY",
+        "from_path": "regulatory_architecture.layers[0].documents[2]",
+        "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.priority_focus"
+      },
+      {
+        "from_file": "psb_strategic_sovereignty_role_analysis.json",
+        "from_node": "NODE-SOVEREIGNTY",
+        "relationship": "enables_partnership",
+        "description": "Позиционирование создаёт основу для партнёрства с СПбПУ"
+      },
+      {
+        "from_file": "psb_technological_foundation_6tu_analysis.json",
+        "from_node": "NODE-TECHBASE",
+        "relationship": "concretizes_methodology",
+        "description": "6Ð¢Ð£ ÐºÐ¾Ð½ÐºÑ€ÐµÑ‚Ð¸Ð·Ð¸Ñ€ÑƒÐµÑ‚ Ð¼ÐµÑ‚Ð¾Ð´Ð¾Ð»Ð¾Ð³Ð¸ÑŽ Ð¡Ð¦Ð˜ Ð¸ Ñ€Ð¾Ð»ÑŒ CML-Bench"
+      },
+      {
+        "from_file": "psb_technological_foundation_6tu_analysis.json",
+        "from_node": "NODE-TECHBASE",
+        "from_path": "executive_summary",
+        "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+      },
+      {
+        "from_file": "psb_technological_foundation_6tu_analysis.json",
+        "from_node": "NODE-TECHBASE",
+        "from_path": "ten_principles.principles[0]",
+        "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_1_national_goal"
+      },
+      {
+        "from_file": "psb_technological_foundation_6tu_analysis.json",
+        "from_node": "NODE-TECHBASE",
+        "from_path": "ten_principles.principles[3]",
+        "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+      },
+      {
+        "from_file": "psb_technological_foundation_6tu_analysis.json",
+        "from_node": "NODE-TECHBASE",
+        "from_path": "ten_principles.principles[3]",
+        "full_ref": "psb_spbpu_context_analysis.json#key_definitions"
+      },
+      {
+        "from_file": "psb_technological_foundation_6tu_analysis.json",
+        "from_node": "NODE-TECHBASE",
+        "from_path": "ten_principles.principles[4]",
+        "full_ref": "psb_spbpu_context_analysis.json#problem_space.operating_principles"
+      },
+      {
+        "from_file": "psb_technological_foundation_6tu_analysis.json",
+        "from_node": "NODE-TECHBASE",
+        "from_path": "psb_action_plan.actions[0]",
+        "full_ref": "psb_spbpu_context_analysis.json#solution_architecture"
+      },
+      {
+        "from_file": "psb_technological_foundation_6tu_analysis.json",
+        "from_node": "NODE-TECHBASE",
+        "from_path": "integration_with_partnership.synergy_points[0]",
+        "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+      },
+      {
+        "from_file": "psb_technological_foundation_6tu_analysis.json",
+        "from_node": "NODE-TECHBASE",
+        "from_path": "integration_with_partnership.synergy_points[1]",
+        "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model.methodological_layer"
+      },
+      {
+        "from_file": "psb_technological_foundation_6tu_analysis.json",
+        "from_node": "NODE-TECHBASE",
+        "from_path": "integration_with_partnership.synergy_points[2]",
+        "full_ref": "psb_spbpu_context_analysis.json#key_actors.borovkov"
+      },
+      {
+        "from_file": "psb_technological_foundation_6tu_analysis.json",
+        "from_node": "NODE-TECHBASE",
+        "from_path": "integration_with_partnership.synergy_points[4]",
+        "full_ref": "psb_spbpu_context_analysis.json#institutional_framework.mkcp_dt"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "relationship": "provides_technological_core",
+        "description": "ЦД и CML-Bench становятся базовыми единицами платформы"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "prerequisites_analysis.levels[0]",
+        "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_0_national_interest"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "prerequisites_analysis.levels[3]",
+        "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_4_psb_role"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "platform_economy_model.digital_twin_role",
+        "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "eight_platform_values.values[2]",
+        "full_ref": "psb_spbpu_context_analysis.json#partnership_framework"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "eight_platform_values.values[3]",
+        "full_ref": "psb_spbpu_context_analysis.json#psb_value_proposition"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "eight_platform_values.values[6]",
+        "full_ref": "psb_spbpu_context_analysis.json#problem_space.operating_principles.right_to_risk"
+      },
+      {
+        "from_file": "psb_sci_architecture_analysis.json",
+        "from_node": "NODE-SCI",
+        "relationship": "concretizes",
+        "description": "СЦИ конкретизирует методологический слой трёхуровневой модели партнёрства"
+      },
+      {
+        "from_file": "psb_sci_architecture_analysis.json",
+        "from_node": "NODE-SCI",
+        "from_path": "executive_summary",
+        "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model.methodological_layer"
+      },
+      {
+        "from_file": "psb_sci_architecture_analysis.json",
+        "from_node": "NODE-SCI",
+        "from_path": "six_layer_model.layers[1]",
+        "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.level_3_measurable_kpi"
+      },
+      {
+        "from_file": "psb_sci_architecture_analysis.json",
+        "from_node": "NODE-SCI",
+        "from_path": "six_layer_model.layers[2]",
+        "full_ref": "psb_spbpu_context_analysis.json#partnership_assets.spbpu"
+      },
+      {
+        "from_file": "psb_sci_architecture_analysis.json",
+        "from_node": "NODE-SCI",
+        "from_path": "six_layer_model.layers[4]",
+        "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model.platform_layer"
+      },
+      {
+        "from_file": "psb_sci_architecture_analysis.json",
+        "from_node": "NODE-SCI",
+        "from_path": "six_layer_model.layers[5]",
+        "full_ref": "psb_spbpu_context_analysis.json#partnership_assets"
+      },
+      {
+        "from_file": "psb_sci_architecture_analysis.json",
+        "from_node": "NODE-SCI",
+        "from_path": "sci_dt_relationship",
+        "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+      },
+      {
+        "from_file": "psb_dt_platforms_market_analysis.json",
+        "from_node": "NODE-MARKET",
+        "relationship": "contextualizes_position",
+        "description": "Рыночный анализ позиционирует CML-Bench в глобальном контексте"
+      },
+      {
+        "from_file": "psb_dt_platforms_market_analysis.json",
+        "from_node": "NODE-MARKET",
+        "from_path": "executive_summary",
+        "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+      },
+      {
+        "from_file": "psb_dt_platforms_market_analysis.json",
+        "from_node": "NODE-MARKET",
+        "from_path": "competitive_landscape",
+        "full_ref": "psb_spbpu_context_analysis.json#partnership_assets.spbpu.cml_bench"
+      },
+      {
+        "from_file": "psb_dt_platforms_market_analysis.json",
+        "from_node": "NODE-MARKET",
+        "from_path": "russian_platforms_deep_dive.platforms[4]",
+        "full_ref": "psb_spbpu_context_analysis.json#partnership_assets.spbpu.cml_bench"
+      },
+      {
+        "from_file": "psb_cmlbench_technology_context_analysis.json",
+        "from_node": "NODE-CMLBENCH",
+        "relationship": "establishes_strategic_context",
+        "description": "Контекст партнёрства определяет роль CML-Bench"
+      },
+      {
+        "from_file": "psb_cmlbench_technology_context_analysis.json",
+        "from_node": "NODE-CMLBENCH",
+        "from_path": "executive_summary",
+        "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model.platform_layer"
+      },
+      {
+        "from_file": "psb_cmlbench_technology_context_analysis.json",
+        "from_node": "NODE-CMLBENCH",
+        "from_path": "platform_identity",
+        "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "executive_summary",
+        "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_0_national_interest"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "timeline_analysis.events[2]",
+        "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "timeline_analysis.events[4]",
+        "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_0_national_interest"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "institutional_framework.governance_structure",
+        "full_ref": "psb_spbpu_context_analysis.json#key_actors"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "institutional_framework.mkcp_directorate",
+        "full_ref": "psb_spbpu_context_analysis.json#key_actors"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "strategic_positioning.value_proposition",
+        "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "strategic_positioning.strategic_entry_points",
+        "full_ref": "psb_spbpu_context_analysis.json#key_actors"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "executive_summary",
+        "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "organizational_structure",
+        "full_ref": "psb_spbpu_context_analysis.json#key_actors"
+      }
+    ],
+    "NODE-SHAREHOLDER": [
+      {
+        "from_file": "psb_financial_architecture_analysis.json",
+        "from_node": "NODE-FINANCE",
+        "relationship": "implements_philosophy",
+        "description": "Финансовая архитектура реализует философию и логику миссионного акционера"
+      },
+      {
+        "from_file": "psb_financial_architecture_analysis.json",
+        "from_node": "NODE-FINANCE",
+        "from_path": "executive_summary",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_type.combined_type"
+      },
+      {
+        "from_file": "psb_financial_architecture_analysis.json",
+        "from_node": "NODE-FINANCE",
+        "from_path": "business_model.profit_streams[0]",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_expectations.operational_psb[0]"
+      },
+      {
+        "from_file": "psb_financial_architecture_analysis.json",
+        "from_node": "NODE-FINANCE",
+        "from_path": "business_model.profit_streams[1]",
+        "full_ref": "psb_shareholder_logic_analysis.json#constraints.economic"
+      },
+      {
+        "from_file": "psb_financial_architecture_analysis.json",
+        "from_node": "NODE-FINANCE",
+        "from_path": "financial_dynamics",
+        "full_ref": "psb_shareholder_logic_analysis.json#success_metrics.operational_financial"
+      },
+      {
+        "from_file": "psb_financial_architecture_analysis.json",
+        "from_node": "NODE-FINANCE",
+        "from_path": "financial_dynamics",
+        "full_ref": "psb_shareholder_logic_analysis.json#success_metrics.institutional_sustainability"
+      },
+      {
+        "from_file": "psb_financial_architecture_analysis.json",
+        "from_node": "NODE-FINANCE",
+        "from_path": "reserve_architecture",
+        "full_ref": "psb_shareholder_logic_analysis.json#constraints.economic"
+      },
+      {
+        "from_file": "psb_financial_architecture_analysis.json",
+        "from_node": "NODE-FINANCE",
+        "from_path": "reserve_architecture",
+        "full_ref": "psb_shareholder_logic_analysis.json#assumptions.profit_subordinate_to_mission"
+      },
+      {
+        "from_file": "psb_financial_architecture_analysis.json",
+        "from_node": "NODE-FINANCE",
+        "from_path": "capital_management.docapitalization_logic",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_behavior.docapitalization_instead_of_extraction"
+      },
+      {
+        "from_file": "psb_financial_architecture_analysis.json",
+        "from_node": "NODE-FINANCE",
+        "from_path": "capital_management.docapitalization_logic",
+        "full_ref": "psb_shareholder_logic_analysis.json#ownership_nature.mission_ownership"
+      },
+      {
+        "from_file": "psb_financial_architecture_analysis.json",
+        "from_node": "NODE-FINANCE",
+        "from_path": "dividend_policy",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_type"
+      },
+      {
+        "from_file": "psb_financial_architecture_analysis.json",
+        "from_node": "NODE-FINANCE",
+        "from_path": "dividend_policy",
+        "full_ref": "psb_shareholder_logic_analysis.json#ownership_horizon.strategically_indefinite"
+      },
+      {
+        "from_file": "psb_financial_architecture_analysis.json",
+        "from_node": "NODE-FINANCE",
+        "from_path": "implications_for_partnership.constraints[1]",
+        "full_ref": "psb_shareholder_logic_analysis.json#success_metrics.strategic_temporal"
+      },
+      {
+        "from_file": "psb_ecosystem_infrastructure_analysis.json",
+        "from_node": "NODE-ECOSYSTEM",
+        "relationship": "operationalizes",
+        "description": "Ð­ÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ð° Ð¾Ð¿ÐµÑ€Ð°Ñ†Ð¸Ð¾Ð½Ð°Ð»Ð¸Ð·Ð¸Ñ€ÑƒÐµÑ‚ Ñ„Ð¸Ð»Ð¾ÑÐ¾Ñ„Ð¸ÑŽ Ð¸ Ð¿Ñ€Ð¸Ð½Ñ†Ð¸Ð¿Ñ‹ Ð¼Ð¸ÑÑÐ¸Ð¾Ð½Ð½Ð¾Ð³Ð¾ Ð°ÐºÑ†Ð¸Ð¾Ð½ÐµÑ€Ð°"
+      },
+      {
+        "from_file": "psb_ecosystem_infrastructure_analysis.json",
+        "from_node": "NODE-ECOSYSTEM",
+        "from_path": "executive_summary",
+        "full_ref": "psb_shareholder_logic_analysis.json#target_states"
+      },
+      {
+        "from_file": "psb_ecosystem_infrastructure_analysis.json",
+        "from_node": "NODE-ECOSYSTEM",
+        "from_path": "ecosystem_architecture.clusters[0]",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_expectations.operational_psb[0]"
+      },
+      {
+        "from_file": "psb_ecosystem_infrastructure_analysis.json",
+        "from_node": "NODE-ECOSYSTEM",
+        "from_path": "ecosystem_architecture.clusters[1]",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_behavior.strategic[1]"
+      },
+      {
+        "from_file": "psb_ecosystem_infrastructure_analysis.json",
+        "from_node": "NODE-ECOSYSTEM",
+        "from_path": "ecosystem_architecture.clusters[2]",
+        "full_ref": "psb_shareholder_logic_analysis.json#target_states[1]"
+      },
+      {
+        "from_file": "psb_ecosystem_infrastructure_analysis.json",
+        "from_node": "NODE-ECOSYSTEM",
+        "from_path": "ecosystem_architecture.clusters[2]",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_principles[1]"
+      },
+      {
+        "from_file": "psb_ecosystem_infrastructure_analysis.json",
+        "from_node": "NODE-ECOSYSTEM",
+        "from_path": "ecosystem_architecture.clusters[3]",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_principles[0]"
+      },
+      {
+        "from_file": "psb_regulatory_framework_analysis.json",
+        "from_node": "NODE-REGULATORY",
+        "relationship": "legitimizes",
+        "description": "ÐÐ¾Ñ€Ð¼Ð°Ñ‚Ð¸Ð²Ð½Ð°Ñ Ð±Ð°Ð·Ð° Ð»ÐµÐ³Ð¸Ñ‚Ð¸Ð¼Ð¸Ð·Ð¸Ñ€ÑƒÐµÑ‚ Ñ€Ð¾Ð»ÑŒ Ð¼Ð¸ÑÑÐ¸Ð¾Ð½Ð½Ð¾Ð³Ð¾ Ð°ÐºÑ†Ð¸Ð¾Ð½ÐµÑ€Ð°"
+      },
+      {
+        "from_file": "psb_regulatory_framework_analysis.json",
+        "from_node": "NODE-REGULATORY",
+        "from_path": "executive_summary",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_motivation.MOT-001"
+      },
+      {
+        "from_file": "psb_regulatory_framework_analysis.json",
+        "from_node": "NODE-REGULATORY",
+        "from_path": "legal_framework_523fz",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_behavior.institutional"
+      },
+      {
+        "from_file": "psb_strategic_sovereignty_role_analysis.json",
+        "from_node": "NODE-SOVEREIGNTY",
+        "relationship": "implements_mission",
+        "description": "Стратегическое позиционирование реализует миссию акционера"
+      },
+      {
+        "from_file": "psb_strategic_sovereignty_role_analysis.json",
+        "from_node": "NODE-SOVEREIGNTY",
+        "from_path": "executive_summary",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_motivation.MOT-001"
+      },
+      {
+        "from_file": "psb_technological_foundation_6tu_analysis.json",
+        "from_node": "NODE-TECHBASE",
+        "relationship": "operationalizes_vision",
+        "description": "6Ð¢Ð£-Ð°Ñ€Ñ…Ð¸Ñ‚ÐµÐºÑ‚ÑƒÑ€Ð° Ð¾Ð¿ÐµÑ€Ð°Ñ†Ð¸Ð¾Ð½Ð°Ð»Ð¸Ð·Ð¸Ñ€ÑƒÐµÑ‚ ÑÑ‚Ñ€Ð°Ñ‚ÐµÐ³Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ Ð²Ð¸Ð´ÐµÐ½Ð¸Ðµ Ð¼Ð¸ÑÑÐ¸Ð¾Ð½Ð½Ð¾Ð³Ð¾ Ð°ÐºÑ†Ð¸Ð¾Ð½ÐµÑ€Ð°"
+      },
+      {
+        "from_file": "psb_technological_foundation_6tu_analysis.json",
+        "from_node": "NODE-TECHBASE",
+        "from_path": "executive_summary",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_motivation.civilizational_subjectivity"
+      },
+      {
+        "from_file": "psb_technological_foundation_6tu_analysis.json",
+        "from_node": "NODE-TECHBASE",
+        "from_path": "ten_principles.principles[0]",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_motivation"
+      },
+      {
+        "from_file": "psb_technological_foundation_6tu_analysis.json",
+        "from_node": "NODE-TECHBASE",
+        "from_path": "ten_principles.principles[6]",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_principles[0]"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "relationship": "justifies_mission",
+        "description": "Платформенная модель — операциональное воплощение миссии миссионного акционера"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "executive_summary",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_type.ownership_horizon"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "prerequisites_analysis.levels[0]",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_motivation.civilizational_subjectivity"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "prerequisites_analysis.levels[1]",
+        "full_ref": "psb_shareholder_logic_analysis.json#constraints.geopolitical"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "prerequisites_analysis.levels[3]",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_type"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "eight_platform_values.values[0]",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_behavior.coordinating"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "eight_platform_values.values[4]",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_principles.trust_and_participation"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "eight_platform_values.values[4]",
+        "full_ref": "psb_shareholder_logic_analysis.json#target_states.trust_node"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "eight_platform_values.values[7]",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_motivation.sustainability_and_integrity"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "psb_platform_role",
+        "full_ref": "psb_shareholder_logic_analysis.json#target_states"
+      },
+      {
+        "from_file": "psb_sci_architecture_analysis.json",
+        "from_node": "NODE-SCI",
+        "relationship": "operationalizes_vision",
+        "description": "СЦИ операционализирует стратегическое видение технологического суверенитета"
+      },
+      {
+        "from_file": "psb_sci_architecture_analysis.json",
+        "from_node": "NODE-SCI",
+        "from_path": "executive_summary",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_motivation.civilizational_subjectivity"
+      },
+      {
+        "from_file": "psb_sci_architecture_analysis.json",
+        "from_node": "NODE-SCI",
+        "from_path": "six_layer_model.layers[0]",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_type"
+      },
+      {
+        "from_file": "psb_dt_platforms_market_analysis.json",
+        "from_node": "NODE-MARKET",
+        "from_path": "executive_summary",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_type.architectonic"
+      },
+      {
+        "from_file": "psb_dt_platforms_market_analysis.json",
+        "from_node": "NODE-MARKET",
+        "from_path": "strategic_implications",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_type"
+      },
+      {
+        "from_file": "psb_cmlbench_technology_context_analysis.json",
+        "from_node": "NODE-CMLBENCH",
+        "from_path": "strategic_conclusions",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_type"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "executive_summary",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_motivation.levels"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "timeline_analysis.events[1]",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_motivation.levels.MOT-001"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "timeline_analysis.events[3]",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_motivation.levels.MOT-001"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "strategic_positioning.value_proposition",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_type"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "executive_summary",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_motivation.levels"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "principles_of_formation",
+        "full_ref": "psb_shareholder_logic_analysis.json#shareholder_principles"
+      }
+    ],
+    "NODE-FINANCE": [
+      {
+        "from_file": "psb_ecosystem_infrastructure_analysis.json",
+        "from_node": "NODE-ECOSYSTEM",
+        "relationship": "utilizes",
+        "description": "Ð­ÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ð° Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚ Ñ„Ð¸Ð½Ð°Ð½ÑÐ¾Ð²Ñ‹Ðµ Ð¼ÐµÑ…Ð°Ð½Ð¸Ð·Ð¼Ñ‹ Ð´Ð»Ñ Ñ€ÐµÐ°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ð¸ ÐºÐ»Ð°ÑÑ‚ÐµÑ€Ð½Ñ‹Ñ… Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¹"
+      },
+      {
+        "from_file": "psb_ecosystem_infrastructure_analysis.json",
+        "from_node": "NODE-ECOSYSTEM",
+        "from_path": "executive_summary",
+        "full_ref": "psb_financial_architecture_analysis.json#executive_summary.institutional_type"
+      },
+      {
+        "from_file": "psb_ecosystem_infrastructure_analysis.json",
+        "from_node": "NODE-ECOSYSTEM",
+        "from_path": "ecosystem_architecture.clusters[0]",
+        "full_ref": "psb_financial_architecture_analysis.json#business_model"
+      },
+      {
+        "from_file": "psb_ecosystem_infrastructure_analysis.json",
+        "from_node": "NODE-ECOSYSTEM",
+        "from_path": "ecosystem_architecture.clusters[4]",
+        "full_ref": "psb_financial_architecture_analysis.json#business_model.profit_streams[2]"
+      },
+      {
+        "from_file": "psb_regulatory_framework_analysis.json",
+        "from_node": "NODE-REGULATORY",
+        "relationship": "enables_instruments",
+        "description": "523-Ð¤Ð— ÑÐ¾Ð·Ð´Ð°Ñ‘Ñ‚ Ð¿Ñ€Ð°Ð²Ð¾Ð²ÑƒÑŽ Ð¾ÑÐ½Ð¾Ð²Ñƒ Ð´Ð»Ñ Ñ„Ð¸Ð½Ð°Ð½ÑÐ¾Ð²Ñ‹Ñ… Ð¸Ð½ÑÑ‚Ñ€ÑƒÐ¼ÐµÐ½Ñ‚Ð¾Ð² 6Ð¢Ð£"
+      },
+      {
+        "from_file": "psb_strategic_sovereignty_role_analysis.json",
+        "from_node": "NODE-SOVEREIGNTY",
+        "relationship": "resources_role",
+        "description": "Финансовая архитектура обеспечивает ресурсы для роли"
+      },
+      {
+        "from_file": "psb_technological_foundation_6tu_analysis.json",
+        "from_node": "NODE-TECHBASE",
+        "relationship": "requires_instruments",
+        "description": "Ð ÐµÐ°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ñ 6Ð¢Ð£ Ñ‚Ñ€ÐµÐ±ÑƒÐµÑ‚ ÑÐ¿ÐµÑ†Ð¸Ð°Ð»ÑŒÐ½Ñ‹Ñ… Ñ„Ð¸Ð½Ð°Ð½ÑÐ¾Ð²Ñ‹Ñ… Ð¸Ð½ÑÑ‚Ñ€ÑƒÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð´Ð¸Ñ„Ñ„ÑƒÐ·Ð¸Ð¸"
+      },
+      {
+        "from_file": "psb_technological_foundation_6tu_analysis.json",
+        "from_node": "NODE-TECHBASE",
+        "from_path": "ten_principles.principles[1]",
+        "full_ref": "psb_financial_architecture_analysis.json#business_model"
+      },
+      {
+        "from_file": "psb_technological_foundation_6tu_analysis.json",
+        "from_node": "NODE-TECHBASE",
+        "from_path": "ten_principles.principles[4]",
+        "full_ref": "psb_financial_architecture_analysis.json#risk_management"
+      },
+      {
+        "from_file": "psb_technological_foundation_6tu_analysis.json",
+        "from_node": "NODE-TECHBASE",
+        "from_path": "ten_principles.principles[9]",
+        "full_ref": "psb_financial_architecture_analysis.json#kpi_framework"
+      },
+      {
+        "from_file": "psb_technological_foundation_6tu_analysis.json",
+        "from_node": "NODE-TECHBASE",
+        "from_path": "psb_action_plan.actions[0]",
+        "full_ref": "psb_financial_architecture_analysis.json#credit_process"
+      },
+      {
+        "from_file": "psb_technological_foundation_6tu_analysis.json",
+        "from_node": "NODE-TECHBASE",
+        "from_path": "integration_with_partnership.synergy_points[0]",
+        "full_ref": "psb_financial_architecture_analysis.json#business_model"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "relationship": "requires_new_instruments",
+        "description": "Платформенная модель требует расширения финансовой архитектуры новыми инструментами диффузии"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "prerequisites_analysis.levels[2]",
+        "full_ref": "psb_financial_architecture_analysis.json#business_model"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "anti_thesis",
+        "full_ref": "psb_financial_architecture_analysis.json#risk_management"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "eight_platform_values.values[1]",
+        "full_ref": "psb_financial_architecture_analysis.json#business_model"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "eight_platform_values.values[7]",
+        "full_ref": "psb_financial_architecture_analysis.json#reserves_architecture"
+      },
+      {
+        "from_file": "psb_sci_architecture_analysis.json",
+        "from_node": "NODE-SCI",
+        "from_path": "six_layer_model.layers[1]",
+        "full_ref": "psb_financial_architecture_analysis.json#kpi_framework"
+      },
+      {
+        "from_file": "psb_sci_architecture_analysis.json",
+        "from_node": "NODE-SCI",
+        "from_path": "lifecycle_integration",
+        "full_ref": "psb_financial_architecture_analysis.json#business_model.profit_streams"
+      },
+      {
+        "from_file": "psb_sci_architecture_analysis.json",
+        "from_node": "NODE-SCI",
+        "from_path": "psb_integration_points",
+        "full_ref": "psb_financial_architecture_analysis.json#business_model"
+      },
+      {
+        "from_file": "psb_cmlbench_technology_context_analysis.json",
+        "from_node": "NODE-CMLBENCH",
+        "from_path": "psb_integration_value.financial_integration",
+        "full_ref": "psb_financial_architecture_analysis.json#investment_framework"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "timeline_analysis.events[1]",
+        "full_ref": "psb_financial_architecture_analysis.json#revenue_streams.defense_contracts"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "institutional_framework.mkcp_directorate",
+        "full_ref": "psb_financial_architecture_analysis.json#investment_framework"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "requirements_analysis.vv_methodology",
+        "full_ref": "psb_financial_architecture_analysis.json#investment_framework"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "strategic_positioning.strategic_entry_points",
+        "full_ref": "psb_financial_architecture_analysis.json#revenue_streams"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "program_parameters",
+        "full_ref": "psb_financial_architecture_analysis.json#revenue_streams"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "participants_analysis",
+        "full_ref": "psb_financial_architecture_analysis.json#revenue_streams"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "target_indicators",
+        "full_ref": "psb_financial_architecture_analysis.json#kpi_model"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "financing_mechanisms",
+        "full_ref": "psb_financial_architecture_analysis.json#revenue_streams"
+      }
+    ],
+    "NODE-ECOSYSTEM": [
+      {
+        "from_file": "psb_regulatory_framework_analysis.json",
+        "from_node": "NODE-REGULATORY",
+        "relationship": "structures_actors",
+        "description": "ÐžÐ¿Ñ€ÐµÐ´ÐµÐ»ÑÐµÑ‚ Ñ€Ð¾Ð»Ð¸ Ð°ÐºÑ‚Ð¾Ñ€Ð¾Ð² ÑÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹ (ÑÑƒÐ±ÑŠÐµÐºÑ‚Ñ‹ Ñ‚ÐµÑ…Ð¿Ð¾Ð»Ð¸Ñ‚Ð¸ÐºÐ¸)"
+      },
+      {
+        "from_file": "psb_regulatory_framework_analysis.json",
+        "from_node": "NODE-REGULATORY",
+        "from_path": "legal_framework_523fz",
+        "full_ref": "psb_ecosystem_infrastructure_analysis.json#quasi_ministerial_functions.QMIN-LEGISLATIVE"
+      },
+      {
+        "from_file": "psb_strategic_sovereignty_role_analysis.json",
+        "from_node": "NODE-SOVEREIGNTY",
+        "relationship": "leverages_infrastructure",
+        "description": "Позиционирование опирается на экосистемную инфраструктуру"
+      },
+      {
+        "from_file": "psb_strategic_sovereignty_role_analysis.json",
+        "from_node": "NODE-SOVEREIGNTY",
+        "from_path": "executive_summary",
+        "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model"
+      },
+      {
+        "from_file": "psb_technological_foundation_6tu_analysis.json",
+        "from_node": "NODE-TECHBASE",
+        "relationship": "extends_clusters",
+        "description": "6Ð¢Ð£ Ñ€Ð°ÑÑˆÐ¸Ñ€ÑÐµÑ‚ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸ ÐºÐ»Ð°ÑÑ‚ÐµÑ€Ð¾Ð² ÑÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹ Ð½Ð¾Ð²Ñ‹Ð¼Ð¸ Ð¼ÐµÑ‚Ð°-Ð¾Ð±ÑŠÐµÐºÑ‚Ð°Ð¼Ð¸"
+      },
+      {
+        "from_file": "psb_technological_foundation_6tu_analysis.json",
+        "from_node": "NODE-TECHBASE",
+        "from_path": "executive_summary",
+        "full_ref": "psb_ecosystem_infrastructure_analysis.json#quasi_ministerial_functions"
+      },
+      {
+        "from_file": "psb_technological_foundation_6tu_analysis.json",
+        "from_node": "NODE-TECHBASE",
+        "from_path": "ten_principles.principles[1]",
+        "full_ref": "psb_ecosystem_infrastructure_analysis.json#quasi_ministerial_functions"
+      },
+      {
+        "from_file": "psb_technological_foundation_6tu_analysis.json",
+        "from_node": "NODE-TECHBASE",
+        "from_path": "ten_principles.principles[6]",
+        "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model.CLUSTER-IT"
+      },
+      {
+        "from_file": "psb_technological_foundation_6tu_analysis.json",
+        "from_node": "NODE-TECHBASE",
+        "from_path": "ten_principles.principles[9]",
+        "full_ref": "psb_ecosystem_infrastructure_analysis.json#monitoring_systems"
+      },
+      {
+        "from_file": "psb_technological_foundation_6tu_analysis.json",
+        "from_node": "NODE-TECHBASE",
+        "from_path": "integration_with_partnership.synergy_points[2]",
+        "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model.CLUSTER-SOCIAL"
+      },
+      {
+        "from_file": "psb_technological_foundation_6tu_analysis.json",
+        "from_node": "NODE-TECHBASE",
+        "from_path": "integration_with_partnership.synergy_points[4]",
+        "full_ref": "psb_ecosystem_infrastructure_analysis.json#quasi_ministerial_functions"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "relationship": "transforms_clusters",
+        "description": "Платформа трансформирует 5 кластеров экосистемы в сетевую архитектуру"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "executive_summary",
+        "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "prerequisites_analysis.levels[1]",
+        "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model.CLUSTER-IT.import_substitution"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "prerequisites_analysis.levels[2]",
+        "full_ref": "psb_ecosystem_infrastructure_analysis.json#quasi_ministerial_functions"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "prerequisites_analysis.levels[3]",
+        "full_ref": "psb_ecosystem_infrastructure_analysis.json#integral_model"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "eight_platform_values.values[0]",
+        "full_ref": "psb_ecosystem_infrastructure_analysis.json#integral_model"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "eight_platform_values.values[2]",
+        "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model.CLUSTER-SCITECH"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "psb_platform_role",
+        "full_ref": "psb_ecosystem_infrastructure_analysis.json#quasi_ministerial_functions"
+      },
+      {
+        "from_file": "psb_sci_architecture_analysis.json",
+        "from_node": "NODE-SCI",
+        "from_path": "six_layer_model.layers[3]",
+        "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model"
+      },
+      {
+        "from_file": "psb_sci_architecture_analysis.json",
+        "from_node": "NODE-SCI",
+        "from_path": "data_knowledge_management",
+        "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model.CLUSTER-IT"
+      },
+      {
+        "from_file": "psb_dt_platforms_market_analysis.json",
+        "from_node": "NODE-MARKET",
+        "relationship": "maps_ecosystem_players",
+        "description": "Картирование потенциальных партнёров экосистемы"
+      },
+      {
+        "from_file": "psb_dt_platforms_market_analysis.json",
+        "from_node": "NODE-MARKET",
+        "from_path": "market_structure.geographic_distribution",
+        "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model.deep_tech"
+      },
+      {
+        "from_file": "psb_dt_platforms_market_analysis.json",
+        "from_node": "NODE-MARKET",
+        "from_path": "russian_platforms_deep_dive.national_ecosystem_vision",
+        "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model"
+      },
+      {
+        "from_file": "psb_dt_platforms_market_analysis.json",
+        "from_node": "NODE-MARKET",
+        "from_path": "strategic_implications",
+        "full_ref": "psb_ecosystem_infrastructure_analysis.json#quasi_ministerial_functions"
+      },
+      {
+        "from_file": "psb_cmlbench_technology_context_analysis.json",
+        "from_node": "NODE-CMLBENCH",
+        "relationship": "maps_integration_partners",
+        "description": "Экосистема ПСБ определяет партнёров интеграции"
+      },
+      {
+        "from_file": "psb_cmlbench_technology_context_analysis.json",
+        "from_node": "NODE-CMLBENCH",
+        "from_path": "competitive_analysis",
+        "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model.deep_tech"
+      },
+      {
+        "from_file": "psb_cmlbench_technology_context_analysis.json",
+        "from_node": "NODE-CMLBENCH",
+        "from_path": "gap_closure_roadmap.critical_gaps[0]",
+        "full_ref": "psb_ecosystem_infrastructure_analysis.json#deep_tech_cluster.partners"
+      },
+      {
+        "from_file": "psb_cmlbench_technology_context_analysis.json",
+        "from_node": "NODE-CMLBENCH",
+        "from_path": "psb_integration_value.ecosystem_integration",
+        "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "timeline_analysis.events[2]",
+        "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model.deep_tech"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "institutional_framework.governance_structure",
+        "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model.institutional"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "requirements_analysis.unified_dt_system",
+        "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model.IT"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "strategic_positioning.value_proposition",
+        "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "participants_analysis",
+        "full_ref": "psb_ecosystem_infrastructure_analysis.json#five_clusters"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "financing_mechanisms",
+        "full_ref": "psb_ecosystem_infrastructure_analysis.json#financial_cluster"
+      }
+    ],
+    "NODE-REGULATORY": [
+      {
+        "from_file": "psb_strategic_sovereignty_role_analysis.json",
+        "from_node": "NODE-SOVEREIGNTY",
+        "relationship": "derives_from",
+        "description": "Роль ПСБ производна от нормативного контекста"
+      },
+      {
+        "from_file": "psb_strategic_sovereignty_role_analysis.json",
+        "from_node": "NODE-SOVEREIGNTY",
+        "from_path": "executive_summary",
+        "full_ref": "psb_regulatory_framework_analysis.json#regulatory_architecture.LAYER-ZAMYSEL"
+      },
+      {
+        "from_file": "psb_dt_platforms_market_analysis.json",
+        "from_node": "NODE-MARKET",
+        "from_path": "russian_platforms_deep_dive.strategic_context",
+        "full_ref": "psb_regulatory_framework_analysis.json#regulatory_context.decree_309"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "executive_summary",
+        "full_ref": "psb_regulatory_framework_analysis.json#regulatory_documents"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "timeline_analysis.events[4]",
+        "full_ref": "psb_regulatory_framework_analysis.json#regulatory_documents"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "executive_summary",
+        "full_ref": "psb_regulatory_framework_analysis.json#regulatory_documents"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "key_definitions",
+        "full_ref": "psb_regulatory_framework_analysis.json#gost_framework"
+      }
+    ],
+    "NODE-SOVEREIGNTY": [
+      {
+        "from_file": "psb_sci_architecture_analysis.json",
+        "from_node": "NODE-SCI",
+        "from_path": "six_layer_model.layers[0]",
+        "full_ref": "psb_strategic_sovereignty_role_analysis.json#strategic_positioning"
+      },
+      {
+        "from_file": "psb_sci_architecture_analysis.json",
+        "from_node": "NODE-SCI",
+        "from_path": "psb_integration_points",
+        "full_ref": "psb_strategic_sovereignty_role_analysis.json#entry_points_matrix"
+      },
+      {
+        "from_file": "psb_dt_platforms_market_analysis.json",
+        "from_node": "NODE-MARKET",
+        "relationship": "validates_sovereignty_path",
+        "description": "Подтверждение стратегии технологического суверенитета"
+      },
+      {
+        "from_file": "psb_dt_platforms_market_analysis.json",
+        "from_node": "NODE-MARKET",
+        "from_path": "executive_summary",
+        "full_ref": "psb_strategic_sovereignty_role_analysis.json#seven_entry_points"
+      },
+      {
+        "from_file": "psb_dt_platforms_market_analysis.json",
+        "from_node": "NODE-MARKET",
+        "from_path": "market_structure.geographic_distribution",
+        "full_ref": "psb_strategic_sovereignty_role_analysis.json#technology_sovereignty.import_substitution"
+      },
+      {
+        "from_file": "psb_dt_platforms_market_analysis.json",
+        "from_node": "NODE-MARKET",
+        "from_path": "russian_platforms_deep_dive.strategic_context",
+        "full_ref": "psb_strategic_sovereignty_role_analysis.json#strategic_positioning"
+      },
+      {
+        "from_file": "psb_dt_platforms_market_analysis.json",
+        "from_node": "NODE-MARKET",
+        "from_path": "russian_platforms_deep_dive.national_ecosystem_vision",
+        "full_ref": "psb_strategic_sovereignty_role_analysis.json#seven_entry_points"
+      },
+      {
+        "from_file": "psb_dt_platforms_market_analysis.json",
+        "from_node": "NODE-MARKET",
+        "from_path": "strategic_implications",
+        "full_ref": "psb_strategic_sovereignty_role_analysis.json#seven_entry_points"
+      },
+      {
+        "from_file": "psb_cmlbench_technology_context_analysis.json",
+        "from_node": "NODE-CMLBENCH",
+        "relationship": "validates_sovereignty_role",
+        "description": "Суверенитет определяет стратегическую роль платформы"
+      },
+      {
+        "from_file": "psb_cmlbench_technology_context_analysis.json",
+        "from_node": "NODE-CMLBENCH",
+        "from_path": "gap_closure_roadmap",
+        "full_ref": "psb_strategic_sovereignty_role_analysis.json#partnership_actions"
+      },
+      {
+        "from_file": "psb_cmlbench_technology_context_analysis.json",
+        "from_node": "NODE-CMLBENCH",
+        "from_path": "strategic_conclusions",
+        "full_ref": "psb_strategic_sovereignty_role_analysis.json#seven_entry_points"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "timeline_analysis.events[3]",
+        "full_ref": "psb_strategic_sovereignty_role_analysis.json#seven_entry_points"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "strategic_positioning.strategic_entry_points",
+        "full_ref": "psb_strategic_sovereignty_role_analysis.json#seven_entry_points"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "participants_analysis",
+        "full_ref": "psb_strategic_sovereignty_role_analysis.json#seven_entry_points"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "strategic_positioning",
+        "full_ref": "psb_strategic_sovereignty_role_analysis.json#seven_entry_points"
+      }
+    ],
+    "NODE-TECHBASE": [
+      {
+        "from_file": "psb_regulatory_framework_analysis.json",
+        "from_node": "NODE-REGULATORY",
+        "relationship": "implements_principles",
+        "description": "ÐœÐµÑ‚Ð°-Ð¾Ð±ÑŠÐµÐºÑ‚Ñ‹ 6Ð¢Ð£ Ñ€ÐµÐ°Ð»Ð¸Ð·ÑƒÑŽÑ‚ Ð½Ð¾Ñ€Ð¼Ð°Ñ‚Ð¸Ð²Ð½Ñ‹Ðµ Ñ‚Ñ€ÐµÐ±Ð¾Ð²Ð°Ð½Ð¸Ñ"
+      },
+      {
+        "from_file": "psb_regulatory_framework_analysis.json",
+        "from_node": "NODE-REGULATORY",
+        "from_path": "executive_summary",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#meta_objects"
+      },
+      {
+        "from_file": "psb_regulatory_framework_analysis.json",
+        "from_node": "NODE-REGULATORY",
+        "from_path": "regulatory_architecture.layers[0].documents[2]",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#executive_summary.northern_star"
+      },
+      {
+        "from_file": "psb_strategic_sovereignty_role_analysis.json",
+        "from_node": "NODE-SOVEREIGNTY",
+        "relationship": "operationalizes_through",
+        "description": "Роль операционализируется через архитектуру 6ТУ"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "relationship": "operationalizes_principles",
+        "description": "10 принципов 6ТУ реализуются через платформенную архитектуру"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "executive_summary",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#executive_summary.key_paradigm_shift"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "anti_thesis",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#success_conditions"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "platform_economy_model.digital_twin_role",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#architectural_vision.design_principles.digital_twin_as_unit"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "eight_platform_values.values[1]",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#ten_principles.principles[4]"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "eight_platform_values.values[3]",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#target_state_2036.structural_elements[1]"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "eight_platform_values.values[5]",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#architectural_vision.design_principles.invariance_by_design"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "eight_platform_values.values[5]",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#ten_principles.principles[8]"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "eight_platform_values.values[6]",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#ten_principles.principles[4]"
+      },
+      {
+        "from_file": "psb_global_trend_platform_analysis.json",
+        "from_node": "NODE-PLATFORM",
+        "from_path": "psb_platform_role",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#psb_action_plan"
+      },
+      {
+        "from_file": "psb_sci_architecture_analysis.json",
+        "from_node": "NODE-SCI",
+        "relationship": "provides_methodology_for",
+        "description": "СЦИ обеспечивает методологическую основу для 6ТУ-архитектуры"
+      },
+      {
+        "from_file": "psb_sci_architecture_analysis.json",
+        "from_node": "NODE-SCI",
+        "from_path": "executive_summary",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#architectural_vision.digital_twin_as_unit"
+      },
+      {
+        "from_file": "psb_sci_architecture_analysis.json",
+        "from_node": "NODE-SCI",
+        "from_path": "six_layer_model.layers[2]",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#ten_principles"
+      },
+      {
+        "from_file": "psb_sci_architecture_analysis.json",
+        "from_node": "NODE-SCI",
+        "from_path": "six_layer_model.layers[4]",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#architectural_vision.digital_twin_as_unit"
+      },
+      {
+        "from_file": "psb_sci_architecture_analysis.json",
+        "from_node": "NODE-SCI",
+        "from_path": "six_layer_model.layers[5]",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#target_state_2036.structural_elements[2]"
+      },
+      {
+        "from_file": "psb_sci_architecture_analysis.json",
+        "from_node": "NODE-SCI",
+        "from_path": "lifecycle_integration",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#psb_actions"
+      },
+      {
+        "from_file": "psb_sci_architecture_analysis.json",
+        "from_node": "NODE-SCI",
+        "from_path": "data_knowledge_management",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#success_conditions"
+      },
+      {
+        "from_file": "psb_sci_architecture_analysis.json",
+        "from_node": "NODE-SCI",
+        "from_path": "sci_dt_relationship",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#architectural_vision.digital_twin_as_unit"
+      },
+      {
+        "from_file": "psb_dt_platforms_market_analysis.json",
+        "from_node": "NODE-MARKET",
+        "relationship": "identifies_technology_gaps",
+        "description": "Выявление технологических GAP'ов для 6ТУ-архитектуры"
+      },
+      {
+        "from_file": "psb_dt_platforms_market_analysis.json",
+        "from_node": "NODE-MARKET",
+        "from_path": "competitive_landscape",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#architectural_vision"
+      },
+      {
+        "from_file": "psb_dt_platforms_market_analysis.json",
+        "from_node": "NODE-MARKET",
+        "from_path": "russian_platforms_deep_dive.platforms[4]",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#vnv_contour"
+      },
+      {
+        "from_file": "psb_dt_platforms_market_analysis.json",
+        "from_node": "NODE-MARKET",
+        "from_path": "technology_trends_analysis",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#ten_principles"
+      },
+      {
+        "from_file": "psb_dt_platforms_market_analysis.json",
+        "from_node": "NODE-MARKET",
+        "from_path": "lifecycle_coverage_analysis",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#lifecycle_integration"
+      },
+      {
+        "from_file": "psb_cmlbench_technology_context_analysis.json",
+        "from_node": "NODE-CMLBENCH",
+        "relationship": "provides_architectural_requirements",
+        "description": "6ТУ-Framework задаёт архитектурные требования"
+      },
+      {
+        "from_file": "psb_cmlbench_technology_context_analysis.json",
+        "from_node": "NODE-CMLBENCH",
+        "from_path": "enterprise_systems_chain",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#lifecycle_integration"
+      },
+      {
+        "from_file": "psb_cmlbench_technology_context_analysis.json",
+        "from_node": "NODE-CMLBENCH",
+        "from_path": "maturity_assessment",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#ten_principles"
+      },
+      {
+        "from_file": "psb_cmlbench_technology_context_analysis.json",
+        "from_node": "NODE-CMLBENCH",
+        "from_path": "psb_integration_value.financial_integration",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#vnv_contour"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "timeline_analysis.events[0]",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#vnv_contour"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "institutional_framework.mkcp_directorate",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#vnv_contour"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "requirements_analysis.vv_methodology",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#vnv_contour"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "program_parameters",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#vnv_contour"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "work_directions",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#vnv_contour"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "target_indicators",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#vnv_contour.milestones"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "financing_mechanisms",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#vnv_contour.tranches"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "principles_of_formation",
+        "full_ref": "psb_technological_foundation_6tu_analysis.json#ten_principles"
+      }
+    ],
+    "NODE-PLATFORM": [
+      {
+        "from_file": "psb_regulatory_framework_analysis.json",
+        "from_node": "NODE-REGULATORY",
+        "relationship": "justifies_transition",
+        "description": "ÐÐ¾Ñ€Ð¼Ð°Ñ‚Ð¸Ð²Ð½Ð°Ñ Ð±Ð°Ð·Ð° ÑÐ¾Ð·Ð´Ð°Ñ‘Ñ‚ Ð¿Ñ€ÐµÐ´Ð¿Ð¾ÑÑ‹Ð»ÐºÐ¸ Ð´Ð»Ñ Ð¿Ð»Ð°Ñ‚Ñ„Ð¾Ñ€Ð¼ÐµÐ½Ð½Ð¾Ð¹ Ñ‚Ñ€Ð°Ð½ÑÑ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¸"
+      },
+      {
+        "from_file": "psb_strategic_sovereignty_role_analysis.json",
+        "from_node": "NODE-SOVEREIGNTY",
+        "relationship": "justifies_platform_model",
+        "description": "Роль в суверенитете обосновывает платформенную модель"
+      },
+      {
+        "from_file": "psb_strategic_sovereignty_role_analysis.json",
+        "from_node": "NODE-SOVEREIGNTY",
+        "from_path": "executive_summary",
+        "full_ref": "psb_global_trend_platform_analysis.json#platform_transition_rationale"
+      },
+      {
+        "from_file": "psb_sci_architecture_analysis.json",
+        "from_node": "NODE-SCI",
+        "relationship": "enables_platform",
+        "description": "СЦИ создаёт методологическую основу для платформенной трансформации"
+      },
+      {
+        "from_file": "psb_sci_architecture_analysis.json",
+        "from_node": "NODE-SCI",
+        "from_path": "six_layer_model.layers[3]",
+        "full_ref": "psb_global_trend_platform_analysis.json#platform_value_proposition"
+      },
+      {
+        "from_file": "psb_dt_platforms_market_analysis.json",
+        "from_node": "NODE-MARKET",
+        "relationship": "provides_competitive_context",
+        "description": "Контекст платформенной конкуренции"
+      },
+      {
+        "from_file": "psb_dt_platforms_market_analysis.json",
+        "from_node": "NODE-MARKET",
+        "from_path": "russian_platforms_deep_dive.national_ecosystem_vision",
+        "full_ref": "psb_global_trend_platform_analysis.json#platform_value_proposition"
+      },
+      {
+        "from_file": "psb_dt_platforms_market_analysis.json",
+        "from_node": "NODE-MARKET",
+        "from_path": "strategic_implications",
+        "full_ref": "psb_global_trend_platform_analysis.json#platform_value_proposition"
+      },
+      {
+        "from_file": "psb_cmlbench_technology_context_analysis.json",
+        "from_node": "NODE-CMLBENCH",
+        "from_path": "strategic_conclusions",
+        "full_ref": "psb_global_trend_platform_analysis.json#platform_value_proposition"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "timeline_analysis.events[2]",
+        "full_ref": "psb_global_trend_platform_analysis.json#platform_value_proposition.values"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "requirements_analysis.unified_dt_system",
+        "full_ref": "psb_global_trend_platform_analysis.json#platform_value_proposition"
+      }
+    ],
+    "NODE-SCI": [
+      {
+        "from_file": "psb_dt_platforms_market_analysis.json",
+        "from_node": "NODE-MARKET",
+        "relationship": "benchmarks_methodology",
+        "description": "СЦИ-методология сравнивается с подходами мировых лидеров"
+      },
+      {
+        "from_file": "psb_dt_platforms_market_analysis.json",
+        "from_node": "NODE-MARKET",
+        "from_path": "russian_platforms_deep_dive.platforms[4]",
+        "full_ref": "psb_sci_architecture_analysis.json#six_layer_model.layers[5]"
+      },
+      {
+        "from_file": "psb_dt_platforms_market_analysis.json",
+        "from_node": "NODE-MARKET",
+        "from_path": "technology_trends_analysis",
+        "full_ref": "psb_sci_architecture_analysis.json#technology_trends"
+      },
+      {
+        "from_file": "psb_dt_platforms_market_analysis.json",
+        "from_node": "NODE-MARKET",
+        "from_path": "lifecycle_coverage_analysis",
+        "full_ref": "psb_sci_architecture_analysis.json#six_layer_model"
+      },
+      {
+        "from_file": "psb_cmlbench_technology_context_analysis.json",
+        "from_node": "NODE-CMLBENCH",
+        "relationship": "defines_methodological_framework",
+        "description": "СЦИ задаёт методологический каркас для CML-Bench"
+      },
+      {
+        "from_file": "psb_cmlbench_technology_context_analysis.json",
+        "from_node": "NODE-CMLBENCH",
+        "from_path": "executive_summary",
+        "full_ref": "psb_sci_architecture_analysis.json#six_layer_model.layers[5]"
+      },
+      {
+        "from_file": "psb_cmlbench_technology_context_analysis.json",
+        "from_node": "NODE-CMLBENCH",
+        "from_path": "platform_identity",
+        "full_ref": "psb_sci_architecture_analysis.json#layer_relationships"
+      },
+      {
+        "from_file": "psb_cmlbench_technology_context_analysis.json",
+        "from_node": "NODE-CMLBENCH",
+        "from_path": "enterprise_systems_chain",
+        "full_ref": "psb_sci_architecture_analysis.json#six_layer_model.layers"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "timeline_analysis.events[0]",
+        "full_ref": "psb_sci_architecture_analysis.json#six_layer_model.layers.L6_VnV_infrastructure"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "timeline_analysis.events[3]",
+        "full_ref": "psb_sci_architecture_analysis.json#six_layer_model"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "institutional_framework.inter_departmental_council",
+        "full_ref": "psb_sci_architecture_analysis.json#six_layer_model.layers.L6_VnV_infrastructure"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "requirements_analysis.technology_backlog",
+        "full_ref": "psb_sci_architecture_analysis.json#six_layer_model.layers"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "requirements_analysis.vv_methodology",
+        "full_ref": "psb_sci_architecture_analysis.json#six_layer_model.layers.L6_VnV_infrastructure"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "goals_and_objectives",
+        "full_ref": "psb_sci_architecture_analysis.json#six_layer_model.layers"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "work_directions",
+        "full_ref": "psb_sci_architecture_analysis.json#six_layer_model"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "key_definitions",
+        "full_ref": "psb_sci_architecture_analysis.json#six_layer_model.layers"
+      }
+    ],
+    "NODE-MARKET": [
+      {
+        "from_file": "psb_cmlbench_technology_context_analysis.json",
+        "from_node": "NODE-CMLBENCH",
+        "relationship": "provides_competitive_context",
+        "description": "Рыночный анализ задаёт конкурентное окружение"
+      },
+      {
+        "from_file": "psb_cmlbench_technology_context_analysis.json",
+        "from_node": "NODE-CMLBENCH",
+        "from_path": "executive_summary",
+        "full_ref": "psb_dt_platforms_market_analysis.json#russian_platforms_deep_dive.platforms[CML-Bench]"
+      },
+      {
+        "from_file": "psb_cmlbench_technology_context_analysis.json",
+        "from_node": "NODE-CMLBENCH",
+        "from_path": "maturity_assessment",
+        "full_ref": "psb_dt_platforms_market_analysis.json#technology_trends_analysis.trends"
+      },
+      {
+        "from_file": "psb_cmlbench_technology_context_analysis.json",
+        "from_node": "NODE-CMLBENCH",
+        "from_path": "competitive_analysis",
+        "full_ref": "psb_dt_platforms_market_analysis.json#market_structure.geographic_distribution"
+      },
+      {
+        "from_file": "psb_cmlbench_technology_context_analysis.json",
+        "from_node": "NODE-CMLBENCH",
+        "from_path": "gap_closure_roadmap",
+        "full_ref": "psb_dt_platforms_market_analysis.json#technology_trends_analysis.gap_summary_cml_bench"
+      },
+      {
+        "from_file": "psb_cmlbench_technology_context_analysis.json",
+        "from_node": "NODE-CMLBENCH",
+        "from_path": "gap_closure_roadmap.critical_gaps[0]",
+        "full_ref": "psb_dt_platforms_market_analysis.json#lifecycle_coverage_analysis.cml_bench_positioning"
+      },
+      {
+        "from_file": "psb_cmlbench_technology_context_analysis.json",
+        "from_node": "NODE-CMLBENCH",
+        "from_path": "psb_integration_value.ecosystem_integration",
+        "full_ref": "psb_dt_platforms_market_analysis.json#national_ecosystem_vision"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "timeline_analysis.events[5]",
+        "full_ref": "psb_dt_platforms_market_analysis.json#technology_trends_analysis.trend_003_llm_copilot"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "timeline_analysis.events[6]",
+        "full_ref": "psb_dt_platforms_market_analysis.json#technology_trends_analysis"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "strategic_positioning.risks_and_mitigation",
+        "full_ref": "psb_dt_platforms_market_analysis.json#competitive_landscape"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "swot_analysis",
+        "full_ref": "psb_dt_platforms_market_analysis.json#competitive_landscape"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "international_context",
+        "full_ref": "psb_dt_platforms_market_analysis.json#global_market"
+      }
+    ],
+    "NODE-CMLBENCH": [
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "timeline_analysis.events[5]",
+        "full_ref": "psb_cmlbench_technology_context_analysis.json#gap_closure_roadmap.critical_gaps.GAP-001"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "timeline_analysis.events[6]",
+        "full_ref": "psb_cmlbench_technology_context_analysis.json#gap_closure_roadmap.critical_gaps"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "institutional_framework.inter_departmental_council",
+        "full_ref": "psb_cmlbench_technology_context_analysis.json#platform_identity.key_relationships"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "requirements_analysis.unified_dt_system",
+        "full_ref": "psb_cmlbench_technology_context_analysis.json#platform_identity"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "requirements_analysis.technology_backlog",
+        "full_ref": "psb_cmlbench_technology_context_analysis.json#gap_closure_roadmap.critical_gaps.GAP-001"
+      },
+      {
+        "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+        "from_node": "NODE-AGENDA",
+        "from_path": "strategic_positioning.risks_and_mitigation",
+        "full_ref": "psb_cmlbench_technology_context_analysis.json#gap_closure_roadmap.critical_gaps"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "goals_and_objectives",
+        "full_ref": "psb_cmlbench_technology_context_analysis.json#platform_capabilities"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "work_directions",
+        "full_ref": "psb_cmlbench_technology_context_analysis.json#platform_capabilities"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "swot_analysis",
+        "full_ref": "psb_cmlbench_technology_context_analysis.json#gap_analysis"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "strategic_positioning",
+        "full_ref": "psb_cmlbench_technology_context_analysis.json#gap_closure_roadmap"
+      }
+    ],
+    "NODE-AGENDA": [
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "executive_summary",
+        "full_ref": "psb_state_agenda_dt_timeline_analysis.json#timeline_analysis.events.EVENT-005"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "organizational_structure",
+        "full_ref": "psb_state_agenda_dt_timeline_analysis.json#institutional_framework.mkcp_directorate"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "international_context",
+        "full_ref": "psb_state_agenda_dt_timeline_analysis.json#strategic_context"
+      },
+      {
+        "from_file": "psb_mkcp_program_analysis.json",
+        "from_node": "NODE-MKCP",
+        "from_path": "strategic_positioning",
+        "full_ref": "psb_state_agenda_dt_timeline_analysis.json#strategic_positioning"
+      }
+    ],
+    "NODE-MKCP": []
+  }
+}

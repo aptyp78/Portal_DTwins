@@ -1,0 +1,4742 @@
+{
+  "meta": {
+    "title": "Семантический граф знаний: Партнёрство ПСБ × СПбПУ",
+    "version": "14.0",
+    "update_date": "2025-11-29",
+    "analyst": "AI-эксперт по цифровым двойникам",
+    "description": "Интеграционный файл v14: ФАЗА 3 ENRICHMENT — добавлены executive_summary и narrative_summary, унифицированы ID-конвенции",
+    "changelog": {
+      "v11.0": "Добавлен NODE-MKCP (Анализ проекта Концепции МКЦП ЦД) с 12 новыми семантическими связями. Граф достиг 13 узлов и 77 связей. КРИТИЧЕСКОЕ обновление: документ подтверждает СПбПУ как участника №55 и соавтора базового ГОСТ, создаёт пространство для ПСБ через 25-35% внебюджетное финансирование (до 5.25 трлн рублей)",
+      "v10.0": "Добавлен NODE-AGENDA (Хронология инициатив по ЦД со стороны акционера 2024-2025) с 11 новыми семантическими связями",
+      "v9.0": "Добавлен NODE-CMLBENCH (Глубокий анализ CML-Bench в контексте технологических платформ) с 10 новыми связями",
+      "v8.0": "Добавлен NODE-MARKET (Анализ рынка платформ ЦД) с 8 новыми связями",
+      "v7.0": "Добавлен NODE-SCI (Структурная схема СЦИ) с 7 новыми связями",
+      "v12.0": "НОРМАЛИЗАЦИЯ ФАЗЫ 1: (1) Добавлена секция incoming_edges с 313 обратными связями, (2) Все 13 JSON-файлов получили нормализованные meta-блоки (node_id, layer, semantic_network), (3) Исправлена 1 null-ссылка в semantic_refs, (4) Каждый файл теперь содержит referenced_by",
+      "v13.0": "ФАЗА 2: (1) Собраны 83 связей из v3-v11, (2) Реструктуризация graph_edges по узлам и типам, (3) Добавлена статистика связности, (4) Создана JSON Schema v1.0",
+      "v14.0": "ФАЗА 3: (1) NORM-07: добавлены 2 executive_summary, (2) NORM-08: унифицированы 11 ID связей, добавлена id_convention, (3) NORM-09: добавлены 13 narrative_summary для портала v2"
+    }
+  },
+  "graph_nodes": {
+    "total_nodes": 13,
+    "nodes": [
+      {
+        "id": "NODE-MKCP",
+        "file": "psb_mkcp_program_analysis.json",
+        "domain": "Проект Концепции МКЦП ЦД на период 2026-2035",
+        "layer": "program_architecture",
+        "key_concepts": [
+          "15 трлн рублей бюджет (10 лет)",
+          "25-35% внебюджет = до 5.25 трлн для ПСБ",
+          "СПбПУ участник №55, соавтор ГОСТ Р 57700.37-2021",
+          "ВНИИ Центр (Агеев) — базовая организация",
+          "8 целей, 19 задач, 17 направлений работ",
+          "Дирекция: Минпромторг + Минобороны + 46 ЦНИИ + ВНИИ Центр",
+          "Международное признание: ГОСТ включён в перечень РФ-КНР"
+        ],
+        "primary_question": "КАК президентский мандат трансформируется в операционную программу и ГДЕ точки входа для партнёрства?",
+        "data_freshness": "2025-11",
+        "strategic_importance": "КРИТИЧЕСКАЯ — программный документ на 10 лет, определяющий институциональную рамку для ЦД в ОПК",
+        "incoming_edges": {
+          "total_count": 0,
+          "by_source_node": {}
+        }
+      },
+      {
+        "id": "NODE-AGENDA",
+        "file": "psb_state_agenda_dt_timeline_analysis.json",
+        "domain": "Государственная повестка по ЦД: хронология 2024-2025",
+        "layer": "strategic_mandate",
+        "key_concepts": [
+          "Указание Президента 12.08.2024 (МКЦП ЦД)",
+          "5 критических событий за 13 месяцев",
+          "Белоусов как системный драйвер",
+          "Межведомственная комиссия + Совет по V&V",
+          "Требования: единая система + задел + методика",
+          "ИИ-приоритет 2025 (Путин 23.04.2025)"
+        ],
+        "primary_question": "ПОЧЕМУ и КАК государство (акционер) формирует среду для реализации миссии ПСБ×СПбПУ через повестку ЦД?",
+        "data_freshness": "2025-11",
+        "strategic_importance": "КРИТИЧЕСКАЯ — документ подтверждает государственный мандат для партнёрства",
+        "incoming_edges": {
+          "total_count": 4,
+          "by_source_node": {
+            "NODE-MKCP": {
+              "count": 4,
+              "sample_refs": [
+                "psb_state_agenda_dt_timeline_analysis.json#timeline_analysis.events.EVENT-005",
+                "psb_state_agenda_dt_timeline_analysis.json#institutional_framework.mkcp_directorate",
+                "psb_state_agenda_dt_timeline_analysis.json#strategic_context"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "NODE-CMLBENCH",
+        "file": "psb_cmlbench_technology_context_analysis.json",
+        "domain": "Технологический анализ платформы CML-Bench",
+        "layer": "platform_technology",
+        "key_concepts": [
+          "Место в цепочке систем предприятий (PLM)",
+          "Оценка зрелости TRL 6-7",
+          "GAP-анализ vs Siemens Xcelerator",
+          "Дорожная карта закрытия GAP'ов",
+          "Партнёрства: Cifra, GigaChat, Аметист"
+        ],
+        "primary_question": "ЧТО такое CML-Bench, КАКОВО её место в цепочке систем и КАК закрыть технологические GAP'ы?",
+        "incoming_edges": {
+          "total_count": 10,
+          "by_source_node": {
+            "NODE-AGENDA": {
+              "count": 6,
+              "sample_refs": [
+                "psb_cmlbench_technology_context_analysis.json#gap_closure_roadmap.critical_gaps.GAP-001",
+                "psb_cmlbench_technology_context_analysis.json#gap_closure_roadmap.critical_gaps",
+                "psb_cmlbench_technology_context_analysis.json#platform_identity.key_relationships"
+              ]
+            },
+            "NODE-MKCP": {
+              "count": 4,
+              "sample_refs": [
+                "psb_cmlbench_technology_context_analysis.json#platform_capabilities",
+                "psb_cmlbench_technology_context_analysis.json#platform_capabilities",
+                "psb_cmlbench_technology_context_analysis.json#gap_analysis"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "NODE-MARKET",
+        "file": "psb_dt_platforms_market_analysis.json",
+        "domain": "Рыночный и конкурентный анализ платформ ЦД",
+        "layer": "market_intelligence",
+        "key_concepts": [
+          "29 платформ из 7 стран",
+          "Рынок $16.6B",
+          "Технологические тренды 2025",
+          "Суверенная экосистема России"
+        ],
+        "primary_question": "КАКОВО конкурентное окружение CML-Bench и ГДЕ точки роста для партнёрства?",
+        "incoming_edges": {
+          "total_count": 12,
+          "by_source_node": {
+            "NODE-CMLBENCH": {
+              "count": 7,
+              "sample_refs": [
+                "Рыночный анализ задаёт конкурентное окружение",
+                "psb_dt_platforms_market_analysis.json#russian_platforms_deep_dive.platforms[CML-Bench]",
+                "psb_dt_platforms_market_analysis.json#technology_trends_analysis.trends"
+              ]
+            },
+            "NODE-AGENDA": {
+              "count": 3,
+              "sample_refs": [
+                "psb_dt_platforms_market_analysis.json#technology_trends_analysis.trend_003_llm_copilot",
+                "psb_dt_platforms_market_analysis.json#technology_trends_analysis",
+                "psb_dt_platforms_market_analysis.json#competitive_landscape"
+              ]
+            },
+            "NODE-MKCP": {
+              "count": 2,
+              "sample_refs": [
+                "psb_dt_platforms_market_analysis.json#competitive_landscape",
+                "psb_dt_platforms_market_analysis.json#global_market"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "NODE-SCI",
+        "file": "psb_sci_architecture_analysis.json",
+        "domain": "Методологическая архитектура Системного цифрового инжиниринга",
+        "layer": "methodological_framework",
+        "key_concepts": [
+          "Шестиуровневая модель СЦИ",
+          "Метафора молекулы-организм",
+          "V&V-базис",
+          "Пять типов ЦД"
+        ],
+        "primary_question": "ЧТО такое СЦИ и КАК оно связывает ЦД с управлением ЖЦ?",
+        "incoming_edges": {
+          "total_count": 16,
+          "by_source_node": {
+            "NODE-MARKET": {
+              "count": 4,
+              "sample_refs": [
+                "СЦИ-методология сравнивается с подходами мировых лидеров",
+                "psb_sci_architecture_analysis.json#six_layer_model.layers[5]",
+                "psb_sci_architecture_analysis.json#technology_trends"
+              ]
+            },
+            "NODE-CMLBENCH": {
+              "count": 4,
+              "sample_refs": [
+                "СЦИ задаёт методологический каркас для CML-Bench",
+                "psb_sci_architecture_analysis.json#six_layer_model.layers[5]",
+                "psb_sci_architecture_analysis.json#layer_relationships"
+              ]
+            },
+            "NODE-AGENDA": {
+              "count": 5,
+              "sample_refs": [
+                "psb_sci_architecture_analysis.json#six_layer_model.layers.L6_VnV_infrastructure",
+                "psb_sci_architecture_analysis.json#six_layer_model",
+                "psb_sci_architecture_analysis.json#six_layer_model.layers.L6_VnV_infrastructure"
+              ]
+            },
+            "NODE-MKCP": {
+              "count": 3,
+              "sample_refs": [
+                "psb_sci_architecture_analysis.json#six_layer_model.layers",
+                "psb_sci_architecture_analysis.json#six_layer_model",
+                "psb_sci_architecture_analysis.json#six_layer_model.layers"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "NODE-SOVEREIGNTY",
+        "file": "psb_strategic_sovereignty_role_analysis.json",
+        "domain": "Роль ПСБ в технологическом суверенитете",
+        "layer": "strategic_positioning",
+        "key_concepts": [
+          "7 точек входа",
+          "Финансово-технологический агент",
+          "Стратегия львиной доли",
+          "2 трлн ₽"
+        ],
+        "primary_question": "КАКОВА роль ПСБ в системе технологического суверенитета?",
+        "incoming_edges": {
+          "total_count": 15,
+          "by_source_node": {
+            "NODE-SCI": {
+              "count": 2,
+              "sample_refs": [
+                "psb_strategic_sovereignty_role_analysis.json#strategic_positioning",
+                "psb_strategic_sovereignty_role_analysis.json#entry_points_matrix"
+              ]
+            },
+            "NODE-MARKET": {
+              "count": 6,
+              "sample_refs": [
+                "Подтверждение стратегии технологического суверенитета",
+                "psb_strategic_sovereignty_role_analysis.json#seven_entry_points",
+                "psb_strategic_sovereignty_role_analysis.json#technology_sovereignty.import_substitution"
+              ]
+            },
+            "NODE-CMLBENCH": {
+              "count": 3,
+              "sample_refs": [
+                "Суверенитет определяет стратегическую роль платформы",
+                "psb_strategic_sovereignty_role_analysis.json#partnership_actions",
+                "psb_strategic_sovereignty_role_analysis.json#seven_entry_points"
+              ]
+            },
+            "NODE-AGENDA": {
+              "count": 2,
+              "sample_refs": [
+                "psb_strategic_sovereignty_role_analysis.json#seven_entry_points",
+                "psb_strategic_sovereignty_role_analysis.json#seven_entry_points"
+              ]
+            },
+            "NODE-MKCP": {
+              "count": 2,
+              "sample_refs": [
+                "psb_strategic_sovereignty_role_analysis.json#seven_entry_points",
+                "psb_strategic_sovereignty_role_analysis.json#seven_entry_points"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "NODE-REGULATORY",
+        "file": "psb_regulatory_framework_analysis.json",
+        "domain": "Нормативный контекст",
+        "layer": "regulatory_framework",
+        "key_concepts": [
+          "523-ФЗ",
+          "Указ №309",
+          "Указ №145",
+          "Мета-объекты",
+          "Акторы"
+        ],
+        "primary_question": "В КАКОМ нормативном контексте действует партнёрство?",
+        "incoming_edges": {
+          "total_count": 7,
+          "by_source_node": {
+            "NODE-SOVEREIGNTY": {
+              "count": 2,
+              "sample_refs": [
+                "Роль ПСБ производна от нормативного контекста",
+                "psb_regulatory_framework_analysis.json#regulatory_architecture.LAYER-ZAMYSEL"
+              ]
+            },
+            "NODE-MARKET": {
+              "count": 1,
+              "sample_refs": [
+                "psb_regulatory_framework_analysis.json#regulatory_context.decree_309"
+              ]
+            },
+            "NODE-AGENDA": {
+              "count": 2,
+              "sample_refs": [
+                "psb_regulatory_framework_analysis.json#regulatory_documents",
+                "psb_regulatory_framework_analysis.json#regulatory_documents"
+              ]
+            },
+            "NODE-MKCP": {
+              "count": 2,
+              "sample_refs": [
+                "psb_regulatory_framework_analysis.json#regulatory_documents",
+                "psb_regulatory_framework_analysis.json#gost_framework"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "NODE-SHAREHOLDER",
+        "file": "psb_shareholder_logic_analysis.json",
+        "domain": "Философия и логика акционера",
+        "layer": "strategic_foundation",
+        "key_concepts": [
+          "Миссионный акционер",
+          "Бессрочный горизонт",
+          "5 принципов",
+          "5 целевых состояний"
+        ],
+        "primary_question": "ЗАЧЕМ существует ПСБ?",
+        "incoming_edges": {
+          "total_count": 51,
+          "by_source_node": {
+            "NODE-FINANCE": {
+              "count": 13,
+              "sample_refs": [
+                "Финансовая архитектура реализует философию и логику миссионного акционера",
+                "psb_shareholder_logic_analysis.json#shareholder_type.combined_type",
+                "psb_shareholder_logic_analysis.json#shareholder_expectations.operational_psb[0]"
+              ]
+            },
+            "NODE-ECOSYSTEM": {
+              "count": 7,
+              "sample_refs": [
+                "Ð­ÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ð° Ð¾Ð¿ÐµÑ€Ð°Ñ†Ð¸Ð¾Ð½Ð°Ð»Ð¸Ð·Ð¸Ñ€ÑƒÐµÑ‚ Ñ„Ð¸Ð»Ð¾ÑÐ¾Ñ„Ð¸ÑŽ Ð¸ Ð¿Ñ€Ð¸Ð½Ñ†Ð¸Ð¿Ñ‹ Ð¼Ð¸ÑÑÐ¸Ð¾Ð½Ð½Ð¾Ð³Ð¾ Ð°ÐºÑ†Ð¸Ð¾Ð½ÐµÑ€Ð°",
+                "psb_shareholder_logic_analysis.json#target_states",
+                "psb_shareholder_logic_analysis.json#shareholder_expectations.operational_psb[0]"
+              ]
+            },
+            "NODE-REGULATORY": {
+              "count": 3,
+              "sample_refs": [
+                "ÐÐ¾Ñ€Ð¼Ð°Ñ‚Ð¸Ð²Ð½Ð°Ñ Ð±Ð°Ð·Ð° Ð»ÐµÐ³Ð¸Ñ‚Ð¸Ð¼Ð¸Ð·Ð¸Ñ€ÑƒÐµÑ‚ Ñ€Ð¾Ð»ÑŒ Ð¼Ð¸ÑÑÐ¸Ð¾Ð½Ð½Ð¾Ð³Ð¾ Ð°ÐºÑ†Ð¸Ð¾Ð½ÐµÑ€Ð°",
+                "psb_shareholder_logic_analysis.json#shareholder_motivation.MOT-001",
+                "psb_shareholder_logic_analysis.json#shareholder_behavior.institutional"
+              ]
+            },
+            "NODE-SOVEREIGNTY": {
+              "count": 2,
+              "sample_refs": [
+                "Стратегическое позиционирование реализует миссию акционера",
+                "psb_shareholder_logic_analysis.json#shareholder_motivation.MOT-001"
+              ]
+            },
+            "NODE-TECHBASE": {
+              "count": 4,
+              "sample_refs": [
+                "6Ð¢Ð£-Ð°Ñ€Ñ…Ð¸Ñ‚ÐµÐºÑ‚ÑƒÑ€Ð° Ð¾Ð¿ÐµÑ€Ð°Ñ†Ð¸Ð¾Ð½Ð°Ð»Ð¸Ð·Ð¸Ñ€ÑƒÐµÑ‚ ÑÑ‚Ñ€Ð°Ñ‚ÐµÐ³Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ Ð²Ð¸Ð´ÐµÐ½Ð¸Ðµ Ð¼Ð¸ÑÑÐ¸Ð¾Ð½Ð½Ð¾Ð³Ð¾ Ð°ÐºÑ†Ð¸Ð¾Ð½ÐµÑ€Ð°",
+                "psb_shareholder_logic_analysis.json#shareholder_motivation.civilizational_subjectivity",
+                "psb_shareholder_logic_analysis.json#shareholder_motivation"
+              ]
+            },
+            "NODE-PLATFORM": {
+              "count": 10,
+              "sample_refs": [
+                "Платформенная модель — операциональное воплощение миссии миссионного акционера",
+                "psb_shareholder_logic_analysis.json#shareholder_type.ownership_horizon",
+                "psb_shareholder_logic_analysis.json#shareholder_motivation.civilizational_subjectivity"
+              ]
+            },
+            "NODE-SCI": {
+              "count": 3,
+              "sample_refs": [
+                "СЦИ операционализирует стратегическое видение технологического суверенитета",
+                "psb_shareholder_logic_analysis.json#shareholder_motivation.civilizational_subjectivity",
+                "psb_shareholder_logic_analysis.json#shareholder_type"
+              ]
+            },
+            "NODE-MARKET": {
+              "count": 2,
+              "sample_refs": [
+                "psb_shareholder_logic_analysis.json#shareholder_type.architectonic",
+                "psb_shareholder_logic_analysis.json#shareholder_type"
+              ]
+            },
+            "NODE-CMLBENCH": {
+              "count": 1,
+              "sample_refs": [
+                "psb_shareholder_logic_analysis.json#shareholder_type"
+              ]
+            },
+            "NODE-AGENDA": {
+              "count": 4,
+              "sample_refs": [
+                "psb_shareholder_logic_analysis.json#shareholder_motivation.levels",
+                "psb_shareholder_logic_analysis.json#shareholder_motivation.levels.MOT-001",
+                "psb_shareholder_logic_analysis.json#shareholder_motivation.levels.MOT-001"
+              ]
+            },
+            "NODE-MKCP": {
+              "count": 2,
+              "sample_refs": [
+                "psb_shareholder_logic_analysis.json#shareholder_motivation.levels",
+                "psb_shareholder_logic_analysis.json#shareholder_principles"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "NODE-FINANCE",
+        "file": "psb_financial_architecture_analysis.json",
+        "domain": "Финансовая архитектура",
+        "layer": "resource_base",
+        "key_concepts": [
+          "Трёхпоточная модель",
+          "Инверсия дивидендов",
+          "Н1.0",
+          "Прибыль≠цель"
+        ],
+        "primary_question": "ЧЕМ обеспечивается деятельность ПСБ?",
+        "incoming_edges": {
+          "total_count": 29,
+          "by_source_node": {
+            "NODE-ECOSYSTEM": {
+              "count": 4,
+              "sample_refs": [
+                "Ð­ÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ð° Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚ Ñ„Ð¸Ð½Ð°Ð½ÑÐ¾Ð²Ñ‹Ðµ Ð¼ÐµÑ…Ð°Ð½Ð¸Ð·Ð¼Ñ‹ Ð´Ð»Ñ Ñ€ÐµÐ°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ð¸ ÐºÐ»Ð°ÑÑ‚ÐµÑ€Ð½Ñ‹Ñ… Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¹",
+                "psb_financial_architecture_analysis.json#executive_summary.institutional_type",
+                "psb_financial_architecture_analysis.json#business_model"
+              ]
+            },
+            "NODE-REGULATORY": {
+              "count": 1,
+              "sample_refs": [
+                "523-Ð¤Ð— ÑÐ¾Ð·Ð´Ð°Ñ‘Ñ‚ Ð¿Ñ€Ð°Ð²Ð¾Ð²ÑƒÑŽ Ð¾ÑÐ½Ð¾Ð²Ñƒ Ð´Ð»Ñ Ñ„Ð¸Ð½Ð°Ð½ÑÐ¾Ð²Ñ‹Ñ… Ð¸Ð½ÑÑ‚Ñ€ÑƒÐ¼ÐµÐ½Ñ‚Ð¾Ð² 6Ð¢Ð£"
+              ]
+            },
+            "NODE-SOVEREIGNTY": {
+              "count": 1,
+              "sample_refs": [
+                "Финансовая архитектура обеспечивает ресурсы для роли"
+              ]
+            },
+            "NODE-TECHBASE": {
+              "count": 6,
+              "sample_refs": [
+                "Ð ÐµÐ°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ñ 6Ð¢Ð£ Ñ‚Ñ€ÐµÐ±ÑƒÐµÑ‚ ÑÐ¿ÐµÑ†Ð¸Ð°Ð»ÑŒÐ½Ñ‹Ñ… Ñ„Ð¸Ð½Ð°Ð½ÑÐ¾Ð²Ñ‹Ñ… Ð¸Ð½ÑÑ‚Ñ€ÑƒÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð´Ð¸Ñ„Ñ„ÑƒÐ·Ð¸Ð¸",
+                "psb_financial_architecture_analysis.json#business_model",
+                "psb_financial_architecture_analysis.json#risk_management"
+              ]
+            },
+            "NODE-PLATFORM": {
+              "count": 5,
+              "sample_refs": [
+                "Платформенная модель требует расширения финансовой архитектуры новыми инструментами диффузии",
+                "psb_financial_architecture_analysis.json#business_model",
+                "psb_financial_architecture_analysis.json#risk_management"
+              ]
+            },
+            "NODE-SCI": {
+              "count": 3,
+              "sample_refs": [
+                "psb_financial_architecture_analysis.json#kpi_framework",
+                "psb_financial_architecture_analysis.json#business_model.profit_streams",
+                "psb_financial_architecture_analysis.json#business_model"
+              ]
+            },
+            "NODE-CMLBENCH": {
+              "count": 1,
+              "sample_refs": [
+                "psb_financial_architecture_analysis.json#investment_framework"
+              ]
+            },
+            "NODE-AGENDA": {
+              "count": 4,
+              "sample_refs": [
+                "psb_financial_architecture_analysis.json#revenue_streams.defense_contracts",
+                "psb_financial_architecture_analysis.json#investment_framework",
+                "psb_financial_architecture_analysis.json#investment_framework"
+              ]
+            },
+            "NODE-MKCP": {
+              "count": 4,
+              "sample_refs": [
+                "psb_financial_architecture_analysis.json#revenue_streams",
+                "psb_financial_architecture_analysis.json#revenue_streams",
+                "psb_financial_architecture_analysis.json#kpi_model"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "NODE-ECOSYSTEM",
+        "file": "psb_ecosystem_infrastructure_analysis.json",
+        "domain": "Экосистема и инфраструктура",
+        "layer": "operational_platform",
+        "key_concepts": [
+          "Государство в банке",
+          "5 кластеров",
+          "Quasi-министерские функции"
+        ],
+        "primary_question": "КАК ПСБ реализует свою миссию?",
+        "incoming_edges": {
+          "total_count": 35,
+          "by_source_node": {
+            "NODE-REGULATORY": {
+              "count": 2,
+              "sample_refs": [
+                "ÐžÐ¿Ñ€ÐµÐ´ÐµÐ»ÑÐµÑ‚ Ñ€Ð¾Ð»Ð¸ Ð°ÐºÑ‚Ð¾Ñ€Ð¾Ð² ÑÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹ (ÑÑƒÐ±ÑŠÐµÐºÑ‚Ñ‹ Ñ‚ÐµÑ…Ð¿Ð¾Ð»Ð¸Ñ‚Ð¸ÐºÐ¸)",
+                "psb_ecosystem_infrastructure_analysis.json#quasi_ministerial_functions.QMIN-LEGISLATIVE"
+              ]
+            },
+            "NODE-SOVEREIGNTY": {
+              "count": 2,
+              "sample_refs": [
+                "Позиционирование опирается на экосистемную инфраструктуру",
+                "psb_ecosystem_infrastructure_analysis.json#cluster_model"
+              ]
+            },
+            "NODE-TECHBASE": {
+              "count": 7,
+              "sample_refs": [
+                "6Ð¢Ð£ Ñ€Ð°ÑÑˆÐ¸Ñ€ÑÐµÑ‚ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸ ÐºÐ»Ð°ÑÑ‚ÐµÑ€Ð¾Ð² ÑÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹ Ð½Ð¾Ð²Ñ‹Ð¼Ð¸ Ð¼ÐµÑ‚Ð°-Ð¾Ð±ÑŠÐµÐºÑ‚Ð°Ð¼Ð¸",
+                "psb_ecosystem_infrastructure_analysis.json#quasi_ministerial_functions",
+                "psb_ecosystem_infrastructure_analysis.json#quasi_ministerial_functions"
+              ]
+            },
+            "NODE-PLATFORM": {
+              "count": 8,
+              "sample_refs": [
+                "Платформа трансформирует 5 кластеров экосистемы в сетевую архитектуру",
+                "psb_ecosystem_infrastructure_analysis.json#cluster_model",
+                "psb_ecosystem_infrastructure_analysis.json#cluster_model.CLUSTER-IT.import_substitution"
+              ]
+            },
+            "NODE-SCI": {
+              "count": 2,
+              "sample_refs": [
+                "psb_ecosystem_infrastructure_analysis.json#cluster_model",
+                "psb_ecosystem_infrastructure_analysis.json#cluster_model.CLUSTER-IT"
+              ]
+            },
+            "NODE-MARKET": {
+              "count": 4,
+              "sample_refs": [
+                "Картирование потенциальных партнёров экосистемы",
+                "psb_ecosystem_infrastructure_analysis.json#cluster_model.deep_tech",
+                "psb_ecosystem_infrastructure_analysis.json#cluster_model"
+              ]
+            },
+            "NODE-CMLBENCH": {
+              "count": 4,
+              "sample_refs": [
+                "Экосистема ПСБ определяет партнёров интеграции",
+                "psb_ecosystem_infrastructure_analysis.json#cluster_model.deep_tech",
+                "psb_ecosystem_infrastructure_analysis.json#deep_tech_cluster.partners"
+              ]
+            },
+            "NODE-AGENDA": {
+              "count": 4,
+              "sample_refs": [
+                "psb_ecosystem_infrastructure_analysis.json#cluster_model.deep_tech",
+                "psb_ecosystem_infrastructure_analysis.json#cluster_model.institutional",
+                "psb_ecosystem_infrastructure_analysis.json#cluster_model.IT"
+              ]
+            },
+            "NODE-MKCP": {
+              "count": 2,
+              "sample_refs": [
+                "psb_ecosystem_infrastructure_analysis.json#five_clusters",
+                "psb_ecosystem_infrastructure_analysis.json#financial_cluster"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "NODE-CONTEXT",
+        "file": "psb_spbpu_context_analysis.json",
+        "domain": "Стратегический контекст партнёрства",
+        "layer": "application_domain",
+        "key_concepts": [
+          "Технологический суверенитет",
+          "СЦИ",
+          "CML-Bench",
+          "Трёхслойная модель"
+        ],
+        "primary_question": "ДЛЯ ЧЕГО создаётся партнёрство ПСБ×СПбПУ?",
+        "incoming_edges": {
+          "total_count": 84,
+          "by_source_node": {
+            "NODE-SHAREHOLDER": {
+              "count": 21,
+              "sample_refs": [
+                "psb_spbpu_context_analysis.json#key_actors.psb",
+                "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_0_national_interest",
+                "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_2_instrumental_goal"
+              ]
+            },
+            "NODE-FINANCE": {
+              "count": 10,
+              "sample_refs": [
+                "Финансовые механизмы обеспечивают ресурсную базу для стратегических целей партнёрства",
+                "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_4_psb_role",
+                "psb_spbpu_context_analysis.json#strategic_framework.national_priorities.defense"
+              ]
+            },
+            "NODE-ECOSYSTEM": {
+              "count": 8,
+              "sample_refs": [
+                "Ð­ÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ð° Ñ€ÐµÐ°Ð»Ð¸Ð·ÑƒÐµÑ‚ ÑÑ‚Ñ€Ð°Ñ‚ÐµÐ³Ð¸Ñ‡ÐµÑÐºÐ¸Ð¹ ÐºÐ¾Ð½Ñ‚ÐµÐºÑÑ‚ Ð¿Ð°Ñ€Ñ‚Ð½Ñ‘Ñ€ÑÑ‚Ð²Ð° ÐŸÐ¡Ð‘Ã—Ð¡ÐŸÐ±ÐŸÐ£",
+                "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_4_psb_role",
+                "psb_spbpu_context_analysis.json#institutional_framework.mkcp_dt"
+              ]
+            },
+            "NODE-REGULATORY": {
+              "count": 3,
+              "sample_refs": [
+                "Ð—Ð°Ð´Ð°Ñ‘Ñ‚ Ñ€Ð°Ð¼ÐºÑƒ Ð´Ð»Ñ Ð¿Ð°Ñ€Ñ‚Ð½Ñ‘Ñ€ÑÑ‚Ð²Ð° Ð² ÐºÐ¾Ð½Ñ‚ÑƒÑ€Ðµ Ð½Ð°ÑƒÐºÐ°-Ñ‚ÐµÑ…Ð½Ð¾Ð»Ð¾Ð³Ð¸Ð¸-Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´ÑÑ‚Ð²Ð¾",
+                "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_0_national_interest",
+                "psb_spbpu_context_analysis.json#solution_architecture.priority_focus"
+              ]
+            },
+            "NODE-SOVEREIGNTY": {
+              "count": 1,
+              "sample_refs": [
+                "Позиционирование создаёт основу для партнёрства с СПбПУ"
+              ]
+            },
+            "NODE-TECHBASE": {
+              "count": 11,
+              "sample_refs": [
+                "6Ð¢Ð£ ÐºÐ¾Ð½ÐºÑ€ÐµÑ‚Ð¸Ð·Ð¸Ñ€ÑƒÐµÑ‚ Ð¼ÐµÑ‚Ð¾Ð´Ð¾Ð»Ð¾Ð³Ð¸ÑŽ Ð¡Ð¦Ð˜ Ð¸ Ñ€Ð¾Ð»ÑŒ CML-Bench",
+                "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model",
+                "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_1_national_goal"
+              ]
+            },
+            "NODE-PLATFORM": {
+              "count": 7,
+              "sample_refs": [
+                "ЦД и CML-Bench становятся базовыми единицами платформы",
+                "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_0_national_interest",
+                "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_4_psb_role"
+              ]
+            },
+            "NODE-SCI": {
+              "count": 7,
+              "sample_refs": [
+                "СЦИ конкретизирует методологический слой трёхуровневой модели партнёрства",
+                "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model.methodological_layer",
+                "psb_spbpu_context_analysis.json#strategic_framework.level_3_measurable_kpi"
+              ]
+            },
+            "NODE-MARKET": {
+              "count": 4,
+              "sample_refs": [
+                "Рыночный анализ позиционирует CML-Bench в глобальном контексте",
+                "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model",
+                "psb_spbpu_context_analysis.json#partnership_assets.spbpu.cml_bench"
+              ]
+            },
+            "NODE-CMLBENCH": {
+              "count": 3,
+              "sample_refs": [
+                "Контекст партнёрства определяет роль CML-Bench",
+                "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model.platform_layer",
+                "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+              ]
+            },
+            "NODE-AGENDA": {
+              "count": 7,
+              "sample_refs": [
+                "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_0_national_interest",
+                "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model",
+                "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_0_national_interest"
+              ]
+            },
+            "NODE-MKCP": {
+              "count": 2,
+              "sample_refs": [
+                "psb_spbpu_context_analysis.json#strategic_framework.hierarchy",
+                "psb_spbpu_context_analysis.json#key_actors"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "NODE-TECHBASE",
+        "file": "psb_technological_foundation_6tu_analysis.json",
+        "domain": "Архитектура 6-го технологического уклада",
+        "layer": "architectural_blueprint",
+        "key_concepts": [
+          "Мета-объекты",
+          "10 принципов",
+          "Policy-as-code",
+          "SIL/MIL/VnV"
+        ],
+        "primary_question": "КАК проектировать системы 6ТУ?",
+        "incoming_edges": {
+          "total_count": 39,
+          "by_source_node": {
+            "NODE-REGULATORY": {
+              "count": 3,
+              "sample_refs": [
+                "ÐœÐµÑ‚Ð°-Ð¾Ð±ÑŠÐµÐºÑ‚Ñ‹ 6Ð¢Ð£ Ñ€ÐµÐ°Ð»Ð¸Ð·ÑƒÑŽÑ‚ Ð½Ð¾Ñ€Ð¼Ð°Ñ‚Ð¸Ð²Ð½Ñ‹Ðµ Ñ‚Ñ€ÐµÐ±Ð¾Ð²Ð°Ð½Ð¸Ñ",
+                "psb_technological_foundation_6tu_analysis.json#meta_objects",
+                "psb_technological_foundation_6tu_analysis.json#executive_summary.northern_star"
+              ]
+            },
+            "NODE-SOVEREIGNTY": {
+              "count": 1,
+              "sample_refs": [
+                "Роль операционализируется через архитектуру 6ТУ"
+              ]
+            },
+            "NODE-PLATFORM": {
+              "count": 10,
+              "sample_refs": [
+                "10 принципов 6ТУ реализуются через платформенную архитектуру",
+                "psb_technological_foundation_6tu_analysis.json#executive_summary.key_paradigm_shift",
+                "psb_technological_foundation_6tu_analysis.json#success_conditions"
+              ]
+            },
+            "NODE-SCI": {
+              "count": 8,
+              "sample_refs": [
+                "СЦИ обеспечивает методологическую основу для 6ТУ-архитектуры",
+                "psb_technological_foundation_6tu_analysis.json#architectural_vision.digital_twin_as_unit",
+                "psb_technological_foundation_6tu_analysis.json#ten_principles"
+              ]
+            },
+            "NODE-MARKET": {
+              "count": 5,
+              "sample_refs": [
+                "Выявление технологических GAP'ов для 6ТУ-архитектуры",
+                "psb_technological_foundation_6tu_analysis.json#architectural_vision",
+                "psb_technological_foundation_6tu_analysis.json#vnv_contour"
+              ]
+            },
+            "NODE-CMLBENCH": {
+              "count": 4,
+              "sample_refs": [
+                "6ТУ-Framework задаёт архитектурные требования",
+                "psb_technological_foundation_6tu_analysis.json#lifecycle_integration",
+                "psb_technological_foundation_6tu_analysis.json#ten_principles"
+              ]
+            },
+            "NODE-AGENDA": {
+              "count": 3,
+              "sample_refs": [
+                "psb_technological_foundation_6tu_analysis.json#vnv_contour",
+                "psb_technological_foundation_6tu_analysis.json#vnv_contour",
+                "psb_technological_foundation_6tu_analysis.json#vnv_contour"
+              ]
+            },
+            "NODE-MKCP": {
+              "count": 5,
+              "sample_refs": [
+                "psb_technological_foundation_6tu_analysis.json#vnv_contour",
+                "psb_technological_foundation_6tu_analysis.json#vnv_contour",
+                "psb_technological_foundation_6tu_analysis.json#vnv_contour.milestones"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "NODE-PLATFORM",
+        "file": "psb_global_trend_platform_analysis.json",
+        "domain": "Платформенная трансформация",
+        "layer": "strategic_transition",
+        "key_concepts": [
+          "Сетевые эффекты",
+          "8 ценностей",
+          "Доверие как капитал",
+          "ЦД как базовая единица"
+        ],
+        "primary_question": "ПОЧЕМУ ПСБ должен перейти к платформе?",
+        "incoming_edges": {
+          "total_count": 11,
+          "by_source_node": {
+            "NODE-REGULATORY": {
+              "count": 1,
+              "sample_refs": [
+                "ÐÐ¾Ñ€Ð¼Ð°Ñ‚Ð¸Ð²Ð½Ð°Ñ Ð±Ð°Ð·Ð° ÑÐ¾Ð·Ð´Ð°Ñ‘Ñ‚ Ð¿Ñ€ÐµÐ´Ð¿Ð¾ÑÑ‹Ð»ÐºÐ¸ Ð´Ð»Ñ Ð¿Ð»Ð°Ñ‚Ñ„Ð¾Ñ€Ð¼ÐµÐ½Ð½Ð¾Ð¹ Ñ‚Ñ€Ð°Ð½ÑÑ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¸"
+              ]
+            },
+            "NODE-SOVEREIGNTY": {
+              "count": 2,
+              "sample_refs": [
+                "Роль в суверенитете обосновывает платформенную модель",
+                "psb_global_trend_platform_analysis.json#platform_transition_rationale"
+              ]
+            },
+            "NODE-SCI": {
+              "count": 2,
+              "sample_refs": [
+                "СЦИ создаёт методологическую основу для платформенной трансформации",
+                "psb_global_trend_platform_analysis.json#platform_value_proposition"
+              ]
+            },
+            "NODE-MARKET": {
+              "count": 3,
+              "sample_refs": [
+                "Контекст платформенной конкуренции",
+                "psb_global_trend_platform_analysis.json#platform_value_proposition",
+                "psb_global_trend_platform_analysis.json#platform_value_proposition"
+              ]
+            },
+            "NODE-CMLBENCH": {
+              "count": 1,
+              "sample_refs": [
+                "psb_global_trend_platform_analysis.json#platform_value_proposition"
+              ]
+            },
+            "NODE-AGENDA": {
+              "count": 2,
+              "sample_refs": [
+                "psb_global_trend_platform_analysis.json#platform_value_proposition.values",
+                "psb_global_trend_platform_analysis.json#platform_value_proposition"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "graph_edges": {
+    "total_edges": 83,
+    "structure_version": "2.0",
+    "structure_type": "ontological",
+    "all_edges": [
+      {
+        "id": "EDGE-BASE-001",
+        "from": "NODE-SHAREHOLDER",
+        "to": "NODE-FINANCE",
+        "relationship": "determines",
+        "description": "Мотивация акционера определяет финансовую модель",
+        "strength": "STRONG",
+        "source_version": "v3",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "MOT-FRAMEWORK",
+            "to_ref": "BM-001",
+            "description": "Философия «прибыль как инструмент, не цель» → трёхпоточная модель прибыльности"
+          },
+          {
+            "from_ref": "EXP-NAT-001",
+            "to_ref": "STREAM-GOZ",
+            "description": "Ожидание стратегического суверенитета → обеспечение финансирования ОПК"
+          },
+          {
+            "from_ref": "ownership_horizon.бессрочный",
+            "to_ref": "DIV-001",
+            "description": "Бессрочность владения → инверсия дивидендов (докапитализация вместо выплат)"
+          }
+        ],
+        "legacy_id": "EDGE-001"
+      },
+      {
+        "id": "EDGE-BASE-002",
+        "from": "NODE-FINANCE",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "funds",
+        "description": "Финансовые механизмы обеспечивают ресурсную базу для кластеров экосистемы",
+        "strength": "STRONG",
+        "source_version": "v3",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "STREAM-GOZ",
+            "to_ref": "CLUSTER-FINANCE",
+            "description": "70% портфеля ГОЗ → финансово-расчётный кластер"
+          },
+          {
+            "from_ref": "STREAM-COMMISSION",
+            "to_ref": "CLUSTER-IT",
+            "description": "Комиссионный бизнес требует ИТ-инфраструктуры"
+          },
+          {
+            "from_ref": "CAP-001",
+            "to_ref": "CLUSTER-SCITECH",
+            "description": "Достаточность капитала → венчурные инвестиции в deep-tech"
+          }
+        ],
+        "legacy_id": "EDGE-002"
+      },
+      {
+        "id": "EDGE-BASE-003",
+        "from": "NODE-ECOSYSTEM",
+        "to": "NODE-CONTEXT",
+        "relationship": "enables",
+        "description": "Экосистема создаёт инфраструктурные условия для реализации стратегии партнёрства",
+        "strength": "STRONG",
+        "source_version": "v3",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "CLUSTER-SCITECH.PARTNER-SPBPU",
+            "to_ref": "ROLE-PSB-001",
+            "description": "Партнёрство с СПбПУ реализует роль финтех-брокера"
+          },
+          {
+            "from_ref": "CLUSTER-INST",
+            "to_ref": "PROGRAM-MKCP",
+            "description": "Институциональный кластер обеспечивает нормативную базу для МКЦП ЦД"
+          },
+          {
+            "from_ref": "CLUSTER-IT",
+            "to_ref": "LAYER-PLATFORM",
+            "description": "ИТ-кластер создаёт вычислительную инфраструктуру для CML-Bench"
+          }
+        ],
+        "legacy_id": "EDGE-003"
+      },
+      {
+        "id": "EDGE-BASE-004",
+        "from": "NODE-CONTEXT",
+        "to": "NODE-SHAREHOLDER",
+        "relationship": "validates",
+        "description": "Стратегический контекст подтверждает и конкретизирует логику акционера",
+        "strength": "MEDIUM",
+        "source_version": "v3",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "level_0_national_interest",
+            "to_ref": "MOT-001",
+            "description": "Устойчивое развитие = цивилизационная субъектность"
+          },
+          {
+            "from_ref": "CH-003",
+            "to_ref": "constraints.geopolitical",
+            "description": "Санкционное давление как контекст ограничений"
+          },
+          {
+            "from_ref": "psb_value_proposition",
+            "to_ref": "success_metrics",
+            "description": "Ценностное предложение как метрика успеха акционера"
+          }
+        ],
+        "legacy_id": "EDGE-004"
+      },
+      {
+        "id": "EDGE-BASE-005",
+        "from": "NODE-SHAREHOLDER",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "shapes",
+        "description": "Логика акционера формирует архитектуру и ценности экосистемы",
+        "strength": "STRONG",
+        "source_version": "v3",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "MOT-001.цивилизационная_субъектность",
+            "to_ref": "ECO-PRINCIPLE.суверенитет",
+            "description": "Цивилизационная субъектность → технологическая автаркия экосистемы"
+          },
+          {
+            "from_ref": "EXP-NAT-002.общество_гармоничного_развития",
+            "to_ref": "CLUSTER-SOCIAL",
+            "description": "Ожидание развития человека → социально-кадровый кластер"
+          },
+          {
+            "from_ref": "BEHAV-004.координация_и_доверие",
+            "to_ref": "CLUSTER-INST",
+            "description": "Координирующее поведение → институциональный кластер"
+          }
+        ],
+        "legacy_id": "EDGE-005"
+      },
+      {
+        "id": "EDGE-BASE-006",
+        "from": "NODE-FINANCE",
+        "to": "NODE-CONTEXT",
+        "relationship": "enables",
+        "description": "Финансовые возможности обеспечивают реализацию стратегии партнёрства",
+        "strength": "MEDIUM",
+        "source_version": "v3",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "CAP-001",
+            "to_ref": "KPI-003",
+            "description": "Достаточность капитала → возможность инвестиций в НИОКР"
+          },
+          {
+            "from_ref": "REV-001",
+            "to_ref": "FUNC-002",
+            "description": "Доходы банка → финансово-технологическое посредничество"
+          },
+          {
+            "from_ref": "IMPL-001",
+            "to_ref": "ROLE-PSB-001",
+            "description": "Финансовые ограничения определяют возможности роли брокера"
+          }
+        ],
+        "legacy_id": "EDGE-006"
+      },
+      {
+        "id": "EDGE-BASE-007",
+        "from": "NODE-SHAREHOLDER",
+        "to": "NODE-TECHBASE",
+        "relationship": "envisions",
+        "description": "Миссионный акционер задаёт видение, которое 6ТУ-архитектура переводит в проектируемые мета-объекты",
+        "strength": "STRONG",
+        "source_version": "v3",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "MOT-001.цивилизационная_субъектность",
+            "to_ref": "NS-001.northern_star",
+            "description": "Цивилизационная субъектность → NBICS-конвергентные платформы как «северная звезда»"
+          },
+          {
+            "from_ref": "shareholder_principles[0].суверенность",
+            "to_ref": "meta_objects.cascade.levels[10]",
+            "description": "Принцип суверенности → форматы суверенности в каскаде мета-объектов"
+          },
+          {
+            "from_ref": "target_states.институт_развития",
+            "to_ref": "psb_action_plan.actions[0]",
+            "description": "Целевое состояние института развития → паспорт 6ТУ-проекта"
+          }
+        ],
+        "legacy_id": "EDGE-007"
+      },
+      {
+        "id": "EDGE-BASE-008",
+        "from": "NODE-TECHBASE",
+        "to": "NODE-FINANCE",
+        "relationship": "requires",
+        "description": "6ТУ-архитектура требует специальных финансовых инструментов диффузии",
+        "strength": "STRONG",
+        "source_version": "v3",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "psb_action_plan.actions[5].instruments",
+            "to_ref": "business_model.profit_streams",
+            "description": "Линейка инструментов диффузии → новые потоки доходов"
+          },
+          {
+            "from_ref": "target_state_2036.structural_elements[4]",
+            "to_ref": "capital_architecture",
+            "description": "Финансовые контуры диффузии требуют адекватной капитальной базы"
+          },
+          {
+            "from_ref": "psb_action_plan.actions[1].stage_gate",
+            "to_ref": "credit_process",
+            "description": "Портфельные ворота интегрируются в кредитный процесс"
+          }
+        ],
+        "legacy_id": "EDGE-008"
+      },
+      {
+        "id": "EDGE-BASE-009",
+        "from": "NODE-TECHBASE",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "extends",
+        "description": "6ТУ расширяет функции кластеров экосистемы новыми мета-объектами и механизмами",
+        "strength": "STRONG",
+        "source_version": "v3",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "meta_objects.cascade",
+            "to_ref": "quasi_ministerial_functions",
+            "description": "Каскад мета-объектов расширяет quasi-министерские функции"
+          },
+          {
+            "from_ref": "psb_action_plan.actions[6].target_stacks",
+            "to_ref": "CLUSTER-SCITECH",
+            "description": "Ключевые стеки 6ТУ расширяют научно-технологический кластер"
+          },
+          {
+            "from_ref": "success_conditions.conditions[3]",
+            "to_ref": "CLUSTER-SOCIAL",
+            "description": "Кадровые мощности 6ТУ расширяют социально-кадровый кластер"
+          }
+        ],
+        "legacy_id": "EDGE-009"
+      },
+      {
+        "id": "EDGE-BASE-010",
+        "from": "NODE-CONTEXT",
+        "to": "NODE-TECHBASE",
+        "relationship": "grounds",
+        "description": "Стратегический контекст партнёрства (СЦИ, CML-Bench, МКЦП) заземляет абстрактные принципы 6ТУ",
+        "strength": "STRONG",
+        "source_version": "v3",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "three_layer_model.platform_layer",
+            "to_ref": "target_state_2036.structural_elements[2]",
+            "description": "CML-Bench → полигонные сети SIL/MIL/VnV"
+          },
+          {
+            "from_ref": "three_layer_model.methodological_layer",
+            "to_ref": "ten_principles.principles[3]",
+            "description": "СЦИ → принцип «ЦД как базовая единица управления»"
+          },
+          {
+            "from_ref": "technical_standards.ГОСТ_57700.37",
+            "to_ref": "meta_objects.objects_matrix[5]",
+            "description": "ГОСТ ЦД → мета-объект «единая система отраслевых стандартов»"
+          }
+        ],
+        "legacy_id": "EDGE-010"
+      },
+      {
+        "id": "EDGE-BASE-011",
+        "from": "NODE-TECHBASE",
+        "to": "NODE-SHAREHOLDER",
+        "relationship": "validates",
+        "description": "Реализация 6ТУ-архитектуры подтверждает релевантность миссии акционера",
+        "strength": "MEDIUM",
+        "source_version": "v3",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "summary.partnership_value",
+            "to_ref": "success_metrics",
+            "description": "Уникальная ценность партнёрства подтверждает метрики успеха акционера"
+          },
+          {
+            "from_ref": "meta_objects.cascade.levels[10].форматы_суверенности",
+            "to_ref": "shareholder_principles[0]",
+            "description": "Достижение форматов суверенности подтверждает принцип суверенности"
+          }
+        ],
+        "legacy_id": "EDGE-011"
+      },
+      {
+        "id": "EDGE-012",
+        "from": "NODE-SHAREHOLDER",
+        "to": "NODE-PLATFORM",
+        "relationship": "motivates",
+        "description": "Миссия миссионного акционера обосновывает необходимость платформенной трансформации",
+        "strength": "STRONG",
+        "source_version": "v4",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "MOT-001.civilizational_subjectivity",
+            "to_ref": "PREREQ-GLOBAL",
+            "description": "Цивилизационная субъектность → глобальная предпосылка платформы"
+          },
+          {
+            "from_ref": "target_states.trust_node",
+            "to_ref": "VAL-005",
+            "description": "Целевое состояние «узел доверия» → доверие как капитал платформы"
+          },
+          {
+            "from_ref": "shareholder_principles.trust_and_participation",
+            "to_ref": "8VAL-001",
+            "description": "Принципы акционера → 8 ценностей платформенной модели"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-013",
+        "from": "NODE-PLATFORM",
+        "to": "NODE-FINANCE",
+        "relationship": "requires_transformation",
+        "description": "Платформенная модель требует трансформации финансовой архитектуры",
+        "strength": "STRONG",
+        "source_version": "v4",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "VAL-002.network_effect",
+            "to_ref": "business_model",
+            "description": "Сетевой эффект → новая модель прибыльности (масштабирование без роста издержек)"
+          },
+          {
+            "from_ref": "platform_economy_model.digital_twin_role",
+            "to_ref": "credit_process",
+            "description": "ЦД как актив → паспорт 6ТУ-проекта в кредитном цикле"
+          },
+          {
+            "from_ref": "ANTI-001.scalability_crisis",
+            "to_ref": "CAP-001",
+            "description": "Кризис масштабируемости линейной модели → потребность в новых инструментах"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-014",
+        "from": "NODE-PLATFORM",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "transforms",
+        "description": "Платформенная модель трансформирует кластеры экосистемы в сетевую архитектуру",
+        "strength": "STRONG",
+        "source_version": "v4",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "8VAL-001.values",
+            "to_ref": "cluster_model",
+            "description": "8 ценностей платформы → трансформация логики 5 кластеров"
+          },
+          {
+            "from_ref": "VAL-006.modularity",
+            "to_ref": "CLUSTER-IT",
+            "description": "Модульность и открытые интерфейсы → требования к ИТ-кластеру"
+          },
+          {
+            "from_ref": "VAL-003.complexity_management",
+            "to_ref": "CLUSTER-SCITECH",
+            "description": "Управление сложностью через соавторство → deep-tech кластер"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-015",
+        "from": "NODE-CONTEXT",
+        "to": "NODE-PLATFORM",
+        "relationship": "provides_core",
+        "description": "Контекст партнёрства предоставляет технологическое ядро для платформы",
+        "strength": "STRONG",
+        "source_version": "v4",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "solution_architecture.three_layer_model",
+            "to_ref": "platform_economy_model.digital_twin_role",
+            "description": "Трёхслойная модель СЦИ-ЦД-CML-Bench → технологическое ядро платформы"
+          },
+          {
+            "from_ref": "psb_value_proposition",
+            "to_ref": "psb_platform_role",
+            "description": "Ценностное предложение ПСБ → роль платформенного интегратора"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-016",
+        "from": "NODE-TECHBASE",
+        "to": "NODE-PLATFORM",
+        "relationship": "operationalizes",
+        "description": "Архитектура 6ТУ операционализируется через платформенную модель",
+        "strength": "STRONG",
+        "source_version": "v4",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "ten_principles",
+            "to_ref": "8VAL-001",
+            "description": "10 принципов 6ТУ ↔ 8 ценностей платформы (взаимное соответствие)"
+          },
+          {
+            "from_ref": "meta_objects.cascade",
+            "to_ref": "platform_economy_model",
+            "description": "Каскад мета-объектов → архитектурный каркас платформы"
+          },
+          {
+            "from_ref": "psb_action_plan",
+            "to_ref": "psb_platform_role.architectural_task",
+            "description": "7 действий ПСБ → задачи платформенного интегратора"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-REG-001",
+        "from": "NODE-REGULATORY",
+        "to": "NODE-SHAREHOLDER",
+        "relationship": "legitimizes",
+        "description": "Нормативная база легитимизирует роль миссионного акционера",
+        "strength": "STRONG",
+        "source_version": "v5",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "DOC-400.strategic_priorities",
+            "to_ref": "MOT-001.civilizational_subjectivity",
+            "description": "Стратегия нацбезопасности → цивилизационная субъектность как мотивация"
+          },
+          {
+            "from_ref": "DOC-309.national_goals.tech_leadership",
+            "to_ref": "target_states",
+            "description": "Национальные цели → 5 целевых состояний акционера"
+          },
+          {
+            "from_ref": "523-ФЗ.subjects_of_tech_policy",
+            "to_ref": "shareholder_behavior.institutional",
+            "description": "Закон о техполитике → институциональное поведение"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-REG-002",
+        "from": "NODE-REGULATORY",
+        "to": "NODE-FINANCE",
+        "relationship": "enables_instruments",
+        "description": "Нормативная база создаёт правовую основу для финансовых инструментов 6ТУ",
+        "strength": "STRONG",
+        "source_version": "v5",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "523-ФЗ.PROV-002",
+            "to_ref": "business_model.profit_streams",
+            "description": "Финансовые инструменты по стадиям → траншевое финансирование"
+          },
+          {
+            "from_ref": "NP-TECHLEAD.budget",
+            "to_ref": "CAP-001.capital_adequacy",
+            "description": "Бюджеты нацпроектов → потребность в капитале"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-REG-003",
+        "from": "NODE-REGULATORY",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "structures_actors",
+        "description": "Нормативная база определяет роли акторов экосистемы",
+        "strength": "STRONG",
+        "source_version": "v5",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "LAYER-ACTORS.AC-ECONOMIC",
+            "to_ref": "cluster_model.CLUSTER-FINANCE",
+            "description": "Экономические роли → финансово-расчётный кластер"
+          },
+          {
+            "from_ref": "523-ФЗ.agents_of_development",
+            "to_ref": "quasi_ministerial_functions",
+            "description": "Агенты развития → quasi-министерские функции"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-REG-004",
+        "from": "NODE-REGULATORY",
+        "to": "NODE-CONTEXT",
+        "relationship": "frames_partnership",
+        "description": "Нормативная база задаёт рамку для партнёрства в контуре наука-технологии-производство",
+        "strength": "STRONG",
+        "source_version": "v5",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "DOC-145.priority_focus",
+            "to_ref": "strategic_framework.hierarchy.level_2_priority_area",
+            "description": "Приоритет п.21 → фокус на передовых технологиях проектирования"
+          },
+          {
+            "from_ref": "PRINC-REG-001",
+            "to_ref": "operating_principles.OP-001",
+            "description": "Целостность инновационного цикла"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-REG-005",
+        "from": "NODE-REGULATORY",
+        "to": "NODE-TECHBASE",
+        "relationship": "implements_principles",
+        "description": "Мета-объекты 6ТУ реализуют нормативные требования",
+        "strength": "STRONG",
+        "source_version": "v5",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "MOM-STANDARDS",
+            "to_ref": "ten_principles.principles[2]",
+            "description": "Стандарты и профили → инвариантность по дизайну"
+          },
+          {
+            "from_ref": "meta_objects_mapping",
+            "to_ref": "meta_objects",
+            "description": "Соответствие глобальных мета-объектов → каскад мета-объектов"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-REG-006",
+        "from": "NODE-REGULATORY",
+        "to": "NODE-PLATFORM",
+        "relationship": "justifies_transition",
+        "description": "Нормативная база создаёт предпосылки для платформенной трансформации",
+        "strength": "MEDIUM",
+        "source_version": "v5",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "DOC-309.data_economy",
+            "to_ref": "eight_platform_values.VAL-003",
+            "description": "Экономика данных → данные как ценность"
+          },
+          {
+            "from_ref": "523-ФЗ.ecosystem_approach",
+            "to_ref": "platform_economy_model.core_principle",
+            "description": "Экосистемный подход в законе → экосистема первична"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-PLATFORM-001",
+        "from": "NODE-PLATFORM",
+        "to": "NODE-SHAREHOLDER",
+        "relationship": "extends_vision",
+        "description": "Платформенная модель расширяет стратегическое видение акционера",
+        "strength": "STRONG",
+        "source_version": "v5",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "eight_platform_values.VAL-005",
+            "to_ref": "shareholder_principles.trust_and_participation",
+            "description": "Доверие как капитал платформы → принцип доверия и соучастия"
+          },
+          {
+            "from_ref": "platform_economy_model.core_principle",
+            "to_ref": "target_states.trust_node",
+            "description": "Экосистема первична → целевое состояние «узел доверия»"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-PLATFORM-002",
+        "from": "NODE-PLATFORM",
+        "to": "NODE-FINANCE",
+        "relationship": "transforms_model",
+        "description": "Платформенный подход трансформирует финансовую модель от линейной к сетевой",
+        "strength": "STRONG",
+        "source_version": "v5",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "anti_thesis.scalability_crisis",
+            "to_ref": "business_model.limitations",
+            "description": "Кризис масштабируемости линейной модели → необходимость новых инструментов"
+          },
+          {
+            "from_ref": "eight_platform_values.VAL-002",
+            "to_ref": "profit_streams.transformation",
+            "description": "Сетевые эффекты → трансформация потоков прибыльности"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-PLATFORM-003",
+        "from": "NODE-PLATFORM",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "reorganizes",
+        "description": "Платформенная модель реорганизует 5 кластеров в сетевую архитектуру",
+        "strength": "STRONG",
+        "source_version": "v5",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "eight_platform_values",
+            "to_ref": "cluster_model",
+            "description": "8 ценностей платформы → трансформация 5 кластеров"
+          },
+          {
+            "from_ref": "prerequisites_analysis.PREREQ-INTERNAL",
+            "to_ref": "quasi_ministerial_functions",
+            "description": "Внутренние предпосылки → расширение quasi-министерских функций"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-PLATFORM-004",
+        "from": "NODE-PLATFORM",
+        "to": "NODE-TECHBASE",
+        "relationship": "leverages",
+        "description": "Платформа использует архитектуру 6ТУ как технологический фундамент",
+        "strength": "STRONG",
+        "source_version": "v5",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "platform_economy_model.digital_twin_role",
+            "to_ref": "ten_principles.principles[3]",
+            "description": "ЦД как базовая единица платформы → ЦД как единица управления в 6ТУ"
+          },
+          {
+            "from_ref": "psb_platform_role.instruments",
+            "to_ref": "psb_action_plan",
+            "description": "Инструменты платформы → 7 действий ПСБ"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-PLATFORM-005",
+        "from": "NODE-PLATFORM",
+        "to": "NODE-CONTEXT",
+        "relationship": "amplifies",
+        "description": "Платформенный подход усиливает ценностное предложение партнёрства",
+        "strength": "MEDIUM",
+        "source_version": "v5",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "eight_platform_values.VAL-007",
+            "to_ref": "psb_value_proposition",
+            "description": "Мультипликация ценности → усиленное ценностное предложение"
+          },
+          {
+            "from_ref": "platform_economy_model.digital_twin_role",
+            "to_ref": "three_layer_model.technological_layer",
+            "description": "ЦД в платформе → технологический слой трёхслойной модели"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-PLATFORM-REGULATORY",
+        "from": "NODE-PLATFORM",
+        "to": "NODE-REGULATORY",
+        "relationship": "feedback_loop",
+        "description": "Результаты платформенной трансформации влияют на корректировку нормативной базы",
+        "strength": "MEDIUM",
+        "source_version": "v5",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "platform_economy_model.metrics",
+            "to_ref": "DOC-309.target_metrics",
+            "description": "Метрики платформы → мониторинг национальных целей"
+          },
+          {
+            "from_ref": "psb_platform_role.ecosystem_development",
+            "to_ref": "523-ФЗ.annual_report",
+            "description": "Развитие экосистемы → ежегодная отчётность"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-SOV-001",
+        "from": "NODE-SOVEREIGNTY",
+        "to": "NODE-REGULATORY",
+        "relationship": "derives_from",
+        "description": "Роль ПСБ производна от нормативного контекста",
+        "strength": "STRONG",
+        "source_version": "v6",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "regulatory_contour.document_hierarchy",
+            "to_ref": "regulatory_architecture.layers",
+            "description": "Каскад документов определяет легитимность роли"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-SOV-002",
+        "from": "NODE-SOVEREIGNTY",
+        "to": "NODE-SHAREHOLDER",
+        "relationship": "implements_mission",
+        "description": "Стратегическое позиционирование реализует миссию акционера",
+        "strength": "STRONG",
+        "source_version": "v6",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "strategic_positioning.transformation_trajectory",
+            "to_ref": "transformation_trajectory",
+            "description": "От исполнителя к держателю поля"
+          },
+          {
+            "from_ref": "strategic_positioning.long_game",
+            "to_ref": "shareholder_behavior.infinite_horizon",
+            "description": "20+ лет горизонт планирования"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-SOV-003",
+        "from": "NODE-SOVEREIGNTY",
+        "to": "NODE-FINANCE",
+        "relationship": "resources_role",
+        "description": "Финансовая архитектура обеспечивает ресурсы для роли; роль определяет требования к финансам",
+        "strength": "STRONG",
+        "source_version": "v6",
+        "direction": "bidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "financial_contour.psb_target",
+            "to_ref": "zamysel_financial_model",
+            "description": "2 трлн ₽ целевой объём"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-SOV-004",
+        "from": "NODE-SOVEREIGNTY",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "leverages_infrastructure",
+        "description": "Позиционирование опирается на экосистемную инфраструктуру",
+        "strength": "STRONG",
+        "source_version": "v6",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "state_contour.psb_position_in_state_contour",
+            "to_ref": "cluster_model",
+            "description": "5 кластеров как операционная основа роли"
+          },
+          {
+            "from_ref": "unique_position_analysis.uniqueness_factors",
+            "to_ref": "quasi_ministerial_functions",
+            "description": "Уникальность через quasi-министерские функции"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-SOV-005",
+        "from": "NODE-SOVEREIGNTY",
+        "to": "NODE-CONTEXT",
+        "relationship": "enables_partnership",
+        "description": "Позиционирование создаёт основу для партнёрства с СПбПУ",
+        "strength": "STRONG",
+        "source_version": "v6",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "spbpu_partnership_synergy",
+            "to_ref": "partnership_value",
+            "description": "Синергия ПСБ и СПбПУ"
+          },
+          {
+            "from_ref": "entry_points_matrix.entry_points[6]",
+            "to_ref": "three_layer_model",
+            "description": "СПбПУ как точка входа через СЦИ"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-SOV-006",
+        "from": "NODE-SOVEREIGNTY",
+        "to": "NODE-TECHBASE",
+        "relationship": "operationalizes_through",
+        "description": "Роль операционализируется через архитектуру 6ТУ",
+        "strength": "STRONG",
+        "source_version": "v6",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "integration_with_6tu.connection_points",
+            "to_ref": "psb_actions",
+            "description": "7 точек интеграции с 6ТУ"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-SOV-007",
+        "from": "NODE-SOVEREIGNTY",
+        "to": "NODE-PLATFORM",
+        "relationship": "justifies_platform_model",
+        "description": "Роль в суверенитете обосновывает платформенную модель",
+        "strength": "STRONG",
+        "source_version": "v6",
+        "direction": "unidirectional",
+        "key_mappings": [
+          {
+            "from_ref": "financial_technology_framework.platform_ecosystem",
+            "to_ref": "platform_value_proposition",
+            "description": "Платформа как инструмент масштабирования роли"
+          },
+          {
+            "from_ref": "conclusions_and_recommendations.strategic_conclusions[3]",
+            "to_ref": "network_effects",
+            "description": "2 трлн ₽ требуют сетевых эффектов"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-SCI-001",
+        "from": "NODE-SCI",
+        "to": "NODE-CONTEXT",
+        "relationship": "concretizes",
+        "description": "",
+        "strength": "STRONG",
+        "source_version": "v7"
+      },
+      {
+        "id": "EDGE-SCI-002",
+        "from": "NODE-SCI",
+        "to": "NODE-TECHBASE",
+        "relationship": "provides_methodology",
+        "description": "",
+        "strength": "STRONG",
+        "source_version": "v7"
+      },
+      {
+        "id": "EDGE-SCI-003",
+        "from": "NODE-SCI",
+        "to": "NODE-SHAREHOLDER",
+        "relationship": "operationalizes_vision",
+        "description": "",
+        "strength": "STRONG",
+        "source_version": "v7"
+      },
+      {
+        "id": "EDGE-SCI-004",
+        "from": "NODE-SCI",
+        "to": "NODE-PLATFORM",
+        "relationship": "enables_platform",
+        "description": "",
+        "strength": "STRONG",
+        "source_version": "v7"
+      },
+      {
+        "id": "EDGE-SCI-005",
+        "from": "NODE-SCI",
+        "to": "NODE-FINANCE",
+        "relationship": "defines_funding_logic",
+        "description": "",
+        "strength": "STRONG",
+        "source_version": "v7"
+      },
+      {
+        "id": "EDGE-SCI-006",
+        "from": "NODE-SCI",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "structures_integration",
+        "description": "",
+        "strength": "STRONG",
+        "source_version": "v7"
+      },
+      {
+        "id": "EDGE-SCI-007",
+        "from": "NODE-SCI",
+        "to": "NODE-REGULATORY",
+        "relationship": "aligns_with_standards",
+        "description": "",
+        "strength": "MEDIUM",
+        "source_version": "v7"
+      },
+      {
+        "id": "EDGE-MARKET-001",
+        "from": "NODE-MARKET",
+        "to": "NODE-CONTEXT",
+        "relationship": "contextualizes_position",
+        "description": "Рыночный анализ позиционирует CML-Bench в глобальном контексте трёхслойной модели",
+        "strength": "STRONG",
+        "source_version": "v8"
+      },
+      {
+        "id": "EDGE-MARKET-002",
+        "from": "NODE-MARKET",
+        "to": "NODE-SCI",
+        "relationship": "benchmarks_methodology",
+        "description": "СЦИ-методология сравнивается с подходами Siemens, Microsoft и других лидеров",
+        "strength": "STRONG",
+        "source_version": "v8"
+      },
+      {
+        "id": "EDGE-MARKET-003",
+        "from": "NODE-MARKET",
+        "to": "NODE-TECHBASE",
+        "relationship": "identifies_technology_gaps",
+        "description": "Выявление GAP'ов (LLM-Copilot, Low-code, MES) для 6ТУ-архитектуры",
+        "strength": "STRONG",
+        "source_version": "v8"
+      },
+      {
+        "id": "EDGE-MARKET-004",
+        "from": "NODE-MARKET",
+        "to": "NODE-SOVEREIGNTY",
+        "relationship": "validates_sovereignty_path",
+        "description": "Подтверждение стратегии технологического суверенитета через анализ санкционных рисков",
+        "strength": "STRONG",
+        "source_version": "v8"
+      },
+      {
+        "id": "EDGE-MARKET-005",
+        "from": "NODE-MARKET",
+        "to": "NODE-PLATFORM",
+        "relationship": "provides_competitive_context",
+        "description": "Контекст платформенной конкуренции: экосистемные хабы Siemens, Microsoft, Huawei",
+        "strength": "STRONG",
+        "source_version": "v8"
+      },
+      {
+        "id": "EDGE-MARKET-006",
+        "from": "NODE-MARKET",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "maps_ecosystem_players",
+        "description": "Картирование Cifra, Газпром Нефть, Росатом как партнёров экосистемы",
+        "strength": "MEDIUM",
+        "source_version": "v8"
+      },
+      {
+        "id": "EDGE-MARKET-007",
+        "from": "NODE-MARKET",
+        "to": "NODE-FINANCE",
+        "relationship": "quantifies_opportunity",
+        "description": "Оценка рынка $16.6B и потенциала роста для обоснования инвестиций",
+        "strength": "MEDIUM",
+        "source_version": "v8"
+      },
+      {
+        "id": "EDGE-MARKET-008",
+        "from": "NODE-MARKET",
+        "to": "NODE-SHAREHOLDER",
+        "relationship": "validates_mission",
+        "description": "Подтверждение миссионной роли ПСБ через анализ суверенных альтернатив",
+        "strength": "MEDIUM",
+        "source_version": "v8"
+      },
+      {
+        "id": "EDGE-CMLBENCH-001",
+        "from": "NODE-CMLBENCH",
+        "to": "NODE-CONTEXT",
+        "relationship": "establishes_strategic_context",
+        "description": "Контекст партнёрства определяет роль CML-Bench как технического ядра трёхслойной модели",
+        "strength": "STRONG",
+        "source_version": "v9"
+      },
+      {
+        "id": "EDGE-CMLBENCH-002",
+        "from": "NODE-CMLBENCH",
+        "to": "NODE-SCI",
+        "relationship": "defines_methodological_framework",
+        "description": "СЦИ задаёт методологический каркас; CML-Bench реализует L5 (ЦД-артефакт) и L6 (V&V-базис)",
+        "strength": "STRONG",
+        "source_version": "v9"
+      },
+      {
+        "id": "EDGE-CMLBENCH-003",
+        "from": "NODE-CMLBENCH",
+        "to": "NODE-MARKET",
+        "relationship": "provides_competitive_context",
+        "description": "Рыночный анализ задаёт конкурентное окружение и бенчмарки для GAP-анализа",
+        "strength": "STRONG",
+        "source_version": "v9"
+      },
+      {
+        "id": "EDGE-CMLBENCH-004",
+        "from": "NODE-CMLBENCH",
+        "to": "NODE-TECHBASE",
+        "relationship": "provides_architectural_requirements",
+        "description": "6ТУ-Framework задаёт архитектурные требования к V&V-контуру и интеграциям",
+        "strength": "STRONG",
+        "source_version": "v9"
+      },
+      {
+        "id": "EDGE-CMLBENCH-005",
+        "from": "NODE-CMLBENCH",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "maps_integration_partners",
+        "description": "Экосистема ПСБ определяет партнёров интеграции: Cifra, Росатом, GigaChat, «Аметист»",
+        "strength": "STRONG",
+        "source_version": "v9"
+      },
+      {
+        "id": "EDGE-CMLBENCH-006",
+        "from": "NODE-CMLBENCH",
+        "to": "NODE-SOVEREIGNTY",
+        "relationship": "validates_sovereignty_role",
+        "description": "CML-Bench как суверенная альтернатива Siemens Xcelerator для ОПК",
+        "strength": "STRONG",
+        "source_version": "v9"
+      },
+      {
+        "id": "EDGE-CMLBENCH-007",
+        "from": "NODE-CMLBENCH",
+        "to": "NODE-FINANCE",
+        "relationship": "enables_financial_innovation",
+        "description": "ЦД как залоговый актив, траншевое финансирование по V&V-milestone",
+        "strength": "MEDIUM",
+        "source_version": "v9"
+      },
+      {
+        "id": "EDGE-CMLBENCH-008",
+        "from": "NODE-CMLBENCH",
+        "to": "NODE-SHAREHOLDER",
+        "relationship": "validates_mission",
+        "description": "CML-Bench как архитектурный элемент миссии ПСБ по технологическому суверенитету",
+        "strength": "MEDIUM",
+        "source_version": "v9"
+      },
+      {
+        "id": "EDGE-CMLBENCH-009",
+        "from": "NODE-CMLBENCH",
+        "to": "NODE-PLATFORM",
+        "relationship": "applies_platform_model",
+        "description": "CML-Bench Marketplace применяет 8 ценностей платформенной модели",
+        "strength": "MEDIUM",
+        "source_version": "v9"
+      },
+      {
+        "id": "EDGE-CMLBENCH-010",
+        "from": "NODE-CMLBENCH",
+        "to": "NODE-REGULATORY",
+        "relationship": "ensures_compliance",
+        "description": "ГОСТ Р 57700.37-2021 как нормативная основа; ФСТЭК-сертификация",
+        "strength": "MEDIUM",
+        "source_version": "v9"
+      },
+      {
+        "id": "EDGE-AGENDA-001",
+        "from": "NODE-AGENDA",
+        "to": "NODE-SHAREHOLDER",
+        "relationship": "operationalizes_shareholder_philosophy",
+        "description": "Государственная повестка — это СРЕДА, через которую акционер (РФ) влияет на ПСБ, не давая прямых приказов. Указание Президента 12.08.2024 = операционализация миссионного акционерства",
+        "strength": "STRONG",
+        "source_version": "v10"
+      },
+      {
+        "id": "EDGE-AGENDA-002",
+        "from": "NODE-AGENDA",
+        "to": "NODE-CONTEXT",
+        "relationship": "establishes_national_imperative",
+        "description": "Контекст партнёрства ПСБ×СПбПУ обретает статус НАЦИОНАЛЬНОГО ПРОЕКТА через Указание Президента. МКЦП ЦД → партнёрство становится исполнителем государственного мандата",
+        "strength": "STRONG",
+        "source_version": "v10"
+      },
+      {
+        "id": "EDGE-AGENDA-003",
+        "from": "NODE-AGENDA",
+        "to": "NODE-REGULATORY",
+        "relationship": "extends_regulatory_framework",
+        "description": "Указание Президента 12.08.2024 + решения Коллегии ВПК добавляют новый слой нормативов поверх 523-ФЗ, Указа №309, Указа №145. Межведомственный совет по V&V создаёт методику оценки эффективности ЦД",
+        "strength": "STRONG",
+        "source_version": "v10"
+      },
+      {
+        "id": "EDGE-AGENDA-004",
+        "from": "NODE-AGENDA",
+        "to": "NODE-SCI",
+        "relationship": "validates_methodological_foundation",
+        "description": "Требование 'методики оценки эффективности ЦД на основании виртуальных испытаний' → СЦИ L6 (V&V-базис) как прямой ответ. СПбПУ может стать методологическим ядром МКЦП",
+        "strength": "STRONG",
+        "source_version": "v10"
+      },
+      {
+        "id": "EDGE-AGENDA-005",
+        "from": "NODE-AGENDA",
+        "to": "NODE-CMLBENCH",
+        "relationship": "defines_platform_requirements",
+        "description": "'Единая система учета, поддержки и коллективного использования ЦД' → CML-Bench как техническая реализация. КРИТИЧНО: GAP по ИИ (Путин 23.04.2025: 'ИИ даст преимущества') → интеграция GigaChat urgent",
+        "strength": "STRONG",
+        "source_version": "v10"
+      },
+      {
+        "id": "EDGE-AGENDA-006",
+        "from": "NODE-AGENDA",
+        "to": "NODE-FINANCE",
+        "relationship": "structures_investment_framework",
+        "description": "МКЦП финансы: 60-70% бюджет, 25-35% внебюджет → роль ПСБ как архитектора внебюджетной части. Траншевое финансирование по V&V-вехам (6ТУ-Framework) становится механизмом МКЦП",
+        "strength": "STRONG",
+        "source_version": "v10"
+      },
+      {
+        "id": "EDGE-AGENDA-007",
+        "from": "NODE-AGENDA",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "identifies_implementation_partners",
+        "description": "Межведомственная комиссия + МЭЦ + ВТИ → экосистема ПСБ (институциональный кластер, deep-tech кластер) как потенциальная площадка реализации. СПбПУ — кандидат на МЭЦ",
+        "strength": "MEDIUM",
+        "source_version": "v10"
+      },
+      {
+        "id": "EDGE-AGENDA-008",
+        "from": "NODE-AGENDA",
+        "to": "NODE-TECHBASE",
+        "relationship": "validates_6tu_architecture",
+        "description": "Требование 'опережающего технологического задела' → 6ТУ-Framework (10 принципов, V&V-контур, мета-объекты) как архитектурный паттерн. Задел ДО серийного производства = принцип 6ТУ",
+        "strength": "STRONG",
+        "source_version": "v10"
+      },
+      {
+        "id": "EDGE-AGENDA-009",
+        "from": "NODE-AGENDA",
+        "to": "NODE-SOVEREIGNTY",
+        "relationship": "establishes_sovereignty_urgency",
+        "description": "Белоусов (07.08.2024): 'Технология ЦД рассматривается США и НАТО как способ достижения долгосрочного превосходства над РФ и Китаем' → технологический суверенитет через ЦД = вопрос национальной безопасности",
+        "strength": "STRONG",
+        "source_version": "v10"
+      },
+      {
+        "id": "EDGE-AGENDA-010",
+        "from": "NODE-AGENDA",
+        "to": "NODE-PLATFORM",
+        "relationship": "mandates_platform_transition",
+        "description": "Требование 'коллективного использования ЦД заинтересованными организациями ОПК' → платформенная модель (сетевые эффекты, доверие = капитал) vs проприетарная. ПСБ как узел доверия критичен",
+        "strength": "STRONG",
+        "source_version": "v10"
+      },
+      {
+        "id": "EDGE-AGENDA-011",
+        "from": "NODE-AGENDA",
+        "to": "NODE-MARKET",
+        "relationship": "contextualizes_competitive_landscape",
+        "description": "Мантуров (15.05.2024): США утвердили 'Стратегию цифрового инжиниринга' 2018 → эталон для сравнения. Анализ 29 платформ показывает GAP РФ (1.45% рынка) → императив догнать и перегнать",
+        "strength": "MEDIUM",
+        "source_version": "v10"
+      },
+      {
+        "id": "EDGE-MKCP-001",
+        "from": "NODE-MKCP",
+        "to": "NODE-AGENDA",
+        "relationship": "operationalizes",
+        "description": "МКЦП ЦД операционализирует Указание Президента 12.08.2024 в 10-летнюю программу",
+        "strength": "CRITICAL",
+        "source_version": "v11",
+        "evidence": "program_parameters.normative_basis.presidential_mandate ← timeline_analysis.events.EVENT-005"
+      },
+      {
+        "id": "EDGE-MKCP-002",
+        "from": "NODE-MKCP",
+        "to": "NODE-SHAREHOLDER",
+        "relationship": "realizes_mission",
+        "description": "МКЦП создаёт СРЕДУ для реализации миссии акционера (влияние через среду, не приказ)",
+        "strength": "STRONG",
+        "source_version": "v11",
+        "evidence": "15 трлн рублей программа = среда для ПСБ как проводника госполитики"
+      },
+      {
+        "id": "EDGE-MKCP-003",
+        "from": "NODE-MKCP",
+        "to": "NODE-FINANCE",
+        "relationship": "opens_financing_space",
+        "description": "25-35% внебюджет (до 5.25 трлн) — пространство для финансовых продуктов ПСБ",
+        "strength": "CRITICAL",
+        "source_version": "v11",
+        "evidence": "financing_mechanisms.budget_structure.extra_budget_share + psb_financial_products_for_mkcp"
+      },
+      {
+        "id": "EDGE-MKCP-004",
+        "from": "NODE-MKCP",
+        "to": "NODE-SCI",
+        "relationship": "requires_methodology",
+        "description": "Требования МКЦП (задачи 4.1.2-4.1.11) адресуются методологией СЦИ",
+        "strength": "CRITICAL",
+        "source_version": "v11",
+        "evidence": "goals_and_objectives.objectives ← six_layer_model.layers (полное покрытие L1-L6)"
+      },
+      {
+        "id": "EDGE-MKCP-005",
+        "from": "NODE-MKCP",
+        "to": "NODE-CMLBENCH",
+        "relationship": "requires_platform",
+        "description": "Направления работ 7.2.4-7.2.15 требуют технологической платформы — CML-Bench как кандидат",
+        "strength": "STRONG",
+        "source_version": "v11",
+        "evidence": "work_directions + participants_analysis.spbpu_positioning.unique_value_proposition"
+      },
+      {
+        "id": "EDGE-MKCP-006",
+        "from": "NODE-MKCP",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "leverages_infrastructure",
+        "description": "100+ участников МКЦП — потенциальные клиенты экосистемы ПСБ",
+        "strength": "STRONG",
+        "source_version": "v11",
+        "evidence": "participants_analysis.categories ← five_clusters (финансы, IT, deep-tech)"
+      },
+      {
+        "id": "EDGE-MKCP-007",
+        "from": "NODE-MKCP",
+        "to": "NODE-REGULATORY",
+        "relationship": "extends_normative_base",
+        "description": "МКЦП расширяет нормативную базу: ГОСТ Р 57700.37-2021 + новые ГВС",
+        "strength": "STRONG",
+        "source_version": "v11",
+        "evidence": "key_definitions.referenced_standards + principles_of_formation.PRIN-003"
+      },
+      {
+        "id": "EDGE-MKCP-008",
+        "from": "NODE-MKCP",
+        "to": "NODE-CONTEXT",
+        "relationship": "formalizes_partnership",
+        "description": "МКЦП формализует партнёрство: СПбПУ №55 + ГОСТ + ПСБ в дирекции",
+        "strength": "CRITICAL",
+        "source_version": "v11",
+        "evidence": "participants_analysis.spbpu_positioning + strategic_positioning"
+      },
+      {
+        "id": "EDGE-MKCP-009",
+        "from": "NODE-MKCP",
+        "to": "NODE-TECHBASE",
+        "relationship": "aligns_with_6tu",
+        "description": "Принципы МКЦП (9.1-9.7) выровнены с 10 принципами 6ТУ-Framework",
+        "strength": "MODERATE",
+        "source_version": "v11",
+        "evidence": "principles_of_formation ← ten_principles"
+      },
+      {
+        "id": "EDGE-MKCP-010",
+        "from": "NODE-MKCP",
+        "to": "NODE-SOVEREIGNTY",
+        "relationship": "implements_sovereignty",
+        "description": "МКЦП реализует 7 точек входа ПСБ в технологический суверенитет на программном уровне",
+        "strength": "STRONG",
+        "source_version": "v11",
+        "evidence": "participants_analysis.psb_positioning_opportunity.entry_points ← seven_entry_points"
+      },
+      {
+        "id": "EDGE-MKCP-011",
+        "from": "NODE-MKCP",
+        "to": "NODE-MARKET",
+        "relationship": "shapes_domestic_market",
+        "description": "МКЦП формирует отечественный рынок ЦД: 100+ организаций-участников, 15 трлн бюджет",
+        "strength": "STRONG",
+        "source_version": "v11",
+        "evidence": "program_parameters.forecast_budget + participants_analysis vs global_market"
+      },
+      {
+        "id": "EDGE-MKCP-012",
+        "from": "NODE-MKCP",
+        "to": "NODE-PLATFORM",
+        "relationship": "enables_platform_transition",
+        "description": "МКЦП создаёт единую систему ЦД (цель 4.1.5) — платформенная модель для ОПК",
+        "strength": "MODERATE",
+        "source_version": "v11",
+        "evidence": "goals_and_objectives.goals.GOAL-005 ← network_effects + dt_as_base_unit"
+      }
+    ],
+    "by_source_node": {
+      "NODE-AGENDA": {
+        "outgoing_count": 11,
+        "outgoing": [
+          {
+            "id": "EDGE-AGENDA-001",
+            "to": "NODE-SHAREHOLDER",
+            "relationship": "operationalizes_shareholder_philosophy",
+            "strength": "STRONG",
+            "description": "Государственная повестка — это СРЕДА, через которую акционер (РФ) влияет на ПСБ, не давая прямых при"
+          },
+          {
+            "id": "EDGE-AGENDA-002",
+            "to": "NODE-CONTEXT",
+            "relationship": "establishes_national_imperative",
+            "strength": "STRONG",
+            "description": "Контекст партнёрства ПСБ×СПбПУ обретает статус НАЦИОНАЛЬНОГО ПРОЕКТА через Указание Президента. МКЦП"
+          },
+          {
+            "id": "EDGE-AGENDA-003",
+            "to": "NODE-REGULATORY",
+            "relationship": "extends_regulatory_framework",
+            "strength": "STRONG",
+            "description": "Указание Президента 12.08.2024 + решения Коллегии ВПК добавляют новый слой нормативов поверх 523-ФЗ,"
+          },
+          {
+            "id": "EDGE-AGENDA-004",
+            "to": "NODE-SCI",
+            "relationship": "validates_methodological_foundation",
+            "strength": "STRONG",
+            "description": "Требование 'методики оценки эффективности ЦД на основании виртуальных испытаний' → СЦИ L6 (V&V-базис"
+          },
+          {
+            "id": "EDGE-AGENDA-005",
+            "to": "NODE-CMLBENCH",
+            "relationship": "defines_platform_requirements",
+            "strength": "STRONG",
+            "description": "'Единая система учета, поддержки и коллективного использования ЦД' → CML-Bench как техническая реали"
+          },
+          {
+            "id": "EDGE-AGENDA-006",
+            "to": "NODE-FINANCE",
+            "relationship": "structures_investment_framework",
+            "strength": "STRONG",
+            "description": "МКЦП финансы: 60-70% бюджет, 25-35% внебюджет → роль ПСБ как архитектора внебюджетной части. Траншев"
+          },
+          {
+            "id": "EDGE-AGENDA-007",
+            "to": "NODE-ECOSYSTEM",
+            "relationship": "identifies_implementation_partners",
+            "strength": "MEDIUM",
+            "description": "Межведомственная комиссия + МЭЦ + ВТИ → экосистема ПСБ (институциональный кластер, deep-tech кластер"
+          },
+          {
+            "id": "EDGE-AGENDA-008",
+            "to": "NODE-TECHBASE",
+            "relationship": "validates_6tu_architecture",
+            "strength": "STRONG",
+            "description": "Требование 'опережающего технологического задела' → 6ТУ-Framework (10 принципов, V&V-контур, мета-об"
+          },
+          {
+            "id": "EDGE-AGENDA-009",
+            "to": "NODE-SOVEREIGNTY",
+            "relationship": "establishes_sovereignty_urgency",
+            "strength": "STRONG",
+            "description": "Белоусов (07.08.2024): 'Технология ЦД рассматривается США и НАТО как способ достижения долгосрочного"
+          },
+          {
+            "id": "EDGE-AGENDA-010",
+            "to": "NODE-PLATFORM",
+            "relationship": "mandates_platform_transition",
+            "strength": "STRONG",
+            "description": "Требование 'коллективного использования ЦД заинтересованными организациями ОПК' → платформенная моде"
+          },
+          {
+            "id": "EDGE-AGENDA-011",
+            "to": "NODE-MARKET",
+            "relationship": "contextualizes_competitive_landscape",
+            "strength": "MEDIUM",
+            "description": "Мантуров (15.05.2024): США утвердили 'Стратегию цифрового инжиниринга' 2018 → эталон для сравнения. "
+          }
+        ]
+      },
+      "NODE-CMLBENCH": {
+        "outgoing_count": 10,
+        "outgoing": [
+          {
+            "id": "EDGE-CMLBENCH-001",
+            "to": "NODE-CONTEXT",
+            "relationship": "establishes_strategic_context",
+            "strength": "STRONG",
+            "description": "Контекст партнёрства определяет роль CML-Bench как технического ядра трёхслойной модели"
+          },
+          {
+            "id": "EDGE-CMLBENCH-002",
+            "to": "NODE-SCI",
+            "relationship": "defines_methodological_framework",
+            "strength": "STRONG",
+            "description": "СЦИ задаёт методологический каркас; CML-Bench реализует L5 (ЦД-артефакт) и L6 (V&V-базис)"
+          },
+          {
+            "id": "EDGE-CMLBENCH-003",
+            "to": "NODE-MARKET",
+            "relationship": "provides_competitive_context",
+            "strength": "STRONG",
+            "description": "Рыночный анализ задаёт конкурентное окружение и бенчмарки для GAP-анализа"
+          },
+          {
+            "id": "EDGE-CMLBENCH-004",
+            "to": "NODE-TECHBASE",
+            "relationship": "provides_architectural_requirements",
+            "strength": "STRONG",
+            "description": "6ТУ-Framework задаёт архитектурные требования к V&V-контуру и интеграциям"
+          },
+          {
+            "id": "EDGE-CMLBENCH-005",
+            "to": "NODE-ECOSYSTEM",
+            "relationship": "maps_integration_partners",
+            "strength": "STRONG",
+            "description": "Экосистема ПСБ определяет партнёров интеграции: Cifra, Росатом, GigaChat, «Аметист»"
+          },
+          {
+            "id": "EDGE-CMLBENCH-006",
+            "to": "NODE-SOVEREIGNTY",
+            "relationship": "validates_sovereignty_role",
+            "strength": "STRONG",
+            "description": "CML-Bench как суверенная альтернатива Siemens Xcelerator для ОПК"
+          },
+          {
+            "id": "EDGE-CMLBENCH-007",
+            "to": "NODE-FINANCE",
+            "relationship": "enables_financial_innovation",
+            "strength": "MEDIUM",
+            "description": "ЦД как залоговый актив, траншевое финансирование по V&V-milestone"
+          },
+          {
+            "id": "EDGE-CMLBENCH-008",
+            "to": "NODE-SHAREHOLDER",
+            "relationship": "validates_mission",
+            "strength": "MEDIUM",
+            "description": "CML-Bench как архитектурный элемент миссии ПСБ по технологическому суверенитету"
+          },
+          {
+            "id": "EDGE-CMLBENCH-009",
+            "to": "NODE-PLATFORM",
+            "relationship": "applies_platform_model",
+            "strength": "MEDIUM",
+            "description": "CML-Bench Marketplace применяет 8 ценностей платформенной модели"
+          },
+          {
+            "id": "EDGE-CMLBENCH-010",
+            "to": "NODE-REGULATORY",
+            "relationship": "ensures_compliance",
+            "strength": "MEDIUM",
+            "description": "ГОСТ Р 57700.37-2021 как нормативная основа; ФСТЭК-сертификация"
+          }
+        ]
+      },
+      "NODE-CONTEXT": {
+        "outgoing_count": 3,
+        "outgoing": [
+          {
+            "id": "EDGE-BASE-004",
+            "to": "NODE-SHAREHOLDER",
+            "relationship": "validates",
+            "strength": "MEDIUM",
+            "description": "Стратегический контекст подтверждает и конкретизирует логику акционера"
+          },
+          {
+            "id": "EDGE-BASE-010",
+            "to": "NODE-TECHBASE",
+            "relationship": "grounds",
+            "strength": "STRONG",
+            "description": "Стратегический контекст партнёрства (СЦИ, CML-Bench, МКЦП) заземляет абстрактные принципы 6ТУ"
+          },
+          {
+            "id": "EDGE-015",
+            "to": "NODE-PLATFORM",
+            "relationship": "provides_core",
+            "strength": "STRONG",
+            "description": "Контекст партнёрства предоставляет технологическое ядро для платформы"
+          }
+        ]
+      },
+      "NODE-ECOSYSTEM": {
+        "outgoing_count": 1,
+        "outgoing": [
+          {
+            "id": "EDGE-BASE-003",
+            "to": "NODE-CONTEXT",
+            "relationship": "enables",
+            "strength": "STRONG",
+            "description": "Экосистема создаёт инфраструктурные условия для реализации стратегии партнёрства"
+          }
+        ]
+      },
+      "NODE-FINANCE": {
+        "outgoing_count": 2,
+        "outgoing": [
+          {
+            "id": "EDGE-BASE-002",
+            "to": "NODE-ECOSYSTEM",
+            "relationship": "funds",
+            "strength": "STRONG",
+            "description": "Финансовые механизмы обеспечивают ресурсную базу для кластеров экосистемы"
+          },
+          {
+            "id": "EDGE-BASE-006",
+            "to": "NODE-CONTEXT",
+            "relationship": "enables",
+            "strength": "MEDIUM",
+            "description": "Финансовые возможности обеспечивают реализацию стратегии партнёрства"
+          }
+        ]
+      },
+      "NODE-MARKET": {
+        "outgoing_count": 8,
+        "outgoing": [
+          {
+            "id": "EDGE-MARKET-001",
+            "to": "NODE-CONTEXT",
+            "relationship": "contextualizes_position",
+            "strength": "STRONG",
+            "description": "Рыночный анализ позиционирует CML-Bench в глобальном контексте трёхслойной модели"
+          },
+          {
+            "id": "EDGE-MARKET-002",
+            "to": "NODE-SCI",
+            "relationship": "benchmarks_methodology",
+            "strength": "STRONG",
+            "description": "СЦИ-методология сравнивается с подходами Siemens, Microsoft и других лидеров"
+          },
+          {
+            "id": "EDGE-MARKET-003",
+            "to": "NODE-TECHBASE",
+            "relationship": "identifies_technology_gaps",
+            "strength": "STRONG",
+            "description": "Выявление GAP'ов (LLM-Copilot, Low-code, MES) для 6ТУ-архитектуры"
+          },
+          {
+            "id": "EDGE-MARKET-004",
+            "to": "NODE-SOVEREIGNTY",
+            "relationship": "validates_sovereignty_path",
+            "strength": "STRONG",
+            "description": "Подтверждение стратегии технологического суверенитета через анализ санкционных рисков"
+          },
+          {
+            "id": "EDGE-MARKET-005",
+            "to": "NODE-PLATFORM",
+            "relationship": "provides_competitive_context",
+            "strength": "STRONG",
+            "description": "Контекст платформенной конкуренции: экосистемные хабы Siemens, Microsoft, Huawei"
+          },
+          {
+            "id": "EDGE-MARKET-006",
+            "to": "NODE-ECOSYSTEM",
+            "relationship": "maps_ecosystem_players",
+            "strength": "MEDIUM",
+            "description": "Картирование Cifra, Газпром Нефть, Росатом как партнёров экосистемы"
+          },
+          {
+            "id": "EDGE-MARKET-007",
+            "to": "NODE-FINANCE",
+            "relationship": "quantifies_opportunity",
+            "strength": "MEDIUM",
+            "description": "Оценка рынка $16.6B и потенциала роста для обоснования инвестиций"
+          },
+          {
+            "id": "EDGE-MARKET-008",
+            "to": "NODE-SHAREHOLDER",
+            "relationship": "validates_mission",
+            "strength": "MEDIUM",
+            "description": "Подтверждение миссионной роли ПСБ через анализ суверенных альтернатив"
+          }
+        ]
+      },
+      "NODE-MKCP": {
+        "outgoing_count": 12,
+        "outgoing": [
+          {
+            "id": "EDGE-MKCP-001",
+            "to": "NODE-AGENDA",
+            "relationship": "operationalizes",
+            "strength": "CRITICAL",
+            "description": "МКЦП ЦД операционализирует Указание Президента 12.08.2024 в 10-летнюю программу"
+          },
+          {
+            "id": "EDGE-MKCP-002",
+            "to": "NODE-SHAREHOLDER",
+            "relationship": "realizes_mission",
+            "strength": "STRONG",
+            "description": "МКЦП создаёт СРЕДУ для реализации миссии акционера (влияние через среду, не приказ)"
+          },
+          {
+            "id": "EDGE-MKCP-003",
+            "to": "NODE-FINANCE",
+            "relationship": "opens_financing_space",
+            "strength": "CRITICAL",
+            "description": "25-35% внебюджет (до 5.25 трлн) — пространство для финансовых продуктов ПСБ"
+          },
+          {
+            "id": "EDGE-MKCP-004",
+            "to": "NODE-SCI",
+            "relationship": "requires_methodology",
+            "strength": "CRITICAL",
+            "description": "Требования МКЦП (задачи 4.1.2-4.1.11) адресуются методологией СЦИ"
+          },
+          {
+            "id": "EDGE-MKCP-005",
+            "to": "NODE-CMLBENCH",
+            "relationship": "requires_platform",
+            "strength": "STRONG",
+            "description": "Направления работ 7.2.4-7.2.15 требуют технологической платформы — CML-Bench как кандидат"
+          },
+          {
+            "id": "EDGE-MKCP-006",
+            "to": "NODE-ECOSYSTEM",
+            "relationship": "leverages_infrastructure",
+            "strength": "STRONG",
+            "description": "100+ участников МКЦП — потенциальные клиенты экосистемы ПСБ"
+          },
+          {
+            "id": "EDGE-MKCP-007",
+            "to": "NODE-REGULATORY",
+            "relationship": "extends_normative_base",
+            "strength": "STRONG",
+            "description": "МКЦП расширяет нормативную базу: ГОСТ Р 57700.37-2021 + новые ГВС"
+          },
+          {
+            "id": "EDGE-MKCP-008",
+            "to": "NODE-CONTEXT",
+            "relationship": "formalizes_partnership",
+            "strength": "CRITICAL",
+            "description": "МКЦП формализует партнёрство: СПбПУ №55 + ГОСТ + ПСБ в дирекции"
+          },
+          {
+            "id": "EDGE-MKCP-009",
+            "to": "NODE-TECHBASE",
+            "relationship": "aligns_with_6tu",
+            "strength": "MODERATE",
+            "description": "Принципы МКЦП (9.1-9.7) выровнены с 10 принципами 6ТУ-Framework"
+          },
+          {
+            "id": "EDGE-MKCP-010",
+            "to": "NODE-SOVEREIGNTY",
+            "relationship": "implements_sovereignty",
+            "strength": "STRONG",
+            "description": "МКЦП реализует 7 точек входа ПСБ в технологический суверенитет на программном уровне"
+          },
+          {
+            "id": "EDGE-MKCP-011",
+            "to": "NODE-MARKET",
+            "relationship": "shapes_domestic_market",
+            "strength": "STRONG",
+            "description": "МКЦП формирует отечественный рынок ЦД: 100+ организаций-участников, 15 трлн бюджет"
+          },
+          {
+            "id": "EDGE-MKCP-012",
+            "to": "NODE-PLATFORM",
+            "relationship": "enables_platform_transition",
+            "strength": "MODERATE",
+            "description": "МКЦП создаёт единую систему ЦД (цель 4.1.5) — платформенная модель для ОПК"
+          }
+        ]
+      },
+      "NODE-PLATFORM": {
+        "outgoing_count": 8,
+        "outgoing": [
+          {
+            "id": "EDGE-013",
+            "to": "NODE-FINANCE",
+            "relationship": "requires_transformation",
+            "strength": "STRONG",
+            "description": "Платформенная модель требует трансформации финансовой архитектуры"
+          },
+          {
+            "id": "EDGE-014",
+            "to": "NODE-ECOSYSTEM",
+            "relationship": "transforms",
+            "strength": "STRONG",
+            "description": "Платформенная модель трансформирует кластеры экосистемы в сетевую архитектуру"
+          },
+          {
+            "id": "EDGE-PLATFORM-001",
+            "to": "NODE-SHAREHOLDER",
+            "relationship": "extends_vision",
+            "strength": "STRONG",
+            "description": "Платформенная модель расширяет стратегическое видение акционера"
+          },
+          {
+            "id": "EDGE-PLATFORM-002",
+            "to": "NODE-FINANCE",
+            "relationship": "transforms_model",
+            "strength": "STRONG",
+            "description": "Платформенный подход трансформирует финансовую модель от линейной к сетевой"
+          },
+          {
+            "id": "EDGE-PLATFORM-003",
+            "to": "NODE-ECOSYSTEM",
+            "relationship": "reorganizes",
+            "strength": "STRONG",
+            "description": "Платформенная модель реорганизует 5 кластеров в сетевую архитектуру"
+          },
+          {
+            "id": "EDGE-PLATFORM-004",
+            "to": "NODE-TECHBASE",
+            "relationship": "leverages",
+            "strength": "STRONG",
+            "description": "Платформа использует архитектуру 6ТУ как технологический фундамент"
+          },
+          {
+            "id": "EDGE-PLATFORM-005",
+            "to": "NODE-CONTEXT",
+            "relationship": "amplifies",
+            "strength": "MEDIUM",
+            "description": "Платформенный подход усиливает ценностное предложение партнёрства"
+          },
+          {
+            "id": "EDGE-PLATFORM-REGULATORY",
+            "to": "NODE-REGULATORY",
+            "relationship": "feedback_loop",
+            "strength": "MEDIUM",
+            "description": "Результаты платформенной трансформации влияют на корректировку нормативной базы"
+          }
+        ]
+      },
+      "NODE-REGULATORY": {
+        "outgoing_count": 6,
+        "outgoing": [
+          {
+            "id": "EDGE-REG-001",
+            "to": "NODE-SHAREHOLDER",
+            "relationship": "legitimizes",
+            "strength": "STRONG",
+            "description": "Нормативная база легитимизирует роль миссионного акционера"
+          },
+          {
+            "id": "EDGE-REG-002",
+            "to": "NODE-FINANCE",
+            "relationship": "enables_instruments",
+            "strength": "STRONG",
+            "description": "Нормативная база создаёт правовую основу для финансовых инструментов 6ТУ"
+          },
+          {
+            "id": "EDGE-REG-003",
+            "to": "NODE-ECOSYSTEM",
+            "relationship": "structures_actors",
+            "strength": "STRONG",
+            "description": "Нормативная база определяет роли акторов экосистемы"
+          },
+          {
+            "id": "EDGE-REG-004",
+            "to": "NODE-CONTEXT",
+            "relationship": "frames_partnership",
+            "strength": "STRONG",
+            "description": "Нормативная база задаёт рамку для партнёрства в контуре наука-технологии-производство"
+          },
+          {
+            "id": "EDGE-REG-005",
+            "to": "NODE-TECHBASE",
+            "relationship": "implements_principles",
+            "strength": "STRONG",
+            "description": "Мета-объекты 6ТУ реализуют нормативные требования"
+          },
+          {
+            "id": "EDGE-REG-006",
+            "to": "NODE-PLATFORM",
+            "relationship": "justifies_transition",
+            "strength": "MEDIUM",
+            "description": "Нормативная база создаёт предпосылки для платформенной трансформации"
+          }
+        ]
+      },
+      "NODE-SCI": {
+        "outgoing_count": 7,
+        "outgoing": [
+          {
+            "id": "EDGE-SCI-001",
+            "to": "NODE-CONTEXT",
+            "relationship": "concretizes",
+            "strength": "STRONG",
+            "description": ""
+          },
+          {
+            "id": "EDGE-SCI-002",
+            "to": "NODE-TECHBASE",
+            "relationship": "provides_methodology",
+            "strength": "STRONG",
+            "description": ""
+          },
+          {
+            "id": "EDGE-SCI-003",
+            "to": "NODE-SHAREHOLDER",
+            "relationship": "operationalizes_vision",
+            "strength": "STRONG",
+            "description": ""
+          },
+          {
+            "id": "EDGE-SCI-004",
+            "to": "NODE-PLATFORM",
+            "relationship": "enables_platform",
+            "strength": "STRONG",
+            "description": ""
+          },
+          {
+            "id": "EDGE-SCI-005",
+            "to": "NODE-FINANCE",
+            "relationship": "defines_funding_logic",
+            "strength": "STRONG",
+            "description": ""
+          },
+          {
+            "id": "EDGE-SCI-006",
+            "to": "NODE-ECOSYSTEM",
+            "relationship": "structures_integration",
+            "strength": "STRONG",
+            "description": ""
+          },
+          {
+            "id": "EDGE-SCI-007",
+            "to": "NODE-REGULATORY",
+            "relationship": "aligns_with_standards",
+            "strength": "MEDIUM",
+            "description": ""
+          }
+        ]
+      },
+      "NODE-SHAREHOLDER": {
+        "outgoing_count": 4,
+        "outgoing": [
+          {
+            "id": "EDGE-BASE-001",
+            "to": "NODE-FINANCE",
+            "relationship": "determines",
+            "strength": "STRONG",
+            "description": "Мотивация акционера определяет финансовую модель"
+          },
+          {
+            "id": "EDGE-BASE-005",
+            "to": "NODE-ECOSYSTEM",
+            "relationship": "shapes",
+            "strength": "STRONG",
+            "description": "Логика акционера формирует архитектуру и ценности экосистемы"
+          },
+          {
+            "id": "EDGE-BASE-007",
+            "to": "NODE-TECHBASE",
+            "relationship": "envisions",
+            "strength": "STRONG",
+            "description": "Миссионный акционер задаёт видение, которое 6ТУ-архитектура переводит в проектируемые мета-объекты"
+          },
+          {
+            "id": "EDGE-012",
+            "to": "NODE-PLATFORM",
+            "relationship": "motivates",
+            "strength": "STRONG",
+            "description": "Миссия миссионного акционера обосновывает необходимость платформенной трансформации"
+          }
+        ]
+      },
+      "NODE-SOVEREIGNTY": {
+        "outgoing_count": 7,
+        "outgoing": [
+          {
+            "id": "EDGE-SOV-001",
+            "to": "NODE-REGULATORY",
+            "relationship": "derives_from",
+            "strength": "STRONG",
+            "description": "Роль ПСБ производна от нормативного контекста"
+          },
+          {
+            "id": "EDGE-SOV-002",
+            "to": "NODE-SHAREHOLDER",
+            "relationship": "implements_mission",
+            "strength": "STRONG",
+            "description": "Стратегическое позиционирование реализует миссию акционера"
+          },
+          {
+            "id": "EDGE-SOV-003",
+            "to": "NODE-FINANCE",
+            "relationship": "resources_role",
+            "strength": "STRONG",
+            "description": "Финансовая архитектура обеспечивает ресурсы для роли; роль определяет требования к финансам"
+          },
+          {
+            "id": "EDGE-SOV-004",
+            "to": "NODE-ECOSYSTEM",
+            "relationship": "leverages_infrastructure",
+            "strength": "STRONG",
+            "description": "Позиционирование опирается на экосистемную инфраструктуру"
+          },
+          {
+            "id": "EDGE-SOV-005",
+            "to": "NODE-CONTEXT",
+            "relationship": "enables_partnership",
+            "strength": "STRONG",
+            "description": "Позиционирование создаёт основу для партнёрства с СПбПУ"
+          },
+          {
+            "id": "EDGE-SOV-006",
+            "to": "NODE-TECHBASE",
+            "relationship": "operationalizes_through",
+            "strength": "STRONG",
+            "description": "Роль операционализируется через архитектуру 6ТУ"
+          },
+          {
+            "id": "EDGE-SOV-007",
+            "to": "NODE-PLATFORM",
+            "relationship": "justifies_platform_model",
+            "strength": "STRONG",
+            "description": "Роль в суверенитете обосновывает платформенную модель"
+          }
+        ]
+      },
+      "NODE-TECHBASE": {
+        "outgoing_count": 4,
+        "outgoing": [
+          {
+            "id": "EDGE-BASE-008",
+            "to": "NODE-FINANCE",
+            "relationship": "requires",
+            "strength": "STRONG",
+            "description": "6ТУ-архитектура требует специальных финансовых инструментов диффузии"
+          },
+          {
+            "id": "EDGE-BASE-009",
+            "to": "NODE-ECOSYSTEM",
+            "relationship": "extends",
+            "strength": "STRONG",
+            "description": "6ТУ расширяет функции кластеров экосистемы новыми мета-объектами и механизмами"
+          },
+          {
+            "id": "EDGE-BASE-011",
+            "to": "NODE-SHAREHOLDER",
+            "relationship": "validates",
+            "strength": "MEDIUM",
+            "description": "Реализация 6ТУ-архитектуры подтверждает релевантность миссии акционера"
+          },
+          {
+            "id": "EDGE-016",
+            "to": "NODE-PLATFORM",
+            "relationship": "operationalizes",
+            "strength": "STRONG",
+            "description": "Архитектура 6ТУ операционализируется через платформенную модель"
+          }
+        ]
+      }
+    },
+    "by_target_node": {
+      "NODE-AGENDA": {
+        "incoming_count": 1,
+        "incoming": [
+          {
+            "id": "EDGE-MKCP-001",
+            "from": "NODE-MKCP",
+            "relationship": "operationalizes",
+            "strength": "CRITICAL",
+            "description": "МКЦП ЦД операционализирует Указание Президента 12.08.2024 в 10-летнюю программу"
+          }
+        ]
+      },
+      "NODE-CMLBENCH": {
+        "incoming_count": 2,
+        "incoming": [
+          {
+            "id": "EDGE-AGENDA-005",
+            "from": "NODE-AGENDA",
+            "relationship": "defines_platform_requirements",
+            "strength": "STRONG",
+            "description": "'Единая система учета, поддержки и коллективного использования ЦД' → CML-Bench как техническая реали"
+          },
+          {
+            "id": "EDGE-MKCP-005",
+            "from": "NODE-MKCP",
+            "relationship": "requires_platform",
+            "strength": "STRONG",
+            "description": "Направления работ 7.2.4-7.2.15 требуют технологической платформы — CML-Bench как кандидат"
+          }
+        ]
+      },
+      "NODE-CONTEXT": {
+        "incoming_count": 10,
+        "incoming": [
+          {
+            "id": "EDGE-BASE-003",
+            "from": "NODE-ECOSYSTEM",
+            "relationship": "enables",
+            "strength": "STRONG",
+            "description": "Экосистема создаёт инфраструктурные условия для реализации стратегии партнёрства"
+          },
+          {
+            "id": "EDGE-BASE-006",
+            "from": "NODE-FINANCE",
+            "relationship": "enables",
+            "strength": "MEDIUM",
+            "description": "Финансовые возможности обеспечивают реализацию стратегии партнёрства"
+          },
+          {
+            "id": "EDGE-REG-004",
+            "from": "NODE-REGULATORY",
+            "relationship": "frames_partnership",
+            "strength": "STRONG",
+            "description": "Нормативная база задаёт рамку для партнёрства в контуре наука-технологии-производство"
+          },
+          {
+            "id": "EDGE-PLATFORM-005",
+            "from": "NODE-PLATFORM",
+            "relationship": "amplifies",
+            "strength": "MEDIUM",
+            "description": "Платформенный подход усиливает ценностное предложение партнёрства"
+          },
+          {
+            "id": "EDGE-SOV-005",
+            "from": "NODE-SOVEREIGNTY",
+            "relationship": "enables_partnership",
+            "strength": "STRONG",
+            "description": "Позиционирование создаёт основу для партнёрства с СПбПУ"
+          },
+          {
+            "id": "EDGE-SCI-001",
+            "from": "NODE-SCI",
+            "relationship": "concretizes",
+            "strength": "STRONG",
+            "description": ""
+          },
+          {
+            "id": "EDGE-MARKET-001",
+            "from": "NODE-MARKET",
+            "relationship": "contextualizes_position",
+            "strength": "STRONG",
+            "description": "Рыночный анализ позиционирует CML-Bench в глобальном контексте трёхслойной модели"
+          },
+          {
+            "id": "EDGE-CMLBENCH-001",
+            "from": "NODE-CMLBENCH",
+            "relationship": "establishes_strategic_context",
+            "strength": "STRONG",
+            "description": "Контекст партнёрства определяет роль CML-Bench как технического ядра трёхслойной модели"
+          },
+          {
+            "id": "EDGE-AGENDA-002",
+            "from": "NODE-AGENDA",
+            "relationship": "establishes_national_imperative",
+            "strength": "STRONG",
+            "description": "Контекст партнёрства ПСБ×СПбПУ обретает статус НАЦИОНАЛЬНОГО ПРОЕКТА через Указание Президента. МКЦП"
+          },
+          {
+            "id": "EDGE-MKCP-008",
+            "from": "NODE-MKCP",
+            "relationship": "formalizes_partnership",
+            "strength": "CRITICAL",
+            "description": "МКЦП формализует партнёрство: СПбПУ №55 + ГОСТ + ПСБ в дирекции"
+          }
+        ]
+      },
+      "NODE-ECOSYSTEM": {
+        "incoming_count": 12,
+        "incoming": [
+          {
+            "id": "EDGE-BASE-002",
+            "from": "NODE-FINANCE",
+            "relationship": "funds",
+            "strength": "STRONG",
+            "description": "Финансовые механизмы обеспечивают ресурсную базу для кластеров экосистемы"
+          },
+          {
+            "id": "EDGE-BASE-005",
+            "from": "NODE-SHAREHOLDER",
+            "relationship": "shapes",
+            "strength": "STRONG",
+            "description": "Логика акционера формирует архитектуру и ценности экосистемы"
+          },
+          {
+            "id": "EDGE-BASE-009",
+            "from": "NODE-TECHBASE",
+            "relationship": "extends",
+            "strength": "STRONG",
+            "description": "6ТУ расширяет функции кластеров экосистемы новыми мета-объектами и механизмами"
+          },
+          {
+            "id": "EDGE-014",
+            "from": "NODE-PLATFORM",
+            "relationship": "transforms",
+            "strength": "STRONG",
+            "description": "Платформенная модель трансформирует кластеры экосистемы в сетевую архитектуру"
+          },
+          {
+            "id": "EDGE-REG-003",
+            "from": "NODE-REGULATORY",
+            "relationship": "structures_actors",
+            "strength": "STRONG",
+            "description": "Нормативная база определяет роли акторов экосистемы"
+          },
+          {
+            "id": "EDGE-PLATFORM-003",
+            "from": "NODE-PLATFORM",
+            "relationship": "reorganizes",
+            "strength": "STRONG",
+            "description": "Платформенная модель реорганизует 5 кластеров в сетевую архитектуру"
+          },
+          {
+            "id": "EDGE-SOV-004",
+            "from": "NODE-SOVEREIGNTY",
+            "relationship": "leverages_infrastructure",
+            "strength": "STRONG",
+            "description": "Позиционирование опирается на экосистемную инфраструктуру"
+          },
+          {
+            "id": "EDGE-SCI-006",
+            "from": "NODE-SCI",
+            "relationship": "structures_integration",
+            "strength": "STRONG",
+            "description": ""
+          },
+          {
+            "id": "EDGE-MARKET-006",
+            "from": "NODE-MARKET",
+            "relationship": "maps_ecosystem_players",
+            "strength": "MEDIUM",
+            "description": "Картирование Cifra, Газпром Нефть, Росатом как партнёров экосистемы"
+          },
+          {
+            "id": "EDGE-CMLBENCH-005",
+            "from": "NODE-CMLBENCH",
+            "relationship": "maps_integration_partners",
+            "strength": "STRONG",
+            "description": "Экосистема ПСБ определяет партнёров интеграции: Cifra, Росатом, GigaChat, «Аметист»"
+          },
+          {
+            "id": "EDGE-AGENDA-007",
+            "from": "NODE-AGENDA",
+            "relationship": "identifies_implementation_partners",
+            "strength": "MEDIUM",
+            "description": "Межведомственная комиссия + МЭЦ + ВТИ → экосистема ПСБ (институциональный кластер, deep-tech кластер"
+          },
+          {
+            "id": "EDGE-MKCP-006",
+            "from": "NODE-MKCP",
+            "relationship": "leverages_infrastructure",
+            "strength": "STRONG",
+            "description": "100+ участников МКЦП — потенциальные клиенты экосистемы ПСБ"
+          }
+        ]
+      },
+      "NODE-FINANCE": {
+        "incoming_count": 11,
+        "incoming": [
+          {
+            "id": "EDGE-BASE-001",
+            "from": "NODE-SHAREHOLDER",
+            "relationship": "determines",
+            "strength": "STRONG",
+            "description": "Мотивация акционера определяет финансовую модель"
+          },
+          {
+            "id": "EDGE-BASE-008",
+            "from": "NODE-TECHBASE",
+            "relationship": "requires",
+            "strength": "STRONG",
+            "description": "6ТУ-архитектура требует специальных финансовых инструментов диффузии"
+          },
+          {
+            "id": "EDGE-013",
+            "from": "NODE-PLATFORM",
+            "relationship": "requires_transformation",
+            "strength": "STRONG",
+            "description": "Платформенная модель требует трансформации финансовой архитектуры"
+          },
+          {
+            "id": "EDGE-REG-002",
+            "from": "NODE-REGULATORY",
+            "relationship": "enables_instruments",
+            "strength": "STRONG",
+            "description": "Нормативная база создаёт правовую основу для финансовых инструментов 6ТУ"
+          },
+          {
+            "id": "EDGE-PLATFORM-002",
+            "from": "NODE-PLATFORM",
+            "relationship": "transforms_model",
+            "strength": "STRONG",
+            "description": "Платформенный подход трансформирует финансовую модель от линейной к сетевой"
+          },
+          {
+            "id": "EDGE-SOV-003",
+            "from": "NODE-SOVEREIGNTY",
+            "relationship": "resources_role",
+            "strength": "STRONG",
+            "description": "Финансовая архитектура обеспечивает ресурсы для роли; роль определяет требования к финансам"
+          },
+          {
+            "id": "EDGE-SCI-005",
+            "from": "NODE-SCI",
+            "relationship": "defines_funding_logic",
+            "strength": "STRONG",
+            "description": ""
+          },
+          {
+            "id": "EDGE-MARKET-007",
+            "from": "NODE-MARKET",
+            "relationship": "quantifies_opportunity",
+            "strength": "MEDIUM",
+            "description": "Оценка рынка $16.6B и потенциала роста для обоснования инвестиций"
+          },
+          {
+            "id": "EDGE-CMLBENCH-007",
+            "from": "NODE-CMLBENCH",
+            "relationship": "enables_financial_innovation",
+            "strength": "MEDIUM",
+            "description": "ЦД как залоговый актив, траншевое финансирование по V&V-milestone"
+          },
+          {
+            "id": "EDGE-AGENDA-006",
+            "from": "NODE-AGENDA",
+            "relationship": "structures_investment_framework",
+            "strength": "STRONG",
+            "description": "МКЦП финансы: 60-70% бюджет, 25-35% внебюджет → роль ПСБ как архитектора внебюджетной части. Траншев"
+          },
+          {
+            "id": "EDGE-MKCP-003",
+            "from": "NODE-MKCP",
+            "relationship": "opens_financing_space",
+            "strength": "CRITICAL",
+            "description": "25-35% внебюджет (до 5.25 трлн) — пространство для финансовых продуктов ПСБ"
+          }
+        ]
+      },
+      "NODE-MARKET": {
+        "incoming_count": 3,
+        "incoming": [
+          {
+            "id": "EDGE-CMLBENCH-003",
+            "from": "NODE-CMLBENCH",
+            "relationship": "provides_competitive_context",
+            "strength": "STRONG",
+            "description": "Рыночный анализ задаёт конкурентное окружение и бенчмарки для GAP-анализа"
+          },
+          {
+            "id": "EDGE-AGENDA-011",
+            "from": "NODE-AGENDA",
+            "relationship": "contextualizes_competitive_landscape",
+            "strength": "MEDIUM",
+            "description": "Мантуров (15.05.2024): США утвердили 'Стратегию цифрового инжиниринга' 2018 → эталон для сравнения. "
+          },
+          {
+            "id": "EDGE-MKCP-011",
+            "from": "NODE-MKCP",
+            "relationship": "shapes_domestic_market",
+            "strength": "STRONG",
+            "description": "МКЦП формирует отечественный рынок ЦД: 100+ организаций-участников, 15 трлн бюджет"
+          }
+        ]
+      },
+      "NODE-PLATFORM": {
+        "incoming_count": 10,
+        "incoming": [
+          {
+            "id": "EDGE-012",
+            "from": "NODE-SHAREHOLDER",
+            "relationship": "motivates",
+            "strength": "STRONG",
+            "description": "Миссия миссионного акционера обосновывает необходимость платформенной трансформации"
+          },
+          {
+            "id": "EDGE-015",
+            "from": "NODE-CONTEXT",
+            "relationship": "provides_core",
+            "strength": "STRONG",
+            "description": "Контекст партнёрства предоставляет технологическое ядро для платформы"
+          },
+          {
+            "id": "EDGE-016",
+            "from": "NODE-TECHBASE",
+            "relationship": "operationalizes",
+            "strength": "STRONG",
+            "description": "Архитектура 6ТУ операционализируется через платформенную модель"
+          },
+          {
+            "id": "EDGE-REG-006",
+            "from": "NODE-REGULATORY",
+            "relationship": "justifies_transition",
+            "strength": "MEDIUM",
+            "description": "Нормативная база создаёт предпосылки для платформенной трансформации"
+          },
+          {
+            "id": "EDGE-SOV-007",
+            "from": "NODE-SOVEREIGNTY",
+            "relationship": "justifies_platform_model",
+            "strength": "STRONG",
+            "description": "Роль в суверенитете обосновывает платформенную модель"
+          },
+          {
+            "id": "EDGE-SCI-004",
+            "from": "NODE-SCI",
+            "relationship": "enables_platform",
+            "strength": "STRONG",
+            "description": ""
+          },
+          {
+            "id": "EDGE-MARKET-005",
+            "from": "NODE-MARKET",
+            "relationship": "provides_competitive_context",
+            "strength": "STRONG",
+            "description": "Контекст платформенной конкуренции: экосистемные хабы Siemens, Microsoft, Huawei"
+          },
+          {
+            "id": "EDGE-CMLBENCH-009",
+            "from": "NODE-CMLBENCH",
+            "relationship": "applies_platform_model",
+            "strength": "MEDIUM",
+            "description": "CML-Bench Marketplace применяет 8 ценностей платформенной модели"
+          },
+          {
+            "id": "EDGE-AGENDA-010",
+            "from": "NODE-AGENDA",
+            "relationship": "mandates_platform_transition",
+            "strength": "STRONG",
+            "description": "Требование 'коллективного использования ЦД заинтересованными организациями ОПК' → платформенная моде"
+          },
+          {
+            "id": "EDGE-MKCP-012",
+            "from": "NODE-MKCP",
+            "relationship": "enables_platform_transition",
+            "strength": "MODERATE",
+            "description": "МКЦП создаёт единую систему ЦД (цель 4.1.5) — платформенная модель для ОПК"
+          }
+        ]
+      },
+      "NODE-REGULATORY": {
+        "incoming_count": 6,
+        "incoming": [
+          {
+            "id": "EDGE-PLATFORM-REGULATORY",
+            "from": "NODE-PLATFORM",
+            "relationship": "feedback_loop",
+            "strength": "MEDIUM",
+            "description": "Результаты платформенной трансформации влияют на корректировку нормативной базы"
+          },
+          {
+            "id": "EDGE-SOV-001",
+            "from": "NODE-SOVEREIGNTY",
+            "relationship": "derives_from",
+            "strength": "STRONG",
+            "description": "Роль ПСБ производна от нормативного контекста"
+          },
+          {
+            "id": "EDGE-SCI-007",
+            "from": "NODE-SCI",
+            "relationship": "aligns_with_standards",
+            "strength": "MEDIUM",
+            "description": ""
+          },
+          {
+            "id": "EDGE-CMLBENCH-010",
+            "from": "NODE-CMLBENCH",
+            "relationship": "ensures_compliance",
+            "strength": "MEDIUM",
+            "description": "ГОСТ Р 57700.37-2021 как нормативная основа; ФСТЭК-сертификация"
+          },
+          {
+            "id": "EDGE-AGENDA-003",
+            "from": "NODE-AGENDA",
+            "relationship": "extends_regulatory_framework",
+            "strength": "STRONG",
+            "description": "Указание Президента 12.08.2024 + решения Коллегии ВПК добавляют новый слой нормативов поверх 523-ФЗ,"
+          },
+          {
+            "id": "EDGE-MKCP-007",
+            "from": "NODE-MKCP",
+            "relationship": "extends_normative_base",
+            "strength": "STRONG",
+            "description": "МКЦП расширяет нормативную базу: ГОСТ Р 57700.37-2021 + новые ГВС"
+          }
+        ]
+      },
+      "NODE-SCI": {
+        "incoming_count": 4,
+        "incoming": [
+          {
+            "id": "EDGE-MARKET-002",
+            "from": "NODE-MARKET",
+            "relationship": "benchmarks_methodology",
+            "strength": "STRONG",
+            "description": "СЦИ-методология сравнивается с подходами Siemens, Microsoft и других лидеров"
+          },
+          {
+            "id": "EDGE-CMLBENCH-002",
+            "from": "NODE-CMLBENCH",
+            "relationship": "defines_methodological_framework",
+            "strength": "STRONG",
+            "description": "СЦИ задаёт методологический каркас; CML-Bench реализует L5 (ЦД-артефакт) и L6 (V&V-базис)"
+          },
+          {
+            "id": "EDGE-AGENDA-004",
+            "from": "NODE-AGENDA",
+            "relationship": "validates_methodological_foundation",
+            "strength": "STRONG",
+            "description": "Требование 'методики оценки эффективности ЦД на основании виртуальных испытаний' → СЦИ L6 (V&V-базис"
+          },
+          {
+            "id": "EDGE-MKCP-004",
+            "from": "NODE-MKCP",
+            "relationship": "requires_methodology",
+            "strength": "CRITICAL",
+            "description": "Требования МКЦП (задачи 4.1.2-4.1.11) адресуются методологией СЦИ"
+          }
+        ]
+      },
+      "NODE-SHAREHOLDER": {
+        "incoming_count": 10,
+        "incoming": [
+          {
+            "id": "EDGE-BASE-004",
+            "from": "NODE-CONTEXT",
+            "relationship": "validates",
+            "strength": "MEDIUM",
+            "description": "Стратегический контекст подтверждает и конкретизирует логику акционера"
+          },
+          {
+            "id": "EDGE-BASE-011",
+            "from": "NODE-TECHBASE",
+            "relationship": "validates",
+            "strength": "MEDIUM",
+            "description": "Реализация 6ТУ-архитектуры подтверждает релевантность миссии акционера"
+          },
+          {
+            "id": "EDGE-REG-001",
+            "from": "NODE-REGULATORY",
+            "relationship": "legitimizes",
+            "strength": "STRONG",
+            "description": "Нормативная база легитимизирует роль миссионного акционера"
+          },
+          {
+            "id": "EDGE-PLATFORM-001",
+            "from": "NODE-PLATFORM",
+            "relationship": "extends_vision",
+            "strength": "STRONG",
+            "description": "Платформенная модель расширяет стратегическое видение акционера"
+          },
+          {
+            "id": "EDGE-SOV-002",
+            "from": "NODE-SOVEREIGNTY",
+            "relationship": "implements_mission",
+            "strength": "STRONG",
+            "description": "Стратегическое позиционирование реализует миссию акционера"
+          },
+          {
+            "id": "EDGE-SCI-003",
+            "from": "NODE-SCI",
+            "relationship": "operationalizes_vision",
+            "strength": "STRONG",
+            "description": ""
+          },
+          {
+            "id": "EDGE-MARKET-008",
+            "from": "NODE-MARKET",
+            "relationship": "validates_mission",
+            "strength": "MEDIUM",
+            "description": "Подтверждение миссионной роли ПСБ через анализ суверенных альтернатив"
+          },
+          {
+            "id": "EDGE-CMLBENCH-008",
+            "from": "NODE-CMLBENCH",
+            "relationship": "validates_mission",
+            "strength": "MEDIUM",
+            "description": "CML-Bench как архитектурный элемент миссии ПСБ по технологическому суверенитету"
+          },
+          {
+            "id": "EDGE-AGENDA-001",
+            "from": "NODE-AGENDA",
+            "relationship": "operationalizes_shareholder_philosophy",
+            "strength": "STRONG",
+            "description": "Государственная повестка — это СРЕДА, через которую акционер (РФ) влияет на ПСБ, не давая прямых при"
+          },
+          {
+            "id": "EDGE-MKCP-002",
+            "from": "NODE-MKCP",
+            "relationship": "realizes_mission",
+            "strength": "STRONG",
+            "description": "МКЦП создаёт СРЕДУ для реализации миссии акционера (влияние через среду, не приказ)"
+          }
+        ]
+      },
+      "NODE-SOVEREIGNTY": {
+        "incoming_count": 4,
+        "incoming": [
+          {
+            "id": "EDGE-MARKET-004",
+            "from": "NODE-MARKET",
+            "relationship": "validates_sovereignty_path",
+            "strength": "STRONG",
+            "description": "Подтверждение стратегии технологического суверенитета через анализ санкционных рисков"
+          },
+          {
+            "id": "EDGE-CMLBENCH-006",
+            "from": "NODE-CMLBENCH",
+            "relationship": "validates_sovereignty_role",
+            "strength": "STRONG",
+            "description": "CML-Bench как суверенная альтернатива Siemens Xcelerator для ОПК"
+          },
+          {
+            "id": "EDGE-AGENDA-009",
+            "from": "NODE-AGENDA",
+            "relationship": "establishes_sovereignty_urgency",
+            "strength": "STRONG",
+            "description": "Белоусов (07.08.2024): 'Технология ЦД рассматривается США и НАТО как способ достижения долгосрочного"
+          },
+          {
+            "id": "EDGE-MKCP-010",
+            "from": "NODE-MKCP",
+            "relationship": "implements_sovereignty",
+            "strength": "STRONG",
+            "description": "МКЦП реализует 7 точек входа ПСБ в технологический суверенитет на программном уровне"
+          }
+        ]
+      },
+      "NODE-TECHBASE": {
+        "incoming_count": 10,
+        "incoming": [
+          {
+            "id": "EDGE-BASE-007",
+            "from": "NODE-SHAREHOLDER",
+            "relationship": "envisions",
+            "strength": "STRONG",
+            "description": "Миссионный акционер задаёт видение, которое 6ТУ-архитектура переводит в проектируемые мета-объекты"
+          },
+          {
+            "id": "EDGE-BASE-010",
+            "from": "NODE-CONTEXT",
+            "relationship": "grounds",
+            "strength": "STRONG",
+            "description": "Стратегический контекст партнёрства (СЦИ, CML-Bench, МКЦП) заземляет абстрактные принципы 6ТУ"
+          },
+          {
+            "id": "EDGE-REG-005",
+            "from": "NODE-REGULATORY",
+            "relationship": "implements_principles",
+            "strength": "STRONG",
+            "description": "Мета-объекты 6ТУ реализуют нормативные требования"
+          },
+          {
+            "id": "EDGE-PLATFORM-004",
+            "from": "NODE-PLATFORM",
+            "relationship": "leverages",
+            "strength": "STRONG",
+            "description": "Платформа использует архитектуру 6ТУ как технологический фундамент"
+          },
+          {
+            "id": "EDGE-SOV-006",
+            "from": "NODE-SOVEREIGNTY",
+            "relationship": "operationalizes_through",
+            "strength": "STRONG",
+            "description": "Роль операционализируется через архитектуру 6ТУ"
+          },
+          {
+            "id": "EDGE-SCI-002",
+            "from": "NODE-SCI",
+            "relationship": "provides_methodology",
+            "strength": "STRONG",
+            "description": ""
+          },
+          {
+            "id": "EDGE-MARKET-003",
+            "from": "NODE-MARKET",
+            "relationship": "identifies_technology_gaps",
+            "strength": "STRONG",
+            "description": "Выявление GAP'ов (LLM-Copilot, Low-code, MES) для 6ТУ-архитектуры"
+          },
+          {
+            "id": "EDGE-CMLBENCH-004",
+            "from": "NODE-CMLBENCH",
+            "relationship": "provides_architectural_requirements",
+            "strength": "STRONG",
+            "description": "6ТУ-Framework задаёт архитектурные требования к V&V-контуру и интеграциям"
+          },
+          {
+            "id": "EDGE-AGENDA-008",
+            "from": "NODE-AGENDA",
+            "relationship": "validates_6tu_architecture",
+            "strength": "STRONG",
+            "description": "Требование 'опережающего технологического задела' → 6ТУ-Framework (10 принципов, V&V-контур, мета-об"
+          },
+          {
+            "id": "EDGE-MKCP-009",
+            "from": "NODE-MKCP",
+            "relationship": "aligns_with_6tu",
+            "strength": "MODERATE",
+            "description": "Принципы МКЦП (9.1-9.7) выровнены с 10 принципами 6ТУ-Framework"
+          }
+        ]
+      }
+    },
+    "by_relationship_type": {
+      "aligns_with_6tu": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-MKCP-009",
+            "from": "NODE-MKCP",
+            "to": "NODE-TECHBASE"
+          }
+        ]
+      },
+      "aligns_with_standards": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-SCI-007",
+            "from": "NODE-SCI",
+            "to": "NODE-REGULATORY"
+          }
+        ]
+      },
+      "amplifies": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-PLATFORM-005",
+            "from": "NODE-PLATFORM",
+            "to": "NODE-CONTEXT"
+          }
+        ]
+      },
+      "applies_platform_model": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-CMLBENCH-009",
+            "from": "NODE-CMLBENCH",
+            "to": "NODE-PLATFORM"
+          }
+        ]
+      },
+      "benchmarks_methodology": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-MARKET-002",
+            "from": "NODE-MARKET",
+            "to": "NODE-SCI"
+          }
+        ]
+      },
+      "concretizes": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-SCI-001",
+            "from": "NODE-SCI",
+            "to": "NODE-CONTEXT"
+          }
+        ]
+      },
+      "contextualizes_competitive_landscape": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-AGENDA-011",
+            "from": "NODE-AGENDA",
+            "to": "NODE-MARKET"
+          }
+        ]
+      },
+      "contextualizes_position": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-MARKET-001",
+            "from": "NODE-MARKET",
+            "to": "NODE-CONTEXT"
+          }
+        ]
+      },
+      "defines_funding_logic": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-SCI-005",
+            "from": "NODE-SCI",
+            "to": "NODE-FINANCE"
+          }
+        ]
+      },
+      "defines_methodological_framework": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-CMLBENCH-002",
+            "from": "NODE-CMLBENCH",
+            "to": "NODE-SCI"
+          }
+        ]
+      },
+      "defines_platform_requirements": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-AGENDA-005",
+            "from": "NODE-AGENDA",
+            "to": "NODE-CMLBENCH"
+          }
+        ]
+      },
+      "derives_from": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-SOV-001",
+            "from": "NODE-SOVEREIGNTY",
+            "to": "NODE-REGULATORY"
+          }
+        ]
+      },
+      "determines": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-BASE-001",
+            "from": "NODE-SHAREHOLDER",
+            "to": "NODE-FINANCE"
+          }
+        ]
+      },
+      "enables": {
+        "count": 2,
+        "edges": [
+          {
+            "id": "EDGE-BASE-003",
+            "from": "NODE-ECOSYSTEM",
+            "to": "NODE-CONTEXT"
+          },
+          {
+            "id": "EDGE-BASE-006",
+            "from": "NODE-FINANCE",
+            "to": "NODE-CONTEXT"
+          }
+        ]
+      },
+      "enables_financial_innovation": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-CMLBENCH-007",
+            "from": "NODE-CMLBENCH",
+            "to": "NODE-FINANCE"
+          }
+        ]
+      },
+      "enables_instruments": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-REG-002",
+            "from": "NODE-REGULATORY",
+            "to": "NODE-FINANCE"
+          }
+        ]
+      },
+      "enables_partnership": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-SOV-005",
+            "from": "NODE-SOVEREIGNTY",
+            "to": "NODE-CONTEXT"
+          }
+        ]
+      },
+      "enables_platform": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-SCI-004",
+            "from": "NODE-SCI",
+            "to": "NODE-PLATFORM"
+          }
+        ]
+      },
+      "enables_platform_transition": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-MKCP-012",
+            "from": "NODE-MKCP",
+            "to": "NODE-PLATFORM"
+          }
+        ]
+      },
+      "ensures_compliance": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-CMLBENCH-010",
+            "from": "NODE-CMLBENCH",
+            "to": "NODE-REGULATORY"
+          }
+        ]
+      },
+      "envisions": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-BASE-007",
+            "from": "NODE-SHAREHOLDER",
+            "to": "NODE-TECHBASE"
+          }
+        ]
+      },
+      "establishes_national_imperative": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-AGENDA-002",
+            "from": "NODE-AGENDA",
+            "to": "NODE-CONTEXT"
+          }
+        ]
+      },
+      "establishes_sovereignty_urgency": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-AGENDA-009",
+            "from": "NODE-AGENDA",
+            "to": "NODE-SOVEREIGNTY"
+          }
+        ]
+      },
+      "establishes_strategic_context": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-CMLBENCH-001",
+            "from": "NODE-CMLBENCH",
+            "to": "NODE-CONTEXT"
+          }
+        ]
+      },
+      "extends": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-BASE-009",
+            "from": "NODE-TECHBASE",
+            "to": "NODE-ECOSYSTEM"
+          }
+        ]
+      },
+      "extends_normative_base": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-MKCP-007",
+            "from": "NODE-MKCP",
+            "to": "NODE-REGULATORY"
+          }
+        ]
+      },
+      "extends_regulatory_framework": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-AGENDA-003",
+            "from": "NODE-AGENDA",
+            "to": "NODE-REGULATORY"
+          }
+        ]
+      },
+      "extends_vision": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-PLATFORM-001",
+            "from": "NODE-PLATFORM",
+            "to": "NODE-SHAREHOLDER"
+          }
+        ]
+      },
+      "feedback_loop": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-PLATFORM-REGULATORY",
+            "from": "NODE-PLATFORM",
+            "to": "NODE-REGULATORY"
+          }
+        ]
+      },
+      "formalizes_partnership": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-MKCP-008",
+            "from": "NODE-MKCP",
+            "to": "NODE-CONTEXT"
+          }
+        ]
+      },
+      "frames_partnership": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-REG-004",
+            "from": "NODE-REGULATORY",
+            "to": "NODE-CONTEXT"
+          }
+        ]
+      },
+      "funds": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-BASE-002",
+            "from": "NODE-FINANCE",
+            "to": "NODE-ECOSYSTEM"
+          }
+        ]
+      },
+      "grounds": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-BASE-010",
+            "from": "NODE-CONTEXT",
+            "to": "NODE-TECHBASE"
+          }
+        ]
+      },
+      "identifies_implementation_partners": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-AGENDA-007",
+            "from": "NODE-AGENDA",
+            "to": "NODE-ECOSYSTEM"
+          }
+        ]
+      },
+      "identifies_technology_gaps": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-MARKET-003",
+            "from": "NODE-MARKET",
+            "to": "NODE-TECHBASE"
+          }
+        ]
+      },
+      "implements_mission": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-SOV-002",
+            "from": "NODE-SOVEREIGNTY",
+            "to": "NODE-SHAREHOLDER"
+          }
+        ]
+      },
+      "implements_principles": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-REG-005",
+            "from": "NODE-REGULATORY",
+            "to": "NODE-TECHBASE"
+          }
+        ]
+      },
+      "implements_sovereignty": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-MKCP-010",
+            "from": "NODE-MKCP",
+            "to": "NODE-SOVEREIGNTY"
+          }
+        ]
+      },
+      "justifies_platform_model": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-SOV-007",
+            "from": "NODE-SOVEREIGNTY",
+            "to": "NODE-PLATFORM"
+          }
+        ]
+      },
+      "justifies_transition": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-REG-006",
+            "from": "NODE-REGULATORY",
+            "to": "NODE-PLATFORM"
+          }
+        ]
+      },
+      "legitimizes": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-REG-001",
+            "from": "NODE-REGULATORY",
+            "to": "NODE-SHAREHOLDER"
+          }
+        ]
+      },
+      "leverages": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-PLATFORM-004",
+            "from": "NODE-PLATFORM",
+            "to": "NODE-TECHBASE"
+          }
+        ]
+      },
+      "leverages_infrastructure": {
+        "count": 2,
+        "edges": [
+          {
+            "id": "EDGE-SOV-004",
+            "from": "NODE-SOVEREIGNTY",
+            "to": "NODE-ECOSYSTEM"
+          },
+          {
+            "id": "EDGE-MKCP-006",
+            "from": "NODE-MKCP",
+            "to": "NODE-ECOSYSTEM"
+          }
+        ]
+      },
+      "mandates_platform_transition": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-AGENDA-010",
+            "from": "NODE-AGENDA",
+            "to": "NODE-PLATFORM"
+          }
+        ]
+      },
+      "maps_ecosystem_players": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-MARKET-006",
+            "from": "NODE-MARKET",
+            "to": "NODE-ECOSYSTEM"
+          }
+        ]
+      },
+      "maps_integration_partners": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-CMLBENCH-005",
+            "from": "NODE-CMLBENCH",
+            "to": "NODE-ECOSYSTEM"
+          }
+        ]
+      },
+      "motivates": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-012",
+            "from": "NODE-SHAREHOLDER",
+            "to": "NODE-PLATFORM"
+          }
+        ]
+      },
+      "opens_financing_space": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-MKCP-003",
+            "from": "NODE-MKCP",
+            "to": "NODE-FINANCE"
+          }
+        ]
+      },
+      "operationalizes": {
+        "count": 2,
+        "edges": [
+          {
+            "id": "EDGE-016",
+            "from": "NODE-TECHBASE",
+            "to": "NODE-PLATFORM"
+          },
+          {
+            "id": "EDGE-MKCP-001",
+            "from": "NODE-MKCP",
+            "to": "NODE-AGENDA"
+          }
+        ]
+      },
+      "operationalizes_shareholder_philosophy": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-AGENDA-001",
+            "from": "NODE-AGENDA",
+            "to": "NODE-SHAREHOLDER"
+          }
+        ]
+      },
+      "operationalizes_through": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-SOV-006",
+            "from": "NODE-SOVEREIGNTY",
+            "to": "NODE-TECHBASE"
+          }
+        ]
+      },
+      "operationalizes_vision": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-SCI-003",
+            "from": "NODE-SCI",
+            "to": "NODE-SHAREHOLDER"
+          }
+        ]
+      },
+      "provides_architectural_requirements": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-CMLBENCH-004",
+            "from": "NODE-CMLBENCH",
+            "to": "NODE-TECHBASE"
+          }
+        ]
+      },
+      "provides_competitive_context": {
+        "count": 2,
+        "edges": [
+          {
+            "id": "EDGE-MARKET-005",
+            "from": "NODE-MARKET",
+            "to": "NODE-PLATFORM"
+          },
+          {
+            "id": "EDGE-CMLBENCH-003",
+            "from": "NODE-CMLBENCH",
+            "to": "NODE-MARKET"
+          }
+        ]
+      },
+      "provides_core": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-015",
+            "from": "NODE-CONTEXT",
+            "to": "NODE-PLATFORM"
+          }
+        ]
+      },
+      "provides_methodology": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-SCI-002",
+            "from": "NODE-SCI",
+            "to": "NODE-TECHBASE"
+          }
+        ]
+      },
+      "quantifies_opportunity": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-MARKET-007",
+            "from": "NODE-MARKET",
+            "to": "NODE-FINANCE"
+          }
+        ]
+      },
+      "realizes_mission": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-MKCP-002",
+            "from": "NODE-MKCP",
+            "to": "NODE-SHAREHOLDER"
+          }
+        ]
+      },
+      "reorganizes": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-PLATFORM-003",
+            "from": "NODE-PLATFORM",
+            "to": "NODE-ECOSYSTEM"
+          }
+        ]
+      },
+      "requires": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-BASE-008",
+            "from": "NODE-TECHBASE",
+            "to": "NODE-FINANCE"
+          }
+        ]
+      },
+      "requires_methodology": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-MKCP-004",
+            "from": "NODE-MKCP",
+            "to": "NODE-SCI"
+          }
+        ]
+      },
+      "requires_platform": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-MKCP-005",
+            "from": "NODE-MKCP",
+            "to": "NODE-CMLBENCH"
+          }
+        ]
+      },
+      "requires_transformation": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-013",
+            "from": "NODE-PLATFORM",
+            "to": "NODE-FINANCE"
+          }
+        ]
+      },
+      "resources_role": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-SOV-003",
+            "from": "NODE-SOVEREIGNTY",
+            "to": "NODE-FINANCE"
+          }
+        ]
+      },
+      "shapes": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-BASE-005",
+            "from": "NODE-SHAREHOLDER",
+            "to": "NODE-ECOSYSTEM"
+          }
+        ]
+      },
+      "shapes_domestic_market": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-MKCP-011",
+            "from": "NODE-MKCP",
+            "to": "NODE-MARKET"
+          }
+        ]
+      },
+      "structures_actors": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-REG-003",
+            "from": "NODE-REGULATORY",
+            "to": "NODE-ECOSYSTEM"
+          }
+        ]
+      },
+      "structures_integration": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-SCI-006",
+            "from": "NODE-SCI",
+            "to": "NODE-ECOSYSTEM"
+          }
+        ]
+      },
+      "structures_investment_framework": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-AGENDA-006",
+            "from": "NODE-AGENDA",
+            "to": "NODE-FINANCE"
+          }
+        ]
+      },
+      "transforms": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-014",
+            "from": "NODE-PLATFORM",
+            "to": "NODE-ECOSYSTEM"
+          }
+        ]
+      },
+      "transforms_model": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-PLATFORM-002",
+            "from": "NODE-PLATFORM",
+            "to": "NODE-FINANCE"
+          }
+        ]
+      },
+      "validates": {
+        "count": 2,
+        "edges": [
+          {
+            "id": "EDGE-BASE-004",
+            "from": "NODE-CONTEXT",
+            "to": "NODE-SHAREHOLDER"
+          },
+          {
+            "id": "EDGE-BASE-011",
+            "from": "NODE-TECHBASE",
+            "to": "NODE-SHAREHOLDER"
+          }
+        ]
+      },
+      "validates_6tu_architecture": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-AGENDA-008",
+            "from": "NODE-AGENDA",
+            "to": "NODE-TECHBASE"
+          }
+        ]
+      },
+      "validates_methodological_foundation": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-AGENDA-004",
+            "from": "NODE-AGENDA",
+            "to": "NODE-SCI"
+          }
+        ]
+      },
+      "validates_mission": {
+        "count": 2,
+        "edges": [
+          {
+            "id": "EDGE-MARKET-008",
+            "from": "NODE-MARKET",
+            "to": "NODE-SHAREHOLDER"
+          },
+          {
+            "id": "EDGE-CMLBENCH-008",
+            "from": "NODE-CMLBENCH",
+            "to": "NODE-SHAREHOLDER"
+          }
+        ]
+      },
+      "validates_sovereignty_path": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-MARKET-004",
+            "from": "NODE-MARKET",
+            "to": "NODE-SOVEREIGNTY"
+          }
+        ]
+      },
+      "validates_sovereignty_role": {
+        "count": 1,
+        "edges": [
+          {
+            "id": "EDGE-CMLBENCH-006",
+            "from": "NODE-CMLBENCH",
+            "to": "NODE-SOVEREIGNTY"
+          }
+        ]
+      }
+    },
+    "statistics": {
+      "total_edges": 83,
+      "unique_source_nodes": 13,
+      "unique_target_nodes": 12,
+      "unique_relationship_types": 77,
+      "by_strength": {
+        "STRONG": 61,
+        "MEDIUM": 16,
+        "CRITICAL": 4,
+        "MODERATE": 2
+      },
+      "most_connected_nodes": [
+        {
+          "node": "NODE-PLATFORM",
+          "outgoing": 8,
+          "incoming": 10,
+          "total": 18
+        },
+        {
+          "node": "NODE-TECHBASE",
+          "outgoing": 4,
+          "incoming": 10,
+          "total": 14
+        },
+        {
+          "node": "NODE-SHAREHOLDER",
+          "outgoing": 4,
+          "incoming": 10,
+          "total": 14
+        },
+        {
+          "node": "NODE-ECOSYSTEM",
+          "outgoing": 1,
+          "incoming": 12,
+          "total": 13
+        },
+        {
+          "node": "NODE-CONTEXT",
+          "outgoing": 3,
+          "incoming": 10,
+          "total": 13
+        },
+        {
+          "node": "NODE-FINANCE",
+          "outgoing": 2,
+          "incoming": 11,
+          "total": 13
+        },
+        {
+          "node": "NODE-CMLBENCH",
+          "outgoing": 10,
+          "incoming": 2,
+          "total": 12
+        },
+        {
+          "node": "NODE-REGULATORY",
+          "outgoing": 6,
+          "incoming": 6,
+          "total": 12
+        },
+        {
+          "node": "NODE-AGENDA",
+          "outgoing": 11,
+          "incoming": 1,
+          "total": 12
+        },
+        {
+          "node": "NODE-MKCP",
+          "outgoing": 12,
+          "incoming": 0,
+          "total": 12
+        },
+        {
+          "node": "NODE-SCI",
+          "outgoing": 7,
+          "incoming": 4,
+          "total": 11
+        },
+        {
+          "node": "NODE-MARKET",
+          "outgoing": 8,
+          "incoming": 3,
+          "total": 11
+        },
+        {
+          "node": "NODE-SOVEREIGNTY",
+          "outgoing": 7,
+          "incoming": 4,
+          "total": 11
+        }
+      ],
+      "relationship_types_list": [
+        "aligns_with_6tu",
+        "aligns_with_standards",
+        "amplifies",
+        "applies_platform_model",
+        "benchmarks_methodology",
+        "concretizes",
+        "contextualizes_competitive_landscape",
+        "contextualizes_position",
+        "defines_funding_logic",
+        "defines_methodological_framework",
+        "defines_platform_requirements",
+        "derives_from",
+        "determines",
+        "enables",
+        "enables_financial_innovation",
+        "enables_instruments",
+        "enables_partnership",
+        "enables_platform",
+        "enables_platform_transition",
+        "ensures_compliance",
+        "envisions",
+        "establishes_national_imperative",
+        "establishes_sovereignty_urgency",
+        "establishes_strategic_context",
+        "extends",
+        "extends_normative_base",
+        "extends_regulatory_framework",
+        "extends_vision",
+        "feedback_loop",
+        "formalizes_partnership",
+        "frames_partnership",
+        "funds",
+        "grounds",
+        "identifies_implementation_partners",
+        "identifies_technology_gaps",
+        "implements_mission",
+        "implements_principles",
+        "implements_sovereignty",
+        "justifies_platform_model",
+        "justifies_transition",
+        "legitimizes",
+        "leverages",
+        "leverages_infrastructure",
+        "mandates_platform_transition",
+        "maps_ecosystem_players",
+        "maps_integration_partners",
+        "motivates",
+        "opens_financing_space",
+        "operationalizes",
+        "operationalizes_shareholder_philosophy",
+        "operationalizes_through",
+        "operationalizes_vision",
+        "provides_architectural_requirements",
+        "provides_competitive_context",
+        "provides_core",
+        "provides_methodology",
+        "quantifies_opportunity",
+        "realizes_mission",
+        "reorganizes",
+        "requires",
+        "requires_methodology",
+        "requires_platform",
+        "requires_transformation",
+        "resources_role",
+        "shapes",
+        "shapes_domestic_market",
+        "structures_actors",
+        "structures_integration",
+        "structures_investment_framework",
+        "transforms",
+        "transforms_model",
+        "validates",
+        "validates_6tu_architecture",
+        "validates_methodological_foundation",
+        "validates_mission",
+        "validates_sovereignty_path",
+        "validates_sovereignty_role"
+      ]
+    }
+  },
+  "strategic_insights_v11": {
+    "insight_001": {
+      "title": "Замыкание цикла: от философии акционера до операционной программы",
+      "description": "v11 замыкает полный цикл: NODE-SHAREHOLDER (философия) → NODE-AGENDA (повестка) → NODE-MKCP (программа) → NODE-CONTEXT (партнёрство)",
+      "implication": "Партнёрство ПСБ×СПбПУ получает полную институциональную легитимацию от президентского уровня до конкретных механизмов"
+    },
+    "insight_002": {
+      "title": "Количественная валидация: 15 трлн рублей за 10 лет",
+      "description": "МКЦП подтверждает масштаб: 15 трлн бюджет, 25-35% внебюджет = до 5.25 трлн потенциала для ПСБ",
+      "implication": "Финансовое обоснование партнёрства: рынок создан государством, ПСБ — архитектор внебюджетной части"
+    },
+    "insight_003": {
+      "title": "СПбПУ — не просто участник, а нормотворец",
+      "description": "СПбПУ №55 в перечне, но уникальность: соавтор ГОСТ Р 57700.37-2021 — базового стандарта ВСЕЙ программы",
+      "implication": "Позиционирование: не конкурент платформам, а методологический первоисточник для любых платформ"
+    },
+    "insight_004": {
+      "title": "Международное признание как конкурентное преимущество",
+      "description": "ГОСТ Р 57700.37-2021 включён в перечень взаимно признаваемых стандартов РФ-КНР, переведён на китайский",
+      "implication": "СПбПУ — соавтор глобально признанного стандарта, что усиливает позицию в МКЦП"
+    },
+    "insight_005": {
+      "title": "Агеев (ВНИИ Центр) — критический стейкхолдер",
+      "description": "А.Б. Агеев — разработчик МКЦП, потенциальный руководитель ПТН, директор базовой организации",
+      "implication": "Координация с Агеевым критична для позиционирования партнёрства в структурах МКЦП"
+    },
+    "insight_006": {
+      "title": "GAP CML-Bench по ИИ становится критичнее",
+      "description": "МКЦП + ИИ-приоритет Путина (23.04.2025) → CML-Bench БЕЗ LLM-Copilot несоответствует повестке",
+      "implication": "Срочная интеграция с GigaChat — условие позиционирования в МКЦП"
+    }
+  },
+  "file_manifest_v11": {
+    "total_files": 14,
+    "total_size_kb": "~750",
+    "files": [
+      {
+        "filename": "psb_mkcp_program_analysis.json",
+        "node_id": "NODE-MKCP",
+        "size_kb": "~100",
+        "version": "NEW in v11"
+      },
+      {
+        "filename": "psb_state_agenda_dt_timeline_analysis.json",
+        "node_id": "NODE-AGENDA",
+        "size_kb": "~90"
+      },
+      {
+        "filename": "psb_shareholder_logic_analysis.json",
+        "node_id": "NODE-SHAREHOLDER",
+        "size_kb": 122
+      },
+      {
+        "filename": "psb_financial_architecture_analysis.json",
+        "node_id": "NODE-FINANCE",
+        "size_kb": 40
+      },
+      {
+        "filename": "psb_ecosystem_infrastructure_analysis.json",
+        "node_id": "NODE-ECOSYSTEM",
+        "size_kb": 74
+      },
+      {
+        "filename": "psb_spbpu_context_analysis.json",
+        "node_id": "NODE-CONTEXT",
+        "size_kb": 41
+      },
+      {
+        "filename": "psb_technological_foundation_6tu_analysis.json",
+        "node_id": "NODE-TECHBASE",
+        "size_kb": 67
+      },
+      {
+        "filename": "psb_global_trend_platform_analysis.json",
+        "node_id": "NODE-PLATFORM",
+        "size_kb": 40
+      },
+      {
+        "filename": "psb_regulatory_framework_analysis.json",
+        "node_id": "NODE-REGULATORY",
+        "size_kb": 117
+      },
+      {
+        "filename": "psb_strategic_sovereignty_role_analysis.json",
+        "node_id": "NODE-SOVEREIGNTY",
+        "size_kb": 52
+      },
+      {
+        "filename": "psb_sci_architecture_analysis.json",
+        "node_id": "NODE-SCI",
+        "size_kb": 37
+      },
+      {
+        "filename": "psb_dt_platforms_market_analysis.json",
+        "node_id": "NODE-MARKET",
+        "size_kb": 47
+      },
+      {
+        "filename": "psb_cmlbench_technology_context_analysis.json",
+        "node_id": "NODE-CMLBENCH",
+        "size_kb": 46
+      },
+      {
+        "filename": "psb_knowledge_graph_integration_v11.json",
+        "node_id": "GRAPH-META",
+        "size_kb": "~20"
+      }
+    ]
+  },
+  "semantic_queries_v11": {
+    "description": "Примеры запросов к семантическому графу v11 с NODE-MKCP",
+    "new_queries": [
+      {
+        "query": "Какой бюджет МКЦП ЦД и какова доля для ПСБ?",
+        "path": "NODE-MKCP → program_parameters.basic_info.forecast_budget",
+        "answer_location": "psb_mkcp_program_analysis.json#program_parameters.basic_info.forecast_budget",
+        "answer": "15 трлн рублей за 10 лет. 25-35% внебюджет = 3.75-5.25 трлн потенциала для ПСБ"
+      },
+      {
+        "query": "Почему СПбПУ имеет уникальную позицию в МКЦП?",
+        "path": "NODE-MKCP → participants_analysis.spbpu_positioning.unique_value_proposition",
+        "answer_location": "psb_mkcp_program_analysis.json#participants_analysis.spbpu_positioning",
+        "answer": "СПбПУ — участник №55 и соавтор ГОСТ Р 57700.37-2021, который является базовым стандартом всей программы и признан на международном уровне (РФ-КНР)"
+      },
+      {
+        "query": "Кто ключевой стейкхолдер для формирования дирекции МКЦП?",
+        "path": "NODE-MKCP → organizational_structure.base_organization.key_stakeholder",
+        "answer_location": "psb_mkcp_program_analysis.json#organizational_structure.base_organization.key_stakeholder",
+        "answer": "А.Б. Агеев (ВНИИ Центр) — разработчик МКЦП, потенциальный руководитель ПТН 'Технологии цифровых двойников'"
+      },
+      {
+        "query": "Какие финансовые продукты ПСБ применимы к МКЦП?",
+        "path": "NODE-MKCP → financing_mechanisms.psb_financial_products_for_mkcp",
+        "answer_location": "psb_mkcp_program_analysis.json#financing_mechanisms.psb_financial_products_for_mkcp",
+        "answer": "6 продуктов: траншевое финансирование по V&V-вехам, залоговые кредиты под ЦД, факторинг R&D-контрактов, банковские гарантии для ГОЗ, проектное финансирование инфраструктуры, СПИК/СЗПК-структурирование"
+      },
+      {
+        "query": "Как связаны требования МКЦП и методология СЦИ?",
+        "path": "NODE-MKCP.goals_and_objectives.objectives → EDGE-MKCP-004 → NODE-SCI",
+        "answer_location": "Cross-reference: psb_mkcp_program_analysis.json + psb_sci_architecture_analysis.json",
+        "answer": "19 задач МКЦП (особенно 4.1.2-4.1.11) полностью покрываются 6-уровневой моделью СЦИ от стратегических целей до V&V-инфраструктуры"
+      },
+      {
+        "query": "Какие слабые стороны МКЦП создают возможности для партнёрства?",
+        "path": "NODE-MKCP → swot_analysis.from_document.weaknesses",
+        "answer_location": "psb_mkcp_program_analysis.json#swot_analysis.from_document.weaknesses",
+        "answer": "5 слабостей: несбалансированность нормативной базы (СПбПУ как эксперт по гармонизации), сложности межведомственного согласования (ПСБ как надведомственный агент), отсутствие системы аккредитации образования (ПИШ СПбПУ), отсутствие отечественного ПО/ПАК (CML-Bench), недостаточный уровень ЭКБ (комплексное решение)"
+      }
+    ]
+  },
+  "knowledge_graph_visualization_v11": {
+    "description": "Визуальная структура графа знаний v11 (ASCII)",
+    "ascii_diagram": [
+      "                                ┌─────────────────┐",
+      "                                │  NODE-MKCP      │◄─── НОВЫЙ УЗЕЛ v11",
+      "                                │  (МКЦП ЦД)      │     Программный документ",
+      "                                │  15 трлн, 10 лет│     на 2026-2035",
+      "                                └────────┬────────┘",
+      "                                         │",
+      "                     ┌───────────────────┼───────────────────┐",
+      "                     │                   │                   │",
+      "              ┌──────▼───────┐    ┌──────▼───────┐    ┌──────▼───────┐",
+      "              │ NODE-AGENDA  │    │ NODE-CONTEXT │    │ NODE-FINANCE │",
+      "              │ (Повестка ЦД)│    │ (Партнёрство)│    │ (25-35%      │",
+      "              └──────┬───────┘    └──────┬───────┘    │  внебюджет)  │",
+      "                     │                   │            └──────┬───────┘",
+      "              ┌──────▼───────┐           │                   │",
+      "              │ NODE-SHARE-  │           │                   │",
+      "              │ HOLDER       │           │                   │",
+      "              │ (Философия)  │           │                   │",
+      "              └──────┬───────┘           │                   │",
+      "                     │                   │                   │",
+      "         ┌───────────┼───────────────────┼───────────────────┼──────────┐",
+      "         │           │                   │                   │          │",
+      "  ┌──────▼──────┐    │           ┌──────▼───────┐    ┌──────▼───────┐  │",
+      "  │ NODE-       │    │           │ NODE-        │    │ NODE-        │  │",
+      "  │ REGULATORY  │    │           │ CMLBENCH     │◄───│ SCI          │  │",
+      "  │ (ГОСТ)      │    │           │ (Платформа)  │    │ (Методология)│  │",
+      "  └─────────────┘    │           └──────┬───────┘    └──────┬───────┘  │",
+      "                     │                  │                   │          │",
+      "              ┌──────▼───────┐   ┌──────▼───────┐    ┌──────▼───────┐  │",
+      "              │ NODE-ECO-    │   │ NODE-MARKET  │    │ NODE-        │  │",
+      "              │ SYSTEM       │   │ (Рынок ЦД)   │    │ TECHBASE     │  │",
+      "              │ (5 кластеров)│   └──────────────┘    │ (6ТУ)        │  │",
+      "              └──────────────┘                       └──────┬───────┘  │",
+      "                                                            │          │",
+      "                                  ┌──────────────────────────┼──────────┘",
+      "                                  │                          │",
+      "                           ┌──────▼───────┐          ┌──────▼───────┐",
+      "                           │ NODE-        │          │ NODE-        │",
+      "                           │ SOVEREIGNTY  │          │ PLATFORM     │",
+      "                           │ (Суверен.)   │          │ (Платформа)  │",
+      "                           └──────────────┘          └──────────────┘"
+    ],
+    "legend": {
+      "NODE-MKCP": "НОВЫЙ УЗЕЛ v11 — программный документ МКЦП ЦД на 2026-2035",
+      "arrows": "Направление семантических связей (12 новых из NODE-MKCP)",
+      "central_hub": "NODE-MKCP замыкает цикл: философия → повестка → программа → партнёрство",
+      "total_structure": "13 узлов, 77 связей (65 из v10 + 12 новых из v11)"
+    }
+  },
+  "integration_roadmap_v11": {
+    "description": "Дорожная карта использования knowledge graph v11 в работе партнёрства",
+    "usage_scenarios": [
+      {
+        "scenario": "Подготовка презентации для включения ПСБ в Дирекцию МКЦП",
+        "query_path": "NODE-MKCP.organizational_structure + NODE-FINANCE + NODE-ECOSYSTEM",
+        "output": "Аргументация: опорный банк ОПК (70% ГОЗ) + 25-35% внебюджет = логичное включение в дирекцию"
+      },
+      {
+        "scenario": "Разработка концепции внебюджетного финансирования",
+        "query_path": "NODE-MKCP.financing_mechanisms → NODE-FINANCE → NODE-TECHBASE.vnv_contour",
+        "output": "6 финансовых продуктов с привязкой к V&V-вехам (траншевое финансирование)"
+      },
+      {
+        "scenario": "Позиционирование СПбПУ как методологического фундамента",
+        "query_path": "NODE-MKCP.participants_analysis.spbpu_positioning → NODE-SCI → NODE-REGULATORY",
+        "output": "УТП: соавтор базового ГОСТ + уникальная методология СЦИ + международное признание"
+      },
+      {
+        "scenario": "Обоснование срочной интеграции CML-Bench с GigaChat",
+        "query_path": "NODE-MKCP.swot_analysis + NODE-AGENDA.ai_priority + NODE-CMLBENCH.gap_analysis",
+        "output": "Императив: ИИ-приоритет Президента + GAP по Copilot = срочность Q1-Q2 2025"
+      },
+      {
+        "scenario": "Формирование рабочей группы для участия в МКЦП",
+        "query_path": "NODE-MKCP.organizational_structure.governance_hierarchy.level_4.member_requirements",
+        "output": "Требования: высшее образование (9 направлений), стаж 10+ лет, знание ГОСТ, профильная должность"
+      },
+      {
+        "scenario": "Оценка конкурентных рисков (Cifra, Росатом)",
+        "query_path": "NODE-MKCP.swot_analysis.extended_for_partnership.additional_threats → NODE-MARKET",
+        "output": "Стратегия: не конкурент платформам, а МЕТОДОЛОГИЧЕСКИЙ фундамент для любых платформ"
+      }
+    ]
+  },
+  "memory_updates_recommended": {
+    "description": "Рекомендуемые обновления памяти на основе анализа МКЦП ЦД",
+    "new_entries": [
+      {
+        "suggested_key": "PARTNER-MKCP",
+        "suggested_value": "МКЦП ЦД 2026-2035 | 15 трлн, 10 лет | СПбПУ №55 + ГОСТ соавтор | ПСБ: 25-35% внебюджет = до 5.25 трлн | ВНИИ Центр (Агеев) — базовая орг."
+      },
+      {
+        "suggested_key": "PARTNER-MKCP-STRUCTURE",
+        "suggested_value": "Дирекция МКЦП: Минпромторг + Минобороны + 46 ЦНИИ + ВНИИ Центр | Цель: ПСБ в дирекции | Отраслевые рабочие группы: Боровков как эксперт СЦИ"
+      }
+    ]
+  },
+  "normalization_status": {
+    "phase_1_completed": true,
+    "completion_date": "2025-11-29",
+    "actions_taken": [
+      "NORM-01: Добавлены node_id и layer во все meta-блоки",
+      "NORM-02: Исправлены null-ссылки в semantic_refs (1 шт)",
+      "NORM-03: Собраны и добавлены incoming_edges (313 связей)",
+      "NORM-04: Собраны 83 связей из v3-v11, реструктуризация по узлам/типам",
+      "NORM-05: referenced_by подтверждены (выполнено в Фазе 1)",
+      "NORM-06: Создана JSON Schema v1.0",
+      "NORM-07: Добавлены executive_summary в 2 файлов",
+      "NORM-08: Унифицированы 11 legacy ID, добавлена id_convention",
+      "NORM-09: Добавлены narrative_summary в 13 файлов"
+    ],
+    "files_normalized": 13,
+    "total_incoming_edges": 313,
+    "edges_by_target": {
+      "NODE-CONTEXT": 84,
+      "NODE-SHAREHOLDER": 51,
+      "NODE-FINANCE": 29,
+      "NODE-ECOSYSTEM": 35,
+      "NODE-REGULATORY": 7,
+      "NODE-SOVEREIGNTY": 15,
+      "NODE-TECHBASE": 39,
+      "NODE-PLATFORM": 11,
+      "NODE-SCI": 16,
+      "NODE-MARKET": 12,
+      "NODE-CMLBENCH": 10,
+      "NODE-AGENDA": 4
+    },
+    "phase_2_completed": true,
+    "phase_2_date": "2025-11-29",
+    "total_edges_collected": 83,
+    "edges_sources": [
+      "v3",
+      "v4",
+      "v5",
+      "v6",
+      "v7",
+      "v8",
+      "v9",
+      "v10",
+      "v11"
+    ],
+    "phase_3_completed": true,
+    "phase_3_date": "2025-11-29"
+  },
+  "id_convention": {
+    "version": "1.0",
+    "patterns": {
+      "nodes": {
+        "pattern": "NODE-{DOMAIN}",
+        "examples": [
+          "NODE-MKCP",
+          "NODE-SHAREHOLDER",
+          "NODE-CONTEXT"
+        ],
+        "description": "Идентификатор узла графа знаний"
+      },
+      "edges": {
+        "pattern": "EDGE-{SOURCE_NODE}-{NNN}",
+        "examples": [
+          "EDGE-MKCP-001",
+          "EDGE-SOV-003",
+          "EDGE-AGENDA-011"
+        ],
+        "description": "Идентификатор связи с указанием исходного узла"
+      },
+      "domain_objects": {
+        "pattern": "{DOMAIN}-{NNN}",
+        "examples": [
+          "MOT-001",
+          "PRINC-005",
+          "CLUSTER-003"
+        ],
+        "description": "Идентификатор объекта предметной области"
+      },
+      "layers": {
+        "pattern": "LAYER-{DOMAIN}-L{N}",
+        "examples": [
+          "LAYER-SCI-L1",
+          "LAYER-6TU-L3"
+        ],
+        "description": "Идентификатор слоя архитектуры"
+      }
+    },
+    "naming_rules": [
+      "Все ID в UPPERCASE",
+      "Разделитель — дефис (-)",
+      "Числовая часть — 3 цифры с ведущими нулями (001, 002, ...)",
+      "Префикс отражает домен или исходный узел"
+    ]
+  },
+  "narrative_catalog": {
+    "description": "Каталог narrative_summary для портала v2",
+    "format": "markdown",
+    "total_summaries": 13,
+    "nodes_with_summaries": [
+      "NODE-CONTEXT",
+      "NODE-SHAREHOLDER",
+      "NODE-FINANCE",
+      "NODE-ECOSYSTEM",
+      "NODE-REGULATORY",
+      "NODE-SOVEREIGNTY",
+      "NODE-TECHBASE",
+      "NODE-PLATFORM",
+      "NODE-SCI",
+      "NODE-MARKET",
+      "NODE-CMLBENCH",
+      "NODE-AGENDA",
+      "NODE-MKCP"
+    ],
+    "average_word_count": 128
+  }
+}

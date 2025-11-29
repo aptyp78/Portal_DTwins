@@ -1,0 +1,1001 @@
+{
+  "meta": {
+    "document_title": "CML-Bench в контексте технологических платформ: глубокий анализ",
+    "source_documents": [
+      "4_2025_11_Док_4_Приложение_4_Сравнительный_анализ_платформ_цифровых_двойников.xlsx",
+      "4_2025_11_Док_4_Приложение_5_CMLBench_в_контексте_тех_платформ.pdf"
+    ],
+    "analysis_date": "2025-11-28",
+    "version": "1.0",
+    "analyst": "AI-эксперт по цифровым двойникам",
+    "document_type": "Технологический анализ платформы",
+    "semantic_network": {
+      "position_in_graph": "NODE-CMLBENCH",
+      "layer": "platform_technology",
+      "primary_question": "ЧТО такое CML-Bench, КАКОВО её место в цепочке систем предприятий и КАК закрыть технологические GAP'ы?",
+      "primary_dependencies": [
+        {
+          "file": "psb_dt_platforms_market_analysis.json",
+          "node_id": "NODE-MARKET",
+          "relationship": "provides_competitive_context",
+          "description": "Рыночный анализ задаёт конкурентное окружение"
+        },
+        {
+          "file": "psb_sci_architecture_analysis.json",
+          "node_id": "NODE-SCI",
+          "relationship": "defines_methodological_framework",
+          "description": "СЦИ задаёт методологический каркас для CML-Bench"
+        },
+        {
+          "file": "psb_spbpu_context_analysis.json",
+          "node_id": "NODE-CONTEXT",
+          "relationship": "establishes_strategic_context",
+          "description": "Контекст партнёрства определяет роль CML-Bench"
+        },
+        {
+          "file": "psb_technological_foundation_6tu_analysis.json",
+          "node_id": "NODE-TECHBASE",
+          "relationship": "provides_architectural_requirements",
+          "description": "6ТУ-Framework задаёт архитектурные требования"
+        },
+        {
+          "file": "psb_ecosystem_infrastructure_analysis.json",
+          "node_id": "NODE-ECOSYSTEM",
+          "relationship": "maps_integration_partners",
+          "description": "Экосистема ПСБ определяет партнёров интеграции"
+        },
+        {
+          "file": "psb_strategic_sovereignty_role_analysis.json",
+          "node_id": "NODE-SOVEREIGNTY",
+          "relationship": "validates_sovereignty_role",
+          "description": "Суверенитет определяет стратегическую роль платформы"
+        }
+      ],
+      "graph_topology": {
+        "central_role": "CML-Bench как техническое ядро суверенной экосистемы ЦД",
+        "integration_pattern": "MARKET → CMLBENCH ↔ SCI ↔ TECHBASE → ECOSYSTEM → SOVEREIGNTY"
+      },
+      "referenced_by": [
+        {
+          "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+          "from_node": "NODE-AGENDA",
+          "from_path": "timeline_analysis.events[5]",
+          "full_ref": "psb_cmlbench_technology_context_analysis.json#gap_closure_roadmap.critical_gaps.GAP-001"
+        },
+        {
+          "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+          "from_node": "NODE-AGENDA",
+          "from_path": "timeline_analysis.events[6]",
+          "full_ref": "psb_cmlbench_technology_context_analysis.json#gap_closure_roadmap.critical_gaps"
+        },
+        {
+          "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+          "from_node": "NODE-AGENDA",
+          "from_path": "institutional_framework.inter_departmental_council",
+          "full_ref": "psb_cmlbench_technology_context_analysis.json#platform_identity.key_relationships"
+        },
+        {
+          "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+          "from_node": "NODE-AGENDA",
+          "from_path": "requirements_analysis.unified_dt_system",
+          "full_ref": "psb_cmlbench_technology_context_analysis.json#platform_identity"
+        },
+        {
+          "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+          "from_node": "NODE-AGENDA",
+          "from_path": "requirements_analysis.technology_backlog",
+          "full_ref": "psb_cmlbench_technology_context_analysis.json#gap_closure_roadmap.critical_gaps.GAP-001"
+        },
+        {
+          "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+          "from_node": "NODE-AGENDA",
+          "from_path": "strategic_positioning.risks_and_mitigation",
+          "full_ref": "psb_cmlbench_technology_context_analysis.json#gap_closure_roadmap.critical_gaps"
+        },
+        {
+          "from_file": "psb_mkcp_program_analysis.json",
+          "from_node": "NODE-MKCP",
+          "from_path": "goals_and_objectives",
+          "full_ref": "psb_cmlbench_technology_context_analysis.json#platform_capabilities"
+        },
+        {
+          "from_file": "psb_mkcp_program_analysis.json",
+          "from_node": "NODE-MKCP",
+          "from_path": "work_directions",
+          "full_ref": "psb_cmlbench_technology_context_analysis.json#platform_capabilities"
+        },
+        {
+          "from_file": "psb_mkcp_program_analysis.json",
+          "from_node": "NODE-MKCP",
+          "from_path": "swot_analysis",
+          "full_ref": "psb_cmlbench_technology_context_analysis.json#gap_analysis"
+        },
+        {
+          "from_file": "psb_mkcp_program_analysis.json",
+          "from_node": "NODE-MKCP",
+          "from_path": "strategic_positioning",
+          "full_ref": "psb_cmlbench_technology_context_analysis.json#gap_closure_roadmap"
+        }
+      ]
+    },
+    "node_id": "NODE-CMLBENCH",
+    "layer": "platform_technology"
+  },
+  "executive_summary": {
+    "id": "EXEC-CMLBENCH-001",
+    "platform_essence": {
+      "definition": "Цифровая платформа для разработки изделий, хранения сквозных цифровых моделей и передачи их в конструкторско-технологическую и производственную среду",
+      "strategic_role": "Техническое ядро, где технология цифровых двойников материализует объекты, а СЦИ определяет правила их создания и развития",
+      "owner": "СПбПУ, ООО «Лаборатория Вычислительная механика» (CompMechLab)",
+      "chief_designer": "А.И. Боровков — проректор СПбПУ, руководитель ПИШ «Цифровой инжиниринг»"
+    },
+    "key_findings": [
+      {
+        "id": "KF-CMLB-001",
+        "finding": "CML-Bench занимает позицию PLM (Product Lifecycle Management) в цепочке систем предприятий",
+        "implication": "Рядом с T-FLEX PLM, ЛОЦМАН-PLM, 1С-PLM, САРУС PLM — между CAD/CAE и MES"
+      },
+      {
+        "id": "KF-CMLB-002",
+        "finding": "Технологическая зрелость TRL 6-7 — прототип отработан в промышленной среде",
+        "implication": "Готовность к пилотным внедрениям на предприятиях ОПК, но не к массовому тиражу"
+      },
+      {
+        "id": "KF-CMLB-003",
+        "finding": "Критический GAP — отсутствие MES-интеграции (сопровождение производства)",
+        "implication": "Необходимо партнёрство с Cifra (Zyfra) для закрытия"
+      },
+      {
+        "id": "KF-CMLB-004",
+        "finding": "Конкурентные преимущества — PINN/Hybrid DT, ГОСТ-соответствие, суверенность",
+        "implication": "Позиционирование как «российский Siemens Xcelerator» для критической инфраструктуры"
+      },
+      {
+        "id": "KF-CMLB-005",
+        "finding": "Барьер — не технологии, а коммерциализация: нет партнёрской сети и документации",
+        "implication": "Необходим системный интегратор («Аметист») и развитие ЕЦПК СПбПУ"
+      }
+    ],
+    "strategic_recommendations": [
+      "Интеграция с MES Zyfra для закрытия производственного GAP'а",
+      "Партнёрство с GigaChat/SberAI для LLM-Copilot",
+      "Разработка визуального Twin Designer (Low-code)",
+      "Создание CML-Bench Marketplace для экосистемной модели",
+      "Привлечение «Аметист» как федерального интегратора"
+    ],
+    "semantic_refs": {
+      "links_to": [
+        "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model.platform_layer",
+        "psb_dt_platforms_market_analysis.json#russian_platforms_deep_dive.platforms[CML-Bench]",
+        "psb_sci_architecture_analysis.json#six_layer_model.layers[5]"
+      ]
+    }
+  },
+  "platform_identity": {
+    "id": "PLAT-ID-001",
+    "title": "Идентичность платформы CML-Bench",
+    "nomenclature": {
+      "full_name": "CML-Bench Smart Digital Twin Platform",
+      "cml_meaning": "Computational Mechanics Laboratory",
+      "developer": "СПбПУ, ООО «Лаборатория Вычислительная механика»",
+      "national_status": "Потенциальный национальный научно-технологический задел и стратегический актив"
+    },
+    "strategic_positioning_in_sci": {
+      "role": "Техническое ядро СЦИ-экосистемы",
+      "analogy": "Роль А.И. Боровкова аналогична генеральному конструктору (Указ №18 от 19.01.2015)",
+      "strategic_value": "Удешевление и ускорение создания высокотехнологичных изделий ВВСТ и продуктов двойного назначения",
+      "three_layer_integration": {
+        "layer_1_sci": "СЦИ задаёт правила создания, верификации и развития ЦД",
+        "layer_2_dt": "ЦД хранит матрицу требований и результаты симуляций",
+        "layer_3_cmlbench": "Платформа предоставляет инструменты и HPC-инфраструктуру"
+      }
+    },
+    "key_relationships": {
+      "sci_to_dt": {
+        "direction": "СЦИ → ЦД",
+        "description": "Методология задаёт требования к полноте модели, трассируемости параметров и плану V&V; ЦД становится центральным артефактом цифровой нити"
+      },
+      "dt_to_sci": {
+        "direction": "ЦД → СЦИ",
+        "description": "Обратная телеметрия с физического объекта обновляет модели, автоматически инициирует изменения ТЗ и КД"
+      },
+      "cmlbench_to_dt": {
+        "direction": "CML-Bench → ЦД",
+        "description": "Платформа предоставляет инструменты создания, верификации, виртуальных испытаний и HPC-расчётов; ЦД хранит результаты в едином репозитории"
+      },
+      "cmlbench_to_sci": {
+        "direction": "CML-Bench → СЦИ",
+        "description": "Платформа реализует процессы MBSE, управление проектами и расчётными цепочками, обеспечивая наблюдаемость и контроль качества по V&V-матрице"
+      }
+    },
+    "semantic_refs": [
+      "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model",
+      "psb_sci_architecture_analysis.json#layer_relationships"
+    ]
+  },
+  "enterprise_systems_chain": {
+    "id": "ESC-001",
+    "title": "Место CML-Bench в цепочке систем управления процессами предприятий",
+    "chain_layers": [
+      {
+        "id": "ESC-L1",
+        "level": "CAD/CAE (Проектирование)",
+        "systems": [
+          "NX",
+          "CATIA",
+          "КОМПАС-3D",
+          "Creo",
+          "Onshape",
+          "SIMULIA",
+          "Ansys"
+        ],
+        "function": "Создание геометрических и расчётных моделей",
+        "cmlbench_relation": "Принимает данные от CAD/CAE для создания цифровых двойников"
+      },
+      {
+        "id": "ESC-L2",
+        "level": "PLM (Управление ЖЦ продукта)",
+        "systems": [
+          "Teamcenter",
+          "Windchill",
+          "3DEXPERIENCE",
+          "T-FLEX PLM",
+          "ЛОЦМАН-PLM",
+          "1С-PLM",
+          "САРУС PLM"
+        ],
+        "function": "Управление данными об изделии на всём жизненном цикле",
+        "cmlbench_position": {
+          "category": "PLM + Simulation & Digital Twin",
+          "placement": "Рядом с T-FLEX PLM, ЛОЦМАН-PLM, между CAD/CAE и MES",
+          "unique_value": "Хранение сквозных цифровых моделей + Smart DT + HPC"
+        }
+      },
+      {
+        "id": "ESC-L3",
+        "level": "CAPP/MES (Технология и производство)",
+        "systems": [
+          "Opcenter MES",
+          "MES Zyfra",
+          "СПРУТ-ТП",
+          "1С:MES"
+        ],
+        "function": "Технологическая подготовка и управление производством",
+        "cmlbench_relation": "Передаёт данные в MES через трансформацию eBOM → MBOM → техпроцесс"
+      },
+      {
+        "id": "ESC-L4",
+        "level": "ERP (Управление ресурсами)",
+        "systems": [
+          "SAP",
+          "1С:ERP",
+          "Галактика"
+        ],
+        "function": "Планирование и управление ресурсами предприятия",
+        "cmlbench_relation": "Косвенная интеграция через MES-уровень"
+      }
+    ],
+    "data_flow_model": {
+      "design_phase": {
+        "flow": "CAD/CAE → CML-Bench → PLM",
+        "description": "Геометрия и расчёты → Создание ЦД → Управление конфигурациями"
+      },
+      "production_phase": {
+        "flow": "CML-Bench → CAPP/MES → ERP",
+        "description": "eBOM → MBOM → Техпроцесс → Производственные заказы",
+        "gap": "Отсутствует прямая интеграция CML-Bench → MES"
+      },
+      "operation_phase": {
+        "flow": "IoT sensors → CML-Bench → ЦД → Predictive Service",
+        "description": "Телеметрия → Актуализация модели → Предиктивное обслуживание"
+      }
+    },
+    "russian_plm_landscape": {
+      "domestic_systems": [
+        {
+          "name": "T-FLEX PLM",
+          "vendor": "Топ Системы",
+          "focus": "PLM + CAD"
+        },
+        {
+          "name": "ЛОЦМАН-PLM",
+          "vendor": "АСКОН",
+          "focus": "PLM + документооборот"
+        },
+        {
+          "name": "1С-PLM",
+          "vendor": "1С",
+          "focus": "Интеграция с 1С:ERP"
+        },
+        {
+          "name": "САРУС PLM",
+          "vendor": "НПП Кодекс",
+          "focus": "Конструкторская документация"
+        }
+      ],
+      "cmlbench_differentiation": {
+        "vs_domestic_plm": [
+          "Полный цикл системного цифрового инжиниринга",
+          "Умные цифровые двойники (Smart DT)",
+          "HPC-расчёты и верификация",
+          "Сценарии eBOM → техпроцесс → производство"
+        ],
+        "unique_capabilities": [
+          "GPU CAE/ROM",
+          "PINN (Physics-Informed Neural Networks)",
+          "Hybrid DT (physics + ML)",
+          "V&V-матрица"
+        ]
+      }
+    },
+    "semantic_refs": [
+      "psb_sci_architecture_analysis.json#six_layer_model.layers",
+      "psb_technological_foundation_6tu_analysis.json#lifecycle_integration"
+    ]
+  },
+  "maturity_assessment": {
+    "id": "MA-001",
+    "title": "Оценка зрелости CML-Bench",
+    "dimensions": [
+      {
+        "id": "MA-DIM-001",
+        "dimension": "Функциональная наполненность",
+        "assessment": "Высокая",
+        "evidence": "Охватывает полный цикл системного цифрового инжиниринга: хранение сложных многодисциплинарных моделей, умные ЦД, сценарии eBOM → техпроцесс → производство",
+        "benchmark": "Сопоставима с модулем «Simulation & Digital Twin» в зрелых PLM-стеках"
+      },
+      {
+        "id": "MA-DIM-002",
+        "dimension": "Технологическая зрелость (TRL)",
+        "assessment": "TRL 6-7",
+        "evidence": "Прототип отработан в промышленной среде, есть реальные кейсы и сертификация ИБ",
+        "status": "Демонстрация в операционной среде предприятий"
+      },
+      {
+        "id": "MA-DIM-003",
+        "dimension": "Отраслевые пилоты",
+        "assessment": "Подтверждены",
+        "evidence": "Реализованы проекты для автопрома, двигателестроения, авиастроения, атомного и нефтегазового секторов, предприятий ОПК",
+        "users": "Ряд отечественных предприятий высокотехнологичной промышленности"
+      },
+      {
+        "id": "MA-DIM-004",
+        "dimension": "Интеграции с внешними CAE/PLM",
+        "assessment": "Ограничено",
+        "evidence": "Выпущен коннектор к пакету расчётных модулей «ЛОГОС» (ГК «Росатом»)",
+        "gap": "Экосистема интеграций ещё ограничена, нужны коннекторы к 1С, SAP, MES"
+      },
+      {
+        "id": "MA-DIM-005",
+        "dimension": "Информационная безопасность",
+        "assessment": "Высокая",
+        "evidence": "Сертификат ФСТЭК на работу с данными «Коммерческая тайна» и «Для служебного пользования»",
+        "significance": "Критически важно для предприятий ОПК и госсектора"
+      },
+      {
+        "id": "MA-DIM-006",
+        "dimension": "Коммерциализация и поддержка",
+        "assessment": "Средняя",
+        "evidence": "Разработка ведётся СПбПУ и CompMechLab; открыта витрина, продвигается через отраслевые медиа",
+        "gap": "Отсутствует традиционная партнёрская сеть инсталляторов и SLA-сервисов уровня SAP/Siemens"
+      },
+      {
+        "id": "MA-DIM-007",
+        "dimension": "Документация и обучение",
+        "assessment": "Развивается",
+        "evidence": "Доступны русскоязычные описания, презентации; проходят вебинары СПбПУ",
+        "gap": "Нет публичной базы пользовательских руководств и учебного портала — порог входа выше, чем у коммерческих PLM-гигантов"
+      },
+      {
+        "id": "MA-DIM-008",
+        "dimension": "Коммерческие лицензии",
+        "assessment": "Непрозрачно",
+        "evidence": "Ценообразование публично не раскрывается, распространяется по запросу",
+        "gap": "Отсутствие прозрачного прайса может затормозить бюджетирование для крупных заводов"
+      }
+    ],
+    "overall_verdict": {
+      "technology_readiness": "TRL 6-7 — готовность к промышленной демонстрации",
+      "production_readiness": "Платформа уже решает задачи ЦД и инженерных вычислений, но для масштаба необходимо: (1) расширенная партнёрская экосистема, (2) коробочные интеграции с ERP/MES/CAD/PLM, (3) пользовательская документация и обучение",
+      "recommended_positioning": "Технологическая пилот-платформа для R&D-подразделений и опытного производства; для полномасштабного корпоративного развёртывания необходимо расширение партнёрского пула"
+    },
+    "semantic_refs": [
+      "psb_dt_platforms_market_analysis.json#technology_trends_analysis.trends",
+      "psb_technological_foundation_6tu_analysis.json#ten_principles"
+    ]
+  },
+  "competitive_analysis": {
+    "id": "CA-001",
+    "title": "Конкурентный анализ CML-Bench",
+    "vs_siemens_xcelerator": {
+      "id": "CA-SIEMENS",
+      "competitor": "Siemens Xcelerator",
+      "market_position": "Лидер Magic Quadrant, 11% мирового рынка, $2.69B",
+      "comparison": {
+        "cmlbench_advantages": [
+          {
+            "advantage": "ГОСТ Р 57700.37-2021",
+            "description": "СПбПУ — соавтор национального стандарта на ЦД",
+            "strategic_value": "Входной барьер для западных конкурентов в РФ"
+          },
+          {
+            "advantage": "Суверенность",
+            "description": "Нет санкционных рисков, работа с КТ/ДСП",
+            "strategic_value": "Единственный путь для ОПК и критической инфраструктуры"
+          },
+          {
+            "advantage": "HPC для heavy-lift симуляций",
+            "description": "Глубокая интеграция с суперкомпьютерными кластерами",
+            "strategic_value": "Преимущество для сложных мультидисциплинарных расчётов"
+          },
+          {
+            "advantage": "Методология СЦИ",
+            "description": "Уникальная методология системного цифрового инжиниринга",
+            "strategic_value": "Научно-методологическое лидерство"
+          }
+        ],
+        "parity_areas": [
+          {
+            "area": "GPU CAE",
+            "status": "На уровне"
+          },
+          {
+            "area": "Hybrid DT (physics + ML)",
+            "status": "На уровне"
+          },
+          {
+            "area": "ROM (Reduced Order Models)",
+            "status": "На уровне"
+          },
+          {
+            "area": "PINN (Physics-Informed Neural Networks)",
+            "status": "На уровне"
+          }
+        ],
+        "cmlbench_gaps": [
+          {
+            "gap": "LLM-Copilot",
+            "siemens_capability": "Industrial Copilot: GenAI создаёт twin-граф, BOM и симуляцию из текстового запроса",
+            "closure_strategy": "Партнёрство с GigaChat/SberAI",
+            "priority": "Критический"
+          },
+          {
+            "gap": "Low-code",
+            "siemens_capability": "Mendix/Industrial Edge визуальный Twin-Designer (drag-and-drop шаблоны)",
+            "closure_strategy": "Разработка визуального конфигуратора",
+            "priority": "Высокий"
+          },
+          {
+            "gap": "Omniverse интеграция",
+            "siemens_capability": "Xcelerator Connector для Nvidia Omniverse",
+            "closure_strategy": "Разработка Omniverse Connector",
+            "priority": "Средний"
+          },
+          {
+            "gap": "MES-интеграция",
+            "siemens_capability": "Opcenter MES + MindSphere Edge",
+            "closure_strategy": "Партнёрство с Cifra (MES Zyfra)",
+            "priority": "Критический"
+          },
+          {
+            "gap": "Marketplace",
+            "siemens_capability": "Xcelerator Share — платформенная экосистема",
+            "closure_strategy": "CML-Bench Marketplace с ROM, сервисами, API",
+            "priority": "Высокий"
+          },
+          {
+            "gap": "Партнёрская сеть",
+            "siemens_capability": "Глобальная сеть партнёров и интеграторов",
+            "closure_strategy": "Программа сертификации интеграторов, «Аметист» как якорный партнёр",
+            "priority": "Высокий"
+          }
+        ]
+      },
+      "positioning_statement": "CML-Bench — российский ответ на Siemens Xcelerator для критической инфраструктуры и ОПК, обеспечивающий технологический суверенитет"
+    },
+    "vs_bimeister": {
+      "id": "CA-BIMEISTER",
+      "competitor": "Bimeister",
+      "comparison_type": "Комплементарность, не конкуренция",
+      "comparison_table": [
+        {
+          "parameter": "Базовое назначение",
+          "cmlbench": "Системный инжиниринг + Smart DT изделий",
+          "bimeister": "BIM/BI-платформа для строительства и эксплуатации"
+        },
+        {
+          "parameter": "Ключевые функции",
+          "cmlbench": "Междисциплинарные модели, eBOM→MBOM, HPC-расчёты",
+          "bimeister": "СМР/ПНР журналы, BIM-координация, FM-сценарии"
+        },
+        {
+          "parameter": "Отраслевой фокус",
+          "cmlbench": "Машиностроение, авиа, ОПК",
+          "bimeister": "Капстроительство, ТЭК, ГЧП"
+        },
+        {
+          "parameter": "ИБ-сертификаты",
+          "cmlbench": "ФСТЭК (КТ/ДСП)",
+          "bimeister": "ФСБ (ГОСТ-классификация)"
+        },
+        {
+          "parameter": "TRL",
+          "cmlbench": "6-7",
+          "bimeister": "7+ (внедрён в EPC)"
+        }
+      ],
+      "synergy_scenarios": {
+        "manufacturing_plant": "CML-Bench для цифрового двойника изделия (турбина, двигатель)",
+        "construction_facility": "Bimeister для BIM-моделей, СМР и эксплуатационных паспортов",
+        "integrated_enterprise": "CML-Bench + Bimeister для полного цикла «изделие + площадка»"
+      }
+    },
+    "vs_ametist_integrator": {
+      "id": "CA-AMETIST",
+      "partner_type": "Системный интегратор (не конкурент)",
+      "ametist_profile": {
+        "type": "Федеральный системный интегратор",
+        "experience": "30 лет на рынке, 1000+ реализованных проектов",
+        "capabilities": [
+          "Проектирование ЦОД",
+          "ИБ-аудит",
+          "Внедрение отечественного ПО",
+          "Пост-поддержка"
+        ],
+        "licenses": [
+          "ФСБ",
+          "ФСТЭК",
+          "ISO 9001"
+        ],
+        "clients": [
+          "ТЭК",
+          "Промышленность",
+          "Госсектор",
+          "Строительство"
+        ]
+      },
+      "partnership_model": {
+        "cmlbench_role": "Продукт (PLM + digital-twin)",
+        "ametist_role": "Интегратор с лицензиями и опытом крупных промпроектов",
+        "integration_scope": [
+          "Проектирование ЦОД под CML-Bench",
+          "ИБ-аудит и сертификация",
+          "Развёртывание на отказоустойчивой инфраструктуре",
+          "Подключение к 1С/MES",
+          "Пост-поддержка 24/7"
+        ]
+      },
+      "strategic_value": "Естественный канал внедрения и поддержки CML-Bench на российских предприятиях"
+    },
+    "semantic_refs": [
+      "psb_dt_platforms_market_analysis.json#market_structure.geographic_distribution",
+      "psb_ecosystem_infrastructure_analysis.json#cluster_model.deep_tech"
+    ]
+  },
+  "gap_closure_roadmap": {
+    "id": "GCR-001",
+    "title": "Дорожная карта закрытия GAP'ов CML-Bench",
+    "critical_gaps": [
+      {
+        "id": "GAP-001",
+        "name": "MES-интеграция (производственный контур)",
+        "current_state": "Отсутствует прямая интеграция с MES",
+        "target_state": "API CML-Bench ↔ MES Zyfra для сквозного цикла eBOM → MBOM → производство",
+        "closure_strategy": {
+          "partner": "Cifra (Zyfra)",
+          "integration_type": "API-based bidirectional",
+          "data_flow": "CML-Bench (eBOM, ЦД) → MES Zyfra (MBOM, техпроцесс) → CML-Bench (производственная телеметрия)",
+          "timeline": "2025 Q2-Q4",
+          "psb_role": "Facilitate partnership, финансирование пилота"
+        },
+        "benefits": [
+          "Покрытие полного ЖЦ (75% → 100%)",
+          "Сквозная цифровая нить",
+          "Конкурентный паритет с Siemens"
+        ],
+        "semantic_refs": [
+          "psb_dt_platforms_market_analysis.json#lifecycle_coverage_analysis.cml_bench_positioning",
+          "psb_ecosystem_infrastructure_analysis.json#deep_tech_cluster.partners"
+        ]
+      },
+      {
+        "id": "GAP-002",
+        "name": "LLM-Copilot (AI-ассистент)",
+        "current_state": "Отсутствует",
+        "target_state": "CML-Bench Copilot: голосовой/текстовый интерфейс для инженеров",
+        "closure_strategy": {
+          "partner_options": [
+            {
+              "partner": "Сбер (GigaChat)",
+              "pros": "Российский, корпоративный фокус",
+              "cons": "Ограниченные инженерные данные"
+            },
+            {
+              "partner": "Яндекс (YandexGPT)",
+              "pros": "Облачная интеграция",
+              "cons": "Меньший фокус на B2B"
+            }
+          ],
+          "recommended_partner": "Сбер (GigaChat) — через партнёрство ПСБ×Сбер",
+          "integration_concept": {
+            "use_cases": [
+              "Text-to-graph генерация twin-моделей",
+              "Natural language запросы к данным ЦД",
+              "Автоматизация BOM и симуляций",
+              "Интерпретация результатов расчётов"
+            ],
+            "architecture": "GigaChat API → CML-Bench Copilot Adapter → CML-Bench Core"
+          },
+          "timeline": "2025 Q3 — MVP, 2026 Q1 — Production",
+          "psb_role": "Координация партнёрства, финансирование R&D"
+        },
+        "benefits": [
+          "Снижение порога входа для инженеров",
+          "Ускорение создания ЦД",
+          "Конкурентный дифференциатор (только 4/29 платформ имеют Copilot)"
+        ]
+      },
+      {
+        "id": "GAP-003",
+        "name": "Low-code Twin Designer",
+        "current_state": "Отсутствует визуальный конфигуратор",
+        "target_state": "Drag-and-drop конструктор twin-моделей с шаблонами активов",
+        "closure_strategy": {
+          "development_type": "Внутренняя разработка СПбПУ + CompMechLab",
+          "architecture": {
+            "frontend": "Web-based visual designer",
+            "backend": "Template engine + CML-Bench Core API",
+            "templates": "Отраслевые шаблоны: турбина, двигатель, конструкция, процесс"
+          },
+          "timeline": "2026 Q1-Q3",
+          "psb_role": "Финансирование разработки через МКЦП ЦД"
+        },
+        "benefits": [
+          "Снижение time-to-twin с недель до дней",
+          "Масштабирование на неинженерных пользователей",
+          "Паритет с 72% рынка (21/29 платформ)"
+        ]
+      }
+    ],
+    "moderate_gaps": [
+      {
+        "id": "GAP-004",
+        "name": "Omniverse Connector (визуализация)",
+        "current_state": "Нет интеграции с Nvidia Omniverse",
+        "target_state": "Экспорт ЦД в USD-формат для immersive визуализации",
+        "closure_strategy": {
+          "development_type": "Коннектор на базе Nvidia Omniverse SDK",
+          "timeline": "2026 Q2-Q4"
+        },
+        "priority": "Средний"
+      },
+      {
+        "id": "GAP-005",
+        "name": "CML-Bench Marketplace",
+        "current_state": "Базовая ROM-библиотека",
+        "target_state": "Полноценный Marketplace с моделями, сервисами, API",
+        "closure_strategy": {
+          "model": "Rev-share 70/30 (разработчик/платформа)",
+          "categories": [
+            "ROM-библиотеки",
+            "Отраслевые шаблоны",
+            "HPC-сервисы",
+            "API-коннекторы"
+          ],
+          "timeline": "2026-2027"
+        },
+        "priority": "Высокий"
+      },
+      {
+        "id": "GAP-006",
+        "name": "Партнёрская сеть интеграторов",
+        "current_state": "Отсутствует формальная программа",
+        "target_state": "Сеть сертифицированных интеграторов CML-Bench",
+        "closure_strategy": {
+          "anchor_partner": "«Аметист» как федеральный интегратор",
+          "program_elements": [
+            "Сертификационное обучение",
+            "Партнёрский портал",
+            "SLA-шаблоны",
+            "Revenue-share модель"
+          ],
+          "timeline": "2025 Q4 — запуск программы, 2026-2027 — масштабирование"
+        },
+        "priority": "Высокий"
+      },
+      {
+        "id": "GAP-007",
+        "name": "Документация и обучение",
+        "current_state": "Презентации и вебинары СПбПУ",
+        "target_state": "Публичная база знаний, учебный портал, сертификация",
+        "closure_strategy": {
+          "owner": "ЕЦПК СПбПУ + ПИШ «Цифровой инжиниринг»",
+          "deliverables": [
+            "User guides на русском и английском",
+            "Video-курсы",
+            "Certification program",
+            "Community forum"
+          ],
+          "timeline": "2025 Q4 — MVP портала, 2026 — полная версия"
+        },
+        "priority": "Средний"
+      }
+    ],
+    "summary_timeline": {
+      "2025_h1": [
+        "MES-интеграция (пилот)",
+        "LLM-Copilot (MVP)"
+      ],
+      "2025_h2": [
+        "MES-интеграция (production)",
+        "Партнёрская программа (запуск)",
+        "Документация (MVP)"
+      ],
+      "2026_h1": [
+        "Low-code Twin Designer (MVP)",
+        "LLM-Copilot (production)"
+      ],
+      "2026_h2": [
+        "Omniverse Connector",
+        "Low-code (production)",
+        "Marketplace (MVP)"
+      ],
+      "2027": [
+        "Marketplace (масштабирование)",
+        "Экспорт методологии"
+      ]
+    },
+    "semantic_refs": [
+      "psb_dt_platforms_market_analysis.json#technology_trends_analysis.gap_summary_cml_bench",
+      "psb_strategic_sovereignty_role_analysis.json#partnership_actions"
+    ]
+  },
+  "psb_integration_value": {
+    "id": "PIV-001",
+    "title": "Ценность интеграции CML-Bench для ПСБ",
+    "financial_integration": {
+      "id": "PIV-FIN",
+      "concept": "ЦД как залоговый актив для кредитования НИОКР",
+      "mechanisms": [
+        {
+          "mechanism": "Траншевое финансирование по V&V-milestone",
+          "description": "Выдача траншей привязана к прохождению этапов верификации в CML-Bench",
+          "benefit_for_psb": "Снижение риска дефолта через объективный контроль прогресса",
+          "benefit_for_enterprise": "Мотивация к качественному исполнению V&V"
+        },
+        {
+          "mechanism": "Data-driven credit scoring для НИОКР",
+          "description": "Оценка кредитоспособности на основе данных ЦД (TRL, результаты симуляций)",
+          "benefit_for_psb": "Объективизация риск-метрик для инновационных проектов",
+          "benefit_for_enterprise": "Доступ к финансированию при отсутствии залоговой базы"
+        },
+        {
+          "mechanism": "ЦД как цифровой актив",
+          "description": "Верифицированный цифровой двойник = подтверждённая стоимость IP",
+          "benefit_for_psb": "Новый класс залогов для ОПК-клиентов",
+          "benefit_for_enterprise": "Монетизация интеллектуальной собственности"
+        }
+      ],
+      "semantic_refs": [
+        "psb_financial_architecture_analysis.json#investment_framework",
+        "psb_technological_foundation_6tu_analysis.json#vnv_contour"
+      ]
+    },
+    "ecosystem_integration": {
+      "id": "PIV-ECO",
+      "concept": "CML-Bench как методологическое ядро суверенной экосистемы ЦД",
+      "role_of_psb": {
+        "function": "Финансово-технологический агент и оркестратор МКЦП ЦД",
+        "capabilities": [
+          "Траншевое финансирование НИОКР",
+          "ЦД как залоговый актив",
+          "Доверенная среда для ОПК",
+          "Координация экосистемы"
+        ]
+      },
+      "ecosystem_architecture": {
+        "core_platform": "CML-Bench (методология + V&V)",
+        "complementary_partners": [
+          {
+            "partner": "Cifra (Zyfra)",
+            "role": "MES-интеграция и производственный контур"
+          },
+          {
+            "partner": "Газпром Нефть",
+            "role": "Отраслевой референс для нефтегаза"
+          },
+          {
+            "partner": "Росатом",
+            "role": "Safety-critical методологии и HPC"
+          },
+          {
+            "partner": "Ростех (Истоки)",
+            "role": "Образовательный контур"
+          },
+          {
+            "partner": "GigaChat/SberAI",
+            "role": "LLM-Copilot интеграция"
+          },
+          {
+            "partner": "Yandex Cloud",
+            "role": "Облачная инфраструктура"
+          }
+        ],
+        "orchestrator": "ПСБ"
+      },
+      "semantic_refs": [
+        "psb_ecosystem_infrastructure_analysis.json#cluster_model",
+        "psb_dt_platforms_market_analysis.json#national_ecosystem_vision"
+      ]
+    },
+    "value_proposition_formula": {
+      "formula": "ЦД = Актив + Данные + Деньги + Доверие",
+      "explanation": {
+        "asset": "Верифицированный ЦД имеет подтверждённую стоимость",
+        "data": "Цифровая нить обеспечивает прозрачность прогресса",
+        "money": "ПСБ обеспечивает финансирование на всех этапах ЖЦ",
+        "trust": "Доверенная среда для ОПК и критической инфраструктуры"
+      },
+      "semantic_ref": "psb_spbpu_context_analysis.json#psb_value_proposition"
+    }
+  },
+  "strategic_conclusions": {
+    "id": "SC-001",
+    "title": "Стратегические выводы",
+    "main_thesis": "CML-Bench — технологически зрелая платформа (TRL 6-7) с уникальными компетенциями в области PINN и гибридных цифровых двойников, которая может стать ядром суверенной экосистемы ЦД России при условии закрытия GAP'ов и формирования партнёрской сети",
+    "key_conclusions": [
+      {
+        "id": "KC-001",
+        "conclusion": "Место в цепочке — PLM с уникальным модулем Simulation & Digital Twin",
+        "evidence": "Между CAD/CAE и MES, рядом с T-FLEX PLM, ЛОЦМАН-PLM",
+        "implication": "Необходима интеграция с обеих сторон цепочки"
+      },
+      {
+        "id": "KC-002",
+        "conclusion": "Главный барьер — не технологии, а коммерциализация",
+        "evidence": "Нет партнёрской сети, документации, прозрачного ценообразования",
+        "implication": "Фокус на go-to-market стратегию, а не только R&D"
+      },
+      {
+        "id": "KC-003",
+        "conclusion": "Критические GAP'ы закрываются через партнёрства",
+        "evidence": "MES → Cifra, LLM → GigaChat, Интеграция → «Аметист»",
+        "implication": "ПСБ как оркестратор партнёрской экосистемы"
+      },
+      {
+        "id": "KC-004",
+        "conclusion": "Позиционирование — «российский Siemens Xcelerator» для ОПК",
+        "evidence": "ГОСТ-соответствие, ФСТЭК-сертификация, суверенность",
+        "implication": "Фокус на критическую инфраструктуру, а не массовый рынок"
+      },
+      {
+        "id": "KC-005",
+        "conclusion": "ПСБ получает новый класс залогов и инструментов контроля",
+        "evidence": "ЦД как актив, траншевое финансирование по V&V",
+        "implication": "Дифференциация от конкурентов в кредитовании НИОКР"
+      }
+    ],
+    "semantic_refs": [
+      "psb_shareholder_logic_analysis.json#shareholder_type",
+      "psb_strategic_sovereignty_role_analysis.json#seven_entry_points",
+      "psb_global_trend_platform_analysis.json#platform_value_proposition"
+    ]
+  },
+  "semantic_cross_references": {
+    "id": "SCR-001",
+    "title": "Матрица семантических связей с другими JSON-файлами",
+    "cross_references": [
+      {
+        "target_file": "psb_spbpu_context_analysis.json",
+        "target_node": "NODE-CONTEXT",
+        "relationship_type": "establishes_strategic_context",
+        "integration_points": [
+          "three_layer_model.platform_layer — CML-Bench как техническое ядро",
+          "partnership_assets.spbpu.cml_bench — актив СПбПУ",
+          "psb_value_proposition — формула ЦД = Актив + Данные + Деньги + Доверие"
+        ],
+        "bidirectional": true
+      },
+      {
+        "target_file": "psb_sci_architecture_analysis.json",
+        "target_node": "NODE-SCI",
+        "relationship_type": "defines_methodological_framework",
+        "integration_points": [
+          "six_layer_model.layers[5] — ЦД-артефакт как продукт CML-Bench",
+          "six_layer_model.layers[6] — V&V-базис реализуется в CML-Bench",
+          "layer_relationships — связь СЦИ ↔ ЦД ↔ CML-Bench"
+        ],
+        "bidirectional": true
+      },
+      {
+        "target_file": "psb_dt_platforms_market_analysis.json",
+        "target_node": "NODE-MARKET",
+        "relationship_type": "provides_competitive_context",
+        "integration_points": [
+          "russian_platforms_deep_dive.platforms[CML-Bench] — рыночные данные",
+          "technology_trends_analysis — GAP-анализ vs тренды",
+          "national_ecosystem_vision — роль в суверенной экосистеме"
+        ],
+        "bidirectional": true
+      },
+      {
+        "target_file": "psb_technological_foundation_6tu_analysis.json",
+        "target_node": "NODE-TECHBASE",
+        "relationship_type": "provides_architectural_requirements",
+        "integration_points": [
+          "vnv_contour — CML-Bench как V&V-платформа",
+          "ten_principles — архитектурные требования к платформе",
+          "lifecycle_integration — покрытие ЖЦ"
+        ],
+        "bidirectional": true
+      },
+      {
+        "target_file": "psb_ecosystem_infrastructure_analysis.json",
+        "target_node": "NODE-ECOSYSTEM",
+        "relationship_type": "maps_integration_partners",
+        "integration_points": [
+          "cluster_model.deep_tech — Cifra, Росатом как партнёры",
+          "quasi_ministerial_functions — роль ПСБ в экосистеме"
+        ],
+        "bidirectional": true
+      },
+      {
+        "target_file": "psb_strategic_sovereignty_role_analysis.json",
+        "target_node": "NODE-SOVEREIGNTY",
+        "relationship_type": "validates_sovereignty_role",
+        "integration_points": [
+          "seven_entry_points — CML-Bench как технологическая точка входа",
+          "mkcp_participation — роль в МКЦП ЦД"
+        ],
+        "bidirectional": true
+      },
+      {
+        "target_file": "psb_financial_architecture_analysis.json",
+        "target_node": "NODE-FINANCE",
+        "relationship_type": "enables_financial_innovation",
+        "integration_points": [
+          "investment_framework — ЦД как залоговый актив",
+          "three_stream_model — финансирование через V&V-milestone"
+        ],
+        "bidirectional": true
+      },
+      {
+        "target_file": "psb_shareholder_logic_analysis.json",
+        "target_node": "NODE-SHAREHOLDER",
+        "relationship_type": "validates_mission",
+        "integration_points": [
+          "shareholder_type.architectonic — CML-Bench как архитектурный элемент",
+          "five_principles — суверенность и ответственность"
+        ],
+        "bidirectional": false
+      },
+      {
+        "target_file": "psb_global_trend_platform_analysis.json",
+        "target_node": "NODE-PLATFORM",
+        "relationship_type": "applies_platform_model",
+        "integration_points": [
+          "platform_value_proposition — 8 ценностей платформы",
+          "network_effects — CML-Bench Marketplace"
+        ],
+        "bidirectional": true
+      },
+      {
+        "target_file": "psb_regulatory_framework_analysis.json",
+        "target_node": "NODE-REGULATORY",
+        "relationship_type": "ensures_compliance",
+        "integration_points": [
+          "gost_57700_37_2021 — CML-Bench соответствует ГОСТ",
+          "mkcp_cd — роль в межведомственной программе"
+        ],
+        "bidirectional": true
+      }
+    ]
+  },
+  "narrative_summary": {
+    "version": "1.0",
+    "format": "markdown",
+    "target": "portal_v2",
+    "word_count": 116,
+    "content": "## CML-Bench: технологическое ядро партнёрства\n\nCML-Bench — платформа цифровых двойников, разработанная в СПбПУ под руководством А.И. Боровкова. Технологическое ядро для реализации замысла партнёрства.\n\n### Место в цепочке систем\n\nCML-Bench позиционируется как PLM-система между CAD/CAE (проектирование) и MES (производство). Это обеспечивает сквозную интеграцию от концепции изделия до производства.\n\n### Оценка зрелости\n\nTRL 6-7 (демонстрация в релевантном окружении). Платформа успешно применяется в проектах с ОАК, ОСК, Росатомом. Требуется переход к TRL 8-9 для массового внедрения.\n\n### Дорожная карта закрытия GAP\n\nQ1-Q2 2025: интеграция с GigaChat (LLM-Copilot). Q2-Q3 2025: партнёрство с Cifra (MES-интеграция). Q3-Q4 2025: разработка Low-code инструментов.\n\n### Уникальные преимущества\n\nСоответствие ГОСТ Р 57700.37-2021 (соавтор — СПбПУ), сертификация ФСТЭК для ОПК, интеграция с российскими HPC-ресурсами, методологическая основа СЦИ."
+  }
+}

@@ -1,0 +1,1139 @@
+{
+  "meta": {
+    "document_title": "Сравнительный анализ глобального рынка платформ цифровых двойников",
+    "source_document": "Приложение 4 к Док 4 — Сравнительный анализ платформ цифровых двойников",
+    "analysis_date": "2025-11-28",
+    "version": "1.0",
+    "analyst": "AI-эксперт по цифровым двойникам",
+    "document_type": "Рыночный и конкурентный анализ",
+    "data_sources": {
+      "primary": "Excel-файл с 29 платформами по 22 критериям",
+      "secondary": ["Gartner Magic Quadrant 2025", "Industry reports"]
+    },
+    "semantic_network": {
+      "position_in_graph": "NODE-MARKET",
+      "layer": "market_intelligence",
+      "primary_question": "КАКОВО конкурентное окружение CML-Bench и ГДЕ точки роста для партнёрства?",
+      "primary_dependencies": [
+        {
+          "file": "psb_spbpu_context_analysis.json",
+          "node_id": "NODE-CONTEXT",
+          "relationship": "contextualizes_position",
+          "description": "Рыночный анализ позиционирует CML-Bench в глобальном контексте"
+        },
+        {
+          "file": "psb_sci_architecture_analysis.json",
+          "node_id": "NODE-SCI",
+          "relationship": "benchmarks_methodology",
+          "description": "СЦИ-методология сравнивается с подходами мировых лидеров"
+        },
+        {
+          "file": "psb_technological_foundation_6tu_analysis.json",
+          "node_id": "NODE-TECHBASE",
+          "relationship": "identifies_technology_gaps",
+          "description": "Выявление технологических GAP'ов для 6ТУ-архитектуры"
+        },
+        {
+          "file": "psb_strategic_sovereignty_role_analysis.json",
+          "node_id": "NODE-SOVEREIGNTY",
+          "relationship": "validates_sovereignty_path",
+          "description": "Подтверждение стратегии технологического суверенитета"
+        },
+        {
+          "file": "psb_global_trend_platform_analysis.json",
+          "node_id": "NODE-PLATFORM",
+          "relationship": "provides_competitive_context",
+          "description": "Контекст платформенной конкуренции"
+        },
+        {
+          "file": "psb_ecosystem_infrastructure_analysis.json",
+          "node_id": "NODE-ECOSYSTEM",
+          "relationship": "maps_ecosystem_players",
+          "description": "Картирование потенциальных партнёров экосистемы"
+        }
+      ],
+      "graph_topology": {
+        "full_cycle": "MARKET → CONTEXT → SCI → TECHBASE → PLATFORM → SOVEREIGNTY → MARKET",
+        "market_role": "Внешний валидатор стратегических решений и источник бенчмаркинга"
+      }
+    }
+  },
+
+  "executive_summary": {
+    "id": "EXEC-MARKET-001",
+    "market_overview": {
+      "total_market_2025": {
+        "value_usd_billion": 16.61,
+        "platforms_analyzed": 29,
+        "countries_represented": 7
+      },
+      "market_concentration": {
+        "top_3_share": "27%",
+        "top_10_share": "54%",
+        "fragmentation": "Умеренно концентрированный рынок с возможностями для нишевых игроков"
+      }
+    },
+    "key_findings": [
+      {
+        "id": "KF-001",
+        "finding": "США доминируют с 34% рынка (10 платформ, $8.35B)",
+        "implication_for_psb_spbpu": "Зависимость от западных технологий создаёт риски для ОПК, подтверждает курс на суверенитет"
+      },
+      {
+        "id": "KF-002",
+        "finding": "Китай — быстрорастущий игрок (11%, 9 платформ)",
+        "implication_for_psb_spbpu": "Модель госполдержки экосистем применима для российского контекста"
+      },
+      {
+        "id": "KF-003",
+        "finding": "Россия занимает 1.45% рынка (5 платформ, $0.35B)",
+        "implication_for_psb_spbpu": "Есть потенциал консолидации вокруг единой суверенной платформы"
+      },
+      {
+        "id": "KF-004",
+        "finding": "LLM-Copilot — ключевой дифференциатор 2025 (только 4/29)",
+        "implication_for_psb_spbpu": "Возможность стратегического партнёрства с разработчиками GigaChat/YandexGPT"
+      },
+      {
+        "id": "KF-005",
+        "finding": "14 из 29 платформ покрывают полный ЖЦ (Design → Production → Operation → Service)",
+        "implication_for_psb_spbpu": "CML-Bench имеет GAP в MES-интеграции — возможность партнёрства с Cifra"
+      }
+    ],
+    "strategic_recommendations": [
+      "Позиционирование CML-Bench как «российский Siemens Xcelerator» для ОПК",
+      "Интеграция LLM-Copilot (GigaChat) для low-code конфигурирования twin-моделей",
+      "Партнёрство с Zyfra (Cifra) для закрытия MES-GAP'а",
+      "Формирование национальной экосистемы на базе CML-Bench + Cifra + ГПН + Росатом"
+    ],
+    "semantic_refs": {
+      "links_to": [
+        "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model",
+        "psb_strategic_sovereignty_role_analysis.json#seven_entry_points",
+        "psb_shareholder_logic_analysis.json#shareholder_type.architectonic"
+      ]
+    }
+  },
+
+  "market_structure": {
+    "id": "MS-001",
+    "geographic_distribution": {
+      "id": "GD-001",
+      "regions": [
+        {
+          "country": "США",
+          "market_share_percent": 34.2,
+          "revenue_usd_billion": 8.35,
+          "platform_count": 10,
+          "category_breakdown": {
+            "corporate": ["PTC", "Ansys", "GE Vernova", "Bentley", "Altair"],
+            "cloud_paas": ["Microsoft", "AWS", "Google Cloud"],
+            "startup": ["Sight Machine", "TwinThread"]
+          },
+          "competitive_position": "Абсолютное технологическое лидерство, риск санкционного давления"
+        },
+        {
+          "country": "Германия",
+          "market_share_percent": 13.0,
+          "revenue_usd_billion": 3.18,
+          "platform_count": 2,
+          "category_breakdown": {
+            "corporate": ["Siemens"],
+            "cloud_paas": ["SAP"]
+          },
+          "competitive_position": "Качественное лидерство, промышленный фокус"
+        },
+        {
+          "country": "Китай",
+          "market_share_percent": 11.2,
+          "revenue_usd_billion": 2.73,
+          "platform_count": 9,
+          "category_breakdown": {
+            "corporate": ["Haier", "iROOTECH", "Foxconn"],
+            "cloud_paas": ["Huawei", "Alibaba", "Tencent", "Baidu"],
+            "startup": ["51WORLD", "SenseTime"]
+          },
+          "competitive_position": "Быстрый рост при государственной поддержке, вертикальная интеграция",
+          "relevance_for_russia": "Модель госполдержки может быть адаптирована для МКЦП ЦД"
+        },
+        {
+          "country": "Франция",
+          "market_share_percent": 5.0,
+          "revenue_usd_billion": 1.22,
+          "platform_count": 1,
+          "category_breakdown": {
+            "corporate": ["Dassault Systèmes"]
+          },
+          "competitive_position": "Нишевое лидерство в PLM"
+        },
+        {
+          "country": "Швеция",
+          "market_share_percent": 3.0,
+          "revenue_usd_billion": 0.73,
+          "platform_count": 1,
+          "category_breakdown": {
+            "corporate": ["Hexagon"]
+          },
+          "competitive_position": "Фокус на качество и метрологию"
+        },
+        {
+          "country": "Россия",
+          "market_share_percent": 1.45,
+          "revenue_usd_billion": 0.352,
+          "platform_count": 5,
+          "category_breakdown": {
+            "corporate": ["Cifra (Zyfra)", "Gazprom Neft", "Rosatom", "CML-Bench"],
+            "edu_paas": ["Rostec (IIoT.Istok)"]
+          },
+          "competitive_position": "Нишевые решения для критической инфраструктуры, потенциал консолидации",
+          "strategic_opportunity": "Формирование суверенной экосистемы вокруг CML-Bench"
+        },
+        {
+          "country": "Швейцария",
+          "market_share_percent": 0.2,
+          "revenue_usd_billion": 0.05,
+          "platform_count": 1,
+          "category_breakdown": {
+            "startup": ["Akselos"]
+          },
+          "competitive_position": "Нишевая специализация (структурный анализ)"
+        }
+      ],
+      "semantic_refs": [
+        "psb_strategic_sovereignty_role_analysis.json#technology_sovereignty.import_substitution",
+        "psb_ecosystem_infrastructure_analysis.json#cluster_model.deep_tech"
+      ]
+    },
+
+    "category_segmentation": {
+      "id": "CS-001",
+      "segments": [
+        {
+          "category": "Корпоративная",
+          "market_share_percent": 38.75,
+          "revenue_usd_billion": 9.462,
+          "platform_count": 15,
+          "characteristics": "Полный стек, вертикальная интеграция, высокие инвестиции в R&D",
+          "leaders": ["Siemens", "Dassault", "PTC", "GE Vernova"]
+        },
+        {
+          "category": "Облачная PaaS",
+          "market_share_percent": 28.1,
+          "revenue_usd_billion": 6.87,
+          "platform_count": 8,
+          "characteristics": "Горизонтальное масштабирование, API-first, экосистемный подход",
+          "leaders": ["Microsoft", "AWS", "Huawei"]
+        },
+        {
+          "category": "Стартап",
+          "market_share_percent": 1.0,
+          "revenue_usd_billion": 0.23,
+          "platform_count": 5,
+          "characteristics": "Инновационные ниши, AI-first, быстрое прототипирование",
+          "leaders": ["51WORLD", "SenseTime", "Akselos"]
+        },
+        {
+          "category": "Образовательно-индустриальная PaaS",
+          "market_share_percent": 0.2,
+          "revenue_usd_billion": 0.05,
+          "platform_count": 1,
+          "characteristics": "Фокус на подготовку кадров и технопарки",
+          "leaders": ["Rostec (IIoT.Istok)"]
+        }
+      ],
+      "implication_for_psb_spbpu": {
+        "recommended_positioning": "Гибридная модель: Корпоративная глубина CML-Bench + Образовательный контур СПбПУ + Финансовая платформа ПСБ",
+        "semantic_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+      }
+    }
+  },
+
+  "competitive_landscape": {
+    "id": "CL-001",
+    "top_10_platforms": [
+      {
+        "rank": 1,
+        "company": "Siemens",
+        "platform": "Xcelerator",
+        "country": "Германия",
+        "market_share_percent": 11,
+        "dt_revenue_usd_billion": 2.69,
+        "dt_share_in_company_revenue_percent": 3.28,
+        "magic_quadrant_2025": "Лидер",
+        "dt_levels": ["PDT", "SDT", "Process"],
+        "lifecycle_coverage": {
+          "design": true,
+          "production": true,
+          "operation": true,
+          "service": true,
+          "full_lifecycle": true
+        },
+        "technology_trends": {
+          "ai_ml": true,
+          "llm_copilot": {
+            "available": true,
+            "description": "Industrial & Design Copilot: GenAI создаёт twin-граф, BOM и симуляцию из текстового запроса"
+          },
+          "low_no_code": {
+            "available": true,
+            "description": "Mendix/Industrial Edge визуальный Twin-Designer (drag-and-drop шаблоны активов)"
+          },
+          "gpu_hybrid": {
+            "available": true,
+            "description": "Simcenter GPU CFD + ROM; интеграция с Omniverse/Xcelerator Connector"
+          },
+          "hybrid_dt": {
+            "available": true,
+            "description": "Simcenter Hybrid AI: ROM + данные датчиков, авто-калибровка twin"
+          }
+        },
+        "ecosystem": {
+          "is_hub": true,
+          "description": "Разработчики: OEM/интеграторы; Пользователи: заводы, инженеры; Сервисы: Xcelerator Marketplace, Mendix, Academy; Правила: Siemens-cert, rev-share 85/15"
+        },
+        "benchmark_for_cml_bench": {
+          "competitive_gap": ["LLM-Copilot", "Low-code", "Omniverse интеграция", "Marketplace"],
+          "competitive_parity": ["GPU CAE", "Hybrid DT (PINN)", "Проектирование"],
+          "competitive_advantage_cml_bench": ["ГОСТ-соответствие", "Суверенность", "HPC для тяжёлых расчётов"]
+        }
+      },
+      {
+        "rank": 2,
+        "company": "Microsoft",
+        "platform": "Azure Digital Twins + Fabric DT Builder",
+        "country": "США",
+        "market_share_percent": 9,
+        "dt_revenue_usd_billion": 2.2,
+        "dt_share_in_company_revenue_percent": 0.93,
+        "magic_quadrant_2025": "Лидер",
+        "dt_levels": ["SDT", "Process"],
+        "lifecycle_coverage": {
+          "design": false,
+          "production": true,
+          "operation": true,
+          "service": false,
+          "full_lifecycle": false
+        },
+        "technology_trends": {
+          "ai_ml": true,
+          "llm_copilot": {
+            "available": true,
+            "description": "Copilot в Fabric Digital Twin Builder: текст→граф Azure DT и дашборды KPI"
+          },
+          "low_no_code": {
+            "available": true,
+            "description": "Fabric Digital Twin Builder (text-to-graph, no-code)"
+          },
+          "gpu_hybrid": {
+            "available": true,
+            "description": "Omniverse Cloud на Azure; GPU-гибридные twins"
+          },
+          "hybrid_dt": {
+            "available": false,
+            "description": null
+          }
+        },
+        "ecosystem": {
+          "is_hub": true,
+          "description": "Разработчики: community, ISV; Пользователи: IoT dev, smart-building операторы; Сервисы: DTDL Gallery, Azure Marketplace, Copilot; Правила: MIT/BSD, listing fee"
+        },
+        "relevance_for_psb_spbpu": "Санкционный риск исключает использование в ОПК"
+      },
+      {
+        "rank": 3,
+        "company": "AWS",
+        "platform": "IoT TwinMaker",
+        "country": "США",
+        "market_share_percent": 7,
+        "dt_revenue_usd_billion": 1.71,
+        "dt_share_in_company_revenue_percent": 1.71,
+        "magic_quadrant_2025": "Лидер",
+        "dt_levels": ["SDT", "Process"],
+        "lifecycle_coverage": {
+          "design": false,
+          "production": true,
+          "operation": true,
+          "service": true,
+          "full_lifecycle": false
+        },
+        "relevance_for_psb_spbpu": "Санкционный риск исключает использование в ОПК"
+      },
+      {
+        "rank": 4,
+        "company": "PTC",
+        "platform": "ThingWorx + Windchill",
+        "country": "США",
+        "market_share_percent": 6,
+        "dt_revenue_usd_billion": 1.47,
+        "dt_share_in_company_revenue_percent": 64,
+        "magic_quadrant_2025": "Лидер",
+        "dt_levels": ["PDT", "SDT", "Process"],
+        "lifecycle_coverage": {
+          "design": true,
+          "production": true,
+          "operation": true,
+          "service": true,
+          "full_lifecycle": true
+        },
+        "relevance_for_psb_spbpu": "Высокая доля DT в выручке (64%) показывает потенциал специализации"
+      },
+      {
+        "rank": 5,
+        "company": "Dassault Systèmes",
+        "platform": "3DEXPERIENCE Twin",
+        "country": "Франция",
+        "market_share_percent": 5,
+        "dt_revenue_usd_billion": 1.22,
+        "dt_share_in_company_revenue_percent": 19.68,
+        "magic_quadrant_2025": "Лидер",
+        "dt_levels": ["PDT", "SDT", "Process"],
+        "lifecycle_coverage": {
+          "design": true,
+          "production": true,
+          "operation": true,
+          "service": true,
+          "full_lifecycle": true
+        }
+      },
+      {
+        "rank": 6,
+        "company": "GE Vernova",
+        "platform": "Predix Digital Twin",
+        "country": "США",
+        "market_share_percent": 4,
+        "dt_revenue_usd_billion": 0.98,
+        "dt_share_in_company_revenue_percent": 2.8,
+        "magic_quadrant_2025": "Претендент",
+        "dt_levels": ["PDT", "SDT", "Process"]
+      },
+      {
+        "rank": 7,
+        "company": "Bentley Systems",
+        "platform": "iTwin Platform",
+        "country": "США",
+        "market_share_percent": 3,
+        "dt_revenue_usd_billion": 0.73,
+        "dt_share_in_company_revenue_percent": 52.1,
+        "magic_quadrant_2025": "Нишевой игрок",
+        "dt_levels": ["SDT", "Process"],
+        "relevance_for_psb_spbpu": "Фокус на инфраструктуру — комплементарно для ЦД городов"
+      },
+      {
+        "rank": 8,
+        "company": "Hexagon",
+        "platform": "Nexus",
+        "country": "Швеция",
+        "market_share_percent": 3,
+        "dt_revenue_usd_billion": 0.73,
+        "dt_share_in_company_revenue_percent": 13.5,
+        "magic_quadrant_2025": "Визионер",
+        "dt_levels": ["PDT", "SDT"],
+        "technology_trends": {
+          "llm_copilot": {
+            "available": true,
+            "description": "HxGN Alix генерирует twin-модели и AI-аналитику в платформе Nexus"
+          }
+        }
+      },
+      {
+        "rank": 9,
+        "company": "Huawei",
+        "platform": "Huawei Cloud Digital Twin Service",
+        "country": "Китай",
+        "market_share_percent": 3,
+        "dt_revenue_usd_billion": 0.73,
+        "dt_share_in_company_revenue_percent": 0.74,
+        "magic_quadrant_2025": "Н/Д",
+        "dt_levels": ["SDT", "Process"],
+        "technology_trends": {
+          "llm_copilot": {
+            "available": true,
+            "description": "Pangu Digital Twin Copilot: text-to-graph и AI-симуляция"
+          },
+          "hybrid_dt": {
+            "available": true,
+            "description": "Hybrid ROM + данные; Pangu PINN"
+          }
+        },
+        "relevance_for_psb_spbpu": "Потенциальный партнёр для обмена опытом госполдержки экосистем"
+      },
+      {
+        "rank": 10,
+        "company": "Alibaba",
+        "platform": "Alibaba Cloud Industrial Digital Twin",
+        "country": "Китай",
+        "market_share_percent": 2.5,
+        "dt_revenue_usd_billion": 0.61,
+        "dt_share_in_company_revenue_percent": 0.457,
+        "magic_quadrant_2025": "Н/Д",
+        "dt_levels": ["SDT", "Process"]
+      }
+    ],
+    "semantic_refs": [
+      "psb_spbpu_context_analysis.json#partnership_assets.spbpu.cml_bench",
+      "psb_technological_foundation_6tu_analysis.json#architectural_vision"
+    ]
+  },
+
+  "russian_platforms_deep_dive": {
+    "id": "RPDP-001",
+    "title": "Российские платформы цифровых двойников — детальный анализ",
+    "total_market_share_percent": 1.45,
+    "total_revenue_usd_billion": 0.352,
+    "platform_count": 5,
+    "strategic_context": {
+      "drivers": [
+        "Санкционное давление → необходимость импортозамещения",
+        "Указ №309 → курс на технологический суверенитет",
+        "Поручение Президента → создание МКЦП ЦД"
+      ],
+      "constraints": [
+        "Ограниченный внутренний рынок",
+        "Отставание по LLM и Low-code инструментам",
+        "Фрагментация экосистемы (5 изолированных платформ)"
+      ],
+      "opportunities": [
+        "Консолидация вокруг единой методологии СЦИ",
+        "Государственное финансирование через МКЦП ЦД",
+        "Интеграция с GigaChat/YandexGPT для LLM-Copilot"
+      ],
+      "semantic_refs": [
+        "psb_regulatory_framework_analysis.json#regulatory_context.decree_309",
+        "psb_strategic_sovereignty_role_analysis.json#strategic_positioning"
+      ]
+    },
+    "platforms": [
+      {
+        "id": "RU-PLAT-001",
+        "company": "Cifra (Zyfra)",
+        "platform": "Zyfra Industrial Digital Platform",
+        "market_share_percent": 0.5,
+        "dt_revenue_usd_billion": 0.12,
+        "dt_share_in_company_revenue_percent": 50,
+        "category": "Корпоративная",
+        "industries": ["Нефтехимия", "ГМК", "Машиностроение"],
+        "dt_levels": ["PDT", "SDT", "Process"],
+        "lifecycle_coverage": {
+          "design": {
+            "available": true,
+            "tools": "CAD интеграция Zyfra"
+          },
+          "production": {
+            "available": true,
+            "tools": "MES Zyfra"
+          },
+          "operation": {
+            "available": true,
+            "tools": "SCADA Zyfra Edge"
+          },
+          "service": {
+            "available": true,
+            "tools": "Predictive ML Zyfra"
+          },
+          "full_lifecycle": true
+        },
+        "technology_trends": {
+          "ai_ml": true,
+          "llm_copilot": false,
+          "low_no_code": {
+            "available": true,
+            "description": "Low-code Twin Designer"
+          },
+          "gpu_hybrid": {
+            "available": true,
+            "description": "GPU ROM + Hybrid AI"
+          },
+          "hybrid_dt": {
+            "available": true,
+            "description": "ROM + AI коррекция"
+          }
+        },
+        "ecosystem": {
+          "is_hub": true,
+          "description": "Разработчики: ISV; Пользователи: промпредприятия; Сервисы: Cifra.Market, GPU-облако; Правила: rev-share 70/30, Z-CERT"
+        },
+        "partnership_potential_for_psb_spbpu": {
+          "synergy_type": "Технологический партнёр",
+          "value": "Закрытие MES-GAP'а CML-Bench",
+          "integration_points": ["MES Zyfra ↔ CML-Bench V&V", "SCADA Edge ↔ Сенсорные данные"],
+          "recommended_action": "Включить в периметр МКЦП ЦД как MES-партнёра"
+        }
+      },
+      {
+        "id": "RU-PLAT-002",
+        "company": "Gazprom Neft",
+        "platform": "Нац-платформа Газпром Нефти DT",
+        "market_share_percent": 0.4,
+        "dt_revenue_usd_billion": 0.1,
+        "dt_share_in_company_revenue_percent": 5,
+        "category": "Корпоративная",
+        "industries": ["Нефтегаз", "Энергетика"],
+        "dt_levels": ["PDT", "SDT", "Process"],
+        "lifecycle_coverage": {
+          "design": {
+            "available": true,
+            "tools": "ROM пласта"
+          },
+          "production": {
+            "available": true,
+            "tools": "SCADA Twin"
+          },
+          "operation": {
+            "available": true,
+            "tools": "Скважинные датчики"
+          },
+          "service": {
+            "available": true,
+            "tools": "Предиктив фонтанной арматуры"
+          },
+          "full_lifecycle": true
+        },
+        "technology_trends": {
+          "ai_ml": true,
+          "hybrid_dt": {
+            "available": true,
+            "description": "Physics + ML коррекция"
+          },
+          "gpu_hybrid": {
+            "available": true,
+            "description": "GPU ROM пласта + AI"
+          }
+        },
+        "ecosystem": {
+          "is_hub": true,
+          "description": "Разработчики: сервисные компании; Пользователи: дочки добычи; Сервисы: репозиторий моделей, Data Lake; Правила: открытый API, рев-share"
+        },
+        "partnership_potential_for_psb_spbpu": {
+          "synergy_type": "Отраслевой референс",
+          "value": "Референс-кейс для нефтегазовых клиентов ПСБ",
+          "integration_points": ["Data Lake ↔ CML-Bench", "Модели пласта ↔ СЦИ-методология"],
+          "recommended_action": "Изучить опыт ROM пласта для адаптации к другим отраслям"
+        }
+      },
+      {
+        "id": "RU-PLAT-003",
+        "company": "Rosatom",
+        "platform": "ТМИК/РХК Digital Twin",
+        "market_share_percent": 0.3,
+        "dt_revenue_usd_billion": 0.07,
+        "dt_share_in_company_revenue_percent": 1,
+        "category": "Корпоративная",
+        "industries": ["Атомная энергетика"],
+        "dt_levels": ["PDT", "SDT", "Process"],
+        "lifecycle_coverage": {
+          "design": {
+            "available": true,
+            "tools": "CAD/CAE Симуляция"
+          },
+          "production": {
+            "available": true,
+            "tools": "Радиохим технологические линии"
+          },
+          "operation": {
+            "available": true,
+            "tools": "Датчики дозиметрии"
+          },
+          "service": {
+            "available": true,
+            "tools": "Asset health reactor"
+          },
+          "full_lifecycle": true
+        },
+        "technology_trends": {
+          "ai_ml": true,
+          "hybrid_dt": {
+            "available": true,
+            "description": "PINN дозиметрия"
+          },
+          "gpu_hybrid": {
+            "available": true,
+            "description": "GPU CFD + PINN"
+          }
+        },
+        "ecosystem": {
+          "is_hub": true,
+          "description": "Разработчики: НИЦ; Пользователи: АЭС; Сервисы: HPC кластер, библиотека материалов; Правила: Rosatom Certified"
+        },
+        "partnership_potential_for_psb_spbpu": {
+          "synergy_type": "Методологический партнёр",
+          "value": "Обмен экспертизой по PINN и safety-critical системам",
+          "integration_points": ["HPC-инфраструктура", "PINN-методология"],
+          "recommended_action": "Совместная разработка стандартов V&V для критической инфраструктуры"
+        }
+      },
+      {
+        "id": "RU-PLAT-004",
+        "company": "Rostec",
+        "platform": "IIoT.Istok",
+        "market_share_percent": 0.2,
+        "dt_revenue_usd_billion": 0.05,
+        "dt_share_in_company_revenue_percent": 0.5,
+        "category": "Образовательно-индустриальная PaaS",
+        "industries": ["Образование", "Машиностроение"],
+        "dt_levels": ["PDT", "SDT"],
+        "lifecycle_coverage": {
+          "design": {
+            "available": true,
+            "tools": "No-code robot twin"
+          },
+          "production": {
+            "available": false,
+            "tools": null
+          },
+          "operation": {
+            "available": false,
+            "tools": null
+          },
+          "service": {
+            "available": false,
+            "tools": null
+          },
+          "full_lifecycle": false
+        },
+        "technology_trends": {
+          "ai_ml": false,
+          "low_no_code": {
+            "available": true,
+            "description": "Kids конструктора"
+          }
+        },
+        "ecosystem": {
+          "is_hub": true,
+          "description": "Разработчики: технопарки; Пользователи: колледжи; Сервисы: marketplace полигонов; Правила: edu-licence"
+        },
+        "partnership_potential_for_psb_spbpu": {
+          "synergy_type": "Образовательный партнёр",
+          "value": "Интеграция с ПИШ СПбПУ для подготовки кадров",
+          "integration_points": ["Edu-контент", "Полигоны"],
+          "recommended_action": "Совместные образовательные программы с ЕЦПК СПбПУ"
+        }
+      },
+      {
+        "id": "RU-PLAT-005",
+        "company": "CML-Bench (СПбПУ)",
+        "platform": "CML-Bench Smart Digital Twin Platform",
+        "market_share_percent": 0.05,
+        "dt_revenue_usd_billion": 0.012,
+        "dt_share_in_company_revenue_percent": 30.6,
+        "category": "Корпоративная",
+        "industries": ["Авиация", "Машиностроение", "Композиты"],
+        "dt_levels": ["PDT", "SDT"],
+        "lifecycle_coverage": {
+          "design": {
+            "available": true,
+            "tools": "GPU CAE/ROM"
+          },
+          "production": {
+            "available": false,
+            "tools": null,
+            "gap_closure_partner": "Cifra (MES Zyfra)"
+          },
+          "operation": {
+            "available": true,
+            "tools": "Edge сенсоры турбин"
+          },
+          "service": {
+            "available": true,
+            "tools": "Smart DT Service"
+          },
+          "full_lifecycle": false,
+          "lifecycle_coverage_percent": 75
+        },
+        "technology_trends": {
+          "ai_ml": true,
+          "llm_copilot": {
+            "available": false,
+            "gap": true,
+            "gap_closure_strategy": "Интеграция GigaChat/YandexGPT"
+          },
+          "low_no_code": {
+            "available": false,
+            "gap": true,
+            "gap_closure_strategy": "Разработка визуального конфигуратора"
+          },
+          "gpu_hybrid": {
+            "available": true,
+            "description": "GPU CAE + PINN hybrid"
+          },
+          "hybrid_dt": {
+            "available": true,
+            "description": "Smart DT PINN"
+          }
+        },
+        "ecosystem": {
+          "is_hub": true,
+          "description": "Разработчики: CompMechLab; Пользователи: авиадвигатели; Сервисы: HPC, ROM библиотека; Правила: лицензия СПбПУ"
+        },
+        "competitive_positioning": {
+          "vs_siemens_xcelerator": {
+            "gaps": ["LLM-Copilot", "Low-code", "Omniverse", "MES-интеграция", "Marketplace"],
+            "parity": ["GPU CAE", "Hybrid DT", "ROM", "PINN"],
+            "advantages": ["ГОСТ Р 57700.37-2021", "Суверенность", "HPC для heavy-lift", "Методология СЦИ"]
+          },
+          "positioning_statement": "Российский ответ на Siemens Xcelerator для критической инфраструктуры и ОПК"
+        },
+        "psb_partnership_value": {
+          "financial_integration": "Якорь для траншевого финансирования через V&V-контур",
+          "data_asset_value": "ЦД как залоговый актив для кредитования НИОКР",
+          "ecosystem_role": "Методологическое ядро суверенной экосистемы ЦД"
+        },
+        "semantic_refs": [
+          "psb_spbpu_context_analysis.json#partnership_assets.spbpu.cml_bench",
+          "psb_sci_architecture_analysis.json#six_layer_model.layers[5]",
+          "psb_technological_foundation_6tu_analysis.json#vnv_contour"
+        ]
+      }
+    ],
+    "national_ecosystem_vision": {
+      "id": "NEV-001",
+      "title": "Видение суверенной экосистемы ЦД России",
+      "core_platform": "CML-Bench (методологическое ядро + V&V)",
+      "complementary_partners": [
+        {
+          "partner": "Cifra (Zyfra)",
+          "role": "MES-интеграция и производственный контур"
+        },
+        {
+          "partner": "Gazprom Neft",
+          "role": "Отраслевой референс для нефтегаза"
+        },
+        {
+          "partner": "Rosatom",
+          "role": "Safety-critical методологии и HPC"
+        },
+        {
+          "partner": "Rostec",
+          "role": "Образовательный контур и технопарки"
+        },
+        {
+          "partner": "GigaChat/SberAI",
+          "role": "LLM-Copilot интеграция"
+        },
+        {
+          "partner": "Yandex Cloud",
+          "role": "Облачная инфраструктура и ML-сервисы"
+        }
+      ],
+      "orchestrator": {
+        "entity": "ПСБ",
+        "role": "Финансово-технологический агент и operator МКЦП ЦД",
+        "functions": [
+          "Траншевое финансирование НИОКР",
+          "ЦД как залоговый актив",
+          "Доверенная среда для ОПК",
+          "Координация экосистемы"
+        ]
+      },
+      "semantic_refs": [
+        "psb_strategic_sovereignty_role_analysis.json#seven_entry_points",
+        "psb_ecosystem_infrastructure_analysis.json#cluster_model",
+        "psb_global_trend_platform_analysis.json#platform_value_proposition"
+      ]
+    }
+  },
+
+  "technology_trends_analysis": {
+    "id": "TTA-001",
+    "title": "Анализ технологических трендов 2025",
+    "trends": [
+      {
+        "id": "TREND-001",
+        "name": "AI/ML интеграция",
+        "adoption_rate": "28 из 29 (97%)",
+        "maturity": "Mainstream",
+        "description": "Машинное обучение стало базовым требованием для всех платформ ЦД",
+        "relevance_for_cml_bench": {
+          "current_status": "Реализовано (Smart DT)",
+          "gap": null,
+          "action": "Сохранять паритет"
+        }
+      },
+      {
+        "id": "TREND-002",
+        "name": "LLM-Copilot",
+        "adoption_rate": "4 из 29 (14%)",
+        "maturity": "Early Adopter",
+        "leaders": ["Siemens (Industrial Copilot)", "Microsoft (Fabric Copilot)", "Hexagon (HxGN Alix)", "Huawei (Pangu Copilot)"],
+        "capabilities": [
+          "Text-to-graph генерация twin-моделей",
+          "Автоматизация BOM и симуляций",
+          "Natural language запросы к данным ЦД"
+        ],
+        "relevance_for_cml_bench": {
+          "current_status": "Отсутствует",
+          "gap": "Критический дифференциатор",
+          "action": "Стратегическое партнёрство с GigaChat/SberAI или YandexGPT",
+          "integration_concept": "CML-Bench Copilot: голосовой/текстовый интерфейс для инженеров"
+        }
+      },
+      {
+        "id": "TREND-003",
+        "name": "Low-code / No-code",
+        "adoption_rate": "21 из 29 (72%)",
+        "maturity": "Early Majority",
+        "description": "Визуальное конфигурирование twin-моделей без программирования",
+        "relevance_for_cml_bench": {
+          "current_status": "Отсутствует",
+          "gap": "Существенный",
+          "action": "Разработка визуального Twin Designer с drag-and-drop шаблонами"
+        }
+      },
+      {
+        "id": "TREND-004",
+        "name": "GPU + Hybrid Analytics",
+        "adoption_rate": "19 из 29 (66%)",
+        "maturity": "Early Majority",
+        "description": "GPU-ускорение CFD/FEA + интеграция с Nvidia Omniverse",
+        "relevance_for_cml_bench": {
+          "current_status": "Реализовано (GPU CAE + PINN)",
+          "gap": "Omniverse интеграция",
+          "action": "Разработка Omniverse Connector для визуализации"
+        }
+      },
+      {
+        "id": "TREND-005",
+        "name": "Гибридный цифровой двойник",
+        "adoption_rate": "20 из 29 (69%)",
+        "maturity": "Early Majority",
+        "description": "Комбинация physics-based моделей (ROM, PINN) и data-driven ML",
+        "relevance_for_cml_bench": {
+          "current_status": "Реализовано (Smart DT PINN)",
+          "gap": null,
+          "action": "Развивать как ключевое конкурентное преимущество"
+        }
+      },
+      {
+        "id": "TREND-006",
+        "name": "Экосистемный хаб / Marketplace",
+        "adoption_rate": "26 из 29 (90%)",
+        "maturity": "Mainstream",
+        "description": "Платформенная модель с разработчиками, сервисами и revenue-share",
+        "relevance_for_cml_bench": {
+          "current_status": "Базовый (ROM библиотека)",
+          "gap": "Нет полноценного Marketplace",
+          "action": "Создание CML-Bench Marketplace с моделями, сервисами и API"
+        }
+      }
+    ],
+    "gap_summary_cml_bench": {
+      "critical_gaps": ["LLM-Copilot", "Low-code", "MES-интеграция"],
+      "moderate_gaps": ["Omniverse Connector", "Marketplace"],
+      "competitive_strengths": ["PINN/Hybrid DT", "GPU CAE", "ГОСТ-соответствие", "Суверенность"]
+    },
+    "semantic_refs": [
+      "psb_technological_foundation_6tu_analysis.json#ten_principles",
+      "psb_sci_architecture_analysis.json#technology_trends"
+    ]
+  },
+
+  "lifecycle_coverage_analysis": {
+    "id": "LCA-001",
+    "title": "Анализ покрытия жизненного цикла",
+    "stages": [
+      {
+        "stage": "Design (Проектирование)",
+        "coverage_count": 20,
+        "coverage_percent": 69,
+        "capabilities": ["CAD/CAE", "MBSE", "ROM", "Simulation"],
+        "leaders": ["Siemens", "Dassault", "PTC", "Ansys"]
+      },
+      {
+        "stage": "Production (Производство)",
+        "coverage_count": 24,
+        "coverage_percent": 83,
+        "capabilities": ["MES интеграция", "Factory Twin", "Quality Control"],
+        "leaders": ["Siemens", "Cifra", "Huawei", "Haier"]
+      },
+      {
+        "stage": "Operation (Эксплуатация)",
+        "coverage_count": 28,
+        "coverage_percent": 97,
+        "capabilities": ["IoT sensors", "Real-time sync", "Monitoring"],
+        "leaders": ["Microsoft", "AWS", "GE Vernova"]
+      },
+      {
+        "stage": "Service (Сервис)",
+        "coverage_count": 26,
+        "coverage_percent": 90,
+        "capabilities": ["Predictive maintenance", "Asset health", "SLA management"],
+        "leaders": ["PTC (ServiceMax)", "Siemens", "GE Vernova"]
+      }
+    ],
+    "full_lifecycle_platforms": {
+      "count": 14,
+      "percent": 48,
+      "platforms": [
+        "Siemens", "Dassault", "PTC", "Bentley", "Hexagon", "Altair",
+        "Huawei", "Alibaba", "Tencent", "Haier", "Foxconn",
+        "Cifra", "Gazprom Neft", "Rosatom"
+      ]
+    },
+    "cml_bench_positioning": {
+      "current_coverage": ["Design", "Operation", "Service"],
+      "gap": "Production (MES)",
+      "coverage_percent": 75,
+      "closure_strategy": {
+        "partner": "Cifra (MES Zyfra)",
+        "integration_type": "API-based",
+        "timeline": "2025-2026"
+      }
+    },
+    "semantic_refs": [
+      "psb_sci_architecture_analysis.json#six_layer_model",
+      "psb_technological_foundation_6tu_analysis.json#lifecycle_integration"
+    ]
+  },
+
+  "strategic_implications": {
+    "id": "SI-001",
+    "title": "Стратегические выводы для партнёрства ПСБ × СПбПУ",
+    
+    "market_position_assessment": {
+      "current_state": {
+        "global_share": "0.05% (CML-Bench alone)",
+        "russian_share": "3.4% (среди российских платформ)",
+        "positioning": "Нишевой игрок с методологическим лидерством"
+      },
+      "target_state_2030": {
+        "global_share": "0.5-1% (через консолидацию российской экосистемы)",
+        "russian_share": "35-50% (лидер суверенной экосистемы)",
+        "positioning": "Национальная платформа ЦД для критической инфраструктуры"
+      }
+    },
+
+    "competitive_strategy": {
+      "id": "CS-001",
+      "type": "Дифференциация + Консолидация",
+      "pillars": [
+        {
+          "pillar": "Методологическое лидерство",
+          "actions": [
+            "Развитие СЦИ как уникальной методологии",
+            "ГОСТ-соответствие как входной барьер",
+            "Экспорт методологии в дружественные страны"
+          ]
+        },
+        {
+          "pillar": "Технологические GAP'ы",
+          "actions": [
+            "LLM-Copilot через GigaChat партнёрство",
+            "Low-code Twin Designer",
+            "MES-интеграция через Cifra"
+          ]
+        },
+        {
+          "pillar": "Экосистемная консолидация",
+          "actions": [
+            "МКЦП ЦД как координационный механизм",
+            "CML-Bench Marketplace",
+            "Единый API для российских платформ"
+          ]
+        },
+        {
+          "pillar": "Финансовая инновация",
+          "actions": [
+            "ЦД как залоговый актив",
+            "Траншевое финансирование по V&V-milestone",
+            "Data-driven credit scoring для НИОКР"
+          ]
+        }
+      ]
+    },
+
+    "partnership_actions": {
+      "id": "PA-001",
+      "immediate_2025": [
+        {
+          "action": "Запуск пилота LLM-Copilot",
+          "partners": ["СПбПУ", "Сбер (GigaChat)"],
+          "deliverable": "MVP CML-Bench Copilot",
+          "psb_role": "Финансирование и координация"
+        },
+        {
+          "action": "MES-интеграция с Cifra",
+          "partners": ["СПбПУ", "Cifra"],
+          "deliverable": "API CML-Bench ↔ MES Zyfra",
+          "psb_role": "Facilitate partnership"
+        },
+        {
+          "action": "ПСБ в дирекцию МКЦП ЦД",
+          "partners": ["Минпромторг", "СПбПУ"],
+          "deliverable": "Роль финансового оператора",
+          "psb_role": "Институциональное лидерство"
+        }
+      ],
+      "medium_term_2026_2027": [
+        {
+          "action": "CML-Bench Marketplace",
+          "deliverable": "Платформа с ROM, сервисами, API",
+          "revenue_model": "Rev-share 70/30"
+        },
+        {
+          "action": "Omniverse Connector",
+          "deliverable": "Визуализация ЦД в USD-формате"
+        },
+        {
+          "action": "Единый Data Lake ЦД",
+          "deliverable": "Федеративное хранилище для российских платформ"
+        }
+      ],
+      "long_term_2028_2030": [
+        {
+          "action": "Экспорт СЦИ-методологии",
+          "markets": ["ЕАЭС", "БРИКС", "Глобальный Юг"],
+          "deliverable": "Международные партнёрства и лицензирование"
+        }
+      ]
+    },
+
+    "risk_assessment": {
+      "id": "RA-001",
+      "risks": [
+        {
+          "risk": "Технологическое отставание от Siemens/Microsoft",
+          "probability": "Высокая",
+          "impact": "Высокий",
+          "mitigation": "Фокус на нишах (ОПК, критическая инфраструктура) + ускоренное закрытие GAP'ов"
+        },
+        {
+          "risk": "Фрагментация российской экосистемы",
+          "probability": "Средняя",
+          "impact": "Высокий",
+          "mitigation": "МКЦП ЦД как координационный механизм + ПСБ как финансовый интегратор"
+        },
+        {
+          "risk": "Зависимость от GigaChat/Yandex для LLM",
+          "probability": "Средняя",
+          "impact": "Средний",
+          "mitigation": "Open-source альтернативы + собственная fine-tuning экспертиза"
+        }
+      ]
+    },
+
+    "semantic_refs": [
+      "psb_shareholder_logic_analysis.json#shareholder_type",
+      "psb_strategic_sovereignty_role_analysis.json#seven_entry_points",
+      "psb_ecosystem_infrastructure_analysis.json#quasi_ministerial_functions",
+      "psb_global_trend_platform_analysis.json#platform_value_proposition"
+    ]
+  },
+
+  "data_appendix": {
+    "id": "DA-001",
+    "full_platform_matrix": {
+      "description": "Полная матрица 29 платформ × 22 критерия",
+      "source_file": "4_2025_11_Док_4_Приложение_4_Сравнительный_анализ_платформ_цифровых_двойников.xlsx",
+      "data_quality": "Экспертные оценки + публичные данные",
+      "limitations": [
+        "Доли рынка — экспертные оценки",
+        "Выручка от DT может включать смежные продукты",
+        "Китайские платформы могут занижать данные"
+      ]
+    },
+    "methodology": {
+      "market_share_estimation": "Gartner + IDC + экспертные интервью",
+      "lifecycle_coverage": "Анализ продуктовых портфелей",
+      "technology_trends": "Feature mapping по публичным источникам"
+    }
+  }
+}

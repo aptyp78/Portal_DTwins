@@ -1,0 +1,677 @@
+{
+  "meta": {
+    "document_title": "Глобальный тренд: переход к экосистемным платформам",
+    "source_document": "Док 5 — Глобальный тренд",
+    "analysis_date": "2025-11-28",
+    "version": "1.0",
+    "analyst": "AI-эксперт по цифровым двойникам",
+    "document_type": "Стратегическое обоснование платформенной трансформации",
+    "semantic_network": {
+      "position_in_graph": "NODE-PLATFORM",
+      "layer": "strategic_transition",
+      "primary_question": "ПОЧЕМУ ПСБ должен перейти к экосистемной платформе?",
+      "primary_dependencies": [
+        {
+          "file": "psb_shareholder_logic_analysis.json",
+          "node_id": "NODE-SHAREHOLDER",
+          "relationship": "justifies_mission",
+          "description": "Платформенная модель — операциональное воплощение миссии миссионного акционера"
+        },
+        {
+          "file": "psb_financial_architecture_analysis.json",
+          "node_id": "NODE-FINANCE",
+          "relationship": "requires_new_instruments",
+          "description": "Платформенная модель требует расширения финансовой архитектуры новыми инструментами диффузии"
+        },
+        {
+          "file": "psb_ecosystem_infrastructure_analysis.json",
+          "node_id": "NODE-ECOSYSTEM",
+          "relationship": "transforms_clusters",
+          "description": "Платформа трансформирует 5 кластеров экосистемы в сетевую архитектуру"
+        },
+        {
+          "file": "psb_spbpu_context_analysis.json",
+          "node_id": "NODE-CONTEXT",
+          "relationship": "provides_technological_core",
+          "description": "ЦД и CML-Bench становятся базовыми единицами платформы"
+        },
+        {
+          "file": "psb_technological_foundation_6tu_analysis.json",
+          "node_id": "NODE-TECHBASE",
+          "relationship": "operationalizes_principles",
+          "description": "10 принципов 6ТУ реализуются через платформенную архитектуру"
+        }
+      ],
+      "graph_topology": {
+        "full_cycle": "SHAREHOLDER → FINANCE → ECOSYSTEM → CONTEXT → TECHBASE → PLATFORM → SHAREHOLDER",
+        "platform_role": "Интеграционный слой, связывающий стратегическое видение с операционной моделью через сетевые эффекты"
+      }
+    }
+  },
+
+  "executive_summary": {
+    "id": "EXEC-PLATFORM-001",
+    "core_thesis": "Переход от классической банковской модели к экосистемной платформе — единственный способ соответствовать требованиям 6-го технологического уклада",
+    "key_paradigm_shift": {
+      "from": "Экономика владения активами (линейная модель)",
+      "to": "Экономика сетевых эффектов (платформенная модель)",
+      "implication": "Побеждает не тот, у кого больше активов, а тот, кто владеет инфраструктурой взаимодействий"
+    },
+    "strategic_formula": {
+      "classic_model": "Банк → Клиент → Транзакция",
+      "platform_model": "Платформа → Участники → Взаимодействия → Ценность"
+    },
+    "semantic_refs": {
+      "links_to": [
+        "psb_shareholder_logic_analysis.json#shareholder_type.ownership_horizon",
+        "psb_technological_foundation_6tu_analysis.json#executive_summary.key_paradigm_shift",
+        "psb_ecosystem_infrastructure_analysis.json#cluster_model"
+      ]
+    }
+  },
+
+  "prerequisites_analysis": {
+    "id": "PREREQ-001",
+    "title": "Четырёхуровневая система предпосылок перехода",
+    "levels": [
+      {
+        "id": "PREREQ-GLOBAL",
+        "level": 1,
+        "name": "Глобальная предпосылка",
+        "description": "Государственная миссия требует новой архитектуры взаимодействия в контуре «наука — технологии — производство»",
+        "normative_base": [
+          {
+            "document": "Стратегия национальной безопасности",
+            "reference": "Указ № 400 от 02.07.2021, п.III, пп.26",
+            "key_provision": "НТР — ключевой фактор конкурентоспособности и национальной безопасности"
+          },
+          {
+            "document": "Концепция технологического развития",
+            "reference": "РП РФ №1315-р от 20.05.2023",
+            "key_provision": "Создание единой системы управления инновационной деятельностью для целостности инновационного цикла"
+          }
+        ],
+        "semantic_refs": [
+          "psb_shareholder_logic_analysis.json#shareholder_motivation.civilizational_subjectivity",
+          "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_0_national_interest"
+        ]
+      },
+      {
+        "id": "PREREQ-NATIONAL",
+        "level": 2,
+        "name": "Национальная предпосылка",
+        "description": "Импортные платформы стали инструментом геополитического давления; необходима суверенная финансовая и технологическая инфраструктура",
+        "key_factors": [
+          {
+            "factor": "Санкционное давление",
+            "implication": "Импортные платформы — не нейтральная среда, а инструмент контроля"
+          },
+          {
+            "factor": "Экспоненциальный рост сложности",
+            "implication": "Традиционные методы не обеспечивают прозрачность, скорость и контроль рисков"
+          },
+          {
+            "factor": "Неэффективность линейного финансирования",
+            "implication": "Линейная модель не создаёт эффекта масштаба — нужна сетевая модель"
+          }
+        ],
+        "normative_base": [
+          {
+            "document": "Национальные цели развития РФ",
+            "reference": "Указ №309 от 07.05.2024",
+            "key_provision": "Технологический суверенитет и технологическое лидерство"
+          }
+        ],
+        "semantic_refs": [
+          "psb_shareholder_logic_analysis.json#constraints.geopolitical",
+          "psb_ecosystem_infrastructure_analysis.json#cluster_model.CLUSTER-IT.import_substitution"
+        ]
+      },
+      {
+        "id": "PREREQ-INSTITUTIONAL",
+        "level": 3,
+        "name": "Институциональная предпосылка",
+        "description": "Потенциал классической банковской модели исчерпан",
+        "market_evidence": {
+          "global_trend": "70% топ-50 банков мира строят собственные платформы или работают по модели Banking-as-a-Service",
+          "source": "EY, McKinsey 2024",
+          "implication": "Банки становятся не поставщиками, а организаторами контекста жизни клиента"
+        },
+        "exhaustion_factors": [
+          "Классическая модель (депозиты — кредиты — комиссии) исчерпала потенциал роста",
+          "Конкуренция с финтехом усиливается, маржа классических продуктов падает",
+          "Клиенты ждут экосистему решений, а не отдельные услуги"
+        ],
+        "semantic_refs": [
+          "psb_financial_architecture_analysis.json#business_model",
+          "psb_ecosystem_infrastructure_analysis.json#quasi_ministerial_functions"
+        ]
+      },
+      {
+        "id": "PREREQ-INTERNAL",
+        "level": 4,
+        "name": "Внутренняя предпосылка ПСБ",
+        "description": "Уникальный ресурс ПСБ — институционализированное доверие как точка сборки интересов государства и ОПК",
+        "unique_position": {
+          "role": "Опорный банк ОПК и финансовый агент государства",
+          "asset": "Доверие — главный капитал платформенной экономики",
+          "opportunity": "Стать создателем правил технологической игры и центром притяжения инновационного континуума"
+        },
+        "integration_potential": "Объединение государственных программ, ОПК, гражданского высокотехнологичного сектора, науки и капитала в единую цифровую среду",
+        "semantic_refs": [
+          "psb_shareholder_logic_analysis.json#shareholder_type",
+          "psb_ecosystem_infrastructure_analysis.json#integral_model",
+          "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_4_psb_role"
+        ]
+      }
+    ]
+  },
+
+  "anti_thesis": {
+    "id": "ANTI-001",
+    "title": "Результат НЕ-перехода к платформенной модели",
+    "classic_model_limitations": {
+      "architecture": "банк — клиент — транзакция",
+      "critical_gaps": [
+        {
+          "gap": "Разрозненность данных",
+          "description": "Государственные, инженерные и финансовые данные хранятся разрозненно"
+        },
+        {
+          "gap": "Низкая скорость",
+          "description": "Скорость прохождения решений измеряется месяцами"
+        },
+        {
+          "gap": "Отсутствие обратной связи",
+          "description": "Нет механизма постоянной обратной связи и синхронизации"
+        }
+      ]
+    },
+    "scalability_crisis": {
+      "problem": "Линейная модель: рост банка → рост издержек, персонала, рисков",
+      "context": "Россия вошла в фазу ускоренного технологического развития — экспоненциальный рост проектов, сегментов, программ и участников",
+      "consequence": "Без платформенной логики ПСБ не сможет присутствовать в системе с таким уровнем сложности"
+    },
+    "semantic_refs": [
+      "psb_financial_architecture_analysis.json#risk_management",
+      "psb_technological_foundation_6tu_analysis.json#success_conditions"
+    ]
+  },
+
+  "platform_economy_model": {
+    "id": "PLATECO-001",
+    "title": "Экономика экосистемных платформ",
+    "core_principle": "Экосистема первична — консорциумы, кластеры и стандартизаторы, действующие по единым машиночитаемым стандартам, обеспечивают доверие, интероперабельность и быструю диффузию",
+    "platform_definition": {
+      "essence": "Инструмент и форма организации новой экономики",
+      "characteristics": [
+        "Ценность создаётся взаимодействием участников, а не отдельными продуктами",
+        "Данные становятся базой для создания ценности",
+        "Границы между отраслями стираются: образование, наука, технологии, производство, капитал сливаются в единый сетевой контур"
+      ]
+    },
+    "product_transformation": {
+      "from": "Продукт создаётся кем-то из участников",
+      "to": "Продукт конструируется внутри экосистемы как живой, адаптивный сервис",
+      "characteristics": [
+        "Обеспечивает целостную цепочку «сенсор — модель — вычисление — исполнение»",
+        "Распространяется через цифровую платформу",
+        "Эксплуатируется в предиктивном режиме",
+        "Потребляется как часть индивидуального жизненного стиля"
+      ]
+    },
+    "digital_twin_role": {
+      "position": "Базовая единица проектирования, управления и коммуникации внутри платформы",
+      "verification_chain": "требования → модель → код → тест (трассируется и проверяется непрерывно)",
+      "semantic_refs": [
+        "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model",
+        "psb_technological_foundation_6tu_analysis.json#architectural_vision.design_principles.digital_twin_as_unit"
+      ]
+    },
+    "lifecycle_as_digital_thread": {
+      "principle": "Переход к гибким, модульным контурам с цифровыми паспортами изделий и сквозным управлением — обязательный слой масштабируемости",
+      "semantic_ref": "psb_technological_foundation_6tu_analysis.json#ten_principles.principles[5]"
+    }
+  },
+
+  "eight_platform_values": {
+    "id": "8VAL-001",
+    "title": "Восемь ключевых ценностей экосистемных платформ",
+    "values": [
+      {
+        "id": "VAL-001",
+        "number": 1,
+        "name": "Ценность взаимодействия, а не владения",
+        "classic_model": "Компания владеет активами и контролирует цепочки",
+        "platform_model": "Компания создаёт поле взаимодействий, где ценность рождается на стыке участников",
+        "key_insight": "Не важно, кто владеет продуктом — важно, кто управляет взаимодействиями",
+        "implication_for_psb": "ПСБ управляет взаимодействиями в контуре «наука — технологии — производство», а не просто активами",
+        "semantic_refs": [
+          "psb_shareholder_logic_analysis.json#shareholder_behavior.coordinating",
+          "psb_ecosystem_infrastructure_analysis.json#integral_model"
+        ]
+      },
+      {
+        "id": "VAL-002",
+        "number": 2,
+        "name": "Сетевой эффект — масштабирование без роста издержек",
+        "principle": "Каждый новый участник увеличивает ценность всей системы не линейно, а экспоненциально",
+        "key_insight": "В экосистеме не конкурируют участники — выигрывает вся сеть",
+        "implication_for_psb": "Экономика растёт через расширение сети и связей между участниками, а не через штат",
+        "contrast_with_linear": {
+          "linear": "Рост банка → рост издержек",
+          "network": "Рост участников → экспоненциальный рост ценности"
+        },
+        "semantic_refs": [
+          "psb_financial_architecture_analysis.json#business_model",
+          "psb_technological_foundation_6tu_analysis.json#ten_principles.principles[4]"
+        ]
+      },
+      {
+        "id": "VAL-003",
+        "number": 3,
+        "name": "Инструмент управления сложностью",
+        "principle": "Экосистемы создают условия для совместного производства ценности, а не продают готовые продукты",
+        "key_insights": [
+          "Участники становятся соавторами кроссотраслевых решений",
+          "Границы между поставщиком и потребителем размываются",
+          "Управление рисками и капиталом происходит превентивно, не постфактум"
+        ],
+        "implication_for_psb": "ПСБ как соавтор решений на стыке ОПК, гражданского сектора и науки",
+        "semantic_refs": [
+          "psb_ecosystem_infrastructure_analysis.json#cluster_model.CLUSTER-SCITECH",
+          "psb_spbpu_context_analysis.json#partnership_framework"
+        ]
+      },
+      {
+        "id": "VAL-004",
+        "number": 4,
+        "name": "Данные — топливо и источник системного знания",
+        "paradigm_shift": {
+          "xx_century_asset": "Заводы и природные ресурсы",
+          "xxi_century_asset": "Данные и цифровые двойники (изделий, объектов, процессов, систем)"
+        },
+        "key_insights": [
+          "Каждое действие участника создаёт данные — данные становятся базой для улучшения всех процессов",
+          "Ценность системы растёт по мере накопления данных и их анализа"
+        ],
+        "implication_for_psb": "ЦД как актив: данные + модели = новый класс банковских активов",
+        "semantic_refs": [
+          "psb_spbpu_context_analysis.json#psb_value_proposition",
+          "psb_technological_foundation_6tu_analysis.json#target_state_2036.structural_elements[1]"
+        ]
+      },
+      {
+        "id": "VAL-005",
+        "number": 5,
+        "name": "Доверие — главный капитал платформенной экономики",
+        "principle": "Без доверия сеть разваливается; платформа — способ защиты технологического суверенитета",
+        "key_insights": [
+          "Участники должны быть уверены, что правила прозрачны и едины",
+          "Платформа становится гарантом безопасности и арбитром доверия"
+        ],
+        "psb_unique_asset": "Институционализированное доверие как точка сборки интересов государства и ОПК — уникальный ресурс, недоступный другим участникам",
+        "semantic_refs": [
+          "psb_shareholder_logic_analysis.json#shareholder_principles.trust_and_participation",
+          "psb_shareholder_logic_analysis.json#target_states.trust_node"
+        ]
+      },
+      {
+        "id": "VAL-006",
+        "number": 6,
+        "name": "Модульность и открытые интерфейсы",
+        "principle": "Экосистема живёт, пока открыта — каждый модуль легко подключается и отключается без разрушения системы",
+        "key_insights": [
+          "Открытые API и стандарты — гибкость и скорость инноваций",
+          "Модульность — антикризисная устойчивость"
+        ],
+        "architectural_implication": "Интероперабельность как базовое требование, policy-as-code",
+        "semantic_refs": [
+          "psb_technological_foundation_6tu_analysis.json#architectural_vision.design_principles.invariance_by_design",
+          "psb_technological_foundation_6tu_analysis.json#ten_principles.principles[8]"
+        ]
+      },
+      {
+        "id": "VAL-007",
+        "number": 7,
+        "name": "Скорость и самообучение",
+        "principle": "В экосистемах решает не размер, а скорость адаптации — платформа должна учиться быстрее, чем меняется среда",
+        "key_insights": [
+          "Цифровые технологии (ИИ, автоматизация, ЦД) создают эффект самообучающейся системы",
+          "Ошибка становится частью роста, а не поражением"
+        ],
+        "implication_for_psb": "Управление через TRL/MRL-ворота с допуском права на риск",
+        "semantic_refs": [
+          "psb_spbpu_context_analysis.json#problem_space.operating_principles.right_to_risk",
+          "psb_technological_foundation_6tu_analysis.json#ten_principles.principles[4]"
+        ]
+      },
+      {
+        "id": "VAL-008",
+        "number": 8,
+        "name": "Устойчивость и антикризисность",
+        "principle": "Экосистема — живая система, способная выживать через адаптацию; она не ломается при кризисах, а перестраивает связи",
+        "key_insights": [
+          "Децентрализация и саморегуляция — ключевые признаки устойчивости",
+          "Чем больше взаимозависимостей, тем устойчивее сеть к сбоям"
+        ],
+        "implication_for_psb": "Сетевая модель как способ обеспечения устойчивости в условиях санкций и турбулентности",
+        "semantic_refs": [
+          "psb_shareholder_logic_analysis.json#shareholder_motivation.sustainability_and_integrity",
+          "psb_financial_architecture_analysis.json#reserves_architecture"
+        ]
+      }
+    ]
+  },
+
+  "psb_platform_role": {
+    "id": "PSB-ROLE-001",
+    "title": "Роль ПСБ в платформенной архитектуре",
+    "strategic_position": {
+      "current": "Опорный банк ОПК, финансовый агент государства",
+      "target": "Создатель правил технологической игры, центр притяжения инновационного континуума",
+      "transformation_vector": "От финансового посредника к платформенному интегратору"
+    },
+    "unique_value_proposition": {
+      "trust_as_capital": "Доверие — точка сборки интересов государства и ОПК",
+      "integration_scope": "Объединение государственных программ, ОПК, гражданского сектора, науки и капитала",
+      "platform_function": "Организатор единой цифровой среды на платформе"
+    },
+    "architectural_task": {
+      "from_document": "Задача архитектора — собрать систему мета-объектов (язык, стандарты, данные, инфраструктуры, портфели, финмеханизмы) и удерживать неизменные инварианты",
+      "bank_task": "Задача банка — финансировать движение через зрелость при доказуемой интероперабельности и доверии"
+    },
+    "semantic_refs": [
+      "psb_shareholder_logic_analysis.json#target_states",
+      "psb_ecosystem_infrastructure_analysis.json#quasi_ministerial_functions",
+      "psb_technological_foundation_6tu_analysis.json#psb_action_plan"
+    ]
+  },
+
+  "integration_with_knowledge_graph": {
+    "id": "INT-KG-001",
+    "title": "Интеграция с графом знаний проекта",
+    "new_node": {
+      "id": "NODE-PLATFORM",
+      "file": "psb_global_trend_platform_analysis.json",
+      "domain": "Стратегическое обоснование платформенной трансформации",
+      "layer": "strategic_transition",
+      "key_concepts": [
+        "Экосистемная платформа",
+        "Сетевые эффекты",
+        "8 ценностей платформы",
+        "4 уровня предпосылок",
+        "Доверие как капитал"
+      ],
+      "primary_question": "ПОЧЕМУ ПСБ должен перейти к экосистемной платформе?"
+    },
+    "new_edges": [
+      {
+        "id": "EDGE-PLATFORM-001",
+        "from": "NODE-SHAREHOLDER",
+        "to": "NODE-PLATFORM",
+        "relationship": "motivates",
+        "direction": "unidirectional",
+        "semantics": "Миссия миссионного акционера обосновывает необходимость платформенной трансформации",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "MOT-001.civilizational_subjectivity",
+            "to_ref": "PREREQ-GLOBAL",
+            "description": "Цивилизационная субъектность → глобальная предпосылка платформы"
+          },
+          {
+            "from_ref": "target_states.trust_node",
+            "to_ref": "VAL-005",
+            "description": "Целевое состояние «узел доверия» → доверие как капитал платформы"
+          },
+          {
+            "from_ref": "shareholder_principles.trust_and_participation",
+            "to_ref": "8VAL-001",
+            "description": "Принципы акционера → ценности платформенной модели"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-PLATFORM-002",
+        "from": "NODE-PLATFORM",
+        "to": "NODE-FINANCE",
+        "relationship": "requires_transformation",
+        "direction": "unidirectional",
+        "semantics": "Платформенная модель требует трансформации финансовой архитектуры",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "VAL-002.network_effect",
+            "to_ref": "business_model",
+            "description": "Сетевой эффект → новая модель прибыльности"
+          },
+          {
+            "from_ref": "platform_economy_model.digital_twin_role",
+            "to_ref": "credit_process",
+            "description": "ЦД как актив → паспорт 6ТУ-проекта в кредитном цикле"
+          },
+          {
+            "from_ref": "ANTI-001.scalability_crisis",
+            "to_ref": "CAP-001",
+            "description": "Кризис масштабируемости → потребность в новых инструментах диффузии"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-PLATFORM-003",
+        "from": "NODE-PLATFORM",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "transforms",
+        "direction": "unidirectional",
+        "semantics": "Платформенная модель трансформирует кластеры экосистемы в сетевую архитектуру",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "8VAL-001.values",
+            "to_ref": "cluster_model",
+            "description": "8 ценностей платформы → трансформация 5 кластеров"
+          },
+          {
+            "from_ref": "VAL-006.modularity",
+            "to_ref": "CLUSTER-IT",
+            "description": "Модульность → требования к ИТ-кластеру"
+          },
+          {
+            "from_ref": "VAL-003.complexity_management",
+            "to_ref": "CLUSTER-SCITECH",
+            "description": "Управление сложностью → deep-tech кластер"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-PLATFORM-004",
+        "from": "NODE-CONTEXT",
+        "to": "NODE-PLATFORM",
+        "relationship": "provides_core",
+        "direction": "unidirectional",
+        "semantics": "Контекст партнёрства предоставляет технологическое ядро для платформы",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "solution_architecture.three_layer_model",
+            "to_ref": "platform_economy_model.digital_twin_role",
+            "description": "Трёхслойная модель СЦИ-ЦД-CML-Bench → ядро платформы"
+          },
+          {
+            "from_ref": "psb_value_proposition",
+            "to_ref": "psb_platform_role",
+            "description": "Ценностное предложение → роль в платформе"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-PLATFORM-005",
+        "from": "NODE-TECHBASE",
+        "to": "NODE-PLATFORM",
+        "relationship": "operationalizes",
+        "direction": "unidirectional",
+        "semantics": "Архитектура 6ТУ операционализируется через платформенную модель",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "ten_principles",
+            "to_ref": "8VAL-001",
+            "description": "10 принципов 6ТУ ↔ 8 ценностей платформы"
+          },
+          {
+            "from_ref": "meta_objects.cascade",
+            "to_ref": "platform_economy_model",
+            "description": "Каскад мета-объектов → архитектура платформы"
+          },
+          {
+            "from_ref": "psb_action_plan",
+            "to_ref": "psb_platform_role.architectural_task",
+            "description": "7 действий ПСБ → задачи платформенного интегратора"
+          }
+        ]
+      }
+    ],
+    "cross_document_concept_extensions": [
+      {
+        "concept": "Сетевые эффекты",
+        "new_manifestation": {
+          "platform_analysis": "VAL-002 — Сетевой эффект как ключевой драйвер платформы"
+        },
+        "existing_manifestations": {
+          "shareholder": "Координирующее поведение акционера",
+          "ecosystem": "Интегральная модель «государство в банке»",
+          "techbase": "Экосистема первична (принцип 8)"
+        }
+      },
+      {
+        "concept": "Доверие как инфраструктура",
+        "new_manifestation": {
+          "platform_analysis": "VAL-005 — Доверие как главный капитал платформенной экономики"
+        },
+        "existing_manifestations": {
+          "shareholder": "Принцип «Доверие и соучастие»",
+          "shareholder": "Целевое состояние «Узел доверия»",
+          "context": "ПСБ — точка сборки интересов через доверие"
+        }
+      },
+      {
+        "concept": "ЦД как базовая единица",
+        "new_manifestation": {
+          "platform_analysis": "platform_economy_model.digital_twin_role — ЦД как базовая единица платформы"
+        },
+        "existing_manifestations": {
+          "context": "Трёхслойная модель СЦИ-ЦД-CML-Bench",
+          "techbase": "Принцип 4 — ЦД как базовая единица управления"
+        }
+      },
+      {
+        "concept": "Переход от продуктового к инфраструктурному мышлению",
+        "new_manifestation": {
+          "platform_analysis": "executive_summary.key_paradigm_shift — от владения к взаимодействиям"
+        },
+        "existing_manifestations": {
+          "techbase": "Принцип 2 — объект архитектуры — мета-уровень",
+          "ecosystem": "Quasi-министерские функции ПСБ"
+        }
+      }
+    ]
+  },
+
+  "updated_graph_topology": {
+    "id": "TOPO-UPDATE-001",
+    "title": "Обновлённая топология графа знаний",
+    "previous_cycle": "SHAREHOLDER → FINANCE → ECOSYSTEM → CONTEXT → TECHBASE → SHAREHOLDER",
+    "updated_cycle": "SHAREHOLDER → FINANCE → ECOSYSTEM → CONTEXT → TECHBASE → PLATFORM → SHAREHOLDER",
+    "platform_position": {
+      "role": "Интеграционный хаб, связывающий все узлы через призму платформенной трансформации",
+      "inputs": [
+        "От SHAREHOLDER: Миссия и принципы как основание для платформенной модели",
+        "От CONTEXT: Технологическое ядро (СЦИ, ЦД, CML-Bench)",
+        "От TECHBASE: 10 принципов и мета-объекты 6ТУ"
+      ],
+      "outputs": [
+        "К FINANCE: Требования к новым финансовым инструментам диффузии",
+        "К ECOSYSTEM: Архитектура трансформации кластеров",
+        "К SHAREHOLDER: Валидация миссии через платформенные метрики"
+      ]
+    },
+    "navigation_guide": {
+      "entry_points": {
+        "why_platform_questions": "Начинать с NODE-PLATFORM.prerequisites_analysis",
+        "how_to_implement_questions": "Начинать с NODE-TECHBASE → NODE-PLATFORM.psb_platform_role",
+        "what_values_questions": "Начинать с NODE-PLATFORM.eight_platform_values",
+        "contrast_with_classic_questions": "Начинать с NODE-PLATFORM.anti_thesis"
+      }
+    }
+  },
+
+  "conclusions": {
+    "id": "CONCL-PLATFORM-001",
+    "main_finding": "Переход к экосистемной платформе — не опция, а императив для ПСБ в условиях 6-го технологического уклада",
+    "key_insights": [
+      {
+        "insight": "ПСБ обладает уникальным ресурсом — институционализированным доверием",
+        "evidence": "Роль опорного банка ОПК + точка сборки интересов государства и предприятий",
+        "implication": "Это позволяет ПСБ стать создателем правил, а не их исполнителем"
+      },
+      {
+        "insight": "Линейная модель не масштабируется при экспоненциальном росте сложности",
+        "evidence": "Экспоненциальный рост инновационных проектов, сегментов, программ и участников",
+        "implication": "Нужна сетевая модель, где каждый новый проект усиливает предыдущие"
+      },
+      {
+        "insight": "Цифровой двойник — базовая единица платформы",
+        "evidence": "ЦД обеспечивает целостную цепочку «сенсор — модель — вычисление — исполнение»",
+        "implication": "Партнёрство с СПбПУ (CML-Bench) становится инфраструктурным активом платформы"
+      },
+      {
+        "insight": "8 ценностей платформы корреспондируют с 10 принципами 6ТУ и принципами акционера",
+        "evidence": "Структурное соответствие между документами",
+        "implication": "Платформенная модель — органичное развитие, а не разрыв с логикой акционера"
+      }
+    ],
+    "open_questions": [
+      {
+        "question": "Как операционализировать переход от 5 кластеров к сетевой архитектуре?",
+        "owner": "ПСБ + СПбПУ",
+        "dependency": "NODE-ECOSYSTEM → NODE-PLATFORM"
+      },
+      {
+        "question": "Какие финансовые инструменты нужны для сетевой модели помимо тех-облигаций и MRL-гарантий?",
+        "owner": "ПСБ (Дирекция по работе с ОПК)",
+        "dependency": "NODE-PLATFORM → NODE-FINANCE"
+      },
+      {
+        "question": "Как измерять сетевые эффекты и включать их в KPI партнёрства?",
+        "owner": "ПСБ + СПбПУ",
+        "dependency": "NODE-PLATFORM → NODE-SHAREHOLDER"
+      }
+    ]
+  },
+
+  "memory_recommendations": {
+    "id": "MEM-REC-001",
+    "title": "Рекомендации по обновлению Memory",
+    "proposed_additions": [
+      {
+        "prefix": "PARTNER-DOC5",
+        "content": "Глобальный тренд | Обоснование перехода к платформе | 8 ценностей + 4 предпосылки | ЦД = базовая единица | Доверие = капитал",
+        "rationale": "Фиксация ключевых концепций документа"
+      },
+      {
+        "prefix": "PARTNER-PLATFORM",
+        "content": "Платформенная модель | Сетевые эффекты vs линейный рост | ПСБ = создатель правил | Интеграция: гос-во + ОПК + наука + капитал",
+        "rationale": "Фиксация стратегической роли ПСБ в платформе"
+      }
+    ],
+    "proposed_updates": [
+      {
+        "line": 13,
+        "current": "PARTNER-JSON: 5 файлов — shareholder + finance + ecosystem + context + tech_foundation_6tu + graph_v3",
+        "proposed": "PARTNER-JSON: 6 файлов — shareholder + finance + ecosystem + context + tech_foundation_6tu + platform_analysis + graph_v4",
+        "rationale": "Добавление нового JSON в реестр"
+      }
+    ]
+  }
+}

@@ -1,0 +1,393 @@
+{
+  "meta": {
+    "title": "Семантический граф знаний: Партнёрство ПСБ × СПбПУ",
+    "version": "2.0",
+    "update_date": "2025-11-28",
+    "analyst": "AI-эксперт по цифровым двойникам",
+    "description": "Интеграционный файл, описывающий семантические связи между всеми JSON-документами проекта"
+  },
+
+  "graph_nodes": {
+    "total_nodes": 4,
+    "nodes": [
+      {
+        "id": "NODE-SHAREHOLDER",
+        "file": "psb_shareholder_logic_analysis.json",
+        "domain": "Философия и логика акционера",
+        "layer": "strategic_foundation",
+        "key_concepts": ["Миссионный акционер", "Бессрочный горизонт", "Владение смыслом", "5 принципов", "5 целевых состояний"],
+        "primary_question": "ЗАЧЕМ существует ПСБ?"
+      },
+      {
+        "id": "NODE-FINANCE",
+        "file": "psb_financial_architecture_analysis.json",
+        "domain": "Финансовая архитектура",
+        "layer": "resource_base",
+        "key_concepts": ["Трёхпоточная модель", "Инверсия дивидендов", "Норматив Н1.0", "Резервы", "Прибыль≠цель"],
+        "primary_question": "ЧЕМ обеспечивается деятельность ПСБ?"
+      },
+      {
+        "id": "NODE-ECOSYSTEM",
+        "file": "psb_ecosystem_infrastructure_analysis.json",
+        "domain": "Экосистема и инфраструктура",
+        "layer": "operational_platform",
+        "key_concepts": ["Государство в банке", "5 кластеров", "Quasi-министерские функции", "Технологическая автаркия"],
+        "primary_question": "КАК ПСБ реализует свою миссию?"
+      },
+      {
+        "id": "NODE-CONTEXT",
+        "file": "psb_spbpu_context_analysis.json",
+        "domain": "Стратегический контекст партнёрства",
+        "layer": "application_domain",
+        "key_concepts": ["Технологический суверенитет", "СЦИ", "CML-Bench", "МКЦП ЦД", "Трёхслойная модель"],
+        "primary_question": "ДЛЯ ЧЕГО создаётся партнёрство ПСБ×СПбПУ?"
+      }
+    ]
+  },
+
+  "graph_edges": {
+    "total_edges": 6,
+    "edges": [
+      {
+        "id": "EDGE-001",
+        "from": "NODE-SHAREHOLDER",
+        "to": "NODE-FINANCE",
+        "relationship": "determines",
+        "direction": "unidirectional",
+        "semantics": "Мотивация акционера определяет финансовую модель",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "MOT-FRAMEWORK",
+            "to_ref": "BM-001",
+            "description": "Философия «прибыль как инструмент, не цель» → трёхпоточная модель прибыльности"
+          },
+          {
+            "from_ref": "EXP-NAT-001",
+            "to_ref": "STREAM-GOZ",
+            "description": "Ожидание стратегического суверенитета → обеспечение финансирования ОПК"
+          },
+          {
+            "from_ref": "ownership_horizon.bессрочный",
+            "to_ref": "DIV-001",
+            "description": "Бессрочность владения → инверсия дивидендов (докапитализация вместо выплат)"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-002",
+        "from": "NODE-FINANCE",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "funds",
+        "direction": "unidirectional",
+        "semantics": "Финансовые механизмы обеспечивают ресурсную базу для кластеров экосистемы",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "STREAM-GOZ",
+            "to_ref": "CLUSTER-FINANCE",
+            "description": "70% портфеля ГОЗ → финансово-расчётный кластер"
+          },
+          {
+            "from_ref": "STREAM-COMMISSION",
+            "to_ref": "CLUSTER-IT",
+            "description": "Комиссионный бизнес требует ИТ-инфраструктуры"
+          },
+          {
+            "from_ref": "CAP-001",
+            "to_ref": "CLUSTER-SCITECH",
+            "description": "Достаточность капитала → венчурные инвестиции в deep-tech"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-003",
+        "from": "NODE-ECOSYSTEM",
+        "to": "NODE-CONTEXT",
+        "relationship": "enables",
+        "direction": "unidirectional",
+        "semantics": "Экосистема создаёт инфраструктурные условия для реализации стратегии партнёрства",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "CLUSTER-SCITECH.PARTNER-SPBPU",
+            "to_ref": "ROLE-PSB-001",
+            "description": "Партнёрство с СПбПУ реализует роль финтех-брокера"
+          },
+          {
+            "from_ref": "CLUSTER-INST",
+            "to_ref": "PROGRAM-MKCP",
+            "description": "Институциональный кластер обеспечивает нормативную базу для МКЦП ЦД"
+          },
+          {
+            "from_ref": "CLUSTER-IT",
+            "to_ref": "LAYER-PLATFORM",
+            "description": "ИТ-кластер создаёт вычислительную инфраструктуру для CML-Bench"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-004",
+        "from": "NODE-CONTEXT",
+        "to": "NODE-SHAREHOLDER",
+        "relationship": "validates",
+        "direction": "unidirectional",
+        "semantics": "Стратегический контекст подтверждает и конкретизирует логику акционера",
+        "strength": "medium",
+        "key_mappings": [
+          {
+            "from_ref": "level_0_national_interest",
+            "to_ref": "MOT-001",
+            "description": "Устойчивое развитие = цивилизационная субъектность"
+          },
+          {
+            "from_ref": "CH-003",
+            "to_ref": "constraints.geopolitical",
+            "description": "Санкционное давление как контекст ограничений"
+          },
+          {
+            "from_ref": "psb_value_proposition",
+            "to_ref": "success_metrics",
+            "description": "Ценностное предложение как метрика успеха акционера"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-005",
+        "from": "NODE-SHAREHOLDER",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "shapes",
+        "direction": "unidirectional",
+        "semantics": "Логика акционера формирует архитектуру и ценности экосистемы",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "MOT-001.цивилизационная_субъектность",
+            "to_ref": "ECO-PRINCIPLE.суверенитет",
+            "description": "Цивилизационная субъектность → технологическая автаркия экосистемы"
+          },
+          {
+            "from_ref": "EXP-NAT-002.общество_гармоничного_развития",
+            "to_ref": "CLUSTER-SOCIAL",
+            "description": "Ожидание развития человека → социально-кадровый кластер"
+          },
+          {
+            "from_ref": "BEHAV-004.координация_и_доверие",
+            "to_ref": "CLUSTER-INST",
+            "description": "Координирующее поведение → институциональный кластер"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-006",
+        "from": "NODE-FINANCE",
+        "to": "NODE-CONTEXT",
+        "relationship": "enables",
+        "direction": "unidirectional",
+        "semantics": "Финансовые возможности обеспечивают реализацию стратегии партнёрства",
+        "strength": "medium",
+        "key_mappings": [
+          {
+            "from_ref": "CAP-001",
+            "to_ref": "KPI-003",
+            "description": "Достаточность капитала → возможность инвестиций в НИОКР"
+          },
+          {
+            "from_ref": "REV-001",
+            "to_ref": "FUNC-002",
+            "description": "Доходы банка → финансово-технологическое посредничество"
+          },
+          {
+            "from_ref": "IMPL-001",
+            "to_ref": "ROLE-PSB-001",
+            "description": "Финансовые ограничения определяют возможности роли брокера"
+          }
+        ]
+      }
+    ]
+  },
+
+  "graph_topology": {
+    "primary_cycle": {
+      "description": "Основной цикл системы знаний",
+      "path": "SHAREHOLDER → FINANCE → ECOSYSTEM → CONTEXT → SHAREHOLDER",
+      "interpretation": "Философия акционера определяет финансы → финансы обеспечивают экосистему → экосистема реализует контекст → контекст валидирует философию"
+    },
+    "secondary_paths": [
+      {
+        "path": "SHAREHOLDER → ECOSYSTEM",
+        "relationship": "shapes",
+        "interpretation": "Прямое влияние принципов акционера на архитектуру экосистемы"
+      },
+      {
+        "path": "FINANCE → CONTEXT",
+        "relationship": "enables",
+        "interpretation": "Финансовые возможности напрямую определяют масштаб партнёрства"
+      }
+    ],
+    "layer_model": {
+      "layers": [
+        {
+          "name": "Strategic Foundation",
+          "nodes": ["NODE-SHAREHOLDER"],
+          "function": "Задаёт смыслы, принципы и целевые состояния"
+        },
+        {
+          "name": "Resource Base",
+          "nodes": ["NODE-FINANCE"],
+          "function": "Обеспечивает ресурсы и определяет финансовые ограничения"
+        },
+        {
+          "name": "Operational Platform",
+          "nodes": ["NODE-ECOSYSTEM"],
+          "function": "Реализует инфраструктуру и сервисы"
+        },
+        {
+          "name": "Application Domain",
+          "nodes": ["NODE-CONTEXT"],
+          "function": "Конкретизирует применение в партнёрстве ПСБ×СПбПУ"
+        }
+      ],
+      "flow": "Top-down: Strategy → Resources → Operations → Applications"
+    }
+  },
+
+  "cross_document_queries": {
+    "description": "Примеры запросов для навигации по графу знаний",
+    "queries": [
+      {
+        "question": "Как философия акционера влияет на партнёрство с СПбПУ?",
+        "path": "NODE-SHAREHOLDER → NODE-ECOSYSTEM → NODE-CONTEXT",
+        "explanation": "Принципы акционера (суверенность, преемственность) формируют экосистему, которая реализует партнёрство через CLUSTER-SCITECH.PARTNER-SPBPU"
+      },
+      {
+        "question": "Почему ПСБ инвестирует в цифровые двойники?",
+        "path": "NODE-SHAREHOLDER.MOT-001 → NODE-FINANCE.STREAM-GOZ → NODE-ECOSYSTEM.VENTURE-002 → NODE-CONTEXT.LAYER-TECH",
+        "explanation": "Цивилизационная субъектность требует технологического суверенитета → ГОЗ обеспечивает ресурсы → Фонд ЭРА инвестирует → ЦД решают задачи ОПК"
+      },
+      {
+        "question": "Как финансовая модель обеспечивает научно-технологический кластер?",
+        "path": "NODE-FINANCE.CAP-001 → NODE-ECOSYSTEM.CLUSTER-SCITECH",
+        "explanation": "Достаточность капитала (резервы 82.7B, докап 29.6B) позволяет выделять средства на венчурные инвестиции до 200 млн/стартап"
+      },
+      {
+        "question": "Какие quasi-министерские функции связаны с МКЦП ЦД?",
+        "path": "NODE-ECOSYSTEM.QUASI-MIN → NODE-CONTEXT.PROGRAM-MKCP",
+        "explanation": "QMIN-MINPROMTORG (техполитика отрасли) + QMIN-LEGISLATIVE (нормативная база) обеспечивают инфраструктуру для МКЦП ЦД"
+      }
+    ]
+  },
+
+  "entity_cross_references": {
+    "description": "Сводная таблица перекрёстных ссылок между ключевыми сущностями",
+    "categories": [
+      {
+        "category": "Роли и функции ПСБ",
+        "entities": [
+          {
+            "entity": "Финтех-брокер",
+            "references": [
+              "psb_shareholder_logic_analysis.json#target_states[0]",
+              "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_4_psb_role",
+              "psb_ecosystem_infrastructure_analysis.json#CLUSTER-SCITECH"
+            ]
+          },
+          {
+            "entity": "Quasi-министерство",
+            "references": [
+              "psb_shareholder_logic_analysis.json#shareholder_behavior.operational_psb",
+              "psb_ecosystem_infrastructure_analysis.json#quasi_ministerial_functions"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Финансовые механизмы",
+        "entities": [
+          {
+            "entity": "Инверсия дивидендов",
+            "references": [
+              "psb_shareholder_logic_analysis.json#shareholder_type.ownership_horizon",
+              "psb_financial_architecture_analysis.json#dividend_architecture",
+              "psb_ecosystem_infrastructure_analysis.json#quasi_ministerial_functions.financial_inversion"
+            ]
+          },
+          {
+            "entity": "Факторинг SCF",
+            "references": [
+              "psb_financial_architecture_analysis.json#business_model.profit_streams[1]",
+              "psb_ecosystem_infrastructure_analysis.json#CLUSTER-FINANCE.FIN-COMP-002",
+              "psb_spbpu_context_analysis.json#psb_value_proposition"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Технологические компоненты",
+        "entities": [
+          {
+            "entity": "Цифровые двойники (ЦД)",
+            "references": [
+              "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model.technological_layer",
+              "psb_ecosystem_infrastructure_analysis.json#SCITECH-001.PARTNER-SPBPU"
+            ]
+          },
+          {
+            "entity": "CML-Bench",
+            "references": [
+              "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model.platform_layer",
+              "psb_ecosystem_infrastructure_analysis.json#partnership_integration_points"
+            ]
+          },
+          {
+            "entity": "Технологическая автаркия",
+            "references": [
+              "psb_shareholder_logic_analysis.json#shareholder_principles[0]",
+              "psb_ecosystem_infrastructure_analysis.json#CLUSTER-IT",
+              "psb_spbpu_context_analysis.json#problem_space.challenges[2]"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Институциональные структуры",
+        "entities": [
+          {
+            "entity": "МКЦП ЦД",
+            "references": [
+              "psb_spbpu_context_analysis.json#institutional_framework.mkcp_dt",
+              "psb_ecosystem_infrastructure_analysis.json#SCITECH-001.PARTNER-SPBPU.psb_initiatives"
+            ]
+          },
+          {
+            "entity": "Экспертный совет при Госдуме",
+            "references": [
+              "psb_ecosystem_infrastructure_analysis.json#CLUSTER-INST.INST-001",
+              "psb_shareholder_logic_analysis.json#shareholder_influence.institutional"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "usage_guidelines": {
+    "navigation": {
+      "entry_point_by_question": {
+        "why_questions": "Начинать с NODE-SHAREHOLDER",
+        "what_resources_questions": "Начинать с NODE-FINANCE",
+        "how_implemented_questions": "Начинать с NODE-ECOSYSTEM",
+        "what_for_questions": "Начинать с NODE-CONTEXT"
+      }
+    },
+    "update_protocol": {
+      "adding_new_document": [
+        "1. Создать новый NODE в graph_nodes",
+        "2. Определить EDGES с существующими nodes",
+        "3. Добавить key_mappings для каждого edge",
+        "4. Обновить cross_document_queries",
+        "5. Расширить entity_cross_references"
+      ]
+    }
+  }
+}

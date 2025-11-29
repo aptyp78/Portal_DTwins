@@ -1,0 +1,224 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://psb-spbpu-partnership/schema/analytical-json-v1.0",
+  "title": "PSB×SPbPU Analytical JSON Schema",
+  "description": "Схема валидации JSON-файлов аналитического корпуса партнёрства ПСБ×СПбПУ",
+  "version": "1.0",
+  "created": "2025-11-29",
+  "definitions": {
+    "node_id": {
+      "type": "string",
+      "pattern": "^NODE-[A-Z]+$",
+      "description": "Идентификатор узла в формате NODE-XXX",
+      "examples": [
+        "NODE-MKCP",
+        "NODE-SHAREHOLDER",
+        "NODE-CONTEXT"
+      ]
+    },
+    "edge_id": {
+      "type": "string",
+      "pattern": "^EDGE-[A-Z]+-\\d{3}$",
+      "description": "Идентификатор связи в формате EDGE-XXX-NNN",
+      "examples": [
+        "EDGE-MKCP-001",
+        "EDGE-SOV-003"
+      ]
+    },
+    "layer": {
+      "type": "string",
+      "enum": [
+        "strategic_foundation",
+        "resource_base",
+        "operational_platform",
+        "regulatory_framework",
+        "strategic_positioning",
+        "architectural_blueprint",
+        "strategic_transition",
+        "methodological_framework",
+        "market_intelligence",
+        "platform_technology",
+        "strategic_mandate",
+        "program_architecture",
+        "application_domain"
+      ],
+      "description": "Слой в архитектуре знаний"
+    },
+    "strength": {
+      "type": "string",
+      "enum": [
+        "CRITICAL",
+        "STRONG",
+        "MODERATE",
+        "WEAK"
+      ],
+      "description": "Сила связи"
+    },
+    "semantic_ref": {
+      "type": "object",
+      "properties": {
+        "from_file": {
+          "type": "string"
+        },
+        "from_node": {
+          "$ref": "#/definitions/node_id"
+        },
+        "from_path": {
+          "type": "string"
+        },
+        "full_ref": {
+          "type": "string"
+        },
+        "relationship": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    },
+    "semantic_network": {
+      "type": "object",
+      "properties": {
+        "position_in_graph": {
+          "$ref": "#/definitions/node_id"
+        },
+        "primary_question": {
+          "type": "string"
+        },
+        "primary_dependencies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "file": {
+                "type": "string"
+              },
+              "node_id": {
+                "$ref": "#/definitions/node_id"
+              },
+              "relationship": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "file",
+              "relationship"
+            ]
+          }
+        },
+        "referenced_by": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/semantic_ref"
+          }
+        }
+      },
+      "required": [
+        "position_in_graph",
+        "primary_question",
+        "referenced_by"
+      ]
+    },
+    "graph_edge": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/definitions/edge_id"
+        },
+        "from": {
+          "$ref": "#/definitions/node_id"
+        },
+        "to": {
+          "$ref": "#/definitions/node_id"
+        },
+        "relationship": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "strength": {
+          "$ref": "#/definitions/strength"
+        },
+        "evidence": {
+          "type": "string"
+        },
+        "key_mappings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "from_ref": {
+                "type": "string"
+              },
+              "to_ref": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "required": [
+        "id",
+        "from",
+        "to",
+        "relationship"
+      ]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "meta": {
+      "type": "object",
+      "properties": {
+        "document_title": {
+          "type": "string"
+        },
+        "source_document": {
+          "type": [
+            "string",
+            "array"
+          ]
+        },
+        "analysis_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "version": {
+          "type": "string"
+        },
+        "analyst": {
+          "type": "string"
+        },
+        "node_id": {
+          "$ref": "#/definitions/node_id"
+        },
+        "layer": {
+          "$ref": "#/definitions/layer"
+        },
+        "semantic_network": {
+          "$ref": "#/definitions/semantic_network"
+        }
+      },
+      "required": [
+        "document_title",
+        "analysis_date",
+        "version",
+        "analyst",
+        "node_id",
+        "layer",
+        "semantic_network"
+      ]
+    }
+  },
+  "required": [
+    "meta"
+  ]
+}

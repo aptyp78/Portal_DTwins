@@ -1,0 +1,1206 @@
+{
+  "meta": {
+    "document_title": "Общий контекст Замысла ПСБ × СПбПУ",
+    "analysis_date": "2025-11-28",
+    "version": "1.0",
+    "analyst": "AI-эксперт по цифровым двойникам",
+    "node_id": "NODE-CONTEXT",
+    "layer": "application_domain",
+    "semantic_network": {
+      "position_in_graph": "NODE-CONTEXT",
+      "primary_question": "ДЛЯ ЧЕГО создаётся партнёрство ПСБ×СПбПУ?",
+      "referenced_by": [
+        {
+          "from_file": "psb_shareholder_logic_analysis.json",
+          "from_node": "NODE-SHAREHOLDER",
+          "from_path": "ownership_structure",
+          "full_ref": "psb_spbpu_context_analysis.json#key_actors.psb"
+        },
+        {
+          "from_file": "psb_shareholder_logic_analysis.json",
+          "from_node": "NODE-SHAREHOLDER",
+          "from_path": "shareholder_motivation.levels[0]",
+          "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_0_national_interest"
+        },
+        {
+          "from_file": "psb_shareholder_logic_analysis.json",
+          "from_node": "NODE-SHAREHOLDER",
+          "from_path": "shareholder_motivation.levels[2]",
+          "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_2_instrumental_goal"
+        },
+        {
+          "from_file": "psb_shareholder_logic_analysis.json",
+          "from_node": "NODE-SHAREHOLDER",
+          "from_path": "shareholder_motivation.levels[3]",
+          "full_ref": "psb_spbpu_context_analysis.json#key_definitions.technology_development_ecosystem"
+        },
+        {
+          "from_file": "psb_shareholder_logic_analysis.json",
+          "from_node": "NODE-SHAREHOLDER",
+          "from_path": "shareholder_motivation.levels[4]",
+          "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_1_national_goal"
+        },
+        {
+          "from_file": "psb_shareholder_logic_analysis.json",
+          "from_node": "NODE-SHAREHOLDER",
+          "from_path": "shareholder_expectations.strategic_national[0]",
+          "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.national_priorities"
+        },
+        {
+          "from_file": "psb_shareholder_logic_analysis.json",
+          "from_node": "NODE-SHAREHOLDER",
+          "from_path": "shareholder_expectations.operational_psb[0]",
+          "full_ref": "psb_spbpu_context_analysis.json#key_actors.psb.strategic_positioning"
+        },
+        {
+          "from_file": "psb_shareholder_logic_analysis.json",
+          "from_node": "NODE-SHAREHOLDER",
+          "from_path": "shareholder_expectations.operational_psb[3]",
+          "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_4_psb_role.functions"
+        },
+        {
+          "from_file": "psb_shareholder_logic_analysis.json",
+          "from_node": "NODE-SHAREHOLDER",
+          "from_path": "shareholder_influence.influence_channels[0]",
+          "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy"
+        },
+        {
+          "from_file": "psb_shareholder_logic_analysis.json",
+          "from_node": "NODE-SHAREHOLDER",
+          "from_path": "shareholder_influence.influence_channels[2]",
+          "full_ref": "psb_spbpu_context_analysis.json#institutional_framework.mkcp_dt"
+        },
+        {
+          "from_file": "psb_shareholder_logic_analysis.json",
+          "from_node": "NODE-SHAREHOLDER",
+          "from_path": "ownership_principles.principles[0]",
+          "full_ref": "psb_spbpu_context_analysis.json#problem_space.challenges"
+        },
+        {
+          "from_file": "psb_shareholder_logic_analysis.json",
+          "from_node": "NODE-SHAREHOLDER",
+          "from_path": "ownership_principles.principles[3]",
+          "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_4_psb_role.functions"
+        },
+        {
+          "from_file": "psb_shareholder_logic_analysis.json",
+          "from_node": "NODE-SHAREHOLDER",
+          "from_path": "ownership_horizons.horizons[1]",
+          "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_3_measurable_kpi"
+        },
+        {
+          "from_file": "psb_shareholder_logic_analysis.json",
+          "from_node": "NODE-SHAREHOLDER",
+          "from_path": "target_states.states[0]",
+          "full_ref": "psb_spbpu_context_analysis.json#key_actors.psb.role_in_project"
+        },
+        {
+          "from_file": "psb_shareholder_logic_analysis.json",
+          "from_node": "NODE-SHAREHOLDER",
+          "from_path": "target_states.states[1]",
+          "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+        },
+        {
+          "from_file": "psb_shareholder_logic_analysis.json",
+          "from_node": "NODE-SHAREHOLDER",
+          "from_path": "target_states.states[4]",
+          "full_ref": "psb_spbpu_context_analysis.json#problem_space.operating_principles"
+        },
+        {
+          "from_file": "psb_shareholder_logic_analysis.json",
+          "from_node": "NODE-SHAREHOLDER",
+          "from_path": "constraints_and_assumptions.constraints[2]",
+          "full_ref": "psb_spbpu_context_analysis.json#problem_space.challenges.CH-003"
+        },
+        {
+          "from_file": "psb_shareholder_logic_analysis.json",
+          "from_node": "NODE-SHAREHOLDER",
+          "from_path": "constraints_and_assumptions.assumptions[2]",
+          "full_ref": "psb_spbpu_context_analysis.json#institutional_framework.mkcp_dt.key_insight_for_psb"
+        },
+        {
+          "from_file": "psb_shareholder_logic_analysis.json",
+          "from_node": "NODE-SHAREHOLDER",
+          "from_path": "success_indicators.indicator_levels[4]",
+          "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_3_measurable_kpi"
+        },
+        {
+          "from_file": "psb_shareholder_logic_analysis.json",
+          "from_node": "NODE-SHAREHOLDER",
+          "from_path": "current_functions.function_blocks[0]",
+          "full_ref": "psb_spbpu_context_analysis.json#application_domain.primary_focus"
+        },
+        {
+          "from_file": "psb_shareholder_logic_analysis.json",
+          "from_node": "NODE-SHAREHOLDER",
+          "from_path": "current_functions.function_blocks[3]",
+          "full_ref": "psb_spbpu_context_analysis.json#institutional_framework.mkcp_dt.financial_structure.by_source"
+        },
+        {
+          "from_file": "psb_financial_architecture_analysis.json",
+          "from_node": "NODE-FINANCE",
+          "relationship": "operationalizes_strategy",
+          "description": "Финансовые механизмы обеспечивают ресурсную базу для стратегических целей партнёрства"
+        },
+        {
+          "from_file": "psb_financial_architecture_analysis.json",
+          "from_node": "NODE-FINANCE",
+          "from_path": "executive_summary",
+          "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_4_psb_role"
+        },
+        {
+          "from_file": "psb_financial_architecture_analysis.json",
+          "from_node": "NODE-FINANCE",
+          "from_path": "business_model.profit_streams[0]",
+          "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.national_priorities.defense"
+        },
+        {
+          "from_file": "psb_financial_architecture_analysis.json",
+          "from_node": "NODE-FINANCE",
+          "from_path": "business_model.profit_streams[2]",
+          "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.priority_focus"
+        },
+        {
+          "from_file": "psb_financial_architecture_analysis.json",
+          "from_node": "NODE-FINANCE",
+          "from_path": "implications_for_partnership.opportunities[0]",
+          "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+        },
+        {
+          "from_file": "psb_financial_architecture_analysis.json",
+          "from_node": "NODE-FINANCE",
+          "from_path": "implications_for_partnership.opportunities[1]",
+          "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model.methodological_layer"
+        },
+        {
+          "from_file": "psb_financial_architecture_analysis.json",
+          "from_node": "NODE-FINANCE",
+          "from_path": "implications_for_partnership.opportunities[2]",
+          "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model.platform_layer"
+        },
+        {
+          "from_file": "psb_financial_architecture_analysis.json",
+          "from_node": "NODE-FINANCE",
+          "from_path": "implications_for_partnership.opportunities[3]",
+          "full_ref": "psb_spbpu_context_analysis.json#problem_space.operating_principles[1]"
+        },
+        {
+          "from_file": "psb_financial_architecture_analysis.json",
+          "from_node": "NODE-FINANCE",
+          "from_path": "implications_for_partnership.opportunities[3]",
+          "full_ref": "psb_spbpu_context_analysis.json#summary.psb_value_proposition"
+        },
+        {
+          "from_file": "psb_financial_architecture_analysis.json",
+          "from_node": "NODE-FINANCE",
+          "from_path": "implications_for_partnership.strategic_alignment",
+          "full_ref": "psb_spbpu_context_analysis.json#summary.psb_value_proposition"
+        },
+        {
+          "from_file": "psb_ecosystem_infrastructure_analysis.json",
+          "from_node": "NODE-ECOSYSTEM",
+          "relationship": "implements",
+          "description": "Ð­ÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ð° Ñ€ÐµÐ°Ð»Ð¸Ð·ÑƒÐµÑ‚ ÑÑ‚Ñ€Ð°Ñ‚ÐµÐ³Ð¸Ñ‡ÐµÑÐºÐ¸Ð¹ ÐºÐ¾Ð½Ñ‚ÐµÐºÑÑ‚ Ð¿Ð°Ñ€Ñ‚Ð½Ñ‘Ñ€ÑÑ‚Ð²Ð° ÐŸÐ¡Ð‘Ã—Ð¡ÐŸÐ±ÐŸÐ£"
+        },
+        {
+          "from_file": "psb_ecosystem_infrastructure_analysis.json",
+          "from_node": "NODE-ECOSYSTEM",
+          "from_path": "executive_summary",
+          "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_4_psb_role"
+        },
+        {
+          "from_file": "psb_ecosystem_infrastructure_analysis.json",
+          "from_node": "NODE-ECOSYSTEM",
+          "from_path": "ecosystem_architecture.clusters[1]",
+          "full_ref": "psb_spbpu_context_analysis.json#institutional_framework.mkcp_dt"
+        },
+        {
+          "from_file": "psb_ecosystem_infrastructure_analysis.json",
+          "from_node": "NODE-ECOSYSTEM",
+          "from_path": "ecosystem_architecture.clusters[3]",
+          "full_ref": "psb_spbpu_context_analysis.json#problem_space.challenges[2]"
+        },
+        {
+          "from_file": "psb_ecosystem_infrastructure_analysis.json",
+          "from_node": "NODE-ECOSYSTEM",
+          "from_path": "ecosystem_architecture.clusters[4]",
+          "full_ref": "psb_spbpu_context_analysis.json#solution_architecture"
+        },
+        {
+          "from_file": "psb_ecosystem_infrastructure_analysis.json",
+          "from_node": "NODE-ECOSYSTEM",
+          "from_path": "ecosystem_architecture.clusters[4]",
+          "full_ref": "psb_spbpu_context_analysis.json#application_domain.digital_twin_effects"
+        },
+        {
+          "from_file": "psb_ecosystem_infrastructure_analysis.json",
+          "from_node": "NODE-ECOSYSTEM",
+          "from_path": "ecosystem_architecture.clusters[4].components[0].partnerships[0]",
+          "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+        },
+        {
+          "from_file": "psb_ecosystem_infrastructure_analysis.json",
+          "from_node": "NODE-ECOSYSTEM",
+          "from_path": "ecosystem_architecture.clusters[4].components[0].partnerships[0]",
+          "full_ref": "psb_spbpu_context_analysis.json#institutional_framework.mkcp_dt"
+        },
+        {
+          "from_file": "psb_regulatory_framework_analysis.json",
+          "from_node": "NODE-REGULATORY",
+          "relationship": "frames_partnership",
+          "description": "Ð—Ð°Ð´Ð°Ñ‘Ñ‚ Ñ€Ð°Ð¼ÐºÑƒ Ð´Ð»Ñ Ð¿Ð°Ñ€Ñ‚Ð½Ñ‘Ñ€ÑÑ‚Ð²Ð° Ð² ÐºÐ¾Ð½Ñ‚ÑƒÑ€Ðµ Ð½Ð°ÑƒÐºÐ°-Ñ‚ÐµÑ…Ð½Ð¾Ð»Ð¾Ð³Ð¸Ð¸-Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´ÑÑ‚Ð²Ð¾"
+        },
+        {
+          "from_file": "psb_regulatory_framework_analysis.json",
+          "from_node": "NODE-REGULATORY",
+          "from_path": "executive_summary",
+          "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_0_national_interest"
+        },
+        {
+          "from_file": "psb_regulatory_framework_analysis.json",
+          "from_node": "NODE-REGULATORY",
+          "from_path": "regulatory_architecture.layers[0].documents[2]",
+          "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.priority_focus"
+        },
+        {
+          "from_file": "psb_strategic_sovereignty_role_analysis.json",
+          "from_node": "NODE-SOVEREIGNTY",
+          "relationship": "enables_partnership",
+          "description": "Позиционирование создаёт основу для партнёрства с СПбПУ"
+        },
+        {
+          "from_file": "psb_technological_foundation_6tu_analysis.json",
+          "from_node": "NODE-TECHBASE",
+          "relationship": "concretizes_methodology",
+          "description": "6Ð¢Ð£ ÐºÐ¾Ð½ÐºÑ€ÐµÑ‚Ð¸Ð·Ð¸Ñ€ÑƒÐµÑ‚ Ð¼ÐµÑ‚Ð¾Ð´Ð¾Ð»Ð¾Ð³Ð¸ÑŽ Ð¡Ð¦Ð˜ Ð¸ Ñ€Ð¾Ð»ÑŒ CML-Bench"
+        },
+        {
+          "from_file": "psb_technological_foundation_6tu_analysis.json",
+          "from_node": "NODE-TECHBASE",
+          "from_path": "executive_summary",
+          "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+        },
+        {
+          "from_file": "psb_technological_foundation_6tu_analysis.json",
+          "from_node": "NODE-TECHBASE",
+          "from_path": "ten_principles.principles[0]",
+          "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_1_national_goal"
+        },
+        {
+          "from_file": "psb_technological_foundation_6tu_analysis.json",
+          "from_node": "NODE-TECHBASE",
+          "from_path": "ten_principles.principles[3]",
+          "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+        },
+        {
+          "from_file": "psb_technological_foundation_6tu_analysis.json",
+          "from_node": "NODE-TECHBASE",
+          "from_path": "ten_principles.principles[3]",
+          "full_ref": "psb_spbpu_context_analysis.json#key_definitions"
+        },
+        {
+          "from_file": "psb_technological_foundation_6tu_analysis.json",
+          "from_node": "NODE-TECHBASE",
+          "from_path": "ten_principles.principles[4]",
+          "full_ref": "psb_spbpu_context_analysis.json#problem_space.operating_principles"
+        },
+        {
+          "from_file": "psb_technological_foundation_6tu_analysis.json",
+          "from_node": "NODE-TECHBASE",
+          "from_path": "psb_action_plan.actions[0]",
+          "full_ref": "psb_spbpu_context_analysis.json#solution_architecture"
+        },
+        {
+          "from_file": "psb_technological_foundation_6tu_analysis.json",
+          "from_node": "NODE-TECHBASE",
+          "from_path": "integration_with_partnership.synergy_points[0]",
+          "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+        },
+        {
+          "from_file": "psb_technological_foundation_6tu_analysis.json",
+          "from_node": "NODE-TECHBASE",
+          "from_path": "integration_with_partnership.synergy_points[1]",
+          "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model.methodological_layer"
+        },
+        {
+          "from_file": "psb_technological_foundation_6tu_analysis.json",
+          "from_node": "NODE-TECHBASE",
+          "from_path": "integration_with_partnership.synergy_points[2]",
+          "full_ref": "psb_spbpu_context_analysis.json#key_actors.borovkov"
+        },
+        {
+          "from_file": "psb_technological_foundation_6tu_analysis.json",
+          "from_node": "NODE-TECHBASE",
+          "from_path": "integration_with_partnership.synergy_points[4]",
+          "full_ref": "psb_spbpu_context_analysis.json#institutional_framework.mkcp_dt"
+        },
+        {
+          "from_file": "psb_global_trend_platform_analysis.json",
+          "from_node": "NODE-PLATFORM",
+          "relationship": "provides_technological_core",
+          "description": "ЦД и CML-Bench становятся базовыми единицами платформы"
+        },
+        {
+          "from_file": "psb_global_trend_platform_analysis.json",
+          "from_node": "NODE-PLATFORM",
+          "from_path": "prerequisites_analysis.levels[0]",
+          "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_0_national_interest"
+        },
+        {
+          "from_file": "psb_global_trend_platform_analysis.json",
+          "from_node": "NODE-PLATFORM",
+          "from_path": "prerequisites_analysis.levels[3]",
+          "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_4_psb_role"
+        },
+        {
+          "from_file": "psb_global_trend_platform_analysis.json",
+          "from_node": "NODE-PLATFORM",
+          "from_path": "platform_economy_model.digital_twin_role",
+          "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+        },
+        {
+          "from_file": "psb_global_trend_platform_analysis.json",
+          "from_node": "NODE-PLATFORM",
+          "from_path": "eight_platform_values.values[2]",
+          "full_ref": "psb_spbpu_context_analysis.json#partnership_framework"
+        },
+        {
+          "from_file": "psb_global_trend_platform_analysis.json",
+          "from_node": "NODE-PLATFORM",
+          "from_path": "eight_platform_values.values[3]",
+          "full_ref": "psb_spbpu_context_analysis.json#psb_value_proposition"
+        },
+        {
+          "from_file": "psb_global_trend_platform_analysis.json",
+          "from_node": "NODE-PLATFORM",
+          "from_path": "eight_platform_values.values[6]",
+          "full_ref": "psb_spbpu_context_analysis.json#problem_space.operating_principles.right_to_risk"
+        },
+        {
+          "from_file": "psb_sci_architecture_analysis.json",
+          "from_node": "NODE-SCI",
+          "relationship": "concretizes",
+          "description": "СЦИ конкретизирует методологический слой трёхуровневой модели партнёрства"
+        },
+        {
+          "from_file": "psb_sci_architecture_analysis.json",
+          "from_node": "NODE-SCI",
+          "from_path": "executive_summary",
+          "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model.methodological_layer"
+        },
+        {
+          "from_file": "psb_sci_architecture_analysis.json",
+          "from_node": "NODE-SCI",
+          "from_path": "six_layer_model.layers[1]",
+          "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.level_3_measurable_kpi"
+        },
+        {
+          "from_file": "psb_sci_architecture_analysis.json",
+          "from_node": "NODE-SCI",
+          "from_path": "six_layer_model.layers[2]",
+          "full_ref": "psb_spbpu_context_analysis.json#partnership_assets.spbpu"
+        },
+        {
+          "from_file": "psb_sci_architecture_analysis.json",
+          "from_node": "NODE-SCI",
+          "from_path": "six_layer_model.layers[4]",
+          "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model.platform_layer"
+        },
+        {
+          "from_file": "psb_sci_architecture_analysis.json",
+          "from_node": "NODE-SCI",
+          "from_path": "six_layer_model.layers[5]",
+          "full_ref": "psb_spbpu_context_analysis.json#partnership_assets"
+        },
+        {
+          "from_file": "psb_sci_architecture_analysis.json",
+          "from_node": "NODE-SCI",
+          "from_path": "sci_dt_relationship",
+          "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+        },
+        {
+          "from_file": "psb_dt_platforms_market_analysis.json",
+          "from_node": "NODE-MARKET",
+          "relationship": "contextualizes_position",
+          "description": "Рыночный анализ позиционирует CML-Bench в глобальном контексте"
+        },
+        {
+          "from_file": "psb_dt_platforms_market_analysis.json",
+          "from_node": "NODE-MARKET",
+          "from_path": "executive_summary",
+          "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+        },
+        {
+          "from_file": "psb_dt_platforms_market_analysis.json",
+          "from_node": "NODE-MARKET",
+          "from_path": "competitive_landscape",
+          "full_ref": "psb_spbpu_context_analysis.json#partnership_assets.spbpu.cml_bench"
+        },
+        {
+          "from_file": "psb_dt_platforms_market_analysis.json",
+          "from_node": "NODE-MARKET",
+          "from_path": "russian_platforms_deep_dive.platforms[4]",
+          "full_ref": "psb_spbpu_context_analysis.json#partnership_assets.spbpu.cml_bench"
+        },
+        {
+          "from_file": "psb_cmlbench_technology_context_analysis.json",
+          "from_node": "NODE-CMLBENCH",
+          "relationship": "establishes_strategic_context",
+          "description": "Контекст партнёрства определяет роль CML-Bench"
+        },
+        {
+          "from_file": "psb_cmlbench_technology_context_analysis.json",
+          "from_node": "NODE-CMLBENCH",
+          "from_path": "executive_summary",
+          "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model.platform_layer"
+        },
+        {
+          "from_file": "psb_cmlbench_technology_context_analysis.json",
+          "from_node": "NODE-CMLBENCH",
+          "from_path": "platform_identity",
+          "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+        },
+        {
+          "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+          "from_node": "NODE-AGENDA",
+          "from_path": "executive_summary",
+          "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_0_national_interest"
+        },
+        {
+          "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+          "from_node": "NODE-AGENDA",
+          "from_path": "timeline_analysis.events[2]",
+          "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+        },
+        {
+          "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+          "from_node": "NODE-AGENDA",
+          "from_path": "timeline_analysis.events[4]",
+          "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_0_national_interest"
+        },
+        {
+          "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+          "from_node": "NODE-AGENDA",
+          "from_path": "institutional_framework.governance_structure",
+          "full_ref": "psb_spbpu_context_analysis.json#key_actors"
+        },
+        {
+          "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+          "from_node": "NODE-AGENDA",
+          "from_path": "institutional_framework.mkcp_directorate",
+          "full_ref": "psb_spbpu_context_analysis.json#key_actors"
+        },
+        {
+          "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+          "from_node": "NODE-AGENDA",
+          "from_path": "strategic_positioning.value_proposition",
+          "full_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+        },
+        {
+          "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+          "from_node": "NODE-AGENDA",
+          "from_path": "strategic_positioning.strategic_entry_points",
+          "full_ref": "psb_spbpu_context_analysis.json#key_actors"
+        },
+        {
+          "from_file": "psb_mkcp_program_analysis.json",
+          "from_node": "NODE-MKCP",
+          "from_path": "executive_summary",
+          "full_ref": "psb_spbpu_context_analysis.json#strategic_framework.hierarchy"
+        },
+        {
+          "from_file": "psb_mkcp_program_analysis.json",
+          "from_node": "NODE-MKCP",
+          "from_path": "organizational_structure",
+          "full_ref": "psb_spbpu_context_analysis.json#key_actors"
+        }
+      ]
+    }
+  },
+  "strategic_framework": {
+    "hierarchy": {
+      "level_0_national_interest": {
+        "id": "NI-001",
+        "name": "Устойчивое развитие экономики на новой технологической основе",
+        "source": "Указ №400 от 02.07.2021, п.III, пп.25",
+        "type": "strategic_national_interest"
+      },
+      "level_1_national_goal": {
+        "id": "NG-001",
+        "name": "Технологическое лидерство",
+        "definition": "Технологическая независимость РФ с превосходством отечественных технологий над зарубежными аналогами при сохранении национального контроля над критическими и сквозными технологиями",
+        "source": "ФЗ №523 от 28.12.2024",
+        "type": "national_goal"
+      },
+      "level_2_instrumental_goal": {
+        "id": "IG-001",
+        "name": "Технологический суверенитет",
+        "definition": "Наличие критических и сквозных технологий собственных линий разработки под национальным контролем",
+        "source": "Концепция технологического развития, РП РФ №1315-р от 20.05.2023",
+        "forms": [
+          "Исследования, разработка и внедрение критических и сквозных технологий",
+          "Производство высокотехнологичной продукции на основе указанных технологий"
+        ]
+      },
+      "level_3_measurable_kpi": [
+        {
+          "id": "KPI-001",
+          "name": "Позиция в мировом рейтинге НИОКР",
+          "target": "Топ-10 стран по объему НИОКР",
+          "deadline": "2030",
+          "source": "Указ №309 от 07.05.2024"
+        },
+        {
+          "id": "KPI-002",
+          "name": "Внутренние затраты на НИОКР",
+          "target": "≥2% ВВП",
+          "deadline": "2030",
+          "source": "Указ №309 от 07.05.2024"
+        },
+        {
+          "id": "KPI-003",
+          "name": "Инвестиции бизнеса в НИОКР",
+          "target": "Удвоение (×2)",
+          "deadline": "2030",
+          "source": "Указ №309 от 07.05.2024"
+        }
+      ],
+      "level_4_psb_role": {
+        "id": "ROLE-PSB-001",
+        "name": "Финансово-технологический брокер",
+        "positioning": "Проводник государственной политики в области трансформации промышленности и передовых производственных технологий",
+        "functions": [
+          {
+            "id": "FUNC-001",
+            "name": "Формирование инновационных экосистем",
+            "description": "Развитие экосистем и платформ для ускорения трансфера технологий от разработчиков к конечным потребителям"
+          },
+          {
+            "id": "FUNC-002",
+            "name": "Финансово-технологическое посредничество",
+            "description": "Прямое финансирование + создание гибких финансовых инструментов и инфраструктуры для поддержки инновационных проектов на всех этапах жизненного цикла"
+          }
+        ]
+      }
+    },
+    "national_priorities": {
+      "defense": {
+        "id": "NP-DEFENSE",
+        "source": "Указ №400, п.III, пп.26, ппп.2",
+        "priorities": [
+          "Технологическая независимость ОПК РФ и его инновационное развитие",
+          "Лидерство в разработке и производстве перспективных образцов ВВСТ"
+        ]
+      },
+      "economic_security": {
+        "id": "NP-ECONOMY",
+        "source": "Указ №400, п.III, пп.26, ппп.5",
+        "priorities": [
+          "Создание новых отраслей экономики на основе перспективных высоких технологий",
+          "Преодоление зависимости от импорта технологий через ускоренное внедрение российских разработок"
+        ]
+      },
+      "scientific_technological": {
+        "id": "NP-SCITECH",
+        "source": "Указ №400, п.III, пп.26, ппп.6",
+        "is_key_priority": true,
+        "priorities": [
+          "Доведение расходов на науку до уровня стран-лидеров",
+          "Создание единой инвестиционно привлекательной системы управления инновационной деятельностью",
+          "Усиление взаимодействия НИИ и промышленных предприятий для коммерциализации разработок",
+          "Передача знаний и технологий между ОПК и гражданским сектором"
+        ]
+      }
+    }
+  },
+  "problem_space": {
+    "challenges": [
+      {
+        "id": "CH-001",
+        "name": "Низкая адаптивность экономики",
+        "description": "Низкая адаптивность экономики к глобальным системным трендам",
+        "source": "Концепция технологического развития до 2030",
+        "systemic_cause": "Разрыв между наукой и производством",
+        "manifestation": "Длинный цикл от НИОКР до внедрения",
+        "impact_area": "Скорость инноваций"
+      },
+      {
+        "id": "CH-002",
+        "name": "Отставание по темпам роста",
+        "description": "Отставание от лидеров по темпам инновационно-ориентированного экономического роста",
+        "source": "Концепция технологического развития до 2030",
+        "systemic_cause": "Недофинансирование + фрагментация усилий",
+        "manifestation": "Инвестиции бизнеса в НИОКР отстают от целевых показателей",
+        "impact_area": "Конкурентоспособность"
+      },
+      {
+        "id": "CH-003",
+        "name": "Санкционное давление",
+        "description": "Разрыв производственных цепочек и санкционное давление",
+        "source": "Концепция технологического развития до 2030",
+        "systemic_cause": "Зависимость от импортных технологий и компонентов",
+        "manifestation": "Недоступность критических компонентов и ПО",
+        "impact_area": "Технологический суверенитет"
+      }
+    ],
+    "operating_principles": [
+      {
+        "id": "PRINC-001",
+        "name": "Целостность инновационного цикла",
+        "description": "Бесшовная поддержка от фундаментальных исследований до внедрения в реальный сектор",
+        "source": "Концепция технологического развития до 2030",
+        "implication_for_psb": "Финансовые продукты должны покрывать все этапы TRL"
+      },
+      {
+        "id": "PRINC-002",
+        "name": "Признание права на риск",
+        "description": "Допущение возможности недостижения запланированных эффектов в связи с высоким уровнем неопределенности инноваций",
+        "source": "Концепция технологического развития до 2030",
+        "legal_basis": "Допустимый уровень риска закрепляется в законодательстве РФ",
+        "implication_for_psb": "Необходимы специальные подходы к оценке и принятию рисков инновационных проектов"
+      }
+    ]
+  },
+  "solution_architecture": {
+    "working_contour": {
+      "id": "CONTOUR-001",
+      "name": "Наука — технологии — производство",
+      "source": "Указ №145 от 28.02.2024, п.1 основных направлений",
+      "components": [
+        {
+          "id": "COMP-001",
+          "name": "Формирование общественного запроса на результаты НИОКР",
+          "type": "demand_side"
+        },
+        {
+          "id": "COMP-002",
+          "name": "Полноценный трансфер технологий и управление интеллектуальной собственностью",
+          "type": "supply_side"
+        }
+      ]
+    },
+    "priority_focus": {
+      "id": "PRIORITY-001",
+      "name": "Переход к передовым технологиям проектирования и создания высокотехнологичной продукции",
+      "source": "Указ №145 от 28.02.2024, п.21",
+      "technology_enablers": [
+        "Интеллектуальные производственные решения",
+        "Высокопроизводительные вычислительные системы",
+        "Обработка больших объемов данных",
+        "Технологии машинного обучения",
+        "Искусственный интеллект"
+      ]
+    },
+    "three_layer_model": {
+      "methodological_layer": {
+        "id": "LAYER-METHOD",
+        "name": "Системный цифровой инжиниринг (СЦИ)",
+        "type": "process_methodology_framework",
+        "definition": "Организация и ведение системной инженерии «в цифре» на основании единого, постоянно актуализируемого цифрового представления продукта, процессов и решений на всём протяжении жизненного цикла",
+        "characteristics": [
+          "Опирается на системное мышление и методы системной инженерии",
+          "Ведётся в сквозной цифровой среде с «цифровой нитью»",
+          "Обеспечивает непрерывную верификацию и валидацию на основе MBSE",
+          "Поддерживает двусторонний обмен данными между физическим изделием и цифровым представлением",
+          "Интегрирует людей, процессы, IT и инфраструктуру в единую экосистему"
+        ],
+        "relationship_to_dt": "Управленческая надстройка, задающая правила создания и применения цифровых двойников"
+      },
+      "technological_layer": {
+        "id": "LAYER-TECH",
+        "name": "Технология цифровых двойников (ЦД)",
+        "type": "key_technological_instrument",
+        "definition": "Динамическая, синхронная с физическим объектом модель, вокруг которой строятся все инженерные процессы",
+        "standard": {
+          "id": "GOST-DT",
+          "name": "ГОСТ Р 57700.37-2021",
+          "title": "Компьютерные модели. Цифровые двойники изделий. Общие положения",
+          "developers": [
+            "ФГУП «РФЯЦ — ВНИИЭФ»",
+            "СПбПУ"
+          ],
+          "significance": "Россия — одна из первых стран с национальным стандартом на цифровые двойники"
+        },
+        "relationship_to_sci": "Ядро СЦИ, центральный артефакт цифровой нити"
+      },
+      "platform_layer": {
+        "id": "LAYER-PLATFORM",
+        "name": "Платформа CML-Bench",
+        "type": "technical_core",
+        "owner": "СПбПУ",
+        "chief_designer": "А.И. Боровков",
+        "capabilities": [
+          "Инструменты создания и верификации цифровых двойников",
+          "Виртуальные испытания",
+          "HPC-расчёты",
+          "Реализация процессов MBSE",
+          "Управление проектами и расчётными цепочками",
+          "Хранение матрицы требований и результатов симуляций"
+        ],
+        "strategic_significance": "Потенциальный национальный научно-технологический задел и стратегический актив"
+      }
+    },
+    "layer_relationships": [
+      {
+        "from": "СЦИ",
+        "to": "ЦД",
+        "direction": "forward",
+        "description": "Методология задаёт требования к полноте модели, трассируемости параметров и плану V&V; цифровой двойник становится центральным артефактом цифровой нити"
+      },
+      {
+        "from": "ЦД",
+        "to": "СЦИ",
+        "direction": "backward",
+        "description": "Обратная телеметрия с физического объекта обновляет модели, автоматически инициирует изменения ТЗ и КД"
+      },
+      {
+        "from": "CML-Bench",
+        "to": "ЦД",
+        "direction": "enables",
+        "description": "Платформа предоставляет инструменты создания, верификации, виртуальных испытаний и HPC-расчётов; ЦД хранит матрицу требований и результаты симуляций"
+      },
+      {
+        "from": "CML-Bench",
+        "to": "СЦИ",
+        "direction": "implements",
+        "description": "Платформа реализует процессы MBSE, управление проектами и расчётными цепочками, обеспечивая наблюдаемость и контроль качества по всей V&V-матрице"
+      }
+    ]
+  },
+  "application_domain": {
+    "primary_focus": {
+      "id": "DOMAIN-GOZ",
+      "name": "Государственный оборонный заказ (ГОЗ)",
+      "legal_basis": "ФЗ от 29.12.2012 N 275-ФЗ",
+      "definition": "Задания на поставки товаров, выполнение работ, оказание услуг для федеральных нужд в целях обеспечения обороны и безопасности РФ",
+      "scope_in_project": [
+        "НИОКР по созданию и модернизации ВВСТ",
+        "НИОКР по развитию исследовательской, проектно-конструкторской и производственно-технологической базы организаций для выполнения ГОЗ",
+        "Повышение мобилизационной подготовки экономики РФ"
+      ],
+      "executors": "Предприятия ОПК в ведомстве Минпромторга РФ"
+    },
+    "digital_twin_effects": {
+      "rd_phase": {
+        "id": "EFFECT-RD",
+        "name": "Фаза разработки перспективных изделий ВВСТ",
+        "benefits": [
+          "Ускорение появления новых образцов за счёт виртуальных испытаний",
+          "Экономия времени и ресурсов на этапе НИОКР",
+          "Повышение эффективности государственных, межведомственных и сертификационных испытаний",
+          "Повышение качества изделий через виртуальную проработку конструкции",
+          "Достижение оптимальных ТТХ, недостижимых ранее без множества натурных экспериментов"
+        ]
+      },
+      "operational_phase": {
+        "id": "EFFECT-OPS",
+        "name": "Эксплуатационная фаза",
+        "benefits": [
+          "Переход от планово-профилактического к предиктивному (прогнозному) обслуживанию",
+          "Уменьшение совокупных расходов эксплуатационной фазы",
+          "Продление ресурса техники",
+          "Сохранение боеготовности"
+        ]
+      },
+      "strategic_level": {
+        "id": "EFFECT-STRATEGIC",
+        "name": "Стратегический уровень",
+        "benefits": [
+          "Повышение эффективности межведомственного планирования",
+          "Уменьшение рисков при реализации ГОЗ",
+          "Усиление планирования и управления театром военных действий",
+          "Поддержка оперативно-тактических моделей"
+        ]
+      },
+      "dual_use": {
+        "id": "EFFECT-DUAL",
+        "name": "Эффект двойного назначения",
+        "benefits": [
+          "Усиление военного потенциала",
+          "Развитие гражданских отраслей экономики",
+          "Соответствие приоритетам технологической независимости"
+        ],
+        "presidential_context": {
+          "date": "14.05.2024",
+          "event": "Назначение Министра обороны Белоусова А.Р.",
+          "key_points": [
+            "Расходы на оборону и безопасность в 2024: ~8-9% (vs 13% в СССР 1980-х)",
+            "Необходимость рачительного и эффективного распоряжения ресурсами",
+            "Органическая связь расходов на оборону с гражданскими отраслями",
+            "Взаимоотношение «пушки-масло» должно быть вписано в общую стратегию развития"
+          ]
+        }
+      }
+    },
+    "ministry_of_defense_priorities": {
+      "source": "Расширенное заседание коллегии Министерства обороны, 16.12.2024",
+      "speaker": "Министр обороны А.Р. Белоусов",
+      "key_direction": "Модернизация Вооруженных Сил в среднесрочной перспективе с учетом внешних угроз и развития технологий",
+      "task": "Создать систему перспективных исследований, ускоренной разработки и внедрения новейших образцов вооружения и техники",
+      "immediate_action": "Пересмотр перечней НИОКР по каждой системе вооружения с учетом развития технологий",
+      "timeline": "Значимые результаты необходимы в 2025 году"
+    }
+  },
+  "institutional_framework": {
+    "mkcp_dt": {
+      "id": "PROGRAM-MKCP",
+      "name": "Межведомственная комплексная целевая программа по внедрению технологии цифровых двойников",
+      "abbreviation": "МКЦП ЦД",
+      "basis": "Поручение Президента РФ (Письмо Министра обороны Президенту от 07.08.2024)",
+      "strategic_goal": "Выстроить в России полный цикл создания и применения цифровых двойников продукции, процессов и объектов инфраструктуры",
+      "objectives": [
+        "Снижение сроков и стоимости НИОКР и испытаний",
+        "Повышение качества и технологичности изделий",
+        "Обеспечение надёжности и эффективности эксплуатации"
+      ],
+      "presidential_agenda_alignment": "Ускорить цифровую зрелость экономики и войти в топ-10 стран по НИОКР к 2030 г.",
+      "legal_framework": {
+        "interdepartmental_commission": {
+          "name": "Межведомственная комиссия по технологическому суверенитету и структурной адаптации экономики РФ",
+          "basis": "Постановление Правительства РФ от 15.04.2023 г. №603",
+          "formed_by": "Министерство экономического развития РФ",
+          "composition": [
+            "Министерство экономического развития",
+            "Министерство промышленности и торговли",
+            "Министерство финансов",
+            "Центральный банк"
+          ]
+        }
+      },
+      "governance_architecture": {
+        "strategic_level": {
+          "name": "Наблюдательный совет",
+          "responsibility": "Паспорт МКЦП и KPI, привязанные к национальным целям",
+          "composition": [
+            "Вице-премьер",
+            "Коллегия ВПК"
+          ]
+        },
+        "program_level": {
+          "name": "Дирекция",
+          "responsibility": "Дорожная карта программы и матрица проектов",
+          "composition": [
+            "Минпромторг",
+            "Минобороны",
+            "Минцифры",
+            "ФГБУ «46 ЦНИИ» Минобороны",
+            "Федеральный центр цифровизации ОПК ФГУП «ВНИИ «Центр»"
+          ],
+          "planned_addition": "Банк ПСБ"
+        },
+        "project_level": {
+          "name": "Рабочая группа",
+          "responsibility": "Проектные офисы и проекты, входящие в Программу",
+          "composition": [
+            "Минобороны",
+            "Росстандарт",
+            "ЦНИИ Минобороны",
+            "Генеральные конструкторы",
+            "Руководители приоритетных технологических направлений",
+            "Отраслевые НИИ",
+            "Учреждения науки",
+            "Организации РАН",
+            "ИС ОПК",
+            "Институты развития и фонды",
+            "Отраслевые департаменты Минпромторга"
+          ]
+        }
+      },
+      "financial_structure": {
+        "by_source": [
+          {
+            "source": "Федеральный бюджет",
+            "instruments": "Субсидии ФЦП и госпрограмм (Минпромторг, Минобрнауки, Минцифры)",
+            "share_range": "60-70%"
+          },
+          {
+            "source": "Внебюджет",
+            "instruments": "Корпорации, специальные проектные компании, фонды, банки",
+            "share_range": "25-35%",
+            "psb_opportunity": true
+          },
+          {
+            "source": "Регионы",
+            "instruments": "Субсидии технопаркам, вузам",
+            "share_range": "5-10%"
+          }
+        ],
+        "by_expense_type": [
+          {
+            "type": "НИОКР",
+            "share": "~75%"
+          },
+          {
+            "type": "CapEx",
+            "share": "~20%"
+          },
+          {
+            "type": "Прочее",
+            "share": "~5%"
+          }
+        ]
+      },
+      "key_insight_for_psb": "Видеть МКЦП как единую систему «стандарты → платформа → пилоты → масштаб», где ключевая работа — связать цифровой контур предприятий и цифровой контур финансирования так, чтобы каждый новый цифровой двойник автоматически становился активом, подкреплённым данными, деньгами и доверием"
+    },
+    "priority_technological_direction": {
+      "id": "PTN-DT",
+      "name": "Приоритетное технологическое направление «Цифровые двойники»",
+      "legal_basis": "Указ Президента РФ от 20.07.2016 №347 «О руководителе приоритетного технологического направления»",
+      "candidate_leader": {
+        "name": "А.Б. Агеев",
+        "current_position": "Руководитель Центра цифровизации организаций ОПК ФГУП «ВНИИ «Центр»",
+        "current_role_in_mkcp": "Ответственный за разработку МКЦП ЦД"
+      }
+    }
+  },
+  "key_actors": {
+    "psb": {
+      "id": "ACTOR-PSB",
+      "name": "Промсвязьбанк (ПСБ)",
+      "type": "initiator",
+      "role_in_project": "Инициатор Замысла, финансово-технологический брокер",
+      "strategic_positioning": "Опорный банк ОПК, проводник государственной политики",
+      "key_interests": [
+        "Новый рынок финансовых услуг для инновационных проектов",
+        "Выполнение функции опорного банка ОПК",
+        "Позиция в дирекции МКЦП ЦД",
+        "Развитие цифрового контура финансирования инноваций"
+      ],
+      "anchor_technology": "Цифровые двойники"
+    },
+    "spbpu": {
+      "id": "ACTOR-SPBPU",
+      "name": "Санкт-Петербургский политехнический университет Петра Великого (СПбПУ)",
+      "type": "technological_partner",
+      "role_in_project": "Участник Замысла, технологический партнёр",
+      "strategic_direction": "Системный цифровой инжиниринг (в Стратегии СПбПУ до 2030)",
+      "key_assets": [
+        "Платформа CML-Bench",
+        "Компетенции мирового уровня в области ЦД",
+        "Соавторство ГОСТ Р 57700.37-2021",
+        "Передовая инженерная школа «Цифровой инжиниринг»"
+      ],
+      "key_interests": [
+        "Коммерциализация CML-Bench",
+        "Масштабирование экспертизы на предприятия ОПК",
+        "Научные исследования и публикации",
+        "Подготовка кадров"
+      ]
+    },
+    "borovkov": {
+      "id": "ACTOR-BOROVKOV",
+      "name": "А.И. Боровков",
+      "position": "Проректор СПбПУ, руководитель Передовой инженерной школы «Цифровой инжиниринг»",
+      "role_in_project": "Главный конструктор в области системного цифрового инжиниринга",
+      "role_analogy": "Аналог генерального конструктора (Указ №18 от 19.01.2015)",
+      "responsibility": "Разработчик платформы CML-Bench как национального научно-технологического задела",
+      "key_interests": [
+        "Статус национального разработчика платформы",
+        "Признание CML-Bench стратегическим активом",
+        "Развитие СЦИ как методологического стандарта"
+      ]
+    },
+    "ageev": {
+      "id": "ACTOR-AGEEV",
+      "name": "А.Б. Агеев",
+      "position": "Руководитель Центра цифровизации организаций ОПК ФГУП «ВНИИ «Центр»",
+      "role_in_project": "Ответственный за разработку МКЦП ЦД",
+      "current_work": "Формирование концепции МКЦП ЦД, включая организационную структуру и дирекцию",
+      "aspiration": "Руководитель создаваемого ПТН «Цифровые двойники»",
+      "key_interests": [
+        "Позиция руководителя ПТН",
+        "Контроль над архитектурой МКЦП",
+        "Координация межведомственного взаимодействия"
+      ]
+    },
+    "minpromtorg": {
+      "id": "ACTOR-MINPROMTORG",
+      "name": "Министерство промышленности и торговли РФ",
+      "type": "regulator",
+      "role_in_project": "Регулятор предприятий ОПК, участник дирекции МКЦП",
+      "key_interests": [
+        "Выполнение KPI по технологическому суверенитету",
+        "Модернизация промышленности",
+        "Координация отраслевых программ"
+      ]
+    },
+    "opk_enterprises": {
+      "id": "ACTOR-OPK",
+      "name": "Предприятия ОПК",
+      "type": "end_consumers",
+      "role_in_project": "Исполнители ГОЗ, конечные потребители технологий и финансовых услуг",
+      "subordination": "Ведомство Минпромторга РФ",
+      "key_interests": [
+        "Ускорение НИОКР",
+        "Снижение затрат на испытания",
+        "Повышение качества изделий",
+        "Доступ к финансированию инновационных проектов"
+      ]
+    }
+  },
+  "key_definitions": {
+    "critical_technology": {
+      "term": "Критическая технология",
+      "definition": "Наукоемкая технология, необходимая для создания высокотехнологичной продукции, имеющей системное значение для функционирования экономики, решения социально-экономических задач, обеспечения обороны страны и безопасности государства",
+      "source": "ФЗ №523 от 28.12.2024"
+    },
+    "cross_cutting_technology": {
+      "term": "Сквозная технология",
+      "definition": "Перспективная наукоемкая технология (направление) межотраслевого значения, обеспечивающая создание высокотехнологичной продукции и/или внедрение технологических инноваций, оказывающая существенное влияние на экономическое развитие путем изменения рынков и/или содействия формированию новых рынков",
+      "source": "ФЗ №523 от 28.12.2024"
+    },
+    "technology_development_ecosystem": {
+      "term": "Экосистема технологического развития",
+      "definition": "Совокупность взаимосвязанных субъектов экономической и научно-образовательной деятельности, которые взаимодействуют на основе сетевых принципов, разрабатывают с использованием общего набора технологий, знаний или навыков совместно и на конкурентной основе инновационные продукты и сервисы, существенно влияющие на развитие экономики",
+      "source": "Концепция технологического развития до 2030"
+    }
+  },
+  "document_references": {
+    "strategic_documents": [
+      {
+        "id": "DOC-001",
+        "name": "Стратегия национальной безопасности",
+        "type": "Указ Президента РФ",
+        "number": "№400",
+        "date": "02.07.2021"
+      },
+      {
+        "id": "DOC-002",
+        "name": "О национальных целях развития РФ на период до 2030 и на перспективу до 2036",
+        "type": "Указ Президента РФ",
+        "number": "№309",
+        "date": "07.05.2024"
+      },
+      {
+        "id": "DOC-003",
+        "name": "Стратегия научно-технологического развития РФ",
+        "type": "Указ Президента РФ",
+        "number": "№145",
+        "date": "28.02.2024"
+      },
+      {
+        "id": "DOC-004",
+        "name": "О технологической политике в РФ",
+        "type": "Федеральный закон",
+        "number": "№523-ФЗ",
+        "date": "28.12.2024"
+      },
+      {
+        "id": "DOC-005",
+        "name": "Концепция технологического развития на период до 2030 года",
+        "type": "Распоряжение Правительства РФ",
+        "number": "№1315-р",
+        "date": "20.05.2023"
+      },
+      {
+        "id": "DOC-006",
+        "name": "О государственном оборонном заказе",
+        "type": "Федеральный закон",
+        "number": "№275-ФЗ",
+        "date": "29.12.2012"
+      },
+      {
+        "id": "DOC-007",
+        "name": "Об утверждении приоритетных направлений проектов технологического суверенитета",
+        "type": "Постановление Правительства РФ",
+        "number": "№603",
+        "date": "15.04.2023"
+      },
+      {
+        "id": "DOC-008",
+        "name": "О руководителе приоритетного технологического направления",
+        "type": "Указ Президента РФ",
+        "number": "№347",
+        "date": "20.07.2016"
+      },
+      {
+        "id": "DOC-009",
+        "name": "О генеральном конструкторе",
+        "type": "Указ Президента РФ",
+        "number": "№18",
+        "date": "19.01.2015"
+      }
+    ],
+    "technical_standards": [
+      {
+        "id": "STD-001",
+        "name": "Компьютерные модели. Цифровые двойники изделий. Общие положения",
+        "type": "ГОСТ Р",
+        "number": "57700.37-2021",
+        "developers": [
+          "ФГУП «РФЯЦ — ВНИИЭФ»",
+          "СПбПУ"
+        ]
+      }
+    ],
+    "external_links": {
+      "shareholder_logic_scheme": "https://drive.google.com/file/d/18kDlTPPgIRGWyjICp-tJ_oL1DYbs2XGv/view",
+      "strategic_documents_folder": "https://drive.google.com/drive/folders/1-k5eAYyNbex0pHl3rvwhyLGTckkOr2Yw",
+      "psb_role_scheme": "https://drive.google.com/file/d/1quXFVHFVuY0M6UV6Y0QdAuxL4rLnZemt/view",
+      "digital_twin_folder": "https://drive.google.com/drive/folders/1_0PIdiZs16ZULJxEvnpPB6QsvFcLVlzJ",
+      "cml_bench_folder": "https://drive.google.com/drive/folders/1qtW5DUupBkWomO5ahkz3HoggOjJq5t0O",
+      "sci_structure_scheme": "https://drive.google.com/file/d/1RiQVytI5SmjPtZG2Z99h4ebN5LkcGO2M/view",
+      "platform_comparison": "https://docs.google.com/spreadsheets/d/1wi0dYHPBhQSqsCPxDQcQyeX5nEOVih4N/edit",
+      "cml_bench_context": "https://drive.google.com/file/d/1_aMHcvwK-tPbe_50djvA0QoImSN1JrPm/view",
+      "mkcp_concept_folder": "https://drive.google.com/drive/folders/1xvWtjCFvUXgCkF0U3C8iMW-Xevlr3O71"
+    }
+  },
+  "summary": {
+    "main_thesis": "Банк ПСБ определяет своё место в национальной системе становления, развития и ускоренного распространения (диффузии) суверенных технологий для обеспечения технологического лидерства государства через осмысление себя в роли проводника государственной политики в области трансформации промышленности и передовых производственных технологий",
+    "key_elements": [
+      {
+        "element": "ГОЗ в направлении НИОКР",
+        "significance": "Основная точка опоры, связывающая приоритет передовых технологий проектирования с подходами предприятий ОПК"
+      },
+      {
+        "element": "Технология цифровых двойников",
+        "significance": "Стратегическая парадигма развития ОПК, обеспечивающая превосходство на поле боя и конкурентоспособность в промышленности"
+      },
+      {
+        "element": "Системный цифровой инжиниринг",
+        "significance": "Методологический каркас для ведения процесса создания и управления ЖЦ изделий ВВСТ в едином цифровом контуре"
+      },
+      {
+        "element": "ГОСТ Р 57700.37-2021",
+        "significance": "Россия — одна из первых стран с национальным стандартом на цифровые двойники"
+      },
+      {
+        "element": "МКЦП ЦД",
+        "significance": "Связующее звено, переводящее приоритеты от высшего уровня в действенный проектный формат"
+      }
+    ],
+    "psb_value_proposition": {
+      "unique_position": "Связать цифровой контур предприятий и цифровой контур финансирования",
+      "outcome": "Каждый новый цифровой двойник автоматически становится активом, подкреплённым данными, деньгами и доверием",
+      "anchor_technology": "Цифровые двойники как якорная технология в рамках деятельности инновационного финансово-технологического брокера"
+    }
+  },
+  "executive_summary": {
+    "northern_star": "Партнёрство ПСБ×СПбПУ = финтех-брокер для диффузии суверенных технологий",
+    "core_insight": "Уникальная синергия: банковская экспертиза ПСБ (70% ГОЗ) + инженерно-технологические компетенции СПбПУ (CML-Bench, ГОСТ) = решения на стыке финтеха и промышленных цифровых двойников.",
+    "key_findings": [
+      "Домен: ГОЗ/НИОКР предприятий ОПК Минпромторга",
+      "KPI: топ-10 НИОКР к 2030, затраты ≥2% ВВП, инвестиции бизнеса ×2",
+      "Трёхслойная модель: СЦИ (методология) → ЦД (инструмент) → CML-Bench (платформа)",
+      "МКЦП ЦД: 60-70% бюджет + 25-35% ПСБ + 5-10% регионы"
+    ],
+    "strategic_implications": [
+      "ПСБ — проводник госполитики в трансформации промышленности",
+      "СПбПУ — соавтор ГОСТ Р 57700.37-2021, методологический первоисточник",
+      "Ценностное предложение: ЦД = актив + данные + деньги + доверие"
+    ],
+    "quantitative_anchors": {
+      "psb_goz_share": "70%",
+      "mkcp_budget": "15 трлн рублей",
+      "psb_opportunity": "до 5.25 трлн (25-35% внебюджет)",
+      "target_year": 2030
+    }
+  },
+  "narrative_summary": {
+    "version": "1.0",
+    "format": "markdown",
+    "target": "portal_v2",
+    "word_count": 134,
+    "content": "## Стратегический контекст партнёрства ПСБ×СПбПУ\n\nПартнёрство между Промсвязьбанком и Санкт-Петербургским политехническим университетом представляет собой уникальную модель взаимодействия государственного банка и ведущего технического университета в интересах технологического суверенитета России.\n\n### Суть замысла\n\nПСБ выступает как финтех-брокер для диффузии суверенных технологий, где цифровые двойники являются якорной технологией в контуре наука-технологии-производство. Целевой домен — предприятия ОПК и НИОКР-организации Минпромторга с амбицией вывести Россию в топ-10 стран по объёму НИОКР к 2030 году.\n\n### Ценностное предложение\n\nКлючевая формула партнёрства: **ЦД = актив + данные + деньги + доверие**. ПСБ связывает цифровой контур предприятий с контуром финансирования, превращая цифровые двойники в полноценные залоговые активы с верифицируемой стоимостью.\n\n### Архитектура решения\n\nТрёхслойная модель определяет структуру: СЦИ (методология Системного Цифрового Инжиниринга) → Цифровые двойники (инструмент) → CML-Bench (технологическая платформа). Всё это работает в рамках ГОСТ Р 57700.37-2021, соавтором которого является СПбПУ."
+  }
+}

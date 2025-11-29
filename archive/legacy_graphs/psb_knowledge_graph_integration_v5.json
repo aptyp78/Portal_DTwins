@@ -1,0 +1,789 @@
+{
+  "meta": {
+    "title": "Семантический граф знаний: Партнёрство ПСБ × СПбПУ",
+    "version": "5.0",
+    "update_date": "2025-11-28",
+    "analyst": "AI-эксперт по цифровым двойникам",
+    "description": "Интеграционный файл, описывающий семантические связи между всеми JSON-документами проекта",
+    "changelog": {
+      "v5.0": "Добавлен NODE-REGULATORY (Нормативный контекст перехода на новую технологическую основу) с 6 новыми связями, обновлена топология графа",
+      "v4.0": "Добавлен NODE-PLATFORM (Глобальный тренд: платформенная трансформация)",
+      "v3.0": "Добавлен NODE-TECHBASE (Архитектура 6ТУ)",
+      "v2.0": "Базовая структура с 4 узлами"
+    }
+  },
+
+  "graph_nodes": {
+    "total_nodes": 7,
+    "nodes": [
+      {
+        "id": "NODE-REGULATORY",
+        "file": "psb_regulatory_framework_analysis.json",
+        "domain": "Нормативный контекст перехода на новую технологическую основу",
+        "layer": "regulatory_framework",
+        "key_concepts": [
+          "Шестислойная архитектура нормативов",
+          "523-ФЗ",
+          "Указ №309",
+          "Указ №145",
+          "Мета-объекты в нормативной базе",
+          "7 точек входа ПСБ",
+          "Акторы технологического развития"
+        ],
+        "primary_question": "В КАКОМ нормативном контексте действует партнёрство ПСБ×СПбПУ?"
+      },
+      {
+        "id": "NODE-SHAREHOLDER",
+        "file": "psb_shareholder_logic_analysis.json",
+        "domain": "Философия и логика акционера",
+        "layer": "strategic_foundation",
+        "key_concepts": ["Миссионный акционер", "Бессрочный горизонт", "Владение смыслом", "5 принципов", "5 целевых состояний"],
+        "primary_question": "ЗАЧЕМ существует ПСБ?"
+      },
+      {
+        "id": "NODE-FINANCE",
+        "file": "psb_financial_architecture_analysis.json",
+        "domain": "Финансовая архитектура",
+        "layer": "resource_base",
+        "key_concepts": ["Трёхпоточная модель", "Инверсия дивидендов", "Норматив Н1.0", "Резервы", "Прибыль≠цель"],
+        "primary_question": "ЧЕМ обеспечивается деятельность ПСБ?"
+      },
+      {
+        "id": "NODE-ECOSYSTEM",
+        "file": "psb_ecosystem_infrastructure_analysis.json",
+        "domain": "Экосистема и инфраструктура",
+        "layer": "operational_platform",
+        "key_concepts": ["Государство в банке", "5 кластеров", "Quasi-министерские функции", "Технологическая автаркия"],
+        "primary_question": "КАК ПСБ реализует свою миссию?"
+      },
+      {
+        "id": "NODE-CONTEXT",
+        "file": "psb_spbpu_context_analysis.json",
+        "domain": "Стратегический контекст партнёрства",
+        "layer": "application_domain",
+        "key_concepts": ["Технологический суверенитет", "СЦИ", "CML-Bench", "МКЦП ЦД", "Трёхслойная модель"],
+        "primary_question": "ДЛЯ ЧЕГО создаётся партнёрство ПСБ×СПбПУ?"
+      },
+      {
+        "id": "NODE-TECHBASE",
+        "file": "psb_technological_foundation_6tu_analysis.json",
+        "domain": "Архитектура 6-го технологического уклада",
+        "layer": "architectural_blueprint",
+        "key_concepts": ["Мета-объекты", "10 принципов 6ТУ", "Каскад мета-объектов", "Policy-as-code", "SIL/MIL/VnV", "Паспорт 6ТУ-проекта"],
+        "primary_question": "КАК проектировать системы 6-го технологического уклада?"
+      },
+      {
+        "id": "NODE-PLATFORM",
+        "file": "psb_global_trend_platform_analysis.json",
+        "domain": "Стратегическое обоснование платформенной трансформации",
+        "layer": "strategic_transition",
+        "key_concepts": ["Экосистемная платформа", "Сетевые эффекты", "8 ценностей платформы", "4 уровня предпосылок", "Доверие как капитал", "ЦД как базовая единица платформы"],
+        "primary_question": "ПОЧЕМУ ПСБ должен перейти к экосистемной платформе?"
+      }
+    ]
+  },
+
+  "graph_edges": {
+    "total_edges": 22,
+    "edges": [
+      {
+        "id": "EDGE-REG-001",
+        "from": "NODE-REGULATORY",
+        "to": "NODE-SHAREHOLDER",
+        "relationship": "legitimizes",
+        "direction": "unidirectional",
+        "semantics": "Нормативная база легитимизирует роль миссионного акционера",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "DOC-400.strategic_priorities",
+            "to_ref": "MOT-001.civilizational_subjectivity",
+            "description": "Стратегия нацбезопасности → цивилизационная субъектность как мотивация"
+          },
+          {
+            "from_ref": "DOC-309.national_goals.tech_leadership",
+            "to_ref": "target_states",
+            "description": "Национальные цели → 5 целевых состояний акционера"
+          },
+          {
+            "from_ref": "523-ФЗ.subjects_of_tech_policy",
+            "to_ref": "shareholder_behavior.institutional",
+            "description": "Закон о техполитике → институциональное поведение"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-REG-002",
+        "from": "NODE-REGULATORY",
+        "to": "NODE-FINANCE",
+        "relationship": "enables_instruments",
+        "direction": "unidirectional",
+        "semantics": "Нормативная база создаёт правовую основу для финансовых инструментов 6ТУ",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "523-ФЗ.PROV-002",
+            "to_ref": "business_model.profit_streams",
+            "description": "Финансовые инструменты по стадиям → траншевое финансирование"
+          },
+          {
+            "from_ref": "NP-TECHLEAD.budget",
+            "to_ref": "CAP-001.capital_adequacy",
+            "description": "Бюджеты нацпроектов → потребность в капитале"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-REG-003",
+        "from": "NODE-REGULATORY",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "structures_actors",
+        "direction": "unidirectional",
+        "semantics": "Нормативная база определяет роли акторов экосистемы",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "LAYER-ACTORS.AC-ECONOMIC",
+            "to_ref": "cluster_model.CLUSTER-FINANCE",
+            "description": "Экономические роли → финансово-расчётный кластер"
+          },
+          {
+            "from_ref": "523-ФЗ.agents_of_development",
+            "to_ref": "quasi_ministerial_functions",
+            "description": "Агенты развития → quasi-министерские функции"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-REG-004",
+        "from": "NODE-REGULATORY",
+        "to": "NODE-CONTEXT",
+        "relationship": "frames_partnership",
+        "direction": "unidirectional",
+        "semantics": "Нормативная база задаёт рамку для партнёрства в контуре наука-технологии-производство",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "DOC-145.priority_focus",
+            "to_ref": "strategic_framework.hierarchy.level_2_priority_area",
+            "description": "Приоритет п.21 → фокус на передовых технологиях проектирования"
+          },
+          {
+            "from_ref": "PRINC-REG-001",
+            "to_ref": "operating_principles.OP-001",
+            "description": "Целостность инновационного цикла"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-REG-005",
+        "from": "NODE-REGULATORY",
+        "to": "NODE-TECHBASE",
+        "relationship": "implements_principles",
+        "direction": "unidirectional",
+        "semantics": "Мета-объекты 6ТУ реализуют нормативные требования",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "MOM-STANDARDS",
+            "to_ref": "ten_principles.principles[2]",
+            "description": "Стандарты и профили → инвариантность по дизайну"
+          },
+          {
+            "from_ref": "meta_objects_mapping",
+            "to_ref": "meta_objects",
+            "description": "Соответствие глобальных мета-объектов → каскад мета-объектов"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-REG-006",
+        "from": "NODE-REGULATORY",
+        "to": "NODE-PLATFORM",
+        "relationship": "justifies_transition",
+        "direction": "unidirectional",
+        "semantics": "Нормативная база создаёт предпосылки для платформенной трансформации",
+        "strength": "medium",
+        "key_mappings": [
+          {
+            "from_ref": "DOC-309.data_economy",
+            "to_ref": "eight_platform_values.VAL-003",
+            "description": "Экономика данных → данные как ценность"
+          },
+          {
+            "from_ref": "523-ФЗ.ecosystem_approach",
+            "to_ref": "platform_economy_model.core_principle",
+            "description": "Экосистемный подход в законе → экосистема первична"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-001",
+        "from": "NODE-SHAREHOLDER",
+        "to": "NODE-FINANCE",
+        "relationship": "determines",
+        "direction": "unidirectional",
+        "semantics": "Мотивация акционера определяет финансовую модель",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "MOT-FRAMEWORK",
+            "to_ref": "BM-001",
+            "description": "Философия «прибыль как инструмент, не цель» → трёхпоточная модель прибыльности"
+          },
+          {
+            "from_ref": "EXP-NAT-001",
+            "to_ref": "STREAM-GOZ",
+            "description": "Ожидание стратегического суверенитета → обеспечение финансирования ОПК"
+          },
+          {
+            "from_ref": "ownership_horizon.бессрочный",
+            "to_ref": "DIV-001",
+            "description": "Бессрочность владения → инверсия дивидендов (докапитализация вместо выплат)"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-002",
+        "from": "NODE-FINANCE",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "funds",
+        "direction": "unidirectional",
+        "semantics": "Финансовые механизмы обеспечивают ресурсную базу для кластеров экосистемы",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "STREAM-GOZ",
+            "to_ref": "CLUSTER-FINANCE",
+            "description": "70% портфеля ГОЗ → финансово-расчётный кластер"
+          },
+          {
+            "from_ref": "STREAM-COMMISSION",
+            "to_ref": "CLUSTER-IT",
+            "description": "Комиссионный бизнес требует ИТ-инфраструктуры"
+          },
+          {
+            "from_ref": "CAP-001",
+            "to_ref": "CLUSTER-SCITECH",
+            "description": "Достаточность капитала → венчурные инвестиции в deep-tech"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-003",
+        "from": "NODE-ECOSYSTEM",
+        "to": "NODE-CONTEXT",
+        "relationship": "enables",
+        "direction": "unidirectional",
+        "semantics": "Экосистема создаёт инфраструктурные условия для реализации стратегии партнёрства",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "CLUSTER-SCITECH.PARTNER-SPBPU",
+            "to_ref": "ROLE-PSB-001",
+            "description": "Партнёрство с СПбПУ реализует роль финтех-брокера"
+          },
+          {
+            "from_ref": "CLUSTER-INST",
+            "to_ref": "PROGRAM-MKCP",
+            "description": "Институциональный кластер обеспечивает нормативную базу для МКЦП ЦД"
+          },
+          {
+            "from_ref": "CLUSTER-IT",
+            "to_ref": "LAYER-PLATFORM",
+            "description": "ИТ-кластер создаёт вычислительную инфраструктуру для CML-Bench"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-004",
+        "from": "NODE-CONTEXT",
+        "to": "NODE-SHAREHOLDER",
+        "relationship": "validates",
+        "direction": "unidirectional",
+        "semantics": "Стратегический контекст подтверждает и конкретизирует логику акционера",
+        "strength": "medium",
+        "key_mappings": [
+          {
+            "from_ref": "level_0_national_interest",
+            "to_ref": "MOT-001",
+            "description": "Устойчивое развитие = цивилизационная субъектность"
+          },
+          {
+            "from_ref": "CH-003",
+            "to_ref": "constraints.geopolitical",
+            "description": "Санкционное давление как контекст ограничений"
+          },
+          {
+            "from_ref": "psb_value_proposition",
+            "to_ref": "success_metrics",
+            "description": "Ценностное предложение как метрика успеха акционера"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-005",
+        "from": "NODE-SHAREHOLDER",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "shapes",
+        "direction": "unidirectional",
+        "semantics": "Логика акционера формирует архитектуру и ценности экосистемы",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "MOT-001.цивилизационная_субъектность",
+            "to_ref": "ECO-PRINCIPLE.суверенитет",
+            "description": "Цивилизационная субъектность → технологическая автаркия экосистемы"
+          },
+          {
+            "from_ref": "EXP-NAT-002.общество_гармоничного_развития",
+            "to_ref": "CLUSTER-SOCIAL",
+            "description": "Ожидание развития человека → социально-кадровый кластер"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-006",
+        "from": "NODE-CONTEXT",
+        "to": "NODE-TECHBASE",
+        "relationship": "concretizes",
+        "direction": "unidirectional",
+        "semantics": "Контекст партнёрства конкретизируется в архитектурных принципах 6ТУ",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "three_layer_model",
+            "to_ref": "architectural_vision.digital_twin_as_unit",
+            "description": "Трёхслойная модель → ЦД как базовая единица управления"
+          },
+          {
+            "from_ref": "cml_bench",
+            "to_ref": "target_state_2036.TS-ELEM-003",
+            "description": "CML-Bench → полигонные сети SIL/MIL/VnV"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-007",
+        "from": "NODE-TECHBASE",
+        "to": "NODE-FINANCE",
+        "relationship": "requires",
+        "direction": "unidirectional",
+        "semantics": "Реализация 6ТУ требует специфических финансовых инструментов",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "psb_action_plan.actions[5]",
+            "to_ref": "business_model.profit_streams",
+            "description": "Линейка инструментов диффузии → потоки прибыльности"
+          },
+          {
+            "from_ref": "psb_action_plan.actions[1]",
+            "to_ref": "credit_process",
+            "description": "Портфельные ворота → кредитный процесс"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-008",
+        "from": "NODE-TECHBASE",
+        "to": "NODE-SHAREHOLDER",
+        "relationship": "operationalizes",
+        "direction": "unidirectional",
+        "semantics": "Архитектура 6ТУ операционализирует стратегическое видение акционера",
+        "strength": "medium",
+        "key_mappings": [
+          {
+            "from_ref": "ten_principles.PRINC-6TU-001",
+            "to_ref": "MOT-001",
+            "description": "Северная звезда (NBICS-платформы) → цивилизационная субъектность"
+          },
+          {
+            "from_ref": "target_state_2036",
+            "to_ref": "target_states",
+            "description": "Целевая картина 2036 → 5 целевых состояний"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-009",
+        "from": "NODE-TECHBASE",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "extends",
+        "direction": "unidirectional",
+        "semantics": "6ТУ расширяет функции кластеров экосистемы новыми мета-объектами",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "meta_objects.cascade",
+            "to_ref": "quasi_ministerial_functions",
+            "description": "Каскад мета-объектов → quasi-министерские функции"
+          },
+          {
+            "from_ref": "success_conditions.SC-COND-004",
+            "to_ref": "CLUSTER-SCITECH",
+            "description": "Кадровые и полигонные мощности → научно-технологический кластер"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-PLATFORM-001",
+        "from": "NODE-PLATFORM",
+        "to": "NODE-SHAREHOLDER",
+        "relationship": "extends_vision",
+        "direction": "unidirectional",
+        "semantics": "Платформенная модель расширяет стратегическое видение акционера",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "eight_platform_values.VAL-005",
+            "to_ref": "shareholder_principles.trust_and_participation",
+            "description": "Доверие как капитал платформы → принцип доверия и соучастия"
+          },
+          {
+            "from_ref": "platform_economy_model.core_principle",
+            "to_ref": "target_states.trust_node",
+            "description": "Экосистема первична → целевое состояние «узел доверия»"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-PLATFORM-002",
+        "from": "NODE-PLATFORM",
+        "to": "NODE-FINANCE",
+        "relationship": "transforms_model",
+        "direction": "unidirectional",
+        "semantics": "Платформенный подход трансформирует финансовую модель от линейной к сетевой",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "anti_thesis.scalability_crisis",
+            "to_ref": "business_model.limitations",
+            "description": "Кризис масштабируемости линейной модели → необходимость новых инструментов"
+          },
+          {
+            "from_ref": "eight_platform_values.VAL-002",
+            "to_ref": "profit_streams.transformation",
+            "description": "Сетевые эффекты → трансформация потоков прибыльности"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-PLATFORM-003",
+        "from": "NODE-PLATFORM",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "reorganizes",
+        "direction": "unidirectional",
+        "semantics": "Платформенная модель реорганизует 5 кластеров в сетевую архитектуру",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "eight_platform_values",
+            "to_ref": "cluster_model",
+            "description": "8 ценностей платформы → трансформация 5 кластеров"
+          },
+          {
+            "from_ref": "prerequisites_analysis.PREREQ-INTERNAL",
+            "to_ref": "quasi_ministerial_functions",
+            "description": "Внутренние предпосылки → расширение quasi-министерских функций"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-PLATFORM-004",
+        "from": "NODE-PLATFORM",
+        "to": "NODE-TECHBASE",
+        "relationship": "leverages",
+        "direction": "unidirectional",
+        "semantics": "Платформа использует архитектуру 6ТУ как технологический фундамент",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "platform_economy_model.digital_twin_role",
+            "to_ref": "ten_principles.principles[3]",
+            "description": "ЦД как базовая единица платформы → ЦД как единица управления в 6ТУ"
+          },
+          {
+            "from_ref": "psb_platform_role.instruments",
+            "to_ref": "psb_action_plan",
+            "description": "Инструменты платформы → 7 действий ПСБ"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-PLATFORM-005",
+        "from": "NODE-PLATFORM",
+        "to": "NODE-CONTEXT",
+        "relationship": "amplifies",
+        "direction": "unidirectional",
+        "semantics": "Платформенный подход усиливает ценностное предложение партнёрства",
+        "strength": "medium",
+        "key_mappings": [
+          {
+            "from_ref": "eight_platform_values.VAL-007",
+            "to_ref": "psb_value_proposition",
+            "description": "Мультипликация ценности → усиленное ценностное предложение"
+          },
+          {
+            "from_ref": "platform_economy_model.digital_twin_role",
+            "to_ref": "three_layer_model.technological_layer",
+            "description": "ЦД в платформе → технологический слой трёхслойной модели"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-PLATFORM-REGULATORY",
+        "from": "NODE-PLATFORM",
+        "to": "NODE-REGULATORY",
+        "relationship": "feedback_loop",
+        "direction": "unidirectional",
+        "semantics": "Результаты платформенной трансформации влияют на корректировку нормативной базы",
+        "strength": "medium",
+        "key_mappings": [
+          {
+            "from_ref": "platform_economy_model.metrics",
+            "to_ref": "DOC-309.target_metrics",
+            "description": "Метрики платформы → мониторинг национальных целей"
+          },
+          {
+            "from_ref": "psb_platform_role.ecosystem_development",
+            "to_ref": "523-ФЗ.annual_report",
+            "description": "Развитие экосистемы → ежегодная отчётность"
+          }
+        ]
+      }
+    ]
+  },
+
+  "graph_topology": {
+    "description": "Расширенная топология семантического графа v5.0",
+    "primary_cycle": "REGULATORY → SHAREHOLDER → FINANCE → ECOSYSTEM → CONTEXT → TECHBASE → PLATFORM → REGULATORY",
+    "layer_hierarchy": [
+      {
+        "level": 0,
+        "name": "regulatory_framework",
+        "nodes": ["NODE-REGULATORY"],
+        "role": "Нормативный фундамент — легитимизирует все остальные узлы"
+      },
+      {
+        "level": 1,
+        "name": "strategic_foundation",
+        "nodes": ["NODE-SHAREHOLDER"],
+        "role": "Философская основа — отвечает на вопрос ЗАЧЕМ"
+      },
+      {
+        "level": 2,
+        "name": "resource_base",
+        "nodes": ["NODE-FINANCE"],
+        "role": "Ресурсное обеспечение — отвечает на вопрос ЧЕМ"
+      },
+      {
+        "level": 3,
+        "name": "operational_platform",
+        "nodes": ["NODE-ECOSYSTEM"],
+        "role": "Операционная платформа — отвечает на вопрос КАК"
+      },
+      {
+        "level": 4,
+        "name": "application_domain",
+        "nodes": ["NODE-CONTEXT"],
+        "role": "Прикладной домен — отвечает на вопрос ДЛЯ ЧЕГО"
+      },
+      {
+        "level": 5,
+        "name": "architectural_blueprint",
+        "nodes": ["NODE-TECHBASE"],
+        "role": "Архитектурный blueprint — отвечает на вопрос КАК ПРОЕКТИРОВАТЬ"
+      },
+      {
+        "level": 6,
+        "name": "strategic_transition",
+        "nodes": ["NODE-PLATFORM"],
+        "role": "Стратегическая трансформация — отвечает на вопрос ПОЧЕМУ ПЛАТФОРМА"
+      }
+    ],
+    "feedback_loops": [
+      {
+        "id": "FL-001",
+        "loop": "SHAREHOLDER → FINANCE → ECOSYSTEM → CONTEXT → SHAREHOLDER",
+        "description": "Базовый цикл: философия → ресурсы → инфраструктура → применение → валидация философии"
+      },
+      {
+        "id": "FL-002",
+        "loop": "CONTEXT → TECHBASE → FINANCE → ECOSYSTEM → CONTEXT",
+        "description": "Цикл внедрения: контекст → архитектура → инструменты → операции → обратная связь"
+      },
+      {
+        "id": "FL-003",
+        "loop": "SHAREHOLDER → ECOSYSTEM → PLATFORM → SHAREHOLDER",
+        "description": "Цикл трансформации: видение → экосистема → платформа → расширение видения"
+      },
+      {
+        "id": "FL-004",
+        "loop": "REGULATORY → SHAREHOLDER → ECOSYSTEM → PLATFORM → REGULATORY",
+        "description": "Цикл регулятивной обратной связи: нормы → действия → результаты → корректировка норм"
+      }
+    ]
+  },
+
+  "cross_document_queries": {
+    "description": "Типовые межфайловые запросы для навигации по графу v5.0",
+    "queries": [
+      {
+        "question": "Какова правовая основа для роли ПСБ как финтех-брокера?",
+        "path": "NODE-REGULATORY.523-ФЗ → NODE-SHAREHOLDER.institutional_behavior → NODE-CONTEXT.psb_role",
+        "explanation": "Закон определяет ПСБ как субъект техполитики → институциональное поведение → конкретная роль в партнёрстве"
+      },
+      {
+        "question": "Как национальные цели связаны с финансовыми инструментами?",
+        "path": "NODE-REGULATORY.DOC-309.target_metrics → NODE-FINANCE.business_model → NODE-TECHBASE.psb_action_plan",
+        "explanation": "Целевые метрики → финансовая модель → конкретные инструменты"
+      },
+      {
+        "question": "Почему ЦД является базовой единицей и в нормативах, и в платформе?",
+        "path": "NODE-REGULATORY.MOM-STANDARDS → NODE-TECHBASE.ten_principles[3] → NODE-PLATFORM.digital_twin_role",
+        "explanation": "ГОСТ ЦД → архитектурный принцип → роль в платформенной модели"
+      },
+      {
+        "question": "Как формируется замкнутый цикл управления?",
+        "path": "NODE-REGULATORY → NODE-SHAREHOLDER → NODE-ECOSYSTEM → NODE-PLATFORM → NODE-REGULATORY",
+        "explanation": "Полный цикл: нормы задают рамку → акционер определяет миссию → экосистема реализует → платформа масштабирует → результаты корректируют нормы"
+      }
+    ]
+  },
+
+  "entity_cross_references": {
+    "description": "Сводная таблица перекрёстных ссылок между ключевыми сущностями (v5)",
+    "categories": [
+      {
+        "category": "Роли и функции ПСБ",
+        "entities": [
+          {
+            "entity": "Субъект технологической политики",
+            "references": [
+              "psb_regulatory_framework_analysis.json#LF-523.523-PROV-001",
+              "psb_shareholder_logic_analysis.json#shareholder_behavior.institutional",
+              "psb_ecosystem_infrastructure_analysis.json#quasi_ministerial_functions"
+            ]
+          },
+          {
+            "entity": "Финтех-брокер",
+            "references": [
+              "psb_shareholder_logic_analysis.json#target_states[0]",
+              "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_4_psb_role",
+              "psb_ecosystem_infrastructure_analysis.json#CLUSTER-SCITECH",
+              "psb_technological_foundation_6tu_analysis.json#psb_action_plan",
+              "psb_global_trend_platform_analysis.json#psb_platform_role"
+            ]
+          },
+          {
+            "entity": "Quasi-министерство",
+            "references": [
+              "psb_shareholder_logic_analysis.json#shareholder_behavior.operational_psb",
+              "psb_ecosystem_infrastructure_analysis.json#quasi_ministerial_functions",
+              "psb_technological_foundation_6tu_analysis.json#meta_objects.cascade",
+              "psb_regulatory_framework_analysis.json#LAYER-ACTORS.psb_position"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Ключевые нормативные документы",
+        "entities": [
+          {
+            "entity": "523-ФЗ",
+            "references": [
+              "psb_regulatory_framework_analysis.json#LF-523",
+              "psb_ecosystem_infrastructure_analysis.json#quasi_ministerial_functions.QMIN-LEGISLATIVE",
+              "psb_technological_foundation_6tu_analysis.json#psb_action_plan"
+            ]
+          },
+          {
+            "entity": "Указ №309",
+            "references": [
+              "psb_regulatory_framework_analysis.json#DOC-309",
+              "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_1_national_goal",
+              "psb_shareholder_logic_analysis.json#success_metrics"
+            ]
+          },
+          {
+            "entity": "ГОСТ Р 57700.37-2021",
+            "references": [
+              "psb_regulatory_framework_analysis.json#MOM-STANDARDS",
+              "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model",
+              "psb_technological_foundation_6tu_analysis.json#ten_principles.principles[3]"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Технологические компоненты",
+        "entities": [
+          {
+            "entity": "Цифровые двойники (ЦД)",
+            "references": [
+              "psb_regulatory_framework_analysis.json#MOM-STANDARDS",
+              "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model.technological_layer",
+              "psb_ecosystem_infrastructure_analysis.json#SCITECH-001.PARTNER-SPBPU",
+              "psb_technological_foundation_6tu_analysis.json#ten_principles.principles[3]",
+              "psb_global_trend_platform_analysis.json#platform_economy_model.digital_twin_role"
+            ]
+          },
+          {
+            "entity": "CML-Bench",
+            "references": [
+              "psb_regulatory_framework_analysis.json#psb_entry_points.EP-003",
+              "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model.platform_layer",
+              "psb_ecosystem_infrastructure_analysis.json#partnership_integration_points",
+              "psb_technological_foundation_6tu_analysis.json#target_state_2036.structural_elements[2]",
+              "psb_global_trend_platform_analysis.json#platform_economy_model.digital_twin_role.semantic_refs"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Мета-объекты",
+        "entities": [
+          {
+            "entity": "Соответствие мета-объектов глобального и российского уровней",
+            "references": [
+              "psb_regulatory_framework_analysis.json#meta_objects_mapping",
+              "psb_technological_foundation_6tu_analysis.json#meta_objects"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "usage_guidelines": {
+    "navigation": {
+      "entry_point_by_question": {
+        "regulatory_basis_questions": "Начинать с NODE-REGULATORY",
+        "why_questions": "Начинать с NODE-SHAREHOLDER",
+        "why_platform_questions": "Начинать с NODE-PLATFORM",
+        "how_to_design_questions": "Начинать с NODE-TECHBASE",
+        "what_resources_questions": "Начинать с NODE-FINANCE",
+        "how_implemented_questions": "Начинать с NODE-ECOSYSTEM",
+        "what_for_questions": "Начинать с NODE-CONTEXT"
+      }
+    },
+    "update_protocol": {
+      "adding_new_document": [
+        "1. Создать новый NODE в graph_nodes",
+        "2. Определить EDGES с существующими nodes (включая NODE-REGULATORY)",
+        "3. Добавить key_mappings для каждого edge",
+        "4. Обновить cross_document_queries",
+        "5. Расширить entity_cross_references",
+        "6. Обновить graph_topology и feedback_loops",
+        "7. Обновить версию в meta.changelog"
+      ],
+      "regulatory_changes": [
+        "1. Обновить NODE-REGULATORY с новыми документами",
+        "2. Пересмотреть все EDGE-REG-* связи",
+        "3. Обновить meta_objects_mapping в psb_regulatory_framework_analysis.json",
+        "4. Проверить актуальность psb_entry_points"
+      ]
+    }
+  }
+}

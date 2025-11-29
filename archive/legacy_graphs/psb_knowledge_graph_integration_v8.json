@@ -1,0 +1,343 @@
+{
+  "meta": {
+    "title": "Семантический граф знаний: Партнёрство ПСБ × СПбПУ",
+    "version": "8.0",
+    "update_date": "2025-11-28",
+    "analyst": "AI-эксперт по цифровым двойникам",
+    "description": "Интеграционный файл, описывающий семантические связи между всеми JSON-документами проекта",
+    "changelog": {
+      "v8.0": "Добавлен NODE-MARKET (Анализ рынка платформ ЦД) с 8 новыми связями, обновлена топология до 10 узлов и 44 связей",
+      "v7.0": "Добавлен NODE-SCI (Структурная схема СЦИ) с 7 новыми связями",
+      "v6.0": "Добавлен NODE-SOVEREIGNTY (Роль ПСБ в технологическом суверенитете)",
+      "v5.0": "Добавлен NODE-REGULATORY (Нормативный контекст)",
+      "v4.0": "Добавлен NODE-PLATFORM (Глобальный тренд: платформенная трансформация)",
+      "v3.0": "Добавлен NODE-TECHBASE (Архитектура 6ТУ)"
+    }
+  },
+
+  "graph_nodes": {
+    "total_nodes": 10,
+    "nodes": [
+      {
+        "id": "NODE-MARKET",
+        "file": "psb_dt_platforms_market_analysis.json",
+        "domain": "Рыночный и конкурентный анализ платформ ЦД",
+        "layer": "market_intelligence",
+        "key_concepts": [
+          "29 платформ из 7 стран",
+          "Рынок $16.6B",
+          "GAP-анализ CML-Bench",
+          "Технологические тренды 2025",
+          "Суверенная экосистема России"
+        ],
+        "primary_question": "КАКОВО конкурентное окружение CML-Bench и ГДЕ точки роста для партнёрства?",
+        "data_freshness": "2025-11"
+      },
+      {
+        "id": "NODE-SCI",
+        "file": "psb_sci_architecture_analysis.json",
+        "domain": "Методологическая архитектура Системного цифрового инжиниринга",
+        "layer": "methodological_framework",
+        "key_concepts": ["Шестиуровневая модель СЦИ", "Метафора молекулы-организм", "V&V-базис", "Жизненный цикл как ось интеграции", "Пять типов ЦД"],
+        "primary_question": "ЧТО такое СЦИ и КАК оно связывает ЦД с управлением ЖЦ?"
+      },
+      {
+        "id": "NODE-SOVEREIGNTY",
+        "file": "psb_strategic_sovereignty_role_analysis.json",
+        "domain": "Роль ПСБ в технологическом суверенитете",
+        "layer": "strategic_positioning",
+        "key_concepts": ["7 точек входа", "Финансово-технологический агент", "Стратегия львиной доли", "2 трлн ₽"],
+        "primary_question": "КАКОВА роль ПСБ в системе технологического суверенитета?"
+      },
+      {
+        "id": "NODE-REGULATORY",
+        "file": "psb_regulatory_framework_analysis.json",
+        "domain": "Нормативный контекст",
+        "layer": "regulatory_framework",
+        "key_concepts": ["523-ФЗ", "Указ №309", "Указ №145", "Мета-объекты", "Акторы"],
+        "primary_question": "В КАКОМ нормативном контексте действует партнёрство?"
+      },
+      {
+        "id": "NODE-SHAREHOLDER",
+        "file": "psb_shareholder_logic_analysis.json",
+        "domain": "Философия и логика акционера",
+        "layer": "strategic_foundation",
+        "key_concepts": ["Миссионный акционер", "Бессрочный горизонт", "5 принципов", "5 целевых состояний"],
+        "primary_question": "ЗАЧЕМ существует ПСБ?"
+      },
+      {
+        "id": "NODE-FINANCE",
+        "file": "psb_financial_architecture_analysis.json",
+        "domain": "Финансовая архитектура",
+        "layer": "resource_base",
+        "key_concepts": ["Трёхпоточная модель", "Инверсия дивидендов", "Н1.0", "Прибыль≠цель"],
+        "primary_question": "ЧЕМ обеспечивается деятельность ПСБ?"
+      },
+      {
+        "id": "NODE-ECOSYSTEM",
+        "file": "psb_ecosystem_infrastructure_analysis.json",
+        "domain": "Экосистема и инфраструктура",
+        "layer": "operational_platform",
+        "key_concepts": ["Государство в банке", "5 кластеров", "Quasi-министерские функции"],
+        "primary_question": "КАК ПСБ реализует свою миссию?"
+      },
+      {
+        "id": "NODE-CONTEXT",
+        "file": "psb_spbpu_context_analysis.json",
+        "domain": "Стратегический контекст партнёрства",
+        "layer": "application_domain",
+        "key_concepts": ["Технологический суверенитет", "СЦИ", "CML-Bench", "Трёхслойная модель"],
+        "primary_question": "ДЛЯ ЧЕГО создаётся партнёрство ПСБ×СПбПУ?"
+      },
+      {
+        "id": "NODE-TECHBASE",
+        "file": "psb_technological_foundation_6tu_analysis.json",
+        "domain": "Архитектура 6-го технологического уклада",
+        "layer": "architectural_blueprint",
+        "key_concepts": ["Мета-объекты", "10 принципов", "Policy-as-code", "SIL/MIL/VnV"],
+        "primary_question": "КАК проектировать системы 6ТУ?"
+      },
+      {
+        "id": "NODE-PLATFORM",
+        "file": "psb_global_trend_platform_analysis.json",
+        "domain": "Платформенная трансформация",
+        "layer": "strategic_transition",
+        "key_concepts": ["Сетевые эффекты", "8 ценностей", "Доверие как капитал", "ЦД как базовая единица"],
+        "primary_question": "ПОЧЕМУ ПСБ должен перейти к платформе?"
+      }
+    ]
+  },
+
+  "graph_edges": {
+    "total_edges": 44,
+    "new_edges_v8": [
+      {
+        "id": "EDGE-MARKET-001",
+        "from": "NODE-MARKET",
+        "to": "NODE-CONTEXT",
+        "relationship": "contextualizes_position",
+        "strength": "strong",
+        "description": "Рыночный анализ позиционирует CML-Bench в глобальном контексте трёхслойной модели"
+      },
+      {
+        "id": "EDGE-MARKET-002",
+        "from": "NODE-MARKET",
+        "to": "NODE-SCI",
+        "relationship": "benchmarks_methodology",
+        "strength": "strong",
+        "description": "СЦИ-методология сравнивается с подходами Siemens, Microsoft и других лидеров"
+      },
+      {
+        "id": "EDGE-MARKET-003",
+        "from": "NODE-MARKET",
+        "to": "NODE-TECHBASE",
+        "relationship": "identifies_technology_gaps",
+        "strength": "strong",
+        "description": "Выявление GAP'ов (LLM-Copilot, Low-code, MES) для 6ТУ-архитектуры"
+      },
+      {
+        "id": "EDGE-MARKET-004",
+        "from": "NODE-MARKET",
+        "to": "NODE-SOVEREIGNTY",
+        "relationship": "validates_sovereignty_path",
+        "strength": "strong",
+        "description": "Подтверждение стратегии технологического суверенитета через анализ санкционных рисков"
+      },
+      {
+        "id": "EDGE-MARKET-005",
+        "from": "NODE-MARKET",
+        "to": "NODE-PLATFORM",
+        "relationship": "provides_competitive_context",
+        "strength": "strong",
+        "description": "Контекст платформенной конкуренции: экосистемные хабы Siemens, Microsoft, Huawei"
+      },
+      {
+        "id": "EDGE-MARKET-006",
+        "from": "NODE-MARKET",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "maps_ecosystem_players",
+        "strength": "medium",
+        "description": "Картирование Cifra, Газпром Нефть, Росатом как партнёров экосистемы"
+      },
+      {
+        "id": "EDGE-MARKET-007",
+        "from": "NODE-MARKET",
+        "to": "NODE-FINANCE",
+        "relationship": "quantifies_opportunity",
+        "strength": "medium",
+        "description": "Оценка рынка $16.6B и потенциала роста для обоснования инвестиций"
+      },
+      {
+        "id": "EDGE-MARKET-008",
+        "from": "NODE-MARKET",
+        "to": "NODE-SHAREHOLDER",
+        "relationship": "validates_mission",
+        "strength": "medium",
+        "description": "Подтверждение миссионной роли ПСБ через анализ суверенных альтернатив"
+      }
+    ],
+    "existing_edges_count": 36
+  },
+
+  "graph_topology": {
+    "total_nodes": 10,
+    "total_edges": 44,
+    "central_cycles": [
+      {
+        "id": "CYCLE-MARKET-STRATEGY",
+        "path": "MARKET → CONTEXT → SCI → TECHBASE → PLATFORM → SOVEREIGNTY → MARKET",
+        "description": "Цикл валидации стратегии через рыночный анализ"
+      },
+      {
+        "id": "CYCLE-SCI",
+        "path": "SHAREHOLDER → CONTEXT → SCI → TECHBASE → PLATFORM → SHAREHOLDER",
+        "description": "Методологический цикл"
+      },
+      {
+        "id": "CYCLE-OPERATIONAL",
+        "path": "SHAREHOLDER → FINANCE → ECOSYSTEM → CONTEXT → SCI → TECHBASE → SHAREHOLDER",
+        "description": "Операционный цикл"
+      }
+    ],
+    "node_centrality": {
+      "NODE-CONTEXT": {
+        "degree": 9,
+        "role": "Центральный узел — связывает все домены"
+      },
+      "NODE-SCI": {
+        "degree": 8,
+        "role": "Методологическое ядро"
+      },
+      "NODE-MARKET": {
+        "degree": 8,
+        "role": "Внешний валидатор и источник бенчмаркинга"
+      },
+      "NODE-SOVEREIGNTY": {
+        "degree": 7,
+        "role": "Интегрирующий центр стратегии"
+      }
+    },
+    "market_node_significance": {
+      "inbound_edges": 0,
+      "outbound_edges": 8,
+      "role": "Внешний информационный ввод — обогащает граф рыночной аналитикой"
+    }
+  },
+
+  "file_inventory": {
+    "total_files": 11,
+    "files": [
+      {"filename": "psb_shareholder_logic_analysis.json", "node_id": "NODE-SHAREHOLDER", "size_kb": 122},
+      {"filename": "psb_financial_architecture_analysis.json", "node_id": "NODE-FINANCE", "size_kb": 40},
+      {"filename": "psb_ecosystem_infrastructure_analysis.json", "node_id": "NODE-ECOSYSTEM", "size_kb": 74},
+      {"filename": "psb_spbpu_context_analysis.json", "node_id": "NODE-CONTEXT", "size_kb": 41},
+      {"filename": "psb_technological_foundation_6tu_analysis.json", "node_id": "NODE-TECHBASE", "size_kb": 67},
+      {"filename": "psb_global_trend_platform_analysis.json", "node_id": "NODE-PLATFORM", "size_kb": 40},
+      {"filename": "psb_regulatory_framework_analysis.json", "node_id": "NODE-REGULATORY", "size_kb": 117},
+      {"filename": "psb_strategic_sovereignty_role_analysis.json", "node_id": "NODE-SOVEREIGNTY", "size_kb": 52},
+      {"filename": "psb_sci_architecture_analysis.json", "node_id": "NODE-SCI", "size_kb": 37},
+      {"filename": "psb_dt_platforms_market_analysis.json", "node_id": "NODE-MARKET", "size_kb": "~45"},
+      {"filename": "psb_knowledge_graph_integration_v8.json", "node_id": "GRAPH-META", "size_kb": "~8"}
+    ],
+    "new_files_v8": [
+      {"filename": "psb_dt_platforms_market_analysis.json", "node_id": "NODE-MARKET"},
+      {"filename": "psb_knowledge_graph_integration_v8.json", "node_id": "GRAPH-META"}
+    ]
+  },
+
+  "semantic_queries": {
+    "description": "Примеры запросов к семантическому графу",
+    "queries": [
+      {
+        "query": "Какие GAP'ы CML-Bench выявлены относительно Siemens?",
+        "path": "NODE-MARKET → russian_platforms_deep_dive.platforms[CML-Bench].competitive_positioning",
+        "answer_location": "psb_dt_platforms_market_analysis.json#competitive_positioning.vs_siemens_xcelerator"
+      },
+      {
+        "query": "Как закрыть MES-GAP CML-Bench?",
+        "path": "NODE-MARKET → lifecycle_coverage_analysis.cml_bench_positioning.closure_strategy",
+        "answer_location": "psb_dt_platforms_market_analysis.json#lifecycle_coverage_analysis.cml_bench_positioning"
+      },
+      {
+        "query": "Кто потенциальные партнёры для суверенной экосистемы?",
+        "path": "NODE-MARKET → russian_platforms_deep_dive.national_ecosystem_vision",
+        "answer_location": "psb_dt_platforms_market_analysis.json#national_ecosystem_vision.complementary_partners"
+      },
+      {
+        "query": "Какова роль ПСБ в национальной экосистеме ЦД?",
+        "path": "NODE-MARKET → national_ecosystem_vision.orchestrator → NODE-SOVEREIGNTY",
+        "answer_location": "Cross-reference: psb_dt_platforms_market_analysis.json + psb_strategic_sovereignty_role_analysis.json"
+      }
+    ]
+  },
+
+  "integration_matrix": {
+    "description": "Матрица связей NODE-MARKET с существующими узлами",
+    "matrix": [
+      {
+        "target_node": "NODE-CONTEXT",
+        "key_integration_points": [
+          "CML-Bench как ядро трёхслойной модели",
+          "Позиционирование в глобальном контексте"
+        ],
+        "semantic_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+      },
+      {
+        "target_node": "NODE-SCI",
+        "key_integration_points": [
+          "Lifecycle coverage vs 6-уровневая модель СЦИ",
+          "PINN/Hybrid DT как реализация L5-L6"
+        ],
+        "semantic_ref": "psb_sci_architecture_analysis.json#six_layer_model"
+      },
+      {
+        "target_node": "NODE-TECHBASE",
+        "key_integration_points": [
+          "Технологические тренды 2025 для 6ТУ",
+          "GAP-анализ для V&V-контура"
+        ],
+        "semantic_ref": "psb_technological_foundation_6tu_analysis.json#architectural_vision"
+      },
+      {
+        "target_node": "NODE-SOVEREIGNTY",
+        "key_integration_points": [
+          "Санкционные риски западных платформ",
+          "Суверенная альтернатива для ОПК"
+        ],
+        "semantic_ref": "psb_strategic_sovereignty_role_analysis.json#seven_entry_points"
+      },
+      {
+        "target_node": "NODE-PLATFORM",
+        "key_integration_points": [
+          "Экосистемные хабы конкурентов",
+          "Marketplace как тренд 2025"
+        ],
+        "semantic_ref": "psb_global_trend_platform_analysis.json#platform_value_proposition"
+      },
+      {
+        "target_node": "NODE-ECOSYSTEM",
+        "key_integration_points": [
+          "Cifra, ГПН, Росатом как партнёры",
+          "Консолидация российских платформ"
+        ],
+        "semantic_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model.deep_tech"
+      },
+      {
+        "target_node": "NODE-FINANCE",
+        "key_integration_points": [
+          "Оценка рынка для инвестиционного кейса",
+          "ROI-обоснование закрытия GAP'ов"
+        ],
+        "semantic_ref": "psb_financial_architecture_analysis.json#investment_framework"
+      },
+      {
+        "target_node": "NODE-SHAREHOLDER",
+        "key_integration_points": [
+          "Миссионная роль в суверенной экосистеме",
+          "Долгосрочный горизонт vs быстрые GAP-решения"
+        ],
+        "semantic_ref": "psb_shareholder_logic_analysis.json#shareholder_type"
+      }
+    ]
+  }
+}

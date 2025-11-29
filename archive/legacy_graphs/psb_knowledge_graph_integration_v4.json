@@ -1,0 +1,703 @@
+{
+  "meta": {
+    "title": "Семантический граф знаний: Партнёрство ПСБ × СПбПУ",
+    "version": "4.0",
+    "update_date": "2025-11-28",
+    "analyst": "AI-эксперт по цифровым двойникам",
+    "description": "Интеграционный файл, описывающий семантические связи между всеми JSON-документами проекта",
+    "changelog": {
+      "v4.0": "Добавлен NODE-PLATFORM (Глобальный тренд: платформенная трансформация) с 5 новыми связями, обновлена топология графа",
+      "v3.0": "Добавлен NODE-TECHBASE (Архитектура 6ТУ) с 5 связями",
+      "v2.0": "Базовая структура с 4 узлами"
+    }
+  },
+
+  "graph_nodes": {
+    "total_nodes": 6,
+    "nodes": [
+      {
+        "id": "NODE-SHAREHOLDER",
+        "file": "psb_shareholder_logic_analysis.json",
+        "domain": "Философия и логика акционера",
+        "layer": "strategic_foundation",
+        "key_concepts": ["Миссионный акционер", "Бессрочный горизонт", "Владение смыслом", "5 принципов", "5 целевых состояний"],
+        "primary_question": "ЗАЧЕМ существует ПСБ?"
+      },
+      {
+        "id": "NODE-FINANCE",
+        "file": "psb_financial_architecture_analysis.json",
+        "domain": "Финансовая архитектура",
+        "layer": "resource_base",
+        "key_concepts": ["Трёхпоточная модель", "Инверсия дивидендов", "Норматив Н1.0", "Резервы", "Прибыль≠цель"],
+        "primary_question": "ЧЕМ обеспечивается деятельность ПСБ?"
+      },
+      {
+        "id": "NODE-ECOSYSTEM",
+        "file": "psb_ecosystem_infrastructure_analysis.json",
+        "domain": "Экосистема и инфраструктура",
+        "layer": "operational_platform",
+        "key_concepts": ["Государство в банке", "5 кластеров", "Quasi-министерские функции", "Технологическая автаркия"],
+        "primary_question": "КАК ПСБ реализует свою миссию?"
+      },
+      {
+        "id": "NODE-CONTEXT",
+        "file": "psb_spbpu_context_analysis.json",
+        "domain": "Стратегический контекст партнёрства",
+        "layer": "application_domain",
+        "key_concepts": ["Технологический суверенитет", "СЦИ", "CML-Bench", "МКЦП ЦД", "Трёхслойная модель"],
+        "primary_question": "ДЛЯ ЧЕГО создаётся партнёрство ПСБ×СПбПУ?"
+      },
+      {
+        "id": "NODE-TECHBASE",
+        "file": "psb_technological_foundation_6tu_analysis.json",
+        "domain": "Архитектура 6-го технологического уклада",
+        "layer": "architectural_blueprint",
+        "key_concepts": ["Мета-объекты", "10 принципов 6ТУ", "Каскад мета-объектов", "Policy-as-code", "SIL/MIL/VnV", "Паспорт 6ТУ-проекта"],
+        "primary_question": "КАК проектировать системы 6-го технологического уклада?"
+      },
+      {
+        "id": "NODE-PLATFORM",
+        "file": "psb_global_trend_platform_analysis.json",
+        "domain": "Стратегическое обоснование платформенной трансформации",
+        "layer": "strategic_transition",
+        "key_concepts": ["Экосистемная платформа", "Сетевые эффекты", "8 ценностей платформы", "4 уровня предпосылок", "Доверие как капитал", "ЦД как базовая единица платформы"],
+        "primary_question": "ПОЧЕМУ ПСБ должен перейти к экосистемной платформе?"
+      }
+    ]
+  },
+
+  "graph_edges": {
+    "total_edges": 16,
+    "edges": [
+      {
+        "id": "EDGE-001",
+        "from": "NODE-SHAREHOLDER",
+        "to": "NODE-FINANCE",
+        "relationship": "determines",
+        "direction": "unidirectional",
+        "semantics": "Мотивация акционера определяет финансовую модель",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "MOT-FRAMEWORK",
+            "to_ref": "BM-001",
+            "description": "Философия «прибыль как инструмент, не цель» → трёхпоточная модель прибыльности"
+          },
+          {
+            "from_ref": "EXP-NAT-001",
+            "to_ref": "STREAM-GOZ",
+            "description": "Ожидание стратегического суверенитета → обеспечение финансирования ОПК"
+          },
+          {
+            "from_ref": "ownership_horizon.бессрочный",
+            "to_ref": "DIV-001",
+            "description": "Бессрочность владения → инверсия дивидендов (докапитализация вместо выплат)"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-002",
+        "from": "NODE-FINANCE",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "funds",
+        "direction": "unidirectional",
+        "semantics": "Финансовые механизмы обеспечивают ресурсную базу для кластеров экосистемы",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "STREAM-GOZ",
+            "to_ref": "CLUSTER-FINANCE",
+            "description": "70% портфеля ГОЗ → финансово-расчётный кластер"
+          },
+          {
+            "from_ref": "STREAM-COMMISSION",
+            "to_ref": "CLUSTER-IT",
+            "description": "Комиссионный бизнес требует ИТ-инфраструктуры"
+          },
+          {
+            "from_ref": "CAP-001",
+            "to_ref": "CLUSTER-SCITECH",
+            "description": "Достаточность капитала → венчурные инвестиции в deep-tech"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-003",
+        "from": "NODE-ECOSYSTEM",
+        "to": "NODE-CONTEXT",
+        "relationship": "enables",
+        "direction": "unidirectional",
+        "semantics": "Экосистема создаёт инфраструктурные условия для реализации стратегии партнёрства",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "CLUSTER-SCITECH.PARTNER-SPBPU",
+            "to_ref": "ROLE-PSB-001",
+            "description": "Партнёрство с СПбПУ реализует роль финтех-брокера"
+          },
+          {
+            "from_ref": "CLUSTER-INST",
+            "to_ref": "PROGRAM-MKCP",
+            "description": "Институциональный кластер обеспечивает нормативную базу для МКЦП ЦД"
+          },
+          {
+            "from_ref": "CLUSTER-IT",
+            "to_ref": "LAYER-PLATFORM",
+            "description": "ИТ-кластер создаёт вычислительную инфраструктуру для CML-Bench"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-004",
+        "from": "NODE-CONTEXT",
+        "to": "NODE-SHAREHOLDER",
+        "relationship": "validates",
+        "direction": "unidirectional",
+        "semantics": "Стратегический контекст подтверждает и конкретизирует логику акционера",
+        "strength": "medium",
+        "key_mappings": [
+          {
+            "from_ref": "level_0_national_interest",
+            "to_ref": "MOT-001",
+            "description": "Устойчивое развитие = цивилизационная субъектность"
+          },
+          {
+            "from_ref": "CH-003",
+            "to_ref": "constraints.geopolitical",
+            "description": "Санкционное давление как контекст ограничений"
+          },
+          {
+            "from_ref": "psb_value_proposition",
+            "to_ref": "success_metrics",
+            "description": "Ценностное предложение как метрика успеха акционера"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-005",
+        "from": "NODE-SHAREHOLDER",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "shapes",
+        "direction": "unidirectional",
+        "semantics": "Логика акционера формирует архитектуру и ценности экосистемы",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "MOT-001.цивилизационная_субъектность",
+            "to_ref": "ECO-PRINCIPLE.суверенитет",
+            "description": "Цивилизационная субъектность → технологическая автаркия экосистемы"
+          },
+          {
+            "from_ref": "EXP-NAT-002.общество_гармоничного_развития",
+            "to_ref": "CLUSTER-SOCIAL",
+            "description": "Ожидание развития человека → социально-кадровый кластер"
+          },
+          {
+            "from_ref": "BEHAV-004.координация_и_доверие",
+            "to_ref": "CLUSTER-INST",
+            "description": "Координирующее поведение → институциональный кластер"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-006",
+        "from": "NODE-FINANCE",
+        "to": "NODE-CONTEXT",
+        "relationship": "enables",
+        "direction": "unidirectional",
+        "semantics": "Финансовые возможности обеспечивают реализацию стратегии партнёрства",
+        "strength": "medium",
+        "key_mappings": [
+          {
+            "from_ref": "CAP-001",
+            "to_ref": "KPI-003",
+            "description": "Достаточность капитала → финансирование НИОКР"
+          },
+          {
+            "from_ref": "business_model.innovation_financing",
+            "to_ref": "PROGRAM-MKCP",
+            "description": "Инновационное финансирование → программа МКЦП ЦД"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-007",
+        "from": "NODE-TECHBASE",
+        "to": "NODE-SHAREHOLDER",
+        "relationship": "operationalizes_vision",
+        "direction": "unidirectional",
+        "semantics": "Архитектура 6ТУ операционализирует стратегическое видение акционера",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "ten_principles.principles[0]",
+            "to_ref": "shareholder_motivation.civilizational_subjectivity",
+            "description": "Северная звезда (NBICS-платформы) ↔ цивилизационная субъектность"
+          },
+          {
+            "from_ref": "target_state_2036",
+            "to_ref": "target_states",
+            "description": "Целевая картина 2036 конкретизирует целевые состояния акционера"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-008",
+        "from": "NODE-TECHBASE",
+        "to": "NODE-FINANCE",
+        "relationship": "requires_instruments",
+        "direction": "unidirectional",
+        "semantics": "Реализация 6ТУ требует специальных финансовых инструментов диффузии",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "psb_action_plan.actions[5]",
+            "to_ref": "business_model.profit_streams",
+            "description": "Инструменты диффузии (тех-облигации, MRL-гарантии) → новые источники дохода"
+          },
+          {
+            "from_ref": "psb_action_plan.actions[1]",
+            "to_ref": "credit_process",
+            "description": "Портфельные ворота (траншевое финансирование) → модификация кредитного процесса"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-009",
+        "from": "NODE-TECHBASE",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "extends_clusters",
+        "direction": "unidirectional",
+        "semantics": "6ТУ расширяет функции кластеров экосистемы новыми мета-объектами",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "meta_objects.cascade",
+            "to_ref": "quasi_ministerial_functions",
+            "description": "11-уровневый каскад → точки входа через quasi-министерские функции"
+          },
+          {
+            "from_ref": "target_state_2036.structural_elements[2]",
+            "to_ref": "CLUSTER-SCITECH.PARTNER-SPBPU",
+            "description": "Полигонные сети SIL/MIL/VnV → развитие партнёрства с СПбПУ"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-010",
+        "from": "NODE-TECHBASE",
+        "to": "NODE-CONTEXT",
+        "relationship": "concretizes_methodology",
+        "direction": "unidirectional",
+        "semantics": "6ТУ конкретизирует методологию СЦИ и роль CML-Bench",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "ten_principles.principles[3]",
+            "to_ref": "solution_architecture.three_layer_model.technological_layer",
+            "description": "ЦД как базовая единица управления ↔ технологический слой трёхслойной модели"
+          },
+          {
+            "from_ref": "psb_action_plan.actions[0]",
+            "to_ref": "psb_value_proposition",
+            "description": "Паспорт 6ТУ-проекта реализует ценностное предложение ПСБ"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-011",
+        "from": "NODE-CONTEXT",
+        "to": "NODE-TECHBASE",
+        "relationship": "provides_use_cases",
+        "direction": "unidirectional",
+        "semantics": "Контекст партнёрства предоставляет use cases для применения архитектуры 6ТУ",
+        "strength": "medium",
+        "key_mappings": [
+          {
+            "from_ref": "partnership_framework",
+            "to_ref": "integration_with_partnership",
+            "description": "Рамка партнёрства → точки синергии с 6ТУ"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-012",
+        "from": "NODE-SHAREHOLDER",
+        "to": "NODE-PLATFORM",
+        "relationship": "motivates",
+        "direction": "unidirectional",
+        "semantics": "Миссия миссионного акционера обосновывает необходимость платформенной трансформации",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "MOT-001.civilizational_subjectivity",
+            "to_ref": "PREREQ-GLOBAL",
+            "description": "Цивилизационная субъектность → глобальная предпосылка платформы"
+          },
+          {
+            "from_ref": "target_states.trust_node",
+            "to_ref": "VAL-005",
+            "description": "Целевое состояние «узел доверия» → доверие как капитал платформы"
+          },
+          {
+            "from_ref": "shareholder_principles.trust_and_participation",
+            "to_ref": "8VAL-001",
+            "description": "Принципы акционера → 8 ценностей платформенной модели"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-013",
+        "from": "NODE-PLATFORM",
+        "to": "NODE-FINANCE",
+        "relationship": "requires_transformation",
+        "direction": "unidirectional",
+        "semantics": "Платформенная модель требует трансформации финансовой архитектуры",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "VAL-002.network_effect",
+            "to_ref": "business_model",
+            "description": "Сетевой эффект → новая модель прибыльности (масштабирование без роста издержек)"
+          },
+          {
+            "from_ref": "platform_economy_model.digital_twin_role",
+            "to_ref": "credit_process",
+            "description": "ЦД как актив → паспорт 6ТУ-проекта в кредитном цикле"
+          },
+          {
+            "from_ref": "ANTI-001.scalability_crisis",
+            "to_ref": "CAP-001",
+            "description": "Кризис масштабируемости линейной модели → потребность в новых инструментах"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-014",
+        "from": "NODE-PLATFORM",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "transforms",
+        "direction": "unidirectional",
+        "semantics": "Платформенная модель трансформирует кластеры экосистемы в сетевую архитектуру",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "8VAL-001.values",
+            "to_ref": "cluster_model",
+            "description": "8 ценностей платформы → трансформация логики 5 кластеров"
+          },
+          {
+            "from_ref": "VAL-006.modularity",
+            "to_ref": "CLUSTER-IT",
+            "description": "Модульность и открытые интерфейсы → требования к ИТ-кластеру"
+          },
+          {
+            "from_ref": "VAL-003.complexity_management",
+            "to_ref": "CLUSTER-SCITECH",
+            "description": "Управление сложностью через соавторство → deep-tech кластер"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-015",
+        "from": "NODE-CONTEXT",
+        "to": "NODE-PLATFORM",
+        "relationship": "provides_core",
+        "direction": "unidirectional",
+        "semantics": "Контекст партнёрства предоставляет технологическое ядро для платформы",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "solution_architecture.three_layer_model",
+            "to_ref": "platform_economy_model.digital_twin_role",
+            "description": "Трёхслойная модель СЦИ-ЦД-CML-Bench → технологическое ядро платформы"
+          },
+          {
+            "from_ref": "psb_value_proposition",
+            "to_ref": "psb_platform_role",
+            "description": "Ценностное предложение ПСБ → роль платформенного интегратора"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-016",
+        "from": "NODE-TECHBASE",
+        "to": "NODE-PLATFORM",
+        "relationship": "operationalizes",
+        "direction": "unidirectional",
+        "semantics": "Архитектура 6ТУ операционализируется через платформенную модель",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "ten_principles",
+            "to_ref": "8VAL-001",
+            "description": "10 принципов 6ТУ ↔ 8 ценностей платформы (взаимное соответствие)"
+          },
+          {
+            "from_ref": "meta_objects.cascade",
+            "to_ref": "platform_economy_model",
+            "description": "Каскад мета-объектов → архитектурный каркас платформы"
+          },
+          {
+            "from_ref": "psb_action_plan",
+            "to_ref": "psb_platform_role.architectural_task",
+            "description": "7 действий ПСБ → задачи платформенного интегратора"
+          }
+        ]
+      }
+    ]
+  },
+
+  "graph_topology": {
+    "id": "TOPO-001",
+    "full_cycle": "SHAREHOLDER → FINANCE → ECOSYSTEM → CONTEXT → TECHBASE → PLATFORM → SHAREHOLDER",
+    "layer_hierarchy": [
+      {
+        "layer": "strategic_foundation",
+        "nodes": ["NODE-SHAREHOLDER"],
+        "description": "Базовый слой — философия и мотивация"
+      },
+      {
+        "layer": "resource_base",
+        "nodes": ["NODE-FINANCE"],
+        "description": "Ресурсный слой — финансовое обеспечение"
+      },
+      {
+        "layer": "operational_platform",
+        "nodes": ["NODE-ECOSYSTEM"],
+        "description": "Операционный слой — инфраструктура и кластеры"
+      },
+      {
+        "layer": "application_domain",
+        "nodes": ["NODE-CONTEXT"],
+        "description": "Прикладной слой — партнёрство и контекст"
+      },
+      {
+        "layer": "architectural_blueprint",
+        "nodes": ["NODE-TECHBASE"],
+        "description": "Архитектурный слой — принципы и мета-объекты 6ТУ"
+      },
+      {
+        "layer": "strategic_transition",
+        "nodes": ["NODE-PLATFORM"],
+        "description": "Трансформационный слой — обоснование и модель платформы"
+      }
+    ],
+    "feedback_loops": [
+      {
+        "loop": "SHAREHOLDER → PLATFORM → SHAREHOLDER",
+        "description": "Платформенные метрики валидируют достижение целей акционера"
+      },
+      {
+        "loop": "TECHBASE → PLATFORM → FINANCE → TECHBASE",
+        "description": "Принципы 6ТУ → платформа → финансовые инструменты → реализация принципов"
+      },
+      {
+        "loop": "CONTEXT → PLATFORM → ECOSYSTEM → CONTEXT",
+        "description": "Партнёрство → платформа → трансформация кластеров → развитие партнёрства"
+      }
+    ]
+  },
+
+  "cross_document_queries": {
+    "id": "CDQ-001",
+    "description": "Типовые запросы, требующие навигации по нескольким документам (обновлено)",
+    "queries": [
+      {
+        "question": "Как миссия акционера связана с переходом к платформе?",
+        "path": "NODE-SHAREHOLDER → NODE-PLATFORM.prerequisites_analysis → NODE-PLATFORM.eight_platform_values",
+        "explanation": "Миссия определяет глобальную предпосылку, которая обосновывает 8 ценностей платформы"
+      },
+      {
+        "question": "Почему линейная финансовая модель не подходит для 6ТУ?",
+        "path": "NODE-PLATFORM.anti_thesis → NODE-FINANCE.business_model → NODE-TECHBASE.psb_action_plan",
+        "explanation": "Кризис масштабируемости линейной модели требует новых инструментов диффузии из 6ТУ"
+      },
+      {
+        "question": "Как доверие становится капиталом платформы?",
+        "path": "NODE-SHAREHOLDER.target_states.trust_node → NODE-PLATFORM.VAL-005 → NODE-ECOSYSTEM.integral_model",
+        "explanation": "Целевое состояние «узел доверия» реализуется как главный капитал платформы через интегральную модель"
+      },
+      {
+        "question": "Как ЦД связывает все документы?",
+        "path": "NODE-CONTEXT.three_layer_model → NODE-TECHBASE.ten_principles[3] → NODE-PLATFORM.platform_economy_model.digital_twin_role",
+        "explanation": "ЦД — технологический слой (CONTEXT), базовая единица управления (TECHBASE), ядро платформы (PLATFORM)"
+      },
+      {
+        "question": "Какие финансовые инструменты нужны для платформы?",
+        "path": "NODE-PLATFORM.psb_platform_role → NODE-TECHBASE.psb_action_plan → NODE-FINANCE.business_model",
+        "explanation": "Роль платформенного интегратора → 7 действий ПСБ → тех-облигации, MRL-гарантии, траншевое финансирование"
+      },
+      {
+        "question": "Как 5 кластеров трансформируются в сетевую архитектуру?",
+        "path": "NODE-ECOSYSTEM.cluster_model → NODE-PLATFORM.eight_platform_values → NODE-PLATFORM.updated_graph_topology",
+        "explanation": "5 кластеров преобразуются через 8 ценностей платформы в сетевую архитектуру"
+      }
+    ]
+  },
+
+  "entity_cross_references": {
+    "description": "Сводная таблица перекрёстных ссылок между ключевыми сущностями (v4)",
+    "categories": [
+      {
+        "category": "Роли и функции ПСБ",
+        "entities": [
+          {
+            "entity": "Финтех-брокер",
+            "references": [
+              "psb_shareholder_logic_analysis.json#target_states[0]",
+              "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_4_psb_role",
+              "psb_ecosystem_infrastructure_analysis.json#CLUSTER-SCITECH",
+              "psb_technological_foundation_6tu_analysis.json#psb_action_plan",
+              "psb_global_trend_platform_analysis.json#psb_platform_role"
+            ]
+          },
+          {
+            "entity": "Quasi-министерство",
+            "references": [
+              "psb_shareholder_logic_analysis.json#shareholder_behavior.operational_psb",
+              "psb_ecosystem_infrastructure_analysis.json#quasi_ministerial_functions",
+              "psb_technological_foundation_6tu_analysis.json#meta_objects.cascade"
+            ]
+          },
+          {
+            "entity": "Платформенный интегратор",
+            "references": [
+              "psb_global_trend_platform_analysis.json#psb_platform_role",
+              "psb_global_trend_platform_analysis.json#prerequisites_analysis.PREREQ-INTERNAL"
+            ]
+          },
+          {
+            "entity": "Создатель правил технологической игры",
+            "references": [
+              "psb_global_trend_platform_analysis.json#psb_platform_role.strategic_position",
+              "psb_global_trend_platform_analysis.json#prerequisites_analysis.PREREQ-INTERNAL.unique_position"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Финансовые механизмы",
+        "entities": [
+          {
+            "entity": "Инверсия дивидендов",
+            "references": [
+              "psb_shareholder_logic_analysis.json#shareholder_type.ownership_horizon",
+              "psb_financial_architecture_analysis.json#dividend_architecture",
+              "psb_ecosystem_infrastructure_analysis.json#quasi_ministerial_functions.financial_inversion"
+            ]
+          },
+          {
+            "entity": "Инструменты диффузии 6ТУ",
+            "references": [
+              "psb_technological_foundation_6tu_analysis.json#psb_action_plan.actions[5]",
+              "psb_technological_foundation_6tu_analysis.json#target_state_2036.structural_elements[4]",
+              "psb_financial_architecture_analysis.json#business_model.profit_streams",
+              "psb_global_trend_platform_analysis.json#integration_with_knowledge_graph.new_edges.EDGE-PLATFORM-002"
+            ]
+          },
+          {
+            "entity": "Сетевые эффекты vs линейный рост",
+            "references": [
+              "psb_global_trend_platform_analysis.json#eight_platform_values.VAL-002",
+              "psb_global_trend_platform_analysis.json#anti_thesis.scalability_crisis"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Платформенные концепции",
+        "entities": [
+          {
+            "entity": "8 ценностей платформы",
+            "references": [
+              "psb_global_trend_platform_analysis.json#eight_platform_values"
+            ]
+          },
+          {
+            "entity": "4 уровня предпосылок",
+            "references": [
+              "psb_global_trend_platform_analysis.json#prerequisites_analysis"
+            ]
+          },
+          {
+            "entity": "Доверие как капитал",
+            "references": [
+              "psb_global_trend_platform_analysis.json#eight_platform_values.VAL-005",
+              "psb_shareholder_logic_analysis.json#shareholder_principles.trust_and_participation",
+              "psb_shareholder_logic_analysis.json#target_states.trust_node"
+            ]
+          },
+          {
+            "entity": "Экосистема первична",
+            "references": [
+              "psb_global_trend_platform_analysis.json#platform_economy_model.core_principle",
+              "psb_technological_foundation_6tu_analysis.json#ten_principles.principles[7]"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Технологические компоненты",
+        "entities": [
+          {
+            "entity": "Цифровые двойники (ЦД)",
+            "references": [
+              "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model.technological_layer",
+              "psb_ecosystem_infrastructure_analysis.json#SCITECH-001.PARTNER-SPBPU",
+              "psb_technological_foundation_6tu_analysis.json#ten_principles.principles[3]",
+              "psb_global_trend_platform_analysis.json#platform_economy_model.digital_twin_role"
+            ]
+          },
+          {
+            "entity": "CML-Bench",
+            "references": [
+              "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model.platform_layer",
+              "psb_ecosystem_infrastructure_analysis.json#partnership_integration_points",
+              "psb_technological_foundation_6tu_analysis.json#target_state_2036.structural_elements[2]",
+              "psb_global_trend_platform_analysis.json#platform_economy_model.digital_twin_role.semantic_refs"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "usage_guidelines": {
+    "navigation": {
+      "entry_point_by_question": {
+        "why_questions": "Начинать с NODE-SHAREHOLDER",
+        "why_platform_questions": "Начинать с NODE-PLATFORM",
+        "how_to_design_questions": "Начинать с NODE-TECHBASE",
+        "what_resources_questions": "Начинать с NODE-FINANCE",
+        "how_implemented_questions": "Начинать с NODE-ECOSYSTEM",
+        "what_for_questions": "Начинать с NODE-CONTEXT"
+      }
+    },
+    "update_protocol": {
+      "adding_new_document": [
+        "1. Создать новый NODE в graph_nodes",
+        "2. Определить EDGES с существующими nodes",
+        "3. Добавить key_mappings для каждого edge",
+        "4. Обновить cross_document_queries",
+        "5. Расширить entity_cross_references",
+        "6. Обновить graph_topology и feedback_loops",
+        "7. Обновить версию в meta.changelog"
+      ]
+    },
+    "node_platform_specific": {
+      "primary_use_cases": [
+        "Обоснование необходимости платформенной трансформации",
+        "Анализ разрыва между линейной и сетевой моделями",
+        "Определение роли ПСБ как платформенного интегратора",
+        "Связывание принципов акционера с операционной моделью"
+      ],
+      "key_artifacts": [
+        "4 уровня предпосылок перехода",
+        "8 ценностей экосистемной платформы",
+        "Антитезис: результат НЕ-перехода",
+        "Роль ПСБ в платформенной архитектуре"
+      ]
+    }
+  }
+}

@@ -1,0 +1,849 @@
+{
+  "meta": {
+    "document_title": "Структурная схема Системного цифрового инжиниринга (СЦИ)",
+    "source_document": "Приложение 3 к Док 4 — Структурная схема СЦИ",
+    "analysis_date": "2025-11-28",
+    "version": "1.0",
+    "analyst": "AI-эксперт по цифровым двойникам",
+    "document_type": "Методологическая архитектура СЦИ",
+    "semantic_network": {
+      "position_in_graph": "NODE-SCI",
+      "layer": "methodological_framework",
+      "primary_question": "ЧТО такое СЦИ и КАК оно связывает цифровые двойники с управлением жизненным циклом?",
+      "primary_dependencies": [
+        {
+          "file": "psb_spbpu_context_analysis.json",
+          "node_id": "NODE-CONTEXT",
+          "relationship": "concretizes",
+          "description": "СЦИ конкретизирует методологический слой трёхуровневой модели партнёрства"
+        },
+        {
+          "file": "psb_technological_foundation_6tu_analysis.json",
+          "node_id": "NODE-TECHBASE",
+          "relationship": "provides_methodology_for",
+          "description": "СЦИ обеспечивает методологическую основу для 6ТУ-архитектуры"
+        },
+        {
+          "file": "psb_shareholder_logic_analysis.json",
+          "node_id": "NODE-SHAREHOLDER",
+          "relationship": "operationalizes_vision",
+          "description": "СЦИ операционализирует стратегическое видение технологического суверенитета"
+        },
+        {
+          "file": "psb_global_trend_platform_analysis.json",
+          "node_id": "NODE-PLATFORM",
+          "relationship": "enables_platform",
+          "description": "СЦИ создаёт методологическую основу для платформенной трансформации"
+        }
+      ],
+      "graph_topology": {
+        "full_cycle": "SHAREHOLDER → CONTEXT → SCI → TECHBASE → PLATFORM → SHAREHOLDER",
+        "sci_role": "Методологический мост между стратегией и технической реализацией"
+      },
+      "referenced_by": [
+        {
+          "from_file": "psb_dt_platforms_market_analysis.json",
+          "from_node": "NODE-MARKET",
+          "relationship": "benchmarks_methodology",
+          "description": "СЦИ-методология сравнивается с подходами мировых лидеров"
+        },
+        {
+          "from_file": "psb_dt_platforms_market_analysis.json",
+          "from_node": "NODE-MARKET",
+          "from_path": "russian_platforms_deep_dive.platforms[4]",
+          "full_ref": "psb_sci_architecture_analysis.json#six_layer_model.layers[5]"
+        },
+        {
+          "from_file": "psb_dt_platforms_market_analysis.json",
+          "from_node": "NODE-MARKET",
+          "from_path": "technology_trends_analysis",
+          "full_ref": "psb_sci_architecture_analysis.json#technology_trends"
+        },
+        {
+          "from_file": "psb_dt_platforms_market_analysis.json",
+          "from_node": "NODE-MARKET",
+          "from_path": "lifecycle_coverage_analysis",
+          "full_ref": "psb_sci_architecture_analysis.json#six_layer_model"
+        },
+        {
+          "from_file": "psb_cmlbench_technology_context_analysis.json",
+          "from_node": "NODE-CMLBENCH",
+          "relationship": "defines_methodological_framework",
+          "description": "СЦИ задаёт методологический каркас для CML-Bench"
+        },
+        {
+          "from_file": "psb_cmlbench_technology_context_analysis.json",
+          "from_node": "NODE-CMLBENCH",
+          "from_path": "executive_summary",
+          "full_ref": "psb_sci_architecture_analysis.json#six_layer_model.layers[5]"
+        },
+        {
+          "from_file": "psb_cmlbench_technology_context_analysis.json",
+          "from_node": "NODE-CMLBENCH",
+          "from_path": "platform_identity",
+          "full_ref": "psb_sci_architecture_analysis.json#layer_relationships"
+        },
+        {
+          "from_file": "psb_cmlbench_technology_context_analysis.json",
+          "from_node": "NODE-CMLBENCH",
+          "from_path": "enterprise_systems_chain",
+          "full_ref": "psb_sci_architecture_analysis.json#six_layer_model.layers"
+        },
+        {
+          "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+          "from_node": "NODE-AGENDA",
+          "from_path": "timeline_analysis.events[0]",
+          "full_ref": "psb_sci_architecture_analysis.json#six_layer_model.layers.L6_VnV_infrastructure"
+        },
+        {
+          "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+          "from_node": "NODE-AGENDA",
+          "from_path": "timeline_analysis.events[3]",
+          "full_ref": "psb_sci_architecture_analysis.json#six_layer_model"
+        },
+        {
+          "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+          "from_node": "NODE-AGENDA",
+          "from_path": "institutional_framework.inter_departmental_council",
+          "full_ref": "psb_sci_architecture_analysis.json#six_layer_model.layers.L6_VnV_infrastructure"
+        },
+        {
+          "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+          "from_node": "NODE-AGENDA",
+          "from_path": "requirements_analysis.technology_backlog",
+          "full_ref": "psb_sci_architecture_analysis.json#six_layer_model.layers"
+        },
+        {
+          "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+          "from_node": "NODE-AGENDA",
+          "from_path": "requirements_analysis.vv_methodology",
+          "full_ref": "psb_sci_architecture_analysis.json#six_layer_model.layers.L6_VnV_infrastructure"
+        },
+        {
+          "from_file": "psb_mkcp_program_analysis.json",
+          "from_node": "NODE-MKCP",
+          "from_path": "goals_and_objectives",
+          "full_ref": "psb_sci_architecture_analysis.json#six_layer_model.layers"
+        },
+        {
+          "from_file": "psb_mkcp_program_analysis.json",
+          "from_node": "NODE-MKCP",
+          "from_path": "work_directions",
+          "full_ref": "psb_sci_architecture_analysis.json#six_layer_model"
+        },
+        {
+          "from_file": "psb_mkcp_program_analysis.json",
+          "from_node": "NODE-MKCP",
+          "from_path": "key_definitions",
+          "full_ref": "psb_sci_architecture_analysis.json#six_layer_model.layers"
+        }
+      ]
+    },
+    "node_id": "NODE-SCI",
+    "layer": "methodological_framework"
+  },
+  "executive_summary": {
+    "id": "EXEC-SCI-001",
+    "core_concept": "Системный цифровой инжиниринг как новая инженерная парадигма",
+    "definition": "СЦИ — методология и технологическая практика, выстраивающая управление жизненным циклом сложных технико-экономических систем на основе системного мышления, цифровых моделей, цифровых платформ и единого информационного контура",
+    "key_paradigm_shift": {
+      "from": "Проектирование отдельных изделий в изолированных системах",
+      "to": "Управление жизненным циклом на мета-уровне через единый цифровой контур"
+    },
+    "core_metaphor": {
+      "digital_twins": "Молекулы — базовые единицы информации и управления",
+      "sci": "Архитектура и организм — система, собирающая молекулы в единое целое"
+    },
+    "value_effects": [
+      "Предиктивность — предсказание поведения систем до реализации",
+      "Виртуальная отладка — тестирование в цифровой среде",
+      "Удалённое управление — синхронизация физического и цифрового"
+    ],
+    "semantic_refs": {
+      "links_to": [
+        "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model.methodological_layer",
+        "psb_technological_foundation_6tu_analysis.json#architectural_vision.digital_twin_as_unit",
+        "psb_shareholder_logic_analysis.json#shareholder_motivation.civilizational_subjectivity"
+      ]
+    }
+  },
+  "six_layer_model": {
+    "id": "SLM-001",
+    "title": "Шестиуровневая архитектура СЦИ",
+    "description": "Иерархическая структура, связывающая стратегические цели с операционными инструментами",
+    "layers": [
+      {
+        "id": "LAYER-SCI-L1",
+        "level": 1,
+        "name": "Цели / Логика Акционера",
+        "type": "strategic_foundation",
+        "content": {
+          "primary_goals": [
+            "Технологический суверенитет",
+            "Технологическое лидерство"
+          ],
+          "outcomes": [
+            "Превосходящие мировые аналоги по ключевым функциональным и стоимостным характеристикам",
+            "Обеспечивающие участие на глобальных рынках",
+            "Способствующие созданию новых рынков",
+            "Обеспечивающие независимость в стратегически значимых сферах деятельности общества и государства"
+          ]
+        },
+        "psb_role": "Миссионный акционер, задающий долгосрочное видение технологического суверенитета",
+        "semantic_refs": [
+          "psb_shareholder_logic_analysis.json#shareholder_type",
+          "psb_strategic_sovereignty_role_analysis.json#strategic_positioning"
+        ]
+      },
+      {
+        "id": "LAYER-SCI-L2",
+        "level": 2,
+        "name": "Ценностные эффекты",
+        "type": "value_delivery",
+        "content": {
+          "effects": [
+            {
+              "id": "VE-001",
+              "name": "Предиктивность",
+              "description": "Способность предсказывать поведение систем до физической реализации"
+            },
+            {
+              "id": "VE-002",
+              "name": "Виртуальная отладка",
+              "description": "Тестирование и оптимизация решений в цифровой среде"
+            },
+            {
+              "id": "VE-003",
+              "name": "Удалённое управление",
+              "description": "Синхронизация физического объекта с цифровым представлением"
+            }
+          ]
+        },
+        "psb_role": "Измеримые бизнес-результаты для оценки эффективности финансирования",
+        "semantic_refs": [
+          "psb_financial_architecture_analysis.json#kpi_framework",
+          "psb_spbpu_context_analysis.json#strategic_framework.level_3_measurable_kpi"
+        ]
+      },
+      {
+        "id": "LAYER-SCI-L3",
+        "level": 3,
+        "name": "Методологии и практики",
+        "type": "methodological_framework",
+        "content": {
+          "components": [
+            {
+              "id": "MP-001",
+              "name": "Системное мышление",
+              "description": "Архитектурные подходы, проектирование на уровне «целого»"
+            },
+            {
+              "id": "MP-002",
+              "name": "Правила и регламенты управления ЖЦ",
+              "description": "Формализованные процессы управления жизненным циклом"
+            },
+            {
+              "id": "MP-003",
+              "name": "Инженерные методики",
+              "description": "MBSE, симуляции, виртуальные и натурные испытания"
+            },
+            {
+              "id": "MP-004",
+              "name": "Исследования и моделирование",
+              "description": "Научное обоснование инженерных решений"
+            },
+            {
+              "id": "MP-005",
+              "name": "Инженерное проектирование",
+              "description": "Формализация требований, архитектуры, поведения"
+            },
+            {
+              "id": "MP-006",
+              "name": "SLA стандарты сервиса и обслуживания",
+              "description": "Управление качеством на этапе эксплуатации"
+            }
+          ]
+        },
+        "spbpu_role": "Центр компетенций НТИ, ИППТ — методологический лидер",
+        "semantic_refs": [
+          "psb_spbpu_context_analysis.json#partnership_assets.spbpu",
+          "psb_technological_foundation_6tu_analysis.json#ten_principles"
+        ]
+      },
+      {
+        "id": "LAYER-SCI-L4",
+        "level": 4,
+        "name": "Интеграция",
+        "type": "organizational_integration",
+        "content": {
+          "description": "Организация совместной деятельности в единой управляемой экосистеме технологического развития",
+          "integration_domains": [
+            {
+              "id": "ID-001",
+              "name": "Люди",
+              "description": "Компетенции и навыки участников экосистемы"
+            },
+            {
+              "id": "ID-002",
+              "name": "Знания",
+              "description": "Базы данных, базы знаний, онтологии"
+            },
+            {
+              "id": "ID-003",
+              "name": "Процессы",
+              "description": "Регламенты, workflows, управление изменениями"
+            },
+            {
+              "id": "ID-004",
+              "name": "Инфраструктура",
+              "description": "IT-системы, платформы, оборудование"
+            }
+          ],
+          "management_components": [
+            "Портфель проектов и инициатив, которыми организация управляет как единым целым",
+            "Дорожные карты развития",
+            "Управление экосистемой, рисками и развитием"
+          ]
+        },
+        "psb_spbpu_synergy": "Зона совместных методологических разработок",
+        "semantic_refs": [
+          "psb_ecosystem_infrastructure_analysis.json#cluster_model",
+          "psb_global_trend_platform_analysis.json#platform_value_proposition"
+        ]
+      },
+      {
+        "id": "LAYER-SCI-L5",
+        "level": 5,
+        "name": "Цифровой двойник как артефакт",
+        "type": "digital_twin_taxonomy",
+        "content": {
+          "dt_types": [
+            {
+              "id": "DT-TYPE-001",
+              "name": "Цифровой двойник изделия",
+              "description": "Динамическая модель конкретного физического продукта",
+              "lifecycle_functions": {
+                "niokr": "Проверка замыслов и расчёт параметров до физической реализации",
+                "production": "Оптимизация технологий, контроль качества",
+                "exploitation": "Мониторинг, предиктивное обслуживание",
+                "modernization": "Прогнозирование последствий изменений"
+              }
+            },
+            {
+              "id": "DT-TYPE-002",
+              "name": "Цифровой двойник процесса",
+              "description": "Модель технологического или бизнес-процесса"
+            },
+            {
+              "id": "DT-TYPE-003",
+              "name": "Цифровой двойник системы",
+              "description": "Модель комплексной технико-экономической системы"
+            },
+            {
+              "id": "DT-TYPE-004",
+              "name": "Цифровой двойник организации",
+              "description": "Модель организационной структуры и процессов"
+            },
+            {
+              "id": "DT-TYPE-005",
+              "name": "Цифровой двойник среды",
+              "description": "Модель внешней среды функционирования объекта"
+            }
+          ],
+          "technology_definition": "Технология цифровых двойников — формализованная и воспроизводимая система организации совместной деятельности, представляющая собой организационно-технический процесс синхронного сосуществования физического объекта и его постоянно актуализируемой цифровой инженерно-аналитической модели"
+        },
+        "platform_realization": "CML-Bench как технологическая платформа",
+        "semantic_refs": [
+          "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model.platform_layer",
+          "psb_technological_foundation_6tu_analysis.json#architectural_vision.digital_twin_as_unit"
+        ]
+      },
+      {
+        "id": "LAYER-SCI-L6",
+        "level": 6,
+        "name": "Валидационный / верификационный базис как инфраструктура",
+        "type": "vnv_infrastructure",
+        "content": {
+          "physical_environment": [
+            {
+              "id": "VNV-PHYS-001",
+              "name": "Испытательные стенды",
+              "description": "Имитация работы компонентов и подсистем"
+            },
+            {
+              "id": "VNV-PHYS-002",
+              "name": "Испытательные полигоны",
+              "description": "Интегрированные среды для проверки взаимодействия систем"
+            }
+          ],
+          "virtual_environment": [
+            {
+              "id": "VNV-VIRT-001",
+              "name": "Виртуальные испытательные стенды",
+              "description": "Цифровая имитация компонентов и подсистем"
+            },
+            {
+              "id": "VNV-VIRT-002",
+              "name": "Виртуальные испытательные полигоны",
+              "description": "Цифровые среды для комплексных испытаний (например, беспилотные автомобили в цифровом городе)"
+            }
+          ],
+          "vnv_purpose": "Обеспечение верификации цифровых двойников и замыкание контура «проектирование → тестирование → доработка» в цифровой среде для ускорения инновационного цикла"
+        },
+        "spbpu_role": "CML-Bench как ядро верификационной инфраструктуры",
+        "psb_role": "Финансирование полигонных пакетов с оплатой по факту прохождения",
+        "semantic_refs": [
+          "psb_technological_foundation_6tu_analysis.json#target_state_2036.structural_elements[2]",
+          "psb_spbpu_context_analysis.json#partnership_assets"
+        ]
+      }
+    ]
+  },
+  "lifecycle_integration": {
+    "id": "LCI-001",
+    "title": "Интеграция СЦИ с жизненным циклом системы/изделия",
+    "lifecycle_phases": [
+      {
+        "id": "LC-PHASE-001",
+        "name": "НИОКР",
+        "kpis": [
+          "Стоимость разработки",
+          "Стоимость изменений",
+          "Удельная трудоёмкость/материалоёмкость",
+          "Импортонезависимость по критическим компонентам",
+          "Качество",
+          "Скорость вывода на рынок"
+        ],
+        "dt_function": "Проверка замыслов и расчёт параметров до физической реализации",
+        "psb_role": "Финансирование НИОКР с привязкой к TRL-уровням"
+      },
+      {
+        "id": "LC-PHASE-002",
+        "name": "Производство",
+        "kpis": [
+          "Стоимость владения",
+          "Надёжность",
+          "Экология"
+        ],
+        "dt_function": "Оптимизация технологий, контроль качества",
+        "psb_role": "Проектное финансирование производственных линий"
+      },
+      {
+        "id": "LC-PHASE-003",
+        "name": "Поставка/логистика и обучение",
+        "kpis": [
+          "Качество",
+          "Безопасность",
+          "Комплаенс"
+        ],
+        "dt_function": "Симуляция логистических цепочек",
+        "psb_role": "Торговое финансирование, факторинг"
+      },
+      {
+        "id": "LC-PHASE-004",
+        "name": "Ввод в эксплуатацию",
+        "dt_function": "Валидация соответствия требованиям"
+      },
+      {
+        "id": "LC-PHASE-005",
+        "name": "Эксплуатация и сервис",
+        "dt_function": "Мониторинг, предиктивное обслуживание",
+        "psb_role": "Сервисные контракты, лизинг оборудования"
+      },
+      {
+        "id": "LC-PHASE-006",
+        "name": "Модернизация",
+        "dt_function": "Прогнозирование последствий изменений",
+        "psb_role": "Финансирование модернизационных программ"
+      },
+      {
+        "id": "LC-PHASE-007",
+        "name": "Вывод из эксплуатации"
+      },
+      {
+        "id": "LC-PHASE-008",
+        "name": "Утилизация"
+      }
+    ],
+    "bidirectional_data_exchange": {
+      "physical_to_virtual": {
+        "id": "P2V-001",
+        "name": "Телеметрия → Обновление данных",
+        "description": "Поток данных от физического объекта к цифровому двойнику"
+      },
+      "virtual_to_physical": [
+        {
+          "id": "V2P-001",
+          "name": "Настройки моделей → Проектирование параметров",
+          "description": "Передача оптимизированных параметров от модели к производству"
+        },
+        {
+          "id": "V2P-002",
+          "name": "Физико-математический анализ → Эксплуатационные решения",
+          "description": "Рекомендации по эксплуатации на основе моделирования"
+        }
+      ]
+    },
+    "semantic_refs": [
+      "psb_technological_foundation_6tu_analysis.json#psb_actions",
+      "psb_financial_architecture_analysis.json#business_model.profit_streams"
+    ]
+  },
+  "data_knowledge_management": {
+    "id": "DKM-001",
+    "title": "Управление данными и знаниями в СЦИ",
+    "components": [
+      {
+        "id": "DKM-COMP-001",
+        "name": "Модели MBSE",
+        "content": [
+          "Требования",
+          "Архитектура",
+          "Поведение"
+        ],
+        "description": "Model-Based Systems Engineering как основа формализации"
+      },
+      {
+        "id": "DKM-COMP-002",
+        "name": "Трассируемые сквозные базы данных и знаний",
+        "properties": [
+          "Трассируемость — связь между требованиями, решениями и результатами",
+          "Сквозная интеграция — единое пространство данных"
+        ]
+      },
+      {
+        "id": "DKM-COMP-003",
+        "name": "Модели онтологий",
+        "description": "Семантическое описание предметной области"
+      },
+      {
+        "id": "DKM-COMP-004",
+        "name": "Журнал изменений",
+        "description": "История всех модификаций для аудита и анализа"
+      },
+      {
+        "id": "DKM-COMP-005",
+        "name": "Платформы управления данными и знаниями",
+        "description": "Инфраструктура для хранения и обработки"
+      },
+      {
+        "id": "DKM-COMP-006",
+        "name": "Единый цифровой контур: платформенная экосистема",
+        "description": "Интегрированная среда для всех участников"
+      }
+    ],
+    "verification_validation": {
+      "verification": {
+        "definition": "Проверка требований/архитектуры/методик проектирования",
+        "environment": "Виртуальная среда"
+      },
+      "validation": {
+        "definition": "Проведение испытаний / эксплуатация",
+        "environment": "Физическая среда"
+      }
+    },
+    "semantic_refs": [
+      "psb_technological_foundation_6tu_analysis.json#success_conditions",
+      "psb_ecosystem_infrastructure_analysis.json#cluster_model.CLUSTER-IT"
+    ]
+  },
+  "sci_dt_relationship": {
+    "id": "SDR-001",
+    "title": "Связь СЦИ с технологией цифровых двойников",
+    "core_thesis": "Если цифровой двойник — это динамическая модель конкретного объекта, то СЦИ обеспечивает методологию, инфраструктуру и процессы их создания и интеграции",
+    "hierarchical_relationship": {
+      "sci_as_meta": {
+        "definition": "СЦИ является управленческим механизмом, задающим правила создания, развития и применения цифровых двойников на всём жизненном цикле",
+        "functions": [
+          "Методология",
+          "Инфраструктура",
+          "Процессы"
+        ]
+      },
+      "dt_as_instrument": {
+        "definition": "Цифровой двойник — «кирпичик» цифрового контура, рабочий инструмент и коммуникационная модель",
+        "properties": [
+          "Динамическая модель",
+          "Синхронная с физическим объектом",
+          "Основа для технико-экономических процессов"
+        ]
+      }
+    },
+    "architectural_integration": {
+      "description": "СЦИ задаёт архитектуру, в которой цифровые двойники отдельных изделий включаются в цифровые платформы управления жизненным циклом сложных комплексов",
+      "outcome": "Согласованность проектирования, производства, эксплуатации и модернизации"
+    },
+    "metaphor": {
+      "dt": "Молекулы",
+      "sci": "Архитектура и организм, собирающий молекулы в единую систему"
+    },
+    "semantic_refs": [
+      "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model",
+      "psb_technological_foundation_6tu_analysis.json#architectural_vision.digital_twin_as_unit"
+    ]
+  },
+  "technology_components": {
+    "id": "TC-001",
+    "title": "Технологические компоненты СЦИ",
+    "material_components": [
+      "Компетенции",
+      "Оборудование",
+      "Инфраструктура"
+    ],
+    "information_components": [
+      "Цифровые модели объектов — систем — процессов",
+      "Цифровые данные",
+      "Алгоритмы расчета и анализа"
+    ],
+    "management_components": [
+      "Стягивание проектирования, производства и сервиса в единый цифровой контур"
+    ],
+    "gost_standard": {
+      "id": "GOST-001",
+      "name": "ГОСТ Р 57700.37-2021",
+      "subject": "Цифровые двойники изделий",
+      "spbpu_role": "СПбПУ — соавтор стандарта"
+    }
+  },
+  "psb_integration_points": {
+    "id": "PIP-001",
+    "title": "Точки интеграции ПСБ в архитектуру СЦИ",
+    "integration_points": [
+      {
+        "id": "IP-001",
+        "sci_layer": "L1 — Цели / Логика Акционера",
+        "psb_function": "Финансирование жизненного цикла",
+        "description": "Траншевое финансирование, привязанное к этапам ЖЦ и TRL-уровням",
+        "instruments": [
+          "Проектное финансирование",
+          "Тэг-облигации",
+          "MRL-гарантии"
+        ]
+      },
+      {
+        "id": "IP-002",
+        "sci_layer": "L2 — Ценностные эффекты",
+        "psb_function": "Управление рисками",
+        "description": "Предиктивная аналитика на основе данных цифровых двойников",
+        "instruments": [
+          "Риск-скоринг на основе ЦД",
+          "Страхование технологических рисков"
+        ]
+      },
+      {
+        "id": "IP-003",
+        "sci_layer": "L4 — Интеграция",
+        "psb_function": "Платформенная интеграция",
+        "description": "Связь банковских систем (АБС, ML-платформа) с CML-Bench",
+        "instruments": [
+          "API-интеграции",
+          "Общие пространства данных"
+        ]
+      },
+      {
+        "id": "IP-004",
+        "sci_layer": "L5 — Цифровой двойник",
+        "psb_function": "Валидация активов",
+        "description": "Цифровой двойник как обеспечение / актив для оценки",
+        "instruments": [
+          "ЦД как залоговый актив",
+          "Оценка стоимости на основе модели"
+        ]
+      },
+      {
+        "id": "IP-005",
+        "sci_layer": "L6 — V&V базис",
+        "psb_function": "Финансирование верификации",
+        "description": "Оплата по факту прохождения полигонных испытаний",
+        "instruments": [
+          "Полигонные пакеты",
+          "Milestone-based financing"
+        ]
+      }
+    ],
+    "semantic_refs": [
+      "psb_strategic_sovereignty_role_analysis.json#entry_points_matrix",
+      "psb_financial_architecture_analysis.json#business_model"
+    ]
+  },
+  "spbpu_competencies": {
+    "id": "SC-001",
+    "title": "Компетенции СПбПУ в контексте СЦИ",
+    "key_assets": [
+      {
+        "id": "SA-001",
+        "name": "CML-Bench",
+        "type": "platform",
+        "leader": "А.И. Боровков",
+        "role_in_sci": "Технологическая платформа для реализации L5-L6 уровней СЦИ"
+      },
+      {
+        "id": "SA-002",
+        "name": "Центр компетенций НТИ «Новые производственные технологии»",
+        "type": "organization",
+        "role_in_sci": "Методологический лидер L3 уровня"
+      },
+      {
+        "id": "SA-003",
+        "name": "ГОСТ Р 57700.37-2021",
+        "type": "standard",
+        "role_in_sci": "Нормативная основа для L5 уровня",
+        "spbpu_contribution": "Соавторство"
+      },
+      {
+        "id": "SA-004",
+        "name": "ПИШ «Цифровой инжиниринг»",
+        "type": "education",
+        "role_in_sci": "Подготовка кадров для L3-L4 уровней"
+      }
+    ],
+    "unique_capabilities": [
+      "Соединение науки, инженерии и управления в единую практику",
+      "Экспертиза мирового уровня в области цифровых двойников",
+      "Апробация методологии на реальных промышленных данных"
+    ]
+  },
+  "conclusions_and_recommendations": {
+    "id": "CR-001",
+    "strategic_conclusions": [
+      {
+        "id": "CR-CONCL-001",
+        "conclusion": "СЦИ является методологическим мостом между стратегическим видением технологического суверенитета и операционной реализацией через цифровые двойники",
+        "implication_for_partnership": "Партнёрство ПСБ×СПбПУ получает структурированную методологию для измерения прогресса"
+      },
+      {
+        "id": "CR-CONCL-002",
+        "conclusion": "Шестиуровневая модель СЦИ обеспечивает полную трассируемость от целей до инструментов",
+        "implication_for_partnership": "ПСБ может привязывать финансирование к конкретным уровням и метрикам"
+      },
+      {
+        "id": "CR-CONCL-003",
+        "conclusion": "СЦИ — это не только инженерия, но и управление развитием",
+        "implication_for_partnership": "Расширяет роль ПСБ от финансирования к соуправлению технологическим развитием"
+      },
+      {
+        "id": "CR-CONCL-004",
+        "conclusion": "Метафора «молекулы и организм» точно описывает иерархию ЦД→СЦИ",
+        "implication_for_partnership": "Помогает структурировать коммуникацию со стейкхолдерами"
+      }
+    ],
+    "recommended_actions": [
+      {
+        "id": "CR-REC-001",
+        "action": "Интегрировать шестиуровневую модель СЦИ в кредитный процесс ПСБ",
+        "responsible": "ПСБ — Дирекция рисков",
+        "timeline": "Q1 2025",
+        "kpi": "Доля проектов с SCI-скорингом"
+      },
+      {
+        "id": "CR-REC-002",
+        "action": "Разработать совместный глоссарий СЦИ для партнёрства",
+        "responsible": "СПбПУ — ИППТ + ПСБ — Цифровой бизнес",
+        "timeline": "Q1 2025",
+        "kpi": "Количество согласованных терминов"
+      },
+      {
+        "id": "CR-REC-003",
+        "action": "Создать пилотный проект с полным покрытием L1-L6",
+        "responsible": "Совместная рабочая группа",
+        "timeline": "2025",
+        "kpi": "Прохождение всех уровней V&V"
+      }
+    ]
+  },
+  "graph_integration": {
+    "id": "GI-001",
+    "title": "Интеграция в граф знаний партнёрства",
+    "new_node": {
+      "id": "NODE-SCI",
+      "file": "psb_sci_architecture_analysis.json",
+      "domain": "Методологическая архитектура СЦИ",
+      "layer": "methodological_framework",
+      "key_concepts": [
+        "Шестиуровневая модель СЦИ",
+        "Метафора молекулы-организм",
+        "Двусторонний обмен данными",
+        "V&V-базис",
+        "Жизненный цикл как ось интеграции"
+      ],
+      "primary_question": "ЧТО такое СЦИ и КАК оно связывает ЦД с управлением ЖЦ?"
+    },
+    "new_edges": [
+      {
+        "id": "EDGE-SCI-001",
+        "from": "NODE-SCI",
+        "to": "NODE-CONTEXT",
+        "relationship": "concretizes",
+        "direction": "unidirectional",
+        "semantics": "СЦИ конкретизирует методологический слой трёхуровневой модели",
+        "strength": "strong"
+      },
+      {
+        "id": "EDGE-SCI-002",
+        "from": "NODE-SCI",
+        "to": "NODE-TECHBASE",
+        "relationship": "provides_methodology",
+        "direction": "unidirectional",
+        "semantics": "СЦИ обеспечивает методологическую основу для 6ТУ",
+        "strength": "strong"
+      },
+      {
+        "id": "EDGE-SCI-003",
+        "from": "NODE-SCI",
+        "to": "NODE-SHAREHOLDER",
+        "relationship": "operationalizes_vision",
+        "direction": "unidirectional",
+        "semantics": "СЦИ операционализирует видение технологического суверенитета",
+        "strength": "strong"
+      },
+      {
+        "id": "EDGE-SCI-004",
+        "from": "NODE-SCI",
+        "to": "NODE-PLATFORM",
+        "relationship": "enables_platform",
+        "direction": "unidirectional",
+        "semantics": "СЦИ создаёт методологическую основу для платформенной трансформации",
+        "strength": "strong"
+      },
+      {
+        "id": "EDGE-SCI-005",
+        "from": "NODE-SCI",
+        "to": "NODE-FINANCE",
+        "relationship": "defines_funding_logic",
+        "direction": "unidirectional",
+        "semantics": "СЦИ определяет логику привязки финансирования к этапам ЖЦ",
+        "strength": "strong"
+      },
+      {
+        "id": "EDGE-SCI-006",
+        "from": "NODE-SCI",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "structures_integration",
+        "direction": "unidirectional",
+        "semantics": "СЦИ структурирует интеграцию компонентов экосистемы",
+        "strength": "strong"
+      },
+      {
+        "id": "EDGE-SCI-007",
+        "from": "NODE-SCI",
+        "to": "NODE-REGULATORY",
+        "relationship": "aligns_with_standards",
+        "direction": "bidirectional",
+        "semantics": "СЦИ соответствует ГОСТ Р 57700.37-2021 и формирует требования к нормативной базе",
+        "strength": "medium"
+      }
+    ],
+    "updated_topology": {
+      "total_nodes": 9,
+      "total_edges": 36,
+      "new_cycle": "SHAREHOLDER → CONTEXT → SCI → TECHBASE → PLATFORM → SHAREHOLDER"
+    }
+  },
+  "narrative_summary": {
+    "version": "1.0",
+    "format": "markdown",
+    "target": "portal_v2",
+    "word_count": 129,
+    "content": "## Системный Цифровой Инжиниринг: методологический фундамент\n\nСЦИ (Системный Цифровой Инжиниринг) — методология, разработанная СПбПУ, которая определяет подход к созданию и использованию цифровых двойников на всех уровнях.\n\n### Шестиуровневая модель\n\nL1: Стратегические цели → L2: Целевые эффекты → L3: Методология → L4: Интеграционная архитектура → L5: ЦД-артефакты → L6: V&V-базис. Каждый уровень имеет свои метрики, инструменты и ответственных.\n\n### Метафора: молекулы и организм\n\nЦифровые двойники — это молекулы. СЦИ — это организм, который задаёт правила их взаимодействия, метаболизм данных, целостность системы. Без СЦИ цифровые двойники остаются разрозненными элементами.\n\n### Связь с CML-Bench\n\nCML-Bench реализует L5 (ЦД-артефакты) и L6 (V&V-базис) методологии СЦИ. Платформа — техническое воплощение методологических принципов.\n\n### Ценность для партнёрства\n\nСЦИ обеспечивает методологическую целостность: все цифровые двойники в экосистеме партнёрства создаются по единым принципам, что гарантирует интероперабельность и верифицируемость."
+  }
+}

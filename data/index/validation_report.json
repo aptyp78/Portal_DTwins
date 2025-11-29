@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "title": "Отчёт валидации JSON-корпуса — Фаза 2",
+    "generated": "2025-11-29",
+    "schema_version": "1.0"
+  },
+  "summary": {
+    "files_validated": 13,
+    "files_valid": 13,
+    "files_with_errors": 0
+  },
+  "files": [
+    {
+      "file": "psb_cmlbench_technology_context_analysis.json",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "file": "psb_dt_platforms_market_analysis.json",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "file": "psb_ecosystem_infrastructure_analysis.json",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "file": "psb_financial_architecture_analysis.json",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "file": "psb_global_trend_platform_analysis.json",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "file": "psb_mkcp_program_analysis.json",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "file": "psb_regulatory_framework_analysis.json",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "file": "psb_sci_architecture_analysis.json",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "file": "psb_shareholder_logic_analysis.json",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "file": "psb_spbpu_context_analysis.json",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "file": "psb_state_agenda_dt_timeline_analysis.json",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "file": "psb_strategic_sovereignty_role_analysis.json",
+      "status": "VALID",
+      "errors": []
+    },
+    {
+      "file": "psb_technological_foundation_6tu_analysis.json",
+      "status": "VALID",
+      "errors": []
+    }
+  ]
+}

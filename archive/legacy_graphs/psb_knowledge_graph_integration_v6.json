@@ -1,0 +1,589 @@
+{
+  "meta": {
+    "title": "Семантический граф знаний: Партнёрство ПСБ × СПбПУ",
+    "version": "6.0",
+    "update_date": "2025-11-28",
+    "analyst": "AI-эксперт по цифровым двойникам",
+    "description": "Интеграционный файл, описывающий семантические связи между всеми JSON-документами проекта",
+    "changelog": {
+      "v6.0": "Добавлен NODE-SOVEREIGNTY (Роль ПСБ в технологическом суверенитете) с 7 новыми связями, обновлена топология графа до 8 узлов и 29 связей",
+      "v5.0": "Добавлен NODE-REGULATORY (Нормативный контекст перехода на новую технологическую основу) с 6 новыми связями",
+      "v4.0": "Добавлен NODE-PLATFORM (Глобальный тренд: платформенная трансформация)",
+      "v3.0": "Добавлен NODE-TECHBASE (Архитектура 6ТУ)",
+      "v2.0": "Базовая структура с 4 узлами"
+    }
+  },
+
+  "graph_nodes": {
+    "total_nodes": 8,
+    "nodes": [
+      {
+        "id": "NODE-SOVEREIGNTY",
+        "file": "psb_strategic_sovereignty_role_analysis.json",
+        "domain": "Роль ПСБ в технологическом суверенитете",
+        "layer": "strategic_positioning",
+        "key_concepts": [
+          "Трёхконтурная архитектура позиционирования",
+          "7 точек входа в государственный контур",
+          "Финансово-технологический агент",
+          "Стратегия «львиной доли»",
+          "Трансформация из банка в платформу",
+          "Целевой объём 2 трлн ₽"
+        ],
+        "primary_question": "КАКОВА роль ПСБ в системе технологического суверенитета России?"
+      },
+      {
+        "id": "NODE-REGULATORY",
+        "file": "psb_regulatory_framework_analysis.json",
+        "domain": "Нормативный контекст перехода на новую технологическую основу",
+        "layer": "regulatory_framework",
+        "key_concepts": [
+          "Шестислойная архитектура нормативов",
+          "523-ФЗ",
+          "Указ №309",
+          "Указ №145",
+          "Мета-объекты в нормативной базе",
+          "7 точек входа ПСБ",
+          "Акторы технологического развития"
+        ],
+        "primary_question": "В КАКОМ нормативном контексте действует партнёрство ПСБ×СПбПУ?"
+      },
+      {
+        "id": "NODE-SHAREHOLDER",
+        "file": "psb_shareholder_logic_analysis.json",
+        "domain": "Философия и логика акционера",
+        "layer": "strategic_foundation",
+        "key_concepts": ["Миссионный акционер", "Бессрочный горизонт", "Владение смыслом", "5 принципов", "5 целевых состояний"],
+        "primary_question": "ЗАЧЕМ существует ПСБ?"
+      },
+      {
+        "id": "NODE-FINANCE",
+        "file": "psb_financial_architecture_analysis.json",
+        "domain": "Финансовая архитектура",
+        "layer": "resource_base",
+        "key_concepts": ["Трёхпоточная модель", "Инверсия дивидендов", "Норматив Н1.0", "Резервы", "Прибыль≠цель"],
+        "primary_question": "ЧЕМ обеспечивается деятельность ПСБ?"
+      },
+      {
+        "id": "NODE-ECOSYSTEM",
+        "file": "psb_ecosystem_infrastructure_analysis.json",
+        "domain": "Экосистема и инфраструктура",
+        "layer": "operational_platform",
+        "key_concepts": ["Государство в банке", "5 кластеров", "Quasi-министерские функции", "Технологическая автаркия"],
+        "primary_question": "КАК ПСБ реализует свою миссию?"
+      },
+      {
+        "id": "NODE-CONTEXT",
+        "file": "psb_spbpu_context_analysis.json",
+        "domain": "Стратегический контекст партнёрства",
+        "layer": "application_domain",
+        "key_concepts": ["Технологический суверенитет", "СЦИ", "CML-Bench", "МКЦП ЦД", "Трёхслойная модель"],
+        "primary_question": "ДЛЯ ЧЕГО создаётся партнёрство ПСБ×СПбПУ?"
+      },
+      {
+        "id": "NODE-TECHBASE",
+        "file": "psb_technological_foundation_6tu_analysis.json",
+        "domain": "Архитектура 6-го технологического уклада",
+        "layer": "architectural_blueprint",
+        "key_concepts": ["Мета-объекты", "10 принципов 6ТУ", "Каскад мета-объектов", "Policy-as-code", "SIL/MIL/VnV", "Паспорт 6ТУ-проекта"],
+        "primary_question": "КАК проектировать системы 6-го технологического уклада?"
+      },
+      {
+        "id": "NODE-PLATFORM",
+        "file": "psb_global_trend_platform_analysis.json",
+        "domain": "Стратегическое обоснование платформенной трансформации",
+        "layer": "strategic_transition",
+        "key_concepts": ["Экосистемная платформа", "Сетевые эффекты", "8 ценностей платформы", "4 уровня предпосылок", "Доверие как капитал", "ЦД как базовая единица платформы"],
+        "primary_question": "ПОЧЕМУ ПСБ должен перейти к экосистемной платформе?"
+      }
+    ]
+  },
+
+  "graph_edges": {
+    "total_edges": 29,
+    "edges": [
+      {
+        "id": "EDGE-SOV-001",
+        "from": "NODE-SOVEREIGNTY",
+        "to": "NODE-REGULATORY",
+        "relationship": "derives_from",
+        "direction": "unidirectional",
+        "semantics": "Роль ПСБ производна от нормативного контекста",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "regulatory_contour.document_hierarchy",
+            "to_ref": "regulatory_architecture.layers",
+            "description": "Каскад документов определяет легитимность роли"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-SOV-002",
+        "from": "NODE-SOVEREIGNTY",
+        "to": "NODE-SHAREHOLDER",
+        "relationship": "implements_mission",
+        "direction": "unidirectional",
+        "semantics": "Стратегическое позиционирование реализует миссию акционера",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "strategic_positioning.transformation_trajectory",
+            "to_ref": "transformation_trajectory",
+            "description": "От исполнителя к держателю поля"
+          },
+          {
+            "from_ref": "strategic_positioning.long_game",
+            "to_ref": "shareholder_behavior.infinite_horizon",
+            "description": "20+ лет горизонт планирования"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-SOV-003",
+        "from": "NODE-SOVEREIGNTY",
+        "to": "NODE-FINANCE",
+        "relationship": "resources_role",
+        "direction": "bidirectional",
+        "semantics": "Финансовая архитектура обеспечивает ресурсы для роли; роль определяет требования к финансам",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "financial_contour.psb_target",
+            "to_ref": "zamysel_financial_model",
+            "description": "2 трлн ₽ целевой объём"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-SOV-004",
+        "from": "NODE-SOVEREIGNTY",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "leverages_infrastructure",
+        "direction": "unidirectional",
+        "semantics": "Позиционирование опирается на экосистемную инфраструктуру",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "state_contour.psb_position_in_state_contour",
+            "to_ref": "cluster_model",
+            "description": "5 кластеров как операционная основа роли"
+          },
+          {
+            "from_ref": "unique_position_analysis.uniqueness_factors",
+            "to_ref": "quasi_ministerial_functions",
+            "description": "Уникальность через quasi-министерские функции"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-SOV-005",
+        "from": "NODE-SOVEREIGNTY",
+        "to": "NODE-CONTEXT",
+        "relationship": "enables_partnership",
+        "direction": "unidirectional",
+        "semantics": "Позиционирование создаёт основу для партнёрства с СПбПУ",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "spbpu_partnership_synergy",
+            "to_ref": "partnership_value",
+            "description": "Синергия ПСБ и СПбПУ"
+          },
+          {
+            "from_ref": "entry_points_matrix.entry_points[6]",
+            "to_ref": "three_layer_model",
+            "description": "СПбПУ как точка входа через СЦИ"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-SOV-006",
+        "from": "NODE-SOVEREIGNTY",
+        "to": "NODE-TECHBASE",
+        "relationship": "operationalizes_through",
+        "direction": "unidirectional",
+        "semantics": "Роль операционализируется через архитектуру 6ТУ",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "integration_with_6tu.connection_points",
+            "to_ref": "psb_actions",
+            "description": "7 точек интеграции с 6ТУ"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-SOV-007",
+        "from": "NODE-SOVEREIGNTY",
+        "to": "NODE-PLATFORM",
+        "relationship": "justifies_platform_model",
+        "direction": "unidirectional",
+        "semantics": "Роль в суверенитете обосновывает платформенную модель",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "financial_technology_framework.platform_ecosystem",
+            "to_ref": "platform_value_proposition",
+            "description": "Платформа как инструмент масштабирования роли"
+          },
+          {
+            "from_ref": "conclusions_and_recommendations.strategic_conclusions[3]",
+            "to_ref": "network_effects",
+            "description": "2 трлн ₽ требуют сетевых эффектов"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-REG-001",
+        "from": "NODE-REGULATORY",
+        "to": "NODE-SHAREHOLDER",
+        "relationship": "legitimizes",
+        "direction": "unidirectional",
+        "semantics": "Нормативная база легитимизирует роль миссионного акционера",
+        "strength": "strong",
+        "key_mappings": [
+          {
+            "from_ref": "DOC-400.strategic_priorities",
+            "to_ref": "MOT-001.civilizational_subjectivity",
+            "description": "Стратегия нацбезопасности → цивилизационная субъектность как мотивация"
+          }
+        ]
+      },
+      {
+        "id": "EDGE-REG-002",
+        "from": "NODE-REGULATORY",
+        "to": "NODE-FINANCE",
+        "relationship": "enables_instruments",
+        "direction": "unidirectional",
+        "semantics": "Нормативная база создаёт правовую основу для финансовых инструментов 6ТУ",
+        "strength": "strong"
+      },
+      {
+        "id": "EDGE-REG-003",
+        "from": "NODE-REGULATORY",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "structures_actors",
+        "direction": "unidirectional",
+        "semantics": "Нормативная база определяет роли акторов экосистемы",
+        "strength": "strong"
+      },
+      {
+        "id": "EDGE-REG-004",
+        "from": "NODE-REGULATORY",
+        "to": "NODE-CONTEXT",
+        "relationship": "frames_partnership",
+        "direction": "unidirectional",
+        "semantics": "Нормативная база задаёт рамку для партнёрства в контуре наука-технологии-производство",
+        "strength": "strong"
+      },
+      {
+        "id": "EDGE-REG-005",
+        "from": "NODE-REGULATORY",
+        "to": "NODE-TECHBASE",
+        "relationship": "implements_principles",
+        "direction": "unidirectional",
+        "semantics": "Мета-объекты 6ТУ реализуют нормативные требования",
+        "strength": "strong"
+      },
+      {
+        "id": "EDGE-REG-006",
+        "from": "NODE-REGULATORY",
+        "to": "NODE-PLATFORM",
+        "relationship": "justifies_transition",
+        "direction": "unidirectional",
+        "semantics": "Нормативная база создаёт предпосылки для платформенной трансформации",
+        "strength": "medium"
+      },
+      {
+        "id": "EDGE-001",
+        "from": "NODE-SHAREHOLDER",
+        "to": "NODE-FINANCE",
+        "relationship": "constrains",
+        "direction": "unidirectional",
+        "semantics": "Логика акционера задаёт ограничения финансовой модели",
+        "strength": "strong"
+      },
+      {
+        "id": "EDGE-002",
+        "from": "NODE-SHAREHOLDER",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "shapes",
+        "direction": "unidirectional",
+        "semantics": "Миссия акционера определяет структуру экосистемы",
+        "strength": "strong"
+      },
+      {
+        "id": "EDGE-003",
+        "from": "NODE-FINANCE",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "enables",
+        "direction": "unidirectional",
+        "semantics": "Финансовая модель обеспечивает функционирование экосистемы",
+        "strength": "strong"
+      },
+      {
+        "id": "EDGE-004",
+        "from": "NODE-ECOSYSTEM",
+        "to": "NODE-CONTEXT",
+        "relationship": "provides_capability",
+        "direction": "unidirectional",
+        "semantics": "Экосистема создаёт capability для партнёрства",
+        "strength": "strong"
+      },
+      {
+        "id": "EDGE-005",
+        "from": "NODE-CONTEXT",
+        "to": "NODE-SHAREHOLDER",
+        "relationship": "validates",
+        "direction": "unidirectional",
+        "semantics": "Контекст партнёрства валидирует миссию акционера",
+        "strength": "medium"
+      },
+      {
+        "id": "EDGE-006",
+        "from": "NODE-FINANCE",
+        "to": "NODE-CONTEXT",
+        "relationship": "funds",
+        "direction": "unidirectional",
+        "semantics": "Финансовая модель обеспечивает ресурсы для партнёрства",
+        "strength": "strong"
+      },
+      {
+        "id": "EDGE-007",
+        "from": "NODE-TECHBASE",
+        "to": "NODE-SHAREHOLDER",
+        "relationship": "operationalizes_vision",
+        "direction": "unidirectional",
+        "semantics": "6ТУ-архитектура операционализирует стратегическое видение миссионного акционера",
+        "strength": "strong"
+      },
+      {
+        "id": "EDGE-008",
+        "from": "NODE-TECHBASE",
+        "to": "NODE-FINANCE",
+        "relationship": "requires_instruments",
+        "direction": "unidirectional",
+        "semantics": "Реализация 6ТУ требует специальных финансовых инструментов диффузии",
+        "strength": "strong"
+      },
+      {
+        "id": "EDGE-009",
+        "from": "NODE-TECHBASE",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "extends_clusters",
+        "direction": "unidirectional",
+        "semantics": "6ТУ расширяет функции кластеров экосистемы новыми мета-объектами",
+        "strength": "strong"
+      },
+      {
+        "id": "EDGE-010",
+        "from": "NODE-TECHBASE",
+        "to": "NODE-CONTEXT",
+        "relationship": "concretizes_methodology",
+        "direction": "unidirectional",
+        "semantics": "6ТУ конкретизирует методологию СЦИ и роль CML-Bench",
+        "strength": "strong"
+      },
+      {
+        "id": "EDGE-011",
+        "from": "NODE-PLATFORM",
+        "to": "NODE-SHAREHOLDER",
+        "relationship": "extends_horizon",
+        "direction": "unidirectional",
+        "semantics": "Платформенная модель обеспечивает «длинную волю» акционера",
+        "strength": "strong"
+      },
+      {
+        "id": "EDGE-012",
+        "from": "NODE-PLATFORM",
+        "to": "NODE-FINANCE",
+        "relationship": "transforms_model",
+        "direction": "unidirectional",
+        "semantics": "Платформа трансформирует финансовую модель через сетевые эффекты",
+        "strength": "strong"
+      },
+      {
+        "id": "EDGE-013",
+        "from": "NODE-PLATFORM",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "amplifies_clusters",
+        "direction": "unidirectional",
+        "semantics": "Платформа усиливает кластеры через сетевые эффекты",
+        "strength": "strong"
+      },
+      {
+        "id": "EDGE-014",
+        "from": "NODE-PLATFORM",
+        "to": "NODE-CONTEXT",
+        "relationship": "scales_partnership",
+        "direction": "unidirectional",
+        "semantics": "Платформа масштабирует партнёрство ПСБ×СПбПУ",
+        "strength": "strong"
+      },
+      {
+        "id": "EDGE-015",
+        "from": "NODE-PLATFORM",
+        "to": "NODE-TECHBASE",
+        "relationship": "implements_architecture",
+        "direction": "unidirectional",
+        "semantics": "Платформа реализует архитектуру 6ТУ на уровне экосистемы",
+        "strength": "strong"
+      },
+      {
+        "id": "EDGE-016",
+        "from": "NODE-CONTEXT",
+        "to": "NODE-TECHBASE",
+        "relationship": "provides_methodology",
+        "direction": "unidirectional",
+        "semantics": "Контекст партнёрства (СЦИ, CML-Bench) обеспечивает методологию для 6ТУ",
+        "strength": "strong"
+      }
+    ]
+  },
+
+  "graph_topology": {
+    "description": "Восьмиузловой семантический граф с NODE-SOVEREIGNTY как интегрирующим центром",
+    "layers": [
+      {
+        "layer": "strategic_foundation",
+        "nodes": ["NODE-SHAREHOLDER"],
+        "role": "Философская основа и миссия"
+      },
+      {
+        "layer": "regulatory_framework",
+        "nodes": ["NODE-REGULATORY"],
+        "role": "Нормативная легитимизация"
+      },
+      {
+        "layer": "strategic_positioning",
+        "nodes": ["NODE-SOVEREIGNTY"],
+        "role": "Роль в технологическом суверенитете"
+      },
+      {
+        "layer": "resource_base",
+        "nodes": ["NODE-FINANCE"],
+        "role": "Ресурсное обеспечение"
+      },
+      {
+        "layer": "operational_platform",
+        "nodes": ["NODE-ECOSYSTEM"],
+        "role": "Операционная инфраструктура"
+      },
+      {
+        "layer": "application_domain",
+        "nodes": ["NODE-CONTEXT"],
+        "role": "Контекст применения (партнёрство)"
+      },
+      {
+        "layer": "architectural_blueprint",
+        "nodes": ["NODE-TECHBASE"],
+        "role": "Технологическая архитектура"
+      },
+      {
+        "layer": "strategic_transition",
+        "nodes": ["NODE-PLATFORM"],
+        "role": "Модель масштабирования"
+      }
+    ],
+    "central_cycles": [
+      {
+        "id": "CYCLE-SOVEREIGNTY",
+        "path": "SOVEREIGNTY → REGULATORY → SHAREHOLDER → FINANCE → ECOSYSTEM → CONTEXT → TECHBASE → PLATFORM → SOVEREIGNTY",
+        "description": "Полный цикл через узел позиционирования"
+      },
+      {
+        "id": "CYCLE-OPERATIONAL",
+        "path": "SHAREHOLDER → FINANCE → ECOSYSTEM → CONTEXT → TECHBASE → SHAREHOLDER",
+        "description": "Операционный цикл реализации миссии"
+      },
+      {
+        "id": "CYCLE-PLATFORM",
+        "path": "PLATFORM → ECOSYSTEM → CONTEXT → TECHBASE → PLATFORM",
+        "description": "Цикл платформенной трансформации"
+      }
+    ]
+  },
+
+  "usage_instructions": {
+    "navigation": "Используйте NODE-SOVEREIGNTY как точку входа для понимания роли ПСБ в технологическом суверенитете",
+    "cross_referencing": "Семантические ссылки (semantic_ref) позволяют переходить между документами",
+    "query_patterns": [
+      {
+        "question": "Какова роль ПСБ в технологическом суверенитете?",
+        "start_node": "NODE-SOVEREIGNTY",
+        "follow_edges": ["EDGE-SOV-001", "EDGE-SOV-002"]
+      },
+      {
+        "question": "Как позиционирование связано с партнёрством СПбПУ?",
+        "start_node": "NODE-SOVEREIGNTY",
+        "follow_edges": ["EDGE-SOV-005"]
+      },
+      {
+        "question": "Как реализовать роль через 6ТУ?",
+        "start_node": "NODE-SOVEREIGNTY",
+        "follow_edges": ["EDGE-SOV-006"]
+      }
+    ]
+  },
+
+  "file_inventory": {
+    "total_files": 9,
+    "files": [
+      {
+        "filename": "psb_strategic_sovereignty_role_analysis.json",
+        "node_id": "NODE-SOVEREIGNTY",
+        "size_estimate": "~45KB",
+        "status": "new_v6"
+      },
+      {
+        "filename": "psb_regulatory_framework_analysis.json",
+        "node_id": "NODE-REGULATORY",
+        "size_estimate": "~117KB",
+        "status": "existing"
+      },
+      {
+        "filename": "psb_shareholder_logic_analysis.json",
+        "node_id": "NODE-SHAREHOLDER",
+        "size_estimate": "~122KB",
+        "status": "existing"
+      },
+      {
+        "filename": "psb_financial_architecture_analysis.json",
+        "node_id": "NODE-FINANCE",
+        "size_estimate": "~40KB",
+        "status": "existing"
+      },
+      {
+        "filename": "psb_ecosystem_infrastructure_analysis.json",
+        "node_id": "NODE-ECOSYSTEM",
+        "size_estimate": "~74KB",
+        "status": "existing"
+      },
+      {
+        "filename": "psb_spbpu_context_analysis.json",
+        "node_id": "NODE-CONTEXT",
+        "size_estimate": "~41KB",
+        "status": "existing"
+      },
+      {
+        "filename": "psb_technological_foundation_6tu_analysis.json",
+        "node_id": "NODE-TECHBASE",
+        "size_estimate": "~67KB",
+        "status": "existing"
+      },
+      {
+        "filename": "psb_global_trend_platform_analysis.json",
+        "node_id": "NODE-PLATFORM",
+        "size_estimate": "~40KB",
+        "status": "existing"
+      },
+      {
+        "filename": "psb_knowledge_graph_integration_v6.json",
+        "node_id": "GRAPH-META",
+        "size_estimate": "~15KB",
+        "status": "new_v6"
+      }
+    ]
+  }
+}

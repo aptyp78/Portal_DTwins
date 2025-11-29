@@ -1,0 +1,1189 @@
+{
+  "meta": {
+    "document_title": "Ð­ÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ð° Ð¸ Ð¸Ð½Ñ„Ñ€Ð°ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð° ÐŸÐ¡Ð‘: Ð˜Ð½Ñ‚ÐµÐ³Ñ€Ð°Ð»ÑŒÐ½Ð°Ñ Ð¼Ð¾Ð´ÐµÐ»ÑŒ Â«Ð³Ð¾ÑÑƒÐ´Ð°Ñ€ÑÑ‚Ð²Ð¾ Ð² Ð±Ð°Ð½ÐºÐµÂ»",
+    "analysis_date": "2025-11-28",
+    "version": "1.0",
+    "analyst": "AI-ÑÐºÑÐ¿ÐµÑ€Ñ‚ Ð¿Ð¾ Ñ†Ð¸Ñ„Ñ€Ð¾Ð²Ñ‹Ð¼ Ð´Ð²Ð¾Ð¹Ð½Ð¸ÐºÐ°Ð¼",
+    "source_document": "Ð”Ð¾Ðº 3_Ð­ÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ð° Ð¸ Ð¸Ð½Ñ„Ñ€Ð°ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð° ÐŸÐ¡Ð‘.docx",
+    "semantic_network": {
+      "position_in_graph": "NODE-ECOSYSTEM",
+      "primary_dependencies": [
+        {
+          "file": "psb_shareholder_logic_analysis.json",
+          "node_id": "NODE-SHAREHOLDER",
+          "relationship": "operationalizes",
+          "description": "Ð­ÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ð° Ð¾Ð¿ÐµÑ€Ð°Ñ†Ð¸Ð¾Ð½Ð°Ð»Ð¸Ð·Ð¸Ñ€ÑƒÐµÑ‚ Ñ„Ð¸Ð»Ð¾ÑÐ¾Ñ„Ð¸ÑŽ Ð¸ Ð¿Ñ€Ð¸Ð½Ñ†Ð¸Ð¿Ñ‹ Ð¼Ð¸ÑÑÐ¸Ð¾Ð½Ð½Ð¾Ð³Ð¾ Ð°ÐºÑ†Ð¸Ð¾Ð½ÐµÑ€Ð°"
+        },
+        {
+          "file": "psb_financial_architecture_analysis.json",
+          "node_id": "NODE-FINANCE",
+          "relationship": "utilizes",
+          "description": "Ð­ÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ð° Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚ Ñ„Ð¸Ð½Ð°Ð½ÑÐ¾Ð²Ñ‹Ðµ Ð¼ÐµÑ…Ð°Ð½Ð¸Ð·Ð¼Ñ‹ Ð´Ð»Ñ Ñ€ÐµÐ°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ð¸ ÐºÐ»Ð°ÑÑ‚ÐµÑ€Ð½Ñ‹Ñ… Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¹"
+        },
+        {
+          "file": "psb_spbpu_context_analysis.json",
+          "node_id": "NODE-CONTEXT",
+          "relationship": "implements",
+          "description": "Ð­ÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ð° Ñ€ÐµÐ°Ð»Ð¸Ð·ÑƒÐµÑ‚ ÑÑ‚Ñ€Ð°Ñ‚ÐµÐ³Ð¸Ñ‡ÐµÑÐºÐ¸Ð¹ ÐºÐ¾Ð½Ñ‚ÐµÐºÑÑ‚ Ð¿Ð°Ñ€Ñ‚Ð½Ñ‘Ñ€ÑÑ‚Ð²Ð° ÐŸÐ¡Ð‘Ã—Ð¡ÐŸÐ±ÐŸÐ£"
+        }
+      ],
+      "graph_topology": {
+        "full_cycle": "SHAREHOLDER â†’ FINANCE â†’ ECOSYSTEM â†’ CONTEXT â†’ SHAREHOLDER",
+        "ecosystem_role": "ÐžÐ¿ÐµÑ€Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ð¹ ÑÐ»Ð¾Ð¹, Ð¿Ñ€ÐµÐ²Ñ€Ð°Ñ‰Ð°ÑŽÑ‰Ð¸Ð¹ Ñ„Ð¸Ð½Ð°Ð½ÑÐ¾Ð²Ñ‹Ðµ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚Ð¸ Ð² Ð¸Ð½Ñ„Ñ€Ð°ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð½Ñ‹Ðµ ÑÐµÑ€Ð²Ð¸ÑÑ‹"
+      },
+      "integration_edges": [
+        {
+          "id": "EDGE-ECO-001",
+          "from": "NODE-FINANCE",
+          "to": "NODE-ECOSYSTEM",
+          "relationship": "funds",
+          "semantics": "Ð¤Ð¸Ð½Ð°Ð½ÑÐ¾Ð²Ð°Ñ Ð°Ñ€Ñ…Ð¸Ñ‚ÐµÐºÑ‚ÑƒÑ€Ð° Ð¾Ð±ÐµÑÐ¿ÐµÑ‡Ð¸Ð²Ð°ÐµÑ‚ Ñ€ÐµÑÑƒÑ€ÑÑ‹ Ð´Ð»Ñ Ð²ÑÐµÑ… ÐºÐ»Ð°ÑÑ‚ÐµÑ€Ð¾Ð² ÑÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹",
+          "key_mappings": [
+            "STREAM-GOZ â†’ CLUSTER-FINANCE: 70% Ð¿Ð¾Ñ€Ñ‚Ñ„ÐµÐ»Ñ Ð¾Ð±ÑÐ»ÑƒÐ¶Ð¸Ð²Ð°ÐµÑ‚ Ñ€Ð°ÑÑ‡Ñ‘Ñ‚Ð½Ñ‹Ð¹ ÐºÐ»Ð°ÑÑ‚ÐµÑ€",
+            "STREAM-COMMISSION â†’ CLUSTER-IT: ÐºÐ¾Ð¼Ð¸ÑÑÐ¸Ð¾Ð½Ð½Ñ‹Ð¹ Ð±Ð¸Ð·Ð½ÐµÑ Ñ‚Ñ€ÐµÐ±ÑƒÐµÑ‚ Ñ†Ð¸Ñ„Ñ€Ð¾Ð²Ð¾Ð¹ Ð¸Ð½Ñ„Ñ€Ð°ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ñ‹",
+            "CAP-001 â†’ CLUSTER-SCITECH: Ð´Ð¾ÑÑ‚Ð°Ñ‚Ð¾Ñ‡Ð½Ð¾ÑÑ‚ÑŒ ÐºÐ°Ð¿Ð¸Ñ‚Ð°Ð»Ð° â†’ Ð²ÐµÐ½Ñ‡ÑƒÑ€Ð½Ñ‹Ðµ Ð¸Ð½Ð²ÐµÑÑ‚Ð¸Ñ†Ð¸Ð¸"
+          ]
+        },
+        {
+          "id": "EDGE-ECO-002",
+          "from": "NODE-ECOSYSTEM",
+          "to": "NODE-CONTEXT",
+          "relationship": "enables",
+          "semantics": "Ð­ÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ð° ÑÐ¾Ð·Ð´Ð°Ñ‘Ñ‚ Ð¸Ð½Ñ„Ñ€Ð°ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð½Ñ‹Ðµ ÑƒÑÐ»Ð¾Ð²Ð¸Ñ Ð´Ð»Ñ Ñ€ÐµÐ°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ð¸ ÑÑ‚Ñ€Ð°Ñ‚ÐµÐ³Ð¸Ð¸ Ð¿Ð°Ñ€Ñ‚Ð½Ñ‘Ñ€ÑÑ‚Ð²Ð°",
+          "key_mappings": [
+            "CLUSTER-SCITECH â†’ ROLE-PSB-001: Ð½Ð°ÑƒÑ‡Ð½Ð¾-Ñ‚ÐµÑ…Ð½Ð¾Ð»Ð¾Ð³Ð¸Ñ‡ÐµÑÐºÐ¸Ð¹ ÐºÐ»Ð°ÑÑ‚ÐµÑ€ Ñ€ÐµÐ°Ð»Ð¸Ð·ÑƒÐµÑ‚ Ñ€Ð¾Ð»ÑŒ Ñ„Ð¸Ð½Ñ‚ÐµÑ…-Ð±Ñ€Ð¾ÐºÐµÑ€Ð°",
+            "CLUSTER-INST â†’ PROGRAM-MKCP: Ð¸Ð½ÑÑ‚Ð¸Ñ‚ÑƒÑ†Ð¸Ð¾Ð½Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÐºÐ»Ð°ÑÑ‚ÐµÑ€ Ð¾Ð±ÐµÑÐ¿ÐµÑ‡Ð¸Ð²Ð°ÐµÑ‚ Ð½Ð¾Ñ€Ð¼Ð°Ñ‚Ð¸Ð²Ð½ÑƒÑŽ Ð±Ð°Ð·Ñƒ Ð´Ð»Ñ ÐœÐšÐ¦ÐŸ Ð¦Ð”",
+            "CLUSTER-IT â†’ LAYER-PLATFORM: Ð˜Ð¢-ÐºÐ»Ð°ÑÑ‚ÐµÑ€ ÑÐ¾Ð·Ð´Ð°Ñ‘Ñ‚ Ð¸Ð½Ñ„Ñ€Ð°ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ñƒ Ð´Ð»Ñ CML-Bench Ð¸Ð½Ñ‚ÐµÐ³Ñ€Ð°Ñ†Ð¸Ð¹"
+          ]
+        },
+        {
+          "id": "EDGE-ECO-003",
+          "from": "NODE-SHAREHOLDER",
+          "to": "NODE-ECOSYSTEM",
+          "relationship": "shapes",
+          "semantics": "Ð›Ð¾Ð³Ð¸ÐºÐ° Ð°ÐºÑ†Ð¸Ð¾Ð½ÐµÑ€Ð° Ñ„Ð¾Ñ€Ð¼Ð¸Ñ€ÑƒÐµÑ‚ Ð°Ñ€Ñ…Ð¸Ñ‚ÐµÐºÑ‚ÑƒÑ€Ñƒ Ð¸ Ñ†ÐµÐ½Ð½Ð¾ÑÑ‚Ð¸ ÑÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹",
+          "key_mappings": [
+            "MOT-001 â†’ ECO-PRINCIPLE-001: Ñ†Ð¸Ð²Ð¸Ð»Ð¸Ð·Ð°Ñ†Ð¸Ð¾Ð½Ð½Ð°Ñ ÑÑƒÐ±ÑŠÐµÐºÑ‚Ð½Ð¾ÑÑ‚ÑŒ â†’ ÑÑƒÐ²ÐµÑ€ÐµÐ½Ð¸Ñ‚ÐµÑ‚ ÑÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹",
+            "EXP-NAT-002 â†’ CLUSTER-SOCIAL: Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð¾ Ð³Ð°Ñ€Ð¼Ð¾Ð½Ð¸Ñ‡Ð½Ð¾Ð³Ð¾ Ñ€Ð°Ð·Ð²Ð¸Ñ‚Ð¸Ñ â†’ ÑÐ¾Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð¾-ÐºÐ°Ð´Ñ€Ð¾Ð²Ñ‹Ð¹ ÐºÐ»Ð°ÑÑ‚ÐµÑ€",
+            "BEHAV-004 â†’ CLUSTER-INST: ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ†Ð¸Ñ Ð¸ Ð´Ð¾Ð²ÐµÑ€Ð¸Ðµ â†’ Ð¸Ð½ÑÑ‚Ð¸Ñ‚ÑƒÑ†Ð¸Ð¾Ð½Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÐºÐ»Ð°ÑÑ‚ÐµÑ€"
+          ]
+        }
+      ],
+      "primary_question": "КАК ПСБ реализует свою миссию?",
+      "referenced_by": [
+        {
+          "from_file": "psb_regulatory_framework_analysis.json",
+          "from_node": "NODE-REGULATORY",
+          "relationship": "structures_actors",
+          "description": "ÐžÐ¿Ñ€ÐµÐ´ÐµÐ»ÑÐµÑ‚ Ñ€Ð¾Ð»Ð¸ Ð°ÐºÑ‚Ð¾Ñ€Ð¾Ð² ÑÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹ (ÑÑƒÐ±ÑŠÐµÐºÑ‚Ñ‹ Ñ‚ÐµÑ…Ð¿Ð¾Ð»Ð¸Ñ‚Ð¸ÐºÐ¸)"
+        },
+        {
+          "from_file": "psb_regulatory_framework_analysis.json",
+          "from_node": "NODE-REGULATORY",
+          "from_path": "legal_framework_523fz",
+          "full_ref": "psb_ecosystem_infrastructure_analysis.json#quasi_ministerial_functions.QMIN-LEGISLATIVE"
+        },
+        {
+          "from_file": "psb_strategic_sovereignty_role_analysis.json",
+          "from_node": "NODE-SOVEREIGNTY",
+          "relationship": "leverages_infrastructure",
+          "description": "Позиционирование опирается на экосистемную инфраструктуру"
+        },
+        {
+          "from_file": "psb_strategic_sovereignty_role_analysis.json",
+          "from_node": "NODE-SOVEREIGNTY",
+          "from_path": "executive_summary",
+          "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model"
+        },
+        {
+          "from_file": "psb_technological_foundation_6tu_analysis.json",
+          "from_node": "NODE-TECHBASE",
+          "relationship": "extends_clusters",
+          "description": "6Ð¢Ð£ Ñ€Ð°ÑÑˆÐ¸Ñ€ÑÐµÑ‚ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸ ÐºÐ»Ð°ÑÑ‚ÐµÑ€Ð¾Ð² ÑÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹ Ð½Ð¾Ð²Ñ‹Ð¼Ð¸ Ð¼ÐµÑ‚Ð°-Ð¾Ð±ÑŠÐµÐºÑ‚Ð°Ð¼Ð¸"
+        },
+        {
+          "from_file": "psb_technological_foundation_6tu_analysis.json",
+          "from_node": "NODE-TECHBASE",
+          "from_path": "executive_summary",
+          "full_ref": "psb_ecosystem_infrastructure_analysis.json#quasi_ministerial_functions"
+        },
+        {
+          "from_file": "psb_technological_foundation_6tu_analysis.json",
+          "from_node": "NODE-TECHBASE",
+          "from_path": "ten_principles.principles[1]",
+          "full_ref": "psb_ecosystem_infrastructure_analysis.json#quasi_ministerial_functions"
+        },
+        {
+          "from_file": "psb_technological_foundation_6tu_analysis.json",
+          "from_node": "NODE-TECHBASE",
+          "from_path": "ten_principles.principles[6]",
+          "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model.CLUSTER-IT"
+        },
+        {
+          "from_file": "psb_technological_foundation_6tu_analysis.json",
+          "from_node": "NODE-TECHBASE",
+          "from_path": "ten_principles.principles[9]",
+          "full_ref": "psb_ecosystem_infrastructure_analysis.json#monitoring_systems"
+        },
+        {
+          "from_file": "psb_technological_foundation_6tu_analysis.json",
+          "from_node": "NODE-TECHBASE",
+          "from_path": "integration_with_partnership.synergy_points[2]",
+          "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model.CLUSTER-SOCIAL"
+        },
+        {
+          "from_file": "psb_technological_foundation_6tu_analysis.json",
+          "from_node": "NODE-TECHBASE",
+          "from_path": "integration_with_partnership.synergy_points[4]",
+          "full_ref": "psb_ecosystem_infrastructure_analysis.json#quasi_ministerial_functions"
+        },
+        {
+          "from_file": "psb_global_trend_platform_analysis.json",
+          "from_node": "NODE-PLATFORM",
+          "relationship": "transforms_clusters",
+          "description": "Платформа трансформирует 5 кластеров экосистемы в сетевую архитектуру"
+        },
+        {
+          "from_file": "psb_global_trend_platform_analysis.json",
+          "from_node": "NODE-PLATFORM",
+          "from_path": "executive_summary",
+          "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model"
+        },
+        {
+          "from_file": "psb_global_trend_platform_analysis.json",
+          "from_node": "NODE-PLATFORM",
+          "from_path": "prerequisites_analysis.levels[1]",
+          "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model.CLUSTER-IT.import_substitution"
+        },
+        {
+          "from_file": "psb_global_trend_platform_analysis.json",
+          "from_node": "NODE-PLATFORM",
+          "from_path": "prerequisites_analysis.levels[2]",
+          "full_ref": "psb_ecosystem_infrastructure_analysis.json#quasi_ministerial_functions"
+        },
+        {
+          "from_file": "psb_global_trend_platform_analysis.json",
+          "from_node": "NODE-PLATFORM",
+          "from_path": "prerequisites_analysis.levels[3]",
+          "full_ref": "psb_ecosystem_infrastructure_analysis.json#integral_model"
+        },
+        {
+          "from_file": "psb_global_trend_platform_analysis.json",
+          "from_node": "NODE-PLATFORM",
+          "from_path": "eight_platform_values.values[0]",
+          "full_ref": "psb_ecosystem_infrastructure_analysis.json#integral_model"
+        },
+        {
+          "from_file": "psb_global_trend_platform_analysis.json",
+          "from_node": "NODE-PLATFORM",
+          "from_path": "eight_platform_values.values[2]",
+          "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model.CLUSTER-SCITECH"
+        },
+        {
+          "from_file": "psb_global_trend_platform_analysis.json",
+          "from_node": "NODE-PLATFORM",
+          "from_path": "psb_platform_role",
+          "full_ref": "psb_ecosystem_infrastructure_analysis.json#quasi_ministerial_functions"
+        },
+        {
+          "from_file": "psb_sci_architecture_analysis.json",
+          "from_node": "NODE-SCI",
+          "from_path": "six_layer_model.layers[3]",
+          "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model"
+        },
+        {
+          "from_file": "psb_sci_architecture_analysis.json",
+          "from_node": "NODE-SCI",
+          "from_path": "data_knowledge_management",
+          "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model.CLUSTER-IT"
+        },
+        {
+          "from_file": "psb_dt_platforms_market_analysis.json",
+          "from_node": "NODE-MARKET",
+          "relationship": "maps_ecosystem_players",
+          "description": "Картирование потенциальных партнёров экосистемы"
+        },
+        {
+          "from_file": "psb_dt_platforms_market_analysis.json",
+          "from_node": "NODE-MARKET",
+          "from_path": "market_structure.geographic_distribution",
+          "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model.deep_tech"
+        },
+        {
+          "from_file": "psb_dt_platforms_market_analysis.json",
+          "from_node": "NODE-MARKET",
+          "from_path": "russian_platforms_deep_dive.national_ecosystem_vision",
+          "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model"
+        },
+        {
+          "from_file": "psb_dt_platforms_market_analysis.json",
+          "from_node": "NODE-MARKET",
+          "from_path": "strategic_implications",
+          "full_ref": "psb_ecosystem_infrastructure_analysis.json#quasi_ministerial_functions"
+        },
+        {
+          "from_file": "psb_cmlbench_technology_context_analysis.json",
+          "from_node": "NODE-CMLBENCH",
+          "relationship": "maps_integration_partners",
+          "description": "Экосистема ПСБ определяет партнёров интеграции"
+        },
+        {
+          "from_file": "psb_cmlbench_technology_context_analysis.json",
+          "from_node": "NODE-CMLBENCH",
+          "from_path": "competitive_analysis",
+          "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model.deep_tech"
+        },
+        {
+          "from_file": "psb_cmlbench_technology_context_analysis.json",
+          "from_node": "NODE-CMLBENCH",
+          "from_path": "gap_closure_roadmap.critical_gaps[0]",
+          "full_ref": "psb_ecosystem_infrastructure_analysis.json#deep_tech_cluster.partners"
+        },
+        {
+          "from_file": "psb_cmlbench_technology_context_analysis.json",
+          "from_node": "NODE-CMLBENCH",
+          "from_path": "psb_integration_value.ecosystem_integration",
+          "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model"
+        },
+        {
+          "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+          "from_node": "NODE-AGENDA",
+          "from_path": "timeline_analysis.events[2]",
+          "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model.deep_tech"
+        },
+        {
+          "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+          "from_node": "NODE-AGENDA",
+          "from_path": "institutional_framework.governance_structure",
+          "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model.institutional"
+        },
+        {
+          "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+          "from_node": "NODE-AGENDA",
+          "from_path": "requirements_analysis.unified_dt_system",
+          "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model.IT"
+        },
+        {
+          "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+          "from_node": "NODE-AGENDA",
+          "from_path": "strategic_positioning.value_proposition",
+          "full_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model"
+        },
+        {
+          "from_file": "psb_mkcp_program_analysis.json",
+          "from_node": "NODE-MKCP",
+          "from_path": "participants_analysis",
+          "full_ref": "psb_ecosystem_infrastructure_analysis.json#five_clusters"
+        },
+        {
+          "from_file": "psb_mkcp_program_analysis.json",
+          "from_node": "NODE-MKCP",
+          "from_path": "financing_mechanisms",
+          "full_ref": "psb_ecosystem_infrastructure_analysis.json#financial_cluster"
+        }
+      ]
+    },
+    "node_id": "NODE-ECOSYSTEM",
+    "layer": "operational_platform"
+  },
+  "executive_summary": {
+    "id": "EXEC-ECO-001",
+    "core_concept": "Ð˜Ð½Ñ‚ÐµÐ³Ñ€Ð°Ð»ÑŒÐ½Ð°Ñ Ð¼Ð¾Ð´ÐµÐ»ÑŒ Â«Ð³Ð¾ÑÑƒÐ´Ð°Ñ€ÑÑ‚Ð²Ð¾ Ð² Ð±Ð°Ð½ÐºÐµÂ»",
+    "definition": "Ð“Ð¸Ð±Ñ€Ð¸Ð´Ð½Ð°Ñ ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°, Ð³Ð´Ðµ ÐºÐ¾Ð¼Ð¼ÐµÑ€Ñ‡ÐµÑÐºÐ°Ñ Ñ„Ð¸Ð½Ð°Ð½ÑÐ¾Ð²Ð°Ñ Ð¾Ñ€Ð³Ð°Ð½Ð¸Ð·Ð°Ñ†Ð¸Ñ Ñ„Ð°ÐºÑ‚Ð¸Ñ‡ÐµÑÐºÐ¸ Ð±ÐµÑ€Ñ‘Ñ‚ Ð½Ð° ÑÐµÐ±Ñ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸ Ð½ÐµÑÐºÐ¾Ð»ÑŒÐºÐ¸Ñ… Ð³Ð¾ÑÑƒÐ´Ð°Ñ€ÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ñ… Ð¼Ð¸Ð½Ð¸ÑÑ‚ÐµÑ€ÑÑ‚Ð² Ð¸ Ð²ÐµÐ´Ð¾Ð¼ÑÑ‚Ð², Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÑ Ð±Ð°Ð½ÐºÐ¾Ð²ÑÐºÐ¸Ðµ Ð¸Ð½ÑÑ‚Ñ€ÑƒÐ¼ÐµÐ½Ñ‚Ñ‹",
+    "transformation_thesis": "ÐŸÐ¡Ð‘ Ðº 2025 Ð³Ð¾Ð´Ñƒ Ð²Ñ‹ÑˆÐµÐ» Ð·Ð° Ð¿Ñ€ÐµÐ´ÐµÐ»Ñ‹ ÐºÐ»Ð°ÑÑÐ¸Ñ‡ÐµÑÐºÐ¾Ð¹ Ð±Ð°Ð½ÐºÐ¾Ð²ÑÐºÐ¾Ð¹ Ð´ÐµÑÑ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚Ð¸ Ð¸ Ñ„Ð¾Ñ€Ð¼Ð¸Ñ€ÑƒÐµÑ‚ ÑÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ñƒ Ð¿Ð¾Ð»Ð½Ð¾Ð³Ð¾ Ñ†Ð¸ÐºÐ»Ð° Ð¶Ð¸Ð·Ð½ÐµÐ´ÐµÑÑ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚Ð¸ ÑÑ‚Ñ€Ð°Ñ‚ÐµÐ³Ð¸Ñ‡ÐµÑÐºÐ¸Ñ… Ð¾Ñ‚Ñ€Ð°ÑÐ»ÐµÐ¹ Ð Ð¤",
+    "coverage_spectrum": {
+      "from": "Ð—Ð°ÐºÐ¾Ð½Ð¾Ñ‚Ð²Ð¾Ñ€Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¸ ÐÐ˜ÐžÐšÐ  Ñ€Ð°Ð·Ð»Ð¸Ñ‡Ð½Ñ‹Ñ… ÑÑ‚Ð°Ð´Ð¸Ð¹ TRL/MRL",
+      "to": "Ð¤Ð¸Ð½Ð°Ð½ÑÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´ÑÑ‚Ð²Ð°, Ð¼ÐµÐ¶Ð´ÑƒÐ½Ð°Ñ€Ð¾Ð´Ð½Ñ‹Ðµ Ñ€Ð°ÑÑ‡Ñ‘Ñ‚Ñ‹ Ð¸ ÑÐ¾Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð°Ñ Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶ÐºÐ° ÐºÐ°Ð´Ñ€Ð¾Ð²"
+    },
+    "unique_characteristics": [
+      "Ð•Ð´Ð¸Ð½ÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ð¹ Ð±Ð°Ð½Ðº Ñ Ñ„ÑƒÐ½ÐºÑ†Ð¸ÑÐ¼Ð¸ quasi-Ð¼Ð¸Ð½Ð¸ÑÑ‚ÐµÑ€ÑÑ‚Ð²",
+      "Ð˜Ð½Ñ„Ñ€Ð°ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð½Ñ‹Ð¹ Ð¾Ð¿ÐµÑ€Ð°Ñ‚Ð¾Ñ€ Ð¿Ñ€Ð¾Ð¼Ñ‹ÑˆÐ»ÐµÐ½Ð½Ð¾Ð³Ð¾ Ð¸ Ñ‚ÐµÑ…Ð½Ð¾Ð»Ð¾Ð³Ð¸Ñ‡ÐµÑÐºÐ¾Ð³Ð¾ ÑÑƒÐ²ÐµÑ€ÐµÐ½Ð¸Ñ‚ÐµÑ‚Ð°",
+      "Ð“Ð¾ÑÑƒÐ´Ð°Ñ€ÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ðµ Ð·Ð°Ð´Ð°Ñ‡Ð¸ Â«Ð²ÑˆÐ¸Ñ‚Ñ‹Â» Ð² Ñ‚ÐµÐ»Ð¾ ÐºÐ¾Ð¼Ð¼ÐµÑ€Ñ‡ÐµÑÐºÐ¾Ð³Ð¾ Ð±Ð°Ð½ÐºÐ°"
+    ],
+    "semantic_refs": {
+      "links_to": [
+        "psb_shareholder_logic_analysis.json#target_states",
+        "psb_financial_architecture_analysis.json#executive_summary.institutional_type",
+        "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_4_psb_role"
+      ],
+      "relationship": "ecosystem_manifestation_of_shareholder_vision"
+    }
+  },
+  "quasi_ministerial_functions": {
+    "id": "QUASI-MIN-001",
+    "description": "Ð¤ÑƒÐ½ÐºÑ†Ð¸Ð¸ Ð³Ð¾ÑÑƒÐ´Ð°Ñ€ÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ñ… Ð²ÐµÐ´Ð¾Ð¼ÑÑ‚Ð², Ñ€ÐµÐ°Ð»Ð¸Ð·ÑƒÐµÐ¼Ñ‹Ðµ ÐŸÐ¡Ð‘ Ñ‡ÐµÑ€ÐµÐ· Ð±Ð°Ð½ÐºÐ¾Ð²ÑÐºÐ¸Ðµ Ð¸Ð½ÑÑ‚Ñ€ÑƒÐ¼ÐµÐ½Ñ‚Ñ‹",
+    "source_unit": "ÐÐ°Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ð¿Ð¾ Ñ€Ð°Ð·Ð²Ð¸Ñ‚Ð¸ÑŽ ÑÑƒÐ²ÐµÑ€ÐµÐ½Ð½Ñ‹Ñ… Ñ‚ÐµÑ…Ð½Ð¾Ð»Ð¾Ð³Ð¸Ð¹ Ð³Ð¾ÑÑƒÐ´Ð°Ñ€ÑÑ‚Ð²Ð°",
+    "functions": [
+      {
+        "id": "QMIN-MINPROMTORG",
+        "ministry_analog": "ÐœÐ¸Ð½Ð¿Ñ€Ð¾Ð¼Ñ‚Ð¾Ñ€Ð³",
+        "function_name": "ÐžÐ¿Ñ€ÐµÐ´ÐµÐ»ÐµÐ½Ð¸Ðµ Ñ‚ÐµÑ…Ð½Ð¸Ñ‡ÐµÑÐºÐ¾Ð¹ Ð¿Ð¾Ð»Ð¸Ñ‚Ð¸ÐºÐ¸ Ð¾Ñ‚Ñ€Ð°ÑÐ»Ð¸",
+        "mechanism": "Ð˜Ð½Ð´ÑƒÑÑ‚Ñ€Ð¸Ð°Ð»ÑŒÐ½Ñ‹Ð¹ Ñ†ÐµÐ½Ñ‚Ñ€ ÐºÐ¾Ð¼Ð¿ÐµÑ‚ÐµÐ½Ñ†Ð¸Ð¹ Â«Ð¤Ð¸Ð½Ð°Ð½ÑÑ‹Â»",
+        "instrument": "Ð¤Ð¾Ñ€Ð¼Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ ÑÑ‚Ð°Ð½Ð´Ð°Ñ€Ñ‚Ð¾Ð² Ð¸Ð¼Ð¿Ð¾Ñ€Ñ‚Ð¾Ð·Ð°Ð¼ÐµÑ‰ÐµÐ½Ð¸Ñ (ÑÐµÑ€Ð²ÐµÑ€Ñ‹, Ð±Ð°Ð½ÐºÐ¾Ð¼Ð°Ñ‚Ñ‹)",
+        "semantic_ref": "psb_spbpu_context_analysis.json#strategic_framework.national_priorities.economic_security"
+      },
+      {
+        "id": "QMIN-MINOBORONY",
+        "ministry_analog": "ÐœÐ¸Ð½Ð¾Ð±Ð¾Ñ€Ð¾Ð½Ñ‹ (Ñ‚Ñ‹Ð»Ð¾Ð²Ð¾Ðµ Ð¾Ð±ÐµÑÐ¿ÐµÑ‡ÐµÐ½Ð¸Ðµ)",
+        "function_name": "ÐŸÑ€ÑÐ¼Ð¾Ðµ ÑÐ½Ð°Ð±Ð¶ÐµÐ½Ð¸Ðµ Ð¸ Ð²Ð½ÐµÐ´Ñ€ÐµÐ½Ð¸Ðµ Ð²Ð¾ÐµÐ½Ð½Ñ‹Ñ… Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚Ð¾Ðº",
+        "mechanism": "Ð’Ð¾ÐµÐ½Ð½Ñ‹Ð¹ Ð¼Ð°Ñ€ÐºÐµÑ‚Ð¿Ð»ÐµÐ¹Ñ + Ð¤Ð¾Ð½Ð´ Â«Ð­Ð ÐÂ»",
+        "instrument": "ÐžÐ±Ñ…Ð¾Ð´ Ð´Ð»Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ñ… Ð±ÑŽÑ€Ð¾ÐºÑ€Ð°Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¸Ñ… Ð¿Ñ€Ð¾Ñ†ÐµÐ´ÑƒÑ€ Ð³Ð¾ÑÐ·Ð°ÐºÐ°Ð·Ð°",
+        "semantic_ref": "psb_spbpu_context_analysis.json#application_domain.ministry_of_defense_priorities"
+      },
+      {
+        "id": "QMIN-MINFIN-CB",
+        "ministry_analog": "ÐœÐ¸Ð½Ñ„Ð¸Ð½ + Ð¦Ð‘",
+        "function_name": "ÐÐ»ÑŒÑ‚ÐµÑ€Ð½Ð°Ñ‚Ð¸Ð²Ð½Ð°Ñ Ð³Ð¾ÑÑƒÐ´Ð°Ñ€ÑÑ‚Ð²ÐµÐ½Ð½Ð°Ñ Ð¿Ð»Ð°Ñ‚Ñ‘Ð¶Ð½Ð°Ñ ÑÐ¸ÑÑ‚ÐµÐ¼Ð°",
+        "mechanism": "ÐŸÐ»Ð°Ñ‚Ñ„Ð¾Ñ€Ð¼Ð° Â«Ð7Â» + Ð Ð¾ÑÐ²ÐµÐºÑÐµÐ»ÑŒ",
+        "instrument": "Ð¤Ð¸Ð½Ð°Ð½ÑÐ¾Ð²Ñ‹Ð¹ ÑÑƒÐ²ÐµÑ€ÐµÐ½Ð¸Ñ‚ÐµÑ‚ Ð² Ð¾Ð±Ñ…Ð¾Ð´ ÑÐ°Ð½ÐºÑ†Ð¸Ð¹",
+        "semantic_ref": "psb_financial_architecture_analysis.json#business_model.profit_streams[2]"
+      },
+      {
+        "id": "QMIN-MINSTROY",
+        "ministry_analog": "ÐœÐ¸Ð½ÑÑ‚Ñ€Ð¾Ð¹",
+        "function_name": "Ð¡Ñ‚Ñ€Ð¾Ð¸Ñ‚ÐµÐ»ÑŒÑÑ‚Ð²Ð¾ Ð¾Ð±ÑŠÐµÐºÑ‚Ð¾Ð² Ð½Ð°Ñ†Ð¸Ð¾Ð½Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ð¼Ð°ÑÑˆÑ‚Ð°Ð±Ð° Ð´Ð»Ñ ÐžÐŸÐš",
+        "mechanism": "ÐŸÐ¡Ð‘ Ð˜Ð½Ð¶Ð¸Ð½Ð¸Ñ€Ð¸Ð½Ð³ + ÐŸÐ¡Ð‘ Ð¡Ð²Ð¾Ð¹ Ð´Ð¾Ð¼",
+        "instrument": "EPC-ÐºÐ¾Ð½Ñ‚Ñ€Ð°ÐºÑ‚Ñ‹ + Ð¶Ð¸Ð»Ð¸Ñ‰Ð½Ñ‹Ðµ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñ‹ Ð´Ð»Ñ ÐºÐ°Ð´Ñ€Ð¾Ð² ÐžÐŸÐš",
+        "semantic_ref": "psb_shareholder_logic_analysis.json#shareholder_expectations.operational_psb[1]"
+      },
+      {
+        "id": "QMIN-LEGISLATIVE",
+        "ministry_analog": "Ð—Ð°ÐºÐ¾Ð½Ð¾Ð´Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð°Ñ Ð¸Ð½Ð¸Ñ†Ð¸Ð°Ñ‚Ð¸Ð²Ð°",
+        "function_name": "Ð¤Ð¾Ñ€Ð¼Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð½Ð¾Ñ€Ð¼Ð°Ñ‚Ð¸Ð²Ð½Ð¾-Ð¿Ñ€Ð°Ð²Ð¾Ð²Ð¾Ð¹ Ð±Ð°Ð·Ñ‹",
+        "mechanism": "Ð­ÐºÑÐ¿ÐµÑ€Ñ‚Ð½Ñ‹Ð¹ ÑÐ¾Ð²ÐµÑ‚ Ð¿Ñ€Ð¸ Ð“Ð¾ÑÐ´ÑƒÐ¼Ðµ (Ð¿Ñ€ÐµÐ´ÑÐµÐ´Ð°Ñ‚ÐµÐ»ÑŒ â€” Ð¤Ñ€Ð°Ð´ÐºÐ¾Ð²)",
+        "instrument": "ÐŸÐ¾Ð¿Ñ€Ð°Ð²ÐºÐ¸ Ð² 275-Ð¤Ð—, Ð¤Ð—-199, Ð¼ÐµÑ…Ð°Ð½Ð¸Ð·Ð¼Ñ‹ ÑÑƒÐ±ÑÐ¸Ð´Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ",
+        "achievement": "ÐŸÑ€Ð¸Ð½ÑÑ‚Ð¸Ðµ Ð¤Ð—-199 Ð¾Ñ‚ 01.09.2024 (Ñ€Ð¸ÑÐº-Ð¾Ñ€Ð¸ÐµÐ½Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ð¹ Ð¿Ð¾Ð´Ñ…Ð¾Ð´ Ð²Ð¼ÐµÑÑ‚Ð¾ Ñ‚Ð¾Ñ‚Ð°Ð»ÑŒÐ½Ð¾Ð¹ Ð¾Ñ‚Ñ‡Ñ‘Ñ‚Ð½Ð¾ÑÑ‚Ð¸)"
+      }
+    ],
+    "financial_inversion": {
+      "id": "FIN-INV-001",
+      "concept": "ÐŸÑ€Ð¸Ð±Ñ‹Ð»ÑŒ ÐºÐ°Ðº Ñ€ÐµÑÑƒÑ€Ñ, Ð° Ð½Ðµ Ñ†ÐµÐ»ÑŒ",
+      "classical_model": "ÐÐºÑ†Ð¸Ð¾Ð½ÐµÑ€ Ñ‚Ñ€ÐµÐ±ÑƒÐµÑ‚ Ð´Ð¸Ð²Ð¸Ð´ÐµÐ½Ð´Ð¾Ð²",
+      "psb_model": "Ð“Ð¾ÑÑƒÐ´Ð°Ñ€ÑÑ‚Ð²Ð¾ Ð¾ÑÑ‚Ð°Ð²Ð»ÑÐµÑ‚ Ð¿Ñ€Ð¸Ð±Ñ‹Ð»ÑŒ Ð²Ð½ÑƒÑ‚Ñ€Ð¸ Ð±Ð°Ð½ÐºÐ° Ð¸ Ð´Ð¾ÐºÐ°Ð¿Ð¸Ñ‚Ð°Ð»Ð¸Ð·Ð¸Ñ€ÑƒÐµÑ‚",
+      "example_2025": "Ð”Ð¾ÐºÐ°Ð¿Ð¸Ñ‚Ð°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ñ 29,6 Ð¼Ð»Ñ€Ð´ Ñ€ÑƒÐ±.",
+      "semantic_ref": "psb_financial_architecture_analysis.json#dividend_architecture"
+    }
+  },
+  "ecosystem_architecture": {
+    "id": "ECO-ARCH-001",
+    "cluster_model": {
+      "total_clusters": 5,
+      "integration_principle": "ÐŸÐ¾Ð»Ð½Ñ‹Ð¹ Ñ†Ð¸ÐºÐ» Ð¶Ð¸Ð·Ð½ÐµÐ´ÐµÑÑ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚Ð¸ ÑÑ‚Ñ€Ð°Ñ‚ÐµÐ³Ð¸Ñ‡ÐµÑÐºÐ¸Ñ… Ð¾Ñ‚Ñ€Ð°ÑÐ»ÐµÐ¹",
+      "paradigm_shift": {
+        "2010_2020": "B2C-ÑÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹, Ð¾Ñ€Ð¸ÐµÐ½Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ðµ Ð½Ð° Ð»Ð°Ð¹Ñ„ÑÑ‚Ð°Ð¹Ð»-ÑÐµÑ€Ð²Ð¸ÑÑ‹ (Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ°, Ñ‚Ð°ÐºÑÐ¸, Ñ€Ð°Ð·Ð²Ð»ÐµÑ‡ÐµÐ½Ð¸Ñ)",
+        "2022_onwards": "Ð˜Ð½Ñ„Ñ€Ð°ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð½Ð°Ñ ÑƒÑÑ‚Ð¾Ð¹Ñ‡Ð¸Ð²Ð¾ÑÑ‚ÑŒ, Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´ÑÑ‚Ð²Ð¾ Ð¸ Ð±ÐµÐ·Ð¾Ð¿Ð°ÑÐ½Ð¾ÑÑ‚ÑŒ"
+      }
+    },
+    "clusters": [
+      {
+        "id": "CLUSTER-FINANCE",
+        "name": "Ð¤Ð¸Ð½Ð°Ð½ÑÐ¾Ð²Ð¾-Ñ€Ð°ÑÑ‡Ñ‘Ñ‚Ð½Ñ‹Ð¹ ÐºÐ»Ð°ÑÑ‚ÐµÑ€",
+        "role": "Ð¯Ð´Ñ€Ð¾ Ð±Ð¸Ð·Ð½ÐµÑÐ° â€” Â«ÐºÑ€Ð¾Ð²ÐµÐ½Ð¾ÑÐ½Ð°Ñ ÑÐ¸ÑÑ‚ÐµÐ¼Ð°Â» ÑÐºÐ¾Ð½Ð¾Ð¼Ð¸ÐºÐ¸",
+        "strategic_significance": "Ð Ð°ÑÑ‡Ñ‘Ñ‚Ð½Ð°Ñ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ñ â€” Ð·Ð°Ð´Ð°Ñ‡Ð° Ð³Ð¾ÑÑƒÐ´Ð°Ñ€ÑÑ‚Ð²ÐµÐ½Ð½Ð¾Ð¹ Ð²Ð°Ð¶Ð½Ð¾ÑÑ‚Ð¸, Ð½Ðµ Ð¿Ñ€Ð¾ÑÑ‚Ð¾ ÐºÐ¾Ð¼Ð¼ÐµÑ€Ñ‡ÐµÑÐºÐ°Ñ ÑƒÑÐ»ÑƒÐ³Ð°",
+        "hybrid_model": "Ð Ñ‹Ð½Ð¾Ñ‡Ð½Ñ‹Ð¹ Ð¸Ð½ÑÑ‚Ð¸Ñ‚ÑƒÑ‚ + Ð°Ð³ÐµÐ½Ñ‚ Ð³Ð¾ÑÑƒÐ´Ð°Ñ€ÑÑ‚Ð²ÐµÐ½Ð½Ð¾Ð³Ð¾ ÐºÐ¾Ð½Ñ‚Ñ€Ð¾Ð»Ñ Ð·Ð° Ñ€Ð°ÑÑ…Ð¾Ð´Ð¾Ð²Ð°Ð½Ð¸ÐµÐ¼ Ð±ÑŽÐ´Ð¶ÐµÑ‚Ð½Ñ‹Ñ… ÑÑ€ÐµÐ´ÑÑ‚Ð²",
+        "components": [
+          {
+            "id": "FIN-COMP-001",
+            "name": "Ð¢Ñ€Ð°Ð½Ð·Ð°ÐºÑ†Ð¸Ð¾Ð½Ð½Ñ‹Ð¹ Ð±Ð¸Ð·Ð½ÐµÑ",
+            "subcomponents": [
+              {
+                "id": "FIN-TRANS-001",
+                "name": "Open API",
+                "definition": "ÐŸÑ€ÑÐ¼Ð¾Ð¹ ÐºÐ°Ð½Ð°Ð» Ð¸Ð½Ñ‚ÐµÐ³Ñ€Ð°Ñ†Ð¸Ð¸ ERP-ÑÐ¸ÑÑ‚ÐµÐ¼ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ð¾Ð² Ñ ÑƒÑ‡Ñ‘Ñ‚Ð½Ñ‹Ð¼Ð¸ ÑÐ¸ÑÑ‚ÐµÐ¼Ð°Ð¼Ð¸ Ð±Ð°Ð½ÐºÐ°",
+                "technology_stack": [
+                  "1Ð¡",
+                  "SAP",
+                  "ÐžÑ‚ÐµÑ‡ÐµÑÑ‚Ð²ÐµÐ½Ð½Ð¾Ðµ ÐŸÐž"
+                ],
+                "value_proposition": "Ð˜ÑÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ Â«Ñ€ÑƒÑ‡Ð½Ð¾Ð³Ð¾ ÑˆÐ²Ð°Â» Ð¼ÐµÐ¶Ð´Ñƒ ERP Ð¸ Ð±Ð°Ð½ÐºÐ¾Ð²ÑÐºÐ¸Ð¼ Ð¸Ð½Ñ‚ÐµÑ€Ñ„ÐµÐ¹ÑÐ¾Ð¼",
+                "functional_blocks": [
+                  {
+                    "name": "Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ ÑÑ‡ÐµÑ‚Ð°Ð¼Ð¸",
+                    "effect": "Ð¡Ð¾ÐºÑ€Ð°Ñ‰ÐµÐ½Ð¸Ðµ Ð²Ñ€ÐµÐ¼ÐµÐ½Ð¸, Ð¼Ð¸Ð½Ð¸Ð¼Ð¸Ð·Ð°Ñ†Ð¸Ñ Ð¾ÑˆÐ¸Ð±Ð¾Ðº"
+                  },
+                  {
+                    "name": "Ð¡Ð¾Ð¿Ñ€Ð¾Ð²Ð¾Ð¶Ð´ÐµÐ½Ð¸Ðµ Ð“ÐžÐ—",
+                    "effect": "Ð¡Ð½Ð¸Ð¶ÐµÐ½Ð¸Ðµ Ñ€Ð¸ÑÐºÐ° Ð½ÐµÑ†ÐµÐ»ÐµÐ²Ð¾Ð³Ð¾ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ñ ÑÑ€ÐµÐ´ÑÑ‚Ð²"
+                  },
+                  {
+                    "name": "Ð’Ð°Ð»ÑŽÑ‚Ð½Ñ‹Ð¹ ÐºÐ¾Ð½Ñ‚Ñ€Ð¾Ð»ÑŒ",
+                    "effect": "Ð£Ð¿Ñ€Ð¾Ñ‰ÐµÐ½Ð¸Ðµ ÐºÐ¾Ð¼Ð¿Ð»Ð°ÐµÐ½ÑÐ°"
+                  },
+                  {
+                    "name": "Ð—Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ð½Ñ‹Ðµ Ð¿Ñ€Ð¾ÐµÐºÑ‚Ñ‹",
+                    "effect": "ÐŸÐ¾Ð²Ñ‹ÑˆÐµÐ½Ð¸Ðµ ÐºÐ¾Ð½Ñ„Ð¸Ð´ÐµÐ½Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚Ð¸ Ð¸ ÑÐºÐ¾Ñ€Ð¾ÑÑ‚Ð¸"
+                  }
+                ],
+                "kpis": {
+                  "digital_penetration_growth": "Ã—2",
+                  "transaction_activity_growth": "+40%"
+                }
+              },
+              {
+                "id": "FIN-TRANS-002",
+                "name": "ÐÐ²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¸Ð¹ ÑÐºÐ¾Ñ€Ð¸Ð½Ð³",
+                "product": "ÐšÑ€ÐµÐ´Ð¸Ñ‚ ÐžÐ½Ð»Ð°Ð¹Ð½",
+                "target_audience": "Ð˜ÐŸ Ð¸ ÐžÐžÐž Ñ Ð°ÐºÑ‚Ð¸Ð²Ð½Ñ‹Ð¼Ð¸ ÑÑ‡ÐµÑ‚Ð°Ð¼Ð¸ Ð² ÐŸÐ¡Ð‘",
+                "features": [
+                  "Ð‘ÐµÐ· Ð·Ð°Ð»Ð¾Ð³Ð°",
+                  "Ð‘ÐµÐ· Ð¿Ð¾Ñ€ÑƒÑ‡Ð¸Ñ‚ÐµÐ»ÐµÐ¹",
+                  "ÐžÐ½Ð»Ð°Ð¹Ð½-Ñ€ÐµÑˆÐµÐ½Ð¸Ðµ"
+                ],
+                "efficiency_metric": {
+                  "name": "Cost-to-Income Ratio",
+                  "value": "<40%"
+                }
+              }
+            ]
+          },
+          {
+            "id": "FIN-COMP-002",
+            "name": "Ð¤Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð½Ð³ Ð¸ Supply Chain Finance",
+            "strategic_role": "Ð”Ñ€Ð°Ð¹Ð²ÐµÑ€Ñ‹ Ð»Ð¸ÐºÐ²Ð¸Ð´Ð½Ð¾ÑÑ‚Ð¸, Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶ÐºÐ° Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´ÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ñ… Ñ†ÐµÐ¿Ð¾Ñ‡ÐµÐº",
+            "metrics_2024": {
+              "total_portfolio": {
+                "value": "2,9 Ñ‚Ñ€Ð»Ð½ Ñ€ÑƒÐ±.",
+                "yoy_growth": "+31%",
+                "absolute_growth": "+703 Ð¼Ð»Ñ€Ð´ Ñ€ÑƒÐ±."
+              },
+              "client_financing": {
+                "value": "10,5 Ñ‚Ñ€Ð»Ð½ Ñ€ÑƒÐ±.",
+                "yoy_growth": "+36%"
+              },
+              "client_count": {
+                "value": 18793,
+                "yoy_growth": "+25%",
+                "new_clients": 6700
+              },
+              "shipments_count": "14 Ð¼Ð»Ð½",
+              "market_income": "400 Ð¼Ð»Ñ€Ð´ Ñ€ÑƒÐ±."
+            },
+            "scf_segment": {
+              "portfolio_share": "37%",
+              "disbursements_2024": {
+                "value": "2,4 Ñ‚Ñ€Ð»Ð½ Ñ€ÑƒÐ±.",
+                "yoy_growth": "+64%"
+              },
+              "outstanding_assets": {
+                "value": "1,88 Ñ‚Ñ€Ð»Ð½ Ñ€ÑƒÐ±.",
+                "yoy_growth": "+69%"
+              },
+              "value_proposition": "Â«Ð—Ð¾Ð½Ñ‚Ð¸Ðº Ð»Ð¸ÐºÐ²Ð¸Ð´Ð½Ð¾ÑÑ‚Ð¸Â» Ð½Ð°Ð´ Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´ÑÑ‚Ð²ÐµÐ½Ð½Ð¾Ð¹ Ñ†ÐµÐ¿Ð¾Ñ‡ÐºÐ¾Ð¹"
+            },
+            "platform": {
+              "name": "ÐŸÐ¡Ð‘ Ð¤Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð½Ð³ (Ð±Ñ‹Ð²Ñˆ. ÐŸÑ€Ð¾Ð¼ÑÐ²ÑÐ·ÑŒÑ„Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð½Ð³ â†’ ÐœÐ¡ÐŸ Ð¤Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð½Ð³)",
+              "online_decision_time": "2 Ñ‡Ð°ÑÐ°",
+              "products": [
+                {
+                  "type": "Ð‘ÐµÐ· Ñ€ÐµÐ³Ñ€ÐµÑÑÐ°",
+                  "financing_rate": "Ð´Ð¾ 100%"
+                },
+                {
+                  "type": "Ð¡ Ñ€ÐµÐ³Ñ€ÐµÑÑÐ¾Ð¼",
+                  "financing_rate": "Ð´Ð¾ 95%"
+                }
+              ]
+            },
+            "semantic_ref": "psb_financial_architecture_analysis.json#business_model.profit_streams[1]"
+          },
+          {
+            "id": "FIN-COMP-003",
+            "name": "Ð¡Ð¿ÐµÑ†ÑÑ‡ÐµÑ‚Ð° Ð´Ð»Ñ Ð¾Ð±Ð¾Ñ€Ð¾Ð½Ð½Ð¾Ð¹ ÑÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹",
+            "legal_basis": "Ð¤Ð—-275 Â«Ðž Ð³Ð¾ÑÑƒÐ´Ð°Ñ€ÑÑ‚Ð²ÐµÐ½Ð½Ð¾Ð¼ Ð¾Ð±Ð¾Ñ€Ð¾Ð½Ð½Ð¾Ð¼ Ð·Ð°ÐºÐ°Ð·ÐµÂ»",
+            "market_position": "Ð¡Ð¾Ð¿Ñ€Ð¾Ð²Ð¾Ð¶Ð´ÐµÐ½Ð¸Ðµ >65% Ð²ÑÐµÑ… ÐºÐ¾Ð½Ñ‚Ñ€Ð°ÐºÑ‚Ð¾Ð² Ð“ÐžÐ— Ð² ÑÑ‚Ñ€Ð°Ð½Ðµ",
+            "unique_claim": "ÐœÐ¾Ð´ÐµÐ»ÑŒ Ð½Ðµ Ð¸Ð¼ÐµÐµÑ‚ Ð°Ð½Ð°Ð»Ð¾Ð³Ð¾Ð² Ð² Ð¼Ð¸Ñ€Ðµ (US Army Bank Ð¾Ð±ÑÐ»ÑƒÐ¶Ð¸Ð²Ð°ÐµÑ‚ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð²Ð¾ÐµÐ½Ð½Ð¾ÑÐ»ÑƒÐ¶Ð°Ñ‰Ð¸Ñ…)",
+            "regime_275fz": {
+              "key_restrictions": [
+                "Ð¦ÐµÐ»ÐµÐ²Ð¾Ð¹ Ñ…Ð°Ñ€Ð°ÐºÑ‚ÐµÑ€: ÑÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð½Ð° Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»Ñ‘Ð½Ð½Ñ‹Ðµ Ñ†ÐµÐ»Ð¸",
+                "Ð—Ð°Ð¿Ñ€ÐµÑ‚ Ð½Ð° Ñ€Ð°Ð·Ð¼ÐµÑ‰ÐµÐ½Ð¸Ðµ: Ð½ÐµÑ‚ Ð´ÐµÐ¿Ð¾Ð·Ð¸Ñ‚Ð¾Ð², Ñ†ÐµÐ½Ð½Ñ‹Ñ… Ð±ÑƒÐ¼Ð°Ð³, Ð·Ð°Ð¹Ð¼Ð¾Ð² Ñ‚Ñ€ÐµÑ‚ÑŒÐ¸Ð¼ Ð»Ð¸Ñ†Ð°Ð¼",
+                "ÐžÑ‚ÑÑƒÑ‚ÑÑ‚Ð²Ð¸Ðµ Ð¿Ñ€Ð¾Ñ†ÐµÐ½Ñ‚Ð¾Ð² Ñ 2022 Ð³Ð¾Ð´Ð°"
+              ],
+              "analytical_insight": "Ð‘ÐµÑÐ¿Ð»Ð°Ñ‚Ð½Ñ‹Ð¹ Ñ€ÐµÑÑƒÑ€Ñ Ñ„Ð¾Ð½Ð´Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ, Ð½Ð¾ Ð²Ñ‹ÑÐ¾ÐºÐ¾Ð²Ð¾Ð»Ð°Ñ‚Ð¸Ð»ÑŒÐ½Ñ‹Ð¹ Ð¸ Ñ‚Ñ€ÐµÐ±ÑƒÑŽÑ‰Ð¸Ð¹ ÐºÐ¾Ð»Ð¾ÑÑÐ°Ð»ÑŒÐ½Ñ‹Ñ… Ð°Ð´Ð¼. Ð·Ð°Ñ‚Ñ€Ð°Ñ‚"
+            },
+            "bank_support_service": {
+              "function": "ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° ÐºÐ°Ð¶Ð´Ð¾Ð³Ð¾ Ð¿Ð»Ð°Ñ‚Ñ‘Ð¶Ð½Ð¾Ð³Ð¾ Ð¿Ð¾Ñ€ÑƒÑ‡ÐµÐ½Ð¸Ñ Ð½Ð° ÑÐ¾Ð¾Ñ‚Ð²ÐµÑ‚ÑÑ‚Ð²Ð¸Ðµ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð°Ð¼ ÐºÐ¾Ð½Ñ‚Ñ€Ð°ÐºÑ‚Ð°",
+              "api_integration": "Ð Ð°Ð·Ð¼ÐµÑ‚ÐºÐ° Ð¿Ð»Ð°Ñ‚ÐµÐ¶ÐµÐ¹ ÐºÐ¾Ð´Ð°Ð¼Ð¸ Ð˜Ð“Ðš Ð² ERP-ÑÐ¸ÑÑ‚ÐµÐ¼Ðµ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ð°"
+            },
+            "semantic_ref": "psb_spbpu_context_analysis.json#application_domain.primary_focus"
+          },
+          {
+            "id": "FIN-COMP-004",
+            "name": "ÐÐ»ÑŒÑ‚ÐµÑ€Ð½Ð°Ñ‚Ð¸Ð²Ð½Ð°Ñ Ñ€Ð°ÑÑ‡Ñ‘Ñ‚Ð½Ð°Ñ Ð¸Ð½Ñ„Ñ€Ð°ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð° (ÐÐ½Ñ‚Ð¸-ÑÐ°Ð½ÐºÑ†Ð¸Ð¸)",
+            "purpose": "ÐŸÑ€ÐµÐ¾Ð´Ð¾Ð»ÐµÐ½Ð¸Ðµ Ñ„Ð¸Ð½Ð°Ð½ÑÐ¾Ð²Ð¾Ð¹ Ð±Ð»Ð¾ÐºÐ°Ð´Ñ‹",
+            "components": [
+              {
+                "id": "ALT-001",
+                "name": "ÐŸÐ»Ð°Ñ‚Ñ„Ð¾Ñ€Ð¼Ð° Â«Ð7Â»",
+                "type": "Ð˜Ð½Ñ„Ñ€Ð°ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð° Ð´Ð»Ñ Ð’Ð­Ð”",
+                "psb_stake": "49% Ð² ÐžÐžÐž Â«Ð7Â»",
+                "function": "ÐžÐ±ÑÐ»ÑƒÐ¶Ð¸Ð²Ð°Ð½Ð¸Ðµ Ð²Ð½ÐµÑˆÐ½ÐµÑ‚Ð¾Ñ€Ð³Ð¾Ð²Ñ‹Ñ… ÐºÐ¾Ð½Ñ‚Ñ€Ð°ÐºÑ‚Ð¾Ð² Ð¸Ð¼Ð¿Ð¾Ñ€Ñ‚Ñ‘Ñ€Ð¾Ð² Ð¸ ÑÐºÑÐ¿Ð¾Ñ€Ñ‚Ñ‘Ñ€Ð¾Ð²"
+              },
+              {
+                "id": "ALT-002",
+                "name": "Ð¡Ñ‚ÐµÐ¹Ð±Ð»ÐºÐ¾Ð¸Ð½ A7A5 (Â«A5Â»)",
+                "type": "Ð ÑƒÐ±Ð»Ñ‘Ð²Ñ‹Ð¹ ÑÑ‚ÐµÐ¹Ð±Ð»ÐºÐ¾Ð¸Ð½",
+                "emitter": "Old Vector (ÐšÑ‹Ñ€Ð³Ñ‹Ð·ÑÑ‚Ð°Ð½)",
+                "backing": "Ð¤Ð¸Ð°Ñ‚Ð½Ñ‹Ðµ Ñ€ÑƒÐ±Ð»Ð¸ Ð½Ð° Ð´ÐµÐ¿Ð¾Ð·Ð¸Ñ‚Ð°Ñ… Ð² ÐŸÐ¡Ð‘",
+                "yield": "Ð´Ð¾ 8% Ð³Ð¾Ð´Ð¾Ð²Ñ‹Ñ…",
+                "peak_volume": "Ð´Ð¾ $1 Ð¼Ð»Ñ€Ð´/ÑÑƒÑ‚ÐºÐ¸",
+                "sanction_status": "Ð‘Ð»Ð¾ÐºÐ¸Ñ€ÑƒÑŽÑ‰Ð¸Ðµ ÑÐ°Ð½ÐºÑ†Ð¸Ð¸ Ð¡Ð¨Ð Ð¸ Ð•Ð¡ (19-Ð¹ Ð¿Ð°ÐºÐµÑ‚, 2025)"
+              },
+              {
+                "id": "ALT-003",
+                "name": "Ð Ð¾ÑÐ²ÐµÐºÑÐµÐ»ÑŒ (Ð—Ð¾Ð»Ð¾Ñ‚Ð¾Ð¹ ÑÑ‚Ð°Ð½Ð´Ð°Ñ€Ñ‚)",
+                "launch_date": "ÐÐ¾ÑÐ±Ñ€ÑŒ 2025",
+                "founders": [
+                  "ÐŸÐ¡Ð‘",
+                  "ÐœÐ¸Ð½Ñ„Ð¸Ð½ Ð Ð¾ÑÑÐ¸Ð¸ (15%)"
+                ],
+                "instruments": "Ð¦Ð¸Ñ„Ñ€Ð¾Ð²Ñ‹Ðµ Ð²ÐµÐºÑÐµÐ»Ñ Ð¸ Ð¦Ð¤Ð, Ð¾Ð±ÐµÑÐ¿ÐµÑ‡ÐµÐ½Ð½Ñ‹Ðµ Ñ„Ð¸Ð·Ð¸Ñ‡ÐµÑÐºÐ¸Ð¼ Ð·Ð¾Ð»Ð¾Ñ‚Ð¾Ð¼",
+                "purpose": "Ð Ð°ÑÑ‡Ñ‘Ñ‚Ñ‹ Ñ Â«Ð´Ñ€ÑƒÐ¶ÐµÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ð¼Ð¸Â» ÑÑ‚Ñ€Ð°Ð½Ð°Ð¼Ð¸, Ð¸Ð·Ð±ÐµÐ³Ð°ÑŽÑ‰Ð¸Ð¼Ð¸ Ñ‚Ð¾ÐºÑÐ¸Ñ‡Ð½Ñ‹Ñ… Ð²Ð°Ð»ÑŽÑ‚"
+              }
+            ],
+            "semantic_ref": "psb_financial_architecture_analysis.json#business_model.profit_streams[2].components[0]"
+          },
+          {
+            "id": "FIN-COMP-005",
+            "name": "Ð˜Ð½Ð²ÐµÑÑ‚Ð¸Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ð¹ Ð±Ð¸Ð·Ð½ÐµÑ",
+            "brand": "ÐŸÐ¡Ð‘ Ð‘Ð»Ð°Ð³Ð¾ÑÐ¾ÑÑ‚Ð¾ÑÐ½Ð¸Ðµ",
+            "strategy_2025_2028": {
+              "target_aum": {
+                "value": "1,3 Ñ‚Ñ€Ð»Ð½ Ñ€ÑƒÐ±.",
+                "growth": "Ð£Ð´Ð²Ð¾ÐµÐ½Ð¸Ðµ"
+              },
+              "target_clients": {
+                "value": 600000,
+                "channel": "Ð¦Ð¸Ñ„Ñ€Ð¾Ð²Ð¸Ð·Ð°Ñ†Ð¸Ñ"
+              },
+              "strategic_shift": "ÐŸÐµÑ€ÐµÑ‚Ð¾Ðº ÑÑ€ÐµÐ´ÑÑ‚Ð² Ñ Ð´ÐµÐ¿Ð¾Ð·Ð¸Ñ‚Ð¾Ð² Ð² Ñ„Ð¾Ð½Ð´Ð¾Ð²Ñ‹Ð¹ Ñ€Ñ‹Ð½Ð¾Ðº"
+            },
+            "strategic_value": "Management fee Ð½Ðµ Ð·Ð°Ð²Ð¸ÑÐ¸Ñ‚ Ð¾Ñ‚ ÐºÑ€ÐµÐ´Ð¸Ñ‚Ð½Ð¾Ð³Ð¾ ÐºÐ°Ñ‡ÐµÑÑ‚Ð²Ð° Ð·Ð°Ñ‘Ð¼Ñ‰Ð¸ÐºÐ¾Ð²"
+          }
+        ],
+        "semantic_refs": {
+          "links_to": [
+            "psb_financial_architecture_analysis.json#business_model",
+            "psb_shareholder_logic_analysis.json#shareholder_expectations.operational_psb[0]"
+          ],
+          "relationship": "core_business_operations"
+        }
+      },
+      {
+        "id": "CLUSTER-INST",
+        "name": "Ð˜Ð½ÑÑ‚Ð¸Ñ‚ÑƒÑ†Ð¸Ð¾Ð½Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÐºÐ»Ð°ÑÑ‚ÐµÑ€",
+        "role": "Ð’Ð»Ð¸ÑÐ½Ð¸Ðµ Ð¸ Ñ€ÐµÐ³ÑƒÐ»Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ â€” Â«Ð½Ð¾Ñ€Ð¼Ð°Ñ‚Ð¸Ð²Ð½Ð°Ñ Ð¼Ð°ÑÑ‚ÐµÑ€ÑÐºÐ°ÑÂ»",
+        "unique_capability": "ÐŸÐ¡Ð‘ Ð½Ðµ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð¸ÑÐ¿Ð¾Ð»Ð½ÑÐµÑ‚ Ð·Ð°ÐºÐ¾Ð½Ñ‹, Ð½Ð¾ Ð¸ Ð¿Ð¸ÑˆÐµÑ‚ Ð¸Ñ…",
+        "components": [
+          {
+            "id": "INST-001",
+            "name": "Ð­ÐºÑÐ¿ÐµÑ€Ñ‚Ð½Ñ‹Ð¹ ÑÐ¾Ð²ÐµÑ‚ Ð¿Ð¾ Ñ€Ð°Ð·Ð²Ð¸Ñ‚Ð¸ÑŽ Ñ„Ð¸Ð½Ð°Ð½ÑÐ¾Ð²Ñ‹Ñ… Ð¸Ð½ÑÑ‚Ñ€ÑƒÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¸ Ð½ÐµÑ„Ð¸Ð½Ð°Ð½ÑÐ¾Ð²Ñ‹Ñ… Ð¼ÐµÑ€ Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶ÐºÐ¸ Ð¿Ñ€ÐµÐ´Ð¿Ñ€Ð¸ÑÑ‚Ð¸Ð¹ ÐžÐŸÐš",
+            "affiliation": "ÐŸÑ€Ð¸ Ð“Ð¾ÑÐ´ÑƒÐ¼Ðµ Ð Ð¤",
+            "chairman": "ÐŸÑ‘Ñ‚Ñ€ Ð¤Ñ€Ð°Ð´ÐºÐ¾Ð²",
+            "status_2024": "ÐŸÑ€Ð¸Ð·Ð½Ð°Ð½ ÑÐ°Ð¼Ð¾Ð¹ ÑÑ„Ñ„ÐµÐºÑ‚Ð¸Ð²Ð½Ð¾Ð¹ Ð¿Ð»Ð¾Ñ‰Ð°Ð´ÐºÐ¾Ð¹",
+            "key_achievement": {
+              "law": "Ð¤Ð—-199 Ð¾Ñ‚ 01.09.2024",
+              "effect": "ÐžÑ‚Ð¼ÐµÐ½Ð° Ñ‚Ð¾Ñ‚Ð°Ð»ÑŒÐ½Ð¾Ð¹ Ð¾Ñ‚Ñ‡Ñ‘Ñ‚Ð½Ð¾ÑÑ‚Ð¸ ÐžÐŸÐš Ð¿ÐµÑ€ÐµÐ´ Ð¤ÐÐ¡ â†’ Ñ€Ð¸ÑÐº-Ð¾Ñ€Ð¸ÐµÐ½Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ð¹ Ð¿Ð¾Ð´Ñ…Ð¾Ð´"
+            },
+            "participants": {
+              "legislators": "Ð’Ð»Ð°Ð´Ð¸Ð¼Ð¸Ñ€ Ð“ÑƒÑ‚ÐµÐ½ÐµÐ² (ÐšÐ¾Ð¼Ð¸Ñ‚ÐµÑ‚ Ð“Ð” Ð¿Ð¾ Ð¿Ñ€Ð¾Ð¼Ñ‹ÑˆÐ»ÐµÐ½Ð½Ð¾ÑÑ‚Ð¸)",
+              "regulators": "ÐŸÑ€ÐµÐ´ÑÑ‚Ð°Ð²Ð¸Ñ‚ÐµÐ»Ð¸ Ð‘Ð°Ð½ÐºÐ° Ð Ð¾ÑÑÐ¸Ð¸",
+              "industry": [
+                "ÐÐž Â«Ð¢ÑƒÐ¿Ð¾Ð»ÐµÐ²Â»",
+                "ÐŸÐÐž Â«ÐžÐÐšÂ»",
+                "ÐÐŸÐž Ð¼Ð°ÑˆÐ¸Ð½Ð¾ÑÑ‚Ñ€Ð¾ÐµÐ½Ð¸Ñ"
+              ],
+              "bank": "Ð¡ÐµÑ€Ð³ÐµÐ¹ Ð”Ð¾Ð±Ñ€Ð¸Ð½ (ÑÑ‚Ð°Ñ€ÑˆÐ¸Ð¹ Ð²Ð¸Ñ†Ðµ-Ð¿Ñ€ÐµÐ·Ð¸Ð´ÐµÐ½Ñ‚ ÐŸÐ¡Ð‘)"
+            },
+            "influence_scope": [
+              "275-Ð¤Ð—",
+              "ÐŸÐ¾ÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ñ Ð¾ Ñ†ÐµÐ½Ð¾Ð¾Ð±Ñ€Ð°Ð·Ð¾Ð²Ð°Ð½Ð¸Ð¸",
+              "ÐœÐµÑ…Ð°Ð½Ð¸Ð·Ð¼Ñ‹ ÑÑƒÐ±ÑÐ¸Ð´Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ Ð¿Ñ€Ð¾Ñ†ÐµÐ½Ñ‚Ð½Ñ‹Ñ… ÑÑ‚Ð°Ð²Ð¾Ðº"
+            ]
+          },
+          {
+            "id": "INST-002",
+            "name": "Ð­ÐºÑÐ¿ÐµÑ€Ñ‚Ð½Ñ‹Ð¹ ÑÐ¾Ð²ÐµÑ‚ Ð¿Ð¾ Ð´Ð¸Ð²ÐµÑ€ÑÐ¸Ñ„Ð¸ÐºÐ°Ñ†Ð¸Ð¸ ÐžÐŸÐš",
+            "affiliation": "ÐŸÑ€Ð¸ ÐŸÑ€Ð°Ð²Ð¸Ñ‚ÐµÐ»ÑŒÑÑ‚Ð²ÐµÐ½Ð½Ð¾Ð¹ ÐºÐ¾Ð¼Ð¸ÑÑÐ¸Ð¸",
+            "moderator": "Ð. ÐšÐ»ÐµÐ¿Ð°Ñ‡ (Ð³Ð»Ð°Ð²Ð½Ñ‹Ð¹ ÑÐºÐ¾Ð½Ð¾Ð¼Ð¸ÑÑ‚ Ð’Ð­Ð‘.Ð Ð¤)",
+            "psb_role": "ÐžÑ€Ð³Ð°Ð½Ð¸Ð·Ð°Ñ†Ð¸Ð¾Ð½Ð½Ð°Ñ Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶ÐºÐ° Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ ÑÐ¾Ð²ÐµÑ‚Ð°",
+            "functions": [
+              "ÐÐ½Ð°Ð»Ð¸Ð· ÑÐ¸Ñ‚ÑƒÐ°Ñ†Ð¸Ð¸ Ð² ÐžÐŸÐš Ð¸ Ð²Ñ‹ÑÐ²Ð»ÐµÐ½Ð¸Ðµ Ð¿Ñ€Ð¾Ð±Ð»ÐµÐ¼Ð½Ñ‹Ñ… Ð¾Ð±Ð»Ð°ÑÑ‚ÐµÐ¹",
+              "Ð Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ° Ñ€ÐµÐºÐ¾Ð¼ÐµÐ½Ð´Ð°Ñ†Ð¸Ð¹ Ð´Ð»Ñ Ñ‚ÐµÑ…Ð½Ð¾Ð»Ð¾Ð³Ð¸Ñ‡ÐµÑÐºÐ¾Ð³Ð¾ ÑÑƒÐ²ÐµÑ€ÐµÐ½Ð¸Ñ‚ÐµÑ‚Ð°",
+              "Ð—Ð°Ñ‰Ð¸Ñ‚Ð° Ð¿Ñ€ÐµÐ´Ð¿Ñ€Ð¸ÑÑ‚Ð¸Ð¹ Ð¾Ñ‚ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ñ Ð² Ð ÐµÐµÑÑ‚Ñ€ Ð½ÐµÐ´Ð¾Ð±Ñ€Ð¾ÑÐ¾Ð²ÐµÑÑ‚Ð½Ñ‹Ñ… Ð¿Ð¾ÑÑ‚Ð°Ð²Ñ‰Ð¸ÐºÐ¾Ð² (Ð ÐÐŸ)"
+            ]
+          }
+        ],
+        "semantic_refs": {
+          "links_to": [
+            "psb_spbpu_context_analysis.json#institutional_framework.mkcp_dt",
+            "psb_shareholder_logic_analysis.json#shareholder_behavior.strategic[1]"
+          ],
+          "relationship": "normative_environment_shaping"
+        }
+      },
+      {
+        "id": "CLUSTER-SOCIAL",
+        "name": "Ð¡Ð¾Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð¾-ÐºÐ°Ð´Ñ€Ð¾Ð²Ñ‹Ð¹ ÐºÐ»Ð°ÑÑ‚ÐµÑ€ Ð¸ ÑÐµÑ€Ð²Ð¸ÑÐ½Ð°Ñ Ð¸Ð½Ñ„Ñ€Ð°ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°",
+        "role": "ÐŸÐ¾Ð»Ð½Ñ‹Ð¹ Ñ†Ð¸ÐºÐ» Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶ÐºÐ¸ Ñ‡ÐµÐ»Ð¾Ð²ÐµÑ‡ÐµÑÐºÐ¾Ð³Ð¾ ÐºÐ°Ð¿Ð¸Ñ‚Ð°Ð»Ð° ÐžÐŸÐš",
+        "components": [
+          {
+            "id": "SOC-001",
+            "name": "Ð˜Ð½Ñ„Ñ€Ð°ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð½Ð°Ñ ÑÐºÑÐ¿Ð°Ð½ÑÐ¸Ñ: ÐÐ¾Ð²Ñ‹Ðµ Ñ‚ÐµÑ€Ñ€Ð¸Ñ‚Ð¾Ñ€Ð¸Ð¸",
+            "scope": [
+              "Ð”ÐÐ ",
+              "Ð›ÐÐ ",
+              "Ð—Ð°Ð¿Ð¾Ñ€Ð¾Ð¶ÑÐºÐ°Ñ Ð¾Ð±Ð»Ð°ÑÑ‚ÑŒ",
+              "Ð¥ÐµÑ€ÑÐ¾Ð½ÑÐºÐ°Ñ Ð¾Ð±Ð»Ð°ÑÑ‚ÑŒ"
+            ],
+            "unique_claim": "Ð‘ÐµÑÐ¿Ñ€ÐµÑ†ÐµÐ´ÐµÐ½Ñ‚Ð½Ñ‹Ð¹ ÐºÐµÐ¹Ñ Ð¿Ð¾ÑÑ‚Ñ€Ð¾ÐµÐ½Ð¸Ñ Ð±Ð°Ð½ÐºÐ¾Ð²ÑÐºÐ¾Ð¹ ÑÐµÑ‚Ð¸ Â«Ñ Ð½ÑƒÐ»ÑÂ» Ð² ÑƒÑÐ»Ð¾Ð²Ð¸ÑÑ… Ð±Ð¾ÐµÐ²Ñ‹Ñ… Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ð¹",
+            "timeline": {
+              "2022": "ÐŸÐ¡Ð‘ Ð¿ÐµÑ€Ð²Ñ‹Ð¼ Ð¸Ð· Ð¡Ð—ÐšÐž Ð½Ð°Ñ‡Ð°Ð» Ñ€Ð°Ð±Ð¾Ñ‚Ñƒ, Ñ„ÑƒÐ½ÐºÑ†Ð¸Ñ Ð¦Ð‘ + ÐºÐ¾Ð¼Ð¼ÐµÑ€Ñ‡ÐµÑÐºÐ¾Ð³Ð¾ ÑÐµÐºÑ‚Ð¾Ñ€Ð°",
+              "2024_summer": "Ð’Ñ…Ð¾Ð´ Ð’Ð¢Ð‘ Ð¸ Ð¡Ð±ÐµÑ€Ð±Ð°Ð½ÐºÐ°"
+            },
+            "infrastructure_2024": {
+              "offices": {
+                "value": ">500",
+                "note": "ÐŸÐ»Ð°Ð½ Ð¤Ñ€Ð°Ð´ÐºÐ¾Ð²Ð° Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½ Ð¸ Ð¿ÐµÑ€ÐµÐ²Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½"
+              },
+              "geography": ">140 Ð½Ð°ÑÐµÐ»Ñ‘Ð½Ð½Ñ‹Ñ… Ð¿ÑƒÐ½ÐºÑ‚Ð¾Ð²",
+              "atms": ">3000 ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²"
+            },
+            "service_formats": [
+              {
+                "type": "ÐœÐ¾Ð±Ð¸Ð»ÑŒÐ½Ñ‹Ðµ Ð¾Ñ„Ð¸ÑÑ‹",
+                "description": "Ð‘Ñ€Ð¾Ð½Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ðµ Ð°Ð²Ñ‚Ð¾Ð¼Ð¾Ð±Ð¸Ð»Ð¸ Ñ Ñ€Ð°Ð±Ð¾Ñ‡Ð¸Ð¼Ð¸ Ð¼ÐµÑÑ‚Ð°Ð¼Ð¸ Ð¾Ð¿ÐµÑ€Ð°Ñ†Ð¸Ð¾Ð½Ð¸ÑÑ‚Ð¾Ð² Ð¸ ÐºÐ°ÑÑÐ¾Ð²Ñ‹Ð¼Ð¸ ÑƒÐ·Ð»Ð°Ð¼Ð¸",
+                "coverage": "ÐžÑ‚Ð´Ð°Ð»Ñ‘Ð½Ð½Ñ‹Ðµ Ð¸ Ð¿Ñ€Ð¸Ñ„Ñ€Ð¾Ð½Ñ‚Ð¾Ð²Ñ‹Ðµ Ð¿Ð¾ÑÐµÐ»ÐµÐ½Ð¸Ñ"
+              },
+              {
+                "type": "Ð¡Ð¾Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð°Ñ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ñ",
+                "services": [
+                  "Ð’Ñ‹Ð¿Ð»Ð°Ñ‚Ð° Ð¿ÐµÐ½ÑÐ¸Ð¹",
+                  "Ð¡Ð¾Ñ†Ð¸Ð°Ð»ÑŒÐ½Ñ‹Ðµ Ð¿Ð¾ÑÐ¾Ð±Ð¸Ñ",
+                  "Ð—Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ñ‹ Ð±ÑŽÐ´Ð¶ÐµÑ‚Ð½Ð¸ÐºÐ°Ð¼"
+                ],
+                "effect": "Ð˜Ð½Ñ‚ÐµÐ³Ñ€Ð°Ñ†Ð¸Ñ Ñ€ÐµÐ³Ð¸Ð¾Ð½Ð¾Ð² Ð² Ñ€ÑƒÐ±Ð»Ñ‘Ð²ÑƒÑŽ Ð·Ð¾Ð½Ñƒ"
+              }
+            ]
+          },
+          {
+            "id": "SOC-002",
+            "name": "Ð’Ð¾ÐµÐ½Ð½Ð°Ñ Ð¸Ð¿Ð¾Ñ‚ÐµÐºÐ°",
+            "market_position": "Ð›Ð¸Ð´ÐµÑ€ Ñ€Ñ‹Ð½ÐºÐ°",
+            "portfolio": "107 Ð¼Ð»Ñ€Ð´ Ñ€ÑƒÐ±.",
+            "terms_2024": {
+              "rate": "Ð¾Ñ‚ 19,0%",
+              "max_loan_basic": "1,955 Ð¼Ð»Ð½ Ñ€ÑƒÐ±.",
+              "additional_features": [
+                "Ð ÐµÑ„Ð¸Ð½Ð°Ð½ÑÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ",
+                "ÐœÐ°Ñ‚ÐµÑ€Ð¸Ð½ÑÐºÐ¸Ð¹ ÐºÐ°Ð¿Ð¸Ñ‚Ð°Ð»",
+                "Ð¡Ñ‚Ñ€Ð¾ÑÑ‰ÐµÐµÑÑ Ð¶Ð¸Ð»ÑŒÑ‘"
+              ]
+            },
+            "strategic_effect": "Ð£Ð´ÐµÑ€Ð¶Ð°Ð½Ð¸Ðµ ÐºÐ°Ð´Ñ€Ð¾Ð² Ð² ÐžÐŸÐš Ð¸ ÑÐ¸Ð»Ð¾Ð²Ñ‹Ñ… ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°Ñ…",
+            "related_services": [
+              "Ð”ÐœÐ¡",
+              "Ð¡Ñ‚Ñ€Ð°Ñ…Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð¶Ð¸Ð·Ð½Ð¸"
+            ]
+          },
+          {
+            "id": "SOC-003",
+            "name": "ÐÐºÐ°Ð´ÐµÐ¼Ð¸Ñ ÐŸÐ¡Ð‘",
+            "type": "ÐžÑ‚Ñ€Ð°ÑÐ»ÐµÐ²Ð¾Ð¹ ÐºÐ¾Ñ€Ð¿Ð¾Ñ€Ð°Ñ‚Ð¸Ð²Ð½Ñ‹Ð¹ ÑƒÐ½Ð¸Ð²ÐµÑ€ÑÐ¸Ñ‚ÐµÑ‚",
+            "flagship_program": {
+              "name": "Ð“Ð¾ÑÐ¾Ð±Ð¾Ñ€Ð¾Ð½Ð·Ð°ÐºÐ°Ð·. Ð­ÐºÑÐ¿ÐµÑ€Ñ‚Ñ‹",
+              "duration": "72 Ð°ÐºÐ°Ð´ÐµÐ¼Ð¸Ñ‡ÐµÑÐºÐ¸Ñ… Ñ‡Ð°ÑÐ°",
+              "relevance": "ÐžÑˆÐ¸Ð±ÐºÐ° Ð² Ð“ÐžÐ— Ð¼Ð¾Ð¶ÐµÑ‚ Ð¿Ñ€Ð¸Ð²ÐµÑÑ‚Ð¸ Ðº ÑƒÐ³Ð¾Ð»Ð¾Ð²Ð½Ð¾Ð¹ Ð¾Ñ‚Ð²ÐµÑ‚ÑÑ‚Ð²ÐµÐ½Ð½Ð¾ÑÑ‚Ð¸ Ñ€ÑƒÐºÐ¾Ð²Ð¾Ð´ÑÑ‚Ð²Ð°"
+            },
+            "modules": [
+              {
+                "name": "Ð¦ÐµÐ½Ð¾Ð¾Ð±Ñ€Ð°Ð·Ð¾Ð²Ð°Ð½Ð¸Ðµ",
+                "focus": "ÐŸÐµÑ€ÐµÑ…Ð¾Ð´ Ð¾Ñ‚ Ð¾Ñ€Ð¸ÐµÐ½Ñ‚Ð¸Ñ€Ð¾Ð²Ð¾Ñ‡Ð½Ð¾Ð¹ Ðº Ñ„Ð¸ÐºÑÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ð¾Ð¹ Ñ†ÐµÐ½Ðµ"
+              },
+              {
+                "name": "Ð Ð°Ð·Ð´ÐµÐ»ÑŒÐ½Ñ‹Ð¹ ÑƒÑ‡Ñ‘Ñ‚",
+                "focus": "Ð˜ÑÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ Ð½ÐµÑ†ÐµÐ»ÐµÐ²Ð¾Ð³Ð¾ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ñ ÑÑ€ÐµÐ´ÑÑ‚Ð²"
+              },
+              {
+                "name": "Ð‘Ð°Ð½ÐºÐ¾Ð²ÑÐºÐ¾Ðµ ÑÐ¾Ð¿Ñ€Ð¾Ð²Ð¾Ð¶Ð´ÐµÐ½Ð¸Ðµ",
+                "focus": "Ð¡Ð¿ÐµÑ†Ð¸Ñ„Ð¸ÐºÐ° ÑÐ¿ÐµÑ†ÑÑ‡ÐµÑ‚Ð¾Ð² Ð¸ ÐºÐ°Ð·Ð½Ð°Ñ‡ÐµÐ¹ÑÑ‚Ð²Ð°"
+              }
+            ],
+            "speakers": "Ð”ÐµÐ¹ÑÑ‚Ð²ÑƒÑŽÑ‰Ð¸Ðµ ÑÐ¾Ñ‚Ñ€ÑƒÐ´Ð½Ð¸ÐºÐ¸ Ð¿Ñ€Ð¾Ñ„Ð¸Ð»ÑŒÐ½Ñ‹Ñ… Ð²ÐµÐ´Ð¾Ð¼ÑÑ‚Ð²"
+          },
+          {
+            "id": "SOC-004",
+            "name": "Ð¤Ð¸Ð·Ð¸Ñ‡ÐµÑÐºÐ°Ñ Ð¸Ð½Ñ„Ñ€Ð°ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°",
+            "subcomponents": [
+              {
+                "name": "ÐŸÐ¡Ð‘ Ð˜Ð½Ð¶Ð¸Ð½Ð¸Ñ€Ð¸Ð½Ð³",
+                "type": "Ð¡Ð¾Ð±ÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ð¹ Ð³ÐµÐ½Ð¿Ð¾Ð´Ñ€ÑÐ´Ñ‡Ð¸Ðº",
+                "capabilities": [
+                  "Ð¦ÐžÐ”Ñ‹",
+                  "Ð­Ð½ÐµÑ€Ð³Ð¾Ñ†ÐµÐ½Ñ‚Ñ€Ñ‹",
+                  "EPC-ÐºÐ¾Ð½Ñ‚Ñ€Ð°ÐºÑ‚Ñ‹"
+                ],
+                "strategic_value": "Ð”Ð¾Ð¿ÑƒÑÐº Ðº Ð³Ð¾ÑÑ‚Ð°Ð¹Ð½Ðµ, ÑÐ½Ð¸Ð¶ÐµÐ½Ð¸Ðµ Ñ€Ð¸ÑÐºÐ¾Ð² ÑƒÑ‚ÐµÑ‡ÐºÐ¸ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¸"
+              },
+              {
+                "name": "ÐŸÐ¡Ð‘ Ð¡Ð²Ð¾Ð¹ Ð´Ð¾Ð¼",
+                "portfolio": "50 Ð¼Ð»Ñ€Ð´ Ñ€ÑƒÐ±.",
+                "agreements": ">30 ÑÐ¾Ð³Ð»Ð°ÑˆÐµÐ½Ð¸Ð¹ Ñ Ð¿Ñ€Ð¾Ð¼Ñ‹ÑˆÐ»ÐµÐ½Ð½Ñ‹Ð¼Ð¸ Ð¿Ñ€ÐµÐ´Ð¿Ñ€Ð¸ÑÑ‚Ð¸ÑÐ¼Ð¸",
+                "model": "Ð‘Ð°Ð½Ðº â€” ÐºÑ€ÐµÐ´Ð¸Ñ‚Ð¾Ñ€ + Ð¿Ð°Ñ€Ñ‚Ð½Ñ‘Ñ€ Ð·Ð°ÑÑ‚Ñ€Ð¾Ð¹Ñ‰Ð¸ÐºÐ¾Ð², Ñ†ÐµÐ½Ð° Ð½Ð¸Ð¶Ðµ Ñ€Ñ‹Ð½Ð¾Ñ‡Ð½Ð¾Ð¹",
+                "purpose": "Ð ÐµÑˆÐµÐ½Ð¸Ðµ HR-Ð·Ð°Ð´Ð°Ñ‡ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ð¾Ð² (Ð´ÐµÑ„Ð¸Ñ†Ð¸Ñ‚ Â«ÑÐ¸Ð½Ð¸Ñ… Ð²Ð¾Ñ€Ð¾Ñ‚Ð½Ð¸Ñ‡ÐºÐ¾Ð²Â» Ð¸ Ð¸Ð½Ð¶ÐµÐ½ÐµÑ€Ð¾Ð²)"
+              }
+            ]
+          },
+          {
+            "id": "SOC-005",
+            "name": "ÐŸÑ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ð° Â«Ð¡Ð’ÐžÐ¸Â»",
+            "description": "Ð­Ð»ÐµÐºÑ‚Ñ€Ð¾Ð½Ð½Ð¾Ðµ ÑƒÐ´Ð¾ÑÑ‚Ð¾Ð²ÐµÑ€ÐµÐ½Ð¸Ðµ Ð²ÐµÑ‚ÐµÑ€Ð°Ð½Ð° Ð±Ð¾ÐµÐ²Ñ‹Ñ… Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ð¹ + Ð¿Ð»Ð°Ñ‚Ñ‘Ð¶Ð½Ð°Ñ ÐºÐ°Ñ€Ñ‚Ð°",
+            "features": [
+              "Ð¡Ð½ÑÑ‚Ð¸Ðµ Ð½Ð°Ð»Ð¸Ñ‡Ð½Ñ‹Ñ… Ð±ÐµÐ· ÐºÐ¾Ð¼Ð¸ÑÑÐ¸Ð¸",
+              "ÐšÐµÑˆÐ±ÑÐº",
+              "ÐŸÑ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ð° Ð»Ð¾ÑÐ»ÑŒÐ½Ð¾ÑÑ‚Ð¸"
+            ]
+          }
+        ],
+        "semantic_refs": {
+          "links_to": [
+            "psb_shareholder_logic_analysis.json#target_states[1]",
+            "psb_shareholder_logic_analysis.json#shareholder_principles[1]"
+          ],
+          "relationship": "human_capital_development"
+        }
+      },
+      {
+        "id": "CLUSTER-IT",
+        "name": "Ð˜Ð¢-ÐºÐ»Ð°ÑÑ‚ÐµÑ€",
+        "role": "Ð¢ÐµÑ…Ð½Ð¾Ð»Ð¾Ð³Ð¸Ñ‡ÐµÑÐºÐ°Ñ Ð°Ð²Ñ‚Ð°Ñ€ÐºÐ¸Ñ Ð¸ Ð˜Ð¢-ÑÑƒÐ²ÐµÑ€ÐµÐ½Ð¸Ñ‚ÐµÑ‚",
+        "strategic_imperative": "Ð˜ÑÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ Ñ€Ð¸ÑÐº Ð´Ð¸ÑÑ‚Ð°Ð½Ñ†Ð¸Ð¾Ð½Ð½Ð¾Ð³Ð¾ Ð¾Ñ‚ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ñ Ð·Ð°Ð¿Ð°Ð´Ð½Ñ‹Ð¼Ð¸ Ð²ÐµÐ½Ð´Ð¾Ñ€Ð°Ð¼Ð¸",
+        "components": [
+          {
+            "id": "IT-001",
+            "name": "Ð˜Ð¼Ð¿Ð¾Ñ€Ñ‚Ð¾Ð·Ð°Ð¼ÐµÑ‰ÐµÐ½Ð¸Ðµ Â«Ð¶ÐµÐ»ÐµÐ·Ð°Â» Ð¸ ÐŸÐž",
+            "program_start": "2018",
+            "metrics_2024": {
+              "domestic_procurement_share": "85%",
+              "servers_atms_thin_clients": "100% Ð¾Ñ‚ÐµÑ‡ÐµÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ðµ",
+              "storage_systems": "64% Ð¾Ñ‚ÐµÑ‡ÐµÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ðµ"
+            },
+            "key_project_2024": {
+              "name": "Ð—Ð¾Ð´Ð¸Ð°Ðº ÐÐ¹Ð¢Ð¸Ð­Ð¼",
+              "developer": "Ð ÐµÑ„ÐµÑ€ÐµÐ½Ñ ÐŸÐ¾Ð¹Ð½Ñ‚",
+              "problem_solved": "Ð—Ð°Ð¼ÐµÐ½Ð° Microsoft SCCM",
+              "capabilities": [
+                "Ð˜Ð½Ð²ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð·Ð°Ñ†Ð¸Ñ",
+                "ÐžÐ±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ðµ ÐŸÐž",
+                "Ð£Ð´Ð°Ð»Ñ‘Ð½Ð½Ð¾Ðµ ÑƒÐ¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ"
+              ],
+              "environment": "Ð“ÐµÑ‚ÐµÑ€Ð¾Ð³ÐµÐ½Ð½Ð°Ñ (Windows + Astra Linux)",
+              "scope": "Ð’ÑÐµ Ñ€Ð°Ð±Ð¾Ñ‡Ð¸Ðµ ÑÑ‚Ð°Ð½Ñ†Ð¸Ð¸ Ð±Ð°Ð½ÐºÐ°"
+            },
+            "total_projects": "~100 Ð¿Ñ€Ð¾ÐµÐºÑ‚Ð¾Ð² Ð¸Ð¼Ð¿Ð¾Ñ€Ñ‚Ð¾Ð·Ð°Ð¼ÐµÑ‰ÐµÐ½Ð¸Ñ ÐšÐ˜Ð˜"
+          },
+          {
+            "id": "IT-002",
+            "name": "Ð¦ÐµÐ½Ñ‚Ñ€Ñ‹ Ð¾Ð±Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ¸ Ð´Ð°Ð½Ð½Ñ‹Ñ… (Ð¦ÐžÐ”)",
+            "architecture": "ÐœÐ¾Ð´ÑƒÐ»ÑŒÐ½Ð°Ñ (Ð¿Ð°Ñ€Ñ‚Ð½Ñ‘Ñ€ GreenMDC)",
+            "advantage": "Ð‘Ñ‹ÑÑ‚Ñ€Ð¾Ðµ Ð½Ð°Ñ€Ð°Ñ‰Ð¸Ð²Ð°Ð½Ð¸Ðµ Ð¼Ð¾Ñ‰Ð½Ð¾ÑÑ‚ÐµÐ¹ Ð¿Ñ€Ð¸ Ñ€Ð¾ÑÑ‚Ðµ ÐºÐ»Ð¸ÐµÐ½Ñ‚ÑÐºÐ¾Ð¹ Ð±Ð°Ð·Ñ‹",
+            "criticality": "ÐžÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ñ€Ð°ÑÑ‡Ñ‘Ñ‚Ð¾Ð² ÐžÐŸÐš Ð¸Ð·-Ð·Ð° ÐºÐ¸Ð±ÐµÑ€Ð°Ñ‚Ð°ÐºÐ¸ Ð¸Ð»Ð¸ Ð¾Ñ‚ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ñ ÐŸÐž Ð½ÐµÐ´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ð°"
+          },
+          {
+            "id": "IT-003",
+            "name": "ÐžÑ‚Ñ€Ð°ÑÐ»ÐµÐ²Ð¾Ðµ Ð»Ð¸Ð´ÐµÑ€ÑÑ‚Ð²Ð¾ (Ð˜Ð¦Ðš Â«Ð¤Ð¸Ð½Ð°Ð½ÑÑ‹Â»)",
+            "role": "Ð’Ð¾Ð·Ð³Ð»Ð°Ð²Ð»ÑÐµÑ‚ Ñ€Ð°Ð±Ð¾Ñ‡ÑƒÑŽ Ð³Ñ€ÑƒÐ¿Ð¿Ñƒ Â«ÐžÐ±Ð¾Ñ€ÑƒÐ´Ð¾Ð²Ð°Ð½Ð¸ÐµÂ» Ð¿Ñ€Ð¸ ÐŸÑ€Ð°Ð²Ð¸Ñ‚ÐµÐ»ÑŒÑÑ‚Ð²Ðµ Ð Ð¤",
+            "mechanism": "ÐžÑ‚Ñ€Ð°ÑÐ»ÐµÐ²Ð¾Ð¹ Ð·Ð°Ð¿Ñ€Ð¾Ñ",
+            "function": "ÐšÐ¾Ð½ÑÐ¾Ð»Ð¸Ð´Ð°Ñ†Ð¸Ñ Ñ‚ÐµÑ…Ñ‚Ñ€ÐµÐ±Ð¾Ð²Ð°Ð½Ð¸Ð¹ Ð²ÑÐµÑ… ÐºÑ€ÐµÐ´Ð¸Ñ‚Ð½Ñ‹Ñ… Ð¾Ñ€Ð³Ð°Ð½Ð¸Ð·Ð°Ñ†Ð¸Ð¹ ÑÑ‚Ñ€Ð°Ð½Ñ‹",
+            "effect": "Ð“Ð°Ñ€Ð°Ð½Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ð¹ Ð·Ð°ÐºÐ°Ð· Ð´Ð»Ñ Ñ€Ð¾ÑÑÐ¸Ð¹ÑÐºÐ¾Ð¹ Ð¿Ñ€Ð¾Ð¼Ñ‹ÑˆÐ»ÐµÐ½Ð½Ð¾ÑÑ‚Ð¸",
+            "example": "Ð’Ñ‹ÑÐ²Ð»ÐµÐ½ Ð´ÐµÑ„Ð¸Ñ†Ð¸Ñ‚ Ð¸ Ð·Ð°ÐºÐ°Ð·Ð°Ð½Ð° Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ° 4-Ð¿Ñ€Ð¾Ñ†ÐµÑÑÐ¾Ñ€Ð½Ñ‹Ñ… ÑÐµÑ€Ð²ÐµÑ€Ð¾Ð²"
+          }
+        ],
+        "semantic_refs": {
+          "links_to": [
+            "psb_spbpu_context_analysis.json#problem_space.challenges[2]",
+            "psb_shareholder_logic_analysis.json#shareholder_principles[0]"
+          ],
+          "relationship": "technological_sovereignty"
+        }
+      },
+      {
+        "id": "CLUSTER-SCITECH",
+        "name": "ÐÐ°ÑƒÑ‡Ð½Ð¾-Ñ‚ÐµÑ…Ð½Ð¾Ð»Ð¾Ð³Ð¸Ñ‡ÐµÑÐºÐ¸Ð¹ ÐºÐ»Ð°ÑÑ‚ÐµÑ€",
+        "role": "Deep Tech Ð¸ Ð¸Ð½Ð½Ð¾Ð²Ð°Ñ†Ð¸Ð¸",
+        "paradigm_shift": "ÐžÑ‚ ÐºÑ€ÐµÐ´Ð¸Ñ‚Ð¾Ð²Ð°Ð½Ð¸Ñ Ð¿Ð¾Ð´ Ð·Ð°Ð»Ð¾Ð³ Ð°ÐºÑ‚Ð¸Ð²Ð¾Ð² Ðº Ð´Ð¾Ð»Ð³Ð¾ÑÑ€Ð¾Ñ‡Ð½Ð¾Ð¹ Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶ÐºÐµ Ð¸Ð½Ð¶ÐµÐ½ÐµÑ€Ð½Ñ‹Ñ… Ñ€ÐµÑˆÐµÐ½Ð¸Ð¹ Ð½Ð° Ð²ÑÐµÑ… ÑÑ‚Ð°Ð´Ð¸ÑÑ… TRL/MRL",
+        "components": [
+          {
+            "id": "SCITECH-001",
+            "name": "ÐÐ»ÑŒÑÐ½Ñ Ñ deep-tech Ð¸ Â«Ð‘Ð¾Ð»ÑŒÑˆÐ¾Ð¹ Ð½Ð°ÑƒÐºÐ¾Ð¹Â»",
+            "partnerships": [
+              {
+                "id": "PARTNER-SPBPU",
+                "partner": "Ð¡ÐŸÐ±ÐŸÐ£ ÐŸÐµÑ‚Ñ€Ð° Ð’ÐµÐ»Ð¸ÐºÐ¾Ð³Ð¾",
+                "agreement_date": "20.06.2025 (ÐŸÐœÐ­Ð¤)",
+                "focus": "Ð¢ÐµÑ…Ð½Ð¾Ð»Ð¾Ð³Ð¸Ñ Ñ†Ð¸Ñ„Ñ€Ð¾Ð²Ñ‹Ñ… Ð´Ð²Ð¾Ð¹Ð½Ð¸ÐºÐ¾Ð²",
+                "framework": "Ð§ÐµÑ‚Ð²ÐµÑ€Ð½Ð°Ñ ÑÐ¿Ð¸Ñ€Ð°Ð»ÑŒ (Ð³Ð¾ÑÑƒÐ´Ð°Ñ€ÑÑ‚Ð²Ð¾ + Ð²ÑƒÐ·Ñ‹ + Ð±Ð¸Ð·Ð½ÐµÑ + Ñ„Ð¸Ð½Ð°Ð½ÑÐ¾Ð²Ñ‹Ð¹ ÑÐµÐºÑ‚Ð¾Ñ€)",
+                "significance": "ÐÐ¾Ð²Ð°Ñ‚Ð¾Ñ€ÑÐºÐ°Ñ ÑÐ²ÑÐ·ÐºÐ° Â«Ð±Ð°Ð½Ðº + ÑƒÐ½Ð¸Ð²ÐµÑ€ÑÐ¸Ñ‚ÐµÑ‚Â» Ð´Ð»Ñ ÐÐ˜Ð¡ Ð Ð¾ÑÑÐ¸Ð¸",
+                "psb_initiatives": [
+                  {
+                    "name": "ÐÐ°Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ð¿Ð¾ Ñ€Ð°Ð·Ð²Ð¸Ñ‚Ð¸ÑŽ ÑÑƒÐ²ÐµÑ€ÐµÐ½Ð½Ñ‹Ñ… Ñ‚ÐµÑ…Ð½Ð¾Ð»Ð¾Ð³Ð¸Ð¹",
+                    "tasks": [
+                      "Ð’Ð½ÐµÑÐµÐ½Ð¸Ðµ Ð¦Ð” Ð² Ð¿ÐµÑ€ÐµÑ‡ÐµÐ½ÑŒ ÐºÑ€Ð¸Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¸Ñ…/ÑÐºÐ²Ð¾Ð·Ð½Ñ‹Ñ… Ñ‚ÐµÑ…Ð½Ð¾Ð»Ð¾Ð³Ð¸Ð¹",
+                      "Ð”Ð¾Ñ€Ð¾Ð¶Ð½Ð°Ñ ÐºÐ°Ñ€Ñ‚Ð° Ñ‚ÐµÑ…Ð½Ð¾Ð»Ð¾Ð³Ð¸Ñ‡ÐµÑÐºÐ¾Ð¹ ÐºÐ¾Ð¾Ð¿ÐµÑ€Ð°Ñ†Ð¸Ð¸ Ð² ÐžÐŸÐš",
+                      "Ð¤Ð¾Ñ€Ð¼Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ ÑÐµÑ‚Ð¸ ÐºÐ²Ð°Ð»Ð¸Ñ„Ð¸Ñ†Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ñ… Ð·Ð°ÐºÐ°Ð·Ñ‡Ð¸ÐºÐ¾Ð² Ð¸ Ð¸ÑÐ¿Ð¾Ð»Ð½Ð¸Ñ‚ÐµÐ»ÐµÐ¹",
+                      "Ð¤Ð¸Ð½Ð°Ð½ÑÐ¾Ð²Ñ‹Ðµ Ð¸Ð½ÑÑ‚Ñ€ÑƒÐ¼ÐµÐ½Ñ‚Ñ‹ Ð´Ð»Ñ Ñ‚ÐµÑ…Ð½Ð¾Ð»Ð¾Ð³Ð¸Ñ‡ÐµÑÐºÐ¸Ñ… Ð¸Ð½Ð½Ð¾Ð²Ð°Ñ†Ð¸Ð¹"
+                    ]
+                  },
+                  {
+                    "name": "ÐÐºÑÐµÐ»ÐµÑ€Ð°Ñ‚Ð¾Ñ€ Â«Ð”Ð¸Ñ„Ñ„ÑƒÐ·Ð¸Ñ Ð¸Ð½Ð½Ð¾Ð²Ð°Ñ†Ð¸Ð¹Â»",
+                    "tasks": [
+                      "ÐŸÐ¾Ð¸ÑÐº Ð¸ ÑÐºÑÐ¿ÐµÑ€Ñ‚Ð½Ð°Ñ Ð¾Ñ†ÐµÐ½ÐºÐ° ÐÐ˜ÐžÐšÐ  Ð¸ Ð¿Ð¸Ð»Ð¾Ñ‚Ð½Ñ‹Ñ… Ð¿Ñ€Ð¾ÐµÐºÑ‚Ð¾Ð² Ð¦Ð”",
+                      "ÐšÐ¾Ñ€Ð¾Ñ‚ÐºÐ¸Ð¹ ÐºÐ¾Ð½Ñ‚ÑƒÑ€ ÐºÐ¾Ð¼Ð¼ÐµÑ€Ñ†Ð¸Ð°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ð¸ Ñ‡ÐµÑ€ÐµÐ· Ð¿Ð»Ð¾Ñ‰Ð°Ð´ÐºÐ¸ ÐžÐŸÐš",
+                      "ÐœÐ°ÑÑˆÑ‚Ð°Ð±Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð½Ð° Ñ€Ñ‹Ð½Ð¾Ðº Ð Ð¤ Ð¸ ÑÑ‚Ñ€Ð°Ð½-Ð¿Ð°Ñ€Ñ‚Ð½Ñ‘Ñ€Ð¾Ð²"
+                    ]
+                  }
+                ],
+                "semantic_refs": {
+                  "links_to": [
+                    "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model",
+                    "psb_spbpu_context_analysis.json#institutional_framework.mkcp_dt"
+                  ],
+                  "relationship": "core_partnership_implementation"
+                }
+              },
+              {
+                "id": "PARTNER-MIPT",
+                "partner": "ÐœÐ¤Ð¢Ð˜ (Ð¤Ð¸Ð·Ñ‚ÐµÑ…)",
+                "agreement_date": "ÐŸÐœÐ­Ð¤-2025",
+                "signatories": [
+                  "ÐŸÑ‘Ñ‚Ñ€ Ð¤Ñ€Ð°Ð´ÐºÐ¾Ð²",
+                  "Ð”Ð¼Ð¸Ñ‚Ñ€Ð¸Ð¹ Ð›Ð¸Ð²Ð°Ð½Ð¾Ð² (Ñ€ÐµÐºÑ‚Ð¾Ñ€)"
+                ],
+                "focus": "Ð˜Ð˜ Ð¸ Ð´Ñ€Ð¾Ð½Ñ‹",
+                "joint_venture": {
+                  "goal": "ÐšÐ¾Ð¼Ð¼ÐµÑ€Ñ‡ÐµÑÐºÐ¸ ÑƒÑÐ¿ÐµÑˆÐ½Ñ‹Ðµ Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚Ñ‹ Ð½Ð° Ð±Ð°Ð·Ðµ Ð˜Ð˜ Ð´Ð»Ñ ÐžÐŸÐš Ð¸ Ð¿Ñ€Ð¾Ð¼Ñ‹ÑˆÐ»ÐµÐ½Ð½Ð¾ÑÑ‚Ð¸",
+                  "vectors": [
+                    "ÐšÐ¾Ð½ÑÐ°Ð»Ñ‚Ð¸Ð½Ð³ Ð¸ Ð²Ð½ÐµÐ´Ñ€ÐµÐ½Ð¸Ðµ Ð¿Ñ€Ð¸ÐºÐ»Ð°Ð´Ð½Ð¾Ð³Ð¾ Ð˜Ð˜",
+                    "Ð£ÑÐºÐ¾Ñ€ÐµÐ½Ð½Ð°Ñ ÐºÐ°Ð¿Ð¸Ñ‚Ð°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ñ Ð½Ð°ÑƒÑ‡Ð½Ñ‹Ñ… Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚Ð¾Ðº",
+                    "R&D Ð°ÑƒÑ‚ÑÐ¾Ñ€ÑÐ¸Ð½Ð³ Ð´Ð»Ñ ÐºÐ¾Ñ€Ð¿Ð¾Ñ€Ð°Ñ‚Ð¸Ð²Ð½Ñ‹Ñ… ÐºÐ»Ð¸ÐµÐ½Ñ‚Ð¾Ð² Ð±Ð°Ð½ÐºÐ°"
+                  ]
+                },
+                "projects": [
+                  {
+                    "name": "Ð¦Ð¸Ñ„Ñ€Ð¾Ð²Ð¾Ðµ Ð½ÐµÐ±Ð¾",
+                    "goal": "Ð˜Ð½Ñ„Ñ€Ð°ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð° Ð´Ð»Ñ Ð¸Ð½Ñ‚ÐµÐ³Ñ€Ð°Ñ†Ð¸Ð¸ Ð‘ÐŸÐ›Ð Ð² ÐµÐ´Ð¸Ð½Ð¾Ðµ Ð²Ð¾Ð·Ð´ÑƒÑˆÐ½Ð¾Ðµ Ð¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÑÑ‚Ð²Ð¾"
+                  },
+                  {
+                    "name": "Ð˜Ð˜-Ñ‚ÐµÑ…Ð½Ð¾Ð¿Ð°Ñ€Ðº Ð² Ð¯Ñ€Ð¾ÑÐ»Ð°Ð²Ð»Ðµ",
+                    "status": "Ð¡Ð­Ð—",
+                    "purpose": "Ð¢Ð¾Ñ‡ÐºÐ° Ð¿Ñ€Ð¸Ñ‚ÑÐ¶ÐµÐ½Ð¸Ñ Ð´Ð»Ñ Ñ‚ÐµÑ…ÐºÐ¾Ð¼Ð¿Ð°Ð½Ð¸Ð¹ + Ð»ÑŒÐ³Ð¾Ñ‚Ð½Ñ‹Ð¹ Ð½Ð°Ð»Ð¾Ð³Ð¾Ð²Ñ‹Ð¹ Ñ€ÐµÐ¶Ð¸Ð¼ + Ð²Ñ‹Ñ‡Ð¸ÑÐ»Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ðµ Ð¼Ð¾Ñ‰Ð½Ð¾ÑÑ‚Ð¸"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "SCITECH-002",
+            "name": "Ð’ÐµÐ½Ñ‡ÑƒÑ€Ð½Ð°Ñ ÑÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ð°",
+            "components": [
+              {
+                "id": "VENTURE-001",
+                "name": "ÐŸÐ¡Ð‘ Ð˜Ð½Ð½Ð¾Ð²Ð°Ñ†Ð¸Ð¸ Ð¸ Ð˜Ð½Ð²ÐµÑÑ‚Ð¸Ñ†Ð¸Ð¸",
+                "function": "Ð˜Ð·Ð¾Ð»ÑÑ†Ð¸Ñ Ð²Ñ‹ÑÐ¾ÐºÐ¾Ñ€Ð¸ÑÐºÐ¾Ð²Ñ‹Ñ… Ð°ÐºÑ‚Ð¸Ð²Ð¾Ð²",
+                "financials_2024": {
+                  "net_income": "-243,4 Ð¼Ð»Ð½ Ñ€ÑƒÐ±.",
+                  "interpretation": "ÐŸÐ»Ð°Ð½Ð¾Ð²Ð°Ñ ÑƒÐ±Ñ‹Ñ‚Ð¾Ñ‡Ð½Ð¾ÑÑ‚ÑŒ Ð½Ð° Ð¸Ð½Ð²ÐµÑÑ‚Ð¸Ñ†Ð¸Ð¾Ð½Ð½Ð¾Ð¼ ÑÑ‚Ð°Ð¿Ðµ"
+                },
+                "sanction_status": "SDN-Ð»Ð¸ÑÑ‚ Ð¡Ð¨Ð Ñ 2022 Ð³Ð¾Ð´Ð°",
+                "strategic_value": "Ð’ÐµÐ´ÐµÐ½Ð¸Ðµ Ð´ÐµÑÑ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚Ð¸ Ð² ÑƒÑÐ»Ð¾Ð²Ð¸ÑÑ… ÑÐ°Ð½ÐºÑ†Ð¸Ð¾Ð½Ð½Ð¾Ð³Ð¾ Ð´Ð°Ð²Ð»ÐµÐ½Ð¸Ñ"
+              },
+              {
+                "id": "VENTURE-002",
+                "name": "Ð¤Ð¾Ð½Ð´ Â«Ð­Ð ÐÂ»",
+                "affiliation": "Ð“Ñ€ÑƒÐ¿Ð¿Ð° ÐŸÐ¡Ð‘ + Ð’Ð¾ÐµÐ½Ð½Ñ‹Ð¹ Ð¸Ð½Ð½Ð¾Ð²Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ð¹ Ñ‚ÐµÑ…Ð½Ð¾Ð¿Ð¾Ð»Ð¸Ñ Â«Ð­Ð ÐÂ» (ÐœÐ¸Ð½Ð¾Ð±Ð¾Ñ€Ð¾Ð½Ñ‹)",
+                "investment_size": "Ð´Ð¾ 200 Ð¼Ð»Ð½ Ñ€ÑƒÐ±. Ð½Ð° ÑÑ‚Ð°Ñ€Ñ‚Ð°Ð¿",
+                "unique_value": "Ð”Ð¾ÑÑ‚ÑƒÐ¿ Ðº Ð¿Ð¾Ð»Ð¸Ð³Ð¾Ð½Ð°Ð¼ ÐœÐ¸Ð½Ð¾Ð±Ð¾Ñ€Ð¾Ð½Ñ‹ Ð´Ð»Ñ ÑƒÑÐºÐ¾Ñ€ÐµÐ½Ð½Ð¾Ð¹ Ð¿Ñ€Ð¸Ñ‘Ð¼ÐºÐ¸",
+                "infrastructure_access": [
+                  {
+                    "name": "ÐžÐšÐ¦ Â«ÐšÑƒÐ»Ð¸Ð±Ð¸Ð½Â»",
+                    "function": "ÐŸÑ€Ð¾Ñ‚Ð¾Ñ‚Ð¸Ð¿Ñ‹ Ð¸ Ð¼Ð°Ð»Ñ‹Ðµ ÑÐµÑ€Ð¸Ð¸"
+                  },
+                  {
+                    "name": "Ð›Ð°Ð±Ð¾Ñ€Ð°Ñ‚Ð¾Ñ€Ð¸Ð¸ Ñ‚ÐµÑ…Ð½Ð¾Ð¿Ð¾Ð»Ð¸ÑÐ° Â«Ð­Ð ÐÂ»",
+                    "function": "Ð˜ÑÐ¿Ñ‹Ñ‚Ð°Ð½Ð¸Ñ Ð² ÑƒÑÐ»Ð¾Ð²Ð¸ÑÑ…, Ð¿Ñ€Ð¸Ð±Ð»Ð¸Ð¶Ñ‘Ð½Ð½Ñ‹Ñ… Ðº ÑÐºÑÐ¿Ð»ÑƒÐ°Ñ‚Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ð¼"
+                  },
+                  {
+                    "name": "Ð“Ð£Ð˜Ð  ÐœÐž Ð Ð¤",
+                    "function": "ÐšÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð¸Ñ€Ð¾Ð²ÐºÐ° Ð¢Ð¢Ð¥ Ð½Ð° Ñ€Ð°Ð½Ð½Ð¸Ñ… ÑÑ‚Ð°Ð´Ð¸ÑÑ…"
+                  }
+                ],
+                "accelerator": {
+                  "type": "ÐŸÐµÑ€Ð²Ñ‹Ð¹ Ð² Ð Ð¾ÑÑÐ¸Ð¸ Ð´Ð»Ñ Â«Ð¾Ð±Ð¾Ñ€Ð¾Ð½Ð½Ñ‹Ñ… ÑÑ‚Ð°Ñ€Ñ‚Ð°Ð¿Ð¾Ð²Â»",
+                  "stages": [
+                    "ÐžÑ‚Ð±Ð¾Ñ€",
+                    "ÐžÐ±Ñ€Ð°Ð·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ð¹ Ñ‚Ñ€ÐµÐº",
+                    "Ð”ÐµÐ¼Ð¾-Ð´Ð½Ð¸ Ð¸ Ð¿Ð¸Ð»Ð¾Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ"
+                  ],
+                  "directions": [
+                    "ÐœÐ°Ð»Ñ‹Ðµ ÐºÐ¾ÑÐ¼Ð¸Ñ‡ÐµÑÐºÐ¸Ðµ Ð°Ð¿Ð¿Ð°Ñ€Ð°Ñ‚Ñ‹",
+                    "Ð Ð¾Ð±Ð¾Ñ‚Ð¾Ñ‚ÐµÑ…Ð½Ð¸ÐºÐ°",
+                    "Ð˜Ð‘",
+                    "Ð¡ÐºÐ²Ð¾Ð·Ð½Ñ‹Ðµ Ñ†Ð¸Ñ„Ñ€Ð¾Ð²Ñ‹Ðµ Ñ‚ÐµÑ…Ð½Ð¾Ð»Ð¾Ð³Ð¸Ð¸",
+                    "ÐÐ¿Ð¿Ð°Ñ€Ð°Ñ‚Ñ‹ Ð¶Ð¸Ð·Ð½ÐµÐ¾Ð±ÐµÑÐ¿ÐµÑ‡ÐµÐ½Ð¸Ñ"
+                  ]
+                },
+                "portfolio_examples": [
+                  {
+                    "company": "ÐÐž Â«ÐÐŸÐ¤ Â«ÐœÐ¸ÐºÑ€Ð°Ð½Â»",
+                    "domain": "Ð¡Ð²ÑÐ·ÑŒ",
+                    "project": "Ð‘Ñ‹ÑÑ‚Ñ€Ð¾Ñ€Ð°Ð·Ð²Ñ‘Ñ€Ñ‚Ñ‹Ð²Ð°ÐµÐ¼Ñ‹Ðµ ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹ Ð½Ð°Ð·ÐµÐ¼Ð½Ð¾Ð¹ Ñ€Ð°Ð´Ð¸Ð¾ÑÐ²ÑÐ·Ð¸"
+                  },
+                  {
+                    "company": "ÐžÐžÐž Â«Ð ÑƒÑÑÐºÐ¸Ðµ Ð²ÐµÐ·Ð´ÐµÑ…Ð¾Ð´Ñ‹ ÐŸÐ»Ð°ÑÑ‚ÑƒÐ½Â»",
+                    "domain": "ÐœÐ¾Ð±Ð¸Ð»ÑŒÐ½Ð¾ÑÑ‚ÑŒ",
+                    "project": "Ð’ÐµÐ·Ð´ÐµÑ…Ð¾Ð´Ñ‹-Ð°Ð¼Ñ„Ð¸Ð±Ð¸Ð¸ Ð½Ð° Ð³ÑƒÑÐµÐ½Ð¸Ñ‡Ð½Ð¾Ð¼ Ñ…Ð¾Ð´Ñƒ"
+                  },
+                  {
+                    "company": "ÐŸÐ¾Ð»Ð¸Ð³Ð¾Ð½Ð°Ñ‚Ð¾Ñ€",
+                    "domain": "VR/AR Ð¾Ð±ÑƒÑ‡ÐµÐ½Ð¸Ðµ",
+                    "project": "Ð¢Ñ€ÐµÐ½Ð°Ð¶Ñ‘Ñ€Ñ‹ Ð²Ð¸Ñ€Ñ‚ÑƒÐ°Ð»ÑŒÐ½Ð¾Ð¹ Ñ€ÐµÐ°Ð»ÑŒÐ½Ð¾ÑÑ‚Ð¸"
+                  }
+                ]
+              },
+              {
+                "id": "VENTURE-003",
+                "name": "Ð˜Ð½Ð²ÐµÑÑ‚Ð¸Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ð¹ Ñ„Ð¾Ð½Ð´ Ð¿Ñ€Ð¾ÐµÐºÑ‚Ð¾Ð² Ð´Ð²Ð¾Ð¹Ð½Ð¾Ð³Ð¾ Ð½Ð°Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ",
+                "launch": "ÐŸÐœÐ­Ð¤-2025",
+                "target_capital": "12 Ð¼Ð»Ñ€Ð´ Ñ€ÑƒÐ±.",
+                "participants": [
+                  "ÐŸÐ¡Ð‘ (ÑÐºÐ¾Ñ€Ð½Ñ‹Ð¹ Ð¸Ð½Ð²ÐµÑÑ‚Ð¾Ñ€)",
+                  "Ð¦Ð‘Ð¡Ð¢ (ÑƒÐ¿Ñ€Ð°Ð²Ð»ÑÑŽÑ‰Ð¸Ð¹ Ð¿Ð°Ñ€Ñ‚Ð½Ñ‘Ñ€)",
+                  "Ð•Ð´Ð¸Ð½Ð°Ñ Ð Ð¾ÑÑÐ¸Ñ (Ð¿Ð¾Ð»Ð¸Ñ‚Ð¸Ñ‡ÐµÑÐºÐ°Ñ Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶ÐºÐ°)"
+                ],
+                "capital_structure": "Blended finance (Ð±ÑŽÐ´Ð¶ÐµÑ‚Ð½Ñ‹Ðµ + Ñ‡Ð°ÑÑ‚Ð½Ñ‹Ðµ)",
+                "focus_areas": [
+                  "ÐÐ²Ñ‚Ð¾Ð½Ð¾Ð¼Ð½Ñ‹Ðµ ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹",
+                  "Ð”Ð²Ð¸Ð³Ð°Ñ‚ÐµÐ»ÐµÑÑ‚Ñ€Ð¾ÐµÐ½Ð¸Ðµ",
+                  "Ð¡ÐµÐ½ÑÐ¾Ñ€Ð¸ÐºÐ°",
+                  "Ð¡Ð²ÑÐ·ÑŒ"
+                ],
+                "philosophy": "Ð¡Ñ€ÐµÐ´Ð° ÐºÐ¾Ð½ÐºÑƒÑ€ÐµÐ½Ñ†Ð¸Ð¸ Ð¸Ð´ÐµÐ¹, Ð³Ð´Ðµ Ð²Ñ‹Ð¶Ð¸Ð²Ð°ÑŽÑ‚ Ñ‚ÐµÑ…Ð½Ð¾Ð»Ð¾Ð³Ð¸Ñ‡ÐµÑÐºÐ¸ Ð¸ Ñ€Ñ‹Ð½Ð¾Ñ‡Ð½Ð¾ Ð¶Ð¸Ð·Ð½ÐµÑÐ¿Ð¾ÑÐ¾Ð±Ð½Ñ‹Ðµ Ñ€ÐµÑˆÐµÐ½Ð¸Ñ"
+              }
+            ]
+          },
+          {
+            "id": "SCITECH-003",
+            "name": "Ð¡Ð½Ð°Ð±Ð¶ÐµÐ½Ð¸Ðµ Ñ Ð¿Ð¾Ð¼Ð¾Ñ‰ÑŒÑŽ Ñ‚ÐµÑ…Ð½Ð¾Ð»Ð¾Ð³Ð¸Ñ‡ÐµÑÐºÐ¸Ñ… Ñ€ÐµÑˆÐµÐ½Ð¸Ð¹",
+            "components": [
+              {
+                "name": "Ð’Ð¾ÐµÐ½Ð½Ñ‹Ð¹ Ð¼Ð°Ñ€ÐºÐµÑ‚Ð¿Ð»ÐµÐ¹Ñ",
+                "launch": "Ð”ÐµÐºÐ°Ð±Ñ€ÑŒ 2024",
+                "partners": [
+                  "ÐŸÐ¡Ð‘",
+                  "Ð•Ð´Ð¸Ð½Ð°Ñ Ð Ð¾ÑÑÐ¸Ñ",
+                  "Ð¦Ð‘Ð¡Ð¢"
+                ],
+                "function": "Ð—Ð°ÐºÑƒÐ¿ÐºÐ° ÐºÐ¾Ð¼Ð¿Ð»ÐµÐºÑ‚ÑƒÑŽÑ‰Ð¸Ñ… (Ð·Ð°Ð¿Ñ‡Ð°ÑÑ‚Ð¸ Ð‘ÐŸÐ›Ð, ÑÑ€ÐµÐ´ÑÑ‚Ð²Ð° Ð Ð­Ð‘, ÑÐºÐ¸Ð¿Ð¸Ñ€Ð¾Ð²ÐºÐ°) Ð·Ð° ÑÑ‡Ñ‘Ñ‚ ÐœÐ¸Ð½Ð¾Ð±Ð¾Ñ€Ð¾Ð½Ñ‹",
+                "value": "Ð ÐµÑˆÐµÐ½Ð¸Ðµ Ð¿Ñ€Ð¾Ð±Ð»ÐµÐ¼Ñ‹ Â«Ð¿Ð¾ÑÐ»ÐµÐ´Ð½ÐµÐ¹ Ð¼Ð¸Ð»Ð¸Â» â€” Ð¾Ð¿ÐµÑ€Ð°Ñ‚Ð¸Ð²Ð½Ð¾Ðµ Ð·Ð°ÐºÑ€Ñ‹Ñ‚Ð¸Ðµ Ð¾ÑÑ‚Ñ€Ñ‹Ñ… Ð¿Ð¾Ñ‚Ñ€ÐµÐ±Ð½Ð¾ÑÑ‚ÐµÐ¹",
+                "supplier_network": "Ð¦Ð‘Ð¡Ð¢ Ð¾Ð±ÑŠÐµÐ´Ð¸Ð½ÑÐµÑ‚ >250 Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚Ñ‡Ð¸ÐºÐ¾Ð²"
+              },
+              {
+                "name": "ÐŸÐ¡Ð‘ ÐœÐ°Ñ€ÐºÐµÑ‚",
+                "focus": "Ð›Ð¾Ð³Ð¸ÑÑ‚Ð¸ÐºÐ° Ð¸ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ° Ð² Ð½Ð¾Ð²Ñ‹Ðµ Ñ€ÐµÐ³Ð¸Ð¾Ð½Ñ‹ (Ð³Ð´Ðµ Ð½Ðµ Ñ€Ð°Ð±Ð¾Ñ‚Ð°ÑŽÑ‚ Ozon/Wildberries)",
+                "integration": "ÐšÐµÑˆÐ±ÑÐº Ð¸ Ð±Ð¾Ð½ÑƒÑÑ‹ Ð±Ð°Ð½ÐºÐ° Ð·Ð° Ð¿Ð¾ÐºÑƒÐ¿ÐºÐ¸"
+              }
+            ]
+          },
+          {
+            "id": "SCITECH-004",
+            "name": "Ð¤Ð¸Ð½Ñ‚ÐµÑ… (Ð¢Ð¾ÐºÐµÐ¾Ð½)",
+            "legal_basis": "Ð¤Ð—-259 Â«Ðž Ñ†Ð¸Ñ„Ñ€Ð¾Ð²Ñ‹Ñ… Ñ„Ð¸Ð½Ð°Ð½ÑÐ¾Ð²Ñ‹Ñ… Ð°ÐºÑ‚Ð¸Ð²Ð°Ñ…Â»",
+            "structure": "100% Ð´Ð¾Ñ‡ÐµÑ€Ð½ÐµÐµ Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð¾ ÐŸÐ¡Ð‘ (ÐžÐ˜Ð¡)",
+            "rationale": "Ð˜Ð·Ð¾Ð»ÑÑ†Ð¸Ñ Ð¾Ð¿ÐµÑ€Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ñ… Ñ€Ð¸ÑÐºÐ¾Ð² Ð±Ð»Ð¾ÐºÑ‡ÐµÐ¹Ð½-Ð¿Ð»Ð°Ñ‚Ñ„Ð¾Ñ€Ð¼Ñ‹ Ð¾Ñ‚ Ð±Ð°Ð»Ð°Ð½ÑÐ° Ð¾ÑÐ½Ð¾Ð²Ð½Ð¾Ð³Ð¾ Ð±Ð°Ð½ÐºÐ°",
+            "positioning": {
+              "tech_owner": "Ð‘Ð»Ð¾Ðº Â«Ð¦Ð¸Ñ„Ñ€Ð¾Ð²Ð¾Ð¹ Ð±Ð¸Ð·Ð½ÐµÑÂ»",
+              "commercial_owner": "Ð‘Ð»Ð¾Ðº Â«Ð¡Ñ€ÐµÐ´Ð½Ð¸Ð¹ Ð¸ Ð¼Ð°Ð»Ñ‹Ð¹ Ð±Ð¸Ð·Ð½ÐµÑÂ»"
+            },
+            "value_proposition": "Ð¦Ð¤Ð ÐºÐ°Ðº Ð¸Ð½ÑÑ‚Ñ€ÑƒÐ¼ÐµÐ½Ñ‚ Â«Ð»Ñ‘Ð³ÐºÐ¾Ð³Ð¾Â» Ð¿Ñ€Ð¸Ð²Ð»ÐµÑ‡ÐµÐ½Ð¸Ñ Ð»Ð¸ÐºÐ²Ð¸Ð´Ð½Ð¾ÑÑ‚Ð¸ Ð´Ð»Ñ ÐœÐ¡Ð‘",
+            "effect": "Time-to-Market: Ð¼ÐµÑÑÑ†Ñ‹ â†’ Ð´Ð½Ð¸"
+          }
+        ],
+        "semantic_refs": {
+          "links_to": [
+            "psb_spbpu_context_analysis.json#solution_architecture",
+            "psb_spbpu_context_analysis.json#application_domain.digital_twin_effects",
+            "psb_financial_architecture_analysis.json#business_model.profit_streams[2]"
+          ],
+          "relationship": "innovation_infrastructure"
+        }
+      }
+    ]
+  },
+  "cross_cluster_integrations": {
+    "id": "CROSS-INT-001",
+    "description": "Ð¡Ð¸ÑÑ‚ÐµÐ¼Ð½Ñ‹Ðµ ÑÐ²ÑÐ·Ð¸ Ð¼ÐµÐ¶Ð´Ñƒ ÐºÐ»Ð°ÑÑ‚ÐµÑ€Ð°Ð¼Ð¸ ÑÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹",
+    "integrations": [
+      {
+        "id": "INT-001",
+        "from_cluster": "CLUSTER-FINANCE",
+        "to_cluster": "CLUSTER-SCITECH",
+        "mechanism": "Ð¤Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð½Ð³ SCF â†’ Ð¤Ð¸Ð½Ð°Ð½ÑÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð¿Ð¾ÑÑ‚Ð°Ð²Ñ‰Ð¸ÐºÐ¾Ð² Ð² Ð¸Ð½Ð½Ð¾Ð²Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ñ… Ñ†ÐµÐ¿Ð¾Ñ‡ÐºÐ°Ñ…",
+        "value": "Ð›Ð¸ÐºÐ²Ð¸Ð´Ð½Ð¾ÑÑ‚ÑŒ Ð´Ð»Ñ R&D-Ð¸Ð½Ñ‚ÐµÐ½ÑÐ¸Ð²Ð½Ñ‹Ñ… Ð¿Ñ€ÐµÐ´Ð¿Ñ€Ð¸ÑÑ‚Ð¸Ð¹"
+      },
+      {
+        "id": "INT-002",
+        "from_cluster": "CLUSTER-IT",
+        "to_cluster": "CLUSTER-FINANCE",
+        "mechanism": "ÐžÑ‚ÐµÑ‡ÐµÑÑ‚Ð²ÐµÐ½Ð½Ð¾Ðµ ÐŸÐž â†’ Ð¡ÑƒÐ²ÐµÑ€ÐµÐ½Ð¸Ñ‚ÐµÑ‚ Ñ€Ð°ÑÑ‡Ñ‘Ñ‚Ð¾Ð² ÐžÐŸÐš",
+        "value": "ÐÐµÐ²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚ÑŒ Ð¾Ñ‚ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ñ Ð¿Ð»Ð°Ñ‚Ñ‘Ð¶Ð½Ð¾Ð¹ Ð¸Ð½Ñ„Ñ€Ð°ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ñ‹"
+      },
+      {
+        "id": "INT-003",
+        "from_cluster": "CLUSTER-INST",
+        "to_cluster": "CLUSTER-SCITECH",
+        "mechanism": "ÐÐ¾Ñ€Ð¼Ð°Ñ‚Ð¸Ð²Ð½Ð°Ñ Ð±Ð°Ð·Ð° (275-Ð¤Ð—) â†’ ÐŸÑ€Ð°Ð²Ð¸Ð»Ð° Ñ„Ð¸Ð½Ð°Ð½ÑÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ ÐÐ˜ÐžÐšÐ ",
+        "value": "Ð›ÐµÐ³Ð¸Ñ‚Ð¸Ð¼Ð°Ñ†Ð¸Ñ Ð¸Ð½Ð½Ð¾Ð²Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ñ… Ð¸Ð½ÑÑ‚Ñ€ÑƒÐ¼ÐµÐ½Ñ‚Ð¾Ð²"
+      },
+      {
+        "id": "INT-004",
+        "from_cluster": "CLUSTER-SOCIAL",
+        "to_cluster": "CLUSTER-SCITECH",
+        "mechanism": "ÐÐºÐ°Ð´ÐµÐ¼Ð¸Ñ ÐŸÐ¡Ð‘ â†’ ÐšÐ¾Ð¼Ð¿ÐµÑ‚ÐµÐ½Ñ†Ð¸Ð¸ Ð´Ð»Ñ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ñ Ð¸Ð½Ð½Ð¾Ð²Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ð¼Ð¸ Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚Ð°Ð¼Ð¸",
+        "value": "Ð§ÐµÐ»Ð¾Ð²ÐµÑ‡ÐµÑÐºÐ¸Ð¹ ÐºÐ°Ð¿Ð¸Ñ‚Ð°Ð» Ð´Ð»Ñ Ñ‚ÐµÑ…Ð½Ð¾Ð»Ð¾Ð³Ð¸Ñ‡ÐµÑÐºÐ¸Ñ… Ð¿Ñ€Ð¾ÐµÐºÑ‚Ð¾Ð²"
+      },
+      {
+        "id": "INT-005",
+        "from_cluster": "CLUSTER-SCITECH",
+        "to_cluster": "CLUSTER-SOCIAL",
+        "mechanism": "ÐŸÐ¡Ð‘ Ð¡Ð²Ð¾Ð¹ Ð´Ð¾Ð¼ â†’ Ð–Ð¸Ð»ÑŒÑ‘ Ð´Ð»Ñ ÐºÐ°Ð´Ñ€Ð¾Ð² Ð¸Ð½Ð½Ð¾Ð²Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ñ… Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´ÑÑ‚Ð²",
+        "value": "Ð£Ð´ÐµÑ€Ð¶Ð°Ð½Ð¸Ðµ ÑÐ¿ÐµÑ†Ð¸Ð°Ð»Ð¸ÑÑ‚Ð¾Ð² Ð² Ñ€ÐµÐ³Ð¸Ð¾Ð½Ð°Ñ… Ð¿Ñ€Ð¸ÑÑƒÑ‚ÑÑ‚Ð²Ð¸Ñ"
+      }
+    ]
+  },
+  "partnership_integration_points": {
+    "id": "PARTNER-INT-001",
+    "description": "Ð¢Ð¾Ñ‡ÐºÐ¸ Ð¸Ð½Ñ‚ÐµÐ³Ñ€Ð°Ñ†Ð¸Ð¸ ÑÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹ ÐŸÐ¡Ð‘ Ñ Ð¿Ð°Ñ€Ñ‚Ð½Ñ‘Ñ€ÑÑ‚Ð²Ð¾Ð¼ ÐŸÐ¡Ð‘Ã—Ð¡ÐŸÐ±ÐŸÐ£",
+    "integration_map": [
+      {
+        "ecosystem_component": "SCITECH-001.PARTNER-SPBPU",
+        "partnership_element": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model",
+        "integration_type": "direct",
+        "description": "ÐŸÐ°Ñ€Ñ‚Ð½Ñ‘Ñ€ÑÑ‚Ð²Ð¾ Ñ Ð¡ÐŸÐ±ÐŸÐ£ Ñ€ÐµÐ°Ð»Ð¸Ð·ÑƒÐµÑ‚ Ñ‚Ñ€Ñ‘Ñ…ÑÐ»Ð¾Ð¹Ð½ÑƒÑŽ Ð¼Ð¾Ð´ÐµÐ»ÑŒ Ð¡Ð¦Ð˜â†’Ð¦Ð”â†’CML-Bench Ñ‡ÐµÑ€ÐµÐ· ÑÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ñƒ ÐŸÐ¡Ð‘"
+      },
+      {
+        "ecosystem_component": "CLUSTER-INST",
+        "partnership_element": "psb_spbpu_context_analysis.json#institutional_framework.mkcp_dt",
+        "integration_type": "enabling",
+        "description": "Ð˜Ð½ÑÑ‚Ð¸Ñ‚ÑƒÑ†Ð¸Ð¾Ð½Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÐºÐ»Ð°ÑÑ‚ÐµÑ€ ÑÐ¾Ð·Ð´Ð°Ñ‘Ñ‚ Ð½Ð¾Ñ€Ð¼Ð°Ñ‚Ð¸Ð²Ð½ÑƒÑŽ Ð±Ð°Ð·Ñƒ Ð´Ð»Ñ ÐœÐšÐ¦ÐŸ Ð¦Ð”"
+      },
+      {
+        "ecosystem_component": "CLUSTER-FINANCE.FIN-COMP-002",
+        "partnership_element": "psb_spbpu_context_analysis.json#psb_value_proposition",
+        "integration_type": "financing",
+        "description": "Ð¤Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð½Ð³ Ð¸ SCF Ð¾Ð±ÐµÑÐ¿ÐµÑ‡Ð¸Ð²Ð°ÑŽÑ‚ Ð»Ð¸ÐºÐ²Ð¸Ð´Ð½Ð¾ÑÑ‚ÑŒ Ð´Ð»Ñ ÐºÐ¾Ð¾Ð¿ÐµÑ€Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ñ… Ñ†ÐµÐ¿Ð¾Ñ‡ÐµÐº ÐžÐŸÐš"
+      },
+      {
+        "ecosystem_component": "VENTURE-002",
+        "partnership_element": "psb_spbpu_context_analysis.json#application_domain.digital_twin_effects.dual_use",
+        "integration_type": "investment",
+        "description": "Ð¤Ð¾Ð½Ð´ Â«Ð­Ð ÐÂ» Ð¸Ð½Ð²ÐµÑÑ‚Ð¸Ñ€ÑƒÐµÑ‚ Ð² Ð¿Ñ€Ð¾ÐµÐºÑ‚Ñ‹ Ð´Ð²Ð¾Ð¹Ð½Ð¾Ð³Ð¾ Ð½Ð°Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ, Ð²ÐºÐ»ÑŽÑ‡Ð°Ñ Ð¦Ð”-Ñ€ÐµÑˆÐµÐ½Ð¸Ñ"
+      },
+      {
+        "ecosystem_component": "CLUSTER-IT.IT-001",
+        "partnership_element": "psb_spbpu_context_analysis.json#solution_architecture.platform_layer",
+        "integration_type": "infrastructure",
+        "description": "Ð˜Ð¢-Ð¸Ð½Ñ„Ñ€Ð°ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð° ÐŸÐ¡Ð‘ Ð¼Ð¾Ð¶ÐµÑ‚ Ð¾Ð±ÐµÑÐ¿ÐµÑ‡Ð¸Ñ‚ÑŒ Ð²Ñ‹Ñ‡Ð¸ÑÐ»Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ðµ Ñ€ÐµÑÑƒÑ€ÑÑ‹ Ð´Ð»Ñ CML-Bench"
+      }
+    ]
+  },
+  "conclusions": {
+    "id": "CONCL-001",
+    "key_findings": [
+      {
+        "id": "FIND-001",
+        "name": "Ð˜Ð½Ñ„Ñ€Ð°ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð½Ð°Ñ Ð´Ð¾Ð¼Ð¸Ð½Ð°Ð½Ñ‚Ð°",
+        "insight": "Ð­ÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ð° ÐŸÐ¡Ð‘ Ð¾Ñ€Ð¸ÐµÐ½Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð° Ð½Ð° Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´ÑÑ‚Ð²Ð¾ Ð¸ Ð±ÐµÐ·Ð¾Ð¿Ð°ÑÐ½Ð¾ÑÑ‚ÑŒ, Ð° Ð½Ðµ Ð½Ð° Ð¿Ð¾Ñ‚Ñ€ÐµÐ±Ð»ÐµÐ½Ð¸Ðµ",
+        "differentiator": "Ð¯Ð´Ñ€Ð¾ â€” Ð²Ñ‹ÑÐ¾ÐºÐ¾Ñ‚ÐµÑ…Ð½Ð¾Ð»Ð¾Ð³Ð¸Ñ‡Ð½Ñ‹Ð¹ Ñ€Ð°ÑÑ‡Ñ‘Ñ‚Ð½Ñ‹Ð¹ Ñ†ÐµÐ½Ñ‚Ñ€, Ð¸Ð½Ñ‚ÐµÐ³Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ð¹ Ð² ERP-ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹ Ñ‡ÐµÑ€ÐµÐ· Open API"
+      },
+      {
+        "id": "FIND-002",
+        "name": "Ð¢ÐµÑ…Ð½Ð¾Ð»Ð¾Ð³Ð¸Ñ‡ÐµÑÐºÐ°Ñ Ð°Ð²Ñ‚Ð°Ñ€ÐºÐ¸Ñ",
+        "insight": "Ð—Ð°Ð¼ÐºÐ½ÑƒÑ‚Ñ‹Ð¹ Ñ‚ÐµÑ…Ð½Ð¾Ð»Ð¾Ð³Ð¸Ñ‡ÐµÑÐºÐ¸Ð¹ ÐºÐ¾Ð½Ñ‚ÑƒÑ€, Ð½ÐµÐ·Ð°Ð²Ð¸ÑÐ¸Ð¼Ñ‹Ð¹ Ð¾Ñ‚ Ð²Ð½ÐµÑˆÐ½Ð¸Ñ… Ð¿Ð¾ÑÑ‚Ð°Ð²Ñ‰Ð¸ÐºÐ¾Ð²",
+        "effect": "Ð¡ÑƒÐ²ÐµÑ€ÐµÐ½Ð¸Ñ‚ÐµÑ‚ Ñ€Ð°ÑÑ‡Ñ‘Ñ‚Ð¾Ð² ÐžÐŸÐš"
+      },
+      {
+        "id": "FIND-003",
+        "name": "Ð“Ð¸Ð±Ñ€Ð¸Ð´Ð½Ð°Ñ ÑÑ„Ñ„ÐµÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ",
+        "insight": "Ð’Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ Ð³Ð¾ÑÑƒÐ´Ð°Ñ€ÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ñ… Ð·Ð°Ð´Ð°Ñ‡ ÑÐ¾Ñ‡ÐµÑ‚Ð°ÐµÑ‚ÑÑ Ñ Ð²Ñ‹ÑÐ¾ÐºÐ¾Ð¹ ÐºÐ¾Ð¼Ð¼ÐµÑ€Ñ‡ÐµÑÐºÐ¾Ð¹ ÑÑ„Ñ„ÐµÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒÑŽ",
+        "evidence": "ROE 25% Ð¿Ñ€Ð¸ ÑÐ¾Ð¿Ñ€Ð¾Ð²Ð¾Ð¶Ð´ÐµÐ½Ð¸Ð¸ Ð“ÐžÐ— Ð¸ Ñ€Ð°Ð±Ð¾Ñ‚Ðµ Ð² Ð½Ð¾Ð²Ñ‹Ñ… Ñ€ÐµÐ³Ð¸Ð¾Ð½Ð°Ñ…"
+      }
+    ],
+    "transformation_trajectory": {
+      "from": "ÐšÐ»Ð°ÑÑÐ¸Ñ‡ÐµÑÐºÐ¸Ð¹ Ð±Ð°Ð½Ðº",
+      "to": "Ð˜Ð½Ñ„Ñ€Ð°ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð½Ð°Ñ Ð¿Ð»Ð°Ñ‚Ñ„Ð¾Ñ€Ð¼Ð°, Ð¾Ð±ÐµÑÐ¿ÐµÑ‡Ð¸Ð²Ð°ÑŽÑ‰Ð°Ñ Ñ„Ð¸Ð½Ð°Ð½ÑÐ¾Ð²Ñ‹Ð¹ ÑÑƒÐ²ÐµÑ€ÐµÐ½Ð¸Ñ‚ÐµÑ‚ ÑÑ‚Ñ€Ð°Ñ‚ÐµÐ³Ð¸Ñ‡ÐµÑÐºÐ¸Ñ… Ð¾Ñ‚Ñ€Ð°ÑÐ»ÐµÐ¹",
+      "semantic_ref": "psb_shareholder_logic_analysis.json#target_states[0]"
+    }
+  },
+  "semantic_index": {
+    "description": "Ð˜Ð½Ð´ÐµÐºÑ ÑÐµÐ¼Ð°Ð½Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¸Ñ… ÑÐ²ÑÐ·ÐµÐ¹ Ð´Ð»Ñ Ð½Ð°Ð²Ð¸Ð³Ð°Ñ†Ð¸Ð¸ Ð¿Ð¾ Ð³Ñ€Ð°Ñ„Ñƒ Ð·Ð½Ð°Ð½Ð¸Ð¹",
+    "entity_references": {
+      "to_shareholder_logic": [
+        {
+          "local_id": "QUASI-MIN-001",
+          "remote_ref": "psb_shareholder_logic_analysis.json#shareholder_expectations.operational_psb"
+        },
+        {
+          "local_id": "CLUSTER-SOCIAL",
+          "remote_ref": "psb_shareholder_logic_analysis.json#target_states[1]"
+        },
+        {
+          "local_id": "CLUSTER-IT",
+          "remote_ref": "psb_shareholder_logic_analysis.json#shareholder_principles[0]"
+        },
+        {
+          "local_id": "CLUSTER-INST",
+          "remote_ref": "psb_shareholder_logic_analysis.json#shareholder_behavior.strategic[1]"
+        }
+      ],
+      "to_financial_architecture": [
+        {
+          "local_id": "CLUSTER-FINANCE",
+          "remote_ref": "psb_financial_architecture_analysis.json#business_model"
+        },
+        {
+          "local_id": "FIN-INV-001",
+          "remote_ref": "psb_financial_architecture_analysis.json#dividend_architecture"
+        },
+        {
+          "local_id": "FIN-COMP-004",
+          "remote_ref": "psb_financial_architecture_analysis.json#business_model.profit_streams[2]"
+        }
+      ],
+      "to_context": [
+        {
+          "local_id": "CLUSTER-FINANCE.FIN-COMP-003",
+          "remote_ref": "psb_spbpu_context_analysis.json#application_domain.primary_focus"
+        },
+        {
+          "local_id": "PARTNER-SPBPU",
+          "remote_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+        },
+        {
+          "local_id": "CLUSTER-INST",
+          "remote_ref": "psb_spbpu_context_analysis.json#institutional_framework.mkcp_dt"
+        }
+      ]
+    },
+    "graph_queries": {
+      "how_ecosystem_enables_partnership": "NODE-ECOSYSTEM -[enables]-> NODE-CONTEXT via CLUSTER-SCITECH + CLUSTER-INST",
+      "how_finance_funds_ecosystem": "NODE-FINANCE -[funds]-> NODE-ECOSYSTEM via STREAM-GOZ + STREAM-COMMISSION",
+      "how_shareholder_shapes_ecosystem": "NODE-SHAREHOLDER -[shapes]-> NODE-ECOSYSTEM via MOT-001 + BEHAV-004"
+    }
+  },
+  "narrative_summary": {
+    "version": "1.0",
+    "format": "markdown",
+    "target": "portal_v2",
+    "word_count": 113,
+    "content": "## Экосистема ПСБ: «государство в банке»\n\nИнфраструктура ПСБ выходит далеко за рамки традиционного банкинга. Модель «государство в банке» отражает quasi-министерские функции в обслуживании ОПК.\n\n### Пять кластеров экосистемы\n\nСтруктура включает: финансово-расчётный кластер (65% рынка ГОЗ, факторинг 2.9 трлн), институциональный кластер (ФЗ-199), социально-кадровый кластер (500 офисов в наукоградах), IT-кластер (85% отечественного ПО), deep-tech кластер (инновации, R&D).\n\n### Уникальное позиционирование\n\nПСБ — единственный банк с полным циклом обслуживания оборонного заказа: от авансирования до расчётов с субподрядчиками. Это создаёт уникальную базу для партнёрства с СПбПУ в области цифровых двойников.\n\n### Интеграционный потенциал\n\nЭкосистема обеспечивает доступ к 100+ предприятиям ОПК — потенциальным пользователям CML-Bench. Кластерная модель позволяет предлагать комплексные решения: финансирование + технология + кадры + IT-поддержка."
+  }
+}

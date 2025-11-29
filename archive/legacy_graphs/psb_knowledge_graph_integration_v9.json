@@ -1,0 +1,452 @@
+{
+  "meta": {
+    "title": "Семантический граф знаний: Партнёрство ПСБ × СПбПУ",
+    "version": "9.0",
+    "update_date": "2025-11-28",
+    "analyst": "AI-эксперт по цифровым двойникам",
+    "description": "Интеграционный файл, описывающий семантические связи между всеми JSON-документами проекта",
+    "changelog": {
+      "v9.0": "Добавлен NODE-CMLBENCH (Глубокий анализ CML-Bench в контексте технологических платформ) с 10 новыми связями, обновлена топология до 11 узлов и 54 связей",
+      "v8.0": "Добавлен NODE-MARKET (Анализ рынка платформ ЦД) с 8 новыми связями",
+      "v7.0": "Добавлен NODE-SCI (Структурная схема СЦИ) с 7 новыми связями",
+      "v6.0": "Добавлен NODE-SOVEREIGNTY (Роль ПСБ в технологическом суверенитете)",
+      "v5.0": "Добавлен NODE-REGULATORY (Нормативный контекст)",
+      "v4.0": "Добавлен NODE-PLATFORM (Глобальный тренд: платформенная трансформация)",
+      "v3.0": "Добавлен NODE-TECHBASE (Архитектура 6ТУ)"
+    }
+  },
+
+  "graph_nodes": {
+    "total_nodes": 11,
+    "nodes": [
+      {
+        "id": "NODE-CMLBENCH",
+        "file": "psb_cmlbench_technology_context_analysis.json",
+        "domain": "Технологический анализ платформы CML-Bench",
+        "layer": "platform_technology",
+        "key_concepts": [
+          "Место в цепочке систем предприятий (PLM)",
+          "Оценка зрелости TRL 6-7",
+          "GAP-анализ vs Siemens Xcelerator",
+          "Дорожная карта закрытия GAP'ов",
+          "Партнёрства: Cifra, GigaChat, Аметист"
+        ],
+        "primary_question": "ЧТО такое CML-Bench, КАКОВО её место в цепочке систем и КАК закрыть технологические GAP'ы?",
+        "data_freshness": "2025-11"
+      },
+      {
+        "id": "NODE-MARKET",
+        "file": "psb_dt_platforms_market_analysis.json",
+        "domain": "Рыночный и конкурентный анализ платформ ЦД",
+        "layer": "market_intelligence",
+        "key_concepts": [
+          "29 платформ из 7 стран",
+          "Рынок $16.6B",
+          "Технологические тренды 2025",
+          "Суверенная экосистема России"
+        ],
+        "primary_question": "КАКОВО конкурентное окружение CML-Bench и ГДЕ точки роста для партнёрства?",
+        "data_freshness": "2025-11"
+      },
+      {
+        "id": "NODE-SCI",
+        "file": "psb_sci_architecture_analysis.json",
+        "domain": "Методологическая архитектура Системного цифрового инжиниринга",
+        "layer": "methodological_framework",
+        "key_concepts": ["Шестиуровневая модель СЦИ", "Метафора молекулы-организм", "V&V-базис", "Пять типов ЦД"],
+        "primary_question": "ЧТО такое СЦИ и КАК оно связывает ЦД с управлением ЖЦ?"
+      },
+      {
+        "id": "NODE-SOVEREIGNTY",
+        "file": "psb_strategic_sovereignty_role_analysis.json",
+        "domain": "Роль ПСБ в технологическом суверенитете",
+        "layer": "strategic_positioning",
+        "key_concepts": ["7 точек входа", "Финансово-технологический агент", "Стратегия львиной доли", "2 трлн ₽"],
+        "primary_question": "КАКОВА роль ПСБ в системе технологического суверенитета?"
+      },
+      {
+        "id": "NODE-REGULATORY",
+        "file": "psb_regulatory_framework_analysis.json",
+        "domain": "Нормативный контекст",
+        "layer": "regulatory_framework",
+        "key_concepts": ["523-ФЗ", "Указ №309", "Указ №145", "Мета-объекты", "Акторы"],
+        "primary_question": "В КАКОМ нормативном контексте действует партнёрство?"
+      },
+      {
+        "id": "NODE-SHAREHOLDER",
+        "file": "psb_shareholder_logic_analysis.json",
+        "domain": "Философия и логика акционера",
+        "layer": "strategic_foundation",
+        "key_concepts": ["Миссионный акционер", "Бессрочный горизонт", "5 принципов", "5 целевых состояний"],
+        "primary_question": "ЗАЧЕМ существует ПСБ?"
+      },
+      {
+        "id": "NODE-FINANCE",
+        "file": "psb_financial_architecture_analysis.json",
+        "domain": "Финансовая архитектура",
+        "layer": "resource_base",
+        "key_concepts": ["Трёхпоточная модель", "Инверсия дивидендов", "Н1.0", "Прибыль≠цель"],
+        "primary_question": "ЧЕМ обеспечивается деятельность ПСБ?"
+      },
+      {
+        "id": "NODE-ECOSYSTEM",
+        "file": "psb_ecosystem_infrastructure_analysis.json",
+        "domain": "Экосистема и инфраструктура",
+        "layer": "operational_platform",
+        "key_concepts": ["Государство в банке", "5 кластеров", "Quasi-министерские функции"],
+        "primary_question": "КАК ПСБ реализует свою миссию?"
+      },
+      {
+        "id": "NODE-CONTEXT",
+        "file": "psb_spbpu_context_analysis.json",
+        "domain": "Стратегический контекст партнёрства",
+        "layer": "application_domain",
+        "key_concepts": ["Технологический суверенитет", "СЦИ", "CML-Bench", "Трёхслойная модель"],
+        "primary_question": "ДЛЯ ЧЕГО создаётся партнёрство ПСБ×СПбПУ?"
+      },
+      {
+        "id": "NODE-TECHBASE",
+        "file": "psb_technological_foundation_6tu_analysis.json",
+        "domain": "Архитектура 6-го технологического уклада",
+        "layer": "architectural_blueprint",
+        "key_concepts": ["Мета-объекты", "10 принципов", "Policy-as-code", "SIL/MIL/VnV"],
+        "primary_question": "КАК проектировать системы 6ТУ?"
+      },
+      {
+        "id": "NODE-PLATFORM",
+        "file": "psb_global_trend_platform_analysis.json",
+        "domain": "Платформенная трансформация",
+        "layer": "strategic_transition",
+        "key_concepts": ["Сетевые эффекты", "8 ценностей", "Доверие как капитал", "ЦД как базовая единица"],
+        "primary_question": "ПОЧЕМУ ПСБ должен перейти к платформе?"
+      }
+    ]
+  },
+
+  "graph_edges": {
+    "total_edges": 54,
+    "new_edges_v9": [
+      {
+        "id": "EDGE-CMLBENCH-001",
+        "from": "NODE-CMLBENCH",
+        "to": "NODE-CONTEXT",
+        "relationship": "establishes_strategic_context",
+        "strength": "strong",
+        "description": "Контекст партнёрства определяет роль CML-Bench как технического ядра трёхслойной модели"
+      },
+      {
+        "id": "EDGE-CMLBENCH-002",
+        "from": "NODE-CMLBENCH",
+        "to": "NODE-SCI",
+        "relationship": "defines_methodological_framework",
+        "strength": "strong",
+        "description": "СЦИ задаёт методологический каркас; CML-Bench реализует L5 (ЦД-артефакт) и L6 (V&V-базис)"
+      },
+      {
+        "id": "EDGE-CMLBENCH-003",
+        "from": "NODE-CMLBENCH",
+        "to": "NODE-MARKET",
+        "relationship": "provides_competitive_context",
+        "strength": "strong",
+        "description": "Рыночный анализ задаёт конкурентное окружение и бенчмарки для GAP-анализа"
+      },
+      {
+        "id": "EDGE-CMLBENCH-004",
+        "from": "NODE-CMLBENCH",
+        "to": "NODE-TECHBASE",
+        "relationship": "provides_architectural_requirements",
+        "strength": "strong",
+        "description": "6ТУ-Framework задаёт архитектурные требования к V&V-контуру и интеграциям"
+      },
+      {
+        "id": "EDGE-CMLBENCH-005",
+        "from": "NODE-CMLBENCH",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "maps_integration_partners",
+        "strength": "strong",
+        "description": "Экосистема ПСБ определяет партнёров интеграции: Cifra, Росатом, GigaChat, «Аметист»"
+      },
+      {
+        "id": "EDGE-CMLBENCH-006",
+        "from": "NODE-CMLBENCH",
+        "to": "NODE-SOVEREIGNTY",
+        "relationship": "validates_sovereignty_role",
+        "strength": "strong",
+        "description": "CML-Bench как суверенная альтернатива Siemens Xcelerator для ОПК"
+      },
+      {
+        "id": "EDGE-CMLBENCH-007",
+        "from": "NODE-CMLBENCH",
+        "to": "NODE-FINANCE",
+        "relationship": "enables_financial_innovation",
+        "strength": "medium",
+        "description": "ЦД как залоговый актив, траншевое финансирование по V&V-milestone"
+      },
+      {
+        "id": "EDGE-CMLBENCH-008",
+        "from": "NODE-CMLBENCH",
+        "to": "NODE-SHAREHOLDER",
+        "relationship": "validates_mission",
+        "strength": "medium",
+        "description": "CML-Bench как архитектурный элемент миссии ПСБ по технологическому суверенитету"
+      },
+      {
+        "id": "EDGE-CMLBENCH-009",
+        "from": "NODE-CMLBENCH",
+        "to": "NODE-PLATFORM",
+        "relationship": "applies_platform_model",
+        "strength": "medium",
+        "description": "CML-Bench Marketplace применяет 8 ценностей платформенной модели"
+      },
+      {
+        "id": "EDGE-CMLBENCH-010",
+        "from": "NODE-CMLBENCH",
+        "to": "NODE-REGULATORY",
+        "relationship": "ensures_compliance",
+        "strength": "medium",
+        "description": "ГОСТ Р 57700.37-2021 как нормативная основа; ФСТЭК-сертификация"
+      }
+    ],
+    "existing_edges_count": 44
+  },
+
+  "graph_topology": {
+    "total_nodes": 11,
+    "total_edges": 54,
+    "central_cycles": [
+      {
+        "id": "CYCLE-CMLBENCH-CORE",
+        "path": "CMLBENCH → SCI → TECHBASE → CMLBENCH",
+        "description": "Технологическое ядро: методология → архитектура → реализация"
+      },
+      {
+        "id": "CYCLE-MARKET-STRATEGY",
+        "path": "MARKET → CMLBENCH → SOVEREIGNTY → MARKET",
+        "description": "Стратегический цикл: рынок → платформа → суверенитет → валидация"
+      },
+      {
+        "id": "CYCLE-ECOSYSTEM-INTEGRATION",
+        "path": "CMLBENCH → ECOSYSTEM → FINANCE → CMLBENCH",
+        "description": "Интеграционный цикл: платформа → партнёры → финансы → развитие"
+      },
+      {
+        "id": "CYCLE-CONTEXT-PLATFORM",
+        "path": "CONTEXT → CMLBENCH → PLATFORM → CONTEXT",
+        "description": "Платформенный цикл: контекст → реализация → модель → обратная связь"
+      }
+    ],
+    "node_centrality": {
+      "NODE-CMLBENCH": {
+        "degree": 10,
+        "role": "Технологическое ядро — связывает методологию с реализацией"
+      },
+      "NODE-CONTEXT": {
+        "degree": 10,
+        "role": "Стратегический узел — связывает все домены"
+      },
+      "NODE-SCI": {
+        "degree": 9,
+        "role": "Методологическое ядро"
+      },
+      "NODE-MARKET": {
+        "degree": 9,
+        "role": "Внешний валидатор и источник бенчмаркинга"
+      },
+      "NODE-SOVEREIGNTY": {
+        "degree": 8,
+        "role": "Интегрирующий центр стратегии"
+      },
+      "NODE-ECOSYSTEM": {
+        "degree": 7,
+        "role": "Операционная платформа партнёрств"
+      }
+    },
+    "cmlbench_node_significance": {
+      "inbound_edges": 3,
+      "outbound_edges": 10,
+      "role": "Технологический хаб — детализирует реализацию CML-Bench и связывает рынок с экосистемой"
+    }
+  },
+
+  "file_inventory": {
+    "total_files": 12,
+    "files": [
+      {"filename": "psb_shareholder_logic_analysis.json", "node_id": "NODE-SHAREHOLDER", "size_kb": 122},
+      {"filename": "psb_financial_architecture_analysis.json", "node_id": "NODE-FINANCE", "size_kb": 40},
+      {"filename": "psb_ecosystem_infrastructure_analysis.json", "node_id": "NODE-ECOSYSTEM", "size_kb": 74},
+      {"filename": "psb_spbpu_context_analysis.json", "node_id": "NODE-CONTEXT", "size_kb": 41},
+      {"filename": "psb_technological_foundation_6tu_analysis.json", "node_id": "NODE-TECHBASE", "size_kb": 67},
+      {"filename": "psb_global_trend_platform_analysis.json", "node_id": "NODE-PLATFORM", "size_kb": 40},
+      {"filename": "psb_regulatory_framework_analysis.json", "node_id": "NODE-REGULATORY", "size_kb": 117},
+      {"filename": "psb_strategic_sovereignty_role_analysis.json", "node_id": "NODE-SOVEREIGNTY", "size_kb": 52},
+      {"filename": "psb_sci_architecture_analysis.json", "node_id": "NODE-SCI", "size_kb": 37},
+      {"filename": "psb_dt_platforms_market_analysis.json", "node_id": "NODE-MARKET", "size_kb": 47},
+      {"filename": "psb_cmlbench_technology_context_analysis.json", "node_id": "NODE-CMLBENCH", "size_kb": "~55"},
+      {"filename": "psb_knowledge_graph_integration_v9.json", "node_id": "GRAPH-META", "size_kb": "~12"}
+    ],
+    "new_files_v9": [
+      {"filename": "psb_cmlbench_technology_context_analysis.json", "node_id": "NODE-CMLBENCH"},
+      {"filename": "psb_knowledge_graph_integration_v9.json", "node_id": "GRAPH-META"}
+    ]
+  },
+
+  "semantic_queries": {
+    "description": "Примеры запросов к семантическому графу",
+    "queries": [
+      {
+        "query": "Каково место CML-Bench в цепочке систем предприятий?",
+        "path": "NODE-CMLBENCH → enterprise_systems_chain",
+        "answer_location": "psb_cmlbench_technology_context_analysis.json#enterprise_systems_chain.chain_layers"
+      },
+      {
+        "query": "Какие GAP'ы CML-Bench и как их закрыть?",
+        "path": "NODE-CMLBENCH → gap_closure_roadmap → NODE-ECOSYSTEM",
+        "answer_location": "psb_cmlbench_technology_context_analysis.json#gap_closure_roadmap"
+      },
+      {
+        "query": "Как CML-Bench соотносится с Siemens Xcelerator?",
+        "path": "NODE-CMLBENCH → competitive_analysis.vs_siemens_xcelerator → NODE-MARKET",
+        "answer_location": "psb_cmlbench_technology_context_analysis.json#competitive_analysis.vs_siemens_xcelerator"
+      },
+      {
+        "query": "Какова ценность CML-Bench для финансовой модели ПСБ?",
+        "path": "NODE-CMLBENCH → psb_integration_value → NODE-FINANCE",
+        "answer_location": "psb_cmlbench_technology_context_analysis.json#psb_integration_value.financial_integration"
+      },
+      {
+        "query": "Кто потенциальные партнёры для интеграции CML-Bench?",
+        "path": "NODE-CMLBENCH → gap_closure_roadmap.critical_gaps → NODE-ECOSYSTEM",
+        "answer_location": "Cross-reference: psb_cmlbench_technology_context_analysis.json + psb_ecosystem_infrastructure_analysis.json"
+      },
+      {
+        "query": "Как CML-Bench реализует методологию СЦИ?",
+        "path": "NODE-CMLBENCH → platform_identity.key_relationships → NODE-SCI",
+        "answer_location": "psb_cmlbench_technology_context_analysis.json#platform_identity.key_relationships"
+      }
+    ]
+  },
+
+  "integration_matrix": {
+    "description": "Матрица связей NODE-CMLBENCH с существующими узлами",
+    "matrix": [
+      {
+        "target_node": "NODE-CONTEXT",
+        "key_integration_points": [
+          "CML-Bench как техническое ядро трёхслойной модели",
+          "Формула: ЦД = Актив + Данные + Деньги + Доверие"
+        ],
+        "semantic_ref": "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model.platform_layer"
+      },
+      {
+        "target_node": "NODE-SCI",
+        "key_integration_points": [
+          "Реализация L5 (ЦД-артефакт) и L6 (V&V-базис)",
+          "Связь СЦИ ↔ ЦД ↔ CML-Bench"
+        ],
+        "semantic_ref": "psb_sci_architecture_analysis.json#six_layer_model.layers"
+      },
+      {
+        "target_node": "NODE-MARKET",
+        "key_integration_points": [
+          "GAP-анализ vs глобальные тренды 2025",
+          "Позиционирование среди 29 платформ"
+        ],
+        "semantic_ref": "psb_dt_platforms_market_analysis.json#technology_trends_analysis"
+      },
+      {
+        "target_node": "NODE-TECHBASE",
+        "key_integration_points": [
+          "V&V-контур в 6ТУ-архитектуре",
+          "10 принципов как требования к платформе"
+        ],
+        "semantic_ref": "psb_technological_foundation_6tu_analysis.json#vnv_contour"
+      },
+      {
+        "target_node": "NODE-ECOSYSTEM",
+        "key_integration_points": [
+          "Cifra, Росатом, GigaChat как партнёры",
+          "«Аметист» как системный интегратор"
+        ],
+        "semantic_ref": "psb_ecosystem_infrastructure_analysis.json#cluster_model.deep_tech"
+      },
+      {
+        "target_node": "NODE-SOVEREIGNTY",
+        "key_integration_points": [
+          "CML-Bench как суверенная альтернатива",
+          "ГОСТ и ФСТЭК как входные барьеры"
+        ],
+        "semantic_ref": "psb_strategic_sovereignty_role_analysis.json#seven_entry_points"
+      },
+      {
+        "target_node": "NODE-FINANCE",
+        "key_integration_points": [
+          "ЦД как залоговый актив",
+          "Траншевое финансирование по V&V-milestone"
+        ],
+        "semantic_ref": "psb_financial_architecture_analysis.json#investment_framework"
+      },
+      {
+        "target_node": "NODE-SHAREHOLDER",
+        "key_integration_points": [
+          "CML-Bench как архитектурный элемент миссии",
+          "Суверенность как принцип"
+        ],
+        "semantic_ref": "psb_shareholder_logic_analysis.json#shareholder_type.architectonic"
+      },
+      {
+        "target_node": "NODE-PLATFORM",
+        "key_integration_points": [
+          "CML-Bench Marketplace",
+          "8 ценностей платформенной модели"
+        ],
+        "semantic_ref": "psb_global_trend_platform_analysis.json#platform_value_proposition"
+      },
+      {
+        "target_node": "NODE-REGULATORY",
+        "key_integration_points": [
+          "ГОСТ Р 57700.37-2021 (соавторство)",
+          "ФСТЭК-сертификация КТ/ДСП"
+        ],
+        "semantic_ref": "psb_regulatory_framework_analysis.json#gost_standards"
+      }
+    ]
+  },
+
+  "knowledge_graph_visualization": {
+    "description": "Визуальная структура графа знаний v9",
+    "ascii_diagram": [
+      "                                    ┌─────────────────┐",
+      "                                    │  NODE-MARKET    │",
+      "                                    │  (Рынок ЦД)     │",
+      "                                    └────────┬────────┘",
+      "                                             │",
+      "         ┌──────────────┐            ┌──────▼───────┐            ┌───────────────┐",
+      "         │ NODE-SHARE-  │            │ NODE-CMLBENCH│◄───────────│ NODE-SCI      │",
+      "         │ HOLDER       │◄───────────│ (Платформа)  │            │ (Методология) │",
+      "         │ (Миссия)     │            └──────┬───────┘            └───────┬───────┘",
+      "         └──────┬───────┘                   │                            │",
+      "                │                           │                            │",
+      "         ┌──────▼───────┐            ┌──────▼───────┐            ┌───────▼───────┐",
+      "         │ NODE-FINANCE │◄───────────│ NODE-CONTEXT │◄───────────│ NODE-TECHBASE │",
+      "         │ (Финансы)    │            │ (Контекст)   │            │ (Архитектура) │",
+      "         └──────┬───────┘            └──────┬───────┘            └───────┬───────┘",
+      "                │                           │                            │",
+      "         ┌──────▼───────┐            ┌──────▼───────┐            ┌───────▼───────┐",
+      "         │ NODE-ECO-    │◄───────────│ NODE-SOVER-  │◄───────────│ NODE-PLATFORM │",
+      "         │ SYSTEM       │            │ EIGNTY       │            │ (Платформа)   │",
+      "         │ (Экосистема) │            │ (Суверен.)   │            └───────────────┘",
+      "         └──────────────┘            └──────┬───────┘",
+      "                                            │",
+      "                                     ┌──────▼───────┐",
+      "                                     │ NODE-REGULA- │",
+      "                                     │ TORY         │",
+      "                                     │ (Нормативы)  │",
+      "                                     └──────────────┘"
+    ],
+    "legend": {
+      "NODE-CMLBENCH": "НОВЫЙ УЗЕЛ v9 — технологический анализ CML-Bench",
+      "arrows": "Направление семантических связей",
+      "central_position": "NODE-CONTEXT и NODE-CMLBENCH — центральные хабы"
+    }
+  }
+}

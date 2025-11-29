@@ -1,0 +1,129 @@
+{
+  "meta": {
+    "title": "Семантический граф знаний: Партнёрство ПСБ × СПбПУ",
+    "version": "7.0",
+    "update_date": "2025-11-28",
+    "analyst": "AI-эксперт по цифровым двойникам",
+    "description": "Интеграционный файл, описывающий семантические связи между всеми JSON-документами проекта",
+    "changelog": {
+      "v7.0": "Добавлен NODE-SCI (Структурная схема СЦИ) с 7 новыми связями, обновлена топология графа до 9 узлов и 36 связей",
+      "v6.0": "Добавлен NODE-SOVEREIGNTY (Роль ПСБ в технологическом суверенитете)",
+      "v5.0": "Добавлен NODE-REGULATORY (Нормативный контекст)",
+      "v4.0": "Добавлен NODE-PLATFORM (Глобальный тренд: платформенная трансформация)",
+      "v3.0": "Добавлен NODE-TECHBASE (Архитектура 6ТУ)"
+    }
+  },
+
+  "graph_nodes": {
+    "total_nodes": 9,
+    "nodes": [
+      {
+        "id": "NODE-SCI",
+        "file": "psb_sci_architecture_analysis.json",
+        "domain": "Методологическая архитектура Системного цифрового инжиниринга",
+        "layer": "methodological_framework",
+        "key_concepts": ["Шестиуровневая модель СЦИ", "Метафора молекулы-организм", "V&V-базис", "Жизненный цикл как ось интеграции", "Пять типов ЦД"],
+        "primary_question": "ЧТО такое СЦИ и КАК оно связывает ЦД с управлением ЖЦ?"
+      },
+      {
+        "id": "NODE-SOVEREIGNTY",
+        "file": "psb_strategic_sovereignty_role_analysis.json",
+        "domain": "Роль ПСБ в технологическом суверенитете",
+        "layer": "strategic_positioning",
+        "key_concepts": ["7 точек входа", "Финансово-технологический агент", "Стратегия львиной доли", "2 трлн ₽"],
+        "primary_question": "КАКОВА роль ПСБ в системе технологического суверенитета?"
+      },
+      {
+        "id": "NODE-REGULATORY",
+        "file": "psb_regulatory_framework_analysis.json",
+        "domain": "Нормативный контекст",
+        "layer": "regulatory_framework",
+        "key_concepts": ["523-ФЗ", "Указ №309", "Указ №145", "Мета-объекты", "Акторы"],
+        "primary_question": "В КАКОМ нормативном контексте действует партнёрство?"
+      },
+      {
+        "id": "NODE-SHAREHOLDER",
+        "file": "psb_shareholder_logic_analysis.json",
+        "domain": "Философия и логика акционера",
+        "layer": "strategic_foundation",
+        "key_concepts": ["Миссионный акционер", "Бессрочный горизонт", "5 принципов", "5 целевых состояний"],
+        "primary_question": "ЗАЧЕМ существует ПСБ?"
+      },
+      {
+        "id": "NODE-FINANCE",
+        "file": "psb_financial_architecture_analysis.json",
+        "domain": "Финансовая архитектура",
+        "layer": "resource_base",
+        "key_concepts": ["Трёхпоточная модель", "Инверсия дивидендов", "Н1.0", "Прибыль≠цель"],
+        "primary_question": "ЧЕМ обеспечивается деятельность ПСБ?"
+      },
+      {
+        "id": "NODE-ECOSYSTEM",
+        "file": "psb_ecosystem_infrastructure_analysis.json",
+        "domain": "Экосистема и инфраструктура",
+        "layer": "operational_platform",
+        "key_concepts": ["Государство в банке", "5 кластеров", "Quasi-министерские функции"],
+        "primary_question": "КАК ПСБ реализует свою миссию?"
+      },
+      {
+        "id": "NODE-CONTEXT",
+        "file": "psb_spbpu_context_analysis.json",
+        "domain": "Стратегический контекст партнёрства",
+        "layer": "application_domain",
+        "key_concepts": ["Технологический суверенитет", "СЦИ", "CML-Bench", "Трёхслойная модель"],
+        "primary_question": "ДЛЯ ЧЕГО создаётся партнёрство ПСБ×СПбПУ?"
+      },
+      {
+        "id": "NODE-TECHBASE",
+        "file": "psb_technological_foundation_6tu_analysis.json",
+        "domain": "Архитектура 6-го технологического уклада",
+        "layer": "architectural_blueprint",
+        "key_concepts": ["Мета-объекты", "10 принципов", "Policy-as-code", "SIL/MIL/VnV"],
+        "primary_question": "КАК проектировать системы 6ТУ?"
+      },
+      {
+        "id": "NODE-PLATFORM",
+        "file": "psb_global_trend_platform_analysis.json",
+        "domain": "Платформенная трансформация",
+        "layer": "strategic_transition",
+        "key_concepts": ["Сетевые эффекты", "8 ценностей", "Доверие как капитал", "ЦД как базовая единица"],
+        "primary_question": "ПОЧЕМУ ПСБ должен перейти к платформе?"
+      }
+    ]
+  },
+
+  "graph_edges": {
+    "total_edges": 36,
+    "new_edges_v7": [
+      {"id": "EDGE-SCI-001", "from": "NODE-SCI", "to": "NODE-CONTEXT", "relationship": "concretizes", "strength": "strong"},
+      {"id": "EDGE-SCI-002", "from": "NODE-SCI", "to": "NODE-TECHBASE", "relationship": "provides_methodology", "strength": "strong"},
+      {"id": "EDGE-SCI-003", "from": "NODE-SCI", "to": "NODE-SHAREHOLDER", "relationship": "operationalizes_vision", "strength": "strong"},
+      {"id": "EDGE-SCI-004", "from": "NODE-SCI", "to": "NODE-PLATFORM", "relationship": "enables_platform", "strength": "strong"},
+      {"id": "EDGE-SCI-005", "from": "NODE-SCI", "to": "NODE-FINANCE", "relationship": "defines_funding_logic", "strength": "strong"},
+      {"id": "EDGE-SCI-006", "from": "NODE-SCI", "to": "NODE-ECOSYSTEM", "relationship": "structures_integration", "strength": "strong"},
+      {"id": "EDGE-SCI-007", "from": "NODE-SCI", "to": "NODE-REGULATORY", "relationship": "aligns_with_standards", "strength": "medium"}
+    ],
+    "existing_edges_count": 29
+  },
+
+  "graph_topology": {
+    "total_nodes": 9,
+    "total_edges": 36,
+    "central_cycles": [
+      {"id": "CYCLE-SCI", "path": "SHAREHOLDER → CONTEXT → SCI → TECHBASE → PLATFORM → SHAREHOLDER"},
+      {"id": "CYCLE-OPERATIONAL", "path": "SHAREHOLDER → FINANCE → ECOSYSTEM → CONTEXT → SCI → TECHBASE → SHAREHOLDER"}
+    ],
+    "sci_centrality": {
+      "outgoing_edges": 7,
+      "role": "Методологический мост между стратегией и технической реализацией"
+    }
+  },
+
+  "file_inventory": {
+    "total_files": 10,
+    "new_files_v7": [
+      {"filename": "psb_sci_architecture_analysis.json", "node_id": "NODE-SCI"},
+      {"filename": "psb_knowledge_graph_integration_v7.json", "node_id": "GRAPH-META"}
+    ]
+  }
+}

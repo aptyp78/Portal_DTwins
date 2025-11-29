@@ -1,0 +1,301 @@
+{
+  "meta": {
+    "title": "Инвентаризация файлов проекта ПСБ×СПбПУ",
+    "created": "2025-11-29",
+    "purpose": "Определение актуальности файлов после нормализации JSON-корпуса (Фазы 1-3)"
+  },
+  
+  "summary": {
+    "total_files_in_project": 39,
+    "source_documents": 11,
+    "json_analytical_files": 13,
+    "knowledge_graph_versions": 14,
+    "auxiliary_files": 5,
+    "recommendation": "Использовать файлы из /mnt/user-data/outputs/ как актуальные. Файлы в /mnt/project/ сохранить как исторический архив."
+  },
+
+  "categories": {
+    
+    "source_documents": {
+      "status": "АКТУАЛЬНО — первоисточники",
+      "location": "/mnt/project/",
+      "description": "Исходные документы от заказчика, на основе которых создан JSON-корпус",
+      "files": [
+        {
+          "file": "1_2025_11_Док_1_Банк_ПСБ_описание_структуры_и_логики_акционера.docx",
+          "size_kb": 105,
+          "status": "АКТУАЛЬНО",
+          "derived_json": "psb_shareholder_logic_analysis.json",
+          "note": "Первоисточник философии акционера"
+        },
+        {
+          "file": "2_2025_11_Док_2_Финансовая_архитектура_ПСБ_Прибыль_Резервы_и_Управление.docx",
+          "size_kb": 47,
+          "status": "АКТУАЛЬНО",
+          "derived_json": "psb_financial_architecture_analysis.json",
+          "note": "Первоисточник финансовой модели"
+        },
+        {
+          "file": "3_2025_11_Док_3_Экосистема_и_инфраструктура_ПСБ.docx",
+          "size_kb": 84,
+          "status": "АКТУАЛЬНО",
+          "derived_json": "psb_ecosystem_infrastructure_analysis.json",
+          "note": "Первоисточник экосистемной модели"
+        },
+        {
+          "file": "4_2025_11_Док_4_ПСБ_контекст.docx",
+          "size_kb": 53,
+          "status": "АКТУАЛЬНО",
+          "derived_json": "psb_spbpu_context_analysis.json + psb_regulatory_framework_analysis.json + psb_strategic_sovereignty_role_analysis.json",
+          "note": "Основной контекстный документ партнёрства"
+        },
+        {
+          "file": "4_2025_11_Док_4_Приложение_1_Схема_нац_документов_для_перехода_на_новую_тех_основу.pdf",
+          "size_kb": 114,
+          "status": "АКТУАЛЬНО",
+          "derived_json": "psb_regulatory_framework_analysis.json",
+          "note": "Визуальная схема нормативной иерархии"
+        },
+        {
+          "file": "4_2025_11_Док_4_Приложение_2_Видение_роли_ПСБ_в_тех_суверенитете.pdf",
+          "size_kb": 177,
+          "status": "АКТУАЛЬНО",
+          "derived_json": "psb_strategic_sovereignty_role_analysis.json",
+          "note": "Визуальная схема роли ПСБ"
+        },
+        {
+          "file": "4_2025_11_Док_4_Приложение_3_Структурная_схема_СЦИ.pdf",
+          "size_kb": 111,
+          "status": "АКТУАЛЬНО",
+          "derived_json": "psb_sci_architecture_analysis.json",
+          "note": "Визуальная схема методологии СЦИ"
+        },
+        {
+          "file": "4_2025_11_Док_4_Приложение_4_Сравнительный_анализ_платформ_цифровых_двойников.xlsx",
+          "size_kb": 26,
+          "status": "АКТУАЛЬНО",
+          "derived_json": "psb_dt_platforms_market_analysis.json",
+          "note": "Исходные данные сравнительного анализа 29 платформ"
+        },
+        {
+          "file": "4_2025_11_Док_4_Приложение_5_CMLBench_в_контексте_тех_платформ.pdf",
+          "size_kb": 547,
+          "status": "АКТУАЛЬНО",
+          "derived_json": "psb_cmlbench_technology_context_analysis.json",
+          "note": "Детальный анализ CML-Bench"
+        },
+        {
+          "file": "5_2025_11_Док_5_Приоритетный_трек.docx",
+          "size_kb": 21,
+          "status": "АКТУАЛЬНО",
+          "derived_json": "psb_technological_foundation_6tu_analysis.json",
+          "note": "Архитектура 6-го технологического уклада"
+        },
+        {
+          "file": "5_2025_11_Док_5_Приложение_1_Описание_принципов_новой_технологической_основы.pdf",
+          "size_kb": 301,
+          "status": "АКТУАЛЬНО",
+          "derived_json": "psb_technological_foundation_6tu_analysis.json",
+          "note": "Визуальная схема 6ТУ"
+        },
+        {
+          "file": "2025_Хронология_инициатив_по_ЦД_со_стороны_акционера.docx",
+          "size_kb": 18,
+          "status": "АКТУАЛЬНО",
+          "derived_json": "psb_state_agenda_dt_timeline_analysis.json",
+          "note": "Таймлайн государственных инициатив"
+        },
+        {
+          "file": "МКЦП_редакция_после_МО.pdf",
+          "size_kb": 7492,
+          "status": "АКТУАЛЬНО",
+          "derived_json": "psb_mkcp_program_analysis.json",
+          "note": "Проект Концепции МКЦП ЦД 2026-2035"
+        }
+      ]
+    },
+
+    "json_analytical_current": {
+      "status": "АКТУАЛЬНО — нормализованные версии",
+      "location": "/mnt/user-data/outputs/",
+      "description": "JSON-файлы после нормализации (Фазы 1-3): node_id, layer, referenced_by, narrative_summary",
+      "enrichment": {
+        "phase_1": "node_id, layer, semantic_network, referenced_by (313 backlinks)",
+        "phase_2": "Граф 83 связей, JSON Schema v1.0",
+        "phase_3": "executive_summary (2), narrative_summary (13), id_convention"
+      },
+      "files": [
+        {"file": "psb_shareholder_logic_analysis.json", "size_kb": 141, "node": "NODE-SHAREHOLDER", "layer": "strategic_foundation"},
+        {"file": "psb_financial_architecture_analysis.json", "size_kb": 51, "node": "NODE-FINANCE", "layer": "resource_base"},
+        {"file": "psb_ecosystem_infrastructure_analysis.json", "size_kb": 88, "node": "NODE-ECOSYSTEM", "layer": "operational_platform"},
+        {"file": "psb_spbpu_context_analysis.json", "size_kb": 68, "node": "NODE-CONTEXT", "layer": "application_domain"},
+        {"file": "psb_regulatory_framework_analysis.json", "size_kb": 121, "node": "NODE-REGULATORY", "layer": "regulatory_framework"},
+        {"file": "psb_strategic_sovereignty_role_analysis.json", "size_kb": 58, "node": "NODE-SOVEREIGNTY", "layer": "strategic_positioning"},
+        {"file": "psb_technological_foundation_6tu_analysis.json", "size_kb": 79, "node": "NODE-TECHBASE", "layer": "architectural_blueprint"},
+        {"file": "psb_global_trend_platform_analysis.json", "size_kb": 45, "node": "NODE-PLATFORM", "layer": "strategic_transition"},
+        {"file": "psb_sci_architecture_analysis.json", "size_kb": 42, "node": "NODE-SCI", "layer": "methodological_framework"},
+        {"file": "psb_dt_platforms_market_analysis.json", "size_kb": 55, "node": "NODE-MARKET", "layer": "market_intelligence"},
+        {"file": "psb_cmlbench_technology_context_analysis.json", "size_kb": 51, "node": "NODE-CMLBENCH", "layer": "platform_technology"},
+        {"file": "psb_state_agenda_dt_timeline_analysis.json", "size_kb": 116, "node": "NODE-AGENDA", "layer": "strategic_mandate"},
+        {"file": "psb_mkcp_program_analysis.json", "size_kb": 154, "node": "NODE-MKCP", "layer": "program_architecture"}
+      ]
+    },
+
+    "json_analytical_legacy": {
+      "status": "УСТАРЕЛО — заменено нормализованными версиями",
+      "location": "/mnt/project/",
+      "description": "Исходные JSON-файлы ДО нормализации. Не содержат node_id, referenced_by, narrative_summary.",
+      "action": "АРХИВ — сохранить для истории, не использовать",
+      "files": [
+        {"file": "psb_shareholder_logic_analysis.json", "size_kb": 121, "replaced_by": "/mnt/user-data/outputs/psb_shareholder_logic_analysis.json"},
+        {"file": "psb_financial_architecture_analysis.json", "size_kb": 39, "replaced_by": "/mnt/user-data/outputs/..."},
+        {"file": "psb_ecosystem_infrastructure_analysis.json", "size_kb": 74, "replaced_by": "/mnt/user-data/outputs/..."},
+        {"file": "psb_spbpu_context_analysis.json", "size_kb": 40, "replaced_by": "/mnt/user-data/outputs/..."},
+        {"file": "psb_regulatory_framework_analysis.json", "size_kb": 117, "replaced_by": "/mnt/user-data/outputs/..."},
+        {"file": "psb_strategic_sovereignty_role_analysis.json", "size_kb": 51, "replaced_by": "/mnt/user-data/outputs/..."},
+        {"file": "psb_technological_foundation_6tu_analysis.json", "size_kb": 66, "replaced_by": "/mnt/user-data/outputs/..."},
+        {"file": "psb_global_trend_platform_analysis.json", "size_kb": 39, "replaced_by": "/mnt/user-data/outputs/..."},
+        {"file": "psb_sci_architecture_analysis.json", "size_kb": 36, "replaced_by": "/mnt/user-data/outputs/..."},
+        {"file": "psb_dt_platforms_market_analysis.json", "size_kb": 47, "replaced_by": "/mnt/user-data/outputs/..."},
+        {"file": "psb_cmlbench_technology_context_analysis.json", "size_kb": 45, "replaced_by": "/mnt/user-data/outputs/..."},
+        {"file": "psb_state_agenda_dt_timeline_analysis.json", "size_kb": 112, "replaced_by": "/mnt/user-data/outputs/..."},
+        {"file": "psb_mkcp_program_analysis.json", "size_kb": 151, "replaced_by": "/mnt/user-data/outputs/..."}
+      ]
+    },
+
+    "knowledge_graph_current": {
+      "status": "АКТУАЛЬНО — использовать v14",
+      "location": "/mnt/user-data/outputs/",
+      "description": "Актуальная версия Knowledge Graph после нормализации",
+      "files": [
+        {
+          "file": "psb_knowledge_graph_integration_v14.json",
+          "size_kb": 197,
+          "version": "14.0",
+          "status": "АКТУАЛЬНО — PRODUCTION",
+          "features": [
+            "13 узлов, 83 связи",
+            "Онтологическая структура: by_source_node, by_target_node, by_relationship_type",
+            "Статистика связности",
+            "ID Convention",
+            "Narrative Catalog (13 узлов)"
+          ]
+        },
+        {
+          "file": "psb_knowledge_graph_integration_v13.json",
+          "size_kb": 194,
+          "version": "13.0",
+          "status": "РЕЗЕРВ — предыдущая стабильная",
+          "note": "Фаза 2, без narrative_summary"
+        },
+        {
+          "file": "psb_knowledge_graph_integration_v12.json",
+          "size_kb": 69,
+          "version": "12.0",
+          "status": "АРХИВ",
+          "note": "Фаза 1, компактный формат"
+        }
+      ]
+    },
+
+    "knowledge_graph_legacy": {
+      "status": "УСТАРЕЛО — исторический архив",
+      "location": "/mnt/project/",
+      "description": "Исторические версии графа (v2-v11). Связи из этих версий собраны в v14.",
+      "action": "АРХИВ — не использовать напрямую, данные интегрированы в v14",
+      "files": [
+        {"file": "psb_knowledge_graph_integration.json", "version": "2.0", "size_kb": 18, "note": "Первая версия"},
+        {"file": "psb_knowledge_graph_integration_v3.json", "version": "3.0", "size_kb": 30, "note": "11 связей"},
+        {"file": "psb_knowledge_graph_integration_v4.json", "version": "4.0", "size_kb": 33, "note": "+5 связей"},
+        {"file": "psb_knowledge_graph_integration_v5.json", "version": "5.0", "size_kb": 36, "note": "+12 связей"},
+        {"file": "psb_knowledge_graph_integration_v6.json", "version": "6.0", "size_kb": 24, "note": "+7 связей, key_mappings"},
+        {"file": "psb_knowledge_graph_integration_v7.json", "version": "7.0", "size_kb": 7, "note": "NODE-SCI"},
+        {"file": "psb_knowledge_graph_integration_v8.json", "version": "8.0", "size_kb": 16, "note": "NODE-MARKET"},
+        {"file": "psb_knowledge_graph_integration_v9.json", "version": "9.0", "size_kb": 24, "note": "NODE-CMLBENCH"},
+        {"file": "psb_knowledge_graph_integration_v10.json", "version": "10.0", "size_kb": 31, "note": "NODE-AGENDA"},
+        {"file": "psb_knowledge_graph_integration_v11.json", "version": "11.0", "size_kb": 38, "note": "NODE-MKCP"}
+      ]
+    },
+
+    "auxiliary_current": {
+      "status": "АКТУАЛЬНО — вспомогательные файлы",
+      "location": "/mnt/user-data/outputs/",
+      "description": "Служебные файлы, созданные в процессе нормализации",
+      "files": [
+        {
+          "file": "psb_analytical_json_schema.json",
+          "size_kb": 5,
+          "status": "АКТУАЛЬНО",
+          "purpose": "JSON Schema v1.0 для валидации структуры"
+        },
+        {
+          "file": "id_convention.json",
+          "size_kb": 2,
+          "status": "АКТУАЛЬНО",
+          "purpose": "Документация ID-конвенций"
+        },
+        {
+          "file": "validation_report.json",
+          "size_kb": 2,
+          "status": "АКТУАЛЬНО",
+          "purpose": "Отчёт валидации 13 файлов"
+        },
+        {
+          "file": "incoming_edges_index.json",
+          "size_kb": 84,
+          "status": "АКТУАЛЬНО",
+          "purpose": "Индекс 313 обратных связей"
+        },
+        {
+          "file": "psb_json_architecture_audit.json",
+          "size_kb": 28,
+          "status": "АКТУАЛЬНО",
+          "purpose": "Аудит архитектуры JSON-корпуса"
+        },
+        {
+          "file": "psb_portal_redesign_concept.json",
+          "size_kb": 14,
+          "status": "АКТУАЛЬНО",
+          "purpose": "Концепция редизайна портала"
+        }
+      ]
+    }
+  },
+
+  "recommendations": {
+    "primary_source": {
+      "path": "/mnt/user-data/outputs/",
+      "files": "Все нормализованные JSON (13 аналитических + v14 граф + вспомогательные)",
+      "rationale": "После нормализации Фаз 1-3 эти файлы содержат полный набор метаданных, обратных связей и narrative_summary"
+    },
+    "archive": {
+      "path": "/mnt/project/",
+      "files": "JSON-файлы v2-v11, ненормализованные аналитические JSON",
+      "action": "Сохранить для истории, не использовать в production"
+    },
+    "preserve": {
+      "path": "/mnt/project/",
+      "files": "Все .docx, .pdf, .xlsx документы",
+      "rationale": "Первоисточники, необходимы для верификации и возможных обновлений"
+    },
+    "next_steps": [
+      "Переместить актуальные файлы из outputs обратно в project (или настроить project на чтение из outputs)",
+      "Создать ARCHIVE/ поддиректорию в project для устаревших версий",
+      "Обновить Memory с новой структурой файлов"
+    ]
+  },
+
+  "statistics": {
+    "total_source_documents": 13,
+    "total_json_analytical": 13,
+    "knowledge_graph_versions": 14,
+    "current_graph_version": "14.0",
+    "total_nodes": 13,
+    "total_edges": 83,
+    "total_backlinks": 313,
+    "narrative_summaries": 13,
+    "average_narrative_words": 128,
+    "normalization_phases_completed": 3,
+    "json_size_increase_after_normalization": "+131.9 KB total (+12.7%)"
+  }
+}

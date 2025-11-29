@@ -1,0 +1,1006 @@
+{
+  "meta": {
+    "document_title": "Финансовая архитектура ПСБ: Прибыль, Резервы и Дивиденды",
+    "analysis_date": "2025-11-28",
+    "version": "1.0",
+    "analyst": "AI-эксперт по цифровым двойникам",
+    "source_document": "Док 2_Финансовая архитектура ПСБ_Прибыль, Резервы и Дивиденды.docx",
+    "semantic_network": {
+      "primary_dependencies": [
+        {
+          "file": "psb_shareholder_logic_analysis.json",
+          "relationship": "implements_philosophy",
+          "description": "Финансовая архитектура реализует философию и логику миссионного акционера"
+        },
+        {
+          "file": "psb_spbpu_context_analysis.json",
+          "relationship": "operationalizes_strategy",
+          "description": "Финансовые механизмы обеспечивают ресурсную базу для стратегических целей партнёрства"
+        }
+      ],
+      "integration_layers": {
+        "shareholder_logic_to_finance": "MOT-FRAMEWORK → FIN-MODEL: мотивация акционера определяет финансовую модель",
+        "finance_to_partnership": "FIN-MODEL → ROLE-PSB-001: финансовые возможности определяют роль в экосистеме",
+        "capital_to_innovation": "CAP-FRAMEWORK → KPI-003: достаточность капитала → инвестиции в НИОКР"
+      },
+      "position_in_graph": "NODE-FINANCE",
+      "primary_question": "ЧЕМ обеспечивается деятельность ПСБ?",
+      "referenced_by": [
+        {
+          "from_file": "psb_ecosystem_infrastructure_analysis.json",
+          "from_node": "NODE-ECOSYSTEM",
+          "relationship": "utilizes",
+          "description": "Ð­ÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ð° Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚ Ñ„Ð¸Ð½Ð°Ð½ÑÐ¾Ð²Ñ‹Ðµ Ð¼ÐµÑ…Ð°Ð½Ð¸Ð·Ð¼Ñ‹ Ð´Ð»Ñ Ñ€ÐµÐ°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ð¸ ÐºÐ»Ð°ÑÑ‚ÐµÑ€Ð½Ñ‹Ñ… Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¹"
+        },
+        {
+          "from_file": "psb_ecosystem_infrastructure_analysis.json",
+          "from_node": "NODE-ECOSYSTEM",
+          "from_path": "executive_summary",
+          "full_ref": "psb_financial_architecture_analysis.json#executive_summary.institutional_type"
+        },
+        {
+          "from_file": "psb_ecosystem_infrastructure_analysis.json",
+          "from_node": "NODE-ECOSYSTEM",
+          "from_path": "ecosystem_architecture.clusters[0]",
+          "full_ref": "psb_financial_architecture_analysis.json#business_model"
+        },
+        {
+          "from_file": "psb_ecosystem_infrastructure_analysis.json",
+          "from_node": "NODE-ECOSYSTEM",
+          "from_path": "ecosystem_architecture.clusters[4]",
+          "full_ref": "psb_financial_architecture_analysis.json#business_model.profit_streams[2]"
+        },
+        {
+          "from_file": "psb_regulatory_framework_analysis.json",
+          "from_node": "NODE-REGULATORY",
+          "relationship": "enables_instruments",
+          "description": "523-Ð¤Ð— ÑÐ¾Ð·Ð´Ð°Ñ‘Ñ‚ Ð¿Ñ€Ð°Ð²Ð¾Ð²ÑƒÑŽ Ð¾ÑÐ½Ð¾Ð²Ñƒ Ð´Ð»Ñ Ñ„Ð¸Ð½Ð°Ð½ÑÐ¾Ð²Ñ‹Ñ… Ð¸Ð½ÑÑ‚Ñ€ÑƒÐ¼ÐµÐ½Ñ‚Ð¾Ð² 6Ð¢Ð£"
+        },
+        {
+          "from_file": "psb_strategic_sovereignty_role_analysis.json",
+          "from_node": "NODE-SOVEREIGNTY",
+          "relationship": "resources_role",
+          "description": "Финансовая архитектура обеспечивает ресурсы для роли"
+        },
+        {
+          "from_file": "psb_technological_foundation_6tu_analysis.json",
+          "from_node": "NODE-TECHBASE",
+          "relationship": "requires_instruments",
+          "description": "Ð ÐµÐ°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ñ 6Ð¢Ð£ Ñ‚Ñ€ÐµÐ±ÑƒÐµÑ‚ ÑÐ¿ÐµÑ†Ð¸Ð°Ð»ÑŒÐ½Ñ‹Ñ… Ñ„Ð¸Ð½Ð°Ð½ÑÐ¾Ð²Ñ‹Ñ… Ð¸Ð½ÑÑ‚Ñ€ÑƒÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð´Ð¸Ñ„Ñ„ÑƒÐ·Ð¸Ð¸"
+        },
+        {
+          "from_file": "psb_technological_foundation_6tu_analysis.json",
+          "from_node": "NODE-TECHBASE",
+          "from_path": "ten_principles.principles[1]",
+          "full_ref": "psb_financial_architecture_analysis.json#business_model"
+        },
+        {
+          "from_file": "psb_technological_foundation_6tu_analysis.json",
+          "from_node": "NODE-TECHBASE",
+          "from_path": "ten_principles.principles[4]",
+          "full_ref": "psb_financial_architecture_analysis.json#risk_management"
+        },
+        {
+          "from_file": "psb_technological_foundation_6tu_analysis.json",
+          "from_node": "NODE-TECHBASE",
+          "from_path": "ten_principles.principles[9]",
+          "full_ref": "psb_financial_architecture_analysis.json#kpi_framework"
+        },
+        {
+          "from_file": "psb_technological_foundation_6tu_analysis.json",
+          "from_node": "NODE-TECHBASE",
+          "from_path": "psb_action_plan.actions[0]",
+          "full_ref": "psb_financial_architecture_analysis.json#credit_process"
+        },
+        {
+          "from_file": "psb_technological_foundation_6tu_analysis.json",
+          "from_node": "NODE-TECHBASE",
+          "from_path": "integration_with_partnership.synergy_points[0]",
+          "full_ref": "psb_financial_architecture_analysis.json#business_model"
+        },
+        {
+          "from_file": "psb_global_trend_platform_analysis.json",
+          "from_node": "NODE-PLATFORM",
+          "relationship": "requires_new_instruments",
+          "description": "Платформенная модель требует расширения финансовой архитектуры новыми инструментами диффузии"
+        },
+        {
+          "from_file": "psb_global_trend_platform_analysis.json",
+          "from_node": "NODE-PLATFORM",
+          "from_path": "prerequisites_analysis.levels[2]",
+          "full_ref": "psb_financial_architecture_analysis.json#business_model"
+        },
+        {
+          "from_file": "psb_global_trend_platform_analysis.json",
+          "from_node": "NODE-PLATFORM",
+          "from_path": "anti_thesis",
+          "full_ref": "psb_financial_architecture_analysis.json#risk_management"
+        },
+        {
+          "from_file": "psb_global_trend_platform_analysis.json",
+          "from_node": "NODE-PLATFORM",
+          "from_path": "eight_platform_values.values[1]",
+          "full_ref": "psb_financial_architecture_analysis.json#business_model"
+        },
+        {
+          "from_file": "psb_global_trend_platform_analysis.json",
+          "from_node": "NODE-PLATFORM",
+          "from_path": "eight_platform_values.values[7]",
+          "full_ref": "psb_financial_architecture_analysis.json#reserves_architecture"
+        },
+        {
+          "from_file": "psb_sci_architecture_analysis.json",
+          "from_node": "NODE-SCI",
+          "from_path": "six_layer_model.layers[1]",
+          "full_ref": "psb_financial_architecture_analysis.json#kpi_framework"
+        },
+        {
+          "from_file": "psb_sci_architecture_analysis.json",
+          "from_node": "NODE-SCI",
+          "from_path": "lifecycle_integration",
+          "full_ref": "psb_financial_architecture_analysis.json#business_model.profit_streams"
+        },
+        {
+          "from_file": "psb_sci_architecture_analysis.json",
+          "from_node": "NODE-SCI",
+          "from_path": "psb_integration_points",
+          "full_ref": "psb_financial_architecture_analysis.json#business_model"
+        },
+        {
+          "from_file": "psb_cmlbench_technology_context_analysis.json",
+          "from_node": "NODE-CMLBENCH",
+          "from_path": "psb_integration_value.financial_integration",
+          "full_ref": "psb_financial_architecture_analysis.json#investment_framework"
+        },
+        {
+          "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+          "from_node": "NODE-AGENDA",
+          "from_path": "timeline_analysis.events[1]",
+          "full_ref": "psb_financial_architecture_analysis.json#revenue_streams.defense_contracts"
+        },
+        {
+          "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+          "from_node": "NODE-AGENDA",
+          "from_path": "institutional_framework.mkcp_directorate",
+          "full_ref": "psb_financial_architecture_analysis.json#investment_framework"
+        },
+        {
+          "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+          "from_node": "NODE-AGENDA",
+          "from_path": "requirements_analysis.vv_methodology",
+          "full_ref": "psb_financial_architecture_analysis.json#investment_framework"
+        },
+        {
+          "from_file": "psb_state_agenda_dt_timeline_analysis.json",
+          "from_node": "NODE-AGENDA",
+          "from_path": "strategic_positioning.strategic_entry_points",
+          "full_ref": "psb_financial_architecture_analysis.json#revenue_streams"
+        },
+        {
+          "from_file": "psb_mkcp_program_analysis.json",
+          "from_node": "NODE-MKCP",
+          "from_path": "program_parameters",
+          "full_ref": "psb_financial_architecture_analysis.json#revenue_streams"
+        },
+        {
+          "from_file": "psb_mkcp_program_analysis.json",
+          "from_node": "NODE-MKCP",
+          "from_path": "participants_analysis",
+          "full_ref": "psb_financial_architecture_analysis.json#revenue_streams"
+        },
+        {
+          "from_file": "psb_mkcp_program_analysis.json",
+          "from_node": "NODE-MKCP",
+          "from_path": "target_indicators",
+          "full_ref": "psb_financial_architecture_analysis.json#kpi_model"
+        },
+        {
+          "from_file": "psb_mkcp_program_analysis.json",
+          "from_node": "NODE-MKCP",
+          "from_path": "financing_mechanisms",
+          "full_ref": "psb_financial_architecture_analysis.json#revenue_streams"
+        }
+      ]
+    },
+    "node_id": "NODE-FINANCE",
+    "layer": "resource_base"
+  },
+  "executive_summary": {
+    "id": "EXEC-001",
+    "core_thesis": "ПСБ функционирует как специализированный институт развития с банковской лицензией, где прибыль служит инструментом создания капитала для расширения кредитования стратегических отраслей, а не целью деятельности",
+    "institutional_type": "Гибридная модель: банк развития + коммерческий банк + агент государственной политики",
+    "key_insight": "Финансовая архитектура 2025 года перестроена под задачи выживания и обеспечения ОПК, дивиденды теряют классический смысл вознаграждения акционера",
+    "semantic_refs": {
+      "links_to": [
+        "psb_shareholder_logic_analysis.json#shareholder_type.combined_type",
+        "psb_spbpu_context_analysis.json#strategic_framework.hierarchy.level_4_psb_role"
+      ],
+      "relationship": "financial_manifestation_of_mission"
+    }
+  },
+  "business_model": {
+    "id": "BM-001",
+    "model_type": "Трёхпоточная модель прибыльности",
+    "architecture_principle": "Архитектура выстроена вокруг бесперебойности финансирования, а не максимизации ROE",
+    "profit_streams": [
+      {
+        "id": "STREAM-GOZ",
+        "name": "Поток «Гособоронзаказ»",
+        "share_of_portfolio": "~70%",
+        "characteristics": {
+          "margin": "Низкая (законодательно ограничена)",
+          "volume": "Огромный",
+          "risk": "Минимальный (гарантирован государством)",
+          "growth_driver": "Объём, не ставка"
+        },
+        "mechanism": "Обслуживание счетов оборонных предприятий, кредитование на исполнение контрактов ГОЗ",
+        "constraints": [
+          "Правило «20% + 1%» для прибыльности контрактов ГОЗ",
+          "Невозможность установить рыночную ставку без субсидирования"
+        ],
+        "goz_coverage": {
+          "current": "~50% всех контрактов ГОЗ",
+          "technical_readiness": "до 100%"
+        },
+        "semantic_refs": {
+          "links_to": [
+            "psb_shareholder_logic_analysis.json#shareholder_expectations.operational_psb[0]",
+            "psb_spbpu_context_analysis.json#strategic_framework.national_priorities.defense"
+          ],
+          "relationship": "primary_mission_execution"
+        }
+      },
+      {
+        "id": "STREAM-CIVIL",
+        "name": "Поток «Гражданский рынок»",
+        "share_of_portfolio": "~25%",
+        "characteristics": {
+          "margin": "Высокая (рыночная)",
+          "volume": "Средний",
+          "risk": "Высокий (особенно при высокой ключевой ставке)",
+          "growth_driver": "Ставка и качество портфеля"
+        },
+        "segments": [
+          {
+            "name": "МСБ",
+            "position": "Топ-3 по объёму кредитования",
+            "significance": "Основной генератор чистой прибыли"
+          },
+          {
+            "name": "Розница",
+            "products": [
+              "Потребительские кредиты",
+              "Ипотека"
+            ],
+            "special_programs": "Льготная ипотека 2% для новых территорий"
+          },
+          {
+            "name": "Факторинг",
+            "position": "Исторический лидер рынка",
+            "margin_type": "Высокая комиссионная доходность"
+          }
+        ],
+        "risk_event_2024_2025": "Высокая ключевая ставка ЦБ → рост неплатежей → резкое увеличение резервов",
+        "semantic_refs": {
+          "links_to": [
+            "psb_shareholder_logic_analysis.json#constraints.economic"
+          ],
+          "relationship": "market_sustainability_source"
+        }
+      },
+      {
+        "id": "STREAM-COMMISSION",
+        "name": "Поток «Комиссионный бизнес»",
+        "share_of_portfolio": "~5% (но стратегический приоритет)",
+        "characteristics": {
+          "margin": "Стабильная",
+          "volume": "Растущий",
+          "risk": "Минимальный (не потребляет капитал)",
+          "growth_driver": "Цифровизация и масштаб"
+        },
+        "components": [
+          {
+            "name": "Транзакционный бизнес",
+            "services": [
+              "Платежи",
+              "Переводы",
+              "Обслуживание счетов"
+            ],
+            "platform": "А7 (под санкциями ЕС)"
+          },
+          {
+            "name": "Wealth Management",
+            "strategy": "ПСБ Благосостояние",
+            "target_aum": "1,3 трлн руб. (удвоение)",
+            "revenue_type": "Management fee (не зависит от кредитного качества)"
+          }
+        ],
+        "strategic_shift": "Уход от кредитного риска к комиссионным доходам",
+        "semantic_refs": {
+          "links_to": [
+            "psb_spbpu_context_analysis.json#solution_architecture.priority_focus"
+          ],
+          "relationship": "technology_enabled_revenue"
+        }
+      }
+    ],
+    "model_dynamics": {
+      "2023_paradigm": "Процентная маржа на фоне восстановительного роста",
+      "2024_2025_paradigm": "Стоимость риска (CoR) и операционная инфляция издержек",
+      "key_insight": "При росте кредитного портфеля на 40% чистая прибыль сократилась на 44% — смена парадигмы"
+    }
+  },
+  "financial_dynamics": {
+    "id": "FIN-DYN-001",
+    "description": "Ретроспективный анализ финансовой результативности 2023-2025",
+    "trajectory": {
+      "pattern": "Дуга: резкий взлёт → снижение под давлением ДКП и расходов на экспансию",
+      "phases": [
+        {
+          "id": "PHASE-2023",
+          "name": "Год сверхприбыли",
+          "net_profit_ifrs": "116,6 млрд руб.",
+          "net_profit_rsbu": "98,6 млрд руб.",
+          "drivers": [
+            "Реализация отложенного спроса",
+            "Активное кредитование промышленности (три смены)",
+            "Низкая база риска после шоков 2022",
+            "Эффект масштаба"
+          ],
+          "nii": "285,1 млрд руб.",
+          "highlight": "Q1 2023 прибыль (25 млрд) превысила годовые показатели 2006-2021"
+        },
+        {
+          "id": "PHASE-2024",
+          "name": "Год структурного перелома",
+          "net_profit_ifrs": "65,3 млрд руб.",
+          "change_yoy": "-44%",
+          "anomaly": "Рост портфеля +40% при падении прибыли -44%",
+          "drivers": [
+            "Стагнация процентной маржи (сужение спреда)",
+            "Взрывной рост OpEx (+24,3%)",
+            "Рост стоимости фондирования"
+          ],
+          "key_metrics": {
+            "nii": "297,1 млрд руб. (+4%)",
+            "nfci": "56,6 млрд руб. (+19%)",
+            "reserves": "94,5 млрд руб. (+4%)",
+            "opex": "159,8 млрд руб. (+24%)",
+            "assets": "9,5 трлн руб. (+26%)",
+            "loan_portfolio": "6,6 трлн руб. (+40%)",
+            "client_funds": "7,8 трлн руб. (+31%)"
+          },
+          "scissor_effect": "Темпы роста расходов существенно опережают темпы роста доходов"
+        },
+        {
+          "id": "PHASE-9M2025",
+          "name": "Период консолидации",
+          "net_profit_rsbu": "107,5 млрд руб.",
+          "change_yoy": "-9,5%",
+          "assets": "8,7 трлн руб. (-14% YoY)",
+          "key_events": [
+            "Сознательное сжатие баланса",
+            "Взрывной рост резервов (×2,9)",
+            "Докапитализация от государства"
+          ],
+          "balance_shrinkage_reason": "Чистка баланса и отказ от низкомаржинальных активов для соблюдения нормативов Н1.0"
+        }
+      ]
+    },
+    "key_ratios_9m2024": {
+      "roe": "25%",
+      "roe_assessment": "Один из лучших показателей в секторе госбанков",
+      "cir": "<40%",
+      "cir_assessment": "Подтверждает эффективность инвестиций в цифровизацию",
+      "credit_rating": {
+        "agency": "Эксперт РА",
+        "rating": "ruAAA",
+        "outlook": "Стабильный",
+        "rationale": [
+          "Сильные рыночные позиции",
+          "Высокая достаточность капитала",
+          "Системная значимость"
+        ]
+      }
+    },
+    "semantic_refs": {
+      "links_to": [
+        "psb_shareholder_logic_analysis.json#success_metrics.operational_financial",
+        "psb_shareholder_logic_analysis.json#success_metrics.institutional_sustainability"
+      ],
+      "relationship": "quantitative_manifestation"
+    }
+  },
+  "reserve_architecture": {
+    "id": "RES-001",
+    "significance": "Главный сюжет финансовой отчётности 2025 года",
+    "headline_figures": {
+      "reserves_9m2025": "82,7 млрд руб.",
+      "reserves_9m2024": "28,8 млрд руб.",
+      "growth_multiple": "×2,9",
+      "share_of_profit_impact": "Основной фактор давления на прибыль"
+    },
+    "reserve_mechanics": {
+      "definition": "Часть прибыли, которую банк обязан законодательно «заморозить» при риске невозврата кредита",
+      "functions": [
+        {
+          "name": "Защита вкладчиков",
+          "mechanism": "Гарантия наличия средств для возврата вкладов при невозврате кредитов"
+        },
+        {
+          "name": "Требование ЦБ",
+          "mechanism": "Автоматическое резервирование при ухудшении финансового состояния заёмщика"
+        },
+        {
+          "name": "Влияние на прибыль",
+          "mechanism": "Резервы вычитаются из прибыли (перекладывание из «Прибыль» в «Безопасность»)"
+        }
+      ]
+    },
+    "growth_drivers": [
+      {
+        "id": "RES-DRIVER-001",
+        "name": "Макропруденциальное ужесточение",
+        "description": "ЦБ РФ последовательно ужесточает требования к резервированию",
+        "focus_areas": [
+          "Необеспеченное кредитование",
+          "Корпоративные кредиты с высокой долговой нагрузкой"
+        ]
+      },
+      {
+        "id": "RES-DRIVER-002",
+        "name": "Вызревание портфеля",
+        "description": "Последствия агрессивного роста 2023-2024 годов",
+        "mechanism": "Быстрый рост портфеля (+40%) → высокая ключевая ставка → затруднённое обслуживание долга"
+      },
+      {
+        "id": "RES-DRIVER-003",
+        "name": "Консервативная подготовка",
+        "description": "Упреждающее резервирование для потенциальных будущих списаний",
+        "strategic_rationale": "Лучше создать резерв сейчас, чем получить шок позже"
+      }
+    ],
+    "affected_segments": {
+      "primary": "Гражданский сектор (МСБ, розница)",
+      "secondary": "Корпоративный портфель с плавающими ставками",
+      "protected": "ГОЗ-портфель (платёжеспособность гарантирована государством)"
+    },
+    "semantic_refs": {
+      "links_to": [
+        "psb_shareholder_logic_analysis.json#constraints.economic",
+        "psb_shareholder_logic_analysis.json#assumptions.profit_subordinate_to_mission"
+      ],
+      "relationship": "risk_management_manifestation"
+    }
+  },
+  "capital_management": {
+    "id": "CAP-001",
+    "central_concept": "Норматив Н1.0 — «лицензия на кредитование»",
+    "n1_framework": {
+      "definition": "Коэффициент достаточности капитала — главный индикатор способности банка абсорбировать убытки",
+      "regulatory_consequence": "При падении ниже нормы ЦБ запретит выдавать новые кредиты",
+      "strategic_implication": "Для ПСБ = запрет финансировать новые оборонные контракты"
+    },
+    "capital_optimization_techniques": [
+      {
+        "technique": "Сжатие баланса",
+        "2025_application": "Снижение активов с 10,1 трлн до 8,7 трлн руб. (-14%)",
+        "mechanism": "Уменьшение знаменателя формулы Н1.0 → рост коэффициента без прямых вливаний"
+      },
+      {
+        "technique": "Докапитализация",
+        "2025_application": "Взнос государства 29,6-57 млрд руб.",
+        "mechanism": "Прямое увеличение числителя формулы Н1.0"
+      },
+      {
+        "technique": "Удержание прибыли",
+        "2025_application": "Отказ от выплаты дивидендов",
+        "mechanism": "Капитализация прибыли внутри банка"
+      }
+    ],
+    "docapitalization_logic": {
+      "id": "DOCAP-001",
+      "budget_allocation_2025": "29,6 млрд руб. (по другим данным до 57 млрд)",
+      "rationale": [
+        {
+          "reason": "Соблюдение нормативов",
+          "explanation": "Устойчивость ПСБ — вопрос национальной безопасности"
+        },
+        {
+          "reason": "Покрытие убытков от льгот",
+          "explanation": "Кредитование по ставкам ниже рыночных, покупка активов санируемых банков"
+        },
+        {
+          "reason": "Круговорот капитала",
+          "explanation": "Забрать дивиденды → капитал уменьшится → придётся вернуть для кредитования ОПК"
+        }
+      ],
+      "semantic_refs": {
+        "links_to": [
+          "psb_shareholder_logic_analysis.json#shareholder_behavior.docapitalization_instead_of_extraction",
+          "psb_shareholder_logic_analysis.json#ownership_nature.mission_ownership"
+        ],
+        "relationship": "shareholder_commitment_manifestation"
+      }
+    }
+  },
+  "dividend_policy": {
+    "id": "DIV-001",
+    "description": "Уникальная механика отношений с государством, отличная от Сбера или Газпрома",
+    "decision_mechanism": {
+      "steps": [
+        {
+          "step": 1,
+          "name": "Определение базы",
+          "description": "Фиксация чистой прибыли по МСФО/РСБУ",
+          "standard_requirement": "≥50% от скорректированной чистой прибыли (для госкомпаний)"
+        },
+        {
+          "step": 2,
+          "name": "Принятие решения",
+          "description": "Оформляется Распоряжением Правительства РФ, подписывается Росимуществом",
+          "note": "Традиционное собрание акционеров не проводится (100% у РФ)"
+        },
+        {
+          "step": 3,
+          "name": "Трансфер средств",
+          "destination": "Счета Федерального казначейства",
+          "budget_line": "Доходы от использования имущества в госсобственности"
+        },
+        {
+          "step": 4,
+          "name": "Распределение",
+          "mechanism": "Обезличивание в общей массе федерального бюджета",
+          "note": "Нет целевого назначения"
+        }
+      ]
+    },
+    "inversion_model": {
+      "id": "INV-001",
+      "name": "Инверсия потоков капитала",
+      "scenarios": [
+        {
+          "id": "SCENARIO-A",
+          "name": "Мирное время / Низкие ставки",
+          "state_action": "Изымает сверхприбыль через дивиденды",
+          "bank_action": "Генерирует высокую прибыль",
+          "flow_direction": "Банк → Бюджет"
+        },
+        {
+          "id": "SCENARIO-B",
+          "name": "Текущий момент / СВО / Высокие ставки",
+          "state_action": [
+            "Не забирает дивиденды",
+            "Докапитализирует банк"
+          ],
+          "bank_action": [
+            "Жертвует рентабельностью",
+            "Создаёт колоссальные резервы"
+          ],
+          "flow_direction": "Бюджет → Банк",
+          "active_scenario": true
+        }
+      ],
+      "current_status_2025": {
+        "dividend_expectation": "Освобождение от выплаты или минимальный объём",
+        "budget_impact": "Снижение прогноза дивидендов госкомпаний на 19,55 млрд руб.",
+        "akra_position": "Умеренный рост проблемной задолженности → ограничение дивидендных выплат"
+      }
+    },
+    "philosophical_shift": {
+      "classical_meaning": "Дивиденды = вознаграждение акционера",
+      "new_meaning": "Дивиденды = инструмент балансировки системы ОПК-финансирования",
+      "implication": "Государство перекладывает деньги между «карманами» (бюджет ↔ капитал банка) для непрерывности ГОЗ"
+    },
+    "semantic_refs": {
+      "links_to": [
+        "psb_shareholder_logic_analysis.json#shareholder_type",
+        "psb_shareholder_logic_analysis.json#ownership_horizon.strategically_indefinite"
+      ],
+      "relationship": "mission_over_profit_manifestation"
+    }
+  },
+  "revenue_architecture": {
+    "id": "REV-001",
+    "principle": "Диверсификация источников: процентные (база) + комиссионные (драйвер маржинальности)",
+    "net_interest_income": {
+      "id": "NII-001",
+      "metrics_9m2025": {
+        "value": "314,1 млрд руб.",
+        "growth_yoy": "+13,5%"
+      },
+      "adaptation_success": "Рост 13,5% vs 4% в 2024 году — успешная адаптация к высокой ключевой ставке",
+      "mechanism": "Значительная часть корпоративного портфеля на флоатерах (привязка к RUONIA/ключевой ставке)",
+      "rate_outlook": "Прогноз снижения до 16% учитывается в управлении процентным риском"
+    },
+    "net_fee_commission_income": {
+      "id": "NFCI-001",
+      "strategic_importance": "Не потребляет капитал банка",
+      "metrics": {
+        "2024_full_year": {
+          "value": "56,6 млрд руб.",
+          "growth": "+19%"
+        },
+        "h1_2025": {
+          "revenue": "37,5 млрд руб. (+7%)",
+          "expenses": "10,5 млрд руб. (-15%)",
+          "efficiency_signal": "Оптимизация транзакционных издержек и платежных шлюзов"
+        }
+      },
+      "sanctions_context": "Санкции ЕС против платформы А7 — критически важна оптимизация"
+    },
+    "investment_business": {
+      "id": "INV-BUS-001",
+      "description": "Отдельный мощный центр прибыли",
+      "strategy": "ПСБ Благосостояние",
+      "current_aum": "~650 млрд руб.",
+      "target_aum": "1,3 трлн руб.",
+      "growth_drivers": [
+        "Диверсификация каналов (прямые продажи, институциональные инвесторы)",
+        "Цифровизация (личные кабинеты, мобильные приложения)"
+      ],
+      "revenue_stability": "Management fee не зависит от кредитного качества заёмщиков"
+    }
+  },
+  "operational_challenges": {
+    "id": "OPS-001",
+    "context": "Факторы давления на операционные расходы (+24% в 2024)",
+    "challenges": [
+      {
+        "id": "OPS-CH-001",
+        "name": "Новые территории",
+        "description": "Опорный банк в новых регионах",
+        "programs": [
+          "Льготная ипотека 2%",
+          "Развитие сети отделений"
+        ],
+        "portfolio": ">50 млрд руб. в начале 2025",
+        "risks": "Повышенные риски безопасности и логистики"
+      },
+      {
+        "id": "OPS-CH-002",
+        "name": "Релокация",
+        "event": "Смена регистрации из Москвы в Ярославль (01.04.2025)",
+        "possible_rationale": [
+          "Региональная налоговая оптимизация",
+          "Децентрализация крупных налогоплательщиков"
+        ],
+        "cost": "Административные издержки перерегистрации"
+      },
+      {
+        "id": "OPS-CH-003",
+        "name": "M&A интеграция",
+        "description": "Сделки по слиянию и поглощению (МФО, региональные банки)",
+        "cost_types": [
+          "Интеграция IT-систем",
+          "Унификация процессов"
+        ]
+      },
+      {
+        "id": "OPS-CH-004",
+        "name": "Санкционное давление",
+        "target": "Платёжная платформа А7",
+        "response": "Оптимизация транзакционных издержек (-15% комиссионных расходов)"
+      }
+    ]
+  },
+  "implications_for_partnership": {
+    "id": "IMPL-001",
+    "context": "Влияние финансовой архитектуры ПСБ на партнёрство с СПбПУ",
+    "opportunities": [
+      {
+        "id": "OPP-001",
+        "area": "Цифровые двойники банковских процессов",
+        "application": "Оптимизация CIR через предиктивную аналитику",
+        "value_proposition": "Снижение операционных расходов, повышение эффективности",
+        "semantic_refs": {
+          "links_to": [
+            "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model"
+          ],
+          "relationship": "process_dt_application"
+        }
+      },
+      {
+        "id": "OPP-002",
+        "area": "Моделирование стоимости риска (CoR)",
+        "application": "Применение методологии СЦИ для портфельного анализа",
+        "value_proposition": "Раннее выявление проблемных активов, оптимизация резервирования",
+        "semantic_refs": {
+          "links_to": [
+            "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model.methodological_layer"
+          ],
+          "relationship": "sci_methodology_application"
+        }
+      },
+      {
+        "id": "OPP-003",
+        "area": "ML-модели для автоматизации резервирования",
+        "application": "Предиктивные модели на базе CML-Bench",
+        "value_proposition": "Сокращение времени реакции на изменение качества портфеля",
+        "semantic_refs": {
+          "links_to": [
+            "psb_spbpu_context_analysis.json#solution_architecture.three_layer_model.platform_layer"
+          ],
+          "relationship": "cml_bench_application"
+        }
+      },
+      {
+        "id": "OPP-004",
+        "area": "Оценка инновационных проектов предприятий ОПК",
+        "application": "ЦД как инструмент due diligence для кредитных решений",
+        "value_proposition": "Снижение рисков финансирования НИОКР, ускорение принятия решений",
+        "semantic_refs": {
+          "links_to": [
+            "psb_spbpu_context_analysis.json#problem_space.operating_principles[1]",
+            "psb_spbpu_context_analysis.json#summary.psb_value_proposition"
+          ],
+          "relationship": "dt_as_credit_asset"
+        }
+      }
+    ],
+    "constraints": [
+      {
+        "id": "CONSTR-001",
+        "constraint": "Капиталоёмкие проекты требуют обоснования влияния на Н1.0",
+        "implication": "Инвестиции в ЦД должны демонстрировать капитальную эффективность"
+      },
+      {
+        "id": "CONSTR-002",
+        "constraint": "ROI должен измеряться в горизонте миссии, не только финансово",
+        "implication": "Метрики проекта включают вклад в технологический суверенитет",
+        "semantic_refs": {
+          "links_to": [
+            "psb_shareholder_logic_analysis.json#success_metrics.strategic_temporal"
+          ],
+          "relationship": "mission_aligned_metrics"
+        }
+      },
+      {
+        "id": "CONSTR-003",
+        "constraint": "Приоритет бесперебойности ГОЗ над инновационными экспериментами",
+        "implication": "Пилотные проекты не должны создавать риски для основной деятельности"
+      }
+    ],
+    "strategic_alignment": {
+      "convergence_point": "Цифровой контур предприятий ↔ Цифровой контур финансирования",
+      "value_equation": "ЦД = актив + данные + деньги + доверие",
+      "partnership_role": "СПбПУ обеспечивает методологию и платформу, ПСБ — финансовую инфраструктуру и доступ к предприятиям ОПК",
+      "semantic_refs": {
+        "links_to": [
+          "psb_spbpu_context_analysis.json#summary.psb_value_proposition"
+        ],
+        "relationship": "partnership_synergy_foundation"
+      }
+    }
+  },
+  "semantic_graph": {
+    "id": "SEM-GRAPH-001",
+    "description": "Граф семантических связей между JSON-документами проекта",
+    "nodes": [
+      {
+        "id": "NODE-SHAREHOLDER",
+        "file": "psb_shareholder_logic_analysis.json",
+        "domain": "Философия и логика акционера",
+        "key_concepts": [
+          "Миссионный акционер",
+          "Бессрочный горизонт",
+          "Владение смыслом"
+        ]
+      },
+      {
+        "id": "NODE-CONTEXT",
+        "file": "psb_spbpu_context_analysis.json",
+        "domain": "Стратегический контекст партнёрства",
+        "key_concepts": [
+          "Технологический суверенитет",
+          "СЦИ",
+          "CML-Bench",
+          "МКЦП ЦД"
+        ]
+      },
+      {
+        "id": "NODE-FINANCE",
+        "file": "psb_financial_architecture_analysis.json",
+        "domain": "Финансовая архитектура",
+        "key_concepts": [
+          "Трёхпоточная модель",
+          "Инверсия дивидендов",
+          "Норматив Н1.0",
+          "Резервы"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "id": "EDGE-001",
+        "from": "NODE-SHAREHOLDER",
+        "to": "NODE-FINANCE",
+        "relationship": "determines",
+        "semantics": "Мотивация акционера определяет финансовую модель",
+        "key_mappings": [
+          "MOT-FRAMEWORK → BM-001: прибыль как инструмент, не цель",
+          "EXP-NAT-001 → STREAM-GOZ: обеспечение стратегического суверенитета через финансирование ОПК",
+          "ownership_horizon → DIV-001: бессрочность владения → инверсия дивидендов"
+        ]
+      },
+      {
+        "id": "EDGE-002",
+        "from": "NODE-FINANCE",
+        "to": "NODE-CONTEXT",
+        "relationship": "enables",
+        "semantics": "Финансовые возможности обеспечивают реализацию стратегии партнёрства",
+        "key_mappings": [
+          "CAP-001 → KPI-003: достаточность капитала → возможность инвестиций в НИОКР",
+          "REV-001 → FUNC-002: доходы банка → финансово-технологическое посредничество",
+          "IMPL-001 → ROLE-PSB-001: финансовые ограничения определяют возможности роли брокера"
+        ]
+      },
+      {
+        "id": "EDGE-003",
+        "from": "NODE-CONTEXT",
+        "to": "NODE-SHAREHOLDER",
+        "relationship": "validates",
+        "semantics": "Стратегический контекст подтверждает и конкретизирует логику акционера",
+        "key_mappings": [
+          "level_0_national_interest → MOT-001: устойчивое развитие = цивилизационная субъектность",
+          "CH-003 → constraints.geopolitical: санкционное давление как контекст ограничений",
+          "psb_value_proposition → success_metrics: ценностное предложение как метрика успеха"
+        ]
+      }
+    ],
+    "cross_document_concepts": [
+      {
+        "concept": "Технологический суверенитет",
+        "manifestations": {
+          "shareholder": "Мотивация C1.1 — сохранение цивилизационной субъектности",
+          "context": "IG-001 — инструментальная цель, KPI-001..003 — измеримые показатели",
+          "finance": "STREAM-GOZ — финансовое обеспечение, IMPL-001 — применение ЦД"
+        }
+      },
+      {
+        "concept": "Институт развития",
+        "manifestations": {
+          "shareholder": "Тип акционера — миссионный + архитектурный",
+          "context": "ROLE-PSB-001 — финансово-технологический брокер",
+          "finance": "BM-001 — гибридная модель института развития с банковской лицензией"
+        }
+      },
+      {
+        "concept": "Долгосрочная устойчивость",
+        "manifestations": {
+          "shareholder": "Горизонт владения — стратегически бессрочный (50+ лет)",
+          "context": "Принцип PRINC-002 — признание права на риск",
+          "finance": "RES-001 — создание резервов как инвестиция в устойчивость"
+        }
+      },
+      {
+        "concept": "Цифровой двойник как актив",
+        "manifestations": {
+          "shareholder": "Ожидание EXP-NAT-004 — технологический суверенитет",
+          "context": "LAYER-PLATFORM — CML-Bench как инструмент",
+          "finance": "OPP-004 — ЦД как инструмент due diligence для кредитных решений"
+        }
+      }
+    ]
+  },
+  "conclusions": {
+    "id": "CONCL-001",
+    "main_finding": "ПСБ — операционный центр финансового обеспечения обороноспособности, его финансовая архитектура 2025 года перестроена под задачи выживания и обеспечения ОПК",
+    "key_insights": [
+      {
+        "insight": "Прибыль — ресурс для покрытия рисков, не цель",
+        "evidence": "Падение прибыли на 44% при росте портфеля на 40%"
+      },
+      {
+        "insight": "Резервы (82,7 млрд) — плата за стабильность в условиях шторма",
+        "evidence": "Рост резервирования в 2,9 раза за 9 месяцев"
+      },
+      {
+        "insight": "Капитал — «лицензия на кредитование» критических отраслей",
+        "evidence": "Докапитализация 29,6-57 млрд вместо изъятия дивидендов"
+      },
+      {
+        "insight": "Дивиденды — инструмент балансировки, не вознаграждение",
+        "evidence": "Инверсия потоков: бюджет → банк вместо банк → бюджет"
+      }
+    ],
+    "transformation_trajectory": "Из «просто банка» в технологическую корпорацию, управляющую деньгами, строительством, технологиями и внешней торговлей в интересах государства",
+    "partnership_implication": "Партнёрство ПСБ×СПбПУ должно учитывать финансовые ограничения (Н1.0, резервы, OpEx) и позиционировать ЦД как инструмент повышения эффективности и снижения рисков, а не как дополнительную статью расходов"
+  },
+  "appendices": {
+    "financial_metrics_table": {
+      "description": "Сводная таблица ключевых финансовых показателей ПСБ",
+      "data": [
+        {
+          "metric": "Чистая прибыль МСФО",
+          "2023": "116,6 млрд",
+          "2024": "65,3 млрд",
+          "9M2025": "107,5 млрд (РСБУ)",
+          "trend": "↓ затем ↗"
+        },
+        {
+          "metric": "Активы",
+          "2023": "~7,5 трлн",
+          "2024": "9,5 трлн",
+          "9M2025": "8,7 трлн",
+          "trend": "↗ затем ↓"
+        },
+        {
+          "metric": "Кредитный портфель",
+          "2023": "~4,7 трлн",
+          "2024": "6,6 трлн",
+          "9M2025": "н/д",
+          "trend": "↗"
+        },
+        {
+          "metric": "Резервы",
+          "2023": "90,8 млрд",
+          "2024": "94,5 млрд",
+          "9M2025": "82,7 млрд (9М)",
+          "trend": "↗↗↗"
+        },
+        {
+          "metric": "ЧПД (NII)",
+          "2023": "285,1 млрд",
+          "2024": "297,1 млрд",
+          "9M2025": "314,1 млрд",
+          "trend": "↗"
+        },
+        {
+          "metric": "ЧКД (NFCI)",
+          "2023": "47,7 млрд",
+          "2024": "56,6 млрд",
+          "9M2025": "37,5 млрд (1П)",
+          "trend": "↗"
+        },
+        {
+          "metric": "OpEx",
+          "2023": "128,5 млрд",
+          "2024": "159,8 млрд",
+          "9M2025": "н/д",
+          "trend": "↗↗"
+        },
+        {
+          "metric": "ROE",
+          "2023": "н/д",
+          "2024": "25% (9М)",
+          "9M2025": "н/д",
+          "trend": "стабильно"
+        },
+        {
+          "metric": "CIR",
+          "2023": "н/д",
+          "2024": "<40%",
+          "9M2025": "н/д",
+          "trend": "эффективно"
+        }
+      ]
+    },
+    "scenario_matrix": {
+      "description": "Матрица сценариев дивидендной политики",
+      "scenarios": [
+        {
+          "scenario": "A: Мирное время / Низкие ставки",
+          "profit": "Высокая",
+          "dividend_flow": "Банк → Бюджет",
+          "state_action": "Изъятие сверхприбыли",
+          "current": false
+        },
+        {
+          "scenario": "B: СВО / Высокие ставки (текущий)",
+          "profit": "Под давлением",
+          "dividend_flow": "Бюджет → Банк",
+          "state_action": "Докапитализация + отказ от дивидендов",
+          "current": true
+        }
+      ]
+    }
+  },
+  "narrative_summary": {
+    "version": "1.0",
+    "format": "markdown",
+    "target": "portal_v2",
+    "word_count": 148,
+    "content": "## Финансовая архитектура ПСБ: ресурсная база миссии\n\nФинансовая модель ПСБ принципиально отличается от классических коммерческих банков. Здесь прибыль — не цель, а индикатор эффективности выполнения миссии.\n\n### Трёхпоточная модель доходов\n\nСтруктура выручки отражает миссионную специфику: 70% — оборонные контракты (ГОЗ), 25% — гражданский рынок, 5% — комиссионный бизнес. Эта пропорция обеспечивает устойчивость при выполнении государственных задач.\n\n### Инверсия дивидендов\n\nРезервы 2025 года составляют 82.7 млрд рублей (рост в 2.9 раза). Вместо выплаты дивидендов прибыль капитализируется для обеспечения роста операций в ОПК. Докапитализация 29.6 млрд рублей от государства подтверждает приоритет миссии.\n\n### Регуляторные ограничения\n\nНорматив Н1.0 остаётся критичным показателем. ЦБ РФ контролирует достаточность капитала, что требует баланса между ростом операций и поддержанием резервов.\n\n### Финансирование партнёрства\n\nВ рамках МКЦП ЦД потенциал ПСБ — до 5.25 трлн рублей (25-35% внебюджетного финансирования программы на 15 трлн). Это создаёт пространство для инновационных финансовых продуктов: траншевое финансирование по V&V-вехам, залоговые операции с ЦД."
+  }
+}

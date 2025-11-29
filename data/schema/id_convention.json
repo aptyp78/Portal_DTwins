@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "ID Convention для JSON-корпуса ПСБ×СПбПУ",
+    "version": "1.0",
+    "created": "2025-11-29"
+  },
+  "convention": {
+    "version": "1.0",
+    "patterns": {
+      "nodes": {
+        "pattern": "NODE-{DOMAIN}",
+        "examples": [
+          "NODE-MKCP",
+          "NODE-SHAREHOLDER",
+          "NODE-CONTEXT"
+        ],
+        "description": "Идентификатор узла графа знаний"
+      },
+      "edges": {
+        "pattern": "EDGE-{SOURCE_NODE}-{NNN}",
+        "examples": [
+          "EDGE-MKCP-001",
+          "EDGE-SOV-003",
+          "EDGE-AGENDA-011"
+        ],
+        "description": "Идентификатор связи с указанием исходного узла"
+      },
+      "domain_objects": {
+        "pattern": "{DOMAIN}-{NNN}",
+        "examples": [
+          "MOT-001",
+          "PRINC-005",
+          "CLUSTER-003"
+        ],
+        "description": "Идентификатор объекта предметной области"
+      },
+      "layers": {
+        "pattern": "LAYER-{DOMAIN}-L{N}",
+        "examples": [
+          "LAYER-SCI-L1",
+          "LAYER-6TU-L3"
+        ],
+        "description": "Идентификатор слоя архитектуры"
+      }
+    },
+    "naming_rules": [
+      "Все ID в UPPERCASE",
+      "Разделитель — дефис (-)",
+      "Числовая часть — 3 цифры с ведущими нулями (001, 002, ...)",
+      "Префикс отражает домен или исходный узел"
+    ]
+  },
+  "legacy_mapping": {
+    "EDGE-001": "EDGE-BASE-001",
+    "EDGE-002": "EDGE-BASE-002",
+    "EDGE-003": "EDGE-BASE-003",
+    "EDGE-004": "EDGE-BASE-004",
+    "EDGE-005": "EDGE-BASE-005",
+    "EDGE-006": "EDGE-BASE-006",
+    "EDGE-007": "EDGE-BASE-007",
+    "EDGE-008": "EDGE-BASE-008",
+    "EDGE-009": "EDGE-BASE-009",
+    "EDGE-010": "EDGE-BASE-010",
+    "EDGE-011": "EDGE-BASE-011"
+  },
+  "statistics": {
+    "total_legacy_ids": 11,
+    "ids_normalized": 11
+  }
+}

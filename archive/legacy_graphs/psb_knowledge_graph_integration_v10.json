@@ -1,0 +1,412 @@
+{
+  "meta": {
+    "title": "Семантический граф знаний: Партнёрство ПСБ × СПбПУ",
+    "version": "10.0",
+    "update_date": "2025-11-29",
+    "analyst": "AI-эксперт по цифровым двойникам",
+    "description": "Интеграционный файл v10: добавлен NODE-AGENDA (Государственная повестка по ЦД) как стратегический императив для партнёрства",
+    "changelog": {
+      "v10.0": "Добавлен NODE-AGENDA (Хронология инициатив по ЦД со стороны акционера 2024-2025) с 11 новыми семантическими связями. Граф достиг 12 узлов и 65 связей. КРИТИЧЕСКОЕ обновление: Указание Президента 12.08.2024 подтверждает МКЦП ЦД из памяти, устанавливает императив для партнёрства",
+      "v9.0": "Добавлен NODE-CMLBENCH (Глубокий анализ CML-Bench в контексте технологических платформ) с 10 новыми связями",
+      "v8.0": "Добавлен NODE-MARKET (Анализ рынка платформ ЦД) с 8 новыми связями",
+      "v7.0": "Добавлен NODE-SCI (Структурная схема СЦИ) с 7 новыми связями"
+    }
+  },
+
+  "graph_nodes": {
+    "total_nodes": 12,
+    "nodes": [
+      {
+        "id": "NODE-AGENDA",
+        "file": "psb_state_agenda_dt_timeline_analysis.json",
+        "domain": "Государственная повестка по ЦД: хронология 2024-2025",
+        "layer": "strategic_mandate",
+        "key_concepts": [
+          "Указание Президента 12.08.2024 (МКЦП ЦД)",
+          "5 критических событий за 13 месяцев",
+          "Белоусов как системный драйвер",
+          "Межведомственная комиссия + Совет по V&V",
+          "Требования: единая система + задел + методика",
+          "ИИ-приоритет 2025 (Путин 23.04.2025)"
+        ],
+        "primary_question": "ПОЧЕМУ и КАК государство (акционер) формирует среду для реализации миссии ПСБ×СПбПУ через повестку ЦД?",
+        "data_freshness": "2025-11",
+        "strategic_importance": "КРИТИЧЕСКАЯ - документ подтверждает государственный мандат для партнёрства"
+      },
+      {
+        "id": "NODE-CMLBENCH",
+        "file": "psb_cmlbench_technology_context_analysis.json",
+        "domain": "Технологический анализ платформы CML-Bench",
+        "layer": "platform_technology",
+        "key_concepts": [
+          "Место в цепочке систем предприятий (PLM)",
+          "Оценка зрелости TRL 6-7",
+          "GAP-анализ vs Siemens Xcelerator",
+          "Дорожная карта закрытия GAP'ов",
+          "Партнёрства: Cifra, GigaChat, Аметист"
+        ],
+        "primary_question": "ЧТО такое CML-Bench, КАКОВО её место в цепочке систем и КАК закрыть технологические GAP'ы?"
+      },
+      {
+        "id": "NODE-MARKET",
+        "file": "psb_dt_platforms_market_analysis.json",
+        "domain": "Рыночный и конкурентный анализ платформ ЦД",
+        "layer": "market_intelligence",
+        "key_concepts": [
+          "29 платформ из 7 стран",
+          "Рынок $16.6B",
+          "Технологические тренды 2025",
+          "Суверенная экосистема России"
+        ],
+        "primary_question": "КАКОВО конкурентное окружение CML-Bench и ГДЕ точки роста для партнёрства?"
+      },
+      {
+        "id": "NODE-SCI",
+        "file": "psb_sci_architecture_analysis.json",
+        "domain": "Методологическая архитектура Системного цифрового инжиниринга",
+        "layer": "methodological_framework",
+        "key_concepts": ["Шестиуровневая модель СЦИ", "Метафора молекулы-организм", "V&V-базис", "Пять типов ЦД"],
+        "primary_question": "ЧТО такое СЦИ и КАК оно связывает ЦД с управлением ЖЦ?"
+      },
+      {
+        "id": "NODE-SOVEREIGNTY",
+        "file": "psb_strategic_sovereignty_role_analysis.json",
+        "domain": "Роль ПСБ в технологическом суверенитете",
+        "layer": "strategic_positioning",
+        "key_concepts": ["7 точек входа", "Финансово-технологический агент", "Стратегия львиной доли", "2 трлн ₽"],
+        "primary_question": "КАКОВА роль ПСБ в системе технологического суверенитета?"
+      },
+      {
+        "id": "NODE-REGULATORY",
+        "file": "psb_regulatory_framework_analysis.json",
+        "domain": "Нормативный контекст",
+        "layer": "regulatory_framework",
+        "key_concepts": ["523-ФЗ", "Указ №309", "Указ №145", "Мета-объекты", "Акторы"],
+        "primary_question": "В КАКОМ нормативном контексте действует партнёрство?"
+      },
+      {
+        "id": "NODE-SHAREHOLDER",
+        "file": "psb_shareholder_logic_analysis.json",
+        "domain": "Философия и логика акционера",
+        "layer": "strategic_foundation",
+        "key_concepts": ["Миссионный акционер", "Бессрочный горизонт", "5 принципов", "5 целевых состояний"],
+        "primary_question": "ЗАЧЕМ существует ПСБ?"
+      },
+      {
+        "id": "NODE-FINANCE",
+        "file": "psb_financial_architecture_analysis.json",
+        "domain": "Финансовая архитектура",
+        "layer": "resource_base",
+        "key_concepts": ["Трёхпоточная модель", "Инверсия дивидендов", "Н1.0", "Прибыль≠цель"],
+        "primary_question": "ЧЕМ обеспечивается деятельность ПСБ?"
+      },
+      {
+        "id": "NODE-ECOSYSTEM",
+        "file": "psb_ecosystem_infrastructure_analysis.json",
+        "domain": "Экосистема и инфраструктура",
+        "layer": "operational_platform",
+        "key_concepts": ["Государство в банке", "5 кластеров", "Quasi-министерские функции"],
+        "primary_question": "КАК ПСБ реализует свою миссию?"
+      },
+      {
+        "id": "NODE-CONTEXT",
+        "file": "psb_spbpu_context_analysis.json",
+        "domain": "Стратегический контекст партнёрства",
+        "layer": "application_domain",
+        "key_concepts": ["Технологический суверенитет", "СЦИ", "CML-Bench", "Трёхслойная модель"],
+        "primary_question": "ДЛЯ ЧЕГО создаётся партнёрство ПСБ×СПбПУ?"
+      },
+      {
+        "id": "NODE-TECHBASE",
+        "file": "psb_technological_foundation_6tu_analysis.json",
+        "domain": "Архитектура 6-го технологического уклада",
+        "layer": "architectural_blueprint",
+        "key_concepts": ["Мета-объекты", "10 принципов", "Policy-as-code", "SIL/MIL/VnV"],
+        "primary_question": "КАК проектировать системы 6ТУ?"
+      },
+      {
+        "id": "NODE-PLATFORM",
+        "file": "psb_global_trend_platform_analysis.json",
+        "domain": "Платформенная трансформация",
+        "layer": "strategic_transition",
+        "key_concepts": ["Сетевые эффекты", "8 ценностей", "Доверие как капитал", "ЦД как базовая единица"],
+        "primary_question": "ПОЧЕМУ ПСБ должен перейти к платформе?"
+      }
+    ]
+  },
+
+  "graph_edges": {
+    "total_edges": 65,
+    
+    "new_edges_v10": [
+      {
+        "id": "EDGE-AGENDA-001",
+        "from": "NODE-AGENDA",
+        "to": "NODE-SHAREHOLDER",
+        "relationship": "operationalizes_shareholder_philosophy",
+        "strength": "strong",
+        "description": "Государственная повестка — это СРЕДА, через которую акционер (РФ) влияет на ПСБ, не давая прямых приказов. Указание Президента 12.08.2024 = операционализация миссионного акционерства",
+        "key_insight": "PSB-SHAREHOLDER: 'влияние через среду, не приказ' → повестка ЦД как СРЕДА для реализации миссии"
+      },
+      {
+        "id": "EDGE-AGENDA-002",
+        "from": "NODE-AGENDA",
+        "to": "NODE-CONTEXT",
+        "relationship": "establishes_national_imperative",
+        "strength": "strong",
+        "description": "Контекст партнёрства ПСБ×СПбПУ обретает статус НАЦИОНАЛЬНОГО ПРОЕКТА через Указание Президента. МКЦП ЦД → партнёрство становится исполнителем государственного мандата",
+        "key_insight": "Партнёрство больше не частная инициатива, а ответ на национальный вызов"
+      },
+      {
+        "id": "EDGE-AGENDA-003",
+        "from": "NODE-AGENDA",
+        "to": "NODE-REGULATORY",
+        "relationship": "extends_regulatory_framework",
+        "strength": "strong",
+        "description": "Указание Президента 12.08.2024 + решения Коллегии ВПК добавляют новый слой нормативов поверх 523-ФЗ, Указа №309, Указа №145. Межведомственный совет по V&V создаёт методику оценки эффективности ЦД",
+        "key_insight": "Нормативная база эволюционирует: от общих указов → к специализированной методологии ЦД"
+      },
+      {
+        "id": "EDGE-AGENDA-004",
+        "from": "NODE-AGENDA",
+        "to": "NODE-SCI",
+        "relationship": "validates_methodological_foundation",
+        "strength": "strong",
+        "description": "Требование 'методики оценки эффективности ЦД на основании виртуальных испытаний' → СЦИ L6 (V&V-базис) как прямой ответ. СПбПУ может стать методологическим ядром МКЦП",
+        "key_insight": "СЦИ из академической методологии → в государственную программу"
+      },
+      {
+        "id": "EDGE-AGENDA-005",
+        "from": "NODE-AGENDA",
+        "to": "NODE-CMLBENCH",
+        "relationship": "defines_platform_requirements",
+        "strength": "strong",
+        "description": "'Единая система учета, поддержки и коллективного использования ЦД' → CML-Bench как техническая реализация. КРИТИЧНО: GAP по ИИ (Путин 23.04.2025: 'ИИ даст преимущества') → интеграция GigaChat urgent",
+        "key_insight": "CML-Bench из платформы СПбПУ → в федеральную систему учета ЦД (потенциально)"
+      },
+      {
+        "id": "EDGE-AGENDA-006",
+        "from": "NODE-AGENDA",
+        "to": "NODE-FINANCE",
+        "relationship": "structures_investment_framework",
+        "strength": "strong",
+        "description": "МКЦП финансы: 60-70% бюджет, 25-35% внебюджет → роль ПСБ как архитектора внебюджетной части. Траншевое финансирование по V&V-вехам (6ТУ-Framework) становится механизмом МКЦП",
+        "key_insight": "Подтверждение памяти PARTNER-PROGRAM: '25-35% внебюджет (ПСБ)'"
+      },
+      {
+        "id": "EDGE-AGENDA-007",
+        "from": "NODE-AGENDA",
+        "to": "NODE-ECOSYSTEM",
+        "relationship": "identifies_implementation_partners",
+        "strength": "medium",
+        "description": "Межведомственная комиссия + МЭЦ + ВТИ → экосистема ПСБ (институциональный кластер, deep-tech кластер) как потенциальная площадка реализации. СПбПУ — кандидат на МЭЦ",
+        "key_insight": "Экосистема ПСБ (5 кластеров) → инфраструктура для МКЦП"
+      },
+      {
+        "id": "EDGE-AGENDA-008",
+        "from": "NODE-AGENDA",
+        "to": "NODE-TECHBASE",
+        "relationship": "validates_6tu_architecture",
+        "strength": "strong",
+        "description": "Требование 'опережающего технологического задела' → 6ТУ-Framework (10 принципов, V&V-контур, мета-объекты) как архитектурный паттерн. Задел ДО серийного производства = принцип 6ТУ",
+        "key_insight": "6ТУ из теории → в практику МКЦП (задел опережает ГПВ 2025-2034)"
+      },
+      {
+        "id": "EDGE-AGENDA-009",
+        "from": "NODE-AGENDA",
+        "to": "NODE-SOVEREIGNTY",
+        "relationship": "establishes_sovereignty_urgency",
+        "strength": "strong",
+        "description": "Белоусов (07.08.2024): 'Технология ЦД рассматривается США и НАТО как способ достижения долгосрочного превосходства над РФ и Китаем' → технологический суверенитет через ЦД = вопрос национальной безопасности",
+        "key_insight": "ЦД из инженерного инструмента → в геополитическое оружие → роль ПСБ критична"
+      },
+      {
+        "id": "EDGE-AGENDA-010",
+        "from": "NODE-AGENDA",
+        "to": "NODE-PLATFORM",
+        "relationship": "mandates_platform_transition",
+        "strength": "strong",
+        "description": "Требование 'коллективного использования ЦД заинтересованными организациями ОПК' → платформенная модель (сетевые эффекты, доверие = капитал) vs проприетарная. ПСБ как узел доверия критичен",
+        "key_insight": "МКЦП мандатирует переход от проприетарных ЦД к федеральной платформе"
+      },
+      {
+        "id": "EDGE-AGENDA-011",
+        "from": "NODE-AGENDA",
+        "to": "NODE-MARKET",
+        "relationship": "contextualizes_competitive_landscape",
+        "strength": "medium",
+        "description": "Мантуров (15.05.2024): США утвердили 'Стратегию цифрового инжиниринга' 2018 → эталон для сравнения. Анализ 29 платформ показывает GAP РФ (1.45% рынка) → императив догнать и перегнать",
+        "key_insight": "США (2018) vs РФ (2024) = 6-летний лаг → МКЦП должен ускорить развитие"
+      }
+    ],
+    
+    "existing_edges_summary": {
+      "v9_edges": "54 связи между NODE-CMLBENCH и 10 существующими узлами",
+      "v8_edges": "8 связей NODE-MARKET",
+      "v7_edges": "7 связей NODE-SCI",
+      "total_existing": "54 связи из v9 сохранены"
+    }
+  },
+
+  "critical_insights_v10": {
+    "insight_001": {
+      "title": "Подтверждение памяти: МКЦП ЦД по указанию Президента",
+      "description": "Память PARTNER-PROGRAM утверждала 'МКЦП ЦД — по поручению Президента'. Документ подтверждает: Указание Путина 12.08.2024 действительно существует и инициирует создание МКЦП",
+      "implication": "Партнёрство ПСБ×СПбПУ имеет государственный мандат, не является частной инициативой"
+    },
+    "insight_002": {
+      "title": "Белоусов как системный драйвер повестки ЦД",
+      "description": "3 ключевых выступления за 7 месяцев (14.05, 07.08, 16.12.2024), назначение на пост Министра обороны = катализатор повестки",
+      "implication": "Фокус на эффективность (экономист) → ЦД как инструмент снижения издержек ГОЗ (6.3% ВВП, 32.5% бюджета)"
+    },
+    "insight_003": {
+      "title": "ИИ-приоритет 2025: CML-Bench GAP становится критичным",
+      "description": "Путин (23.04.2025): 'Освоение технологий ИИ даст существенные преимущества на поле боя' → CML-Bench БЕЗ LLM-Copilot НЕ соответствует повестке",
+      "implication": "Интеграция GigaChat из желательной → в КРИТИЧЕСКУЮ (Q1-Q2 2025)"
+    },
+    "insight_004": {
+      "title": "Операционное окно Q4 2024 — Q2 2025",
+      "description": "Формирование межведомственной комиссии и дирекции МКЦП происходит СЕЙЧАС. Боровков должен войти в комиссию, ПСБ — в дирекцию",
+      "implication": "Позиционирование партнёрства — вопрос ближайших 3-6 месяцев"
+    },
+    "insight_005": {
+      "title": "Акционер влияет через среду, не приказ — подтверждено",
+      "description": "PSB-SHAREHOLDER: 'влияние через среду' → повестка ЦД (Указание Президента) = СРЕДА, в которой ПСБ реализует миссию финтех-брокера суверенных технологий",
+      "implication": "Философия акционера операционализирована через государственную программу"
+    }
+  },
+
+  "file_manifest_v10": {
+    "total_files": 13,
+    "total_size_kb": "~650",
+    "files": [
+      {"filename": "psb_state_agenda_dt_timeline_analysis.json", "node_id": "NODE-AGENDA", "size_kb": "~90", "version": "NEW in v10"},
+      {"filename": "psb_shareholder_logic_analysis.json", "node_id": "NODE-SHAREHOLDER", "size_kb": 122},
+      {"filename": "psb_financial_architecture_analysis.json", "node_id": "NODE-FINANCE", "size_kb": 40},
+      {"filename": "psb_ecosystem_infrastructure_analysis.json", "node_id": "NODE-ECOSYSTEM", "size_kb": 74},
+      {"filename": "psb_spbpu_context_analysis.json", "node_id": "NODE-CONTEXT", "size_kb": 41},
+      {"filename": "psb_technological_foundation_6tu_analysis.json", "node_id": "NODE-TECHBASE", "size_kb": 67},
+      {"filename": "psb_global_trend_platform_analysis.json", "node_id": "NODE-PLATFORM", "size_kb": 40},
+      {"filename": "psb_regulatory_framework_analysis.json", "node_id": "NODE-REGULATORY", "size_kb": 117},
+      {"filename": "psb_strategic_sovereignty_role_analysis.json", "node_id": "NODE-SOVEREIGNTY", "size_kb": 52},
+      {"filename": "psb_sci_architecture_analysis.json", "node_id": "NODE-SCI", "size_kb": 37},
+      {"filename": "psb_dt_platforms_market_analysis.json", "node_id": "NODE-MARKET", "size_kb": 47},
+      {"filename": "psb_cmlbench_technology_context_analysis.json", "node_id": "NODE-CMLBENCH", "size_kb": 46},
+      {"filename": "psb_knowledge_graph_integration_v10.json", "node_id": "GRAPH-META", "size_kb": "~15"}
+    ]
+  },
+
+  "semantic_queries_v10": {
+    "description": "Примеры запросов к семантическому графу v10 с NODE-AGENDA",
+    "new_queries": [
+      {
+        "query": "Какое событие инициировало создание МКЦП ЦД?",
+        "path": "NODE-AGENDA → timeline_analysis.EVENT-005",
+        "answer_location": "psb_state_agenda_dt_timeline_analysis.json#timeline_analysis.events.EVENT-005",
+        "answer": "Указание Президента В.В. Путина от 12.08.2024 по вопросу развития технологий цифрового проектирования и ЦД для ВВСТ"
+      },
+      {
+        "query": "Как государственная повестка связана с философией акционера ПСБ?",
+        "path": "NODE-AGENDA → EDGE-AGENDA-001 → NODE-SHAREHOLDER",
+        "answer_location": "Cross-reference: psb_state_agenda_dt_timeline_analysis.json + psb_shareholder_logic_analysis.json",
+        "answer": "Государство как акционер влияет через СРЕДУ (повестка ЦД), не через прямые приказы. Указание Президента формирует среду, в которой ПСБ реализует миссию проводника госполитики"
+      },
+      {
+        "query": "Почему интеграция ИИ в CML-Bench стала критичной в 2025?",
+        "path": "NODE-AGENDA.timeline_analysis.EVENT-007 → EDGE-AGENDA-005 → NODE-CMLBENCH",
+        "answer_location": "psb_state_agenda_dt_timeline_analysis.json#timeline_analysis.events.EVENT-007 + psb_cmlbench_technology_context_analysis.json#gap_closure_roadmap.critical_gaps.GAP-001",
+        "answer": "Путин (23.04.2025): 'Освоение технологий ИИ даст существенные преимущества на поле боя' → CML-Bench БЕЗ LLM-Copilot НЕ соответствует приоритетам 2025"
+      },
+      {
+        "query": "Какова финансовая структура МКЦП ЦД и роль ПСБ?",
+        "path": "NODE-AGENDA.institutional_framework.mkcp_directorate → EDGE-AGENDA-006 → NODE-FINANCE",
+        "answer_location": "psb_state_agenda_dt_timeline_analysis.json#institutional_framework.mkcp_directorate.budget_structure + psb_financial_architecture_analysis.json",
+        "answer": "60-70% бюджет, 25-35% внебюджет (ПСБ), 5-10% регионы. ПСБ — архитектор внебюджетной части через траншевое финансирование по V&V-вехам"
+      },
+      {
+        "query": "Кто потенциальные руководители дирекции МКЦП ЦД?",
+        "path": "NODE-AGENDA.institutional_framework.mkcp_directorate.potential_structure → NODE-CONTEXT.key_actors",
+        "answer_location": "psb_state_agenda_dt_timeline_analysis.json#institutional_framework.mkcp_directorate.potential_structure",
+        "answer": "Директор: А.Б. Агеев (ВНИИ Центр) | Зам. методология: А.И. Боровков (СПбПУ) | Зам. финансы: Представитель ПСБ"
+      },
+      {
+        "query": "Какие требования государственной повестки адресуются методологии СЦИ?",
+        "path": "NODE-AGENDA.requirements_analysis.vv_methodology → EDGE-AGENDA-004 → NODE-SCI",
+        "answer_location": "psb_state_agenda_dt_timeline_analysis.json#requirements_analysis.vv_methodology + psb_sci_architecture_analysis.json#six_layer_model.layers.L6",
+        "answer": "Методика оценки эффективности ЦД через виртуальные испытания → СПбПУ L6 (V&V-базис) как методологический ответ"
+      }
+    ]
+  },
+
+  "knowledge_graph_visualization_v10": {
+    "description": "Визуальная структура графа знаний v10 (ASCII)",
+    "ascii_diagram": [
+      "                                ┌─────────────────┐",
+      "                                │  NODE-AGENDA    │◄─── НОВЫЙ УЗЕЛ v10",
+      "                                │  (Повестка ЦД)  │     Государственный",
+      "                                └────────┬────────┘     мандат",
+      "                                         │",
+      "                     ┌───────────────────┼───────────────────┐",
+      "                     │                   │                   │",
+      "              ┌──────▼───────┐    ┌──────▼───────┐    ┌──────▼───────┐",
+      "              │ NODE-SHARE-  │    │ NODE-CONTEXT │    │ NODE-REGU-   │",
+      "              │ HOLDER       │    │ (Партнёрство)│    │ LATORY       │",
+      "              │ (Философия)  │    └──────┬───────┘    │ (Нормативы)  │",
+      "              └──────┬───────┘           │            └──────┬───────┘",
+      "                     │                   │                   │",
+      "         ┌───────────┼───────────────────┼───────────────────┼──────────┐",
+      "         │           │                   │                   │          │",
+      "  ┌──────▼──────┐ ┌──▼──────┐    ┌──────▼───────┐    ┌──────▼───────┐  │",
+      "  │ NODE-       │ │ NODE-   │    │ NODE-        │    │ NODE-        │  │",
+      "  │ FINANCE     │ │ ECO-    │    │ CMLBENCH     │◄───│ SCI          │  │",
+      "  │ (Финансы)   │ │ SYSTEM  │    │ (Платформа)  │    │ (Методология)│  │",
+      "  └─────────────┘ └─────────┘    └──────┬───────┘    └──────┬───────┘  │",
+      "                                         │                   │          │",
+      "                                  ┌──────▼───────┐    ┌──────▼───────┐  │",
+      "                                  │ NODE-MARKET  │    │ NODE-        │  │",
+      "                                  │ (Рынок ЦД)   │    │ TECHBASE     │  │",
+      "                                  └──────────────┘    │ (6ТУ)        │  │",
+      "                                                      └──────┬───────┘  │",
+      "                                                             │          │",
+      "                                  ┌──────────────────────────┼──────────┘",
+      "                                  │                          │",
+      "                           ┌──────▼───────┐          ┌──────▼───────┐",
+      "                           │ NODE-        │          │ NODE-        │",
+      "                           │ SOVEREIGNTY  │          │ PLATFORM     │",
+      "                           │ (Суверен.)   │          │ (Платформа)  │",
+      "                           └──────────────┘          └──────────────┘"
+    ],
+    "legend": {
+      "NODE-AGENDA": "НОВЫЙ УЗЕЛ v10 — стратегический императив от государства (акционера)",
+      "arrows": "Направление семантических связей (11 новых из NODE-AGENDA)",
+      "central_hub": "NODE-AGENDA формирует верхний слой графа — государственный мандат для всех узлов",
+      "total_structure": "12 узлов, 65 связей (54 из v9 + 11 новых из v10)"
+    }
+  },
+
+  "integration_roadmap": {
+    "description": "Дорожная карта использования knowledge graph v10 в работе партнёрства",
+    "usage_scenarios": [
+      {
+        "scenario": "Позиционирование партнёрства в МКЦП",
+        "query_path": "NODE-AGENDA.strategic_positioning → NODE-CONTEXT → NODE-CMLBENCH + NODE-SCI",
+        "output": "Презентация уникальной ценности: СЦИ (методология) + CML-Bench (платформа) + ПСБ (финансы + доверие)"
+      },
+      {
+        "scenario": "Обоснование интеграции GigaChat",
+        "query_path": "NODE-AGENDA.timeline_analysis.EVENT-007 → NODE-CMLBENCH.gap_closure_roadmap.GAP-001",
+        "output": "Императив ИИ от Президента → критичность LLM-Copilot → план интеграции Q1-Q2 2025"
+      },
+      {
+        "scenario": "Разработка концепции финансирования МКЦП",
+        "query_path": "NODE-AGENDA.institutional_framework.mkcp_directorate.budget_structure → NODE-FINANCE + NODE-TECHBASE",
+        "output": "25-35% внебюджет через траншевый механизм по V&V-вехам (6ТУ-Framework)"
+      },
+      {
+        "scenario": "Подготовка методики V&V для межведомственного совета",
+        "query_path": "NODE-AGENDA.requirements_analysis.vv_methodology → NODE-SCI.L6_VnV_infrastructure → NODE-CMLBENCH",
+        "output": "Методика сходимости виртуальных и физических испытаний на базе СЦИ L6"
+      }
+    ]
+  }
+}
