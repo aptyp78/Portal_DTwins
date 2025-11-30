@@ -1,0 +1,299 @@
+{
+  "registry_id": "RAW-SOURCES-REGISTRY",
+  "version": "1.0",
+  "created": "2025-11-30",
+  "description": "Реестр первоисточников аналитического корпуса ПСБ × СПбПУ",
+  "total_files": 13,
+  "total_size_bytes": 9314435,
+  "total_size_mb": 8.9,
+  "sources": [
+    {
+      "source_id": "SRC-DOC-001",
+      "document_code": "Док_1",
+      "title": "Банк ПСБ: описание структуры и логика акционера",
+      "filename_original": "1_2025_11_Док_1_Банк_ПСБ_описание_структуры_Логика_Акционера.docx",
+      "format": "docx",
+      "size_bytes": 107700,
+      "size_kb": 105.2,
+      "date": "2025-11",
+      "category": "strategic",
+      "topic": "Структура ПСБ, логика миссионного акционера",
+      "derived_nodes": ["NODE-SHAREHOLDER"],
+      "key_concepts": [
+        "Миссионный акционер",
+        "Структура банка ПСБ",
+        "Стратегические приоритеты"
+      ]
+    },
+    {
+      "source_id": "SRC-DOC-002",
+      "document_code": "Док_2",
+      "title": "Финансовая архитектура ПСБ: резервы и денежные переводы",
+      "filename_original": "2_2025_11_Док_2_Финансовая_Архитектура_ПСБ_Резервы_Денежные_переводы.docx",
+      "format": "docx",
+      "size_bytes": 47968,
+      "size_kb": 46.8,
+      "date": "2025-11",
+      "category": "operational",
+      "topic": "Финансовая архитектура, резервы, переводы",
+      "derived_nodes": ["NODE-FINANCE"],
+      "key_concepts": [
+        "Финансовые резервы",
+        "Денежные переводы",
+        "Банковская архитектура"
+      ]
+    },
+    {
+      "source_id": "SRC-DOC-003",
+      "document_code": "Док_3",
+      "title": "Экосистема и инфраструктура ПСБ",
+      "filename_original": "3_2025_11_Док_3_Экосистема_Инфраструктура_ПСБ.docx",
+      "format": "docx",
+      "size_bytes": 85701,
+      "size_kb": 83.7,
+      "date": "2025-11",
+      "category": "operational",
+      "topic": "Экосистема инфраструктуры банка",
+      "derived_nodes": ["NODE-ECOSYSTEM"],
+      "key_concepts": [
+        "Банковская экосистема",
+        "Инфраструктура",
+        "Технологическая платформа"
+      ]
+    },
+    {
+      "source_id": "SRC-DOC-004",
+      "document_code": "Док_4",
+      "title": "ПСБ × СПбПУ: контекст партнёрства",
+      "filename_original": "4_2025_11_Док_4_ПСБ_СПбПУ_контекст.docx",
+      "format": "docx",
+      "size_bytes": 53970,
+      "size_kb": 52.7,
+      "date": "2025-11",
+      "category": "strategic",
+      "topic": "Контекст партнёрства ПСБ и СПбПУ",
+      "derived_nodes": ["NODE-CONTEXT", "NODE-TECHBASE", "NODE-SCI", "NODE-CMLBENCH", "NODE-MARKET"],
+      "attachments": ["SRC-ATT-004-1", "SRC-ATT-004-2", "SRC-ATT-004-3", "SRC-ATT-004-4", "SRC-ATT-004-5"],
+      "key_concepts": [
+        "Стратегическое партнёрство",
+        "СПбПУ",
+        "CML-Bench",
+        "Цифровые двойники"
+      ]
+    },
+    {
+      "source_id": "SRC-ATT-004-1",
+      "document_code": "Док_4_Приложение_1",
+      "title": "Схема национальных документов для перехода на новую технологическую основу",
+      "filename_original": "4_2025_11_Док_4_Приложение_1_Схема_нац_документов_для_перехода_на_новую_тех_основу.pdf",
+      "format": "pdf",
+      "size_bytes": 116943,
+      "size_kb": 114.2,
+      "date": "2025-11",
+      "category": "regulatory",
+      "topic": "Национальные документы, переход на новую тех.основу",
+      "parent_document": "SRC-DOC-004",
+      "content_type": "diagram",
+      "key_concepts": [
+        "Национальные документы",
+        "Технологический переход",
+        "Регуляторная рамка"
+      ]
+    },
+    {
+      "source_id": "SRC-ATT-004-2",
+      "document_code": "Док_4_Приложение_2",
+      "title": "Видение роли ПСБ в технологическом суверенитете через национальные стратегические документы",
+      "filename_original": "4_2025_11_Док_4_Приложение_2_Видение_роли_ПСБ_в_тех_суверенитете_через_нац_стратегические_документы.pdf",
+      "format": "pdf",
+      "size_bytes": 181285,
+      "size_kb": 177.0,
+      "date": "2025-11",
+      "category": "strategic",
+      "topic": "Роль ПСБ в технологическом суверенитете",
+      "parent_document": "SRC-DOC-004",
+      "content_type": "analysis",
+      "derived_nodes": ["NODE-SOVEREIGNTY"],
+      "key_concepts": [
+        "Технологический суверенитет",
+        "Роль ПСБ",
+        "Стратегические документы"
+      ]
+    },
+    {
+      "source_id": "SRC-ATT-004-3",
+      "document_code": "Док_4_Приложение_3",
+      "title": "Структурная схема СЦИ (Системной Цифровой Инженерии)",
+      "filename_original": "4_2025_11_Док_4_Приложение_3_Структурная_схема_СЦИ.pdf",
+      "format": "pdf",
+      "size_bytes": 113392,
+      "size_kb": 110.7,
+      "date": "2025-11",
+      "category": "technical",
+      "topic": "Архитектура СЦИ",
+      "parent_document": "SRC-DOC-004",
+      "content_type": "diagram",
+      "derived_nodes": ["NODE-SCI"],
+      "key_concepts": [
+        "СЦИ",
+        "Системная Цифровая Инженерия",
+        "Архитектура методологии"
+      ]
+    },
+    {
+      "source_id": "SRC-ATT-004-4",
+      "document_code": "Док_4_Приложение_4",
+      "title": "Сравнительный анализ платформ цифровых двойников",
+      "filename_original": "4_2025_11_Док_4_Приложение_4_Сравнительный_анализ_платформ_цифровых_двойников.xlsx",
+      "format": "xlsx",
+      "size_bytes": 27134,
+      "size_kb": 26.5,
+      "date": "2025-11",
+      "category": "market",
+      "topic": "Сравнение платформ ЦД",
+      "parent_document": "SRC-DOC-004",
+      "content_type": "spreadsheet",
+      "derived_nodes": ["NODE-MARKET"],
+      "key_concepts": [
+        "Платформы цифровых двойников",
+        "Сравнительный анализ",
+        "Рынок ЦД"
+      ]
+    },
+    {
+      "source_id": "SRC-ATT-004-5",
+      "document_code": "Док_4_Приложение_5",
+      "title": "CML-Bench в контексте технологических платформ",
+      "filename_original": "4_2025_11_Док_4_Приложение_5_CMLBench_в_контексте_тех_платформ.pdf",
+      "format": "pdf",
+      "size_bytes": 559727,
+      "size_kb": 546.6,
+      "date": "2025-11",
+      "category": "technical",
+      "topic": "CML-Bench позиционирование",
+      "parent_document": "SRC-DOC-004",
+      "content_type": "analysis",
+      "derived_nodes": ["NODE-CMLBENCH"],
+      "key_concepts": [
+        "CML-Bench",
+        "Технологические платформы",
+        "Позиционирование"
+      ]
+    },
+    {
+      "source_id": "SRC-DOC-005",
+      "document_code": "Док_5",
+      "title": "Глобальный уровень: тренды и платформы",
+      "filename_original": "5_2025_11_Док_5_Глобальный_уровень.docx",
+      "format": "docx",
+      "size_bytes": 21954,
+      "size_kb": 21.4,
+      "date": "2025-11",
+      "category": "strategic",
+      "topic": "Глобальные тренды платформ",
+      "derived_nodes": ["NODE-PLATFORM", "NODE-SOVEREIGNTY"],
+      "attachments": ["SRC-ATT-005-1"],
+      "key_concepts": [
+        "Глобальные тренды",
+        "Платформенная экономика",
+        "Международный контекст"
+      ]
+    },
+    {
+      "source_id": "SRC-ATT-005-1",
+      "document_code": "Док_5_Приложение_1",
+      "title": "Описание принципов новой технологической основы",
+      "filename_original": "5_2025_11_Док_5_Приложение_1_Описание_принципов_новой_технологической_основы.pdf",
+      "format": "pdf",
+      "size_bytes": 308456,
+      "size_kb": 301.2,
+      "date": "2025-11",
+      "category": "technical",
+      "topic": "Принципы новой технологической основы",
+      "parent_document": "SRC-DOC-005",
+      "content_type": "analysis",
+      "derived_nodes": ["NODE-TECHBASE"],
+      "key_concepts": [
+        "Новая технологическая основа",
+        "6ТУ",
+        "Принципы развития"
+      ]
+    },
+    {
+      "source_id": "SRC-CHRONO",
+      "document_code": "Хронология",
+      "title": "Хронология инициатив по ЦД со стороны акционера",
+      "filename_original": "2025_Хронология_Инициатив_по_ЦД_со_стороны_Акционера.docx",
+      "format": "docx",
+      "size_bytes": 18477,
+      "size_kb": 18.0,
+      "date": "2025-11",
+      "category": "operational",
+      "topic": "Хронология госагенды по ЦД",
+      "derived_nodes": ["NODE-TIMELINE", "NODE-REGULATORY"],
+      "key_concepts": [
+        "Хронология",
+        "Государственная агенда",
+        "Инициативы по ЦД"
+      ]
+    },
+    {
+      "source_id": "SRC-MKCP",
+      "document_code": "МКЦП",
+      "title": "Межведомственная комплексная целевая программа по цифровым двойникам (редакция после МО)",
+      "filename_original": "МКЦП_редакция_после_МО.pdf",
+      "format": "pdf",
+      "size_bytes": 7671728,
+      "size_kb": 7491.9,
+      "size_mb": 7.3,
+      "date": "2025-11",
+      "category": "program",
+      "topic": "Программа МКЦП ЦД 2026-2035",
+      "derived_nodes": ["NODE-MKCP"],
+      "key_concepts": [
+        "МКЦП ЦД",
+        "15 трлн рублей",
+        "2026-2035",
+        "Государственная программа"
+      ],
+      "program_details": {
+        "budget": "15 трлн руб.",
+        "period": "2026-2035",
+        "duration_years": 10,
+        "focus": "Цифровые двойники"
+      }
+    }
+  ],
+  "statistics": {
+    "by_format": {
+      "docx": {"count": 6, "size_bytes": 335770},
+      "pdf": {"count": 6, "size_bytes": 8951531},
+      "xlsx": {"count": 1, "size_bytes": 27134}
+    },
+    "by_category": {
+      "strategic": {"count": 4, "sources": ["SRC-DOC-001", "SRC-DOC-004", "SRC-ATT-004-2", "SRC-DOC-005"]},
+      "operational": {"count": 3, "sources": ["SRC-DOC-002", "SRC-DOC-003", "SRC-CHRONO"]},
+      "technical": {"count": 3, "sources": ["SRC-ATT-004-3", "SRC-ATT-004-5", "SRC-ATT-005-1"]},
+      "regulatory": {"count": 1, "sources": ["SRC-ATT-004-1"]},
+      "market": {"count": 1, "sources": ["SRC-ATT-004-4"]},
+      "program": {"count": 1, "sources": ["SRC-MKCP"]}
+    },
+    "main_documents": 6,
+    "attachments": 7
+  },
+  "derived_nodes_mapping": {
+    "NODE-CONTEXT": ["SRC-DOC-004"],
+    "NODE-SHAREHOLDER": ["SRC-DOC-001"],
+    "NODE-FINANCE": ["SRC-DOC-002"],
+    "NODE-ECOSYSTEM": ["SRC-DOC-003"],
+    "NODE-TECHBASE": ["SRC-DOC-004", "SRC-ATT-005-1"],
+    "NODE-PLATFORM": ["SRC-DOC-005"],
+    "NODE-REGULATORY": ["SRC-ATT-004-1", "SRC-CHRONO"],
+    "NODE-SOVEREIGNTY": ["SRC-ATT-004-2", "SRC-DOC-005"],
+    "NODE-SCI": ["SRC-DOC-004", "SRC-ATT-004-3"],
+    "NODE-MARKET": ["SRC-DOC-004", "SRC-ATT-004-4"],
+    "NODE-CMLBENCH": ["SRC-DOC-004", "SRC-ATT-004-5"],
+    "NODE-TIMELINE": ["SRC-CHRONO"],
+    "NODE-MKCP": ["SRC-MKCP"]
+  }
+}
