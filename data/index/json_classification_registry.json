@@ -1,0 +1,244 @@
+{
+  "registry_id": "JSON-CLASSIFICATION-REGISTRY",
+  "version": "1.0",
+  "created": "2025-11-30",
+  "description": "Полный классификационный реестр всех JSON-файлов проекта Portal_DTwins",
+  "summary": {
+    "total_files": 46,
+    "total_size_bytes": 2878348,
+    "total_size_mb": 2.74,
+    "categories": 6
+  },
+  "classification": {
+    "PRODUCTION": {
+      "category_id": "CAT-PROD",
+      "description": "Актуальные рабочие данные для использования",
+      "status": "active",
+      "subcategories": {
+        "analytical_nodes": {
+          "path": "data/nodes/",
+          "description": "Нормализованные аналитические узлы (production)",
+          "count": 13,
+          "total_size_bytes": 1094237,
+          "total_size_kb": 1068.6,
+          "files": [
+            {"file": "psb_spbpu_context_analysis.json", "size_bytes": 69944, "node_id": "NODE-CONTEXT"},
+            {"file": "psb_shareholder_logic_analysis.json", "size_bytes": 144063, "node_id": "NODE-SHAREHOLDER"},
+            {"file": "psb_financial_architecture_analysis.json", "size_bytes": 52143, "node_id": "NODE-FINANCE"},
+            {"file": "psb_ecosystem_infrastructure_analysis.json", "size_bytes": 90560, "node_id": "NODE-ECOSYSTEM"},
+            {"file": "psb_technological_foundation_6tu_analysis.json", "size_bytes": 81159, "node_id": "NODE-TECHBASE"},
+            {"file": "psb_global_trend_platform_analysis.json", "size_bytes": 45685, "node_id": "NODE-PLATFORM"},
+            {"file": "psb_regulatory_framework_analysis.json", "size_bytes": 123906, "node_id": "NODE-REGULATORY"},
+            {"file": "psb_strategic_sovereignty_role_analysis.json", "size_bytes": 59203, "node_id": "NODE-SOVEREIGNTY"},
+            {"file": "psb_sci_architecture_analysis.json", "size_bytes": 43338, "node_id": "NODE-SCI"},
+            {"file": "psb_dt_platforms_market_analysis.json", "size_bytes": 55860, "node_id": "NODE-MARKET"},
+            {"file": "psb_cmlbench_technology_context_analysis.json", "size_bytes": 52350, "node_id": "NODE-CMLBENCH"},
+            {"file": "psb_state_agenda_dt_timeline_analysis.json", "size_bytes": 118530, "node_id": "NODE-TIMELINE"},
+            {"file": "psb_mkcp_program_analysis.json", "size_bytes": 157496, "node_id": "NODE-MKCP"}
+          ]
+        },
+        "knowledge_graph": {
+          "path": "data/graph/",
+          "description": "Актуальный Knowledge Graph (production)",
+          "count": 1,
+          "total_size_bytes": 201446,
+          "total_size_kb": 196.7,
+          "files": [
+            {"file": "psb_knowledge_graph_integration_v14.json", "size_bytes": 201446, "version": "v14", "nodes": 13, "edges": 83}
+          ]
+        }
+      },
+      "total_files": 14,
+      "total_size_bytes": 1295683,
+      "total_size_kb": 1265.3
+    },
+    "SCHEMA": {
+      "category_id": "CAT-SCHEMA",
+      "description": "Схемы данных и конвенции",
+      "status": "active",
+      "path": "data/schema/",
+      "count": 2,
+      "total_size_bytes": 7282,
+      "total_size_kb": 7.1,
+      "files": [
+        {
+          "file": "psb_analytical_json_schema.json",
+          "size_bytes": 5234,
+          "purpose": "JSON Schema для валидации аналитических узлов",
+          "type": "json-schema"
+        },
+        {
+          "file": "id_convention.json",
+          "size_bytes": 2048,
+          "purpose": "Конвенция именования идентификаторов",
+          "type": "convention"
+        }
+      ]
+    },
+    "INDEX": {
+      "category_id": "CAT-INDEX",
+      "description": "Индексы, реестры и служебные файлы",
+      "status": "active",
+      "path": "data/index/",
+      "count": 5,
+      "total_size_bytes": 134704,
+      "total_size_kb": 131.5,
+      "files": [
+        {
+          "file": "incoming_edges_index.json",
+          "size_bytes": 86267,
+          "purpose": "Индекс входящих связей графа",
+          "type": "index"
+        },
+        {
+          "file": "project_inventory.json",
+          "size_bytes": 16557,
+          "purpose": "Инвентарь проекта (автогенерация)",
+          "type": "inventory"
+        },
+        {
+          "file": "validation_report.json",
+          "size_bytes": 1751,
+          "purpose": "Отчёт валидации данных",
+          "type": "report"
+        },
+        {
+          "file": "raw_sources_registry.json",
+          "size_bytes": 12627,
+          "purpose": "Реестр первоисточников (docx, pdf, xlsx)",
+          "type": "registry"
+        },
+        {
+          "file": "working_json_registry.json",
+          "size_bytes": 17502,
+          "purpose": "Реестр рабочих JSON-узлов с трассировкой",
+          "type": "registry"
+        }
+      ]
+    },
+    "ARCHIVE_GRAPHS": {
+      "category_id": "CAT-ARCH-GRAPH",
+      "description": "Архив исторических версий Knowledge Graph",
+      "status": "archived",
+      "path": "archive/legacy_graphs/",
+      "count": 12,
+      "total_size_bytes": 531981,
+      "total_size_kb": 519.5,
+      "version_range": "v2-v13",
+      "files": [
+        {"file": "psb_knowledge_graph_integration_v2.json", "size_bytes": 18040, "version": "v2", "date": "2025-11-24"},
+        {"file": "psb_knowledge_graph_integration_v3.json", "size_bytes": 30475, "version": "v3", "date": "2025-11-24"},
+        {"file": "psb_knowledge_graph_integration_v4.json", "size_bytes": 33906, "version": "v4", "date": "2025-11-25"},
+        {"file": "psb_knowledge_graph_integration_v5.json", "size_bytes": 37226, "version": "v5", "date": "2025-11-25"},
+        {"file": "psb_knowledge_graph_integration_v6.json", "size_bytes": 24885, "version": "v6", "date": "2025-11-26"},
+        {"file": "psb_knowledge_graph_integration_v7.json", "size_bytes": 7493, "version": "v7", "date": "2025-11-26"},
+        {"file": "psb_knowledge_graph_integration_v8.json", "size_bytes": 16765, "version": "v8", "date": "2025-11-27"},
+        {"file": "psb_knowledge_graph_integration_v9.json", "size_bytes": 24151, "version": "v9", "date": "2025-11-27"},
+        {"file": "psb_knowledge_graph_integration_v10.json", "size_bytes": 31522, "version": "v10", "date": "2025-11-28"},
+        {"file": "psb_knowledge_graph_integration_v11.json", "size_bytes": 38651, "version": "v11", "date": "2025-11-28"},
+        {"file": "psb_knowledge_graph_integration_v12.json", "size_bytes": 70456, "version": "v12", "date": "2025-11-29"},
+        {"file": "psb_knowledge_graph_integration_v13.json", "size_bytes": 198411, "version": "v13", "date": "2025-11-29"}
+      ],
+      "evolution": {
+        "start_size_kb": 17.6,
+        "end_size_kb": 193.8,
+        "growth_factor": 11.0,
+        "key_milestones": [
+          {"version": "v2", "event": "Начальная версия, 5 узлов"},
+          {"version": "v9", "event": "NODE-CMLBENCH добавлен, 54 связи"},
+          {"version": "v12", "event": "Фаза 1 нормализации: node_id, layer, 313 backlinks"},
+          {"version": "v13", "event": "Фаза 2: JSON Schema, edge ontology"}
+        ]
+      }
+    },
+    "ARCHIVE_NODES": {
+      "category_id": "CAT-ARCH-NODES",
+      "description": "Архив узлов до нормализации (pre-normalization)",
+      "status": "archived",
+      "path": "archive/json_pre_normalization/",
+      "count": 13,
+      "total_size_bytes": 962260,
+      "total_size_kb": 939.7,
+      "files": [
+        {"file": "psb_spbpu_context_analysis.json", "size_bytes": 41334, "node_id": "NODE-CONTEXT"},
+        {"file": "psb_shareholder_logic_analysis.json", "size_bytes": 124206, "node_id": "NODE-SHAREHOLDER"},
+        {"file": "psb_financial_architecture_analysis.json", "size_bytes": 40157, "node_id": "NODE-FINANCE"},
+        {"file": "psb_ecosystem_infrastructure_analysis.json", "size_bytes": 75504, "node_id": "NODE-ECOSYSTEM"},
+        {"file": "psb_technological_foundation_6tu_analysis.json", "size_bytes": 67768, "node_id": "NODE-TECHBASE"},
+        {"file": "psb_global_trend_platform_analysis.json", "size_bytes": 40326, "node_id": "NODE-PLATFORM"},
+        {"file": "psb_regulatory_framework_analysis.json", "size_bytes": 119502, "node_id": "NODE-REGULATORY"},
+        {"file": "psb_strategic_sovereignty_role_analysis.json", "size_bytes": 52406, "node_id": "NODE-SOVEREIGNTY"},
+        {"file": "psb_sci_architecture_analysis.json", "size_bytes": 36885, "node_id": "NODE-SCI"},
+        {"file": "psb_dt_platforms_market_analysis.json", "size_bytes": 47935, "node_id": "NODE-MARKET"},
+        {"file": "psb_cmlbench_technology_context_analysis.json", "size_bytes": 46379, "node_id": "NODE-CMLBENCH"},
+        {"file": "psb_state_agenda_dt_timeline_analysis.json", "size_bytes": 115050, "node_id": "NODE-TIMELINE"},
+        {"file": "psb_mkcp_program_analysis.json", "size_bytes": 154808, "node_id": "NODE-MKCP"}
+      ],
+      "normalization_delta": {
+        "pre_normalization_size_kb": 939.7,
+        "post_normalization_size_kb": 1068.6,
+        "added_kb": 128.9,
+        "growth_percent": 13.7,
+        "changes": [
+          "Добавлены node_id и layer",
+          "Добавлены referenced_by (313 backlinks)",
+          "Добавлены narrative_summary",
+          "Стандартизирована структура meta"
+        ]
+      }
+    }
+  },
+  "statistics": {
+    "by_status": {
+      "active": {
+        "files": 21,
+        "size_bytes": 1437669,
+        "size_kb": 1403.9,
+        "percent_of_total": 49.9
+      },
+      "archived": {
+        "files": 25,
+        "size_bytes": 1494241,
+        "size_kb": 1459.2,
+        "percent_of_total": 51.9
+      }
+    },
+    "by_purpose": {
+      "analytical_data": {"files": 27, "description": "Аналитические узлы (active + archived)"},
+      "graph_data": {"files": 13, "description": "Knowledge Graph (active + archived)"},
+      "schema": {"files": 2, "description": "Схемы и конвенции"},
+      "index": {"files": 5, "description": "Индексы и реестры"}
+    },
+    "largest_files": [
+      {"file": "data/graph/psb_knowledge_graph_integration_v14.json", "size_kb": 196.7},
+      {"file": "archive/legacy_graphs/psb_knowledge_graph_integration_v13.json", "size_kb": 193.8},
+      {"file": "data/nodes/psb_mkcp_program_analysis.json", "size_kb": 153.8},
+      {"file": "archive/json_pre_normalization/psb_mkcp_program_analysis.json", "size_kb": 151.2},
+      {"file": "data/nodes/psb_shareholder_logic_analysis.json", "size_kb": 140.7}
+    ],
+    "smallest_files": [
+      {"file": "data/index/validation_report.json", "size_kb": 1.7},
+      {"file": "data/schema/id_convention.json", "size_kb": 2.0},
+      {"file": "data/schema/psb_analytical_json_schema.json", "size_kb": 5.1},
+      {"file": "archive/legacy_graphs/psb_knowledge_graph_integration_v7.json", "size_kb": 7.3},
+      {"file": "data/index/raw_sources_registry.json", "size_kb": 12.3}
+    ]
+  },
+  "recommendations": {
+    "for_development": [
+      "Использовать только файлы из PRODUCTION (data/nodes/, data/graph/)",
+      "Схемы из data/schema/ для валидации",
+      "Индексы из data/index/ для навигации"
+    ],
+    "for_archival": [
+      "archive/ содержит историю для аудита",
+      "Не модифицировать архивные файлы",
+      "При необходимости создавать новые версии в data/"
+    ],
+    "for_cleanup": [
+      "Архив занимает 51.9% от общего объёма",
+      "Возможно сжатие legacy_graphs в один архив",
+      "pre_normalization можно удалить после стабилизации"
+    ]
+  }
+}
