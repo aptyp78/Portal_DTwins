@@ -1,0 +1,323 @@
+{
+  "registry_id": "DEPENDENCY-ANALYSIS",
+  "version": "1.0",
+  "created": "2025-11-30",
+  "description": "Анализ связей JSON-узлов с первоисточниками и взаимозависимостей",
+  "summary": {
+    "total_nodes": 13,
+    "total_edges": 83,
+    "total_raw_sources": 13,
+    "total_referenced_by": 313,
+    "relationship_types": 75
+  },
+  "source_traceability": {
+    "description": "Связь каждого узла с первоисточниками",
+    "nodes": {
+      "NODE-CONTEXT": {
+        "sources": ["SRC-DOC-004"],
+        "source_files": ["4_2025_11_Док_4_ПСБ_СПбПУ_контекст.docx"],
+        "derivation": "synthesis",
+        "note": "Синтезирует контекст из всего корпуса"
+      },
+      "NODE-SHAREHOLDER": {
+        "sources": ["SRC-DOC-001"],
+        "source_files": ["1_2025_11_Док_1_Банк_ПСБ_описание_структуры_Логика_Акционера.docx"],
+        "derivation": "direct_analysis"
+      },
+      "NODE-FINANCE": {
+        "sources": ["SRC-DOC-002"],
+        "source_files": ["2_2025_11_Док_2_Финансовая_Архитектура_ПСБ.docx"],
+        "derivation": "direct_analysis"
+      },
+      "NODE-ECOSYSTEM": {
+        "sources": ["SRC-DOC-003"],
+        "source_files": ["3_2025_11_Док_3_Экосистема_Инфраструктура_ПСБ.docx"],
+        "derivation": "direct_analysis"
+      },
+      "NODE-TECHBASE": {
+        "sources": ["SRC-ATT-005-1"],
+        "source_files": ["5_2025_11_Док_5_Приложение_1_Описание_принципов_новой_технологической_основы.pdf"],
+        "derivation": "direct_analysis"
+      },
+      "NODE-PLATFORM": {
+        "sources": ["SRC-DOC-005"],
+        "source_files": ["5_2025_11_Док_5_Глобальный_уровень.docx"],
+        "derivation": "direct_analysis"
+      },
+      "NODE-REGULATORY": {
+        "sources": ["SRC-ATT-004-1", "SRC-ATT-005-1"],
+        "source_files": [
+          "4_2025_11_Док_4_Приложение_1_Схема_нац_документов.pdf",
+          "5_2025_11_Док_5_Приложение_1_Описание_принципов.pdf"
+        ],
+        "derivation": "cross_analysis"
+      },
+      "NODE-SOVEREIGNTY": {
+        "sources": ["SRC-ATT-004-1", "SRC-ATT-004-2", "SRC-DOC-004"],
+        "source_files": [
+          "4_2025_11_Док_4_Приложение_1_Схема_нац_документов.pdf",
+          "4_2025_11_Док_4_Приложение_2_Видение_роли_ПСБ.pdf",
+          "4_2025_11_Док_4_ПСБ_СПбПУ_контекст.docx"
+        ],
+        "derivation": "cross_analysis"
+      },
+      "NODE-SCI": {
+        "sources": ["SRC-ATT-004-3"],
+        "source_files": ["4_2025_11_Док_4_Приложение_3_Структурная_схема_СЦИ.pdf"],
+        "derivation": "direct_analysis"
+      },
+      "NODE-MARKET": {
+        "sources": ["SRC-ATT-004-4"],
+        "source_files": ["4_2025_11_Док_4_Приложение_4_Сравнительный_анализ_платформ.xlsx"],
+        "derivation": "direct_analysis"
+      },
+      "NODE-CMLBENCH": {
+        "sources": ["SRC-ATT-004-4", "SRC-ATT-004-5"],
+        "source_files": [
+          "4_2025_11_Док_4_Приложение_4_Сравнительный_анализ_платформ.xlsx",
+          "4_2025_11_Док_4_Приложение_5_CMLBench_в_контексте.pdf"
+        ],
+        "derivation": "cross_analysis"
+      },
+      "NODE-TIMELINE": {
+        "sources": ["SRC-CHRONO"],
+        "source_files": ["2025_Хронология_Инициатив_по_ЦД.docx"],
+        "derivation": "direct_analysis"
+      },
+      "NODE-MKCP": {
+        "sources": ["SRC-MKCP"],
+        "source_files": ["МКЦП_редакция_после_МО.pdf"],
+        "derivation": "direct_analysis"
+      }
+    }
+  },
+  "graph_topology": {
+    "description": "Топология Knowledge Graph v14",
+    "edge_statistics": {
+      "total_edges": 83,
+      "unique_relationship_types": 75,
+      "most_common_relationships": [
+        {"type": "enables", "count": 2},
+        {"type": "validates", "count": 2},
+        {"type": "operationalizes", "count": 2},
+        {"type": "leverages_infrastructure", "count": 2},
+        {"type": "provides_competitive_context", "count": 2}
+      ]
+    },
+    "outgoing_edges": {
+      "description": "Узлы, влияющие на другие (источники влияния)",
+      "ranking": [
+        {"node": "NODE-MKCP", "outgoing": 12, "role": "Программа-драйвер"},
+        {"node": "NODE-TIMELINE", "outgoing": 11, "role": "Хронологический контекст"},
+        {"node": "NODE-CMLBENCH", "outgoing": 10, "role": "Платформа-интегратор"},
+        {"node": "NODE-PLATFORM", "outgoing": 8, "role": "Глобальный контекст"},
+        {"node": "NODE-MARKET", "outgoing": 8, "role": "Рыночный контекст"},
+        {"node": "NODE-SOVEREIGNTY", "outgoing": 7, "role": "Стратегический императив"},
+        {"node": "NODE-SCI", "outgoing": 7, "role": "Методологический фундамент"},
+        {"node": "NODE-REGULATORY", "outgoing": 6, "role": "Нормативная рамка"},
+        {"node": "NODE-SHAREHOLDER", "outgoing": 4, "role": "Мотивационная основа"},
+        {"node": "NODE-TECHBASE", "outgoing": 4, "role": "Архитектурный фундамент"},
+        {"node": "NODE-CONTEXT", "outgoing": 3, "role": "Базовый контекст"},
+        {"node": "NODE-FINANCE", "outgoing": 2, "role": "Ресурсная база"},
+        {"node": "NODE-ECOSYSTEM", "outgoing": 1, "role": "Инфраструктура"}
+      ]
+    },
+    "incoming_edges": {
+      "description": "Узлы, принимающие влияние (точки интеграции)",
+      "ranking": [
+        {"node": "NODE-ECOSYSTEM", "incoming": 12, "role": "Интеграционный хаб"},
+        {"node": "NODE-FINANCE", "incoming": 11, "role": "Ресурсный приёмник"},
+        {"node": "NODE-CONTEXT", "incoming": 10, "role": "Контекстуальный якорь"},
+        {"node": "NODE-SHAREHOLDER", "incoming": 10, "role": "Мотивационный якорь"},
+        {"node": "NODE-TECHBASE", "incoming": 10, "role": "Технологический фундамент"},
+        {"node": "NODE-PLATFORM", "incoming": 10, "role": "Платформенная модель"},
+        {"node": "NODE-REGULATORY", "incoming": 6, "role": "Нормативный приёмник"},
+        {"node": "NODE-SCI", "incoming": 4, "role": "Методология"},
+        {"node": "NODE-SOVEREIGNTY", "incoming": 4, "role": "Суверенитет"},
+        {"node": "NODE-MARKET", "incoming": 3, "role": "Рынок"},
+        {"node": "NODE-CMLBENCH", "incoming": 2, "role": "Платформа"},
+        {"node": "NODE-TIMELINE", "incoming": 1, "role": "Хронология"}
+      ]
+    }
+  },
+  "referenced_by_analysis": {
+    "description": "Анализ обратных ссылок (313 backlinks)",
+    "ranking": [
+      {"node": "NODE-CONTEXT", "refs": 84, "percent": 26.8, "role": "Центральный узел — максимум ссылок"},
+      {"node": "NODE-SHAREHOLDER", "refs": 51, "percent": 16.3, "role": "Фундаментальный узел мотивации"},
+      {"node": "NODE-TECHBASE", "refs": 39, "percent": 12.5, "role": "Архитектурный фундамент"},
+      {"node": "NODE-ECOSYSTEM", "refs": 35, "percent": 11.2, "role": "Операционный хаб"},
+      {"node": "NODE-FINANCE", "refs": 29, "percent": 9.3, "role": "Ресурсная база"},
+      {"node": "NODE-SCI", "refs": 16, "percent": 5.1, "role": "Методологическое ядро"},
+      {"node": "NODE-SOVEREIGNTY", "refs": 15, "percent": 4.8, "role": "Стратегический императив"},
+      {"node": "NODE-MARKET", "refs": 12, "percent": 3.8, "role": "Рыночный контекст"},
+      {"node": "NODE-PLATFORM", "refs": 11, "percent": 3.5, "role": "Глобальная модель"},
+      {"node": "NODE-CMLBENCH", "refs": 10, "percent": 3.2, "role": "Техническое ядро"},
+      {"node": "NODE-REGULATORY", "refs": 7, "percent": 2.2, "role": "Нормативная рамка"},
+      {"node": "NODE-TIMELINE", "refs": 4, "percent": 1.3, "role": "Хронология"},
+      {"node": "NODE-MKCP", "refs": 0, "percent": 0.0, "role": "Терминальный узел — только исходящие"}
+    ],
+    "total_backlinks": 313
+  },
+  "declared_dependencies": {
+    "description": "Явно объявленные зависимости в semantic_network.primary_dependencies",
+    "nodes": {
+      "NODE-CMLBENCH": {
+        "depends_on": ["NODE-MARKET", "NODE-SCI", "NODE-CONTEXT", "NODE-TECHBASE", "NODE-ECOSYSTEM", "NODE-SOVEREIGNTY"],
+        "count": 6
+      },
+      "NODE-MARKET": {
+        "depends_on": ["NODE-CONTEXT", "NODE-SCI", "NODE-TECHBASE", "NODE-SOVEREIGNTY", "NODE-PLATFORM", "NODE-ECOSYSTEM"],
+        "count": 6
+      },
+      "NODE-SOVEREIGNTY": {
+        "depends_on": ["NODE-REGULATORY", "NODE-SHAREHOLDER", "NODE-ECOSYSTEM", "NODE-TECHBASE", "NODE-CONTEXT", "NODE-PLATFORM", "NODE-FINANCE"],
+        "count": 7
+      },
+      "NODE-REGULATORY": {
+        "depends_on": ["NODE-SHAREHOLDER", "NODE-FINANCE", "NODE-ECOSYSTEM", "NODE-CONTEXT", "NODE-TECHBASE", "NODE-PLATFORM"],
+        "count": 6
+      },
+      "NODE-SCI": {
+        "depends_on": ["NODE-CONTEXT", "NODE-TECHBASE", "NODE-SHAREHOLDER", "NODE-PLATFORM"],
+        "count": 4
+      },
+      "NODE-PLATFORM": {
+        "depends_on": ["NODE-SHAREHOLDER", "NODE-FINANCE", "NODE-ECOSYSTEM", "NODE-CONTEXT", "NODE-TECHBASE"],
+        "count": 5
+      },
+      "NODE-TECHBASE": {
+        "depends_on": ["NODE-SHAREHOLDER", "NODE-FINANCE", "NODE-ECOSYSTEM", "NODE-CONTEXT"],
+        "count": 4
+      },
+      "NODE-ECOSYSTEM": {
+        "depends_on": ["NODE-SHAREHOLDER", "NODE-FINANCE", "NODE-CONTEXT"],
+        "count": 3
+      },
+      "NODE-FINANCE": {
+        "depends_on": [],
+        "count": 0,
+        "note": "Базовый узел — без объявленных зависимостей"
+      },
+      "NODE-SHAREHOLDER": {
+        "depends_on": [],
+        "count": 0,
+        "note": "Корневой узел — без зависимостей"
+      },
+      "NODE-CONTEXT": {
+        "depends_on": [],
+        "count": 0,
+        "note": "Центральный узел — принимает ссылки, не зависит"
+      },
+      "NODE-TIMELINE": {
+        "depends_on": [],
+        "count": 0,
+        "note": "Хронологический узел"
+      },
+      "NODE-MKCP": {
+        "depends_on": [],
+        "count": 0,
+        "note": "Программный узел — терминальный"
+      }
+    }
+  },
+  "node_roles": {
+    "description": "Роли узлов в графе на основе анализа",
+    "categories": {
+      "root_nodes": {
+        "description": "Корневые узлы — источники без зависимостей",
+        "nodes": ["NODE-SHAREHOLDER", "NODE-CONTEXT"],
+        "characteristics": "Максимум входящих ссылок, минимум исходящих зависимостей"
+      },
+      "foundation_nodes": {
+        "description": "Фундаментальные узлы — базовые данные",
+        "nodes": ["NODE-FINANCE", "NODE-ECOSYSTEM", "NODE-TECHBASE"],
+        "characteristics": "Много входящих ссылок, обеспечивают базу для других"
+      },
+      "integration_nodes": {
+        "description": "Интеграционные узлы — соединяют контексты",
+        "nodes": ["NODE-PLATFORM", "NODE-REGULATORY", "NODE-SCI"],
+        "characteristics": "Балансируют входящие/исходящие связи"
+      },
+      "application_nodes": {
+        "description": "Прикладные узлы — применение концепций",
+        "nodes": ["NODE-MARKET", "NODE-SOVEREIGNTY", "NODE-CMLBENCH"],
+        "characteristics": "Много объявленных зависимостей"
+      },
+      "terminal_nodes": {
+        "description": "Терминальные узлы — конечные результаты",
+        "nodes": ["NODE-TIMELINE", "NODE-MKCP"],
+        "characteristics": "Много исходящих связей, мало входящих ссылок"
+      }
+    }
+  },
+  "data_flow": {
+    "description": "Логический поток данных в графе",
+    "layers": [
+      {
+        "layer": 1,
+        "name": "Источники",
+        "nodes": ["NODE-SHAREHOLDER", "NODE-CONTEXT"],
+        "flow": "→ определяют мотивацию и контекст"
+      },
+      {
+        "layer": 2,
+        "name": "Фундамент",
+        "nodes": ["NODE-FINANCE", "NODE-ECOSYSTEM", "NODE-TECHBASE"],
+        "flow": "→ обеспечивают ресурсы и инфраструктуру"
+      },
+      {
+        "layer": 3,
+        "name": "Интеграция",
+        "nodes": ["NODE-PLATFORM", "NODE-REGULATORY", "NODE-SCI"],
+        "flow": "→ задают рамки и методологию"
+      },
+      {
+        "layer": 4,
+        "name": "Применение",
+        "nodes": ["NODE-MARKET", "NODE-SOVEREIGNTY", "NODE-CMLBENCH"],
+        "flow": "→ реализуют стратегию"
+      },
+      {
+        "layer": 5,
+        "name": "Результаты",
+        "nodes": ["NODE-TIMELINE", "NODE-MKCP"],
+        "flow": "→ фиксируют программу и хронологию"
+      }
+    ],
+    "critical_path": "SHAREHOLDER → FINANCE → ECOSYSTEM → PLATFORM → CMLBENCH → MKCP"
+  },
+  "visualization": {
+    "ascii_graph": [
+      "                    ┌─────────────────────────────────────────────┐",
+      "                    │              LAYER 1: ИСТОЧНИКИ             │",
+      "                    │     NODE-SHAREHOLDER ◄──► NODE-CONTEXT      │",
+      "                    │         (51 refs)          (84 refs)        │",
+      "                    └────────────────┬────────────────────────────┘",
+      "                                     │",
+      "                    ┌────────────────▼────────────────────────────┐",
+      "                    │            LAYER 2: ФУНДАМЕНТ               │",
+      "                    │  NODE-FINANCE ─ NODE-ECOSYSTEM ─ NODE-TECH  │",
+      "                    │    (29 refs)      (35 refs)      (39 refs)  │",
+      "                    └────────────────┬────────────────────────────┘",
+      "                                     │",
+      "                    ┌────────────────▼────────────────────────────┐",
+      "                    │           LAYER 3: ИНТЕГРАЦИЯ               │",
+      "                    │ NODE-PLATFORM ─ NODE-REGULATORY ─ NODE-SCI  │",
+      "                    │   (11 refs)       (7 refs)       (16 refs)  │",
+      "                    └────────────────┬────────────────────────────┘",
+      "                                     │",
+      "                    ┌────────────────▼────────────────────────────┐",
+      "                    │           LAYER 4: ПРИМЕНЕНИЕ               │",
+      "                    │ NODE-MARKET ─ NODE-SOVEREIGNTY ─ NODE-CML   │",
+      "                    │  (12 refs)      (15 refs)       (10 refs)   │",
+      "                    └────────────────┬────────────────────────────┘",
+      "                                     │",
+      "                    ┌────────────────▼────────────────────────────┐",
+      "                    │           LAYER 5: РЕЗУЛЬТАТЫ               │",
+      "                    │      NODE-TIMELINE ──────► NODE-MKCP        │",
+      "                    │        (4 refs)      (0 refs, 12 outgoing)  │",
+      "                    └─────────────────────────────────────────────┘"
+    ]
+  }
+}
