@@ -1,0 +1,249 @@
+{
+  "gold_id": "GOLD-AGENT-SCHEMA-001",
+  "title": "Knowledge Gate Agent Schema",
+  "version": "1.0.0",
+  "created": "2025-11-30T10:00:00Z",
+  "description": "Схема агента управления знаниями — первый на входе в систему",
+  "agent": {
+    "id": "AGENT-KNOWLEDGE-GATE",
+    "name": "Knowledge Gate Agent",
+    "type": "gateway",
+    "priority": 1,
+    "entry_point": true,
+    "description": "Центральный агент управления базой знаний. Все запросы к данным проекта проходят через него."
+  },
+  "capabilities": {
+    "material_management": {
+      "description": "Управление материалами проекта",
+      "operations": [
+        "index_material",
+        "retrieve_material",
+        "update_material_metadata",
+        "archive_material",
+        "restore_material"
+      ]
+    },
+    "version_control": {
+      "description": "Управление версионностью",
+      "operations": [
+        "create_version",
+        "get_version_history",
+        "compare_versions",
+        "rollback_version",
+        "tag_version"
+      ]
+    },
+    "metadata_management": {
+      "description": "Управление метаданными",
+      "operations": [
+        "get_metadata",
+        "update_metadata",
+        "add_tag",
+        "remove_tag",
+        "search_by_metadata"
+      ]
+    },
+    "integrity_validation": {
+      "description": "Валидация целостности",
+      "operations": [
+        "validate_all",
+        "validate_category",
+        "check_traceability",
+        "report_anomalies"
+      ]
+    },
+    "routing": {
+      "description": "Маршрутизация к downstream агентам",
+      "operations": [
+        "route_to_analytical_agent",
+        "route_to_graph_agent",
+        "route_to_source_agent",
+        "route_to_visualization_agent"
+      ]
+    }
+  },
+  "data_contracts": {
+    "material_object": {
+      "type": "object",
+      "required": ["material_id", "filename", "title", "category_id"],
+      "properties": {
+        "material_id": {"type": "string", "pattern": "^(SRC|NODE|GRAPH|SCHEMA|IDX|REG|DOC)-[A-Z0-9-]+$"},
+        "filename": {"type": "string"},
+        "title": {"type": "string"},
+        "category_id": {"type": "string", "enum": ["CAT-RAW", "CAT-NODES", "CAT-GRAPH", "CAT-SCHEMA", "CAT-INDEX", "CAT-DOCS", "CAT-ARCHIVE"]},
+        "status": {"type": "string", "enum": ["production", "immutable", "archived", "draft"]},
+        "version": {"type": "string"},
+        "size_bytes": {"type": "integer"},
+        "metadata": {"type": "object"},
+        "sources": {"type": "array", "items": {"type": "string"}},
+        "derived_nodes": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "query_request": {
+      "type": "object",
+      "required": ["operation"],
+      "properties": {
+        "operation": {"type": "string"},
+        "params": {"type": "object"},
+        "context": {"type": "object"}
+      }
+    },
+    "query_response": {
+      "type": "object",
+      "required": ["status", "operation"],
+      "properties": {
+        "status": {"type": "string", "enum": ["success", "error", "partial"]},
+        "operation": {"type": "string"},
+        "data": {"type": ["object", "array", "null"]},
+        "error": {"type": "string"},
+        "metadata": {"type": "object"}
+      }
+    }
+  },
+  "routing_rules": {
+    "description": "Правила маршрутизации запросов к downstream агентам",
+    "rules": [
+      {
+        "pattern": "analyze_*",
+        "target_agent": "analytical_agent",
+        "description": "Аналитические запросы"
+      },
+      {
+        "pattern": "graph_*|edge_*|node_relation_*",
+        "target_agent": "graph_agent",
+        "description": "Запросы к графу связей"
+      },
+      {
+        "pattern": "source_*|raw_*|document_*",
+        "target_agent": "source_agent",
+        "description": "Запросы к первоисточникам"
+      },
+      {
+        "pattern": "visualize_*|render_*|diagram_*",
+        "target_agent": "visualization_agent",
+        "description": "Запросы визуализации"
+      },
+      {
+        "pattern": "get_*|list_*|search_*|validate_*",
+        "target_agent": "self",
+        "description": "Обрабатывается Knowledge Gate"
+      }
+    ]
+  },
+  "downstream_agents": {
+    "analytical_agent": {
+      "id": "AGENT-ANALYTICAL",
+      "purpose": "Глубокий анализ содержимого узлов",
+      "input": ["node_id", "query"],
+      "output": "analytical_report"
+    },
+    "graph_agent": {
+      "id": "AGENT-GRAPH",
+      "purpose": "Работа с графом связей",
+      "input": ["node_id", "edge_query"],
+      "output": "graph_data"
+    },
+    "source_agent": {
+      "id": "AGENT-SOURCE",
+      "purpose": "Работа с первоисточниками",
+      "input": ["source_id", "extract_query"],
+      "output": "source_data"
+    },
+    "visualization_agent": {
+      "id": "AGENT-VIS",
+      "purpose": "Визуализация данных",
+      "input": ["data", "viz_type"],
+      "output": "visualization"
+    }
+  },
+  "state_management": {
+    "session_context": {
+      "description": "Контекст сессии агента",
+      "properties": {
+        "session_id": "string",
+        "start_time": "datetime",
+        "materials_accessed": "array",
+        "operations_performed": "array",
+        "current_focus": "material_id"
+      }
+    },
+    "cache": {
+      "description": "Кэширование для производительности",
+      "ttl_seconds": 300,
+      "cached_items": [
+        "material_list",
+        "category_counts",
+        "recent_queries"
+      ]
+    }
+  },
+  "event_hooks": {
+    "on_material_accessed": {
+      "description": "При доступе к материалу",
+      "actions": ["log_access", "update_access_count", "check_freshness"]
+    },
+    "on_material_modified": {
+      "description": "При изменении материала",
+      "actions": ["create_backup", "increment_version", "notify_dependent_agents"]
+    },
+    "on_integrity_violation": {
+      "description": "При нарушении целостности",
+      "actions": ["log_error", "attempt_repair", "notify_admin"]
+    },
+    "on_new_material": {
+      "description": "При добавлении нового материала",
+      "actions": ["validate_schema", "index_material", "update_statistics"]
+    }
+  },
+  "api_examples": {
+    "get_material": {
+      "request": {
+        "operation": "get_material",
+        "params": {"material_id": "NODE-CONTEXT"}
+      },
+      "response": {
+        "status": "success",
+        "operation": "get_material",
+        "data": {
+          "material_id": "NODE-CONTEXT",
+          "filename": "psb_spbpu_context_analysis.json",
+          "title": "Общий контекст Замысла ПСБ × СПбПУ",
+          "layer": "L1-Strategic",
+          "sources": ["SRC-DOC-004"],
+          "referenced_by_count": 84
+        }
+      }
+    },
+    "get_source_chain": {
+      "request": {
+        "operation": "get_source_chain",
+        "params": {"source_id": "SRC-DOC-001"}
+      },
+      "response": {
+        "status": "success",
+        "operation": "get_source_chain",
+        "data": {
+          "source": "SRC-DOC-001",
+          "filename": "1_2025_11_Док_1_Банк_ПСБ.docx",
+          "derived_nodes": ["NODE-SHAREHOLDER"],
+          "edges_from_nodes": 4,
+          "total_backlinks": 51
+        }
+      }
+    },
+    "list_materials": {
+      "request": {
+        "operation": "list_materials",
+        "params": {"category_id": "CAT-NODES", "status": "production"}
+      },
+      "response": {
+        "status": "success",
+        "operation": "list_materials",
+        "data": {
+          "count": 13,
+          "materials": ["NODE-CONTEXT", "NODE-SHAREHOLDER", "..."]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "gold_id": "GOLD-INDEX-001",
+  "title": "Gold Index — быстрый доступ к материалам",
+  "version": "1.0.0",
+  "created": "2025-11-30T10:00:00Z",
+  "updated": "2025-11-30T10:00:00Z",
+  "description": "Оптимизированный индекс для быстрого поиска материалов агентом",
+  "quick_stats": {
+    "total_materials": 62,
+    "production_materials": 38,
+    "raw_sources": 13,
+    "analytical_nodes": 13,
+    "knowledge_version": "v14",
+    "total_edges": 83,
+    "total_backlinks": 313
+  },
+  "id_to_path": {
+    "SRC-DOC-001": "SOURCE_DOCUMENTS/1_2025_11_Док_1_Банк_ПСБ.docx",
+    "SRC-DOC-002": "SOURCE_DOCUMENTS/2_2025_11_Док_2_Финансовая_Архитектура.docx",
+    "SRC-DOC-003": "SOURCE_DOCUMENTS/3_2025_11_Док_3_Экосистема.docx",
+    "SRC-DOC-004": "SOURCE_DOCUMENTS/4_2025_11_Док_4_Контекст.docx",
+    "SRC-DOC-005": "SOURCE_DOCUMENTS/5_2025_11_Док_5_Глобальный.docx",
+    "SRC-ATT-004-1": "SOURCE_DOCUMENTS/4_2025_11_Док_4_Приложение_1.pdf",
+    "SRC-ATT-004-2": "SOURCE_DOCUMENTS/4_2025_11_Док_4_Приложение_2.pdf",
+    "SRC-ATT-004-3": "SOURCE_DOCUMENTS/4_2025_11_Док_4_Приложение_3.pdf",
+    "SRC-ATT-004-4": "SOURCE_DOCUMENTS/4_2025_11_Док_4_Приложение_4.xlsx",
+    "SRC-ATT-004-5": "SOURCE_DOCUMENTS/4_2025_11_Док_4_Приложение_5.pdf",
+    "SRC-ATT-005-1": "SOURCE_DOCUMENTS/5_2025_11_Док_5_Приложение_1.pdf",
+    "SRC-CHRONO": "SOURCE_DOCUMENTS/2025_Хронология.docx",
+    "SRC-MKCP": "SOURCE_DOCUMENTS/МКЦП_редакция_после_МО.pdf",
+    "NODE-CONTEXT": "data/nodes/psb_spbpu_context_analysis.json",
+    "NODE-SHAREHOLDER": "data/nodes/psb_shareholder_logic_analysis.json",
+    "NODE-FINANCE": "data/nodes/psb_financial_architecture_analysis.json",
+    "NODE-ECOSYSTEM": "data/nodes/psb_ecosystem_infrastructure_analysis.json",
+    "NODE-TECHBASE": "data/nodes/psb_technological_foundation_6tu_analysis.json",
+    "NODE-PLATFORM": "data/nodes/psb_global_trend_platform_analysis.json",
+    "NODE-REGULATORY": "data/nodes/psb_regulatory_framework_analysis.json",
+    "NODE-SOVEREIGNTY": "data/nodes/psb_strategic_sovereignty_role_analysis.json",
+    "NODE-SCI": "data/nodes/psb_sci_architecture_analysis.json",
+    "NODE-MARKET": "data/nodes/psb_dt_platforms_market_analysis.json",
+    "NODE-CMLBENCH": "data/nodes/psb_cmlbench_technology_context_analysis.json",
+    "NODE-TIMELINE": "data/nodes/psb_state_agenda_dt_timeline_analysis.json",
+    "NODE-MKCP": "data/nodes/psb_mkcp_program_analysis.json",
+    "GRAPH-V14": "data/graph/psb_knowledge_graph_integration_v14.json",
+    "SCHEMA-JSON": "data/schema/psb_analytical_json_schema.json",
+    "SCHEMA-ID": "data/schema/id_convention.json",
+    "GOLD-MASTER": "data/gold/master_knowledge_base.json",
+    "GOLD-AGENT": "data/gold/agent_schema.json",
+    "GOLD-INDEX": "data/gold/gold_index.json"
+  },
+  "category_members": {
+    "CAT-RAW": ["SRC-DOC-001", "SRC-DOC-002", "SRC-DOC-003", "SRC-DOC-004", "SRC-DOC-005", "SRC-ATT-004-1", "SRC-ATT-004-2", "SRC-ATT-004-3", "SRC-ATT-004-4", "SRC-ATT-004-5", "SRC-ATT-005-1", "SRC-CHRONO", "SRC-MKCP"],
+    "CAT-NODES": ["NODE-CONTEXT", "NODE-SHAREHOLDER", "NODE-FINANCE", "NODE-ECOSYSTEM", "NODE-TECHBASE", "NODE-PLATFORM", "NODE-REGULATORY", "NODE-SOVEREIGNTY", "NODE-SCI", "NODE-MARKET", "NODE-CMLBENCH", "NODE-TIMELINE", "NODE-MKCP"],
+    "CAT-GRAPH": ["GRAPH-V14"],
+    "CAT-SCHEMA": ["SCHEMA-JSON", "SCHEMA-ID"],
+    "CAT-GOLD": ["GOLD-MASTER", "GOLD-AGENT", "GOLD-INDEX"]
+  },
+  "layer_members": {
+    "L1-Strategic": ["NODE-CONTEXT", "NODE-SHAREHOLDER", "NODE-PLATFORM", "NODE-SOVEREIGNTY", "NODE-MKCP"],
+    "L2-Operational": ["NODE-FINANCE", "NODE-ECOSYSTEM", "NODE-REGULATORY", "NODE-MARKET", "NODE-TIMELINE"],
+    "L3-Technical": ["NODE-TECHBASE", "NODE-SCI", "NODE-CMLBENCH"]
+  },
+  "source_to_node_quick": {
+    "SRC-DOC-001": ["NODE-SHAREHOLDER"],
+    "SRC-DOC-002": ["NODE-FINANCE"],
+    "SRC-DOC-003": ["NODE-ECOSYSTEM"],
+    "SRC-DOC-004": ["NODE-CONTEXT"],
+    "SRC-DOC-005": ["NODE-PLATFORM"],
+    "SRC-ATT-004-1": ["NODE-REGULATORY", "NODE-SOVEREIGNTY"],
+    "SRC-ATT-004-2": ["NODE-SOVEREIGNTY"],
+    "SRC-ATT-004-3": ["NODE-SCI"],
+    "SRC-ATT-004-4": ["NODE-MARKET", "NODE-CMLBENCH"],
+    "SRC-ATT-004-5": ["NODE-CMLBENCH"],
+    "SRC-ATT-005-1": ["NODE-TECHBASE", "NODE-REGULATORY"],
+    "SRC-CHRONO": ["NODE-TIMELINE"],
+    "SRC-MKCP": ["NODE-MKCP"]
+  },
+  "node_to_source_quick": {
+    "NODE-CONTEXT": ["SRC-DOC-004"],
+    "NODE-SHAREHOLDER": ["SRC-DOC-001"],
+    "NODE-FINANCE": ["SRC-DOC-002"],
+    "NODE-ECOSYSTEM": ["SRC-DOC-003"],
+    "NODE-TECHBASE": ["SRC-ATT-005-1"],
+    "NODE-PLATFORM": ["SRC-DOC-005"],
+    "NODE-REGULATORY": ["SRC-ATT-004-1", "SRC-ATT-005-1"],
+    "NODE-SOVEREIGNTY": ["SRC-ATT-004-1", "SRC-ATT-004-2", "SRC-DOC-004"],
+    "NODE-SCI": ["SRC-ATT-004-3"],
+    "NODE-MARKET": ["SRC-ATT-004-4"],
+    "NODE-CMLBENCH": ["SRC-ATT-004-4", "SRC-ATT-004-5"],
+    "NODE-TIMELINE": ["SRC-CHRONO"],
+    "NODE-MKCP": ["SRC-MKCP"]
+  },
+  "backlinks_ranking": [
+    {"node": "NODE-CONTEXT", "backlinks": 84},
+    {"node": "NODE-SHAREHOLDER", "backlinks": 51},
+    {"node": "NODE-TECHBASE", "backlinks": 39},
+    {"node": "NODE-ECOSYSTEM", "backlinks": 35},
+    {"node": "NODE-FINANCE", "backlinks": 29},
+    {"node": "NODE-SCI", "backlinks": 16},
+    {"node": "NODE-SOVEREIGNTY", "backlinks": 15},
+    {"node": "NODE-MARKET", "backlinks": 12},
+    {"node": "NODE-PLATFORM", "backlinks": 11},
+    {"node": "NODE-CMLBENCH", "backlinks": 10},
+    {"node": "NODE-REGULATORY", "backlinks": 7},
+    {"node": "NODE-TIMELINE", "backlinks": 4},
+    {"node": "NODE-MKCP", "backlinks": 0}
+  ],
+  "outgoing_edges_ranking": [
+    {"node": "NODE-MKCP", "outgoing": 12},
+    {"node": "NODE-TIMELINE", "outgoing": 11},
+    {"node": "NODE-CMLBENCH", "outgoing": 10},
+    {"node": "NODE-PLATFORM", "outgoing": 8},
+    {"node": "NODE-MARKET", "outgoing": 8},
+    {"node": "NODE-SOVEREIGNTY", "outgoing": 7},
+    {"node": "NODE-SCI", "outgoing": 7},
+    {"node": "NODE-REGULATORY", "outgoing": 6},
+    {"node": "NODE-SHAREHOLDER", "outgoing": 4},
+    {"node": "NODE-TECHBASE", "outgoing": 4},
+    {"node": "NODE-CONTEXT", "outgoing": 3},
+    {"node": "NODE-FINANCE", "outgoing": 2},
+    {"node": "NODE-ECOSYSTEM", "outgoing": 1}
+  ],
+  "critical_path": {
+    "description": "Критический путь данных в системе",
+    "path": ["NODE-SHAREHOLDER", "NODE-FINANCE", "NODE-ECOSYSTEM", "NODE-PLATFORM", "NODE-CMLBENCH", "NODE-MKCP"],
+    "interpretation": "Логика акционера → Финансы → Экосистема → Платформа → CML-Bench → Программа МКЦП"
+  },
+  "search_keywords": {
+    "ПСБ": ["NODE-CONTEXT", "NODE-SHAREHOLDER", "NODE-FINANCE", "NODE-ECOSYSTEM", "NODE-SOVEREIGNTY"],
+    "СПбПУ": ["NODE-CONTEXT", "NODE-SCI", "NODE-CMLBENCH", "NODE-TECHBASE"],
+    "CML-Bench": ["NODE-CMLBENCH", "NODE-SCI", "NODE-MARKET"],
+    "МКЦП": ["NODE-MKCP", "NODE-TIMELINE", "NODE-REGULATORY"],
+    "суверенитет": ["NODE-SOVEREIGNTY", "NODE-SHAREHOLDER", "NODE-PLATFORM"],
+    "6ТУ": ["NODE-TECHBASE", "NODE-PLATFORM"],
+    "СЦИ": ["NODE-SCI", "NODE-TECHBASE", "NODE-CMLBENCH"],
+    "экосистема": ["NODE-ECOSYSTEM", "NODE-PLATFORM"],
+    "финансы": ["NODE-FINANCE", "NODE-SHAREHOLDER"],
+    "регуляторика": ["NODE-REGULATORY", "NODE-TIMELINE"]
+  },
+  "gold_files": {
+    "master": {
+      "id": "GOLD-MASTER",
+      "path": "data/gold/master_knowledge_base.json",
+      "purpose": "Полная база знаний со всеми материалами"
+    },
+    "agent_schema": {
+      "id": "GOLD-AGENT",
+      "path": "data/gold/agent_schema.json",
+      "purpose": "Схема и API агента управления знаниями"
+    },
+    "index": {
+      "id": "GOLD-INDEX",
+      "path": "data/gold/gold_index.json",
+      "purpose": "Быстрый индекс для поиска (этот файл)"
+    }
+  }
+}

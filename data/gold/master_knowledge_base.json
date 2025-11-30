@@ -1,0 +1,653 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "gold_id": "GOLD-MASTER-001",
+  "title": "Master Knowledge Base — Portal_DTwins",
+  "version": "1.0.0",
+  "created": "2025-11-30T10:00:00Z",
+  "updated": "2025-11-30T10:00:00Z",
+  "description": "Мастер-база данных всех материалов проекта. Единая точка входа для агента управления знаниями.",
+  "agent_role": {
+    "name": "Knowledge Gate Agent",
+    "purpose": "Управление знанием обо всех материалах проекта",
+    "responsibilities": [
+      "Индексация и каталогизация всех материалов",
+      "Управление версионностью материалов",
+      "Управление метаданными",
+      "Валидация целостности базы знаний",
+      "Маршрутизация запросов к специализированным агентам"
+    ],
+    "entry_point": true,
+    "downstream_agents": [
+      "analytical_agent",
+      "graph_agent",
+      "source_agent",
+      "visualization_agent"
+    ]
+  },
+  "project_meta": {
+    "project_id": "PORTAL-DTWINS",
+    "project_name": "Portal_DTwins",
+    "domain": "Цифровые двойники / ПСБ × СПбПУ",
+    "repository": "https://github.com/aptyp78/Portal_DTwins",
+    "total_materials": 62,
+    "total_size_bytes": 12156847,
+    "total_size_mb": 11.6
+  },
+  "version_control": {
+    "current_knowledge_version": "v14",
+    "version_history": [
+      {"version": "v2", "date": "2025-11-24", "nodes": 5, "edges": 12},
+      {"version": "v9", "date": "2025-11-27", "nodes": 11, "edges": 54},
+      {"version": "v12", "date": "2025-11-29", "nodes": 13, "edges": 70},
+      {"version": "v14", "date": "2025-11-29", "nodes": 13, "edges": 83}
+    ],
+    "normalization_phases": [
+      {"phase": 1, "description": "node_id, layer, referenced_by", "completed": true},
+      {"phase": 2, "description": "JSON Schema, edge ontology", "completed": true},
+      {"phase": 3, "description": "narrative_summary, ID convention", "completed": true}
+    ]
+  },
+  "material_categories": {
+    "RAW_SOURCES": {
+      "category_id": "CAT-RAW",
+      "description": "Первоисточники — оригинальные документы",
+      "path": "SOURCE_DOCUMENTS/",
+      "status": "immutable",
+      "count": 13,
+      "total_size_bytes": 9314435,
+      "formats": ["docx", "pdf", "xlsx"],
+      "materials": [
+        {
+          "material_id": "SRC-DOC-001",
+          "filename": "1_2025_11_Док_1_Банк_ПСБ_описание_структуры_Логика_Акционера.docx",
+          "title": "Структура ПСБ и логика акционера",
+          "format": "docx",
+          "size_bytes": 107700,
+          "checksum_type": "size",
+          "derived_nodes": ["NODE-SHAREHOLDER"],
+          "metadata": {
+            "document_code": "Док_1",
+            "date": "2025-11",
+            "category": "strategic",
+            "topics": ["Структура ПСБ", "Миссионный акционер", "Стратегия"]
+          }
+        },
+        {
+          "material_id": "SRC-DOC-002",
+          "filename": "2_2025_11_Док_2_Финансовая_Архитектура_ПСБ.docx",
+          "title": "Финансовая архитектура ПСБ",
+          "format": "docx",
+          "size_bytes": 47968,
+          "derived_nodes": ["NODE-FINANCE"],
+          "metadata": {
+            "document_code": "Док_2",
+            "date": "2025-11",
+            "category": "operational",
+            "topics": ["Финансы", "Резервы", "Дивиденды"]
+          }
+        },
+        {
+          "material_id": "SRC-DOC-003",
+          "filename": "3_2025_11_Док_3_Экосистема_Инфраструктура_ПСБ.docx",
+          "title": "Экосистема и инфраструктура ПСБ",
+          "format": "docx",
+          "size_bytes": 85701,
+          "derived_nodes": ["NODE-ECOSYSTEM"],
+          "metadata": {
+            "document_code": "Док_3",
+            "date": "2025-11",
+            "category": "operational",
+            "topics": ["Экосистема", "Инфраструктура", "Кластеры"]
+          }
+        },
+        {
+          "material_id": "SRC-DOC-004",
+          "filename": "4_2025_11_Док_4_ПСБ_СПбПУ_контекст.docx",
+          "title": "Контекст партнёрства ПСБ × СПбПУ",
+          "format": "docx",
+          "size_bytes": 53970,
+          "derived_nodes": ["NODE-CONTEXT"],
+          "attachments": ["SRC-ATT-004-1", "SRC-ATT-004-2", "SRC-ATT-004-3", "SRC-ATT-004-4", "SRC-ATT-004-5"],
+          "metadata": {
+            "document_code": "Док_4",
+            "date": "2025-11",
+            "category": "strategic",
+            "topics": ["Партнёрство", "СПбПУ", "CML-Bench"]
+          }
+        },
+        {
+          "material_id": "SRC-ATT-004-1",
+          "filename": "4_2025_11_Док_4_Приложение_1_Схема_нац_документов.pdf",
+          "title": "Схема национальных документов",
+          "format": "pdf",
+          "size_bytes": 116943,
+          "parent": "SRC-DOC-004",
+          "derived_nodes": ["NODE-REGULATORY", "NODE-SOVEREIGNTY"],
+          "metadata": {"content_type": "diagram"}
+        },
+        {
+          "material_id": "SRC-ATT-004-2",
+          "filename": "4_2025_11_Док_4_Приложение_2_Видение_роли_ПСБ.pdf",
+          "title": "Видение роли ПСБ в тех.суверенитете",
+          "format": "pdf",
+          "size_bytes": 181285,
+          "parent": "SRC-DOC-004",
+          "derived_nodes": ["NODE-SOVEREIGNTY"],
+          "metadata": {"content_type": "analysis"}
+        },
+        {
+          "material_id": "SRC-ATT-004-3",
+          "filename": "4_2025_11_Док_4_Приложение_3_Структурная_схема_СЦИ.pdf",
+          "title": "Структурная схема СЦИ",
+          "format": "pdf",
+          "size_bytes": 113392,
+          "parent": "SRC-DOC-004",
+          "derived_nodes": ["NODE-SCI"],
+          "metadata": {"content_type": "diagram"}
+        },
+        {
+          "material_id": "SRC-ATT-004-4",
+          "filename": "4_2025_11_Док_4_Приложение_4_Сравнительный_анализ_платформ.xlsx",
+          "title": "Сравнительный анализ платформ ЦД",
+          "format": "xlsx",
+          "size_bytes": 27134,
+          "parent": "SRC-DOC-004",
+          "derived_nodes": ["NODE-MARKET", "NODE-CMLBENCH"],
+          "metadata": {"content_type": "spreadsheet"}
+        },
+        {
+          "material_id": "SRC-ATT-004-5",
+          "filename": "4_2025_11_Док_4_Приложение_5_CMLBench.pdf",
+          "title": "CML-Bench в контексте тех.платформ",
+          "format": "pdf",
+          "size_bytes": 559727,
+          "parent": "SRC-DOC-004",
+          "derived_nodes": ["NODE-CMLBENCH"],
+          "metadata": {"content_type": "analysis"}
+        },
+        {
+          "material_id": "SRC-DOC-005",
+          "filename": "5_2025_11_Док_5_Глобальный_уровень.docx",
+          "title": "Глобальный уровень",
+          "format": "docx",
+          "size_bytes": 21954,
+          "derived_nodes": ["NODE-PLATFORM"],
+          "attachments": ["SRC-ATT-005-1"],
+          "metadata": {
+            "document_code": "Док_5",
+            "date": "2025-11",
+            "category": "strategic",
+            "topics": ["Глобальные тренды", "Платформы"]
+          }
+        },
+        {
+          "material_id": "SRC-ATT-005-1",
+          "filename": "5_2025_11_Док_5_Приложение_1_Описание_принципов.pdf",
+          "title": "Принципы новой технологической основы",
+          "format": "pdf",
+          "size_bytes": 308456,
+          "parent": "SRC-DOC-005",
+          "derived_nodes": ["NODE-TECHBASE", "NODE-REGULATORY"],
+          "metadata": {"content_type": "analysis"}
+        },
+        {
+          "material_id": "SRC-CHRONO",
+          "filename": "2025_Хронология_Инициатив_по_ЦД.docx",
+          "title": "Хронология инициатив по ЦД",
+          "format": "docx",
+          "size_bytes": 18477,
+          "derived_nodes": ["NODE-TIMELINE"],
+          "metadata": {
+            "document_code": "Хронология",
+            "date": "2025-11",
+            "category": "operational"
+          }
+        },
+        {
+          "material_id": "SRC-MKCP",
+          "filename": "МКЦП_редакция_после_МО.pdf",
+          "title": "Программа МКЦП ЦД 2026-2035",
+          "format": "pdf",
+          "size_bytes": 7671728,
+          "derived_nodes": ["NODE-MKCP"],
+          "metadata": {
+            "document_code": "МКЦП",
+            "date": "2025-11",
+            "category": "program",
+            "budget": "15 трлн руб.",
+            "period": "2026-2035",
+            "pages": 51
+          }
+        }
+      ]
+    },
+    "ANALYTICAL_NODES": {
+      "category_id": "CAT-NODES",
+      "description": "Аналитические узлы — нормализованные JSON",
+      "path": "data/nodes/",
+      "status": "production",
+      "version": "v14",
+      "count": 13,
+      "total_size_bytes": 1094237,
+      "materials": [
+        {
+          "material_id": "NODE-CONTEXT",
+          "filename": "psb_spbpu_context_analysis.json",
+          "title": "Общий контекст Замысла ПСБ × СПбПУ",
+          "layer": "L1-Strategic",
+          "size_bytes": 69944,
+          "sources": ["SRC-DOC-004"],
+          "referenced_by_count": 84,
+          "role": "Центральный узел — максимум ссылок"
+        },
+        {
+          "material_id": "NODE-SHAREHOLDER",
+          "filename": "psb_shareholder_logic_analysis.json",
+          "title": "Логика миссионного акционера",
+          "layer": "L1-Strategic",
+          "size_bytes": 144063,
+          "sources": ["SRC-DOC-001"],
+          "referenced_by_count": 51,
+          "role": "Фундаментальный узел мотивации"
+        },
+        {
+          "material_id": "NODE-FINANCE",
+          "filename": "psb_financial_architecture_analysis.json",
+          "title": "Финансовая архитектура ПСБ",
+          "layer": "L2-Operational",
+          "size_bytes": 52143,
+          "sources": ["SRC-DOC-002"],
+          "referenced_by_count": 29,
+          "role": "Ресурсная база"
+        },
+        {
+          "material_id": "NODE-ECOSYSTEM",
+          "filename": "psb_ecosystem_infrastructure_analysis.json",
+          "title": "Экосистема и инфраструктура ПСБ",
+          "layer": "L2-Operational",
+          "size_bytes": 90560,
+          "sources": ["SRC-DOC-003"],
+          "referenced_by_count": 35,
+          "role": "Операционный хаб"
+        },
+        {
+          "material_id": "NODE-TECHBASE",
+          "filename": "psb_technological_foundation_6tu_analysis.json",
+          "title": "Новая технологическая основа 6ТУ",
+          "layer": "L3-Technical",
+          "size_bytes": 81159,
+          "sources": ["SRC-ATT-005-1"],
+          "referenced_by_count": 39,
+          "role": "Архитектурный фундамент"
+        },
+        {
+          "material_id": "NODE-PLATFORM",
+          "filename": "psb_global_trend_platform_analysis.json",
+          "title": "Глобальный тренд платформ",
+          "layer": "L1-Strategic",
+          "size_bytes": 45685,
+          "sources": ["SRC-DOC-005"],
+          "referenced_by_count": 11,
+          "role": "Глобальная модель"
+        },
+        {
+          "material_id": "NODE-REGULATORY",
+          "filename": "psb_regulatory_framework_analysis.json",
+          "title": "Нормативный контекст",
+          "layer": "L2-Operational",
+          "size_bytes": 123906,
+          "sources": ["SRC-ATT-004-1", "SRC-ATT-005-1"],
+          "referenced_by_count": 7,
+          "role": "Нормативная рамка"
+        },
+        {
+          "material_id": "NODE-SOVEREIGNTY",
+          "filename": "psb_strategic_sovereignty_role_analysis.json",
+          "title": "Роль ПСБ в технологическом суверенитете",
+          "layer": "L1-Strategic",
+          "size_bytes": 59203,
+          "sources": ["SRC-ATT-004-1", "SRC-ATT-004-2", "SRC-DOC-004"],
+          "referenced_by_count": 15,
+          "role": "Стратегический императив"
+        },
+        {
+          "material_id": "NODE-SCI",
+          "filename": "psb_sci_architecture_analysis.json",
+          "title": "Архитектура СЦИ",
+          "layer": "L3-Technical",
+          "size_bytes": 43338,
+          "sources": ["SRC-ATT-004-3"],
+          "referenced_by_count": 16,
+          "role": "Методологическое ядро"
+        },
+        {
+          "material_id": "NODE-MARKET",
+          "filename": "psb_dt_platforms_market_analysis.json",
+          "title": "Рынок платформ ЦД",
+          "layer": "L2-Operational",
+          "size_bytes": 55860,
+          "sources": ["SRC-ATT-004-4"],
+          "referenced_by_count": 12,
+          "role": "Рыночный контекст"
+        },
+        {
+          "material_id": "NODE-CMLBENCH",
+          "filename": "psb_cmlbench_technology_context_analysis.json",
+          "title": "CML-Bench в контексте платформ",
+          "layer": "L3-Technical",
+          "size_bytes": 52350,
+          "sources": ["SRC-ATT-004-4", "SRC-ATT-004-5"],
+          "referenced_by_count": 10,
+          "role": "Техническое ядро"
+        },
+        {
+          "material_id": "NODE-TIMELINE",
+          "filename": "psb_state_agenda_dt_timeline_analysis.json",
+          "title": "Хронология госагенды по ЦД",
+          "layer": "L2-Operational",
+          "size_bytes": 118530,
+          "sources": ["SRC-CHRONO"],
+          "referenced_by_count": 4,
+          "role": "Хронологический контекст"
+        },
+        {
+          "material_id": "NODE-MKCP",
+          "filename": "psb_mkcp_program_analysis.json",
+          "title": "Программа МКЦП ЦД 2026-2035",
+          "layer": "L1-Strategic",
+          "size_bytes": 157496,
+          "sources": ["SRC-MKCP"],
+          "referenced_by_count": 0,
+          "outgoing_edges": 12,
+          "role": "Программа-драйвер"
+        }
+      ]
+    },
+    "KNOWLEDGE_GRAPH": {
+      "category_id": "CAT-GRAPH",
+      "description": "Knowledge Graph — граф связей",
+      "path": "data/graph/",
+      "status": "production",
+      "count": 1,
+      "total_size_bytes": 201446,
+      "materials": [
+        {
+          "material_id": "GRAPH-V14",
+          "filename": "psb_knowledge_graph_integration_v14.json",
+          "title": "Knowledge Graph v14",
+          "version": "v14",
+          "size_bytes": 201446,
+          "statistics": {
+            "nodes": 13,
+            "edges": 83,
+            "backlinks": 313,
+            "relationship_types": 75,
+            "layers": 3
+          }
+        }
+      ]
+    },
+    "SCHEMAS": {
+      "category_id": "CAT-SCHEMA",
+      "description": "Схемы данных и конвенции",
+      "path": "data/schema/",
+      "status": "production",
+      "count": 2,
+      "total_size_bytes": 7282,
+      "materials": [
+        {
+          "material_id": "SCHEMA-JSON",
+          "filename": "psb_analytical_json_schema.json",
+          "title": "JSON Schema для аналитических узлов",
+          "size_bytes": 5234,
+          "purpose": "Валидация структуры узлов"
+        },
+        {
+          "material_id": "SCHEMA-ID",
+          "filename": "id_convention.json",
+          "title": "Конвенция именования ID",
+          "size_bytes": 2048,
+          "purpose": "Стандартизация идентификаторов"
+        }
+      ]
+    },
+    "INDEXES": {
+      "category_id": "CAT-INDEX",
+      "description": "Индексы, реестры и служебные файлы",
+      "path": "data/index/",
+      "status": "production",
+      "count": 6,
+      "total_size_bytes": 164125,
+      "materials": [
+        {
+          "material_id": "IDX-EDGES",
+          "filename": "incoming_edges_index.json",
+          "title": "Индекс входящих связей",
+          "size_bytes": 86267,
+          "purpose": "Быстрый поиск связей по target"
+        },
+        {
+          "material_id": "IDX-INVENTORY",
+          "filename": "project_inventory.json",
+          "title": "Инвентарь проекта",
+          "size_bytes": 16557,
+          "purpose": "Общий инвентарь (автогенерация)"
+        },
+        {
+          "material_id": "IDX-VALIDATION",
+          "filename": "validation_report.json",
+          "title": "Отчёт валидации",
+          "size_bytes": 1751,
+          "purpose": "Результаты валидации данных"
+        },
+        {
+          "material_id": "REG-RAW",
+          "filename": "raw_sources_registry.json",
+          "title": "Реестр первоисточников",
+          "size_bytes": 12627,
+          "purpose": "Каталог SOURCE_DOCUMENTS"
+        },
+        {
+          "material_id": "REG-JSON",
+          "filename": "working_json_registry.json",
+          "title": "Реестр рабочих JSON",
+          "size_bytes": 17502,
+          "purpose": "Каталог data/nodes с трассировкой"
+        },
+        {
+          "material_id": "REG-CLASS",
+          "filename": "json_classification_registry.json",
+          "title": "Классификационный реестр JSON",
+          "size_bytes": 11995,
+          "purpose": "Классификация всех JSON файлов"
+        },
+        {
+          "material_id": "REG-DEPS",
+          "filename": "dependency_analysis.json",
+          "title": "Анализ зависимостей",
+          "size_bytes": 17426,
+          "purpose": "Граф зависимостей и топология"
+        }
+      ]
+    },
+    "DOCUMENTATION": {
+      "category_id": "CAT-DOCS",
+      "description": "Документация проекта",
+      "status": "production",
+      "count": 2,
+      "total_size_bytes": 19740,
+      "materials": [
+        {
+          "material_id": "DOC-README",
+          "filename": "README.md",
+          "path": "./",
+          "title": "README проекта",
+          "size_bytes": 14041,
+          "purpose": "Главная документация"
+        },
+        {
+          "material_id": "DOC-ARCH",
+          "filename": "architecture.md",
+          "path": "docs/",
+          "title": "Архитектура Knowledge Graph",
+          "size_bytes": 5699,
+          "purpose": "Техническая документация графа"
+        }
+      ]
+    },
+    "ARCHIVE": {
+      "category_id": "CAT-ARCHIVE",
+      "description": "Архивные версии (для аудита)",
+      "status": "archived",
+      "subcategories": {
+        "legacy_graphs": {
+          "path": "archive/legacy_graphs/",
+          "count": 12,
+          "total_size_bytes": 531981,
+          "version_range": "v2-v13",
+          "purpose": "История эволюции графа"
+        },
+        "pre_normalization": {
+          "path": "archive/json_pre_normalization/",
+          "count": 13,
+          "total_size_bytes": 962260,
+          "purpose": "Узлы до нормализации (сравнение)"
+        }
+      },
+      "total_count": 25,
+      "total_size_bytes": 1494241
+    }
+  },
+  "traceability_matrix": {
+    "description": "Полная матрица трассировки: источники → узлы → граф",
+    "flow": "RAW_SOURCES → ANALYTICAL_NODES → KNOWLEDGE_GRAPH",
+    "source_to_node": {
+      "SRC-DOC-001": ["NODE-SHAREHOLDER"],
+      "SRC-DOC-002": ["NODE-FINANCE"],
+      "SRC-DOC-003": ["NODE-ECOSYSTEM"],
+      "SRC-DOC-004": ["NODE-CONTEXT"],
+      "SRC-DOC-005": ["NODE-PLATFORM"],
+      "SRC-ATT-004-1": ["NODE-REGULATORY", "NODE-SOVEREIGNTY"],
+      "SRC-ATT-004-2": ["NODE-SOVEREIGNTY"],
+      "SRC-ATT-004-3": ["NODE-SCI"],
+      "SRC-ATT-004-4": ["NODE-MARKET", "NODE-CMLBENCH"],
+      "SRC-ATT-004-5": ["NODE-CMLBENCH"],
+      "SRC-ATT-005-1": ["NODE-TECHBASE", "NODE-REGULATORY"],
+      "SRC-CHRONO": ["NODE-TIMELINE"],
+      "SRC-MKCP": ["NODE-MKCP"]
+    },
+    "node_to_graph": {
+      "all_nodes_in_graph": "GRAPH-V14",
+      "total_edges": 83,
+      "total_backlinks": 313
+    }
+  },
+  "integrity_checks": {
+    "last_check": "2025-11-30T10:00:00Z",
+    "status": "VALID",
+    "checks": [
+      {"check": "raw_sources_count", "expected": 13, "actual": 13, "status": "PASS"},
+      {"check": "nodes_count", "expected": 13, "actual": 13, "status": "PASS"},
+      {"check": "graph_version", "expected": "v14", "actual": "v14", "status": "PASS"},
+      {"check": "all_sources_have_derived_nodes", "expected": true, "actual": true, "status": "PASS"},
+      {"check": "all_nodes_have_sources", "expected": true, "actual": true, "status": "PASS"}
+    ]
+  },
+  "agent_operations": {
+    "description": "Операции, доступные агенту",
+    "queries": [
+      {
+        "operation": "get_material",
+        "description": "Получить материал по ID",
+        "params": ["material_id"],
+        "returns": "material_object"
+      },
+      {
+        "operation": "list_materials",
+        "description": "Список материалов по категории",
+        "params": ["category_id", "status?"],
+        "returns": "material_list"
+      },
+      {
+        "operation": "get_source_chain",
+        "description": "Цепочка: источник → узлы → связи",
+        "params": ["source_id"],
+        "returns": "traceability_chain"
+      },
+      {
+        "operation": "get_node_context",
+        "description": "Полный контекст узла",
+        "params": ["node_id"],
+        "returns": "node_with_sources_and_edges"
+      },
+      {
+        "operation": "validate_integrity",
+        "description": "Проверка целостности базы",
+        "params": [],
+        "returns": "integrity_report"
+      },
+      {
+        "operation": "get_version_history",
+        "description": "История версий материала",
+        "params": ["material_id"],
+        "returns": "version_list"
+      }
+    ],
+    "mutations": [
+      {
+        "operation": "register_material",
+        "description": "Зарегистрировать новый материал",
+        "params": ["material_object"],
+        "returns": "material_id"
+      },
+      {
+        "operation": "update_metadata",
+        "description": "Обновить метаданные материала",
+        "params": ["material_id", "metadata"],
+        "returns": "updated_material"
+      },
+      {
+        "operation": "create_version",
+        "description": "Создать новую версию материала",
+        "params": ["material_id", "new_content"],
+        "returns": "new_version_id"
+      },
+      {
+        "operation": "archive_material",
+        "description": "Перенести материал в архив",
+        "params": ["material_id"],
+        "returns": "archive_status"
+      }
+    ]
+  },
+  "statistics": {
+    "total_materials": 62,
+    "by_category": {
+      "RAW_SOURCES": 13,
+      "ANALYTICAL_NODES": 13,
+      "KNOWLEDGE_GRAPH": 1,
+      "SCHEMAS": 2,
+      "INDEXES": 7,
+      "DOCUMENTATION": 2,
+      "ARCHIVE": 25
+    },
+    "by_status": {
+      "production": 38,
+      "immutable": 13,
+      "archived": 25
+    },
+    "by_format": {
+      "json": 46,
+      "docx": 6,
+      "pdf": 6,
+      "xlsx": 1,
+      "md": 2
+    },
+    "size_distribution": {
+      "RAW_SOURCES": {"bytes": 9314435, "percent": 76.6},
+      "ANALYTICAL_NODES": {"bytes": 1094237, "percent": 9.0},
+      "ARCHIVE": {"bytes": 1494241, "percent": 12.3},
+      "OTHER": {"bytes": 253934, "percent": 2.1}
+    }
+  }
+}
