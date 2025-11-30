@@ -1,82 +1,127 @@
 {
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "gold_id": "GOLD-AGENT-SCHEMA-001",
   "title": "Knowledge Gate Agent Schema",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "created": "2025-11-30T10:00:00Z",
-  "description": "Схема агента управления знаниями — первый на входе в систему",
+  "updated": "2025-11-30T11:30:00Z",
+  "description": "Схема агента управления знаниями — первый на входе в систему. Синхронизирована с реализацией agent/knowledge_gate.py",
   "agent": {
     "id": "AGENT-KNOWLEDGE-GATE",
     "name": "Knowledge Gate Agent",
     "type": "gateway",
     "priority": 1,
     "entry_point": true,
+    "implementation": "agent/knowledge_gate.py",
+    "cli": "agent/cli.py",
     "description": "Центральный агент управления базой знаний. Все запросы к данным проекта проходят через него."
   },
   "capabilities": {
     "material_management": {
       "description": "Управление материалами проекта",
+      "status": "implemented",
       "operations": [
-        "index_material",
-        "retrieve_material",
-        "update_material_metadata",
-        "archive_material",
-        "restore_material"
+        {"name": "get_material", "status": "implemented", "method": "get_material(material_id)"},
+        {"name": "list_materials", "status": "implemented", "method": "list_materials(category, layer, limit)"},
+        {"name": "search", "status": "implemented", "method": "search(query, category)"},
+        {"name": "quick_lookup", "status": "implemented", "method": "quick_lookup(material_id)"},
+        {"name": "index_material", "status": "planned"},
+        {"name": "update_material_metadata", "status": "planned"},
+        {"name": "archive_material", "status": "planned"}
+      ]
+    },
+    "search": {
+      "description": "Поиск материалов",
+      "status": "implemented",
+      "operations": [
+        {"name": "search", "status": "implemented", "method": "search(query, category)"},
+        {"name": "search_by_keyword", "status": "implemented", "method": "search_by_keyword(keyword)"},
+        {"name": "semantic_search", "status": "planned", "requires": "embeddings"}
+      ]
+    },
+    "traceability": {
+      "description": "Трассировка источник → узел",
+      "status": "implemented",
+      "operations": [
+        {"name": "get_source_chain", "status": "implemented", "method": "get_source_chain(source_id)"},
+        {"name": "get_node_sources", "status": "implemented", "method": "get_node_sources(node_id)"},
+        {"name": "get_node_edges", "status": "implemented", "method": "get_node_edges(node_id, direction)"}
+      ]
+    },
+    "statistics": {
+      "description": "Статистика и обзор",
+      "status": "implemented",
+      "operations": [
+        {"name": "get_overview", "status": "implemented", "method": "get_overview()"},
+        {"name": "get_statistics", "status": "implemented", "method": "get_statistics()"},
+        {"name": "get_layer_nodes", "status": "implemented", "method": "get_layer_nodes(layer)"}
       ]
     },
     "version_control": {
       "description": "Управление версионностью",
+      "status": "planned",
       "operations": [
-        "create_version",
-        "get_version_history",
-        "compare_versions",
-        "rollback_version",
-        "tag_version"
+        {"name": "create_version", "status": "planned"},
+        {"name": "get_version_history", "status": "planned"},
+        {"name": "compare_versions", "status": "planned"},
+        {"name": "rollback_version", "status": "planned"}
       ]
     },
     "metadata_management": {
       "description": "Управление метаданными",
+      "status": "planned",
       "operations": [
-        "get_metadata",
-        "update_metadata",
-        "add_tag",
-        "remove_tag",
-        "search_by_metadata"
+        {"name": "get_metadata", "status": "planned"},
+        {"name": "update_metadata", "status": "planned"},
+        {"name": "add_tag", "status": "planned"},
+        {"name": "remove_tag", "status": "planned"}
       ]
     },
     "integrity_validation": {
       "description": "Валидация целостности",
+      "status": "planned",
       "operations": [
-        "validate_all",
-        "validate_category",
-        "check_traceability",
-        "report_anomalies"
+        {"name": "validate_all", "status": "planned"},
+        {"name": "validate_category", "status": "planned"},
+        {"name": "check_traceability", "status": "planned"},
+        {"name": "report_anomalies", "status": "planned"}
       ]
     },
     "routing": {
       "description": "Маршрутизация к downstream агентам",
+      "status": "implemented",
       "operations": [
-        "route_to_analytical_agent",
-        "route_to_graph_agent",
-        "route_to_source_agent",
-        "route_to_visualization_agent"
+        {"name": "route_to_analytical_agent", "status": "implemented", "pattern": "analyze_*"},
+        {"name": "route_to_graph_agent", "status": "implemented", "pattern": "graph_*|edge_*"},
+        {"name": "route_to_source_agent", "status": "implemented", "pattern": "source_*|raw_*"},
+        {"name": "route_to_visualization_agent", "status": "implemented", "pattern": "visualize_*|render_*"}
+      ]
+    },
+    "nlp": {
+      "description": "Обработка естественного языка",
+      "status": "implemented",
+      "operations": [
+        {"name": "process_query", "status": "implemented", "method": "process_query(query)"}
       ]
     }
   },
   "data_contracts": {
     "material_object": {
       "type": "object",
-      "required": ["material_id", "filename", "title", "category_id"],
+      "required": ["material_id", "filename", "title", "category"],
       "properties": {
-        "material_id": {"type": "string", "pattern": "^(SRC|NODE|GRAPH|SCHEMA|IDX|REG|DOC)-[A-Z0-9-]+$"},
+        "material_id": {"type": "string", "pattern": "^(SRC|NODE|GRAPH|SCHEMA|IDX|REG|DOC|GOLD)-[A-Z0-9-]+$"},
         "filename": {"type": "string"},
         "title": {"type": "string"},
-        "category_id": {"type": "string", "enum": ["CAT-RAW", "CAT-NODES", "CAT-GRAPH", "CAT-SCHEMA", "CAT-INDEX", "CAT-DOCS", "CAT-ARCHIVE"]},
+        "category": {"type": "string", "enum": ["RAW_SOURCES", "ANALYTICAL_NODES", "KNOWLEDGE_GRAPH", "SCHEMAS", "INDEXES", "DOCUMENTATION", "ARCHIVE", "GOLD"]},
         "status": {"type": "string", "enum": ["production", "immutable", "archived", "draft"]},
+        "layer": {"type": "string", "enum": ["L1-Strategic", "L2-Operational", "L3-Technical", null]},
         "version": {"type": "string"},
-        "size_bytes": {"type": "integer"},
+        "file_size_bytes": {"type": "integer"},
         "metadata": {"type": "object"},
+        "tags": {"type": "array", "items": {"type": "string"}},
         "sources": {"type": "array", "items": {"type": "string"}},
-        "derived_nodes": {"type": "array", "items": {"type": "string"}}
+        "backlinks_count": {"type": "integer"}
       }
     },
     "query_request": {
@@ -92,7 +137,7 @@
       "type": "object",
       "required": ["status", "operation"],
       "properties": {
-        "status": {"type": "string", "enum": ["success", "error", "partial"]},
+        "status": {"type": "string", "enum": ["success", "error", "partial", "routed", "not_found"]},
         "operation": {"type": "string"},
         "data": {"type": ["object", "array", "null"]},
         "error": {"type": "string"},
@@ -106,51 +151,60 @@
       {
         "pattern": "analyze_*",
         "target_agent": "analytical_agent",
-        "description": "Аналитические запросы"
+        "description": "Аналитические запросы",
+        "status": "routing_only"
       },
       {
         "pattern": "graph_*|edge_*|node_relation_*",
         "target_agent": "graph_agent",
-        "description": "Запросы к графу связей"
+        "description": "Запросы к графу связей",
+        "status": "routing_only"
       },
       {
         "pattern": "source_*|raw_*|document_*",
         "target_agent": "source_agent",
-        "description": "Запросы к первоисточникам"
+        "description": "Запросы к первоисточникам",
+        "status": "routing_only"
       },
       {
         "pattern": "visualize_*|render_*|diagram_*",
         "target_agent": "visualization_agent",
-        "description": "Запросы визуализации"
+        "description": "Запросы визуализации",
+        "status": "routing_only"
       },
       {
-        "pattern": "get_*|list_*|search_*|validate_*",
+        "pattern": "get_*|list_*|search_*|validate_*|keyword_*|trace_*",
         "target_agent": "self",
-        "description": "Обрабатывается Knowledge Gate"
+        "description": "Обрабатывается Knowledge Gate",
+        "status": "implemented"
       }
     ]
   },
   "downstream_agents": {
     "analytical_agent": {
       "id": "AGENT-ANALYTICAL",
+      "status": "planned",
       "purpose": "Глубокий анализ содержимого узлов",
       "input": ["node_id", "query"],
       "output": "analytical_report"
     },
     "graph_agent": {
       "id": "AGENT-GRAPH",
+      "status": "planned",
       "purpose": "Работа с графом связей",
       "input": ["node_id", "edge_query"],
       "output": "graph_data"
     },
     "source_agent": {
       "id": "AGENT-SOURCE",
+      "status": "planned",
       "purpose": "Работа с первоисточниками",
       "input": ["source_id", "extract_query"],
       "output": "source_data"
     },
     "visualization_agent": {
       "id": "AGENT-VIS",
+      "status": "planned",
       "purpose": "Визуализация данных",
       "input": ["data", "viz_type"],
       "output": "visualization"
@@ -159,25 +213,29 @@
   "state_management": {
     "session_context": {
       "description": "Контекст сессии агента",
+      "implementation": "agent/session.py",
       "properties": {
-        "session_id": "string",
-        "start_time": "datetime",
-        "materials_accessed": "array",
-        "operations_performed": "array",
-        "current_focus": "material_id"
+        "session_id": {"type": "string", "format": "uuid"},
+        "started_at": {"type": "string", "format": "datetime"},
+        "materials_accessed": {"type": "array"},
+        "operations_performed": {"type": "array"},
+        "current_focus": {"type": "string"},
+        "query_history": {"type": "array"}
       }
     },
     "cache": {
       "description": "Кэширование для производительности",
+      "status": "implemented",
       "ttl_seconds": 300,
       "cached_items": [
+        "gold_index",
         "material_list",
-        "category_counts",
         "recent_queries"
       ]
     }
   },
   "event_hooks": {
+    "status": "planned",
     "on_material_accessed": {
       "description": "При доступе к материалу",
       "actions": ["log_access", "update_access_count", "check_freshness"]
@@ -189,18 +247,12 @@
     "on_integrity_violation": {
       "description": "При нарушении целостности",
       "actions": ["log_error", "attempt_repair", "notify_admin"]
-    },
-    "on_new_material": {
-      "description": "При добавлении нового материала",
-      "actions": ["validate_schema", "index_material", "update_statistics"]
     }
   },
   "api_examples": {
     "get_material": {
-      "request": {
-        "operation": "get_material",
-        "params": {"material_id": "NODE-CONTEXT"}
-      },
+      "cli": "get NODE-CONTEXT",
+      "python": "agent.get_material('NODE-CONTEXT')",
       "response": {
         "status": "success",
         "operation": "get_material",
@@ -209,41 +261,67 @@
           "filename": "psb_spbpu_context_analysis.json",
           "title": "Общий контекст Замысла ПСБ × СПбПУ",
           "layer": "L1-Strategic",
-          "sources": ["SRC-DOC-004"],
-          "referenced_by_count": 84
+          "backlinks_count": 84
+        }
+      }
+    },
+    "search_by_keyword": {
+      "cli": "keyword ПСБ",
+      "python": "agent.search_by_keyword('ПСБ')",
+      "response": {
+        "status": "success",
+        "operation": "search_by_keyword",
+        "data": {
+          "keyword": "ПСБ",
+          "nodes": ["NODE-CONTEXT", "NODE-SHAREHOLDER", "NODE-FINANCE", "NODE-ECOSYSTEM", "NODE-SOVEREIGNTY"],
+          "count": 5
         }
       }
     },
     "get_source_chain": {
-      "request": {
-        "operation": "get_source_chain",
-        "params": {"source_id": "SRC-DOC-001"}
-      },
+      "cli": "trace SRC-DOC-001",
+      "python": "agent.get_source_chain('SRC-DOC-001')",
       "response": {
         "status": "success",
         "operation": "get_source_chain",
         "data": {
-          "source": "SRC-DOC-001",
-          "filename": "1_2025_11_Док_1_Банк_ПСБ.docx",
-          "derived_nodes": ["NODE-SHAREHOLDER"],
-          "edges_from_nodes": 4,
-          "total_backlinks": 51
+          "source": {"material_id": "SRC-DOC-001", "filename": "1_2025_11_Док_1_Банк_ПСБ.docx"},
+          "derived_nodes": [{"material_id": "NODE-SHAREHOLDER", "backlinks_count": 51}],
+          "nodes_count": 1
         }
       }
     },
-    "list_materials": {
-      "request": {
-        "operation": "list_materials",
-        "params": {"category_id": "CAT-NODES", "status": "production"}
-      },
+    "process_query": {
+      "cli": "покажи все узлы L1-Strategic",
+      "python": "agent.process_query('покажи все узлы L1-Strategic')",
       "response": {
         "status": "success",
         "operation": "list_materials",
         "data": {
-          "count": 13,
-          "materials": ["NODE-CONTEXT", "NODE-SHAREHOLDER", "..."]
+          "count": 5,
+          "materials": ["NODE-CONTEXT", "NODE-SHAREHOLDER", "NODE-PLATFORM", "NODE-SOVEREIGNTY", "NODE-MKCP"]
         }
       }
     }
+  },
+  "implementation_status": {
+    "overall": "70%",
+    "breakdown": {
+      "material_management": "60%",
+      "search": "80%",
+      "traceability": "100%",
+      "statistics": "100%",
+      "version_control": "0%",
+      "metadata_management": "0%",
+      "integrity_validation": "0%",
+      "routing": "100%",
+      "nlp": "100%"
+    },
+    "next_priorities": [
+      "Semantic search with embeddings",
+      "Integrity validation",
+      "Version control",
+      "Downstream agents implementation"
+    ]
   }
 }

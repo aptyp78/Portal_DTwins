@@ -1,18 +1,29 @@
 {
   "gold_id": "GOLD-INDEX-001",
   "title": "Gold Index — быстрый доступ к материалам",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "created": "2025-11-30T10:00:00Z",
-  "updated": "2025-11-30T10:00:00Z",
-  "description": "Оптимизированный индекс для быстрого поиска материалов агентом",
+  "updated": "2025-11-30T11:30:00Z",
+  "description": "Оптимизированный индекс для быстрого поиска материалов агентом. Синхронизирован с БД PostgreSQL.",
+  "database": {
+    "type": "PostgreSQL + pgvector",
+    "name": "portal_dtwins",
+    "host": "localhost",
+    "port": 5432
+  },
   "quick_stats": {
-    "total_materials": 62,
-    "production_materials": 38,
+    "total_materials_db": 32,
+    "total_materials_files": 62,
+    "production_materials": 32,
     "raw_sources": 13,
     "analytical_nodes": 13,
+    "knowledge_graph": 1,
+    "schemas": 2,
+    "gold_files": 3,
     "knowledge_version": "v14",
     "total_edges": 83,
-    "total_backlinks": 313
+    "total_backlinks": 313,
+    "source_node_mappings": 16
   },
   "id_to_path": {
     "SRC-DOC-001": "SOURCE_DOCUMENTS/1_2025_11_Док_1_Банк_ПСБ.docx",
@@ -91,39 +102,40 @@
     "NODE-MKCP": ["SRC-MKCP"]
   },
   "backlinks_ranking": [
-    {"node": "NODE-CONTEXT", "backlinks": 84},
-    {"node": "NODE-SHAREHOLDER", "backlinks": 51},
-    {"node": "NODE-TECHBASE", "backlinks": 39},
-    {"node": "NODE-ECOSYSTEM", "backlinks": 35},
-    {"node": "NODE-FINANCE", "backlinks": 29},
-    {"node": "NODE-SCI", "backlinks": 16},
-    {"node": "NODE-SOVEREIGNTY", "backlinks": 15},
-    {"node": "NODE-MARKET", "backlinks": 12},
-    {"node": "NODE-PLATFORM", "backlinks": 11},
-    {"node": "NODE-CMLBENCH", "backlinks": 10},
-    {"node": "NODE-REGULATORY", "backlinks": 7},
-    {"node": "NODE-TIMELINE", "backlinks": 4},
-    {"node": "NODE-MKCP", "backlinks": 0}
+    {"node": "NODE-CONTEXT", "backlinks": 84, "percent": 26.8, "role": "Центральный узел"},
+    {"node": "NODE-SHAREHOLDER", "backlinks": 51, "percent": 16.3, "role": "Фундамент мотивации"},
+    {"node": "NODE-TECHBASE", "backlinks": 39, "percent": 12.5, "role": "Архитектурный фундамент"},
+    {"node": "NODE-ECOSYSTEM", "backlinks": 35, "percent": 11.2, "role": "Операционный хаб"},
+    {"node": "NODE-FINANCE", "backlinks": 29, "percent": 9.3, "role": "Ресурсная база"},
+    {"node": "NODE-SCI", "backlinks": 16, "percent": 5.1, "role": "Методологическое ядро"},
+    {"node": "NODE-SOVEREIGNTY", "backlinks": 15, "percent": 4.8, "role": "Стратегический императив"},
+    {"node": "NODE-MARKET", "backlinks": 12, "percent": 3.8, "role": "Рыночный контекст"},
+    {"node": "NODE-PLATFORM", "backlinks": 11, "percent": 3.5, "role": "Глобальная модель"},
+    {"node": "NODE-CMLBENCH", "backlinks": 10, "percent": 3.2, "role": "Техническое ядро"},
+    {"node": "NODE-REGULATORY", "backlinks": 7, "percent": 2.2, "role": "Нормативная рамка"},
+    {"node": "NODE-TIMELINE", "backlinks": 4, "percent": 1.3, "role": "Хронологический контекст"},
+    {"node": "NODE-MKCP", "backlinks": 0, "percent": 0, "role": "Программа-драйвер (sink)"}
   ],
   "outgoing_edges_ranking": [
-    {"node": "NODE-MKCP", "outgoing": 12},
-    {"node": "NODE-TIMELINE", "outgoing": 11},
-    {"node": "NODE-CMLBENCH", "outgoing": 10},
-    {"node": "NODE-PLATFORM", "outgoing": 8},
-    {"node": "NODE-MARKET", "outgoing": 8},
-    {"node": "NODE-SOVEREIGNTY", "outgoing": 7},
-    {"node": "NODE-SCI", "outgoing": 7},
-    {"node": "NODE-REGULATORY", "outgoing": 6},
-    {"node": "NODE-SHAREHOLDER", "outgoing": 4},
-    {"node": "NODE-TECHBASE", "outgoing": 4},
-    {"node": "NODE-CONTEXT", "outgoing": 3},
-    {"node": "NODE-FINANCE", "outgoing": 2},
-    {"node": "NODE-ECOSYSTEM", "outgoing": 1}
+    {"node": "NODE-MKCP", "outgoing": 12, "role": "Главный драйвер"},
+    {"node": "NODE-TIMELINE", "outgoing": 11, "role": "Связующее звено"},
+    {"node": "NODE-CMLBENCH", "outgoing": 10, "role": "Техническая интеграция"},
+    {"node": "NODE-PLATFORM", "outgoing": 8, "role": "Глобальные связи"},
+    {"node": "NODE-MARKET", "outgoing": 8, "role": "Рыночные связи"},
+    {"node": "NODE-SOVEREIGNTY", "outgoing": 7, "role": "Стратегические связи"},
+    {"node": "NODE-SCI", "outgoing": 7, "role": "Методологические связи"},
+    {"node": "NODE-REGULATORY", "outgoing": 6, "role": "Нормативные связи"},
+    {"node": "NODE-SHAREHOLDER", "outgoing": 4, "role": "Корневые связи"},
+    {"node": "NODE-TECHBASE", "outgoing": 4, "role": "Технические связи"},
+    {"node": "NODE-CONTEXT", "outgoing": 3, "role": "Контекстные связи"},
+    {"node": "NODE-FINANCE", "outgoing": 2, "role": "Финансовые связи"},
+    {"node": "NODE-ECOSYSTEM", "outgoing": 1, "role": "Минимальные связи (hub)"}
   ],
   "critical_path": {
     "description": "Критический путь данных в системе",
     "path": ["NODE-SHAREHOLDER", "NODE-FINANCE", "NODE-ECOSYSTEM", "NODE-PLATFORM", "NODE-CMLBENCH", "NODE-MKCP"],
-    "interpretation": "Логика акционера → Финансы → Экосистема → Платформа → CML-Bench → Программа МКЦП"
+    "interpretation": "Логика акционера → Финансы → Экосистема → Платформа → CML-Bench → Программа МКЦП",
+    "budget_flow": "от стратегии к 15 трлн руб."
   },
   "search_keywords": {
     "ПСБ": ["NODE-CONTEXT", "NODE-SHAREHOLDER", "NODE-FINANCE", "NODE-ECOSYSTEM", "NODE-SOVEREIGNTY"],
@@ -135,7 +147,11 @@
     "СЦИ": ["NODE-SCI", "NODE-TECHBASE", "NODE-CMLBENCH"],
     "экосистема": ["NODE-ECOSYSTEM", "NODE-PLATFORM"],
     "финансы": ["NODE-FINANCE", "NODE-SHAREHOLDER"],
-    "регуляторика": ["NODE-REGULATORY", "NODE-TIMELINE"]
+    "регуляторика": ["NODE-REGULATORY", "NODE-TIMELINE"],
+    "акционер": ["NODE-SHAREHOLDER", "NODE-FINANCE"],
+    "платформа": ["NODE-PLATFORM", "NODE-MARKET", "NODE-CMLBENCH"],
+    "цифровой двойник": ["NODE-CMLBENCH", "NODE-MARKET", "NODE-TECHBASE"],
+    "инжиниринг": ["NODE-SCI", "NODE-TECHBASE"]
   },
   "gold_files": {
     "master": {
@@ -153,5 +169,20 @@
       "path": "data/gold/gold_index.json",
       "purpose": "Быстрый индекс для поиска (этот файл)"
     }
+  },
+  "agent_quick_reference": {
+    "module": "agent/knowledge_gate.py",
+    "cli": "python run_agent.py",
+    "python_usage": "from agent import KnowledgeGateAgent; agent = KnowledgeGateAgent()",
+    "key_methods": [
+      "get_material(material_id)",
+      "list_materials(category, layer)",
+      "search(query)",
+      "search_by_keyword(keyword)",
+      "get_source_chain(source_id)",
+      "get_node_sources(node_id)",
+      "get_overview()",
+      "process_query(natural_language_query)"
+    ]
   }
 }
