@@ -7,14 +7,21 @@ import os
 import sys
 from pathlib import Path
 
-import psycopg2
-from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
-
 # Добавляем корневую директорию проекта в PATH
 PROJECT_ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from database.config import db_config
+# Загружаем .env файл
+from dotenv import load_dotenv
+load_dotenv(PROJECT_ROOT / ".env")
+
+import psycopg2
+from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
+
+from database.config import DatabaseConfig
+
+# Перезагружаем конфигурацию после загрузки .env
+db_config = DatabaseConfig.from_env()
 
 
 def create_database():
