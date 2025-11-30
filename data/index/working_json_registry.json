@@ -1,0 +1,364 @@
+{
+  "registry_id": "WORKING-JSON-REGISTRY",
+  "version": "1.0",
+  "created": "2025-11-30",
+  "description": "Реестр рабочих JSON-узлов аналитического корпуса с трассировкой к первоисточникам",
+  "total_nodes": 13,
+  "total_size_bytes": 1094237,
+  "total_size_mb": 1.04,
+  "nodes": [
+    {
+      "json_id": "JSON-001",
+      "node_id": "NODE-CONTEXT",
+      "filename": "psb_spbpu_context_analysis.json",
+      "title": "Общий контекст Замысла ПСБ × СПбПУ",
+      "layer": "L1-Strategic",
+      "layer_code": "application_domain",
+      "size_bytes": 69944,
+      "size_kb": 68.3,
+      "primary_question": "ДЛЯ ЧЕГО создаётся партнёрство ПСБ×СПбПУ?",
+      "source_mapping": {
+        "primary_sources": ["SRC-DOC-004"],
+        "source_documents": ["4_2025_11_Док_4_ПСБ_СПбПУ_контекст.docx"],
+        "derivation_type": "synthesis",
+        "coverage": "Синтезирует контекст из всех документов"
+      },
+      "semantic_role": "Корневой узел — определяет цель и смысл партнёрства",
+      "incoming_refs_count": 15,
+      "outgoing_deps_count": 0
+    },
+    {
+      "json_id": "JSON-002",
+      "node_id": "NODE-SHAREHOLDER",
+      "filename": "psb_shareholder_logic_analysis.json",
+      "title": "Анализ структуры ПСБ и логики акционера",
+      "layer": "L1-Strategic",
+      "layer_code": "strategic_foundation",
+      "size_bytes": 144063,
+      "size_kb": 140.7,
+      "primary_question": "ПОЧЕМУ государство-акционер инвестирует в партнёрство?",
+      "source_mapping": {
+        "primary_sources": ["SRC-DOC-001"],
+        "source_documents": ["1_2025_11_Док_1_Банк_ПСБ_описание_структуры_Логика_Акционера.docx"],
+        "derivation_type": "direct_analysis",
+        "coverage": "Полный анализ Док 1"
+      },
+      "semantic_role": "Объясняет мотивацию миссионного акционера",
+      "incoming_refs_count": 8,
+      "outgoing_deps_count": 12
+    },
+    {
+      "json_id": "JSON-003",
+      "node_id": "NODE-FINANCE",
+      "filename": "psb_financial_architecture_analysis.json",
+      "title": "Финансовая архитектура ПСБ: Прибыль, Резервы и Дивиденды",
+      "layer": "L2-Operational",
+      "layer_code": "resource_base",
+      "size_bytes": 52143,
+      "size_kb": 50.9,
+      "primary_question": "ОТКУДА берутся ресурсы для финансирования?",
+      "source_mapping": {
+        "primary_sources": ["SRC-DOC-002"],
+        "source_documents": ["2_2025_11_Док_2_Финансовая_Архитектура_ПСБ_Резервы_Денежные_переводы.docx"],
+        "derivation_type": "direct_analysis",
+        "coverage": "Полный анализ Док 2"
+      },
+      "semantic_role": "Описывает финансовую базу ПСБ",
+      "incoming_refs_count": 6,
+      "outgoing_deps_count": 4
+    },
+    {
+      "json_id": "JSON-004",
+      "node_id": "NODE-ECOSYSTEM",
+      "filename": "psb_ecosystem_infrastructure_analysis.json",
+      "title": "Экосистема и инфраструктура ПСБ",
+      "layer": "L2-Operational",
+      "layer_code": "operational_platform",
+      "size_bytes": 90560,
+      "size_kb": 88.4,
+      "primary_question": "ЧЕРЕЗ ЧТО реализуется партнёрство на операционном уровне?",
+      "source_mapping": {
+        "primary_sources": ["SRC-DOC-003"],
+        "source_documents": ["3_2025_11_Док_3_Экосистема_Инфраструктура_ПСБ.docx"],
+        "derivation_type": "direct_analysis",
+        "coverage": "Полный анализ Док 3"
+      },
+      "semantic_role": "Описывает операционную платформу и экосистему",
+      "incoming_refs_count": 7,
+      "outgoing_deps_count": 5
+    },
+    {
+      "json_id": "JSON-005",
+      "node_id": "NODE-TECHBASE",
+      "filename": "psb_technological_foundation_6tu_analysis.json",
+      "title": "Новая технологическая основа 6ТУ: Мета-скелет",
+      "layer": "L3-Technical",
+      "layer_code": "architectural_blueprint",
+      "size_bytes": 81159,
+      "size_kb": 79.3,
+      "primary_question": "НА ЧЁМ строится новая технологическая основа?",
+      "source_mapping": {
+        "primary_sources": ["SRC-ATT-005-1"],
+        "source_documents": ["5_2025_11_Док_5_Приложение_1_Описание_принципов_новой_технологической_основы.pdf"],
+        "derivation_type": "direct_analysis",
+        "coverage": "Полный анализ Приложения 1 к Док 5"
+      },
+      "semantic_role": "Определяет архитектурный фундамент 6ТУ",
+      "incoming_refs_count": 5,
+      "outgoing_deps_count": 6
+    },
+    {
+      "json_id": "JSON-006",
+      "node_id": "NODE-PLATFORM",
+      "filename": "psb_global_trend_platform_analysis.json",
+      "title": "Глобальный тренд: переход к экосистемным платформам",
+      "layer": "L1-Strategic",
+      "layer_code": "strategic_transition",
+      "size_bytes": 45685,
+      "size_kb": 44.6,
+      "primary_question": "В КАКОМ глобальном контексте развивается партнёрство?",
+      "source_mapping": {
+        "primary_sources": ["SRC-DOC-005"],
+        "source_documents": ["5_2025_11_Док_5_Глобальный_уровень.docx"],
+        "derivation_type": "direct_analysis",
+        "coverage": "Полный анализ Док 5"
+      },
+      "semantic_role": "Задаёт глобальный контекст платформенных трендов",
+      "incoming_refs_count": 4,
+      "outgoing_deps_count": 3
+    },
+    {
+      "json_id": "JSON-007",
+      "node_id": "NODE-REGULATORY",
+      "filename": "psb_regulatory_framework_analysis.json",
+      "title": "Нормативный контекст перехода на новую технологическую основу",
+      "layer": "L2-Operational",
+      "layer_code": "regulatory_framework",
+      "size_bytes": 123906,
+      "size_kb": 121.0,
+      "primary_question": "КАКИЕ правила и документы определяют рамки партнёрства?",
+      "source_mapping": {
+        "primary_sources": ["SRC-ATT-004-1", "SRC-ATT-005-1"],
+        "source_documents": [
+          "4_2025_11_Док_4_Приложение_1_Схема_нац_документов_для_перехода_на_новую_тех_основу.pdf",
+          "5_2025_11_Док_5_Приложение_1_Описание_принципов_новой_технологической_основы.pdf"
+        ],
+        "derivation_type": "cross_analysis",
+        "coverage": "Синтез из Приложения 1 к Док 4 и Приложения 1 к Док 5"
+      },
+      "semantic_role": "Описывает регуляторную рамку и нормативную базу",
+      "incoming_refs_count": 9,
+      "outgoing_deps_count": 4
+    },
+    {
+      "json_id": "JSON-008",
+      "node_id": "NODE-SOVEREIGNTY",
+      "filename": "psb_strategic_sovereignty_role_analysis.json",
+      "title": "Роль ПСБ в технологическом суверенитете",
+      "layer": "L1-Strategic",
+      "layer_code": "strategic_positioning",
+      "size_bytes": 59203,
+      "size_kb": 57.8,
+      "primary_question": "КАКОВА роль ПСБ в обеспечении технологического суверенитета?",
+      "source_mapping": {
+        "primary_sources": ["SRC-ATT-004-1", "SRC-ATT-004-2", "SRC-DOC-004"],
+        "source_documents": [
+          "4_2025_11_Док_4_Приложение_1_Схема_нац_документов_для_перехода_на_новую_тех_основу.pdf",
+          "4_2025_11_Док_4_Приложение_2_Видение_роли_ПСБ_в_тех_суверенитете_через_нац_стратегические_документы.pdf",
+          "4_2025_11_Док_4_ПСБ_СПбПУ_контекст.docx"
+        ],
+        "derivation_type": "cross_analysis",
+        "coverage": "Синтез из Док 4 и его приложений 1-2"
+      },
+      "semantic_role": "Позиционирует ПСБ в контексте технологического суверенитета",
+      "incoming_refs_count": 6,
+      "outgoing_deps_count": 5
+    },
+    {
+      "json_id": "JSON-009",
+      "node_id": "NODE-SCI",
+      "filename": "psb_sci_architecture_analysis.json",
+      "title": "Структурная схема Системного цифрового инжиниринга (СЦИ)",
+      "layer": "L3-Technical",
+      "layer_code": "methodological_framework",
+      "size_bytes": 43338,
+      "size_kb": 42.3,
+      "primary_question": "КАК устроена методология СЦИ?",
+      "source_mapping": {
+        "primary_sources": ["SRC-ATT-004-3"],
+        "source_documents": ["4_2025_11_Док_4_Приложение_3_Структурная_схема_СЦИ.pdf"],
+        "derivation_type": "direct_analysis",
+        "coverage": "Полный анализ Приложения 3 к Док 4"
+      },
+      "semantic_role": "Описывает методологию Системной Цифровой Инженерии",
+      "incoming_refs_count": 5,
+      "outgoing_deps_count": 4
+    },
+    {
+      "json_id": "JSON-010",
+      "node_id": "NODE-MARKET",
+      "filename": "psb_dt_platforms_market_analysis.json",
+      "title": "Сравнительный анализ глобального рынка платформ цифровых двойников",
+      "layer": "L2-Operational",
+      "layer_code": "market_intelligence",
+      "size_bytes": 55860,
+      "size_kb": 54.6,
+      "primary_question": "КТО конкуренты и КАК выглядит рынок платформ ЦД?",
+      "source_mapping": {
+        "primary_sources": ["SRC-ATT-004-4"],
+        "source_documents": ["4_2025_11_Док_4_Приложение_4_Сравнительный_анализ_платформ_цифровых_двойников.xlsx"],
+        "derivation_type": "direct_analysis",
+        "coverage": "Полный анализ Приложения 4 к Док 4"
+      },
+      "semantic_role": "Анализирует конкурентный ландшафт рынка ЦД",
+      "incoming_refs_count": 4,
+      "outgoing_deps_count": 3
+    },
+    {
+      "json_id": "JSON-011",
+      "node_id": "NODE-CMLBENCH",
+      "filename": "psb_cmlbench_technology_context_analysis.json",
+      "title": "CML-Bench в контексте технологических платформ",
+      "layer": "L3-Technical",
+      "layer_code": "platform_technology",
+      "size_bytes": 52350,
+      "size_kb": 51.1,
+      "primary_question": "ЧТО такое CML-Bench и КАК закрыть технологические GAP'ы?",
+      "source_mapping": {
+        "primary_sources": ["SRC-ATT-004-4", "SRC-ATT-004-5"],
+        "source_documents": [
+          "4_2025_11_Док_4_Приложение_4_Сравнительный_анализ_платформ_цифровых_двойников.xlsx",
+          "4_2025_11_Док_4_Приложение_5_CMLBench_в_контексте_тех_платформ.pdf"
+        ],
+        "derivation_type": "cross_analysis",
+        "coverage": "Синтез из Приложений 4-5 к Док 4"
+      },
+      "semantic_role": "Детальный анализ платформы CML-Bench",
+      "incoming_refs_count": 12,
+      "outgoing_deps_count": 6
+    },
+    {
+      "json_id": "JSON-012",
+      "node_id": "NODE-TIMELINE",
+      "filename": "psb_state_agenda_dt_timeline_analysis.json",
+      "title": "Хронология инициатив по ЦД со стороны акционера",
+      "layer": "L2-Operational",
+      "layer_code": "strategic_mandate",
+      "size_bytes": 118530,
+      "size_kb": 115.8,
+      "primary_question": "КОГДА и КАК развивалась госагенда по ЦД?",
+      "source_mapping": {
+        "primary_sources": ["SRC-CHRONO"],
+        "source_documents": ["2025_Хронология_Инициатив_по_ЦД_со_стороны_Акционера.docx"],
+        "derivation_type": "direct_analysis",
+        "coverage": "Полный анализ документа Хронология"
+      },
+      "semantic_role": "Хронологическая карта государственной агенды",
+      "incoming_refs_count": 8,
+      "outgoing_deps_count": 5
+    },
+    {
+      "json_id": "JSON-013",
+      "node_id": "NODE-MKCP",
+      "filename": "psb_mkcp_program_analysis.json",
+      "title": "Проект Концепции МКЦП по развитию технологий ЦД 2026-2035",
+      "layer": "L1-Strategic",
+      "layer_code": "program_architecture",
+      "size_bytes": 157496,
+      "size_kb": 153.8,
+      "primary_question": "КАК президентский мандат трансформируется в операционную программу?",
+      "source_mapping": {
+        "primary_sources": ["SRC-MKCP"],
+        "source_documents": ["МКЦП_редакция_после_МО.pdf"],
+        "derivation_type": "direct_analysis",
+        "coverage": "Полный анализ программы МКЦП ЦД (51 стр.)"
+      },
+      "semantic_role": "Операционализация президентского мандата в национальную программу",
+      "program_details": {
+        "budget": "15 трлн руб.",
+        "period": "2026-2035",
+        "duration_years": 10,
+        "psb_potential": "3.75-5.25 трлн руб. (25-35%)"
+      },
+      "incoming_refs_count": 0,
+      "outgoing_deps_count": 8
+    }
+  ],
+  "traceability_matrix": {
+    "description": "Матрица трассировки: какие источники формируют какие узлы",
+    "source_to_nodes": {
+      "SRC-DOC-001": ["NODE-SHAREHOLDER"],
+      "SRC-DOC-002": ["NODE-FINANCE"],
+      "SRC-DOC-003": ["NODE-ECOSYSTEM"],
+      "SRC-DOC-004": ["NODE-CONTEXT", "NODE-SOVEREIGNTY"],
+      "SRC-DOC-005": ["NODE-PLATFORM"],
+      "SRC-ATT-004-1": ["NODE-REGULATORY", "NODE-SOVEREIGNTY"],
+      "SRC-ATT-004-2": ["NODE-SOVEREIGNTY"],
+      "SRC-ATT-004-3": ["NODE-SCI"],
+      "SRC-ATT-004-4": ["NODE-MARKET", "NODE-CMLBENCH"],
+      "SRC-ATT-004-5": ["NODE-CMLBENCH"],
+      "SRC-ATT-005-1": ["NODE-TECHBASE", "NODE-REGULATORY"],
+      "SRC-CHRONO": ["NODE-TIMELINE"],
+      "SRC-MKCP": ["NODE-MKCP"]
+    },
+    "node_to_sources": {
+      "NODE-CONTEXT": ["SRC-DOC-004"],
+      "NODE-SHAREHOLDER": ["SRC-DOC-001"],
+      "NODE-FINANCE": ["SRC-DOC-002"],
+      "NODE-ECOSYSTEM": ["SRC-DOC-003"],
+      "NODE-TECHBASE": ["SRC-ATT-005-1"],
+      "NODE-PLATFORM": ["SRC-DOC-005"],
+      "NODE-REGULATORY": ["SRC-ATT-004-1", "SRC-ATT-005-1"],
+      "NODE-SOVEREIGNTY": ["SRC-ATT-004-1", "SRC-ATT-004-2", "SRC-DOC-004"],
+      "NODE-SCI": ["SRC-ATT-004-3"],
+      "NODE-MARKET": ["SRC-ATT-004-4"],
+      "NODE-CMLBENCH": ["SRC-ATT-004-4", "SRC-ATT-004-5"],
+      "NODE-TIMELINE": ["SRC-CHRONO"],
+      "NODE-MKCP": ["SRC-MKCP"]
+    }
+  },
+  "layer_statistics": {
+    "L1-Strategic": {
+      "count": 5,
+      "nodes": ["NODE-CONTEXT", "NODE-SHAREHOLDER", "NODE-PLATFORM", "NODE-SOVEREIGNTY", "NODE-MKCP"],
+      "total_size_kb": 465.2,
+      "focus": "Миссия, цели, глобальный контекст, программа"
+    },
+    "L2-Operational": {
+      "count": 5,
+      "nodes": ["NODE-FINANCE", "NODE-ECOSYSTEM", "NODE-REGULATORY", "NODE-MARKET", "NODE-TIMELINE"],
+      "total_size_kb": 430.7,
+      "focus": "Процессы, ограничения, динамика, рынок"
+    },
+    "L3-Technical": {
+      "count": 3,
+      "nodes": ["NODE-TECHBASE", "NODE-SCI", "NODE-CMLBENCH"],
+      "total_size_kb": 172.7,
+      "focus": "Методология, архитектура, платформа"
+    }
+  },
+  "derivation_types": {
+    "direct_analysis": {
+      "count": 9,
+      "description": "Узел создан из одного первоисточника",
+      "nodes": ["NODE-SHAREHOLDER", "NODE-FINANCE", "NODE-ECOSYSTEM", "NODE-TECHBASE", "NODE-PLATFORM", "NODE-SCI", "NODE-MARKET", "NODE-TIMELINE", "NODE-MKCP"]
+    },
+    "cross_analysis": {
+      "count": 3,
+      "description": "Узел синтезирован из нескольких первоисточников",
+      "nodes": ["NODE-REGULATORY", "NODE-SOVEREIGNTY", "NODE-CMLBENCH"]
+    },
+    "synthesis": {
+      "count": 1,
+      "description": "Узел синтезирует контекст из всего корпуса",
+      "nodes": ["NODE-CONTEXT"]
+    }
+  },
+  "coverage_analysis": {
+    "sources_used": 13,
+    "sources_total": 13,
+    "coverage_percent": 100,
+    "multi_source_nodes": 3,
+    "single_source_nodes": 10
+  }
+}
